@@ -45,6 +45,8 @@ WASD 移动，鼠标环顾，Shift 快走，Esc 释放鼠标；E 交谈，F 互�
 
 ## 架构与重建
 
+完整制作提示词与复用说明见 [复用工作流](复用工作流/README.md)，可用于新项目或继续当前项目。模型和最终画面的关系见 [Blender 与游戏画面为什么不同](复用工作流/03_Blender与游戏画面为什么不同.md)：游戏加载导出的 GLB，灯光、相机和 NPC 动作由运行代码驱动；保存 .blend 不会自动更新游戏。
+
 - `server.py`：Python 标准库本地 HTTP 服务与 Ollama 代理。
 - `app.js` / `navigation.js` / `people.js`：Three.js 场景、NPC 意图执行、图寻路、距离驱动步态与双腿 IK。
 - `game.js` / `game-ui.js` / `daylight.js`：任务、探索、存档、界面与昼夜光照。
