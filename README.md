@@ -6,6 +6,8 @@
 
 ## 下载与运行
 
+[新版中文旁白宣传片与可编辑工程（v5.1.0）](https://github.com/hy-8/starbay-ai-world/releases/tag/v5.1.0)：MiniMax 精英男声，六段短旁白；结尾场景上传生成世界为未来愿景。
+
 [下载 v5.0.0 发布附件](https://github.com/hy-8/starbay-ai-world/releases/tag/v5.0.0)：
 
 - `Starbay-Explorer-v5.0.0.zip`：游戏便携包（需安装 Python 3.10 或更新版本）。
@@ -63,6 +65,7 @@ blender --background --python build_scene.py -- --skip-preview
 - [玩法与 AI 技术说明 PDF](星湾发布/星湾街区生活_玩法与AI技术说明.pdf)（虚构世界版）
 - [更新记录](CHANGELOG.md)
 - [宣传片流畅度修订记录](星湾发布/发布说明.md)
+- [中文旁白脚本与镜头时间](星湾发布/中文旁白脚本.md)
 
 `verify_art_v4.py` 和 `verify_v4_regression.py` 使用 Python Playwright 进行浏览器验证，需另行安装 `playwright` 及 Chromium，并启动本地游戏服务。报告记录包含导航、入口通行、任务/存档、四类步态及页面错误检查。游戏资源无需为了测试而重建。
 
