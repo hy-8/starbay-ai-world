@@ -1,0 +1,253 @@
+{
+  "browserErrors": [],
+  "blockedRoutes": [],
+  "reachability": [
+    {
+      "id": "mall",
+      "valid": true,
+      "reachable": true
+    },
+    {
+      "id": "service",
+      "valid": true,
+      "reachable": true
+    },
+    {
+      "id": "books",
+      "valid": true,
+      "reachable": true
+    },
+    {
+      "id": "insideCafe",
+      "valid": true,
+      "reachable": true
+    },
+    {
+      "id": "rest",
+      "valid": true,
+      "reachable": true
+    },
+    {
+      "id": "toys",
+      "valid": true,
+      "reachable": true
+    },
+    {
+      "id": "market",
+      "valid": true,
+      "reachable": true
+    },
+    {
+      "id": "courier",
+      "valid": true,
+      "reachable": true
+    },
+    {
+      "id": "park",
+      "valid": true,
+      "reachable": true
+    },
+    {
+      "id": "art",
+      "valid": true,
+      "reachable": true
+    },
+    {
+      "id": "overlook",
+      "valid": true,
+      "reachable": true
+    },
+    {
+      "id": "garden",
+      "valid": true,
+      "reachable": true
+    },
+    {
+      "id": "leaf1",
+      "valid": true,
+      "reachable": true
+    },
+    {
+      "id": "leaf2",
+      "valid": true,
+      "reachable": true
+    },
+    {
+      "id": "leaf3",
+      "valid": true,
+      "reachable": true
+    }
+  ],
+  "gameplay": {
+    "rewardOnce": true,
+    "rangeEnforced": true,
+    "inventoryAndReload": true,
+    "cooldown": true,
+    "timeGates": true,
+    "rollover": true,
+    "saveValidation": true
+  },
+  "saveReload": true,
+  "keyboardInteraction": true,
+  "lighting": {
+    "清晨": {
+      "daylight": 0.6259730838503502,
+      "night": 0.3740269161496498,
+      "streetIntensity": 21.693561136679687,
+      "sunIntensity": 0.37852595743814954,
+      "starsOpacity": 0.2992215329197198
+    },
+    "白昼": {
+      "daylight": 1,
+      "night": 0,
+      "streetIntensity": 0,
+      "sunIntensity": 2.9,
+      "starsOpacity": 0
+    },
+    "落日": {
+      "daylight": 0.6259730838503502,
+      "night": 0.3740269161496498,
+      "streetIntensity": 21.693561136679687,
+      "sunIntensity": 0.37852595743814954,
+      "starsOpacity": 0.2992215329197198
+    },
+    "夜晚": {
+      "daylight": 0,
+      "night": 1,
+      "streetIntensity": 58,
+      "sunIntensity": 0,
+      "starsOpacity": 0.8
+    }
+  },
+  "movedNPCs": 11,
+  "gait": [
+    {
+      "kind": "man",
+      "maxStanceDrift": 4.988265356331567e-11,
+      "maxStanceHeightError": 5.303443795234841e-09,
+      "idleBlend": 3.7751345442790783e-11,
+      "idleFeet": [
+        {
+          "side": "L",
+          "forward": 1.0079609233225084e-11,
+          "height": 0.0801,
+          "phase": 0.9999999999999989,
+          "stance": false,
+          "world": [
+            -0.09256000071763992,
+            0.22009999458881152,
+            0.8900000000100782
+          ]
+        },
+        {
+          "side": "R",
+          "forward": -6.719739488816723e-12,
+          "height": 0.0801,
+          "phase": 0.4999999999999989,
+          "stance": true,
+          "world": [
+            0.09256000071763992,
+            0.22009999458881158,
+            0.8899999999932788
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "woman",
+      "maxStanceDrift": 4.228867256372837e-12,
+      "maxStanceHeightError": 4.494446481650982e-10,
+      "idleBlend": 3.7751345442790783e-11,
+      "idleFeet": [
+        {
+          "side": "L",
+          "forward": 9.343457997090666e-12,
+          "height": 0.07425,
+          "phase": 0.9999999999999989,
+          "stance": false,
+          "world": [
+            1.9244960024952888,
+            0.21425000045857528,
+            0.8250000000093427
+          ]
+        },
+        {
+          "side": "R",
+          "forward": -6.228971998060444e-12,
+          "height": 0.07425,
+          "phase": 0.4999999999999989,
+          "stance": true,
+          "world": [
+            2.075503997504711,
+            0.21425000045857534,
+            0.8249999999937703
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "elder",
+      "maxStanceDrift": 7.351308450864735e-11,
+      "maxStanceHeightError": 9.977665277327574e-09,
+      "idleBlend": 3.7751345442790783e-11,
+      "idleFeet": [
+        {
+          "side": "L",
+          "forward": 7.230326435930464e-12,
+          "height": 0.07335,
+          "phase": 0.9999999999999989,
+          "stance": false,
+          "world": [
+            3.9203255996108055,
+            0.21335001018037175,
+            0.638416666673898
+          ]
+        },
+        {
+          "side": "R",
+          "forward": -4.820217623953642e-12,
+          "height": 0.07335,
+          "phase": 0.4999999999999989,
+          "stance": true,
+          "world": [
+            4.0796744003891945,
+            0.21335001018037175,
+            0.6384166666618475
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "child",
+      "maxStanceDrift": 1.1510108144374698e-10,
+      "maxStanceHeightError": 4.810592008075432e-09,
+      "idleBlend": 3.7751345442790783e-11,
+      "idleFeet": [
+        {
+          "side": "L",
+          "forward": 6.6819881433739315e-12,
+          "height": 0.053099999999999994,
+          "phase": 0.9999999999999989,
+          "stance": false,
+          "world": [
+            5.941707998514175,
+            0.19310000464528643,
+            0.5899999987786689
+          ]
+        },
+        {
+          "side": "R",
+          "forward": -4.454658762249288e-12,
+          "height": 0.053099999999999994,
+          "phase": 0.4999999999999989,
+          "stance": true,
+          "world": [
+            6.058292001485825,
+            0.19310000464528648,
+            0.5899999987675323
+          ]
+        }
+      ]
+    }
+  ]
+}
