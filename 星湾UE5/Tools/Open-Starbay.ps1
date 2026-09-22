@@ -2,14 +2,15 @@ param([string]$EngineRoot, [switch]$ImportScene)
 $ErrorActionPreference = 'Stop'
 $taskProjectRoot = Split-Path -Parent $PSScriptRoot
 $taskProjectFile = Join-Path $taskProjectRoot 'StarbayUE5.uproject'
+$taskProjectVersion = (Get-Content -LiteralPath $taskProjectFile -Raw | ConvertFrom-Json).EngineAssociation
 if (-not $EngineRoot) {
     $taskManifest = 'C:\ProgramData\Epic\UnrealEngineLauncher\LauncherInstalled.dat'
     if (Test-Path -LiteralPath $taskManifest) {
         $taskInstalled = (Get-Content -LiteralPath $taskManifest -Raw | ConvertFrom-Json).InstallationList
-        $EngineRoot = ($taskInstalled | Where-Object { $_.AppName -like 'UE_5*' } | Sort-Object AppName -Descending | Select-Object -First 1).InstallLocation
+        $EngineRoot = ($taskInstalled | Where-Object { $_.AppName -eq "UE_$taskProjectVersion" } | Select-Object -First 1).InstallLocation
     }
 }
-if (-not $EngineRoot) { throw '尚未发现 UE5。请先在 Epic 安装 Unreal Engine，再运行此脚本；也可传入 -EngineRoot。' }
+if (-not $EngineRoot) { throw "尚未发现项目指定的 UE $taskProjectVersion。请等待 Epic 完成安装，再运行此脚本；其他引擎版本需显式传入 -EngineRoot。" }
 $taskEditor = Join-Path $EngineRoot 'Engine\Binaries\Win64\UnrealEditor.exe'
 if (-not (Test-Path -LiteralPath $taskEditor)) { throw "未找到 UnrealEditor.exe：$taskEditor" }
 $taskArgs = @("`"$taskProjectFile`"")
@@ -20,5 +21,18 @@ if ($ImportScene) {
     $taskImportScript = Join-Path $PSScriptRoot 'bootstrap_scene.py'
     $taskArgs += "-ExecutePythonScript=`"$taskImportScript`""
 }
-# The user explicitly requested an interactive engine editor, so a visible window is intentional.
-Start-Process -FilePath $taskEditor -ArgumentList $taskArgs -WorkingDirectory $taskProjectRoot
+# Automation hosts can omit standard Windows CPU variables. Restore only this
+# child process environment; never write persistent user or machine settings.
+$taskStartInfo = New-Object System.Diagnostics.ProcessStartInfo
+$taskStartInfo.FileName = $taskEditor
+$taskStartInfo.Arguments = $taskArgs -join ' '
+$taskStartInfo.WorkingDirectory = $taskProjectRoot
+$taskStartInfo.UseShellExecute = $false
+foreach ($taskName in @('PROCESSOR_ARCHITECTURE','OS','PROCESSOR_IDENTIFIER','PROCESSOR_LEVEL','PROCESSOR_REVISION','NUMBER_OF_PROCESSORS')) {
+    $taskValue = [Environment]::GetEnvironmentVariable($taskName, 'Machine')
+    if (-not [string]::IsNullOrWhiteSpace($taskValue)) { $taskStartInfo.EnvironmentVariables[$taskName] = $taskValue }
+}
+# The user requested an interactive editor, so its visible window is intentional.
+$taskEditorProcess = [System.Diagnostics.Process]::Start($taskStartInfo)
+Write-Output ([pscustomobject]@{ProcessId=$taskEditorProcess.Id; EngineRoot=$EngineRoot; Project=$taskProjectFile})
+$taskEditorProcess.Dispose()

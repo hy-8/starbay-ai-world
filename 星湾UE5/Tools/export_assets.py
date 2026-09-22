@@ -1,15 +1,27 @@
 """Blender-only asset preparation. Does not require or modify an Unreal installation.
 Exports one baked static mesh per scene layer, plus imported doors kept separate.
 The source GLBs and original .blend remain untouched.
+Run in a separate background Blender process. Existing FBX exports are preserved;
+use -- --output-dir <fresh-folder> to prepare a new asset version.
 """
-import bpy, json, hashlib, math
+import bpy, json, hashlib, argparse, sys
 from pathlib import Path
-from mathutils import Matrix
 
 PROJECT=Path(__file__).resolve().parents[1]
 GAME=PROJECT.parent/'星湾街区_3D探索'
-OUT=PROJECT/'SourceAssets'
-OUT.mkdir(exist_ok=True)
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--output-dir',type=Path,default=PROJECT/'SourceAssets')
+args=parser.parse_args(sys.argv[sys.argv.index('--')+1:] if '--' in sys.argv else [])
+OUT=args.output_dir.resolve()
+# reset() below destroys the current in-memory scene. Never run it in an interactive
+# editor where there may be unsaved manual changes; background export owns its scene.
+if not bpy.app.background:
+    raise RuntimeError('Use blender --background --factory-startup --python export_assets.py; the open editor scene must be preserved')
+if OUT.exists() and (list(OUT.glob('*.fbx')) or (OUT/'asset_manifest.json').exists()):
+    raise RuntimeError('Existing exports will not be overwritten. Pass -- --output-dir <fresh-folder>: '+str(OUT))
+for source in ('starbay_environment.glb','district_detail_v6.glb'):
+    if not (GAME/'assets'/source).is_file():raise RuntimeError('Missing source GLB: '+source)
+OUT.mkdir(parents=True,exist_ok=True)
 records=[]
 
 def reset():
@@ -19,6 +31,7 @@ def reset():
     bpy.context.scene.unit_settings.scale_length=1.0
 
 def export_objects(objects,name):
+    if not objects:raise RuntimeError('No mesh objects to export for '+name)
     bpy.ops.object.select_all(action='DESELECT')
     for ob in objects:ob.select_set(True)
     bpy.context.view_layer.objects.active=objects[0]
@@ -28,9 +41,9 @@ def export_objects(objects,name):
     bpy.ops.object.join()
     ob=bpy.context.object
     ob.name=name
-    # Canonical Unreal coordinates expressed as Blender meters before FBX conversion:
-    # UE X = Blender Y (north), UE Y = Blender X (east), UE Z = Blender Z.
-    # Standard FBX -Y/Z conversion is handled by UE; verify with exported calibration markers.
+    if not ob.data.vertices:raise RuntimeError('Empty mesh: '+name)
+    # Keep Blender world positions here. The UE bootstrap infers the FBX axis conversion
+    # from the three calibration meshes, then maps north to UE X and east to UE Y.
     dest=OUT/(name+'.fbx')
     bpy.ops.export_scene.fbx(filepath=str(dest),use_selection=True,object_types={'MESH'},
         apply_unit_scale=True,apply_scale_options='FBX_SCALE_UNITS',

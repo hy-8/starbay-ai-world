@@ -1,6 +1,6 @@
 {
   "date": "2026-09-22",
-  "stage": "UE5 scene and migration foundation",
+  "stage": "UE5 installation verification and protected scene import preparation",
   "engineInstalled": false,
   "ueSceneImportExecuted": false,
   "nativeGameplayPorted": false,
@@ -11,13 +11,20 @@
     "7 FBX assets with Blender round-trip verification",
     "6 CC0 PBR maps with verified checksums",
     "UE project configuration and import scripts",
-    "Blender preview"
+    "Blender preview",
+    "Epic EOS startup recovered with child-process Windows environment",
+    "source-geometry walking route audit",
+    "protected official Third Person template copy tool",
+    "UE 5.6 API corrections and read-only validation script (not engine-executed yet)"
   ],
   "nextRequired": [
-    "working Epic engine version catalog and UE5 installation",
+    "wait for Epic file verification and completed UE5 installation registration",
     "execute and fix import against installed editor",
     "add official Third Person template and validate movement/collision",
     "port NPC/AI, tasks and save",
     "package and run standalone Windows build"
-  ]
+  ],
+  "engineCatalogReady": true,
+  "engineDownloadCompleted": true,
+  "engineInstallationVerified": false
 }
