@@ -46,6 +46,8 @@ python Tools/install_third_person.py --engine-root 'D:\Program Files\Epic Games\
 
 `Tools/Start-Epic.ps1` 封装了这次修复：通过已安装的官方 EOS Bootstrapper 启动，不修改系统环境、注册表或登录信息；若 Epic 已运行则直接返回，不重启或中断下载。正常从桌面启动 Epic 无需此脚本。`Open-Starbay.ps1` 也只在新编辑器进程中补齐这些标准环境值。
 
+若已经开始安装，且希望安装完成后衔接首次导入，可运行 `python Tools/continue_after_install.py --engine-root 'D:\Program Files\Epic Games\UE_5.6'`。这是一次性流程：等待 Epic 登记安装完成，执行带冲突保护的模板复制，再启动编辑器导入；任何一步失败就停止，不自动重试、不覆盖既有资产。默认总等待上限为 120 分钟，进度在 `Saved/continuation_status.json`，详细输出可重定向至本地日志。它不执行玩法验收或打包，也不更新交付完成状态。
+
 ## 重新生成资产
 
 以下命令均在 `星湾UE5` 目录执行，并使用独立的后台 Blender 进程。导出脚本会拒绝在交互式 Blender 中运行，避免清空正在编辑的场景。
@@ -92,6 +94,7 @@ python Tools/fetch_materials.py
 | `Tools/Open-Starbay.ps1` | 发现已安装引擎、正常打开或首次导入 |
 | `Tools/Start-Epic.ps1` | 在缺少标准进程环境时，通过官方入口启动 Epic |
 | `Tools/install_third_person.py` | 从完整安装的同版本官方模板复制角色、动画和输入依赖 |
+| `Tools/continue_after_install.py` | 一次性等待安装完成，然后接入模板与首次导入 |
 | `Tools/validate_scene.py` | 当前编辑器地图的结构与稀疏碰撞射线检查 |
 | `SourceAssets/asset_manifest.json` | 导出源、包围盒、大小与校验和 |
 | `Validation/asset_validation.json` | 已执行的 Blender 回读验证结果 |
