@@ -1,0 +1,11 @@
+{
+  "renderer": "Blender Cycles",
+  "samples": 32,
+  "notUnrealScreenshot": true,
+  "cameraBlenderMeters": [
+    54,
+    -34,
+    4
+  ],
+  "source": "星湾街区_第六版场景.blend"
+}

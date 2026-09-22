@@ -1,0 +1,62 @@
+[
+  {
+    "asset": "cobblestone_floor_01",
+    "role": "color",
+    "file": "cobblestone_floor_01_color.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/cobblestone_floor_01/cobblestone_floor_01_diff_1k.jpg",
+    "license": "CC0-1.0",
+    "sourcePage": "https://polyhaven.com/a/cobblestone_floor_01",
+    "sha256": "7630d6a59501cab4d2295b2be47bad892b8dae49895b4bee6bc26fd45c423e05",
+    "bytes": 459525
+  },
+  {
+    "asset": "cobblestone_floor_01",
+    "role": "normal",
+    "file": "cobblestone_floor_01_normal.png",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/cobblestone_floor_01/cobblestone_floor_01_nor_dx_1k.png",
+    "license": "CC0-1.0",
+    "sourcePage": "https://polyhaven.com/a/cobblestone_floor_01",
+    "sha256": "b03766928546ca72527ecf01fd5bf3f5dad27e2b50fc4b21a7b563203ec7cd9b",
+    "bytes": 6132606
+  },
+  {
+    "asset": "cobblestone_floor_01",
+    "role": "roughness",
+    "file": "cobblestone_floor_01_roughness.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/cobblestone_floor_01/cobblestone_floor_01_rough_1k.jpg",
+    "license": "CC0-1.0",
+    "sourcePage": "https://polyhaven.com/a/cobblestone_floor_01",
+    "sha256": "18a5c4320378bc7eb17b2bc14981331912b1f0ff3100ced0a97aa59234377d41",
+    "bytes": 327745
+  },
+  {
+    "asset": "brown_planks_03",
+    "role": "color",
+    "file": "brown_planks_03_color.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brown_planks_03/brown_planks_03_diff_1k.jpg",
+    "license": "CC0-1.0",
+    "sourcePage": "https://polyhaven.com/a/brown_planks_03",
+    "sha256": "8dfae22286fa9bb0ed62ce7326e8bc14c284e567d38fd64b5a453838080ecf19",
+    "bytes": 570668
+  },
+  {
+    "asset": "brown_planks_03",
+    "role": "normal",
+    "file": "brown_planks_03_normal.png",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/brown_planks_03/brown_planks_03_nor_dx_1k.png",
+    "license": "CC0-1.0",
+    "sourcePage": "https://polyhaven.com/a/brown_planks_03",
+    "sha256": "0338e8d3a8b7340973f0b9ea77bbfdda12dc02787acee3c1df81d0e4b8421a32",
+    "bytes": 1642307
+  },
+  {
+    "asset": "brown_planks_03",
+    "role": "roughness",
+    "file": "brown_planks_03_roughness.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brown_planks_03/brown_planks_03_rough_1k.jpg",
+    "license": "CC0-1.0",
+    "sourcePage": "https://polyhaven.com/a/brown_planks_03",
+    "sha256": "0395027c927a48b62c5d0615a055a369e5718c01b11189f53aaac5ff5879c05a",
+    "bytes": 222197
+  }
+]

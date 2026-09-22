@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "scope": "FBX Blender round trip, bounds, vertex count, finite coordinates, checksums",
+  "unrealImportTested": false,
+  "assets": [
+    {
+      "asset": "SM_District.fbx",
+      "boundsErrorMeters": 1.52587890625e-05,
+      "vertices": 983559,
+      "sha256Verified": true
+    },
+    {
+      "asset": "SM_EntryDoor_L.fbx",
+      "boundsErrorMeters": 1.9073486328125e-06,
+      "vertices": 24,
+      "sha256Verified": true
+    },
+    {
+      "asset": "SM_EntryDoor_R.fbx",
+      "boundsErrorMeters": 1.9073486328125e-06,
+      "vertices": 24,
+      "sha256Verified": true
+    },
+    {
+      "asset": "SM_CourtyardDetails.fbx",
+      "boundsErrorMeters": 7.62939453125e-06,
+      "vertices": 269607,
+      "sha256Verified": true
+    },
+    {
+      "asset": "SM_Calibration_Origin.fbx",
+      "boundsErrorMeters": 5.960464477539063e-08,
+      "vertices": 8,
+      "sha256Verified": true
+    },
+    {
+      "asset": "SM_Calibration_East.fbx",
+      "boundsErrorMeters": 8.940696716308594e-07,
+      "vertices": 8,
+      "sha256Verified": true
+    },
+    {
+      "asset": "SM_Calibration_North.fbx",
+      "boundsErrorMeters": 8.940696716308594e-07,
+      "vertices": 8,
+      "sha256Verified": true
+    }
+  ]
+}

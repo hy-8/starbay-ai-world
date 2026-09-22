@@ -1,0 +1,148 @@
+{
+  "schema": 1,
+  "units": "meters in source, centimeters in Unreal",
+  "sourceGameToUnreal": "X=-game.z*100, Y=game.x*100, Z=game.y*100",
+  "importTransformStatus": "requires Unreal calibration verification",
+  "assets": [
+    {
+      "name": "SM_District",
+      "file": "SM_District.fbx",
+      "bytes": 21301756,
+      "sha256": "04e538f1e8f58b9dcfd74f601219467371b53e882d1705a06aadd4fdf247c688",
+      "vertices": 983559,
+      "faces": 1030454,
+      "blenderBoundsMeters": [
+        [
+          -150.0,
+          -135.0,
+          -0.800000011920929
+        ],
+        [
+          150.0,
+          135.0,
+          75.0999984741211
+        ]
+      ]
+    },
+    {
+      "name": "SM_EntryDoor_L",
+      "file": "SM_EntryDoor_L.fbx",
+      "bytes": 15740,
+      "sha256": "67854d10fc9f102d994a2226b9d79bbaab41b873c0d028264711c41e0d937d74",
+      "vertices": 24,
+      "faces": 12,
+      "blenderBoundsMeters": [
+        [
+          22.049999237060547,
+          20.969999313354492,
+          0.07500004768371582
+        ],
+        [
+          25.950000762939453,
+          21.030000686645508,
+          3.125
+        ]
+      ]
+    },
+    {
+      "name": "SM_EntryDoor_R",
+      "file": "SM_EntryDoor_R.fbx",
+      "bytes": 15740,
+      "sha256": "12efe9ae8690fec3842f452b7978bedf7e57d8d573287ec1835a80cbaf86b602",
+      "vertices": 24,
+      "faces": 12,
+      "blenderBoundsMeters": [
+        [
+          26.049999237060547,
+          20.969999313354492,
+          0.07500004768371582
+        ],
+        [
+          29.950000762939453,
+          21.030000686645508,
+          3.125
+        ]
+      ]
+    },
+    {
+      "name": "SM_CourtyardDetails",
+      "file": "SM_CourtyardDetails.fbx",
+      "bytes": 5422220,
+      "sha256": "9e2fc97f724af3b4b3760fcfe5d5c3a9e7ad45ed658ac04af896e482752b87ad",
+      "vertices": 269607,
+      "faces": 123555,
+      "blenderBoundsMeters": [
+        [
+          -123.0,
+          -56.63999938964844,
+          0.07999999821186066
+        ],
+        [
+          107.80999755859375,
+          45.057064056396484,
+          6.258723735809326
+        ]
+      ]
+    },
+    {
+      "name": "SM_Calibration_Origin",
+      "file": "SM_Calibration_Origin.fbx",
+      "bytes": 12140,
+      "sha256": "4849a187322557b20aa5c271ba5e0575a365e9f9487db88529343aedfe16a24d",
+      "vertices": 8,
+      "faces": 6,
+      "blenderBoundsMeters": [
+        [
+          -0.5,
+          -0.5,
+          0.0
+        ],
+        [
+          0.5,
+          0.5,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "SM_Calibration_East",
+      "file": "SM_Calibration_East.fbx",
+      "bytes": 12140,
+      "sha256": "eda93b85b7fc199239f9af8f7a9065a1fad10655b0e9615ecfafd940b824eaea",
+      "vertices": 8,
+      "faces": 6,
+      "blenderBoundsMeters": [
+        [
+          9.5,
+          -0.5,
+          0.0
+        ],
+        [
+          10.5,
+          0.5,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "SM_Calibration_North",
+      "file": "SM_Calibration_North.fbx",
+      "bytes": 12156,
+      "sha256": "eb1f32145a365feabdcde4adaac481e61cdc59416d3183b90624a5db38b42562",
+      "vertices": 8,
+      "faces": 6,
+      "blenderBoundsMeters": [
+        [
+          -0.5,
+          9.5,
+          0.0
+        ],
+        [
+          0.5,
+          10.5,
+          1.0
+        ]
+      ]
+    }
+  ]
+}

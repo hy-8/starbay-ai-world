@@ -65,3 +65,27 @@
 
 !/复用工作流/
 !/复用工作流/*.md
+
+!/星湾街区_3D探索/build_detail_v6.py
+!/星湾街区_3D探索/assets/district_detail_v6.glb
+!/星湾街区_3D探索/assets/district_detail_v6.json
+!/星湾UE5/
+!/星湾UE5/README.md
+!/星湾UE5/THIRD_PARTY_NOTICES.md
+!/星湾UE5/StarbayUE5.uproject
+!/星湾UE5/Config/
+!/星湾UE5/Config/*.ini
+!/星湾UE5/Tools/
+!/星湾UE5/Tools/*.py
+!/星湾UE5/Tools/*.ps1
+!/星湾UE5/Design/
+!/星湾UE5/Design/*.md
+!/星湾UE5/Validation/
+!/星湾UE5/Validation/*.json
+!/星湾UE5/Preview/
+!/星湾UE5/Preview/*.png
+!/星湾UE5/Preview/*.json
+!/星湾UE5/SourceAssets/
+!/星湾UE5/SourceAssets/asset_manifest.json
+!/星湾UE5/SourceAssets/Materials/
+!/星湾UE5/SourceAssets/Materials/material_sources.json

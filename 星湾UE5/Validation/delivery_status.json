@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-22",
+  "stage": "UE5 scene and migration foundation",
+  "engineInstalled": false,
+  "ueSceneImportExecuted": false,
+  "nativeGameplayPorted": false,
+  "windowsExecutableBuilt": false,
+  "completed": [
+    "original courtyard and district detail geometry",
+    "separate Blender scene",
+    "7 FBX assets with Blender round-trip verification",
+    "6 CC0 PBR maps with verified checksums",
+    "UE project configuration and import scripts",
+    "Blender preview"
+  ],
+  "nextRequired": [
+    "working Epic engine version catalog and UE5 installation",
+    "execute and fix import against installed editor",
+    "add official Third Person template and validate movement/collision",
+    "port NPC/AI, tasks and save",
+    "package and run standalone Windows build"
+  ]
+}
