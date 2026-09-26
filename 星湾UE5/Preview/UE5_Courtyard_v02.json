@@ -1,0 +1,10 @@
+{
+  "source": "Unreal Engine 5.6.1 native high-resolution editor viewport screenshot",
+  "file": "UE5_Courtyard_v02.png",
+  "width": 1600,
+  "height": 900,
+  "date": "2026-09-26",
+  "camera": "Courtyard_Review_Camera",
+  "notBlenderRender": true,
+  "notes": "Saved scene and revised leaf/glow materials; editor screenshot is not proof of packaged game performance."
+}

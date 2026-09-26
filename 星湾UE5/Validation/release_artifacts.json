@@ -1,0 +1,19 @@
+{
+  "version": "ue5-playable-v0.2.0",
+  "assets": [
+    {
+      "file": "Starbay-UE5-Windows-v0.2.0.zip",
+      "bytes": 390357886,
+      "sha256": "01761f6a90a6a5d2398f127773c5f0c81f3151216316b346604b79bdf266222a",
+      "entries": 45,
+      "zipCrcPassed": true
+    },
+    {
+      "file": "Starbay-UE5-Project-v0.2.0.zip",
+      "bytes": 118358683,
+      "sha256": "f27754e1574393c8580a21dbdf9b6facf2cad7a8978b2fee7afaf5dc133ea6b1",
+      "entries": 370,
+      "zipCrcPassed": true
+    }
+  ]
+}

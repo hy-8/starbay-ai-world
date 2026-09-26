@@ -1,65 +1,89 @@
 # 星湾 · Unreal Engine 5
 
-2026-09-22 起，本项目以 **UE5 Windows 独立游戏**为后续方向。浏览器原型保留作玩法和本地 AI 协议参考。
+星湾是一个虚构街区。主线为 **UE5 Windows 独立游戏**；浏览器原型保留作玩法与本地 AI 协议参考。当前已进入第三人称可玩原型阶段，距离完整开放世界仍有明显差距。
 
-## 当前交付是什么
+## 当前状态 · 2026-09-26
 
-当前是 **引擎迁移与场景资产基础**，不是已经完成的 UE5 游戏。
+本机使用 UE **5.6.1**，已安装到 `D:\Program Files\Epic Games\UE_5.6`。
 
-- 已创建 `.uproject`、渲染配置、场景导入与坐标校准脚本。
-- 已制作风栖茶庭：石铺地、喷泉水池、木廊、长椅、桌上物件、灯串和独立叶片树冠。
-- 已补充夜市货品、木箱、招牌、旗帜、绿化与长廊细节。
-- 已从实际场景导出主街区、新增细节、左右门扇和三份一米校准体，共 7 个 FBX。
-- FBX 已在 Blender 回读，验证尺寸、顶点数量、有限坐标与文件校验和。
-- `Preview/茶庭_Blender资产预览.png` 是 Blender 资产预览，**不是 UE5 截图**。
-- 引擎内导入、碰撞、第三人称控制、原生 NPC、AI 对话、任务、存档、帧率与 Windows 打包仍需在 UE5 安装后验证和实现。没有验证前，不能声称已交付这些能力。
+| 项目 | 已取得的实际证据 | 边界 |
+|---|---|---|
+| 场景 | 7 个 FBX 已导入并完成轴向、米/厘米校准；`Content/Starbay/Maps/L_Starbay.umap` 已实际保存并重新打开 | 场景仍以两大片合并静态网格为主 |
+| 官方角色 | 已复制并校验 246 个 Third Person 模板及共享资源文件，共 135,456,610 字节，约 135 MB；地图已配置官方 GameMode | 使用 Epic 模板角色，尚未迁移原型中的四类居民 |
+| 编辑器碰撞 | 当前地图结构检查、77 条地面/通道射线及障碍对照通过，报告中无检查问题 | 稀疏射线不能证明完整角色胶囊、全部路线或相机通行 |
+| 原生 PIE | 真实角色出生、原生移动与跳跃通过；沿测试方向移动 317.743 cm，跳跃最大上升 127.53 cm，并稳定落地 | 使用角色输入/跳跃接口驱动，没有传送；未完成键盘映射、完整路线与视觉步态人工验收 |
+| 独立程序 | 一次使用引擎预编译 Development 目标的真实 `BuildCookRun` 返回退出码 0；生成的 Windows `.exe` 已直接打开 | 独立版完整线路、键盘操作、稳定性和性能尚未全面验收 |
+| 材质修正 | 已复制并调整叶片/发光材质，在地图组件上设置覆盖，保留原网格与材质 | UE 原生截图已检查叶片背面和灯串效果；尚未进行性能基准 |
 
-## 首次进入 UE5
+**NPC 自主活动、Qwen 对话与目的地决策、任务、昼夜、存档尚未迁移到 UE。** 原浏览器版的这些功能不能算作独立游戏已实现。任意玩家上传场景自动生成可玩世界仍是后续方向。
 
-1. 在 Epic Games Launcher 安装 UE5，建议安装至 D 盘。当前项目先以 5.6 API 为目标；安装其他 5.x 版本时要实际验证导入脚本。
-2. 安装选项保留核心引擎、Windows 支持、模板与功能包；首轮不需要 Android、iOS、Linux 支持或巨大的编辑器调试符号。
-3. 使用发布包内的 `SourceAssets`，或按下面命令重新导出。
-4. 先保存编辑器中打开的地图，再运行 `Tools/Open-Starbay.ps1 -ImportScene`。启动脚本只自动选择 `.uproject` 指定的引擎版本；若自动发现失败，传入 `-EngineRoot 'D:\Program Files\Epic Games\UE_5.6'`，以实际安装位置为准。
-5. 导入前会检查未保存地图、目标地图是否已存在、整个导入目录是否已有资产、清单中的必需模型与重复名称，以及全部 FBX 和可选 PBR 文件的路径、校验和、材质角色。通过这些检查后才导入 FBX、校准比例和水平轴、创建场景、设置复杂静态碰撞、太阳、天空、雾、后处理和玩家起点。原生开门逻辑尚未实现，首次场景不放置阻挡入口的门扇。
-6. 查看 `Saved/scene_import_report.json`。只有 `status=scene_created` 且校准通过，才能继续验收场景。若失败，保存日志并修复具体错误；脚本不会自动清理失败导入留下的资产，也不会覆盖既有地图。重试时应在工程副本中工作，或将脚本的 `CONTENT` 改为全新的导入目录；若地图已生成，还需使用新的 `MAP` 路径，并同步地图配置及 `Open-Starbay.ps1` 中的地图存在性检查路径。
-7. 使用官方 Third Person 功能包，将关卡 GameMode 设为 `BP_ThirdPersonGameMode`，检查角色、动画、相机、碰撞与起点。下面的模板脚本应在首次场景导入前运行，场景脚本检测到该蓝图后会自动使用它；也可从编辑器添加功能包。默认飞行 Pawn 不算第三人称玩法完成。
+当前采用 DX12、SM6 与 Lumen。实际运行中出现了巨型非 Nanite 网格导致的 **Virtual Shadow Map overflow**；目前配置已改为常规阴影。下一步需拆分场景、分离装饰碰撞，再评估 Nanite 与虚拟阴影，而不是仅放大缓存。最终修订 EXE 已独立加载，启动视图未再出现该阴影警告；稳定帧率仍待测量。
 
-首次导入前 `.umap` 尚不存在，项目地图设置指向待生成的 `L_Starbay`。这是预期准备状态；不要把只有 `.uproject` 的工程描述成完整可玩游戏。
+`Preview/UE5_Courtyard_v02.png` 是 UE 编辑器原生截图，`Preview/UE5_Windows_v02.png` 是最终独立游戏的原生 F9 截图。
 
-Unreal 的 `new_level()` 会关闭当前地图且不保存。脚本因此在开始导入前、创建地图前各检查一次未保存地图；发现改动就停止，由使用者先保存或主动放弃这些改动。它不会代替使用者保存既有地图。末尾仅保存本次导入目录，资产保存失败也会记入失败报告。这些保护已完成静态与模拟检查，仍需安装引擎后验证真实导入行为。
+风栖茶庭、喷泉水池、木廊、夜市、货品、灯串和新植被已进入场景。`Preview/茶庭_Blender资产预览.png` 仍是 **Blender 资产预览，不是 UE 实机截图**。
 
-首次行走按 [首次步行验收](Design/首次步行验收.md) 核对出生点、门洞与各区域。源 FBX 射线检查发现浏览器的部分导航线穿过树、入口柱和单车；原导航图不能直接作为 UE 原生导航使用。
+## 打开、验证与打包
 
-在引擎完整安装后，从 `星湾UE5` 目录运行一次：
+以下命令在 `星湾UE5` 目录执行。已有地图时直接正常打开，不再运行首次导入：
+
+```powershell
+& .\Tools\Open-Starbay.ps1
+```
+
+启动脚本只自动选择 `.uproject` 指定的引擎版本；必要时传入 `-EngineRoot 'D:\Program Files\Epic Games\UE_5.6'`。DDC、Zen 和临时目录默认位于引擎所在盘的 `UECache`，本机即 `D:\UECache`，也可用 `-CacheRoot` 指定。路径与缺失的标准 CPU 环境变量仅作用于启动进程，不修改系统全局环境或注册表。
+
+在已打开的编辑器 Python 环境执行对应脚本：
+
+- `Tools/validate_scene.py`：只读检查当前地图，不切图、不保存、不启动 PIE；写入 `Saved/scene_validation_report.json`。
+- `Tools/smoke_play.py`：启动自身管理的真实 PIE，检查出生、短距离原生移动、跳跃和稳定落地，然后结束该测试会话；写入 `Saved/native_play_smoke.json`。不代替完整路线、手动键盘或性能验收。
+- `Tools/refine_materials.py`：备份地图文件，在全新的 `Art_v02` 目录创建材质副本并保存地图覆盖。已执行过的目标会被保护，不能反复重跑覆盖。
+
+后续手动验收遵循 [首次步行验收路线](Design/首次步行验收.md)。源 FBX 检查发现旧导航线穿过树、入口柱和单车；不能直接把浏览器导航图当作 UE 原生导航。
+
+打包使用：
+
+```powershell
+& .\Tools\Package-Starbay.ps1
+```
+
+默认在 `Builds` 下创建唯一输出目录，也可通过 `-OutputDirectory` 指定**空目录**。脚本使用已安装引擎的预编译 Windows Development 目标，跳过 C++ 编译；执行 cook、stage、pak/IoStore、package 和 archive，并在 `Saved/package-*.json`、`.log` 中记录实际退出码及 exe 是否存在。打包成功后仍需单独运行生成的游戏。
+
+本机未安装可用 Windows SDK / Visual Studio C++ 工具链，Turnkey 的 SDK 检查显示无有效 SDK，**但上述 Blueprint 预编译路线已经实际打包成功**。当前不因此补装工具链。以后增加 C++ 或需要重新编译的插件时，再准备兼容 SDK 与 MSVC；不要通过随意禁用默认插件来改变预编译目标集合。
+
+发布版本为 [ue5-playable-v0.2.0](https://github.com/hy-8/starbay-ai-world/releases/tag/ue5-playable-v0.2.0)，最终修订版位于 `../星湾发布/UE5-v0.2.0/Windows/StarbayUE5.exe`。已重新打包并直接运行，使用 Enhanced Input 开发命令检查前进、柱子碰撞与起跳落地；物理键盘长按和全部路线仍待完整验收。操作见 [试玩说明](Design/试玩说明_v0.2.0.md)，证据见 `Validation/windows_package.json` 与 `windows_runtime.json`。
+
+## 历史导入结果与重导保护
+
+首次导入已完成模型导入、校准、GameMode 设置和地图保存，但脚本末尾曾使用错误的 Python 保活类名，导致 `Saved/scene_import_report.json` 的历史状态保留为 `failed`。正确导出名是 `unreal.EditorPythonScripting`。之后修正调用、正常重开已保存地图，并通过独立场景检查与 PIE 测试；没有为消除历史错误而重导或覆盖地图。
+
+因此，当前状态应结合已存地图、`scene_validation_report.json` 与 `native_play_smoke.json` 判断。历史失败报告不改写成成功；新的首次导入流程仍须检查其实际完成状态。
+
+仅在**没有既有地图和导入资产的新工程或受保护的副本**中，才执行首次流程：
 
 ```powershell
 python Tools/install_third_person.py --engine-root 'D:\Program Files\Epic Games\UE_5.6'
+& .\Tools\Open-Starbay.ps1 -ImportScene
 ```
 
-它复制本机官方 ThirdPerson 模板及 Characters、Input、LevelPrototyping 三组共享资源，保留 `/Game` 路径，并加入模板的 `DefaultInput.ini`。全部目标先检查冲突，已存在的同名文件不会覆盖；也不会替换本项目的 `.uproject`、地图或渲染设置。复制记录和 SHA-256 位于 `Saved/template_import_report.json`。这些 Epic 模板资源遵循引擎许可，不属于项目原创资产。
+模板脚本复制官方 ThirdPerson、Characters、Input、LevelPrototyping 资源并加入模板输入配置，先检查全部目标冲突，不覆盖同名文件；记录位于 `Saved/template_import_report.json`。这些资源受 Epic 许可约束，见 [第三方说明](THIRD_PARTY_NOTICES.md)。
 
-地图打开后，可在编辑器 Python 环境执行 `Tools/validate_scene.py`。它只检查当前地图的结构、出生点、碰撞设置和少量地面/通道射线，输出 `Saved/scene_validation_report.json`；不切图、不保存地图、不启动 PIE。仍须用真实角色进行走跑跳、镜头和门洞验收。
+场景导入先检查未保存地图、既有目标地图、整个导入目录、必需模型及重复名称，以及 FBX/PBR 源文件和校验和。创建地图前还会再次检查未保存地图，因为 Unreal 的 `new_level()` 会关闭当前地图且不保存。脚本不代替使用者保存既有改动，也不自动清理失败导入的部分结果。重试优先使用工程副本和新的 `CONTENT` 目录；若需新地图，还要同步 `MAP`、地图配置及启动脚本的存在性检查路径。
 
-## Epic 启动故障的恢复
-
-2026-09-22 实际遇到 Epic 的“Online Services Unavailable”：安装文件完整，但 EOS 日志报 `Unsupported architecture: unknown`，退出码 71。原因是启动它的自动化进程缺少 Windows 常规 CPU 环境变量。仅恢复新子进程的机器环境值后，EOS 日志确认 `MAINSERVICE_READY`，UE 5.6.1 下载正常开始。
-
-`Tools/Start-Epic.ps1` 封装了这次修复：通过已安装的官方 EOS Bootstrapper 启动，不修改系统环境、注册表或登录信息；若 Epic 已运行则直接返回，不重启或中断下载。正常从桌面启动 Epic 无需此脚本。`Open-Starbay.ps1` 也只在新编辑器进程中补齐这些标准环境值。
-
-若已经开始安装，且希望安装完成后衔接首次导入，可运行 `python Tools/continue_after_install.py --engine-root 'D:\Program Files\Epic Games\UE_5.6'`。这是一次性流程：等待 Epic 登记安装完成，执行带冲突保护的模板复制，再启动编辑器导入；任何一步失败就停止，不自动重试、不覆盖既有资产。默认总等待上限为 120 分钟，进度在 `Saved/continuation_status.json`，详细输出可重定向至本地日志。它不执行玩法验收或打包，也不更新交付完成状态。
+2026-09-22 的 Epic 登录后安装失败源于自动化子进程缺少标准 CPU 环境变量；`Tools/Start-Epic.ps1` 使用官方 EOS 入口并仅补齐子进程环境。引擎现已安装，正常继续开发不需要再次运行等待安装的 `continue_after_install.py`。
 
 ## 重新生成资产
 
-以下命令均在 `星湾UE5` 目录执行，并使用独立的后台 Blender 进程。导出脚本会拒绝在交互式 Blender 中运行，避免清空正在编辑的场景。
+以下操作使用独立后台 Blender。FBX 导出脚本拒绝在交互式 Blender 中运行，避免清空正在编辑的场景。
 
-仅在需要重新制作增量场景时运行下面的建模命令。先保护 `星湾街区_第六版场景.blend`、`assets/星湾_第六版增量场景.blend` 及其对应增量资产的手工修改；建模脚本本身仍会更新这些生成文件，FBX 导出保护不涵盖这一步。
+仅在需要重新制作增量模型时运行建模命令。先保护游戏目录中的 `星湾街区_第六版场景.blend`、`assets/星湾_第六版增量场景.blend` 及增量资产的手工修改；**建模脚本仍会更新这些生成文件，FBX 的防覆盖保护不涵盖这一步**。
 
 ```powershell
 $taskBlender = 'D:\tools\Blender\blender-4.5.9-windows-x64\blender.exe'
 & $taskBlender --background --factory-startup --python '..\星湾街区_3D探索\build_detail_v6.py'
 ```
 
-已有交付包含 FBX，再次执行默认导出会主动停止，不会覆盖。用 `--` 后的 `--output-dir` 指定全新候选目录；脚本会创建该目录，但若其中已有任意 FBX 或 `asset_manifest.json`，仍会拒绝运行：
+已有交付包含 FBX，默认导出会主动停止。指定全新候选目录，不覆盖已交付文件：
 
 ```powershell
 $taskBlender = 'D:\tools\Blender\blender-4.5.9-windows-x64\blender.exe'
@@ -67,38 +91,35 @@ $taskAssetVersion = Join-Path $PWD ('SourceAssets_candidates\' + (Get-Date -Form
 & $taskBlender --background --factory-startup --python 'Tools\export_assets.py' -- --output-dir $taskAssetVersion
 ```
 
-只有尚无 FBX 和清单的全新工程，才可以省略 `--output-dir`，首次输出到默认 `SourceAssets`。导出只读取游戏目录中的两个 GLB，不修改原始 `.blend` 或 GLB。
+目录已有任意 FBX 或 `asset_manifest.json` 时仍会拒绝执行。只有无 FBX 和清单的新工程才可省略 `--output-dir`，首次输出到 `SourceAssets`。导出只读取两个 GLB，不修改原始 `.blend` 或 GLB。
 
-**`--output-dir` 仅改变 FBX 导出位置。** `verify_assets.py`、`fetch_materials.py` 和 Unreal 导入脚本仍读取工程内的 `SourceAssets`，不会自动跟随候选目录。采用新版本前，建议在工程副本中保留旧 `SourceAssets` 完整备份，再以候选目录作为该副本的 `SourceAssets`，并保留原有 `Materials` 子目录或重新获取材质。不要把旧、新 FBX 与不同版本清单混放。完成这一步后，再针对实际采用的 `SourceAssets` 执行回读验证：
+**`--output-dir` 仅改变 FBX 导出位置。** 验证、材质获取和 UE 导入脚本仍读取工程的 `SourceAssets`。采用候选版本前，在工程副本中完整备份旧目录，再以新目录作为该副本的 `SourceAssets`；保留原 `Materials` 或重新获取，不混用旧、新模型与清单。切换完成后运行：
 
 ```powershell
-$taskBlender = 'D:\tools\Blender\blender-4.5.9-windows-x64\blender.exe'
 & $taskBlender --background --factory-startup --python 'Tools\verify_assets.py'
 python Tools/fetch_materials.py
 ```
 
-最后一项需要 Python `requests`，从 Poly Haven 公共 API 获取两组 1K CC0 材质，核对来源 MD5 并记录 SHA-256。已有完整材质时可跳过；材质文件和具体许可见 `SourceAssets/Materials/material_sources.json`。导入脚本对 DirectX 法线贴图使用 Normal Map 压缩、关闭 sRGB，并将粗糙度贴图设为线性数据。
+最后一项需要 Python `requests`，从 Poly Haven 获取两组 1K CC0 PBR 材质并核对 MD5、记录 SHA-256；已有完整材质时可跳过。导入对 DirectX 法线贴图使用 Normal Map 压缩并关闭 sRGB，粗糙度使用线性数据。
 
-`preview_assets.py` 读取游戏目录的 `星湾街区_第六版场景.blend`，生成 Blender 预览并更新 `Preview` 中的同名文件；它不是 FBX 回读验证或 Unreal 渲染。需要更新预览时再执行 `& $taskBlender --background --factory-startup --python 'Tools\preview_assets.py'`。旧的 `星湾街区.blend` 保持不动。
+`preview_assets.py` 读取游戏目录的第六版 `.blend`，更新 `Preview` 中的 Blender 预览；它不是 FBX 回读或 UE 渲染验证。旧 `星湾街区.blend` 保持不动。
 
-## 文件索引
+## 文件与交付边界
 
-| 文件 | 作用 |
+| 文件 | 用途 |
 |---|---|
-| `StarbayUE5.uproject` | UE5 工程入口，启用编辑器 Python 与编辑器脚本工具 |
-| `Config/` | Lumen、虚拟阴影、TSR、Windows DX12 与地图设置 |
-| `Tools/export_assets.py` | 后台 Blender → 烘焙变换后的独立 FBX；保护已有导出，支持新输出目录 |
-| `Tools/verify_assets.py` | FBX 回读与尺度、顶点、校验和检查 |
-| `Tools/fetch_materials.py` | CC0 PBR 素材下载与来源记录 |
-| `Tools/bootstrap_scene.py` | UE 编辑器内完整预检、未保存地图保护、导入、PBR 材质、轴向校准和建图 |
-| `Tools/Open-Starbay.ps1` | 发现已安装引擎、正常打开或首次导入 |
-| `Tools/Start-Epic.ps1` | 在缺少标准进程环境时，通过官方入口启动 Epic |
-| `Tools/install_third_person.py` | 从完整安装的同版本官方模板复制角色、动画和输入依赖 |
-| `Tools/continue_after_install.py` | 一次性等待安装完成，然后接入模板与首次导入 |
-| `Tools/validate_scene.py` | 当前编辑器地图的结构与稀疏碰撞射线检查 |
-| `SourceAssets/asset_manifest.json` | 导出源、包围盒、大小与校验和 |
-| `Validation/asset_validation.json` | 已执行的 Blender 回读验证结果 |
-| `Preview/` | 标注来源的资产预览 |
-| `Design/制作路线.md` | 写实目标、性能预算与功能迁移次序 |
+| `StarbayUE5.uproject`、`Config/` | 工程入口、DX12/SM6、Lumen、常规阴影、输入与地图设置 |
+| `Tools/Open-Starbay.ps1` | 正常打开、首次导入或执行指定脚本；仅设置进程缓存路径 |
+| `Tools/bootstrap_scene.py` | 带预检和冲突保护的首次导入、校准与建图 |
+| `Tools/install_third_person.py` | 复制同版本官方模板及依赖，记录文件校验和 |
+| `Tools/validate_scene.py` | 当前地图只读结构与稀疏碰撞检查 |
+| `Tools/smoke_play.py` | 真实 PIE 的出生、原生移动、跳跃和清理检查 |
+| `Tools/refine_materials.py` | 保留原资产的叶片与发光材质副本修正 |
+| `Tools/Package-Starbay.ps1` | 带输出保护和日志的预编译 Development 打包 |
+| `Tools/export_assets.py`、`verify_assets.py` | 独立 FBX 导出与 Blender 回读验证 |
+| `Tools/fetch_materials.py` | CC0 PBR 获取与来源记录 |
+| `SourceAssets/asset_manifest.json` | 源 FBX 尺寸、大小和校验和 |
+| `Design/首次步行验收.md` | 完整路线、已知障碍和待验收项目 |
+| `Saved/` | 本地导入、模板、射线、PIE、材质与打包原始报告；不作源码上传 |
 
-当前代码仓库不包含 UE 引擎、账号信息、缓存或 Epic 官方角色模板。大型源工程与资产包通过 Release 交付；FBX 也可以用仓库中的原始 GLB 和脚本重建。
+Git 保存制作脚本、配置和说明，不提交 Epic 官方模板 Content、引擎、账号信息或缓存。Windows 成品包含已烘焙资产与所需运行时对象代码；Release 的可编辑源工程包若包含模板 Content，同样受 Epic 对应许可约束，不能当作项目原创开源素材。具体许可见 [第三方说明](THIRD_PARTY_NOTICES.md)。

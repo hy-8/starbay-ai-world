@@ -1,0 +1,144 @@
+{
+  "schema": 1,
+  "started_utc": "2026-09-26T22:43:39.647837+08:00",
+  "status": "passed",
+  "scope": "native PIE CharacterMovement smoke only; not full-map acceptance",
+  "movement_method": "add_movement_input; no actor relocation/teleport",
+  "jump_method": "Character.jump and Character.stop_jumping",
+  "limits_seconds": {
+    "wall": 45.0,
+    "cleanup": 5.0,
+    "startup": 20.0
+  },
+  "checks": {
+    "spawn": true,
+    "native_movement": true,
+    "jump_takeoff": true,
+    "jump_landing": true
+  },
+  "events": [
+    {
+      "wall_seconds": 0.0,
+      "event": "pie_begin_requested"
+    },
+    {
+      "wall_seconds": 0.531,
+      "event": "pie_world_observed",
+      "path": "/Game/Starbay/Maps/UEDPIE_0_L_Starbay.L_Starbay"
+    },
+    {
+      "wall_seconds": 0.531,
+      "event": "phase",
+      "phase_name": "settle"
+    },
+    {
+      "wall_seconds": 1.766,
+      "event": "phase",
+      "phase_name": "move"
+    },
+    {
+      "wall_seconds": 3.375,
+      "event": "phase",
+      "phase_name": "brake"
+    },
+    {
+      "wall_seconds": 3.781,
+      "event": "phase",
+      "phase_name": "jump"
+    },
+    {
+      "wall_seconds": 3.781,
+      "event": "jump_requested",
+      "position_cm": [
+        -2001.954007471048,
+        135.93867662806554,
+        103.15000438690186
+      ]
+    },
+    {
+      "wall_seconds": 5.203,
+      "event": "pie_end_requested"
+    }
+  ],
+  "cleanup": {
+    "confirmed": true,
+    "note": "Owned PIE world ended; no PIE worlds remain.",
+    "end_play_requested": true,
+    "slate_callback_unregistered": true,
+    "keep_alive_restored": true
+  },
+  "limitations": [
+    "Slate and game delta samples are editor timing, not GPU timings or packaged-game FPS.",
+    "A frozen editor cannot be interrupted until another Slate callback runs.",
+    "No keyboard mapping, visual gait, entire route, NPC, AI or packaged-build validation."
+  ],
+  "editor_world": "/Game/Starbay/Maps/L_Starbay.L_Starbay",
+  "engine_version": "5.6.1-44394996+++UE5+Release-5.6",
+  "pie_world": "/Game/Starbay/Maps/UEDPIE_0_L_Starbay.L_Starbay",
+  "character": "/Game/Starbay/Maps/UEDPIE_0_L_Starbay.L_Starbay:PersistentLevel.BP_ThirdPersonCharacter_C_0",
+  "character_class": "/Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.BP_ThirdPersonCharacter_C",
+  "spawn_position_cm": [
+    -2200.0,
+    400.0,
+    104.05000305175781
+  ],
+  "movement_direction": [
+    0.6,
+    -0.8,
+    0.0
+  ],
+  "movement_input_scale": 0.4,
+  "movement_max_walk_speed_cm_s": 600.0,
+  "movement_max_step_height_cm": 45.0,
+  "capsule_radius_cm": 35.0,
+  "capsule_half_height_cm": 90.0,
+  "settled_position_cm": [
+    -2200.0,
+    400.0,
+    104.05000305175781
+  ],
+  "movement_result": {
+    "start_cm": [
+      -2200.0,
+      400.0,
+      104.05000305175781
+    ],
+    "end_cm": [
+      -2009.3540094735686,
+      145.8053459647585,
+      103.15000438690186
+    ],
+    "projected_cm": 317.7433175440521,
+    "lateral_cm": 2.2737367544323206E-13,
+    "input_frames": 70,
+    "velocity_frames": 70
+  },
+  "jump_result": {
+    "start_cm": [
+      -2001.954007471048,
+      135.93867662806554,
+      103.15000438690186
+    ],
+    "land_cm": [
+      -2001.954007471048,
+      135.93867662806554,
+      103.14999951231061
+    ],
+    "maximum_rise_cm": 127.53041133873032,
+    "landing_height_difference_cm": 4.874591240877635E-06,
+    "saw_falling_mode": true,
+    "saw_upward_velocity": true
+  },
+  "test_outcome": "passed",
+  "reason": "Spawn, native movement, jump takeoff and landing observed.",
+  "finished_utc": "2026-09-26T22:43:44.993177+08:00",
+  "elapsed_wall_seconds": 5.344,
+  "editor_frame_summary": {
+    "sample_count": 184,
+    "meaning": "PIE game delta samples during smoke; no GPU timing or performance target validated",
+    "mean_ms": 25.164956521739096,
+    "median_ms": 16.667,
+    "p95_ms": 22.288,
+    "max_ms": 400.0
+  }
+}

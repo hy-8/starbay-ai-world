@@ -44,6 +44,41 @@ def normalized(path):
     return os.path.normcase(str(Path(path).resolve()))
 
 
+def completed_install_registration(engine, program_data=None):
+    """Return a completed Epic registration, including the newer EOS item format."""
+    data_root = Path(program_data or os.environ.get("ProgramData", "C:/ProgramData"))
+
+    def read_record(path):
+        try:
+            record = json.loads(path.read_text(encoding="utf-8-sig"))
+            return record if isinstance(record, dict) else {}
+        except (FileNotFoundError, json.JSONDecodeError, UnicodeDecodeError):
+            # Epic can replace these files while updating its installation database.
+            return {}
+
+    def same_install(entry):
+        return (
+            isinstance(entry, dict)
+            and entry.get("AppName") == "UE_5.6"
+            and isinstance(entry.get("InstallLocation"), str)
+            and bool(entry["InstallLocation"])
+            and normalized(entry["InstallLocation"]) == normalized(engine)
+        )
+
+    legacy = data_root / "Epic/UnrealEngineLauncher/LauncherInstalled.dat"
+    entries = read_record(legacy).get("InstallationList", [])
+    if isinstance(entries, list) and any(same_install(entry) for entry in entries):
+        return {"format": "LauncherInstalled.dat", "path": str(legacy)}
+
+    items_dir = data_root / "Epic/EpicGamesLauncher/Data/Manifests"
+    for item in sorted(items_dir.glob("*.item")):
+        entry = read_record(item)
+        # Missing, null, numeric zero and true are not proof that installation finished.
+        if same_install(entry) and entry.get("bIsIncompleteInstall") is False:
+            return {"format": "Epic item manifest", "path": str(item)}
+    return None
+
+
 def sha256(path):
     digest = hashlib.sha256()
     with path.open("rb") as stream:
@@ -65,16 +100,7 @@ def check_destination(path):
 
 
 def preflight(engine):
-    launcher_manifest = Path(os.environ.get("ProgramData", "C:/ProgramData")) / (
-        "Epic/UnrealEngineLauncher/LauncherInstalled.dat"
-    )
-    installed = json.loads(launcher_manifest.read_text(encoding="utf-8-sig"))
-    if not any(
-        entry.get("AppName") == "UE_5.6"
-        and entry.get("InstallLocation")
-        and normalized(entry["InstallLocation"]) == normalized(engine)
-        for entry in installed.get("InstallationList", [])
-    ):
+    if completed_install_registration(engine) is None:
         raise RuntimeError(
             "Epic has not registered UE_5.6 as installed at this engine root. "
             "Wait for installation to finish; no files have been copied."

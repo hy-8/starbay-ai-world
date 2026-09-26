@@ -235,7 +235,10 @@ def main():
     report['status']='scene_created'
     report['runtimeGameplayVerified']=False
 
-try:main()
+try:
+    main()
+    # -ExecutePythonScript otherwise closes even the interactive editor next tick.
+    unreal.EditorPythonScripting.set_keep_python_script_alive(True)
 except Exception as exc:
     report['status']='failed';report['error']=str(exc)
     raise

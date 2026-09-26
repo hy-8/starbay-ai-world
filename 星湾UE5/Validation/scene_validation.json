@@ -1,0 +1,2034 @@
+{
+  "schema": 1,
+  "status": "checks_completed",
+  "createdAtUtc": "2026-09-26T14:43:39.600166+00:00",
+  "engine": "5.6.1-44394996+++UE5+Release-5.6",
+  "scope": "Current editor-world structure and sparse Pawn-profile complex line traces",
+  "runtimeGameplayVerified": false,
+  "pieTested": false,
+  "capsuleMovementTested": false,
+  "mapChangedOrSavedByScript": false,
+  "deliveryStatusUpdated": false,
+  "checks": [
+    {
+      "name": "importCalibrationPassed",
+      "passed": true,
+      "detail": {
+        "yawDegrees": 90.00000502701923,
+        "mirrorY": 1,
+        "scale": 0.9999999999999961,
+        "oneMeterHeightCm": 99.99999999999962,
+        "passed": true
+      }
+    },
+    {
+      "name": "SM_District:uniqueActor",
+      "passed": true,
+      "detail": {
+        "count": 1
+      }
+    },
+    {
+      "name": "SM_District:staticMeshActor",
+      "passed": true,
+      "detail": "StaticMeshActor"
+    },
+    {
+      "name": "SM_District:meshBound",
+      "passed": true,
+      "detail": "/Game/Starbay/Import_v01/Geometry/SM_District.SM_District"
+    },
+    {
+      "name": "SM_District:horizontal",
+      "passed": true,
+      "detail": {
+        "pitch": 0.0,
+        "yaw": 90.00000762939455,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "SM_District:worldOrigin",
+      "passed": true,
+      "detail": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "SM_District:finiteNonzeroScale",
+      "passed": true,
+      "detail": [
+        0.9999999999999961,
+        0.9999999999999961,
+        0.9999999999999961
+      ]
+    },
+    {
+      "name": "SM_District:queryCollisionEnabled",
+      "passed": true,
+      "detail": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+    },
+    {
+      "name": "SM_District:complexAsSimple",
+      "passed": true,
+      "detail": "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    },
+    {
+      "name": "SM_District:calibratedScale",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.9999999999999961,
+          0.9999999999999961,
+          0.9999999999999961
+        ],
+        "expected": [
+          0.9999999999999961,
+          0.9999999999999961,
+          0.9999999999999961
+        ]
+      }
+    },
+    {
+      "name": "SM_District:calibratedYaw",
+      "passed": true,
+      "detail": {
+        "actual": 90.00000762939455,
+        "expected": 90.00000502701923
+      }
+    },
+    {
+      "name": "SM_CourtyardDetails:uniqueActor",
+      "passed": true,
+      "detail": {
+        "count": 1
+      }
+    },
+    {
+      "name": "SM_CourtyardDetails:staticMeshActor",
+      "passed": true,
+      "detail": "StaticMeshActor"
+    },
+    {
+      "name": "SM_CourtyardDetails:meshBound",
+      "passed": true,
+      "detail": "/Game/Starbay/Import_v01/Geometry/SM_CourtyardDetails.SM_CourtyardDetails"
+    },
+    {
+      "name": "SM_CourtyardDetails:horizontal",
+      "passed": true,
+      "detail": {
+        "pitch": 0.0,
+        "yaw": 90.00000762939455,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "SM_CourtyardDetails:worldOrigin",
+      "passed": true,
+      "detail": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "SM_CourtyardDetails:finiteNonzeroScale",
+      "passed": true,
+      "detail": [
+        0.9999999999999961,
+        0.9999999999999961,
+        0.9999999999999961
+      ]
+    },
+    {
+      "name": "SM_CourtyardDetails:queryCollisionEnabled",
+      "passed": true,
+      "detail": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+    },
+    {
+      "name": "SM_CourtyardDetails:complexAsSimple",
+      "passed": true,
+      "detail": "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    },
+    {
+      "name": "SM_CourtyardDetails:calibratedScale",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.9999999999999961,
+          0.9999999999999961,
+          0.9999999999999961
+        ],
+        "expected": [
+          0.9999999999999961,
+          0.9999999999999961,
+          0.9999999999999961
+        ]
+      }
+    },
+    {
+      "name": "SM_CourtyardDetails:calibratedYaw",
+      "passed": true,
+      "detail": {
+        "actual": 90.00000762939455,
+        "expected": 90.00000502701923
+      }
+    },
+    {
+      "name": "Player_Start:unique",
+      "passed": true,
+      "detail": {
+        "matching": 1,
+        "allPlayerStarts": 1
+      }
+    },
+    {
+      "name": "Player_Start:documentedLocation",
+      "passed": true,
+      "detail": [
+        -2200.0,
+        400.0,
+        130.0
+      ]
+    },
+    {
+      "name": "Player_Start:documentedFacing",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "ground:S",
+      "passed": true,
+      "detail": {
+        "expectedZCm": 11.9,
+        "toleranceCm": 2.0
+      }
+    },
+    {
+      "name": "ground:mall",
+      "passed": true,
+      "detail": {
+        "expectedZCm": 11.8,
+        "toleranceCm": 2.0
+      }
+    },
+    {
+      "name": "ground:foyer",
+      "passed": true,
+      "detail": {
+        "expectedZCm": 11.9,
+        "toleranceCm": 2.0
+      }
+    },
+    {
+      "name": "ground:lobby",
+      "passed": true,
+      "detail": {
+        "expectedZCm": 11.9,
+        "toleranceCm": 2.0
+      }
+    },
+    {
+      "name": "ground:atrium",
+      "passed": true,
+      "detail": {
+        "expectedZCm": 12.0,
+        "toleranceCm": 2.0
+      }
+    },
+    {
+      "name": "ground:books",
+      "passed": true,
+      "detail": {
+        "expectedZCm": 12.0,
+        "toleranceCm": 2.0
+      }
+    },
+    {
+      "name": "ground:market",
+      "passed": true,
+      "detail": {
+        "expectedZCm": 11.9,
+        "toleranceCm": 2.0
+      }
+    },
+    {
+      "name": "ground:park",
+      "passed": true,
+      "detail": {
+        "expectedZCm": 11.9,
+        "toleranceCm": 2.0
+      }
+    },
+    {
+      "name": "ground:bikes",
+      "passed": true,
+      "detail": {
+        "expectedZCm": 11.8,
+        "toleranceCm": 2.0
+      }
+    },
+    {
+      "name": "ground:C2",
+      "passed": true,
+      "detail": {
+        "expectedZCm": 11.9,
+        "toleranceCm": 2.0
+      }
+    },
+    {
+      "name": "ground:C3",
+      "passed": true,
+      "detail": {
+        "expectedZCm": 11.9,
+        "toleranceCm": 2.0
+      }
+    },
+    {
+      "name": "ground:courtyard",
+      "passed": true,
+      "detail": {
+        "expectedZCm": 15.5,
+        "toleranceCm": 2.0
+      }
+    },
+    {
+      "name": "ground:P2",
+      "passed": true,
+      "detail": {
+        "expectedZCm": 15.5,
+        "toleranceCm": 2.0
+      }
+    },
+    {
+      "name": "Player_Start:groundBelow",
+      "passed": true,
+      "detail": {
+        "startCm": [
+          -2200.0,
+          400.0,
+          130.0
+        ],
+        "endCm": [
+          -2200.0,
+          400.0,
+          -200.0
+        ],
+        "blockingHit": true,
+        "initialOverlap": false,
+        "impactPointCm": [
+          -2199.999849394427,
+          399.9999726171686,
+          11.90000057220459
+        ],
+        "impactNormal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "distanceCm": 118.0999984741211,
+        "actor": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_0",
+        "component": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0"
+      }
+    },
+    {
+      "name": "passageSamples:S->SE",
+      "passed": true,
+      "detail": {
+        "blockingRayCount": 0
+      }
+    },
+    {
+      "name": "passageSamples:SE->A1",
+      "passed": true,
+      "detail": {
+        "blockingRayCount": 0
+      }
+    },
+    {
+      "name": "passageSamples:A1->A2",
+      "passed": true,
+      "detail": {
+        "blockingRayCount": 0
+      }
+    },
+    {
+      "name": "passageSamples:mall->foyer",
+      "passed": true,
+      "detail": {
+        "blockingRayCount": 0
+      }
+    },
+    {
+      "name": "passageSamples:foyer->lobby",
+      "passed": true,
+      "detail": {
+        "blockingRayCount": 0
+      }
+    },
+    {
+      "name": "passageSamples:atrium->books",
+      "passed": true,
+      "detail": {
+        "blockingRayCount": 0
+      }
+    },
+    {
+      "name": "passageSamples:SW->W1",
+      "passed": true,
+      "detail": {
+        "blockingRayCount": 0
+      }
+    },
+    {
+      "name": "passageSamples:W1->courier",
+      "passed": true,
+      "detail": {
+        "blockingRayCount": 0
+      }
+    },
+    {
+      "name": "passageSamples:courier->market",
+      "passed": true,
+      "detail": {
+        "blockingRayCount": 0
+      }
+    },
+    {
+      "name": "passageSamples:S->park",
+      "passed": true,
+      "detail": {
+        "blockingRayCount": 0
+      }
+    },
+    {
+      "name": "passageSamples:G1->bikes",
+      "passed": true,
+      "detail": {
+        "blockingRayCount": 0
+      }
+    },
+    {
+      "name": "passageSamples:C1->C2",
+      "passed": true,
+      "detail": {
+        "blockingRayCount": 0
+      }
+    },
+    {
+      "name": "passageSamples:C2->C3",
+      "passed": true,
+      "detail": {
+        "blockingRayCount": 0
+      }
+    },
+    {
+      "name": "passageSamples:C3->courtyard",
+      "passed": true,
+      "detail": {
+        "blockingRayCount": 0
+      }
+    },
+    {
+      "name": "passageSamples:courtyard->P1",
+      "passed": true,
+      "detail": {
+        "blockingRayCount": 0
+      }
+    },
+    {
+      "name": "passageSamples:P1->P2",
+      "passed": true,
+      "detail": {
+        "blockingRayCount": 0
+      }
+    },
+    {
+      "name": "passageSamples:P2->P3",
+      "passed": true,
+      "detail": {
+        "blockingRayCount": 0
+      }
+    },
+    {
+      "name": "passageSamples:P3->P4",
+      "passed": true,
+      "detail": {
+        "blockingRayCount": 0
+      }
+    },
+    {
+      "name": "passageSamples:P4->courtyard",
+      "passed": true,
+      "detail": {
+        "blockingRayCount": 0
+      }
+    },
+    {
+      "name": "blockedControls:bikes->courtyard",
+      "passed": true,
+      "detail": {
+        "blockingRayCount": 2
+      }
+    },
+    {
+      "name": "blockedControls:G1->bench_south",
+      "passed": true,
+      "detail": {
+        "blockingRayCount": 1
+      }
+    }
+  ],
+  "issues": [],
+  "warnings": [
+    "Historical import runner did not finish cleanly: module 'unreal' has no attribute 'EditorPythonScriptingLibrary'"
+  ],
+  "groundSamples": [
+    {
+      "startCm": [
+        -2200.0,
+        400.0,
+        40.0
+      ],
+      "endCm": [
+        -2200.0,
+        400.0,
+        -200.0
+      ],
+      "blockingHit": true,
+      "initialOverlap": false,
+      "impactPointCm": [
+        -2199.999849394427,
+        399.9999726171686,
+        11.90000057220459
+      ],
+      "impactNormal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "distanceCm": 28.099998474121094,
+      "actor": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_0",
+      "component": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0",
+      "point": "S",
+      "sourceFbxGroundZCm": 11.9,
+      "groundHeightErrorCm": 5.722045894884786e-07,
+      "samplePassed": true
+    },
+    {
+      "startCm": [
+        1600.0,
+        2600.0,
+        40.0
+      ],
+      "endCm": [
+        1600.0,
+        2600.0,
+        -200.0
+      ],
+      "blockingHit": true,
+      "initialOverlap": false,
+      "impactPointCm": [
+        1599.9998904686745,
+        2599.9998220115954,
+        11.80000019073486
+      ],
+      "impactNormal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "distanceCm": 28.200000762939453,
+      "actor": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_0",
+      "component": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0",
+      "point": "mall",
+      "sourceFbxGroundZCm": 11.8,
+      "groundHeightErrorCm": 1.9073485901799359e-07,
+      "samplePassed": true
+    },
+    {
+      "startCm": [
+        2600.0,
+        2600.0,
+        40.0
+      ],
+      "endCm": [
+        2600.0,
+        2600.0,
+        -200.0
+      ],
+      "blockingHit": true,
+      "initialOverlap": false,
+      "impactPointCm": [
+        2599.999822011596,
+        2599.9998220115954,
+        11.90000057220459
+      ],
+      "impactNormal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "distanceCm": 28.099998474121094,
+      "actor": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_0",
+      "component": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0",
+      "point": "foyer",
+      "sourceFbxGroundZCm": 11.9,
+      "groundHeightErrorCm": 5.722045894884786e-07,
+      "samplePassed": true
+    },
+    {
+      "startCm": [
+        3500.0,
+        3500.0,
+        40.0
+      ],
+      "endCm": [
+        3500.0,
+        3500.0,
+        -200.0
+      ],
+      "blockingHit": true,
+      "initialOverlap": false,
+      "impactPointCm": [
+        3499.9997604002247,
+        3499.999760400225,
+        11.90000057220459
+      ],
+      "impactNormal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "distanceCm": 28.099998474121094,
+      "actor": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_0",
+      "component": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0",
+      "point": "lobby",
+      "sourceFbxGroundZCm": 11.9,
+      "groundHeightErrorCm": 5.722045894884786e-07,
+      "samplePassed": true
+    },
+    {
+      "startCm": [
+        4500.0,
+        4900.0,
+        40.0
+      ],
+      "endCm": [
+        4500.0,
+        4900.0,
+        -200.0
+      ],
+      "blockingHit": true,
+      "initialOverlap": false,
+      "impactPointCm": [
+        4499.999691943146,
+        4899.999664560317,
+        12.0
+      ],
+      "impactNormal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "distanceCm": 28.0,
+      "actor": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_0",
+      "component": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0",
+      "point": "atrium",
+      "sourceFbxGroundZCm": 12.0,
+      "groundHeightErrorCm": 0.0,
+      "samplePassed": true
+    },
+    {
+      "startCm": [
+        4500.0,
+        7300.0,
+        40.0
+      ],
+      "endCm": [
+        4500.0,
+        7300.0,
+        -200.0
+      ],
+      "blockingHit": true,
+      "initialOverlap": false,
+      "impactPointCm": [
+        4499.999691943146,
+        7299.999500263326,
+        12.0
+      ],
+      "impactNormal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "distanceCm": 28.0,
+      "actor": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_0",
+      "component": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0",
+      "point": "books",
+      "sourceFbxGroundZCm": 12.0,
+      "groundHeightErrorCm": 0.0,
+      "samplePassed": true
+    },
+    {
+      "startCm": [
+        -2500.0,
+        -10500.0,
+        40.0
+      ],
+      "endCm": [
+        -2500.0,
+        -10500.0,
+        -200.0
+      ],
+      "blockingHit": true,
+      "initialOverlap": false,
+      "impactPointCm": [
+        -2499.9998288573024,
+        -10499.999281200677,
+        11.900000572204593
+      ],
+      "impactNormal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "distanceCm": 28.099998474121094,
+      "actor": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_0",
+      "component": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0",
+      "point": "market",
+      "sourceFbxGroundZCm": 11.9,
+      "groundHeightErrorCm": 5.722045930411923e-07,
+      "samplePassed": true
+    },
+    {
+      "startCm": [
+        -4000.0,
+        900.0,
+        40.0
+      ],
+      "endCm": [
+        -4000.0,
+        900.0,
+        -200.0
+      ],
+      "blockingHit": true,
+      "initialOverlap": false,
+      "impactPointCm": [
+        -3999.999726171686,
+        899.9999383886297,
+        11.90000057220459
+      ],
+      "impactNormal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "distanceCm": 28.099998474121094,
+      "actor": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_0",
+      "component": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0",
+      "point": "park",
+      "sourceFbxGroundZCm": 11.9,
+      "groundHeightErrorCm": 5.722045894884786e-07,
+      "samplePassed": true
+    },
+    {
+      "startCm": [
+        -2100.0,
+        6200.0,
+        40.0
+      ],
+      "endCm": [
+        -2100.0,
+        6200.0,
+        -200.0
+      ],
+      "blockingHit": true,
+      "initialOverlap": false,
+      "impactPointCm": [
+        -2099.999856240135,
+        6199.999575566113,
+        11.800000190734863
+      ],
+      "impactNormal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "distanceCm": 28.200000762939453,
+      "actor": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_0",
+      "component": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0",
+      "point": "bikes",
+      "sourceFbxGroundZCm": 11.8,
+      "groundHeightErrorCm": 1.9073486257070726e-07,
+      "samplePassed": true
+    },
+    {
+      "startCm": [
+        -3400.0,
+        5800.0,
+        40.0
+      ],
+      "endCm": [
+        -3400.0,
+        5800.0,
+        -200.0
+      ],
+      "blockingHit": true,
+      "initialOverlap": false,
+      "impactPointCm": [
+        -3399.9997672459326,
+        5799.999602948943,
+        11.90000057220459
+      ],
+      "impactNormal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "distanceCm": 28.099998474121094,
+      "actor": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_0",
+      "component": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0",
+      "point": "C2",
+      "sourceFbxGroundZCm": 11.9,
+      "groundHeightErrorCm": 5.722045894884786e-07,
+      "samplePassed": true
+    },
+    {
+      "startCm": [
+        -3400.0,
+        6200.0,
+        40.0
+      ],
+      "endCm": [
+        -3400.0,
+        6200.0,
+        -200.0
+      ],
+      "blockingHit": true,
+      "initialOverlap": false,
+      "impactPointCm": [
+        -3399.999767245932,
+        6199.999575566115,
+        11.90000057220459
+      ],
+      "impactNormal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "distanceCm": 28.099998474121094,
+      "actor": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_0",
+      "component": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0",
+      "point": "C3",
+      "sourceFbxGroundZCm": 11.9,
+      "groundHeightErrorCm": 5.722045894884786e-07,
+      "samplePassed": true
+    },
+    {
+      "startCm": [
+        -4300.0,
+        6200.0,
+        40.0
+      ],
+      "endCm": [
+        -4300.0,
+        6200.0,
+        -200.0
+      ],
+      "blockingHit": true,
+      "initialOverlap": false,
+      "impactPointCm": [
+        -4299.999705634563,
+        6199.999575566113,
+        15.5
+      ],
+      "impactNormal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "distanceCm": 24.5,
+      "actor": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_1",
+      "component": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_1.StaticMeshComponent0",
+      "point": "courtyard",
+      "sourceFbxGroundZCm": 15.5,
+      "groundHeightErrorCm": 0.0,
+      "samplePassed": true
+    },
+    {
+      "startCm": [
+        -4600.0,
+        7300.0,
+        40.0
+      ],
+      "endCm": [
+        -4600.0,
+        7300.0,
+        -200.0
+      ],
+      "blockingHit": true,
+      "initialOverlap": false,
+      "impactPointCm": [
+        -4599.99968509744,
+        7299.999500263325,
+        15.5
+      ],
+      "impactNormal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "distanceCm": 24.5,
+      "actor": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_1",
+      "component": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_1.StaticMeshComponent0",
+      "point": "P2",
+      "sourceFbxGroundZCm": 15.5,
+      "groundHeightErrorCm": 0.0,
+      "samplePassed": true
+    }
+  ],
+  "passageSamples": [
+    {
+      "from": "S",
+      "to": "SE",
+      "expectedBlocked": false,
+      "samplePassed": true,
+      "rays": [
+        {
+          "startCm": [
+            -2200.0,
+            400.0,
+            45.0
+          ],
+          "endCm": [
+            -1900.0,
+            0.0,
+            45.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            -2200.0,
+            400.0,
+            95.0
+          ],
+          "endCm": [
+            -1900.0,
+            0.0,
+            95.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            -2200.0,
+            400.0,
+            155.0
+          ],
+          "endCm": [
+            -1900.0,
+            0.0,
+            155.0
+          ],
+          "blockingHit": false
+        }
+      ]
+    },
+    {
+      "from": "SE",
+      "to": "A1",
+      "expectedBlocked": false,
+      "samplePassed": true,
+      "rays": [
+        {
+          "startCm": [
+            -1900.0,
+            0.0,
+            45.0
+          ],
+          "endCm": [
+            1500.0,
+            0.0,
+            45.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            -1900.0,
+            0.0,
+            95.0
+          ],
+          "endCm": [
+            1500.0,
+            0.0,
+            95.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            -1900.0,
+            0.0,
+            155.0
+          ],
+          "endCm": [
+            1500.0,
+            0.0,
+            155.0
+          ],
+          "blockingHit": false
+        }
+      ]
+    },
+    {
+      "from": "A1",
+      "to": "A2",
+      "expectedBlocked": false,
+      "samplePassed": true,
+      "rays": [
+        {
+          "startCm": [
+            1500.0,
+            0.0,
+            45.0
+          ],
+          "endCm": [
+            1500.0,
+            2600.0,
+            45.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            1500.0,
+            0.0,
+            95.0
+          ],
+          "endCm": [
+            1500.0,
+            2600.0,
+            95.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            1500.0,
+            0.0,
+            155.0
+          ],
+          "endCm": [
+            1500.0,
+            2600.0,
+            155.0
+          ],
+          "blockingHit": false
+        }
+      ]
+    },
+    {
+      "from": "mall",
+      "to": "foyer",
+      "expectedBlocked": false,
+      "samplePassed": true,
+      "rays": [
+        {
+          "startCm": [
+            1600.0,
+            2600.0,
+            45.0
+          ],
+          "endCm": [
+            2600.0,
+            2600.0,
+            45.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            1600.0,
+            2600.0,
+            95.0
+          ],
+          "endCm": [
+            2600.0,
+            2600.0,
+            95.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            1600.0,
+            2600.0,
+            155.0
+          ],
+          "endCm": [
+            2600.0,
+            2600.0,
+            155.0
+          ],
+          "blockingHit": false
+        }
+      ]
+    },
+    {
+      "from": "foyer",
+      "to": "lobby",
+      "expectedBlocked": false,
+      "samplePassed": true,
+      "rays": [
+        {
+          "startCm": [
+            2600.0,
+            2600.0,
+            45.0
+          ],
+          "endCm": [
+            3500.0,
+            3500.0,
+            45.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            2600.0,
+            2600.0,
+            95.0
+          ],
+          "endCm": [
+            3500.0,
+            3500.0,
+            95.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            2600.0,
+            2600.0,
+            155.0
+          ],
+          "endCm": [
+            3500.0,
+            3500.0,
+            155.0
+          ],
+          "blockingHit": false
+        }
+      ]
+    },
+    {
+      "from": "atrium",
+      "to": "books",
+      "expectedBlocked": false,
+      "samplePassed": true,
+      "rays": [
+        {
+          "startCm": [
+            4500.0,
+            4900.0,
+            45.0
+          ],
+          "endCm": [
+            4500.0,
+            7300.0,
+            45.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            4500.0,
+            4900.0,
+            95.0
+          ],
+          "endCm": [
+            4500.0,
+            7300.0,
+            95.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            4500.0,
+            4900.0,
+            155.0
+          ],
+          "endCm": [
+            4500.0,
+            7300.0,
+            155.0
+          ],
+          "blockingHit": false
+        }
+      ]
+    },
+    {
+      "from": "SW",
+      "to": "W1",
+      "expectedBlocked": false,
+      "samplePassed": true,
+      "rays": [
+        {
+          "startCm": [
+            -1900.0,
+            -3900.0,
+            45.0
+          ],
+          "endCm": [
+            -2300.0,
+            -3900.0,
+            45.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            -1900.0,
+            -3900.0,
+            95.0
+          ],
+          "endCm": [
+            -2300.0,
+            -3900.0,
+            95.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            -1900.0,
+            -3900.0,
+            155.0
+          ],
+          "endCm": [
+            -2300.0,
+            -3900.0,
+            155.0
+          ],
+          "blockingHit": false
+        }
+      ]
+    },
+    {
+      "from": "W1",
+      "to": "courier",
+      "expectedBlocked": false,
+      "samplePassed": true,
+      "rays": [
+        {
+          "startCm": [
+            -2300.0,
+            -3900.0,
+            45.0
+          ],
+          "endCm": [
+            -2300.0,
+            -6500.0,
+            45.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            -2300.0,
+            -3900.0,
+            95.0
+          ],
+          "endCm": [
+            -2300.0,
+            -6500.0,
+            95.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            -2300.0,
+            -3900.0,
+            155.0
+          ],
+          "endCm": [
+            -2300.0,
+            -6500.0,
+            155.0
+          ],
+          "blockingHit": false
+        }
+      ]
+    },
+    {
+      "from": "courier",
+      "to": "market",
+      "expectedBlocked": false,
+      "samplePassed": true,
+      "rays": [
+        {
+          "startCm": [
+            -2300.0,
+            -6500.0,
+            45.0
+          ],
+          "endCm": [
+            -2500.0,
+            -10500.0,
+            45.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            -2300.0,
+            -6500.0,
+            95.0
+          ],
+          "endCm": [
+            -2500.0,
+            -10500.0,
+            95.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            -2300.0,
+            -6500.0,
+            155.0
+          ],
+          "endCm": [
+            -2500.0,
+            -10500.0,
+            155.0
+          ],
+          "blockingHit": false
+        }
+      ]
+    },
+    {
+      "from": "S",
+      "to": "park",
+      "expectedBlocked": false,
+      "samplePassed": true,
+      "rays": [
+        {
+          "startCm": [
+            -2200.0,
+            400.0,
+            45.0
+          ],
+          "endCm": [
+            -4000.0,
+            900.0,
+            45.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            -2200.0,
+            400.0,
+            95.0
+          ],
+          "endCm": [
+            -4000.0,
+            900.0,
+            95.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            -2200.0,
+            400.0,
+            155.0
+          ],
+          "endCm": [
+            -4000.0,
+            900.0,
+            155.0
+          ],
+          "blockingHit": false
+        }
+      ]
+    },
+    {
+      "from": "G1",
+      "to": "bikes",
+      "expectedBlocked": false,
+      "samplePassed": true,
+      "rays": [
+        {
+          "startCm": [
+            -2200.0,
+            1700.0,
+            45.0
+          ],
+          "endCm": [
+            -2100.0,
+            6200.0,
+            45.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            -2200.0,
+            1700.0,
+            95.0
+          ],
+          "endCm": [
+            -2100.0,
+            6200.0,
+            95.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            -2200.0,
+            1700.0,
+            155.0
+          ],
+          "endCm": [
+            -2100.0,
+            6200.0,
+            155.0
+          ],
+          "blockingHit": false
+        }
+      ]
+    },
+    {
+      "from": "C1",
+      "to": "C2",
+      "expectedBlocked": false,
+      "samplePassed": true,
+      "rays": [
+        {
+          "startCm": [
+            -2100.0,
+            5800.0,
+            45.0
+          ],
+          "endCm": [
+            -3400.0,
+            5800.0,
+            45.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            -2100.0,
+            5800.0,
+            95.0
+          ],
+          "endCm": [
+            -3400.0,
+            5800.0,
+            95.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            -2100.0,
+            5800.0,
+            155.0
+          ],
+          "endCm": [
+            -3400.0,
+            5800.0,
+            155.0
+          ],
+          "blockingHit": false
+        }
+      ]
+    },
+    {
+      "from": "C2",
+      "to": "C3",
+      "expectedBlocked": false,
+      "samplePassed": true,
+      "rays": [
+        {
+          "startCm": [
+            -3400.0,
+            5800.0,
+            45.0
+          ],
+          "endCm": [
+            -3400.0,
+            6200.0,
+            45.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            -3400.0,
+            5800.0,
+            95.0
+          ],
+          "endCm": [
+            -3400.0,
+            6200.0,
+            95.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            -3400.0,
+            5800.0,
+            155.0
+          ],
+          "endCm": [
+            -3400.0,
+            6200.0,
+            155.0
+          ],
+          "blockingHit": false
+        }
+      ]
+    },
+    {
+      "from": "C3",
+      "to": "courtyard",
+      "expectedBlocked": false,
+      "samplePassed": true,
+      "rays": [
+        {
+          "startCm": [
+            -3400.0,
+            6200.0,
+            45.0
+          ],
+          "endCm": [
+            -4300.0,
+            6200.0,
+            45.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            -3400.0,
+            6200.0,
+            95.0
+          ],
+          "endCm": [
+            -4300.0,
+            6200.0,
+            95.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            -3400.0,
+            6200.0,
+            155.0
+          ],
+          "endCm": [
+            -4300.0,
+            6200.0,
+            155.0
+          ],
+          "blockingHit": false
+        }
+      ]
+    },
+    {
+      "from": "courtyard",
+      "to": "P1",
+      "expectedBlocked": false,
+      "samplePassed": true,
+      "rays": [
+        {
+          "startCm": [
+            -4300.0,
+            6200.0,
+            45.0
+          ],
+          "endCm": [
+            -4100.0,
+            6800.0,
+            45.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            -4300.0,
+            6200.0,
+            95.0
+          ],
+          "endCm": [
+            -4100.0,
+            6800.0,
+            95.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            -4300.0,
+            6200.0,
+            155.0
+          ],
+          "endCm": [
+            -4100.0,
+            6800.0,
+            155.0
+          ],
+          "blockingHit": false
+        }
+      ]
+    },
+    {
+      "from": "P1",
+      "to": "P2",
+      "expectedBlocked": false,
+      "samplePassed": true,
+      "rays": [
+        {
+          "startCm": [
+            -4100.0,
+            6800.0,
+            45.0
+          ],
+          "endCm": [
+            -4600.0,
+            7300.0,
+            45.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            -4100.0,
+            6800.0,
+            95.0
+          ],
+          "endCm": [
+            -4600.0,
+            7300.0,
+            95.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            -4100.0,
+            6800.0,
+            155.0
+          ],
+          "endCm": [
+            -4600.0,
+            7300.0,
+            155.0
+          ],
+          "blockingHit": false
+        }
+      ]
+    },
+    {
+      "from": "P2",
+      "to": "P3",
+      "expectedBlocked": false,
+      "samplePassed": true,
+      "rays": [
+        {
+          "startCm": [
+            -4600.0,
+            7300.0,
+            45.0
+          ],
+          "endCm": [
+            -5000.0,
+            6800.0,
+            45.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            -4600.0,
+            7300.0,
+            95.0
+          ],
+          "endCm": [
+            -5000.0,
+            6800.0,
+            95.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            -4600.0,
+            7300.0,
+            155.0
+          ],
+          "endCm": [
+            -5000.0,
+            6800.0,
+            155.0
+          ],
+          "blockingHit": false
+        }
+      ]
+    },
+    {
+      "from": "P3",
+      "to": "P4",
+      "expectedBlocked": false,
+      "samplePassed": true,
+      "rays": [
+        {
+          "startCm": [
+            -5000.0,
+            6800.0,
+            45.0
+          ],
+          "endCm": [
+            -4600.0,
+            6300.0,
+            45.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            -5000.0,
+            6800.0,
+            95.0
+          ],
+          "endCm": [
+            -4600.0,
+            6300.0,
+            95.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            -5000.0,
+            6800.0,
+            155.0
+          ],
+          "endCm": [
+            -4600.0,
+            6300.0,
+            155.0
+          ],
+          "blockingHit": false
+        }
+      ]
+    },
+    {
+      "from": "P4",
+      "to": "courtyard",
+      "expectedBlocked": false,
+      "samplePassed": true,
+      "rays": [
+        {
+          "startCm": [
+            -4600.0,
+            6300.0,
+            45.0
+          ],
+          "endCm": [
+            -4300.0,
+            6200.0,
+            45.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            -4600.0,
+            6300.0,
+            95.0
+          ],
+          "endCm": [
+            -4300.0,
+            6200.0,
+            95.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            -4600.0,
+            6300.0,
+            155.0
+          ],
+          "endCm": [
+            -4300.0,
+            6200.0,
+            155.0
+          ],
+          "blockingHit": false
+        }
+      ]
+    }
+  ],
+  "blockedControls": [
+    {
+      "from": "bikes",
+      "to": "courtyard",
+      "expectedBlocked": true,
+      "samplePassed": true,
+      "rays": [
+        {
+          "startCm": [
+            -2100.0,
+            6200.0,
+            45.0
+          ],
+          "endCm": [
+            -4300.0,
+            6200.0,
+            45.0
+          ],
+          "blockingHit": true,
+          "initialOverlap": false,
+          "impactPointCm": [
+            -2302.2287615460846,
+            6199.999575566111,
+            45.0
+          ],
+          "impactNormal": [
+            0.8027535505164972,
+            1.0785705278109851e-07,
+            -0.5963109399743945
+          ],
+          "distanceCm": 202.22891235351562,
+          "actor": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_0",
+          "component": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0"
+        },
+        {
+          "startCm": [
+            -2100.0,
+            6200.0,
+            95.0
+          ],
+          "endCm": [
+            -4300.0,
+            6200.0,
+            95.0
+          ],
+          "blockingHit": true,
+          "initialOverlap": false,
+          "impactPointCm": [
+            -2352.3695428913416,
+            6199.999575566114,
+            95.0
+          ],
+          "impactNormal": [
+            0.5509394247729646,
+            0.38264609993003285,
+            0.7416520157318862
+          ],
+          "distanceCm": 252.3697052001953,
+          "actor": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_0",
+          "component": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0"
+        },
+        {
+          "startCm": [
+            -2100.0,
+            6200.0,
+            155.0
+          ],
+          "endCm": [
+            -4300.0,
+            6200.0,
+            155.0
+          ],
+          "blockingHit": false
+        }
+      ]
+    },
+    {
+      "from": "G1",
+      "to": "bench_south",
+      "expectedBlocked": true,
+      "samplePassed": true,
+      "rays": [
+        {
+          "startCm": [
+            -2200.0,
+            1700.0,
+            45.0
+          ],
+          "endCm": [
+            -2800.0,
+            1700.0,
+            45.0
+          ],
+          "blockingHit": false
+        },
+        {
+          "startCm": [
+            -2200.0,
+            1700.0,
+            95.0
+          ],
+          "endCm": [
+            -2800.0,
+            1700.0,
+            95.0
+          ],
+          "blockingHit": true,
+          "initialOverlap": false,
+          "impactPointCm": [
+            -2463.5000220176594,
+            1699.999883622967,
+            95.0
+          ],
+          "impactNormal": [
+            0.9999999999995702,
+            -9.271226806090121e-07,
+            0.0
+          ],
+          "distanceCm": 263.50018310546875,
+          "actor": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_0",
+          "component": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0"
+        },
+        {
+          "startCm": [
+            -2200.0,
+            1700.0,
+            155.0
+          ],
+          "endCm": [
+            -2800.0,
+            1700.0,
+            155.0
+          ],
+          "blockingHit": false
+        }
+      ]
+    }
+  ],
+  "traceCount": 77,
+  "limitations": [
+    "Editor-world line traces are not PIE, character capsule sweeps, stepping, navigation or camera tests.",
+    "Passages use only their centerline at world Z 45, 95 and 155 cm, in the listed direction.",
+    "Ground rays start at Z 40 cm and can miss objects above that height or initial overlaps.",
+    "Sparse samples do not prove the entire route, reverse direction or character clearance.",
+    "Ground reference heights come from source FBX and require correct UE import calibration.",
+    "Pawn collision profile queries do not establish CharacterMovement behavior or collision cooking correctness.",
+    "Existing unsaved editor changes, if present, are inspected in memory and are never saved by this script."
+  ],
+  "world": "/Game/Starbay/Maps/L_Starbay.L_Starbay",
+  "dirtyMapsAtStart": [],
+  "historicalImportRunnerStatus": "failed",
+  "geometry": [
+    {
+      "label": "SM_District",
+      "actor": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_0",
+      "mesh": "/Game/Starbay/Import_v01/Geometry/SM_District.SM_District",
+      "locationCm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.9999999999999961,
+        0.9999999999999961,
+        0.9999999999999961
+      ],
+      "rotationDegrees": {
+        "pitch": 0.0,
+        "yaw": 90.00000762939455,
+        "roll": 0.0
+      },
+      "collisionProfile": "BlockAll",
+      "collisionEnabled": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "collisionTraceFlag": "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    },
+    {
+      "label": "SM_CourtyardDetails",
+      "actor": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_1",
+      "mesh": "/Game/Starbay/Import_v01/Geometry/SM_CourtyardDetails.SM_CourtyardDetails",
+      "locationCm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.9999999999999961,
+        0.9999999999999961,
+        0.9999999999999961
+      ],
+      "rotationDegrees": {
+        "pitch": 0.0,
+        "yaw": 90.00000762939455,
+        "roll": 0.0
+      },
+      "collisionProfile": "BlockAll",
+      "collisionEnabled": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "collisionTraceFlag": "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    }
+  ],
+  "playerStart": {
+    "locationCm": [
+      -2200.0,
+      400.0,
+      130.0
+    ],
+    "yawDegrees": 0.0
+  },
+  "gameMode": {
+    "templateAsset": "/Game/ThirdPerson/Blueprints/BP_ThirdPersonGameMode",
+    "templateExists": true,
+    "templateClassLoaded": true,
+    "mapOverrideClass": "/Game/ThirdPerson/Blueprints/BP_ThirdPersonGameMode.BP_ThirdPersonGameMode_C",
+    "officialThirdPersonConfigured": true,
+    "note": "Checks the map override only; no default pawn is spawned or controlled."
+  },
+  "hitResultSchemaProbePassed": true,
+  "actualPlayerStartDownRay": {
+    "startCm": [
+      -2200.0,
+      400.0,
+      130.0
+    ],
+    "endCm": [
+      -2200.0,
+      400.0,
+      -200.0
+    ],
+    "blockingHit": true,
+    "initialOverlap": false,
+    "impactPointCm": [
+      -2199.999849394427,
+      399.9999726171686,
+      11.90000057220459
+    ],
+    "impactNormal": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "distanceCm": 118.0999984741211,
+    "actor": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_0",
+    "component": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0"
+  },
+  "sampleChecksPassed": true,
+  "thirdPersonConfigurationPassed": true
+}

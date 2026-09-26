@@ -1,0 +1,39 @@
+{
+  "status": "packaged_awaiting_runtime_test",
+  "startedAtUtc": "2026-09-26T15:06:24.0079371Z",
+  "project": "E:\\视频\\合集\\blender\\3d驱动NPC的3d世界\\星湾UE5\\StarbayUE5.uproject",
+  "engineRoot": "D:\\Program Files\\Epic Games\\UE_5.6",
+  "outputDirectory": "E:\\视频\\合集\\blender\\3d驱动NPC的3d世界\\星湾发布\\UE5-v0.2.0",
+  "configuration": "Development",
+  "usesPrecompiledTarget": true,
+  "runtimeGameplayTested": false,
+  "exitCode": 0,
+  "executableExists": true,
+  "executables": [
+    "E:\\视频\\合集\\blender\\3d驱动NPC的3d世界\\星湾发布\\UE5-v0.2.0\\Windows\\StarbayUE5.exe"
+  ],
+  "log": "E:\\视频\\合集\\blender\\3d驱动NPC的3d世界\\星湾UE5\\Saved\\package-20260926-230623-995-91308c.log",
+  "engineVersion": "5.6.1",
+  "arguments": [
+    "BuildCookRun",
+    "-project=E:\\视频\\合集\\blender\\3d驱动NPC的3d世界\\星湾UE5\\StarbayUE5.uproject",
+    "-noP4",
+    "-platform=Win64",
+    "-clientconfig=Development",
+    "-skipbuild",
+    "-cook",
+    "-stage",
+    "-pak",
+    "-iostore",
+    "-package",
+    "-archive",
+    "-archivedirectory=E:\\视频\\合集\\blender\\3d驱动NPC的3d世界\\星湾发布\\UE5-v0.2.0",
+    "-map=/Game/Starbay/Maps/L_Starbay",
+    "-unattended",
+    "-utf8output",
+    "-nocompileeditor",
+    "-nocompileuat"
+  ],
+  "cacheRoot": "D:\\UECache",
+  "finishedAtUtc": "2026-09-26T15:06:49.2888007Z"
+}

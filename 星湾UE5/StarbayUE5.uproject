@@ -2,9 +2,15 @@
   "FileVersion": 3,
   "EngineAssociation": "5.6",
   "Category": "Games",
-  "Description": "Starbay fictional district: Unreal Engine migration and environment art foundation.",
+  "Description": "Starbay fictional district: native third-person exploration prototype.",
   "Plugins": [
-    { "Name": "PythonScriptPlugin", "Enabled": true },
-    { "Name": "EditorScriptingUtilities", "Enabled": true }
+    {
+      "Name": "PythonScriptPlugin",
+      "Enabled": true
+    },
+    {
+      "Name": "EditorScriptingUtilities",
+      "Enabled": true
+    }
   ]
 }

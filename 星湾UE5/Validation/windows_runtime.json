@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-26",
+  "engine": "5.6.1",
+  "configuration": "Development",
+  "package": "../星湾发布/UE5-v0.2.0/Windows/StarbayUE5.exe",
+  "mapLoaded": "/Game/Starbay/Maps/L_Starbay",
+  "rhi": "D3D12 SM6",
+  "separateProcessLaunched": true,
+  "windowVisuallyInspected": true,
+  "shadowMode": "Conventional shadows; Lumen retained",
+  "vsmOverflowWarningInFinalRun": false,
+  "fatalErrorInFinalRun": false,
+  "movementInputPath": "Enhanced Input development console Input.+key W 0.2 / Input.-key W",
+  "movementObserved": "Character traversed pavement and road to the plaza column; collision prevented passing through the column.",
+  "jumpInputPath": "Enhanced Input development console Input.+key SpaceBar 1",
+  "jumpObserved": "Visible takeoff animation, airborne character and subsequent standing on the same pavement.",
+  "cleanup": "User stopped Computer Use with physical Escape; no further UI control. Game close is unconfirmed.",
+  "limitations": [
+    "Not a physical keyboard hold-duration test",
+    "Not full-route or all-key acceptance",
+    "Not a stable FPS benchmark",
+    "Not a clean-machine compatibility test",
+    "No native NPC/AI/task/daynight/save systems yet"
+  ],
+  "testInputsPersistedToDisk": false
+}

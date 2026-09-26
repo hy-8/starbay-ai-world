@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "status": "material_overrides_saved",
+  "started_utc": "2026-09-26T22:54:16.236935+08:00",
+  "map": "/Game/Starbay/Maps/L_Starbay",
+  "destination": "/Game/Starbay/Art_v02",
+  "created_materials": [
+    "/Game/Starbay/Art_v02/M_v6_leaf",
+    "/Game/Starbay/Art_v02/M_v6_leaflight",
+    "/Game/Starbay/Art_v02/M_v6_glow"
+  ],
+  "overrides": [
+    {
+      "actor": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_1",
+      "slot_index": 8,
+      "slot_name": "v6_leaf",
+      "before": "/Game/Starbay/Import_v01/Geometry/v6_leaf.v6_leaf",
+      "after": "/Game/Starbay/Art_v02/M_v6_leaf.M_v6_leaf"
+    },
+    {
+      "actor": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_1",
+      "slot_index": 9,
+      "slot_name": "v6_leaflight",
+      "before": "/Game/Starbay/Import_v01/Geometry/v6_leaflight.v6_leaflight",
+      "after": "/Game/Starbay/Art_v02/M_v6_leaflight.M_v6_leaflight"
+    },
+    {
+      "actor": "/Game/Starbay/Maps/L_Starbay.L_Starbay:PersistentLevel.StaticMeshActor_1",
+      "slot_index": 13,
+      "slot_name": "v6_glow",
+      "before": "/Game/Starbay/Import_v01/Geometry/v6_glow.v6_glow",
+      "after": "/Game/Starbay/Art_v02/M_v6_glow.M_v6_glow"
+    }
+  ],
+  "scope": "material correction only; visual quality and performance require UE inspection",
+  "lighting_changed": false,
+  "original_assets_modified": false,
+  "map_save_attempted": true,
+  "map_sha256_after": "9b03d56456ac6c4ae9714768ac40a45b8f3ee84b404a6addbf5ea2685eaa46dc",
+  "visual_validation_passed": true,
+  "changes": {
+    "leaves": "two-sided foliage; preserved BaseColor; Subsurface=BaseColor*0.5; roughness=0.8; metallic=0",
+    "glow": "emissive linear RGB=(3.0,1.89,0.72), matching source color*3"
+  },
+  "finished_utc": "2026-09-26T22:54:23.460114+08:00",
+  "visualReview": "UE native high-resolution screenshot reviewed: leaf backs visible and string bulbs emissive; early stylized geometry remains."
+}

@@ -1,6 +1,10 @@
 # 星湾街区 · 本地 AI 街区生活
 
-**后续开发主线（2026-09-22）：[UE5 Windows 独立游戏](星湾UE5/README.md)。** 当前已准备新增场景资产、工程配置与导入流程，正在进行引擎迁移；下面的完整玩法和已发布视频对应已验证的浏览器原型。UE5 原生玩法不能据此视为已经迁移完成。
+**开发主线（2026-09-26）：[UE5 Windows 独立游戏](星湾UE5/README.md)。** 街区已在 UE5.6.1 中建图，第三人称角色移动与跳跃通过局部实测，Windows EXE 已完成打包并实际打开。下面的 NPC、本地 AI、昼夜和任务仍对应浏览器原型，尚未迁入 UE5。
+
+[下载 UE5 原生试玩 v0.2.0](https://github.com/hy-8/starbay-ai-world/releases/tag/ue5-playable-v0.2.0)：Windows 游戏包与可编辑 UE 工程。操作和当前限制见 [试玩说明](星湾UE5/Design/试玩说明_v0.2.0.md)。
+
+![UE5 茶庭实机截图](星湾UE5/Preview/UE5_Courtyard_v02.png)
 
 [下载 UE5 场景基础预发布包](https://github.com/hy-8/starbay-ai-world/releases/tag/ue5-foundation-v0.1.0)：包含新 Blender 工程、FBX、CC0 PBR 材质与迁移脚本，**尚非可玩版**。
 
