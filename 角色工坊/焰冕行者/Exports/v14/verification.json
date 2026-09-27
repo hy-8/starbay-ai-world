@@ -1,0 +1,58 @@
+{
+  "version": "v14",
+  "checks": [
+    {
+      "format": "glb",
+      "mesh_objects": 470,
+      "vertices": 2635065,
+      "triangles": 4564612,
+      "bounds_meters": {
+        "min": [
+          -0.44900575280189514,
+          -0.3955528140068054,
+          -0.03375370055437088
+        ],
+        "max": [
+          1.878161907196045,
+          0.7053523659706116,
+          2.1281750202178955
+        ],
+        "size": [
+          2.32716765999794,
+          1.100905179977417,
+          2.1619287207722664
+        ]
+      },
+      "sha256": "617493af9a9860e6e74c2ea1de65ee9ebc67bce85f27a909084cc0ac020ff293",
+      "result": "passed: import, finite geometry, human scale, materials, no stage/rig implied"
+    },
+    {
+      "format": "fbx",
+      "mesh_objects": 470,
+      "vertices": 2329793,
+      "triangles": 4564612,
+      "bounds_meters": {
+        "min": [
+          -0.44900575280189514,
+          -0.3955526649951935,
+          -0.033753782510757446
+        ],
+        "max": [
+          1.878161907196045,
+          0.7053523659706116,
+          2.1281750202178955
+        ],
+        "size": [
+          2.32716765999794,
+          1.100905030965805,
+          2.161928802728653
+        ]
+      },
+      "sha256": "e80359972d6734b2f627fbbb4e9038e44a17808fbe880423aa6362778b8531a1",
+      "result": "passed: import, finite geometry, human scale, materials, no stage/rig implied"
+    }
+  ],
+  "glb_textile": "Both fabric materials reference base color, metal/roughness and normal textures; images embedded in GLB.",
+  "blend": "Reopened editable collections; no missing external texture images.",
+  "limitations": "Static geometry only; no performance, rigging, deformation, animation, cloth, or Unreal play validation."
+}

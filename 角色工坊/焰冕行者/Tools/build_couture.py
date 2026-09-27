@@ -24,6 +24,11 @@ smoke=material('Basalt bronze inset',(.014,.006,.003),.45,.44)
 platinum=material('Platinum woven braid',(.55,.47,.36),.75,.32)
 hairmats=[material('Ivory fiber '+str(i),c,0,.38) for i,c in enumerate([(.62,.64,.65),(.78,.77,.71),(.40,.44,.48),(.88,.83,.70)])]
 for m in hairmats:setp(m,'Anisotropic',.55)
+velvet=material('Deep oxblood silk velvet',(.082,.0018,.004),0,.57,fabric=True)
+setp(velvet,'Sheen Weight',.24);setp(velvet,'Sheen Tint',(.30,.025,.019,1))
+setp(gold,'Roughness',.34)
+setp(ember,'Emission Strength',2.3)
+setp(gem,'Metallic',.25);setp(gem,'Coat Weight',.5)
 
 # Generated original textile bitmap is actually mapped onto the 3D costume.
 brocade=bpy.data.images.load(str(ROOT/'Materials/Ember_Brocade_Albedo.png'));brocade.pack()
@@ -54,6 +59,14 @@ for v in body.data.vertices:
     if z>1.60:
         jaw=math.exp(-((z-1.659)/.051)**2)*max(0,min(1,(-y+.04)/.10))
         v.co.x*=1-.09*jaw
+        front=max(0,min(1,(-y-.10)/.045))
+        # Close the resting mouth, tighten the lower face and give the cheek plane definition.
+        mouth=math.exp(-((x/.034)**6+((z-1.668)/.014)**6))*front
+        v.co.z+=(1.668-z)*.55*mouth
+        cheek=math.exp(-(((abs(x)-.054)/.022)**2+((z-1.715)/.016)**2))*front
+        v.co.y-=.0032*cheek
+        chin=math.exp(-((x/.027)**4+((z-1.638)/.017)**2))*front
+        v.co.y-=.002*chin
 body.modifiers[0].levels=2;body.modifiers[0].render_levels=2
 full=body.copy();full.data=body.data.copy();COL['01_Body'].objects.link(full);full.name='SOURCE full CC0 body';full.hide_render=True;full.hide_set(True)
 import bmesh
@@ -64,19 +77,21 @@ body.data.update()
 colors=body.data.color_attributes.new(name='SkinAlbedo',type='FLOAT_COLOR',domain='POINT')
 for v in body.data.vertices:
     x,y,z=v.co
-    lipmask=math.exp(-((x/.027)**4+((z-1.669)/.007)**4))*max(0,min(1,(-y-.151)/.017))
+    lipmask=math.exp(-((x/.027)**4+((z-1.668)/.0048)**4))*max(0,min(1,(-y-.147)/.017))
     blush=math.exp(-(((abs(x)-.052)/.025)**2+((z-1.71)/.033)**2))*max(0,min(1,(-y-.075)/.06))
     base=Vector((.64,.41,.30)).lerp(Vector((.54,.28,.22)),blush*.28).lerp(Vector((.40,.12,.098)),lipmask*.82)
     eyelid=math.exp(-(((abs(x)-.035)/.018)**4+((z-1.759)/.006)**2))*max(0,min(1,(-y-.105)/.025))
     base=base.lerp(Vector((.29,.13,.095)),eyelid*.29)
+    under=math.exp(-(((abs(x)-.035)/.024)**4+((z-1.739)/.007)**2))*max(0,min(1,(-y-.10)/.045))
+    base=base.lerp(Vector((.37,.22,.20)),under*.18)
     colors.data[v.index].color=(*base,1)
 nodes=skin.node_tree.nodes;links=skin.node_tree.links;p=nodes.get('Principled BSDF')
 attr=nodes.new('ShaderNodeVertexColor');attr.layer_name='SkinAlbedo';links.new(attr.outputs['Color'],p.inputs['Base Color'])
-p.inputs['Roughness'].default_value=.43;p.inputs['Subsurface Weight'].default_value=.10
+p.inputs['Roughness'].default_value=.48;p.inputs['Subsurface Weight'].default_value=.07
 p.inputs['Subsurface Radius'].default_value=(1,.45,.23)
 p.inputs['Subsurface Scale'].default_value=.006
 texskin=nodes.new('ShaderNodeTexNoise');texskin.inputs['Scale'].default_value=460;texskin.inputs['Detail'].default_value=2
-bump=nodes.new('ShaderNodeBump');bump.inputs['Strength'].default_value=.12;bump.inputs['Distance'].default_value=.00025
+bump=nodes.new('ShaderNodeBump');bump.inputs['Strength'].default_value=.20;bump.inputs['Distance'].default_value=.00032
 links.new(texskin.outputs['Fac'],bump.inputs['Height']);links.new(bump.outputs['Normal'],p.inputs['Normal'])
 
 def batch_curves(name,paths,r,mat,group,taper=False,res=1):
@@ -137,8 +152,15 @@ def surface(name,fun,nu,nv,mat,group,solid=.003,sub=1):
     for poly in ob.data.polygons:
         for li,vi in zip(poly.loop_indices,poly.vertices):uv.data[li].uv=(vi%nv/(nv-1)*vlen,vi//nv/(nu-1)*ulen)
     return ob
+def fitted(fun,u,v,d=.002):
+    """Lift detail along the local front normal, including deep folds."""
+    du=Vector(fun(min(1,u+.0005),v))-Vector(fun(max(0,u-.0005),v))
+    dv=Vector(fun(u,min(1,v+.0005)))-Vector(fun(u,max(0,v-.0005)))
+    normal=du.cross(dv).normalized()
+    if normal.y>0:normal=-normal
+    return Vector(fun(u,v))+normal*d
 def trim(fun,name,mat=gold,r=.0028,group='03_OuterRobe',u0=0,u1=1,v=0):
-    return curve(name,[Vector(fun(u0+(u1-u0)*k/100,v))+Vector((0,-.002,0)) for k in range(101)],r,mat,group)
+    return curve(name,[fitted(fun,u0+(u1-u0)*k/100,v,.003) for k in range(101)],r,mat,group)
 
 # Ivory wrap shirt with deep V, kept narrow enough to show the underlying chest.
 table=[(1.09,.156,.139,.035),(1.24,.157,.152,.12),(1.41,.196,.16,.55),(1.49,.204,.135,.91),(1.551,.078,.075,1.00)]
@@ -146,7 +168,10 @@ def shirt(u,v):
     z,rx,ry,gap=interp(table,u);a=gap+(2*pi-2*gap)*v
     return Vector((rx*sin(a),-ry*cos(a)-.009,z+.002*cos(a*15+u*7)))
 surface('Ivory silk open wrap',shirt,45,80,ivory,'02_Innerwear',.003,1)
-for v in [0,1]:trim(shirt,'Ivory collar rolled edge',platinum,.004,'02_Innerwear',v=v)
+for side in [0,1]:
+    def facing(u,v,side=side):return shirt(u,.022*v if side==0 else 1-.022*v)+Vector((0,-.002,0))
+    surface('Soft ivory collar facing',facing,45,7,ivory,'02_Innerwear',.001,1)
+    trim(shirt,'Ivory collar stitched edge',ivory,.0018,'02_Innerwear',v=side)
 
 # Pants are fitted at the hip and break into small folds above the boot.
 for s in [-1,1]:
@@ -161,10 +186,16 @@ for s in [-1,1]:
 coat_table=[(.11,.385,.22,.27),(.29,.327,.207,.26),(.54,.265,.184,.29),(.81,.215,.162,.30),(1.05,.182,.148,.30),(1.20,.171,.150,.40),(1.38,.211,.164,.72),(1.49,.222,.13,1.00)]
 def coat(u,v):
     z,rx,ry,gap=interp(coat_table,u);a=gap+(2*pi-2*gap)*v
-    fold=.011*(1-u)*sin(a*14+u*7)+.005*sin(a*23-u*4)*(1-u)**2
+    fold=.019*(1-u)*sin(a*11+u*5)+.010*sin(a*19-u*7)*(1-u)**2
+    fold+=.009*math.exp(-((u-.69)/.13)**2)*sin(a*23+u*27)
     gust=.10*(1-u)**3*sin(a)*sin(a*2+.7)
     return Vector(((rx+fold)*sin(a)+gust,-(ry+fold)*cos(a)+.12*(1-u)**3*sin(a*.5),z+.035*(1-u)**5*(1+sin(a*4))))
-surface('Cut garnet silk overcoat',coat,90,135,red,'03_OuterRobe',.005,1)
+surface('Cut garnet silk overcoat',coat,110,151,velvet,'03_OuterRobe',.004,1)
+for side in [0,1]:
+    def lapel(u,v,side=side):return coat(u,.068*v if side==0 else 1-.068*v)+Vector((0,-.003,0))
+    surface('Brocade lapel facing',lapel,101,17,red,'03_OuterRobe',.0015,1)
+def hemface(u,v):return coat(.012+u*.056,v)+Vector((0,-.002,0))
+surface('Wide brocade hem facing',hemface,13,151,red,'03_OuterRobe',.001,1)
 for v in [0,1]:
     trim(coat,'Gold bound lapel',gold,.005,v=v)
     trim(coat,'Gold lapel parallel braid',platinum,.0015,v=.017 if v==0 else .983)
@@ -173,10 +204,12 @@ for u in [.018,.05]:
 
 def floral(fun,us,vs,uwidth,vwidth,group='03_OuterRobe',radius=.0012):
     """Paired curling tendrils and almond leaves fitted on the true cloth surface."""
+    rawfun=fun
+    fun=lambda u,v:fitted(rawfun,u,v,.004)
     paths=[];leaves=[];lv=[];lf=[]
     for u in us:
         for v in vs:
-            paths.append([fun(u+(t-.5)*uwidth,v)+Vector((0,-.004,0)) for t in [i/24 for i in range(25)]])
+            paths.append([fun(u+(t-.5)*uwidth,v) for t in [i/24 for i in range(25)]])
             for s in [-1,1]:
                 for row in [-.22,.16]:
                     pts=[]
@@ -184,12 +217,12 @@ def floral(fun,us,vs,uwidth,vwidth,group='03_OuterRobe',radius=.0012):
                         t=j/44;angle=t*pi*2.15;r=sin(t*pi*.80)
                         uu=u+row*uwidth+.26*uwidth*t+.15*uwidth*r*sin(angle)
                         vv=v+s*vwidth*(.18+.7*t+.28*r*cos(angle))
-                        pts.append(fun(uu,vv)+Vector((0,-.004,0)))
+                        pts.append(fun(uu,vv))
                     paths.append(pts)
                     # almond-shaped leaf path
-                    leaf=[fun(u+(row+.08+.15*sin(a))*uwidth,v+s*(.72+.08*cos(a)**3)*vwidth)+Vector((0,-.005,0)) for a in [2*pi*k/32 for k in range(32)]]
+                    leaf=[fun(u+(row+.08+.15*sin(a))*uwidth,v+s*(.72+.08*cos(a)**3)*vwidth) for a in [2*pi*k/32 for k in range(32)]]
                     leaves.append(leaf+[leaf[0]])
-                    center=fun(u+(row+.08)*uwidth,v+s*.72*vwidth)+Vector((0,-.006,0))
+                    center=fun(u+(row+.08)*uwidth,v+s*.72*vwidth)
                     offset=len(lv);lv.extend([center]+leaf)
                     for k in range(32):lf.append((offset,offset+1+k,offset+1+(k+1)%32))
     batch_curves('Raised baroque flame scrolls',paths,radius,gold,group,False,1)
@@ -216,7 +249,11 @@ for s in [-1,1]:
         a=2*pi*v;across=t.cross(Vector((0,1,0))).normalized();normal=t.cross(across)
         r=.076+.035*u**1.6;fold=.009*sin(a*9+u*2)*sin(pi*u)+.0035*sin(a*17-u*7)
         return c+across*(cos(a)*(r+fold))+normal*(sin(a)*(r+fold)*1.03)+Vector((0,0,-.020*sin(a)**2*sin(pi*u)))
-    surface('Gathered bell sleeve '+str(s),sleeve,49,65,red,'03_OuterRobe',.004,1)
+    surface('Gathered bell sleeve '+str(s),sleeve,49,65,velvet,'03_OuterRobe',.004,1)
+    def cuff(u,v):return sleeve(.78+.218*u,v)*1.0
+    cuffob=surface('Broad brocade cuff '+str(s),cuff,17,65,red,'03_OuterRobe',.005,1)
+    # A few millimeters of outward offset prevent coplanar cuff surfaces.
+    cuffob.modifiers.new('Raised cuff facing','DISPLACE').strength=.002
     for u in [.965,.995]:curve('Layered sleeve hem',[sleeve(u,j/100) for j in range(101)],.004,gold,'03_OuterRobe')
     floral(sleeve,[.40,.68,.87],[.12,.37,.62,.87],.25,.08,radius=.0013)
 
@@ -233,6 +270,16 @@ for s in [-1,1]:
             t=k/44;path.append(pauldron(u+.075*sin(t*pi*2),t)+Vector((0,0,.006)))
         curve('Shoulder acanthus ribs',path,.003,gold)
     uv('Shoulder garnet',(s*.224,-.018,1.557),(.018,.031,.009),gem)
+    # Pierced scrolling tracery lies above the curved shell, surrounded by milgrain.
+    paths=[]
+    for row in range(3):
+        for col in range(4):
+            uu=.18+col*.18;vv=.20+row*.28
+            paths.append([pauldron(uu+.065*cos(t)*(1-t/(pi*3)*.65),vv+.11*sin(t)*(1-t/(pi*3)*.65))+Vector((0,0,.006)) for t in [pi*3*k/50 for k in range(51)]])
+    batch_curves('Shoulder pierced scrollwork',paths,.0015,gold,'06_Regalia',False,1)
+    for k in range(29):
+        pp=pauldron(.08+.90*k/28,0)+Vector((0,-.001,.001))
+        uv('Shoulder milgrain bead',pp,(.002,.002,.002),platinum,seg=8)
 
 # Belt with sculptural filigree, cabochon and draped chains.
 curve('Velvet fitted belt',[(.192*sin(a),-.161*cos(a),1.098) for a in [2*pi*k/120 for k in range(121)]],.019,black)
@@ -258,12 +305,21 @@ for s in [-1,1]:
 for tier in range(3):
     pts=[]
     for j in range(151):
-        t=j/150;x=.070*cos(pi*t);z=1.558-(.214+tier*.075)*sin(pi*t)**.84
+        t=j/150;x=.050*cos(pi*t);z=1.565-(.220+tier*.075)*sin(pi*t)**.84
         hit,_,_,_=bvh.ray_cast(Vector((x,-.4,z)),Vector((0,1,0)),.5)
-        y=(hit.y-.006) if hit is not None else -.145
+        if hit is None:hit,_,_,_=bvh.find_nearest(Vector((x,-.06,z)))
+        y=hit.y-.0025
         pts.append(Vector((x,y,z)))
     curve('Draped fine neck chain',pts,.0013,platinum)
-    back=[Vector((-.07*cos(a),.030+.048*sin(a),1.558+.004*sin(a))) for a in [pi*j/60 for j in range(61)]]
+    # Trace the neck perimeter by inward radial rays; the former narrow ellipse cut through it.
+    back=[]
+    a0=math.atan2(pts[-1].x,-pts[-1].y);a1=-2*pi+math.atan2(pts[0].x,-pts[0].y)
+    for j in range(101):
+        t=j/100;a=a0+(a1-a0)*t;z=1.565+.008*sin(pi*t)
+        ray=Vector((sin(a),-cos(a),0));origin=Vector((0,0,z))+ray*.30
+        hit,normal,_,_=bvh.ray_cast(origin,-ray,.40)
+        if hit is None:raise RuntimeError('Neck chain failed to fit body surface')
+        back.append(hit+normal*.002)
     curve('Neck chain back connection',[pts[-1]]+back+[pts[0]],.0013,platinum)
     loops=[]
     for j in range(2,148,3):
@@ -276,20 +332,20 @@ for tier in range(3):
 
 # Long ribbon-like mantle panels. The rightward flow is modeled, not simulated.
 mantle_funs=[]
-for idx in range(8):
-    a=(idx-3.5)/3.5
+for idx in range(5):
+    a=(idx-2)/2
     root=Vector((a*.207,.098,1.475-abs(a)*.019))
     end=Vector((.60+a*.82,.48+.12*sin(idx),.08+.18*(idx%3)+.07*cos(idx)))
     controls=[root,Vector((a*.34+.25,.28,1.43)),Vector((a*.55+1.0,.38+.19*cos(idx),.66+.22*sin(idx))),end]
     cs=bez(controls,101)
     def mantle(u,v,cs=cs,idx=idx):
         j=min(99,int(u*100));c=cs[j].lerp(cs[j+1],u*100-j)
-        width=(.044+.13*sin(pi*u)**.65)*(1-.8*u**8)
+        width=(.039+.11*sin(pi*u)**.65)*(1-.9*u**8)
         q=(v-.5)*2
         flutter=.043*sin(u*14+q*3+idx)*sin(pi*u)**.6
         return c+Vector((q*width,.047*cos(q*pi*1.3)*sin(pi*u)+flutter,.05*q*q*sin(pi*u)+.044*sin(u*11+idx)*q))
     mantle_funs.append(mantle)
-    surface('Wind-sculpted mantle %02d'%idx,mantle,101,29,red2 if idx%3==0 else red,'04_Mantle',.002,1)
+    surface('Wind-sculpted mantle %02d'%idx,mantle,101,29,velvet,'04_Mantle',.002,1)
     for v in [0,1]:trim(mantle,'Mantle cut gold edge',gold,.0027,'04_Mantle',v=v)
     floral(mantle,[.16,.32,.49,.66,.82],[.5],.18,.32,'04_Mantle',.0014)
     # Branching glowing seams hug the fabric; vary path so it reads as embers rather than uniform piping.
@@ -300,15 +356,27 @@ for idx in range(8):
 
 # Broad billowing cloth lobes break the regular feather silhouette, with curved flame tips.
 for idx in range(3):
-    controls=[Vector((-.13+idx*.11,.19,1.48)),Vector((.35,.29,1.70-idx*.14)),Vector((1.13,.44,1.32-idx*.22)),Vector((1.62-idx*.1,.42,1.36-idx*.30))]
+    controls=[Vector((-.13+idx*.11,.19,1.48)),Vector((.40,.27,1.48-idx*.19)),Vector((1.25,.52,1.43-idx*.31)),Vector((1.78-idx*.16,.37,1.06-idx*.32))]
     cs=bez(controls,101)
     def billow(u,v,cs=cs,idx=idx):
         j=min(99,int(u*100));c=cs[j].lerp(cs[j+1],u*100-j);q=(v-.5)*2
-        width=.018+.19*sin(pi*.83*u)**.60
-        return c+Vector((.03*q*sin(u*12)+u**7*.065*sin(q*9+idx),q*width*.55+.055*sin(u*17+q*3)*sin(pi*u),q*width+.060*cos(q*5+u*10)*sin(pi*u)+u**7*.030*cos(q*13+idx)))
-    surface('Broad wind-billowed silk %02d'%idx,billow,101,45,red2,'04_Mantle',.002,1)
+        width=.025+(.18+idx*.065)*sin(pi*.95*u)**.70
+        wave=sin(u*9+q*3.8+idx*.8)*sin(pi*u)
+        return c+Vector((.045*q*sin(u*8)+u**5*.08*sin(q*4+idx),q*width*.70+.075*wave,q*width+.065*cos(q*4+u*8+idx)*sin(pi*u)+.014*sin(q*15+u*6)*sin(pi*u)))
+    surface('Broad wind-billowed silk %02d'%idx,billow,121,61,velvet,'04_Mantle',.002,1)
+    for side in [0,1]:
+        def border(u,v,side=side):return billow(u,v*.14 if side==0 else 1-v*.14)+Vector((0,-.002,0))
+        surface('Flowing brocade mantle border',border,121,13,red2,'04_Mantle',.001,1)
     for v in [0,1]:trim(billow,'Billowing edge ember',ember,.0028,'04_Mantle',v=v)
     floral(billow,[.19,.35,.51,.68,.85],[.32,.68],.16,.20,'04_Mantle',.0013)
+    # Original solar embroidery medallion: fine raised thread, fitted to each folded panel.
+    rings=[]
+    for radius0 in [.60,.72,1.0]:
+        rings.append([fitted(billow,.57+.092*radius0*cos(a),.50+.27*radius0*sin(a),.004) for a in [2*pi*j/180 for j in range(181)]])
+    for k in range(16):
+        a=k*pi/8
+        rings.append([fitted(billow,.57+.092*(.72+.37*sin(pi*t))*cos(a+.18*t),.50+.27*(.72+.37*sin(pi*t))*sin(a+.18*t),.004) for t in [j/24 for j in range(25)]])
+    batch_curves('Mantle solar embroidery medallion',rings,.0009,gold,'04_Mantle',False,1)
 
 # A flowing translucent outer veil with gold fire filigree provides a broad cloth silhouette.
 veil=material('Thin dark garnet organza',(.08,.002,.002),.03,.50)
@@ -328,34 +396,43 @@ scalpmat=material('Natural scalp beneath white hair',(.59,.385,.285),0,.60)
 surface('Scalp under fibers',scalp,24,97,scalpmat,'05_Hair',.001,1)
 guides=[]
 for s in [-1,1]:
-    for k in range(9):
-        off=k/8
-        guides.append(([(s*(.003+.027*off),-.030+.015*off,1.884-.008*off),(s*(.108+.021*off),-.162,1.902-.027*off),(s*(.123-.025*off),-.190,1.727-.018*k),(s*(.060+.013*k),-.154,1.772-.025*k)],.008,.006,75))
-    for k in range(12):
-        off=k/11
-        guides.append(([(s*(.047+.032*off),-.055+.08*off,1.855-.025*off),(s*(.17+.035*off),-.10+.04*off,1.79),(s*(.07+.07*off),-.21+.12*off,1.40),(s*(.19+.07*off)+.07,-.14+.18*off,1.15+.12*sin(k))],.012,.009,70))
-for k in range(28):
-    a=1.35+3.60*k/27;p=scalp(.46,a/(2*pi))
-    guides.append(([p,Vector((p.x*1.7,.17,1.68)),Vector((.12+p.x*2.5,.28,1.45)),Vector((.20+p.x*3.4,.30+.07*sin(k),1.04+.10*cos(k)))],.016,.010,70))
+    for k in range(6):
+        off=k/5
+        # Unequal parted forelocks: fewer locks with rounded volume and staggered tips.
+        guides.append(([(.012+s*.010*off,-.038+.022*off,1.887-.006*off),(s*(.126+.024*off),-.182,1.923-.042*off),(s*(.15+.018*off),-.20,1.677-.020*k),(s*(.11+.028*off),-.168+.022*k,1.52+.028*k)],.012+.002*off,.014,100))
+    for k in range(13):
+        off=k/12;phase=k*2.399
+        guides.append(([(s*(.059+.024*off),-.059+.108*off,1.851-.036*off),(s*(.16+.033*sin(phase)),-.055+.055*off,1.69+.065*cos(phase)),(s*(.115+.042*sin(phase))+.07,-.15+.16*off,1.42+.052*sin(phase)),(s*(.15+.09*off)+.16,-.11+.23*off,1.09+.23*off+.07*sin(phase))],.009+.004*random.random(),.011,65))
+for k in range(24):
+    a=1.35+3.60*k/23;p=scalp(.46,a/(2*pi));phase=k*2.399
+    guides.append(([p,Vector((p.x*1.8,.15,1.74)),Vector((.16+p.x*2.3,.25+.08*sin(phase),1.42)),Vector((.28+p.x*3.2,.28+.08*sin(phase),1.04+.17*cos(phase)))],.013,.014,65))
 # Root fibers flow over the cap; follows cranial surface instead of converging on a flat sheet.
 paths_by_mat=[[] for _ in hairmats]
 for k in range(1000):
     a=random.random();end=.75+random.random()*.25
     path=[scalp(.02+(end-.02)*j/28,a)+Vector((0,-.0005,.0015)) for j in range(29)]
     paths_by_mat[k%4].append(path)
-for guide,w,d,count in guides:
-    cs=bez(guide,38)
+for gi,(guide,w,d,count) in enumerate(guides):
+    cs=bez(guide,46);guidephase=gi*2.399
     for k in range(count):
-        phase=random.random()*2*pi;ox=random.uniform(-1,1)*w;oy=random.uniform(-1,1)*d
+        phase=random.random()*2*pi;rr=math.sqrt(random.random());ox=cos(phase)*rr*w;oy=sin(phase)*rr*d
         path=[]
-        length=33+random.randrange(5)
+        length=39+random.randrange(7)
         for j,c in enumerate(cs[:length]):
-            t=j/37;tan=(cs[min(37,j+1)]-cs[max(0,j-1)]).normalized();across=tan.cross(Vector((0,1,0))).normalized();normal=tan.cross(across)
-            wave=.002*sin(t*18+phase)*sin(pi*t)
-            curl=Vector((.023*sin(t*12+guide[0][0]*24)*sin(pi*t)**2,-.018*cos(t*11+guide[0][0]*13)*sin(pi*t)**2,0))
-            path.append(c+across*(ox*(.30+.70*sin(pi*t))+wave)+normal*(oy*sin(pi*t)+wave*.35)+curl)
+            t=j/45;tan=(cs[min(45,j+1)]-cs[max(0,j-1)]).normalized();across=tan.cross(Vector((0,1,0))).normalized();normal=tan.cross(across)
+            wave=.0008*sin(t*23+phase)*sin(pi*t)
+            amp=.011 if gi<6 else .020
+            curl=Vector((amp*sin(t*10+guidephase)*sin(pi*t)**1.5,-amp*.8*cos(t*10+guidephase)*sin(pi*t)**1.5,0))
+            clump=(.20+.80*sin(pi*t)**.7)*(1-.62*t**4)
+            path.append(c+across*(ox*clump+wave)+normal*(oy*clump+wave*.35)+curl)
         paths_by_mat[k%4].append(path)
-for i,paths in enumerate(paths_by_mat):batch_curves('Waved silver individual fibers '+str(i),paths,.00030,hairmats[i],'05_Hair',True,0)
+for i,paths in enumerate(paths_by_mat):batch_curves('Waved silver individual fibers '+str(i),paths,.00029,hairmats[i],'05_Hair',True,0)
+loose=[]
+for k in range(180):
+    guide,w,d,_=guides[k%len(guides)];cs=bez(guide,40);phase=random.random()*2*pi
+    path=[c+Vector((.010*sin(t*pi)*sin(t*8+phase),-.010*sin(t*pi)*cos(t*7+phase),.004*sin(t*pi))) for c,t in zip(cs,[j/39 for j in range(40)])]
+    loose.append(path)
+batch_curves('Fine escaping flyaway fibers',loose,.00011,hairmats[0],'05_Hair',True,0)
 
 # Filigree crown with seven sculpted upward flames and small suspended sun arcs.
 def flame_leaf(name,base,tip,width,mat,group='06_Regalia'):
@@ -377,8 +454,19 @@ for k in range(13):
     flame_leaf('Forged flame crown finial',base,tip,.0085,gold)
     curve('Crown ember ridge',bez([base,base+Vector((.009,-.006,.030)),tip-Vector((.006,.004,.014)),tip],28),.0015,ember)
     uv('Crown garnet cabochon',base+Vector((0,-.006,.006)),(.0055,.004,.009),gem,seg=24)
+    for sign in [-1,1]:
+        pts=[base+Vector((sign*.011*(1-t)*sin(t*pi*3),-.007,.005+t*.043)) for t in [j/45 for j in range(46)]]
+        curve('Crown pierced arabesque',pts,.00125,gold)
+    for kk in [-1,1]:
+        curve('Crown stone claw',[base+Vector((kk*.006,-.003,.002)),base+Vector((kk*.004,-.011,.009))],.0009,platinum)
 curve('Engraved forehead band',[(.10*sin(a),-.043-.118*cos(a),1.819+.014*cos(a*2)) for a in [2*pi*k/160 for k in range(161)]],.0035,gold)
 uv('Forehead tear garnet',(0,-.166,1.820),(.009,.005,.016),gem)
+for k in range(41):
+    a=-1.1+2.2*k/40;p=Vector((.102*sin(a),-.043-.120*cos(a),1.819+.014*cos(a*2)))
+    uv('Crown forehead milgrain',p+Vector((0,-.001,-.004)),(.0017,.0017,.0017),platinum,seg=8)
+for s in [-1,1]:
+    pts=bez([(s*.007,-.164,1.815),(s*.037,-.176,1.821),(s*.065,-.164,1.841),(s*.080,-.137,1.859)],45)
+    curve('Crown swept forehead tracery',pts,.0017,gold)
 
 # Ceremonial staff: offset angular sun sculpture, chased helical shaft.
 a=Vector((.61,-.03,.05));b=Vector((.86,.015,1.90))
@@ -406,6 +494,11 @@ for ob in list(COL['01_Body'].objects):
 for ob in list(COL['05_Hair'].objects):ob.matrix_world=headxf@ob.matrix_world
 for ob in list(COL['06_Regalia'].objects):
     if any(word in ob.name.lower() for word in ['crown','circlet','forehead']):ob.matrix_world=headxf@ob.matrix_world
+    elif 'neck chain' in ob.name.lower() and ob.type=='CURVE':
+        for spline in ob.data.splines:
+            for point in spline.points:
+                c=Vector(point.co[:3]);w=max(0,min(1,(c.z-1.56)/.067));w=w*w*(3-2*w)
+                point.co=(*c.lerp(headxf@c,w),1)
 
 # Real 3D translucent flame ribbons and embers, separated for effects-free review/export.
 COL['08_EmberFX']=bpy.data.collections.new('08_EmberFX');scene0=bpy.context.scene;scene0.collection.children.link(COL['08_EmberFX'])

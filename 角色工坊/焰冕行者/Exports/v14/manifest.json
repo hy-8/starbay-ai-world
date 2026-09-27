@@ -1,0 +1,31 @@
+{
+  "version": "v14",
+  "status": "static couture display model; no rig/cloth physics/UE play validation",
+  "units": "meters",
+  "mesh_objects": 470,
+  "vertices": 2329793,
+  "triangles": 4564612,
+  "excluded_collections": [
+    "90_Stage",
+    "08_EmberFX"
+  ],
+  "textile_maps": [
+    "Ember_Brocade_Albedo.png",
+    "Ember_Brocade_ORM.png",
+    "Ember_Brocade_Normal.png"
+  ],
+  "files": {
+    "Ember_Regent.blend": {
+      "bytes": 38072398,
+      "sha256": "d2014d3ba0cac7516be9e64076947de0c0b3a332e4c7017213b057b699bd4556"
+    },
+    "Ember_Regent_Static.fbx": {
+      "bytes": 105821452,
+      "sha256": "e80359972d6734b2f627fbbb4e9038e44a17808fbe880423aa6362778b8531a1"
+    },
+    "Ember_Regent_Static.glb": {
+      "bytes": 130274620,
+      "sha256": "617493af9a9860e6e74c2ea1de65ee9ebc67bce85f27a909084cc0ac020ff293"
+    }
+  }
+}
