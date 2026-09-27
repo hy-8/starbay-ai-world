@@ -1,4 +1,4 @@
-param([string]$EngineRoot, [switch]$ImportScene, [string]$CacheRoot, [string]$ExecuteScript)
+param([string]$EngineRoot, [switch]$ImportScene, [string]$CacheRoot, [string]$ExecuteScript, [switch]$Unattended, [string]$Map)
 $ErrorActionPreference = 'Stop'
 $taskProjectRoot = Split-Path -Parent $PSScriptRoot
 $taskProjectFile = Join-Path $taskProjectRoot 'StarbayUE5.uproject'
@@ -54,6 +54,8 @@ foreach ($taskCacheDirectory in @($taskDdc,$taskZen,$taskTemp)) {
     New-Item -ItemType Directory -Path $taskCacheDirectory -Force | Out-Null
 }
 $taskArgs = @("`"$taskProjectFile`"")
+if ($Map) { $taskArgs += $Map }
+if ($Unattended) { $taskArgs += @('-unattended','-NoSplash','-NoRestoreOpenAssetTabs') }
 $taskArgs += "-ZenDataPath=`"$taskZen`""
 if ($ImportScene) {
     if ($ExecuteScript) { throw 'ImportScene 与 ExecuteScript 不能同时使用。' }

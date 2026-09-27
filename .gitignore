@@ -117,3 +117,20 @@
 !/角色工坊/焰冕行者/Renders/v14/*.png
 !/角色工坊/焰冕行者/Exports/v14/
 !/角色工坊/焰冕行者/Exports/v14/*.json
+
+# Dynamic Ember candidate: reviewed sources/evidence only.
+/星湾UE5/Tools/inspect_*.py
+/星湾UE5/Tools/make_ember_controls.py
+/星湾UE5/Tools/configure_ember_energy.py
+/星湾UE5/Preview/UE5_Ember_Spell.png
+/角色工坊/焰冕行者/Tools/inspect_*.py
+!/角色工坊/焰冕行者/Source/hand_binding_sources.json
+!/角色工坊/焰冕行者/Source/UE_Reference/
+!/角色工坊/焰冕行者/Source/UE_Reference/sources.json
+!/角色工坊/焰冕行者/Source/UE_Reference/*.md
+!/角色工坊/焰冕行者/Exports/rig04/
+!/角色工坊/焰冕行者/Exports/rig04/*.json
+!/角色工坊/焰冕行者/Exports/motion05/
+!/角色工坊/焰冕行者/Exports/motion05/*.json
+!/角色工坊/焰冕行者/Renders/motion05/
+!/角色工坊/焰冕行者/Renders/motion05/*.png

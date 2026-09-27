@@ -1,0 +1,114 @@
+{
+  "date": "2026-09-27",
+  "engine": "5.6.1",
+  "candidate": {
+    "rig": "rig04",
+    "animation": "motion05",
+    "ue": "Ember_v04"
+  },
+  "input_checks": {
+    "status": "passed",
+    "method": "Enhanced Input development Input.+key / Input.-key, not OS keyboard injection",
+    "checks": {
+      "walk_mapping": true,
+      "shift_sprint_mapping": true,
+      "space_jump_mapping": true,
+      "q_cast_mapping": true,
+      "cast_recovers": true,
+      "repeat_cast": true
+    },
+    "walk_speed": 300.0,
+    "sprint_speed": 600.0,
+    "jump_rise": 127.50003195070886
+  },
+  "assets": {
+    "status": "asset_checks_passed; runtime and visual checks remain separate",
+    "mesh": "/Game/Starbay/Ember_v04/SK_EmberRegent.SK_EmberRegent",
+    "anim_class": "/Game/Starbay/Ember_v04/ABP_Ember.ABP_Ember_C",
+    "walk_speed": 600.0,
+    "lods": [
+      {
+        "index": 0,
+        "vertices": 527837,
+        "sections": 16
+      },
+      {
+        "index": 1,
+        "vertices": 146241,
+        "sections": 16
+      },
+      {
+        "index": 2,
+        "vertices": 77689,
+        "sections": 15
+      }
+    ],
+    "animations": {
+      "Idle": 7.599999904632568,
+      "Walk": 1.5333333015441895,
+      "Run": 1.7999999523162842,
+      "Jump": 0.8999999761581421,
+      "Fall": 3.0333333015441895,
+      "Land": 0.8999999761581421,
+      "Spell": 4.0
+    },
+    "material_slots": [
+      "Amber iris",
+      "Brushed champagne gold",
+      "Garnet cabochon",
+      "Amber hot filament",
+      "Obsidian brocade",
+      "Garnet woven silk",
+      "Deep oxblood silk velvet",
+      "Porcelain warm skin",
+      "Ivory fiber 0",
+      "Pupil",
+      "Vermilion silk lining",
+      "Warm ivory silk",
+      "Thin dark garnet organza",
+      "Basalt bronze inset",
+      "Natural scalp beneath white hair",
+      "Eye sclera"
+    ]
+  },
+  "camera": {
+    "active_camera": "FollowCamera",
+    "one_active_camera": true,
+    "player_camera_visually_checked": true
+  },
+  "windows": {
+    "launched": true,
+    "map_loaded": true,
+    "arena_map": "/Game/Starbay/Ember_v04/L_EmberArena",
+    "street_map": "/Game/Starbay/Maps/L_Starbay",
+    "both_spawn_hero": true,
+    "cook_exit_code": 0,
+    "path": "星湾发布/Ember-v0.4.0-final/Windows/StarbayUE5.exe",
+    "camera_screenshot_visually_checked": true,
+    "full_input_mapping_test": "PIE only; independent build startup and camera checked",
+    "fatal_errors_observed": false
+  },
+  "dependency_collection": {
+    "files": 200,
+    "missing_hard": [],
+    "optional_missing_soft": [
+      "/Game/Characters/Mannequins/Animations/EditableAnimations/LS_ChargedAttack",
+      "/Game/Characters/Mannequins/Meshes/SKM_Manny",
+      "/Game/Characters/Mannequins/Animations/EditableAnimations/LS_Attack_01",
+      "/Game/Characters/Mannequins/Animations/EditableAnimations/LS_Attack_02",
+      "/Game/Characters/Mannequins/Animations/EditableAnimations/LS_Attack_03"
+    ]
+  },
+  "packaged_config": {
+    "extracted_and_checked": true,
+    "generated_android_token_included": false
+  },
+  "limits": [
+    "Reference-quality art not achieved",
+    "Cape/hair/skirt use baked bones, not cloth simulation",
+    "No facial animation or production skin textures",
+    "No completed native glyph or costume charge pulse",
+    "No full combat, native Qwen NPC, task or daynight system",
+    "Not a physical keyboard or sustained-performance acceptance test"
+  ]
+}

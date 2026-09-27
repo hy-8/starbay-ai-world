@@ -1,0 +1,37 @@
+{
+  "version": "rig04",
+  "source": "v14",
+  "status": "bound candidate; requires deformation and UE runtime validation",
+  "triangles": 791536,
+  "vertices": 421328,
+  "bones": 151,
+  "materials": [
+    "Amber iris",
+    "Brushed champagne gold",
+    "Garnet cabochon",
+    "Amber hot filament",
+    "Obsidian brocade",
+    "Garnet woven silk",
+    "Deep oxblood silk velvet",
+    "Porcelain warm skin",
+    "Ivory fiber 0",
+    "Pupil",
+    "Vermilion silk lining",
+    "Warm ivory silk",
+    "Thin dark garnet organza",
+    "Basalt bronze inset",
+    "Natural scalp beneath white hair",
+    "Eye sclera"
+  ],
+  "epic_reference": "Source/UE_Reference/sources.json",
+  "files": {
+    "Ember_Rigged.blend": {
+      "bytes": 154426512,
+      "sha256": "b6e24fd03c01b94283bf91bb16b90afb3adf5ffe4fffbf2822f7b8751f36c542"
+    },
+    "SK_EmberRegent.fbx": {
+      "bytes": 32066620,
+      "sha256": "25c2b8eaf4f33d05225c4a6727ca473b8d334126145cdaa3164f0eefcf10267c"
+    }
+  }
+}

@@ -10,7 +10,8 @@ Without OutputDirectory, creates a unique timestamped directory under Builds.
 param(
     [string]$EngineRoot = 'D:\Program Files\Epic Games\UE_5.6',
     [string]$OutputDirectory,
-    [string]$CacheRoot
+    [string]$CacheRoot,
+    [string[]]$Maps = @('/Game/Starbay/Maps/L_Starbay')
 )
 
 $ErrorActionPreference = 'Stop'
@@ -109,7 +110,7 @@ try {
         'BuildCookRun', "-project=$taskProjectFile", '-noP4', '-platform=Win64',
         '-clientconfig=Development', '-skipbuild', '-cook', '-stage', '-pak', '-iostore',
         '-package', '-archive', "-archivedirectory=$taskOutput",
-        '-map=/Game/Starbay/Maps/L_Starbay', '-unattended', '-utf8output',
+        ('-map=' + ($Maps -join '+')), '-unattended', '-utf8output',
         '-nocompileeditor', '-nocompileuat'
     )
     $taskReport.status = 'packaging'

@@ -1,6 +1,17 @@
 # 焰冕行者 · 红金礼服角色
 
-当前候选为 **v14 / Release v0.3.0**，是可编辑的 Blender 静态展示模型。v04、v11 及历史发布完整保留。本版改善发束、服装的材质层次及饰件连接，但面部精雕、自然布料塑形仍与参考的商业游戏角色有差距；尚未绑定，也没有替换 UE 游戏角色。
+当前活动候选为 **rig04 / motion05 / UE Ember_v04**：已绑定并接入 UE5 原生角色，可走、跑、跳、重复施法，火星随动画通知出现。姿态、脸部、发型和布料仍需精修，**没有达到参考中的商业 MMO 珍品皮肤质量**。详见 [动态试玩与实现说明](../../星湾UE5/Design/焰冕行者_动态试玩.md)。
+
+- 打开可编辑动作工程：`Exports/motion05/Ember_Animated.blend`；`Open-Character.ps1` 默认打开它。
+- 绑定基础：`Exports/rig04/Ember_Rigged.blend` 与 `SK_EmberRegent.fbx`；七项动画 FBX 在 `motion05`。
+- Blender 骨架共 151 根骨骼，候选约 79 万三角形；UE 已生成三档 LOD，仍需进一步降低运行时成本。
+- 披风、头发、裙摆是烘焙骨骼动作，不是实时布料。施法是原创关键帧，走跑跳使用 Epic 模板转换；详细许可见本目录第三方声明。
+- 原生输入测试通过，包括施法收势和再次触发；Windows 与相机检查以 `星湾UE5/Validation/ember_delivery.json` 为准。
+- [动态候选 v0.4.0 下载](https://github.com/hy-8/starbay-ai-world/releases/tag/character-ember-v0.4.0)。原静态版本完整保留，下面记录其制作过程。
+
+![UE 原生施法检查](../../星湾UE5/Preview/UE5_Ember_NativeCast.png)
+
+静态历史版本为 **v14 / Release v0.3.0**，是可编辑的 Blender 静态展示模型。v04、v11 及历史发布完整保留。本版改善发束、服装的材质层次及饰件连接，但面部精雕、自然布料塑形仍与参考的商业游戏角色有差距；尚未绑定，也没有替换 UE 游戏角色。
 
 ![实际 Blender 渲染](Renders/v14/01_Hero.png)
 
@@ -28,7 +39,7 @@
 
 [下载 v0.3.0 模型与制作源文件](https://github.com/hy-8/starbay-ai-world/releases/tag/character-ember-v0.3.0)。Git 保存脚本、说明、贴图、预览与报告；大型 `.blend`、FBX、GLB 和原始形体文件随 Release 提供。[v0.2.0](https://github.com/hy-8/starbay-ai-world/releases/tag/character-ember-v0.2.0) 与 [v0.1.0](https://github.com/hy-8/starbay-ai-world/releases/tag/character-ember-v0.1.0) 保留。
 
-## 实现与当前边界
+## 静态 v0.3.0 的实现与边界
 
 人体来自 MakeHuman 的明确 CC0 资产。Python 构建服装曲面、曲线镶边、披风、发丝和饰件，再用 Cycles 渲染。服装 UV 上的原创织锦底色由 image_gen 生成，ORM 与法线在 Blender 中实际烘焙；提示词见 `Materials/texture_provenance.json`。本版没有新增外部参考资产或把人物效果图当作模型成果。
 
@@ -36,7 +47,7 @@
 
 此模型以展示为目标，独立发丝与饰件带来较高几何数量，不是运行时优化版本。皮肤是局部顶点色和程序细节，尚无完整写实面部贴图；披风仍有较强参数化曲面感。没有骨骼、权重、动作、动态布料、UE Groom 或引擎内验收。Blender 灯光、程序材质及静态火焰也不会自动变成 UE 实机效果。
 
-## 后续重点
+## 静态版之后的制作方向（动态进展见页首）
 
 1. 继续面部精雕、发际线和真实肤质贴图，检查近距离眼睑、嘴角与表情。
 2. 用服装裁片与布料模拟改善披风和长袍的受力褶皱，并检查肩部连接和穿模。

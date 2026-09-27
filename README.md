@@ -1,8 +1,10 @@
 # 星湾街区 · 本地 AI 街区生活
 
-**2026-09-27：工程恢复至 `E:\星湾世界\starbay-ai-world`。** 已从 GitHub 恢复 UE 可编辑工程、v0.2.0 Windows 试玩和 Blender 场景；范围见 [恢复说明](恢复说明.md)。新增 [焰冕行者角色建模初版](角色工坊/焰冕行者/README.md)，包含真实 Blender 分件模型和静态 GLB/FBX，尚未绑定或替换游戏角色。
+**2026-09-27：工程恢复至 `E:\星湾世界\starbay-ai-world`。** 已从 GitHub 恢复 UE 可编辑工程、v0.2.0 Windows 试玩和 Blender 场景；范围见 [恢复说明](恢复说明.md)。新增 [焰冕行者角色建模初版](角色工坊/焰冕行者/README.md)，包含真实 Blender 分件模型；现已继续制作绑定、动作与 UE 原生角色，见下方动态更新。
 
-**角色精修更新：** [焰冕行者 v0.3.0](https://github.com/hy-8/starbay-ai-world/releases/tag/character-ember-v0.3.0) 调整闭唇与面颊、分束白发、深红主料与织锦镶边，细化冠饰/肩饰，重做披风曲面和绕颈挂链。保留六个实际渲染视角及关闭特效的素光图；当前依旧为静态展示模型，历史版本保留。
+**角色动态更新：** [焰冕行者 v0.4.0](https://github.com/hy-8/starbay-ai-world/releases/tag/character-ember-v0.4.0) 接入原生走、跑、跳与施法火星，附可编辑 Blender/UE 资产和 Windows 候选。原生输入映射、施法恢复与再次触发通过实测；画质尚未达到参考级成品。详见 [动态试玩说明](星湾UE5/Design/焰冕行者_动态试玩.md)。
+
+**历史静态精修：** [焰冕行者 v0.3.0](https://github.com/hy-8/starbay-ai-world/releases/tag/character-ember-v0.3.0) 调整闭唇与面颊、分束白发、深红主料与织锦镶边，细化冠饰/肩饰，重做披风曲面和绕颈挂链。保留六个实际渲染视角及关闭特效的素光图；当前依旧为静态展示模型，历史版本保留。
 
 **开发主线（2026-09-26）：[UE5 Windows 独立游戏](星湾UE5/README.md)。** 街区已在 UE5.6.1 中建图，第三人称角色移动与跳跃通过局部实测，Windows EXE 已完成打包并实际打开。下面的 NPC、本地 AI、昼夜和任务仍对应浏览器原型，尚未迁入 UE5。
 

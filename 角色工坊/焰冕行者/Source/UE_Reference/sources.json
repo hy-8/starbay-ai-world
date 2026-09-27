@@ -1,0 +1,54 @@
+{
+  "license": "Epic Unreal Engine template content; use subject to Epic license, not CC0",
+  "assets": [
+    {
+      "name": "Manny",
+      "asset": "/Game/Characters/Mannequins/Meshes/SKM_Manny_Simple",
+      "file": "Manny.fbx",
+      "bytes": 2888112,
+      "sha256": "c0815d28c0444395cf1b9612326792ee77795917e5baaf596e9f1fca9f80726a"
+    },
+    {
+      "name": "Idle",
+      "asset": "/Game/Characters/Mannequins/Anims/Unarmed/MM_Idle",
+      "file": "Idle.fbx",
+      "bytes": 2552000,
+      "sha256": "b8c480868a76a212f117c14c5d0da1565485976220a6e213d0769efa7f59979f"
+    },
+    {
+      "name": "Walk",
+      "asset": "/Game/Characters/Mannequins/Anims/Unarmed/Walk/MF_Unarmed_Walk_Fwd",
+      "file": "Walk.fbx",
+      "bytes": 1110320,
+      "sha256": "4c07d63f1e52ce257a79861c0ff1dbb408f98144cdfaba0d3933339cdd09e30e"
+    },
+    {
+      "name": "Run",
+      "asset": "/Game/Characters/Mannequins/Anims/Unarmed/Jog/MF_Unarmed_Jog_Fwd",
+      "file": "Run.fbx",
+      "bytes": 1197584,
+      "sha256": "e2f48f8f0e82875b9d166da50bcde6676a9eca15486c1f062c8ce97d9491a903"
+    },
+    {
+      "name": "Jump",
+      "asset": "/Game/Characters/Mannequins/Anims/Unarmed/Jump/MM_Jump",
+      "file": "Jump.fbx",
+      "bytes": 903072,
+      "sha256": "310e95a95d0499327bc07d41b550ab1939885a28edc1ab6b5aed6281eead422e"
+    },
+    {
+      "name": "Fall",
+      "asset": "/Game/Characters/Mannequins/Anims/Unarmed/Jump/MM_Fall_Loop",
+      "file": "Fall.fbx",
+      "bytes": 1601184,
+      "sha256": "27af9063605a63854ba042f4af9e095a0c07dea6156aa89ff8d4200f3d7fb5b4"
+    },
+    {
+      "name": "Land",
+      "asset": "/Game/Characters/Mannequins/Anims/Unarmed/Jump/MM_Land",
+      "file": "Land.fbx",
+      "bytes": 903072,
+      "sha256": "fdb5919f1e1a7de4d32dff6713c1843db3fdc68dee9eae473248749a0336d8bc"
+    }
+  ]
+}

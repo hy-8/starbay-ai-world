@@ -1,0 +1,83 @@
+{
+  "version": "motion05",
+  "rig_source": "rig04",
+  "actions": [
+    {
+      "action": "Idle",
+      "frames": 229,
+      "duration_seconds": 7.6,
+      "source": "Epic UE5.6 template, with baked accessory lag and reduced staff-arm swing"
+    },
+    {
+      "action": "Walk",
+      "frames": 47,
+      "duration_seconds": 1.5333333333333334,
+      "source": "Epic UE5.6 template, with baked accessory lag and reduced staff-arm swing"
+    },
+    {
+      "action": "Run",
+      "frames": 55,
+      "duration_seconds": 1.8,
+      "source": "Epic UE5.6 template, with baked accessory lag and reduced staff-arm swing"
+    },
+    {
+      "action": "Jump",
+      "frames": 28,
+      "duration_seconds": 0.9,
+      "source": "Epic UE5.6 template, with baked accessory lag and reduced staff-arm swing"
+    },
+    {
+      "action": "Fall",
+      "frames": 92,
+      "duration_seconds": 3.033333333333333,
+      "source": "Epic UE5.6 template, with baked accessory lag and reduced staff-arm swing"
+    },
+    {
+      "action": "Land",
+      "frames": 28,
+      "duration_seconds": 0.9,
+      "source": "Epic UE5.6 template, with baked accessory lag and reduced staff-arm swing"
+    },
+    {
+      "action": "Spell",
+      "frames": 121,
+      "duration_seconds": 4,
+      "source": "Original keyframed summon/release/settle; not motion capture"
+    }
+  ],
+  "status": "baked skeletal animation; UE and deformation validation pending",
+  "files": {
+    "A_Ember_Fall.fbx": {
+      "bytes": 1827532,
+      "sha256": "f00ae086ebc69d20d5aedafed104eb61617f9f795f67c6dad60a86974951bd30"
+    },
+    "A_Ember_Idle.fbx": {
+      "bytes": 3010364,
+      "sha256": "9cb8c06c53397b5e7c7981006f31b872b46d2fa9f7fb7c4f4e3a93b7ae130d05"
+    },
+    "A_Ember_Jump.fbx": {
+      "bytes": 1257244,
+      "sha256": "595a57b53c5593963eaebcb49d7d4d4b6e16ac5d8feca78b7cec678424e9fe33"
+    },
+    "A_Ember_Land.fbx": {
+      "bytes": 1257244,
+      "sha256": "ea2aa64203585746c60de5c3d5b147125c8b0039c6cd285a7392fe5a71d370c7"
+    },
+    "A_Ember_Run.fbx": {
+      "bytes": 1478236,
+      "sha256": "1d0e3bec251dc7fa242a3a3f671a11e79f304ed9869b93103b9a5130d61cc4c3"
+    },
+    "A_Ember_Spell.fbx": {
+      "bytes": 1984124,
+      "sha256": "28f94922ca06bdf79cb34bd3c05fbfa60858870b18549b156670c9cb370a1a87"
+    },
+    "A_Ember_Walk.fbx": {
+      "bytes": 1401932,
+      "sha256": "bfe15647f120c065394d8ec608f54734d9510e5ae3570a299891ae1f24542a88"
+    },
+    "Ember_Animated.blend": {
+      "bytes": 178872271,
+      "sha256": "42ad514a2a4fbf75e0248ac0b5a4d982e02b6eeb66094ec49041986ecf1ab107"
+    }
+  }
+}

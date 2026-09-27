@@ -20,3 +20,7 @@
 原创街区几何、茶庭、夜市与增量植被由项目制作脚本生成。本项目未为整个工程新增开源许可证，不应把第三方资源的许可与项目原创内容混为一谈。
 
 Blender、Unreal Engine、Epic Games Launcher 与可选 Windows SDK / MSVC 是外部工具，按各自许可使用。其安装程序不随本项目源资产包提供。本次 Blueprint 预编译 Windows 打包已在无可用 Windows SDK / VS C++ 工具链的环境中成功；未来新增需要编译的代码或插件时再准备对应工具链。
+
+## 焰冕行者动态角色 v0.4.0
+
+新使用 Epic Standard/Variant_Combat 中的 Blueprint 战斗逻辑、输入、动画接口和 Niagara burst 模拟，依照 Unreal Engine 相应许可使用。角色基础骨架与走跑跳动作参考本机 Epic Manny 模板，不属于 CC0。人体、面部形体和原生手指关节/权重来自明确标注 CC0 的 MakeHuman 资产；具体文件、来源与哈希见角色工坊的 THIRD_PARTY_NOTICES.md 及 Source 清单。程序织锦、造型、施法关键帧及火焰 Sprite 着色器为本项目制作。没有包含用户参考图片或原游戏标识。
