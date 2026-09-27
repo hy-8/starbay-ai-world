@@ -1,0 +1,23 @@
+{
+  "version": "v04",
+  "status": "static modeled costume study; no rig, skin weights, cloth physics or UE import",
+  "units": "meters",
+  "selected_meshes": 391,
+  "vertices": 283643,
+  "polygons": 281000,
+  "bounds_world": {},
+  "files": {
+    "Ember_Regent.blend": {
+      "bytes": 7862405,
+      "sha256": "8d1cb45ac826578f50fa16726efcbb48f972b7d300fb12c6bab205a64e4aec70"
+    },
+    "Ember_Regent_Static.fbx": {
+      "bytes": 12206860,
+      "sha256": "49e718d1b23fd378a3aee8651b84cdc5c57d207e07a1500bee520c714cec286e"
+    },
+    "Ember_Regent_Static.glb": {
+      "bytes": 10610248,
+      "sha256": "163205cfc2cf87ba23e6b2e9f6beabd8b3d71a5b5d56c92f284289f039dc9b32"
+    }
+  }
+}

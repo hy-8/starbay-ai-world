@@ -1,0 +1,57 @@
+{
+  "version": "v04",
+  "checks": [
+    {
+      "format": "glb",
+      "mesh_objects": 391,
+      "vertices": 297055,
+      "triangles": 559760,
+      "bounds_meters": {
+        "min": [
+          -0.8289061784744263,
+          -0.3955528140068054,
+          -0.0010000020265579224
+        ],
+        "max": [
+          0.8774974942207336,
+          0.715997576713562,
+          2.071599245071411
+        ],
+        "size": [
+          1.70640367269516,
+          1.1115503907203674,
+          2.072599247097969
+        ]
+      },
+      "sha256": "163205cfc2cf87ba23e6b2e9f6beabd8b3d71a5b5d56c92f284289f039dc9b32",
+      "result": "passed: import, finite geometry, human scale, materials, no stage/rig implied"
+    },
+    {
+      "format": "fbx",
+      "mesh_objects": 391,
+      "vertices": 283643,
+      "triangles": 559760,
+      "bounds_meters": {
+        "min": [
+          -0.8289061784744263,
+          -0.3955526649951935,
+          -0.0010000020265579224
+        ],
+        "max": [
+          0.8774974942207336,
+          0.715997576713562,
+          2.071599245071411
+        ],
+        "size": [
+          1.70640367269516,
+          1.1115502417087555,
+          2.072599247097969
+        ]
+      },
+      "sha256": "49e718d1b23fd378a3aee8651b84cdc5c57d207e07a1500bee520c714cec286e",
+      "result": "passed: import, finite geometry, human scale, materials, no stage/rig implied"
+    }
+  ],
+  "blend": "Reopened editable collections; no missing external texture images.",
+  "limitations": "Static geometry only; no performance, rigging, deformation, animation, cloth, or Unreal play validation."
+}
