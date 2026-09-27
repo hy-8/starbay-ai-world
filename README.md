@@ -2,6 +2,8 @@
 
 **2026-09-27：工程恢复至 `E:\星湾世界\starbay-ai-world`。** 已从 GitHub 恢复 UE 可编辑工程、v0.2.0 Windows 试玩和 Blender 场景；范围见 [恢复说明](恢复说明.md)。新增 [焰冕行者角色建模初版](角色工坊/焰冕行者/README.md)，包含真实 Blender 分件模型和静态 GLB/FBX，尚未绑定或替换游戏角色。
 
+**角色精修更新：** [焰冕行者红金织锦 v0.2.0](https://github.com/hy-8/starbay-ai-world/releases/tag/character-ember-v0.2.0) 新增细发丝、面部调整、贴图烘焙、金饰和熔火披风。保留六个实际渲染视角及关闭特效的素光图，当前依旧为静态展示模型。
+
 **开发主线（2026-09-26）：[UE5 Windows 独立游戏](星湾UE5/README.md)。** 街区已在 UE5.6.1 中建图，第三人称角色移动与跳跃通过局部实测，Windows EXE 已完成打包并实际打开。下面的 NPC、本地 AI、昼夜和任务仍对应浏览器原型，尚未迁入 UE5。
 
 [下载 UE5 原生试玩 v0.2.0](https://github.com/hy-8/starbay-ai-world/releases/tag/ue5-playable-v0.2.0)：Windows 游戏包与可编辑 UE 工程。操作和当前限制见 [试玩说明](星湾UE5/Design/试玩说明_v0.2.0.md)。

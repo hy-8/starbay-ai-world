@@ -1,5 +1,5 @@
 """Real Blender readback of static delivery files, run in a fresh background process."""
-import bpy, json, math, hashlib, sys
+import bpy, json, math, hashlib, sys, struct
 from pathlib import Path
 from mathutils import Vector
 ROOT=Path(__file__).resolve().parents[1]
@@ -7,6 +7,18 @@ version=sys.argv[sys.argv.index('--')+1] if '--' in sys.argv else 'v04'
 directory=ROOT/'Exports'/version
 if not bpy.app.background:raise RuntimeError('Only run in background Blender.')
 report={'version':version,'checks':[]}
+if (ROOT/'Materials/Ember_Brocade_Albedo.png').exists() and version not in ['v01','v02','v03','v04']:
+    raw=(directory/'Ember_Regent_Static.glb').read_bytes()
+    magic,fmt,total=struct.unpack_from('<III',raw,0)
+    assert magic==0x46546C67 and fmt==2 and total==len(raw)
+    jsonlen,chunk=struct.unpack_from('<II',raw,12)
+    assert chunk==0x4E4F534A
+    document=json.loads(raw[20:20+jsonlen])
+    fabrics=[m for m in document['materials'] if m.get('name') in ['Garnet woven silk','Vermilion silk lining']]
+    assert len(fabrics)==2
+    assert all('baseColorTexture' in m['pbrMetallicRoughness'] and 'metallicRoughnessTexture' in m['pbrMetallicRoughness'] and 'normalTexture' in m for m in fabrics)
+    assert len(document.get('images',[]))>=3 and all('bufferView' in im for im in document['images'])
+    report['glb_textile']='Both fabric materials reference base color, metal/roughness and normal textures; images embedded in GLB.'
 for suffix in ['glb','fbx']:
     bpy.ops.wm.read_factory_settings(use_empty=True)
     file=directory/('Ember_Regent_Static.'+suffix)
