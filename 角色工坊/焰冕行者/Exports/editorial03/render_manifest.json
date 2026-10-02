@@ -1,0 +1,33 @@
+{
+  "version": "editorial03",
+  "source": "concert14",
+  "source_sha256": "664952c6fcf92e4df2b7fa1d269e93693b9e9de7fd43f2f1aa70d5f0864baf93",
+  "renderer": "Blender 4.5.9 Cycles",
+  "samples": 192,
+  "draft": false,
+  "pose": "static geometric display pose, not a runtime rig",
+  "magic_particles": false,
+  "images": [
+    {
+      "file": "01_Full_Beauty.png",
+      "bytes": 3720193,
+      "sha256": "7272653929964a76b952e56ca91324b735d9fe42341d9afaf0278fb17fb9c131"
+    },
+    {
+      "file": "02_Half_Body.png",
+      "bytes": 3533709,
+      "sha256": "231de831794706733db6b7d20cd0f6b52825a9ddee82f19932f9d16b59bc840d"
+    },
+    {
+      "file": "03_Portrait.png",
+      "bytes": 3516813,
+      "sha256": "99979ea57cd8e8e34dc85b8a410c110e80c9827ad670fb28af11eef286009aa7"
+    },
+    {
+      "file": "04_Back.png",
+      "bytes": 2521204,
+      "sha256": "f8241af35b1c19de1422d8fd515a7189bf1c323919fe2ab1504cf460bbdc6431"
+    }
+  ],
+  "status": "visual study, not approved commercial-quality final"
+}

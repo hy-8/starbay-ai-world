@@ -1,0 +1,11 @@
+{
+  "skin": "MakeHuman young_lightskinned_male_diffuse.png",
+  "tailoring": "MakeHuman male_elegantsuit01; fitted, cut and extended",
+  "eyes": "MakeHuman high-poly and brownlight_eye.png",
+  "hair": "MakeHuman short02 cards and normal map; original layered curve strands, auburn shader recolour",
+  "eyebrows": "MakeHuman eyebrow002; fitted to morphed face",
+  "license": "CC0; explicit headers and hashes in Source/showcase_cc0_sources.json",
+  "original_additions": "long coat skirt, inner shirt, tailoring details, jewellery, trousers, boots",
+  "particles": false,
+  "status": "offline study; requires visual review"
+}

@@ -1,5 +1,7 @@
 # 项目协作约定
 
+- 2026-09-29 最新方向：红发、酒红长外套、黑色修身裤靴的写实演唱会角色。用户否定 concert01—05 初稿质量，要求先打磨模型做角色作品，暂缓游戏接入和本批候选发布。先读 `角色工坊/焰冕行者/SHOWCASE_BRIEF.md`；不要把 rejected 候选当作新成品或发布新游戏包。已发布 Ember v0.4.0 保留。
+
 - 2026-09-27 起活动本地目录为 `E:\星湾世界\starbay-ai-world`，由 GitHub main 与发布附件恢复。恢复范围与限制见 `恢复说明.md`。角色工作区为 `角色工坊/焰冕行者`，当前动态候选为 `Exports/rig04`、`Exports/motion05` 与 UE `Ember_v04/BP_EmberHero`；静态设计基础仍在 `Exports/v14`，制作脚本为 `Tools/build_couture.py`；v04、v11 及历史 Release 保留。新生成使用全新版本目录，不能覆盖已有手工编辑；精修候选不代表达到商业游戏最终角色质量。
 
 ## GitHub 同步

@@ -134,3 +134,12 @@
 !/角色工坊/焰冕行者/Exports/motion05/*.json
 !/角色工坊/焰冕行者/Renders/motion05/
 !/角色工坊/焰冕行者/Renders/motion05/*.png
+
+# Reviewed offline concert work-in-progress evidence; not a new game release.
+!/角色工坊/焰冕行者/Source/showcase_cc0_sources.json
+!/角色工坊/焰冕行者/Renders/editorial03/
+!/角色工坊/焰冕行者/Renders/editorial03/*.png
+!/角色工坊/焰冕行者/Exports/concert14/
+!/角色工坊/焰冕行者/Exports/concert14/showcase_asset_usage.json
+!/角色工坊/焰冕行者/Exports/editorial03/
+!/角色工坊/焰冕行者/Exports/editorial03/render_manifest.json
