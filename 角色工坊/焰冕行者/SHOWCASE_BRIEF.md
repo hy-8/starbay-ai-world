@@ -1,5 +1,15 @@
 # 绯序 · 演唱会角色作品方向
 
+## 2026-10-02 · 发型本地三维重建与梳理试验
+
+用户继续要求改善发型并允许尝试其他方法。本地 Hunyuan3D-2mini shape-only 已实际完成推理，原始输出为 `Source/HairReconstruction/rawhair03`。透明发型输入是 AI 生成的重建参考，**不是完成的角色渲染**。本地源码/权重/独立环境分别在 D 盘 tools/models 目录；大型依赖不进入仓库。
+
+当前静态发型候选 `Exports/hairrecongroom05/Ember_Regent.blend`，中性四视角在 `Renders/hairrecongroom05`。经真实读图，已解决重建初稿的后脑大面积穿插、悬浮碎片和底发遮眼遮脸；当前可见头发为原生 CURVES，实心重建网格保持可编辑但隐藏渲染。加入真实头皮回贴、细发丝、短底发、独立斜向刘海和偏分修形。几何/半径/贴图检查通过，仅代表文件结构。
+
+新展示近景 `Renders/editorial09/03_Portrait.png` 已完成并查看，展示工程 `Exports/editorial09/Redline_Editorial.blend`。采用 1800×2100、Cycles/OptiX 384 samples、不去噪；发丝可辨，但局部顶部卷翘与宽弧形刘海仍需要重新造型。这是实际 3D 渲染，没有用生成肖像替换输出。
+
+**仍未达到用户参考级的作品质量，目标继续进行**。顶部与侧后方仍有比较生硬的卷翘，局部层次过于规则，人物面部与衣服也没有因此成为参考级成品。没有新骨骼、动作、布料或游戏接入，不发布本批候选 Release。各失败方法、真实结果和许可见 `HAIR_RECONSTRUCTION_NOTES.md`。`atelier09`、`editorial08` 和全部旧候选保留，不能混用为新完成品。
+
 ## 2026-10-02 · 更换方法后的实际试验
 
 用户要求继续迭代，并允许尝试其他方法。本轮保留 `atelier09` 作为新的结构检查候选，静态展示工程为 `Exports/editorial08/Redline_Editorial.blend`，四视角检查图在 `Renders/editorial08`。**仍未达到参考质量，也未通过作品验收。** 这些图来自真实 Blender 几何，不能当作最终角色宣传图。

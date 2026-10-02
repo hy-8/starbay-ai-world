@@ -103,6 +103,8 @@ area('Wine edge softbox',(-1.3,1.4,2.2),125,(1,.19,.15),1.2,(0,0,1.3),1.7)
 area('Neutral contour',(1.3,1.7,2.7),160,(1,.91,.83),1.4,(0,0,1.3),1.8)
 scene.world.use_nodes=True;scene.world.node_tree.nodes['Background'].inputs['Color'].default_value=(.04,.048,.068,1);scene.world.node_tree.nodes['Background'].inputs['Strength'].default_value=.28
 scene.render.engine='CYCLES';scene.cycles.samples=32 if DRAFT else 192;scene.cycles.use_denoising=True
+if '--hair-detail' in args:
+    scene.cycles.samples=384;scene.cycles.use_denoising=False
 scene.cycles.transparent_max_bounces=16;scene.cycles.max_bounces=10
 try:
     pref=bpy.context.preferences.addons['cycles'].preferences;pref.compute_device_type='OPTIX';pref.get_devices()
@@ -118,13 +120,15 @@ shots=[
     ('02_Half_Body',(.63,-2.75,1.75),(0,-.025,1.465),88,(1800,2100)),
     ('03_Portrait',(.28,-1.92,1.80),(0,-.025,1.736),111,(1800,2100)),
     ('04_Back',(-1.8,5.5,1.85),(0,0,1.015),90,(1500,2000))]
+if '--portrait-only' in args:
+    shots=[shot for shot in shots if shot[0]=='03_Portrait']
 for name,loc,target,lens,res in shots:
     backdrop.rotation_euler.z=math.pi if name=='04_Back' else 0
     data=bpy.data.cameras.new(name);cam=bpy.data.objects.new(name,data);stage.objects.link(cam)
     cam.location=loc;cam.rotation_euler=(Vector(target)-cam.location).to_track_quat('-Z','Y').to_euler();data.type='PERSP';data.lens=lens;data.clip_start=.01;data.clip_end=100
     scene.camera=cam;scene.render.resolution_x=res[0];scene.render.resolution_y=res[1];scene.render.filepath=str(RENDER/(name+'.png'))
     bpy.ops.render.render(write_still=True)
-scene.camera=bpy.data.objects['01_Full_Beauty'];scene.render.resolution_x=1800;scene.render.resolution_y=2400
+scene.camera=bpy.data.objects[shots[0][0]];scene.render.resolution_x=shots[0][4][0];scene.render.resolution_y=shots[0][4][1]
 backdrop.rotation_euler.z=0
 bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'Redline_Editorial.blend'))
 report={'version':VERSION,'source':SOURCE,'source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'renderer':'Blender 4.5.9 Cycles','samples':scene.cycles.samples,'draft':DRAFT,'pose':'static geometric display pose, not a runtime rig','magic_particles':False,'images':[],'status':'visual study, not approved commercial-quality final'}

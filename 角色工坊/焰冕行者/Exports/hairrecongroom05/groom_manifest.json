@@ -1,0 +1,13 @@
+{
+  "version": "hairrecongroom05",
+  "source": "hairrecongroom04",
+  "changes": [
+    "smooth crown height compression",
+    "front crown moved into stronger side part",
+    "independent diagonal scalp-rooted fringe"
+  ],
+  "fringe_guides": 22,
+  "fringe_strands": 4180,
+  "samples": 96,
+  "status": "candidate requires visual review"
+}

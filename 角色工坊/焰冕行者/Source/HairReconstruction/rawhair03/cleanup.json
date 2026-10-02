@@ -1,0 +1,7 @@
+{
+  "source": "raw_hair.glb",
+  "components": 87,
+  "retained_vertices": 738902,
+  "retained_faces": 1477980,
+  "method": "retained largest connected wig; discarded detached fragments"
+}

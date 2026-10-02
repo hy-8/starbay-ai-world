@@ -1,0 +1,18 @@
+{
+  "input_kind": "AI-generated transparent reconstruction input; not an actual character render",
+  "reference": "user-provided contemporary red-haired male concert character",
+  "generator": "built-in imagegen",
+  "generated_source": "exec-3eb1b724-2aca-46b1-a8a2-f04569170126.png",
+  "input_sha256": "f194f30388dffa187d2787e14cf5507ac1ee60eb37ac40d72eb1deeb0e23b146",
+  "design_intent": [
+    "dark cherry/auburn male layered hair",
+    "asymmetric side part",
+    "soft S waves and independently tapered locks",
+    "open face area, no mannequin or body",
+    "natural fibers, no glossy solid ribbons"
+  ],
+  "planned_use": "local shape reconstruction followed by Blender fit/groom and actual multiview renders",
+  "original_user_reference_committed": false,
+  "model_license_file": "D:/models/Hunyuan3D-2mini-hair/LICENSE",
+  "license_sha256": "e5e6e2041e18326d82cd105a1b9404e36db55263dd9d42d4989f917c2501b67b"
+}

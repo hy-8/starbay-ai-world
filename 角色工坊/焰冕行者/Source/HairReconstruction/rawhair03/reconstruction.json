@@ -1,0 +1,37 @@
+{
+  "version": "rawhair03",
+  "status": "raw shape; requires fitting and visual review",
+  "input": "Source\\HairReconstruction\\hair_input01.png",
+  "input_sha256": "f194f30388dffa187d2787e14cf5507ac1ee60eb37ac40d72eb1deeb0e23b146",
+  "input_kind": "generated transparent wig reference, not a render of the character",
+  "model": "tencent/Hunyuan3D-2mini",
+  "subfolder": "hunyuan3d-dit-v2-mini",
+  "weights_sha256": "3cc66f3bea33e4062b7dbc875ffe1d70c4888914aec3e91b60f94e9bd01b522b",
+  "source_repo": "https://github.com/Tencent/Hunyuan3D-2",
+  "source_commit": "f8db63096c8282cb27354314d896feba5ba6ff8a",
+  "license": "TENCENT HUNYUAN 3D 2.0 COMMUNITY LICENSE AGREEMENT; see model LICENSE",
+  "seed": 10203,
+  "steps": 40,
+  "guidance_scale": 5.0,
+  "octree_resolution": 384,
+  "num_chunks": 4000,
+  "precision": "fp16",
+  "memory_mode": "mmap/meta parameter assignment + component CPU offload",
+  "texture_pipeline": false,
+  "vertices": 761984,
+  "faces": 1523874,
+  "bounds": [
+    [
+      -0.8559662103652954,
+      -0.9697275757789612,
+      -0.8210113048553467
+    ],
+    [
+      0.8234120011329651,
+      0.9854162335395813,
+      0.8192924857139587
+    ]
+  ],
+  "elapsed_seconds": 76.72,
+  "mesh_sha256": "d9c90f7c5d8379b3de90f6f5c989be96a301af882f3f1935299cc0a99b9f11f7"
+}

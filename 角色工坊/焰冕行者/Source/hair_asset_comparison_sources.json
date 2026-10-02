@@ -1,0 +1,62 @@
+{
+  "assets": [
+    {
+      "style": "elvs_maxwell_hair",
+      "author": "Elvaerwyn",
+      "license_header": [
+        "# license CC_by"
+      ],
+      "license_version": "unspecified",
+      "pack_url": "https://files2.makehumancommunity.org/asset_packs/hair02/hair02_ccby.zip",
+      "source_page": "https://static.makehumancommunity.org/assets/assetpacks/hair02.html",
+      "files": [
+        {
+          "name": "elvs_maxwell_hair.mhclo",
+          "sha256": "fff6f231faf78d8b7fe83452063433325bd62dd3b0456d3eb53b1192446cedd9"
+        },
+        {
+          "name": "maxhairtex6.png",
+          "sha256": "07c371cc0e9717ff1b0c6dec3ed782e1c91d8a100160264a1a805b424673d764"
+        },
+        {
+          "name": "maxwell_hair_mh.mhmat",
+          "sha256": "dfe817b16524d809002f89b358c1ee0f819870111338bb162c6c5061df147cae"
+        },
+        {
+          "name": "maxwell_hair_mh.obj",
+          "sha256": "c62a26b1cf6001dd0d682acb379f1adcad988f13a938c5ec27da7a42b8a3c188"
+        }
+      ]
+    },
+    {
+      "style": "elvs_inverted_curly_bob",
+      "author": "Elvaerwyn",
+      "license_header": [
+        "# license: CC-BY"
+      ],
+      "license_version": "unspecified",
+      "pack_url": "https://files2.makehumancommunity.org/asset_packs/hair02/hair02_ccby.zip",
+      "source_page": "https://static.makehumancommunity.org/assets/assetpacks/hair02.html",
+      "files": [
+        {
+          "name": "elvs_inverted_curlybob1.mhmat",
+          "sha256": "4a224e0f9c83b29280ccd57fdb5c319e5c320c601c5e128c81b993c41decb48a"
+        },
+        {
+          "name": "elvs_inverted_curlybob1.obj",
+          "sha256": "24240e73ae963b2b38de6ce10966767d187668d02ab2f0271cf4b73291600e25"
+        },
+        {
+          "name": "elvs_inverted_curlybob1.png",
+          "sha256": "1b676d93234ba066d2483d6cf79cdf95e227277b90741954eb98283a5fc26061"
+        },
+        {
+          "name": "elvs_inverted_curly_bob.mhclo",
+          "sha256": "6e86bb4794e04866c0bc569453380cf3ba8002bbce3145c251c39dcd3f018180"
+        }
+      ]
+    }
+  ],
+  "pack_sha256": "c681e5efd37df4007a52253a8d071aedbfe3b614f199d8dae4ae76d5bd7d95c9",
+  "unused_conflicting_license_asset": "elvs_witchy_lil_bob (AGPL3/Unknown in asset header)"
+}

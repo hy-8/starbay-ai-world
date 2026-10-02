@@ -1,0 +1,18 @@
+{
+  "version": "editorial09",
+  "source": "hairrecongroom05",
+  "source_sha256": "40207faa4ab3b444b5ebad1d8aff2f25f4eb818ecb73c018c81e4506f500a6b7",
+  "renderer": "Blender 4.5.9 Cycles",
+  "samples": 384,
+  "draft": false,
+  "pose": "static geometric display pose, not a runtime rig",
+  "magic_particles": false,
+  "images": [
+    {
+      "file": "03_Portrait.png",
+      "bytes": 4519006,
+      "sha256": "a51133aaf2882ad55999a0065f364e53bdd5134e8d4578e7f09bf0096a9385ae"
+    }
+  ],
+  "status": "visual study, not approved commercial-quality final"
+}
