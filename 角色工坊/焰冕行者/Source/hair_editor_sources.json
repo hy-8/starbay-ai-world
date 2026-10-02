@@ -1,0 +1,16 @@
+{
+  "url": "https://files2.makehumancommunity.org/functional/haireditor.zip",
+  "sha256": "39420056faba6aaa0726a5168c9c41f2d01e278a12e216c0385e8f13d4d98ab7",
+  "author": "Tomas Klecer",
+  "license": "CC0, Functional asset packs section",
+  "license_evidence": "https://static.makehumancommunity.org/assets/assetpacks/index.html",
+  "files": [
+    "packs/",
+    "packs/haireditor.json",
+    "hair/",
+    "hair/haireditor/",
+    "hair/haireditor/fur.blend",
+    "hair/haireditor/hair.blend"
+  ],
+  "status": "Tested in groomtest01/02; rejected after visual fitting checks; not included in atelier09 or editorial08"
+}

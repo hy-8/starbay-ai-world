@@ -1,5 +1,23 @@
 # 绯序 · 演唱会角色作品方向
 
+## 2026-10-02 · 更换方法后的实际试验
+
+用户要求继续迭代，并允许尝试其他方法。本轮保留 `atelier09` 作为新的结构检查候选，静态展示工程为 `Exports/editorial08/Redline_Editorial.blend`，四视角检查图在 `Renders/editorial08`。**仍未达到参考质量，也未通过作品验收。** 这些图来自真实 Blender 几何，不能当作最终角色宣传图。
+
+实际采用：原生 CURVES 底层毛发、独立斜向刘海和散发；重新制作酒红织物材质与长外套裁片、肩部皮革贴片、后立领；贴合腰带；换用有明确 CC BY 4.0 许可的 Mindfront 皮靴。头发共 38,756 条原生曲线，数量仅作数据记录，不代表造型质量。胸口重复面已经焊接；静态摆姿脚本现在同步变换原生毛发。Mindfront 的作者署名和改动说明见 `THIRD_PARTY_ATELIER.md`。
+
+实际没有采用：Tomáš Klecer 的 CC0 Hair Editor 模板经过导入、求值、拟合和渲染后，出现头皮覆盖与发梢问题；`groomtest01/02` 为失败试验。`atelier06—08` 表层发束也出现隆起、空隙或截断轮廓，`atelier09` 已删除这层失败造型。所有旧候选继续保留，不能误用为最终文件。
+
+质量瓶颈：前额发型仍过于规则，后颈缺少自然层次；面部神态、眉形、皮肤与眼睛响应还像通用数字人；服装结构比此前完整，但褶皱和装饰依旧带程序化重复感，与参考复杂剪裁差距明显。提高到 Cycles 192 samples 后这些问题仍存在，所以后续不能把提高采样或增加曲线数量当作主要解决方案。
+
+下一步方法应以高质量数字人底模、专门的 Groom 造型、真实版型与布料垂坠为核心，再用 Blender 做定制与实渲。已只读确认 UE 5.6 的 MetaHuman Character 插件存在，但可选核心内容目录缺失；**没有完成 MetaHuman 安装、建人或游戏接入**。图生 3D 可用于探索大轮廓，不能承诺自动得到参考级面部、可用拓扑或动画。
+
+文件检查与艺术验收分开：`Exports/atelier09/structural_validation.json` 记录几何/毛发有限值、正半径和贴图可用性；`Exports/editorial08/render_manifest.json` 记录源工程和四张图的 SHA-256。结构通过不代表艺术通过。当前静态姿势没有新骨骼绑定、动作或布料模拟。
+
+本轮脚本依赖顺序（仅在恢复到干净副本后按此重建；原目录禁止重跑覆盖）：`build_editorial_still.py -- concert14 --draft` → `rebuild_concert_atelier.py -- atelier04 --draft` → `finish_atelier_details.py -- atelier05` → `sculpt_concert_layers.py -- atelier06` → `refine_layered_groom.py -- atelier07` → `polish_concert_candidate.py -- atelier08` → `select_concert_study.py -- atelier09` → `render_editorial_pose.py -- editorial08 atelier09`。每步由 Blender 后台 Python 执行；需要既有 Source 许可资产，来源 JSON 不是资产本体。中间不合格版本是构建沿革，不是推荐展示结果。
+
+GitHub 同步本轮源码、来源和检查证据；大体积 Blender 文件保留本地，不新建候选 Release，不发布社交平台。
+
 2026-09-29 用户改为红发、酒红长外套、黑色内搭与修身裤靴的写实演唱会造型，减少粒子。随后明确指出初稿粗糙，要求先打磨模型，准备发布角色作品观察反馈。当前优先级是模型和离线作品展示，暂停 UE 接入、新游戏包及这批候选的 Release 发布。
 
 ## 当前审核结论

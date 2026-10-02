@@ -1,0 +1,76 @@
+{
+  "url": "https://files2.makehumancommunity.org/asset_packs/shoes03/shoes03_ccby.zip",
+  "page": "https://static.makehumancommunity.org/assets/assetpacks/shoes03.html",
+  "archive_sha256": "7818b43a520a90bb0286aaa1e137ddb9bbe59640c3edbdf4d9d849064ec2761b",
+  "license": "Per-file licenses; only Mindfront with explicit CC BY 4.0 header used",
+  "files": [
+    {
+      "file": "Source\\FootwearCCBY\\clothes\\maciekg_leather_boots\\leather_boots.obj",
+      "sha256": "4f2020b455f850828d2ce520a473440d9d89a2377cf80705388c0c9d5cb34500"
+    },
+    {
+      "file": "Source\\FootwearCCBY\\clothes\\maciekg_leather_boots\\maciekg_leather_boots.mhclo",
+      "sha256": "2cecee64f29032add3e7072e9df22b7210b1c801fe5a4f2d5ede3142c7ec653c"
+    },
+    {
+      "file": "Source\\FootwearCCBY\\clothes\\maciekg_leather_boots\\boots_diffuse.png",
+      "sha256": "d7f74f229a94d94a4664687928936878896f61ef7f6f76b90c37cf94a72ce7a5"
+    },
+    {
+      "file": "Source\\FootwearCCBY\\clothes\\maciekg_leather_boots\\maciekg_leather_boots.thumb",
+      "sha256": "4d22c0035492ae0cc41cdcce64fa12bd912ca1ecf1b44e1023e76a9a969673ae"
+    },
+    {
+      "file": "Source\\FootwearCCBY\\clothes\\maciekg_leather_boots\\boots_normal.png",
+      "sha256": "13c311fe5a1cea45fd2099d7acf38e78d90ee048e978044ec923a7d96ece35ef"
+    },
+    {
+      "file": "Source\\FootwearCCBY\\clothes\\maciekg_leather_boots\\leather_boots.mhmat",
+      "sha256": "a725f546d4f6bbfe7f6dad1de757231c5d1478ce61f7770fa92c352bb9fd13da"
+    },
+    {
+      "file": "Source\\FootwearCCBY\\clothes\\mindfront_shoes_biker_boots_male\\shoes_biker_boots_male.mhmat",
+      "sha256": "5b227da9e27981730a69180154d03520d2ae5a55e761e0c2ec5e32de8c82679c"
+    },
+    {
+      "file": "Source\\FootwearCCBY\\clothes\\mindfront_shoes_biker_boots_male\\mindfront_shoes_biker_boots_male.thumb",
+      "sha256": "afc9f711d6177b3911149249a81a0e342e8fb5a26421aa2cd2e126bfde7df4a1"
+    },
+    {
+      "file": "Source\\FootwearCCBY\\clothes\\mindfront_shoes_biker_boots_male\\Shoes_Biker_Boots.png",
+      "sha256": "66bffc916541707ab3f737c43278704aca8c5d00b15c5923b55178f06b0c47b7"
+    },
+    {
+      "file": "Source\\FootwearCCBY\\clothes\\mindfront_shoes_biker_boots_male\\mindfront_shoes_biker_boots_male.mhclo",
+      "sha256": "c14c09b34909ee9b871a9e269dfe778a50bc276a42b54cc33f398321cc00f368"
+    },
+    {
+      "file": "Source\\FootwearCCBY\\clothes\\mindfront_shoes_biker_boots_male\\Shoes_Biker_Boots_NRM.png",
+      "sha256": "c9dd535c7c89f677698934857d08b8862bad87de5f10684c663f3dbe1971b303"
+    },
+    {
+      "file": "Source\\FootwearCCBY\\clothes\\mindfront_shoes_biker_boots_male\\shoes_biker_boots_male.obj",
+      "sha256": "4700ba355de52b630dac4d2ed872fd0cd59452fe94d31d27789fb0cb2dc3c8ca"
+    },
+    {
+      "file": "Source\\FootwearCCBY\\clothes\\mindfront_shoes_biker_boots_male\\Shoes_Biker_Boots_SPEC.png",
+      "sha256": "2eea95de355748d6739be2f2896be25a7147167b3bbc7d9bc9fa793056127f71"
+    }
+  ],
+  "status": "Mindfront boots used after explicit CC BY 4.0 header verification; MaciekG asset excluded",
+  "used_asset": {
+    "author": "Mindfront (Sweden)",
+    "asset": "shoes_biker_boots_male",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "versions": [
+      "atelier05 onward",
+      "editorial08"
+    ],
+    "attribution_file": "THIRD_PARTY_ATELIER.md"
+  },
+  "excluded_asset": {
+    "asset": "maciekg_leather_boots",
+    "reason": "File header states AGPL3 while pack categorization differs; inspected only, not used"
+  }
+}

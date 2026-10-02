@@ -143,3 +143,15 @@
 !/角色工坊/焰冕行者/Exports/concert14/showcase_asset_usage.json
 !/角色工坊/焰冕行者/Exports/editorial03/
 !/角色工坊/焰冕行者/Exports/editorial03/render_manifest.json
+
+# Reviewed atelier WIP, with explicit attribution and failed-method notes.
+!/角色工坊/焰冕行者/Source/hair_editor_sources.json
+!/角色工坊/焰冕行者/Source/footwear_sources.json
+!/角色工坊/焰冕行者/Exports/atelier09/
+!/角色工坊/焰冕行者/Exports/atelier09/asset_usage.json
+!/角色工坊/焰冕行者/Exports/atelier09/structural_validation.json
+!/角色工坊/焰冕行者/Exports/editorial08/
+!/角色工坊/焰冕行者/Exports/editorial08/render_manifest.json
+!/角色工坊/焰冕行者/Exports/editorial08/structural_validation.json
+!/角色工坊/焰冕行者/Renders/editorial08/
+!/角色工坊/焰冕行者/Renders/editorial08/*.png

@@ -53,6 +53,13 @@ def pose_point(p,group):
     return c
 
 for ob in list(bpy.data.objects):
+    if ob.type=='CURVES' and not ob.hide_render:
+        # Native hair is attached rigidly to the head. Moving just the neck mesh
+        # while leaving millions of strand points in the rest frame breaks roots.
+        pivot=Vector((0,-.015,1.60));shift=Vector((.009*math.sin(math.pi*1.6),0,0))
+        rot=Matrix.Rotation(math.radians(7),4,'Z')@Matrix.Rotation(math.radians(-3),4,'Y')
+        ob.matrix_world=Matrix.Translation(pivot)@rot@Matrix.Translation(-pivot+shift)@ob.matrix_world
+        continue
     if ob.type not in ['MESH','CURVE'] or ob.hide_render:continue
     group=ob.users_collection[0].name if ob.users_collection else ''
     if group.startswith('90_'):continue

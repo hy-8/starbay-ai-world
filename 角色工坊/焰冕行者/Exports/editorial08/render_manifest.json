@@ -1,0 +1,33 @@
+{
+  "version": "editorial08",
+  "source": "atelier09",
+  "source_sha256": "041d272928a28f821f1f55eb721848cc29a0bdc8e0f387739ed358fabe95d70d",
+  "renderer": "Blender 4.5.9 Cycles",
+  "samples": 192,
+  "draft": false,
+  "pose": "static geometric display pose, not a runtime rig",
+  "magic_particles": false,
+  "images": [
+    {
+      "file": "01_Full_Beauty.png",
+      "bytes": 3894485,
+      "sha256": "a67576cd35565715f47696629ee590d1bac3655522c3e0f9b1858907e107ab32"
+    },
+    {
+      "file": "02_Half_Body.png",
+      "bytes": 3739972,
+      "sha256": "ed532ee9650332b6f565f4af0bd7997df7914d8610c4d122a111420605046ae6"
+    },
+    {
+      "file": "03_Portrait.png",
+      "bytes": 3709166,
+      "sha256": "f22e96061ee54a3dafdd124f0b9867b6ff98872e99a8ffb986779faa95261636"
+    },
+    {
+      "file": "04_Back.png",
+      "bytes": 2782602,
+      "sha256": "ae3fd3ca652d40c673446108b42f2d0070914371ee365da90693779ab4858a90"
+    }
+  ],
+  "status": "visual study, not approved commercial-quality final"
+}

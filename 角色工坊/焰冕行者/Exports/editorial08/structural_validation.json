@@ -1,0 +1,66 @@
+{
+  "version": "editorial08",
+  "file": "Redline_Editorial.blend",
+  "sha256": "298db634fe4f3410af98c935ccd3d9192671c10dc91b516cabdefe2394654827",
+  "visible_mesh_objects": 113,
+  "source_mesh_vertices": 145835,
+  "native_grooms": [
+    {
+      "object": "Continuous scalp coverage groom",
+      "curves": 32000,
+      "points": 1792000,
+      "radius_min_m": 2.5215063033101615e-06,
+      "radius_max_m": 3.499939703033306e-05
+    },
+    {
+      "object": "Fitted diagonal face framing fringe",
+      "curves": 6400,
+      "points": 409600,
+      "radius_min_m": 2.360641701670829e-06,
+      "radius_max_m": 3.29954236804042e-05
+    },
+    {
+      "object": "Sparse natural silhouette hairs",
+      "curves": 356,
+      "points": 19936,
+      "radius_min_m": 3.645899369075778e-06,
+      "radius_max_m": 2.2000000171829015e-05
+    }
+  ],
+  "textures": [
+    {
+      "name": "brown_eye.png",
+      "packed": true,
+      "local_source_exists": true
+    },
+    {
+      "name": "eyebrow002.png",
+      "packed": true,
+      "local_source_exists": true
+    },
+    {
+      "name": "male_elegantsuit01_diffuse.png",
+      "packed": true,
+      "local_source_exists": true
+    },
+    {
+      "name": "Shoes_Biker_Boots.png",
+      "packed": true,
+      "local_source_exists": true
+    },
+    {
+      "name": "Shoes_Biker_Boots_NRM.png",
+      "packed": true,
+      "local_source_exists": true
+    },
+    {
+      "name": "young_lightskinned_male_diffuse.png",
+      "packed": true,
+      "local_source_exists": true
+    }
+  ],
+  "errors": [],
+  "structural_checks_passed": true,
+  "artistic_status": "WIP, not approved, not reference quality",
+  "game_validation": "none; still scene only"
+}

@@ -1,0 +1,18 @@
+{
+  "source": "atelier08",
+  "groom": "retained continuous scalp coverage, diagonal fringe and separated flyaways; rejected outer guide shell removed",
+  "boots": {
+    "author": "Mindfront (Sweden)",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://static.makehumancommunity.org/assets/assetpacks/shoes03.html",
+    "original": "Shoes_Biker_Boots_male",
+    "changes": "barycentric fitting, stance alignment, Blender material conversion",
+    "notice": "Attribution must accompany redistribution or published artwork"
+  },
+  "eyes": "CC0 MakeHuman brown_eye.png",
+  "status": "WIP, not reference quality or approved for release",
+  "version": "atelier09",
+  "wardrobe": "frock coat hem reshaping, individual sewn over-panels, fitted yoke appliques",
+  "refinement": "scalp envelope fitting, separate diagonal fringe, standing collar, belt surface fit, small skin micro-bump"
+}
