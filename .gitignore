@@ -188,3 +188,27 @@
 !/角色工坊/焰冕行者/Renders/radialgroom01/01_Front.png
 !/角色工坊/焰冕行者/Renders/donorcontrol01/
 !/角色工坊/焰冕行者/Renders/donorcontrol01/01_Front.png
+
+# Reviewed Bystedt adaptation studies; large source/candidate assets stay local.
+!/角色工坊/焰冕行者/Renders/officiallong01/
+!/角色工坊/焰冕行者/Renders/officiallong01/*.png
+!/角色工坊/焰冕行者/Renders/officiallong01/source_control.json
+!/角色工坊/焰冕行者/Exports/officialwave04/
+!/角色工坊/焰冕行者/Exports/officialwave04/groom_manifest.json
+!/角色工坊/焰冕行者/Renders/officialwave04/
+!/角色工坊/焰冕行者/Renders/officialwave04/01_Front.png
+!/角色工坊/焰冕行者/Renders/officialwave04/03_Side.png
+!/角色工坊/焰冕行者/Exports/hybridshag01/
+!/角色工坊/焰冕行者/Exports/hybridshag01/groom_manifest.json
+!/角色工坊/焰冕行者/Exports/hybridshag02/
+!/角色工坊/焰冕行者/Exports/hybridshag02/groom_manifest.json
+!/角色工坊/焰冕行者/Renders/hybridshag01/
+!/角色工坊/焰冕行者/Renders/hybridshag01/03_Side.png
+!/角色工坊/焰冕行者/Exports/layercut04/
+!/角色工坊/焰冕行者/Exports/layercut04/*.json
+!/角色工坊/焰冕行者/Renders/layercut04/
+!/角色工坊/焰冕行者/Renders/layercut04/*.png
+!/角色工坊/焰冕行者/Exports/editorial10/
+!/角色工坊/焰冕行者/Exports/editorial10/*.json
+!/角色工坊/焰冕行者/Renders/editorial10/
+!/角色工坊/焰冕行者/Renders/editorial10/03_Portrait.png

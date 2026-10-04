@@ -1,0 +1,91 @@
+{
+  "version": "officialwave04",
+  "source_scene": "hairrecongroom05",
+  "layered": true,
+  "sculpt_shell": true,
+  "mirrored": true,
+  "shaft_taper": true,
+  "clearance_repairs": 50976,
+  "minimum_gap_before_repairs_m": -0.02563350577838719,
+  "hair_author": "Daniel Bystedt",
+  "hair_license": "CC BY-SA, version unspecified in inspected source",
+  "source_url": "https://download.blender.org/demo/geometry-nodes/hair_nodes-female_hair_styles.blend",
+  "source_sha256": "1ad6202095c1793678fee7d69a7e9f8b5fdb6e5c293d300eb1062d2d437e8d48",
+  "modifier_changes": [
+    {
+      "node": "Roll Hair Curves",
+      "socket": "Factor",
+      "before": 0.60999995470047,
+      "after": 0.22
+    },
+    {
+      "node": "Roll Hair Curves",
+      "socket": "Roll Length",
+      "before": 0.7599999904632568,
+      "after": 0.6
+    },
+    {
+      "node": "Roll Hair Curves",
+      "socket": "Roll Radius",
+      "before": 0.4699999690055847,
+      "after": 0.18
+    },
+    {
+      "node": "Roll Hair Curves",
+      "socket": "Roll Taper",
+      "before": 0.5,
+      "after": 0.65
+    },
+    {
+      "node": "Interpolate Hair Curves",
+      "socket": "Density",
+      "before": 4000.0,
+      "after": 10000.0
+    },
+    {
+      "node": "Hair Curves Noise",
+      "socket": "Distance",
+      "before": 0.20999997854232788,
+      "after": 0.035
+    },
+    {
+      "node": "Hair Curves Noise",
+      "socket": "Scale along Curve",
+      "before": 7.199999809265137,
+      "after": 4.0
+    },
+    {
+      "node": "Set Hair Curve Profile",
+      "socket": "Radius",
+      "before": 0.0010000000474974513,
+      "after": 0.00045
+    },
+    {
+      "node": "Curl Hair Curves",
+      "socket": "Factor",
+      "before": 1.0,
+      "after": 0.32
+    },
+    {
+      "node": "Curl Hair Curves",
+      "socket": "Radius",
+      "before": 0.10000000149011612,
+      "after": 0.06
+    },
+    {
+      "node": "Curl Hair Curves",
+      "socket": "Frequency",
+      "before": 1.0,
+      "after": 0.8
+    }
+  ],
+  "method": "body-only whole-fiber radial scalp transfer, tapered root correction",
+  "strands": 55928,
+  "points": 1286344,
+  "source_guides": 303,
+  "field_misses": 0,
+  "median_root_correction_m": 0.0008316840268729797,
+  "styled_front": 4806,
+  "styled_nape": 34349,
+  "status": "unreviewed local adaptation candidate; no redistribution"
+}

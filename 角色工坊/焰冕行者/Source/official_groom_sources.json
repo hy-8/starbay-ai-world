@@ -8,7 +8,7 @@
   "license_version": "not stated in inspected official page or embedded source text",
   "embedded_evidence": "Hair demo file info: Daniel Bystedt. CC BY-SA license",
   "sha256": "1ad6202095c1793678fee7d69a7e9f8b5fdb6e5c293d300eb1062d2d437e8d48",
-  "status": "downloaded and inventoried; not yet fitted, adopted or redistributed",
+  "status": "fitted and restyled in local actual-geometry studies; no artistic approval or derivative asset release",
   "auto_run_scripts": false,
   "styles": [
     "curly hair",
@@ -18,5 +18,12 @@
     "braided hair"
   ],
   "source_control_render": "Renders/officialcurly01",
-  "source_control_review": "Two original-model renders inspected: coherent fibers and scalp coverage; tight curls do not match target; no character adoption"
+  "source_control_review": "Curly and long-hair original-model controls inspected; these gray female heads are source controls, not the user character",
+  "long_source_control_render": "Renders/officiallong01",
+  "local_adaptations": {
+    "officialwave01-04": "softened curly hair; fitted to retained character scalp; silhouette remains too round",
+    "hybridshag01-02": "fitted source support plus authored locks; repeated strip appearance; rejected experiments",
+    "layercut01-04": "original long-hair guides cut and shaped before native interpolation, clump and noise; fitted to character; artistic evaluation still in progress"
+  },
+  "adaptation_license": "Adapted hair remains CC BY-SA; original evidence does not specify a version. Keep author, source and modification records; do not relabel it as CC0 or project-original hair."
 }

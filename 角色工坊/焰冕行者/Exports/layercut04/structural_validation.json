@@ -1,0 +1,52 @@
+{
+  "version": "layercut04",
+  "file": "Ember_Regent.blend",
+  "sha256": "3eb679fc7a14c6cd1082d5b595535f41caac949586553441f60447b5537a8dd9",
+  "visible_mesh_objects": 112,
+  "source_mesh_vertices": 145749,
+  "native_grooms": [
+    {
+      "object": "Daniel Bystedt adapted layered cut • CC BY-SA",
+      "curves": 49268,
+      "points": 936800,
+      "radius_min_m": 3.955404736188939e-06,
+      "radius_max_m": 0.00011000002268701792
+    }
+  ],
+  "textures": [
+    {
+      "name": "brown_eye.png",
+      "packed": true,
+      "local_source_exists": true
+    },
+    {
+      "name": "eyebrow002.png",
+      "packed": true,
+      "local_source_exists": true
+    },
+    {
+      "name": "male_elegantsuit01_diffuse.png",
+      "packed": true,
+      "local_source_exists": true
+    },
+    {
+      "name": "Shoes_Biker_Boots.png",
+      "packed": true,
+      "local_source_exists": true
+    },
+    {
+      "name": "Shoes_Biker_Boots_NRM.png",
+      "packed": true,
+      "local_source_exists": true
+    },
+    {
+      "name": "young_lightskinned_male_diffuse.png",
+      "packed": true,
+      "local_source_exists": true
+    }
+  ],
+  "errors": [],
+  "structural_checks_passed": true,
+  "artistic_status": "WIP, not approved, not reference quality",
+  "game_validation": "none; still scene only"
+}

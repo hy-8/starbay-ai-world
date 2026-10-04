@@ -15,7 +15,7 @@ OUT=ROOT/'Exports'/VERSION;RENDER=ROOT/'Renders'/VERSION
 if OUT.exists() or RENDER.exists():raise RuntimeError('Fresh output directories required')
 OUT.mkdir(parents=True);RENDER.mkdir(parents=True)
 source=ROOT/'Exports'/SOURCE/'Ember_Regent.blend'
-bpy.ops.wm.open_mainfile(filepath=str(source))
+bpy.ops.wm.open_mainfile(filepath=str(source),use_scripts=False)
 scene=bpy.context.scene
 
 # Remove only the inner garment panels completely covered by the outer jacket.

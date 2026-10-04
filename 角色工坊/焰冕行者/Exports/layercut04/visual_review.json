@@ -1,0 +1,43 @@
+{
+  "version": "layercut04",
+  "reviewed_views": [
+    "01_Front",
+    "02_ThreeQuarter",
+    "03_Side",
+    "04_Back"
+  ],
+  "renderer": "Blender 4.5.9 Cycles OptiX",
+  "samples": 192,
+  "denoising": false,
+  "actual_geometry": true,
+  "artistic_status": "WIP; improved layered silhouette and fringe, stiff part clumps remain; not reference-quality approval",
+  "upper_scalp_sample": {
+    "points": 20000,
+    "z_threshold_m": 1.795,
+    "negative_signed_gaps": 0,
+    "minimum_gap_m": 0.0008013438291527564,
+    "scope": "sampled upper hair only, not exhaustive or animated"
+  },
+  "images": [
+    {
+      "file": "01_Front.png",
+      "bytes": 1691756,
+      "sha256": "7375f7a243386a2d9a636d9f0eaad13a8f1779110c096852a7971458a5124282"
+    },
+    {
+      "file": "02_ThreeQuarter.png",
+      "bytes": 1736022,
+      "sha256": "39e00513cda6de3c1c1bc6d6192f653a53830a2d6ca2ed57852b51e9b6f70dc1"
+    },
+    {
+      "file": "03_Side.png",
+      "bytes": 1738855,
+      "sha256": "77845d7fca39945c79865c411246af4e91e2415fda6969ba42446e4b50abc105"
+    },
+    {
+      "file": "04_Back.png",
+      "bytes": 1787389,
+      "sha256": "dde60425b4255927f6ac9626ed3304b26515590ee60248172c506f93a5fc7ee2"
+    }
+  ]
+}

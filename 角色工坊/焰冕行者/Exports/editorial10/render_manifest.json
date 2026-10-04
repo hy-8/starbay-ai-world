@@ -1,0 +1,18 @@
+{
+  "version": "editorial10",
+  "source": "layercut04",
+  "source_sha256": "3eb679fc7a14c6cd1082d5b595535f41caac949586553441f60447b5537a8dd9",
+  "renderer": "Blender 4.5.9 Cycles",
+  "samples": 384,
+  "draft": false,
+  "pose": "static geometric display pose, not a runtime rig",
+  "magic_particles": false,
+  "images": [
+    {
+      "file": "03_Portrait.png",
+      "bytes": 4546533,
+      "sha256": "0daea763803c4f7c557eee80f54b9c73985e95aed3a1801742663f17a1f9c76b"
+    }
+  ],
+  "status": "visual study, not approved commercial-quality final"
+}
