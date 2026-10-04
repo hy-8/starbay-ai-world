@@ -1,0 +1,46 @@
+{
+  "version": "regionalgroom14",
+  "scene_sha256": "ae0cde0748f5479c248b930e1ea0108a7773e3271985dee1f12c00b19ee33e91",
+  "actual_3d_render": true,
+  "four_views": [
+    {
+      "file": "01_Front.png",
+      "sha256": "7dfc91baef08ea942d23ca4029404f77c40ec99bd3b3fa1a198e5859bc6223b9",
+      "visually_reviewed": true
+    },
+    {
+      "file": "02_ThreeQuarter.png",
+      "sha256": "aa5a6c3e1944e02491a733e70c2853e6e9145351c58c5320c9e2163dcdd0c3ed",
+      "visually_reviewed": true
+    },
+    {
+      "file": "03_Side.png",
+      "sha256": "52a33d1cf41c8c47eb807451de5a35f4fe6d28e7037210a8d0245d69e8a4cd03",
+      "visually_reviewed": true
+    },
+    {
+      "file": "04_Back.png",
+      "sha256": "6edaaf583712066f7516b91e254f7026563747d27224322fdc59b849bf2aa43c",
+      "visually_reviewed": true
+    }
+  ],
+  "samples": 192,
+  "denoising": false,
+  "portrait": {
+    "version": "editorial14",
+    "file": "03_Portrait.png",
+    "sha256": "0dd0950498064233a4b2b7a6c699507372aefc4ead5344779ffb6e8b9d8e6315",
+    "samples": 384,
+    "resolution": [
+      1800,
+      2100
+    ],
+    "visually_reviewed": true
+  },
+  "improvements": "Softer released rear tips, paired narrow authored crown paths and matched material roughness",
+  "remaining": "Some frontal/crown bands remain broad or regular; temple transitions still artificial. Face/clothes remain generic. Reference quality not achieved.",
+  "artistic_accepted": false,
+  "goal": "active",
+  "game_validation": "none; static editable geometry display pose only",
+  "structural_scope": "Finite mesh/curve coordinates, positive radii, texture existence; not exhaustive scalp, clothing or motion clearance"
+}

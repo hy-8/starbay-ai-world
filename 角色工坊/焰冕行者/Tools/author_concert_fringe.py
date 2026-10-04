@@ -18,11 +18,15 @@ SCULPTED='--sculpted-clumps' in args
 ROOT_PATCHES='--root-patches' in args
 SOFT_PATCHES='--soft-patches' in args
 SECTIONED='--sectioned-locks' in args
+AIRY='--airy-feathers' in args
+SEGMENTED='--segmented-crown' in args
 if SECTIONED and not SOFT_PATCHES:raise ValueError('--sectioned-locks requires --soft-patches')
 if SOFT_PATCHES and not ROOT_PATCHES:raise ValueError('--soft-patches requires --root-patches')
 PATCH_FIBERS=int(args[args.index('--fibers-per-guide')+1]) if '--fibers-per-guide' in args else 420
 if not 50<=PATCH_FIBERS<=2000:raise ValueError('Fibers per guide must be 50..2000')
 if ROOT_PATCHES and not REFERENCE_CUT:raise ValueError('--root-patches requires --reference-cut')
+if AIRY and not ROOT_PATCHES:raise ValueError('--airy-feathers requires --root-patches')
+if SEGMENTED and not ROOT_PATCHES:raise ValueError('--segmented-crown requires --root-patches')
 if ROOT_PATCHES and SCULPTED:raise ValueError('Patch-root study must not include early-collapse sculpted flow')
 if SCULPTED and not REFERENCE_CUT:raise ValueError('--sculpted-clumps requires --reference-cut')
 if REFERENCE_CUT and not CHOPPY:raise ValueError('--reference-cut requires --choppy-locks')
@@ -174,6 +178,8 @@ if ROOT_PATCHES:
  # Side/nape and short coverage remain the attributed donor derivatives.
  for k,base in enumerate(paths):
   base=base.copy()
+  airy_lock=AIRY and 'micro feather' in spec[k][0]
+  narrow_lock=SEGMENTED and 'segmented crown' in spec[k][0]
   if SECTIONED:
    tang=np.gradient(base,axis=0);tang/=np.maximum(np.linalg.norm(tang,axis=1)[:,None],1e-8)
    rad=base-center;rad/=np.maximum(np.linalg.norm(rad,axis=1)[:,None],1e-8)
@@ -186,8 +192,9 @@ if ROOT_PATCHES:
   growth=base[4]-base[0];growth-=root_normal*np.dot(growth,root_normal)
   if np.linalg.norm(growth)<1e-6:growth=np.cross(root_normal,np.array([1.,0.,0.]))
   growth/=np.linalg.norm(growth);across_root=np.cross(root_normal,growth)
-  for strand in range(PATCH_FIBERS):
-   angle=rng.uniform(0,2*np.pi);span=(.0078 if SOFT_PATCHES else .0045)*np.sqrt(rng.random())
+  lock_count=max(80,int(PATCH_FIBERS*(.26 if airy_lock else .55))) if airy_lock or narrow_lock else PATCH_FIBERS
+  for strand in range(lock_count):
+   angle=rng.uniform(0,2*np.pi);span=(.003 if airy_lock else (.0045 if narrow_lock else (.0078 if SOFT_PATCHES else .0045)))*np.sqrt(rng.random())
    probe=root_center+(growth*np.cos(angle)+across_root*np.sin(angle))*span
    hit,n,idx,dist=bv.find_nearest(Vector(probe));r=np.array(hit+n*.0005)
    s=base+(r-base[0])[None,:]*(1-t[:,None])**2.0
@@ -201,7 +208,7 @@ if ROOT_PATCHES:
     width=(sublock-2)*.00175+rng.normal(0,.00065)
     depth=rng.normal(0,.00085)+(sublock%2)*.0010
    else:
-    width=rng.normal(0,.0028 if SOFT_PATCHES else .00125);depth=rng.normal(0,.0014 if SOFT_PATCHES else .00085)
+    width=rng.normal(0,.0013 if airy_lock else (.00165 if narrow_lock else (.0028 if SOFT_PATCHES else .00125)));depth=rng.normal(0,.0010 if airy_lock else (.00125 if narrow_lock else (.0014 if SOFT_PATCHES else .00085)))
    env=(1-np.exp(-t*15))*(.18+.82*(1-t)**.6)
    s+=(across*width+normal*depth)*env[:,None]
    if SECTIONED:
@@ -250,6 +257,8 @@ report['sculpted_lock_relief']=SCULPTED
 report['local_scalp_patch_roots']=ROOT_PATCHES
 report['soft_patch_cross_sections']=SOFT_PATCHES
 report['sectioned_millimeter_lock_relief']=SECTIONED
+report['sparse_micro_feather_layers']=AIRY
+report['narrow_paired_crown_guides']=SEGMENTED
 if ROOT_PATCHES:report['patch_fibers_per_guide']=PATCH_FIBERS
 if '--design' in args:
  report['design_sha256']=hashlib.sha256(design_path.read_bytes()).hexdigest()

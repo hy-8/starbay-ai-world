@@ -1,0 +1,81 @@
+{
+  "version": "editorial14",
+  "file": "Redline_Editorial.blend",
+  "sha256": "77eaaf248c7fcfbd05a03d0ec5dd7ff1ef080670e3b819e50d59330d4c3c5688",
+  "visible_mesh_objects": 113,
+  "source_mesh_vertices": 145835,
+  "native_grooms": [
+    {
+      "object": "Authored frontal revision • native scalp-patch geometry",
+      "curves": 33400,
+      "points": 2137600,
+      "radius_min_m": 7.333046028179524e-07,
+      "radius_max_m": 4.399989120429382e-05
+    },
+    {
+      "object": "Bystedt derivative • short scalp support",
+      "curves": 23657,
+      "points": 1514048,
+      "radius_min_m": 6.416628366423538e-07,
+      "radius_max_m": 3.899990042555146e-05
+    },
+    {
+      "object": "Ddr Rcs derivative • whole rear locks",
+      "curves": 74113,
+      "points": 4150328,
+      "radius_min_m": 6.187210033203883e-07,
+      "radius_max_m": 3.999997352366336e-05
+    }
+  ],
+  "textures": [
+    {
+      "name": "brown_eye.png",
+      "packed": true,
+      "local_source_exists": true
+    },
+    {
+      "name": "depht+alpha.png",
+      "packed": true,
+      "local_source_exists": false
+    },
+    {
+      "name": "eyebrow002.png",
+      "packed": true,
+      "local_source_exists": true
+    },
+    {
+      "name": "hair_V2_bake_id.png",
+      "packed": true,
+      "local_source_exists": false
+    },
+    {
+      "name": "hair_V2_bake_normal.png",
+      "packed": true,
+      "local_source_exists": false
+    },
+    {
+      "name": "male_elegantsuit01_diffuse.png",
+      "packed": true,
+      "local_source_exists": true
+    },
+    {
+      "name": "Shoes_Biker_Boots.png",
+      "packed": true,
+      "local_source_exists": true
+    },
+    {
+      "name": "Shoes_Biker_Boots_NRM.png",
+      "packed": true,
+      "local_source_exists": true
+    },
+    {
+      "name": "young_lightskinned_male_diffuse.png",
+      "packed": true,
+      "local_source_exists": true
+    }
+  ],
+  "errors": [],
+  "structural_checks_passed": true,
+  "artistic_status": "WIP, not approved, not reference quality",
+  "game_validation": "none; still scene only"
+}

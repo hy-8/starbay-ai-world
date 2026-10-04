@@ -1,5 +1,7 @@
 # Atelier 角色检查稿的第三方资产署名
 
+本轮 `regionalgroom10—14` 继续使用 Ddr Rcs 的 Royalty Free 侧后原生毛发衍生几何，进一步放松末端聚拢、加入小幅偏移与连续后颈弯曲；仍保留 Bystedt CC BY-SA 短支撑（来源证据未标明版本）。前额控制11/12与小块生根造型是本地原创；修改不将保留的授权组件转成CC0。原/衍生几何不进入本次Git提交，仅同步加工代码、原创控制与实际检查图。`editorial14`是静态展示摆姿，不是新绑定/动画或候选发布。
+
 ## 分层发片的实际拟合与转换研究
 
 **Short hair card — Salman Ramezani**，BlenderKit Royalty Free，**非 CC0**。基础资产 ID `4793aff4-5e46-4902-a329-314731ebde09`，版本 ID `0a91297d-d3c1-43a6-9d38-d1f00c352f00`；来源哈希及改动见 `Source/licensed_layered_sources.json`，许可见 https://www.blenderkit.com/docs/licenses/ 。通过官方免费资产端点获取，原作者预览只用于研究，不能当作本项目成果。

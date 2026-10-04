@@ -1,5 +1,35 @@
 # 红发角色 · 更换发型方法记录
 
+## 2026-10-04 · 窄冠部路径与发尾释放
+
+本轮最新真实几何 `regionalgroom14` 四视角及 `editorial14` 高清近景均已实际查看；文件结构检查通过，**仍未达到参考，目标继续**。变化是几何和材质的局部加工，没有新生成肖像、动画或UE接入。
+
+| 实际试验 | 检查结论 |
+| --- | --- |
+| regionalgroom10 | tip clump从原.95改.65，加独立末端偏移与小弯；针状聚拢减轻但后方过度蓬松，不采用该幅度 |
+| spatialfringe13 / 控制11 | 保留32条原路径，添加18条稀疏micro feather；短层可见，但宽冠部仍存在 |
+| regionalgroom11 | 聚拢强度.85、末端偏移减半，使用新前额；比10克制，仍宽片 |
+| regionalgroom12 | 上述几何与三部分毛发统一.42/.48粗糙度，全质量四视角已看；轮廓柔和，但后脑偏直 |
+| regionalgroom13 | 连续高度权重的后颈S弯，保持上部头皮覆盖；全质量四视角已看，后颈有限改善 |
+| spatialfringe14 / 控制12 | 用28条较窄成对路径替换14条冠部/feather路径，保留18条眉眼/鬓角路径；四视角已看，分层增加，仍规则 |
+| regionalgroom14 | 在13只替换前额与匹配其粗糙度，保留侧后与短支撑；全质量四视角已看，33,400条前额发丝，不等于艺术验收 |
+| editorial14 | 1800×2100、384 samples、不去噪实际近景；有真实细发丝，冠部仍有连片/规则层次，脸服仍需独立精修 |
+
+`shape_regional_groom.py` 的新末端随机数发生器独立于既有分区/剪裁随机数，避免为了放松发尾同时改变全部旧发束位置。`--tip-clump` 只改变真实几何截面向末端聚拢强度；不是材质透明度或伪装渲染。`--nape-s-waves` 按整束中心线和连续高度权重改动，随后继续真实body间距修正。全量衣物/动画穿插仍未验证。
+
+新前额的 `--airy-feathers` / `--segmented-crown` 只作用于控制图中明确命名的路径，分别调整其根部小块、截面与发丝数，不提高其余前额密度。控制12没有使用旧sectioned relief；隐藏路径依旧是烘焙证据而非实时驱动。少量成对发束仍会连片，根部集中/密度是后续需验证的假设，不能当作已经确证的唯一原因。
+
+在有本地许可依赖的情况下，用**全新目录名**复建：
+
+```text
+author_concert_fringe.py -- 新前额版本 layercut08 --choppy-locks --reference-cut --root-patches --soft-patches --segmented-crown --fibers-per-guide 1000 --design Source/HairReconstruction/concert_fringe_control12.json
+shape_regional_groom.py -- 新组合版本 nativeasset02 新前额版本 --scissor-layers --lean-wolf --stagger-locks --feather-tips --tip-clump 0.85 --soft-tip-spread --dry-groom --nape-s-waves
+render_editorial_pose.py -- 新近景版本 新组合版本 --portrait-only --hair-detail
+validate_concert_still.py -- 新组合版本
+```
+
+前额控制图是原创路径；Ddr Rcs原发片/导向线及衍生几何继续留本地，Bystedt短支撑保留CC BY-SA署名。本轮仅同步加工源码、原创控制、非几何清单和选定真实检查图，不创建候选Release。
+
 ## 2026-10-04 · 保留贴图、UV 采样转发丝与分区组合对照
 
 用户询问瓶颈并授权更换方法。本轮完成实际几何试验及四视角检查，**没有达到参考质量**；保留 `regionalgroom08` / `editorial13` 为先前完整检查点，不把新增试验自动当作更好成品。

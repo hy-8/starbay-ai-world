@@ -16,6 +16,12 @@ DRAFT = '--draft' in args
 SCISSOR = '--scissor-layers' in args
 LEAN = '--lean-wolf' in args
 STAGGER = '--stagger-locks' in args
+FEATHER = '--feather-tips' in args
+TIP_CLUMP=float(args[args.index('--tip-clump')+1]) if '--tip-clump' in args else .65
+if not .50<=TIP_CLUMP<=.97:raise ValueError('Tip clump must be .50..97')
+SOFT_TIPS='--soft-tip-spread' in args
+DRY='--dry-groom' in args
+NAPE_WAVE='--nape-s-waves' in args
 if not all(re.fullmatch('[A-Za-z0-9_-]+', v) for v in args[:3]):
     raise ValueError('Invalid versions')
 out, render = ROOT/'Exports'/version, ROOT/'Renders'/version
@@ -24,7 +30,7 @@ if out.exists() or render.exists():
 out.mkdir(parents=True); render.mkdir(parents=True)
 source = ROOT/'Exports'/side_version/'Ember_Regent.blend'
 frontal = ROOT/'Exports'/front_version/'Ember_Regent.blend'
-records = json.loads((source.parent/'licensed_groom_design.json').read_text())
+records = json.loads((source.parent/'licensed_groom_design.json').read_text(encoding='utf-8'))
 bpy.ops.wm.open_mainfile(filepath=str(source), use_scripts=False)
 original = bpy.data.objects['Licensed Ddr Rcs derivative • actual native curves']
 cu = original.data
@@ -44,6 +50,7 @@ bpy.context.view_layer.update()
 bv = BVHTree.FromObject(body, bpy.context.evaluated_depsgraph_get())
 t = np.linspace(0, 1, N)
 rng = np.random.default_rng(100515)
+tip_rng = np.random.default_rng(100604)
 strands, radii = [], []
 offset = 0; removed = 0; retained = 0; clearance_repairs = 0
 for record in records:
@@ -103,19 +110,33 @@ for record in records:
             shaped[:, 1] += (rng.uniform(.003, .007) if LEAN else rng.uniform(.008, .015))*np.sin(t*2.6*np.pi+phase)*np.sin(np.pi*t)
             shaped[:, 1] -= (rng.uniform(.004, .008) if LEAN else 0)*np.sin(np.pi*t)
             shaped[:, 2] += rng.uniform(.003, .006)*np.sin(t*2.2*np.pi)*np.sin(np.pi*t)
+        if NAPE_WAVE and posterior:
+            # A coherent lower-neck S bend, fading continuously at both ends.
+            # Spatial height weighting keeps the upper scalp coverage intact.
+            q=np.clip((1.755-shaped[:,2])/.150,0,1)
+            phase=(retained%5-2)*.18
+            wave=np.sin(q*1.65*np.pi+phase)*np.sin(np.pi*q)
+            shaped[:,1]+=.012*wave
+            shaped[:,0]+=side*.005*wave
     tangent = np.gradient(shaped, axis=0)
     tangent /= np.maximum(np.linalg.norm(tangent, axis=1)[:, None], 1e-8)
     radial = shaped-np.array([0, -.044, 1.771])
     normal = radial-tangent*np.sum(radial*tangent, axis=1)[:, None]
     normal /= np.maximum(np.linalg.norm(normal, axis=1)[:, None], 1e-8)
     # Preserve root coverage, narrow each distinct lock toward its tip.
-    taper = 1-.95*np.maximum(0, (t-.18)/.82)**1.25
+    taper = 1-(TIP_CLUMP if FEATHER else .95)*np.maximum(0, (t-.18)/.82)**1.25
     for s, r in zip(group, group_rad):
         s = shaped+(s-center)*taper[:, None]
         s += normal*(rng.normal(0, .0010)*np.sin(np.pi*t))[:, None]
         if long_lock and rng.random() < .7:
             cut = rng.uniform(.84, 1.)
             s = np.stack([np.interp(t*cut, t, s[:, j]) for j in range(3)], axis=1)
+        if FEATHER and long_lock:
+            # A separate RNG preserves earlier authored lock placement.
+            tip_delta=tip_rng.normal(0,np.array([.0024,.0020,.0012])*(.5 if SOFT_TIPS else 1),3)
+            s+=tip_delta[None,:]*t[:,None]**3
+            bend=np.clip((t-.52)/.48,0,1)
+            s+=normal*(.0035*np.sin(1.35*np.pi*bend)*bend)[:,None]
         for j, p in enumerate(s):
             hit, n, face, dist = bv.find_nearest(Vector(p))
             gap = (Vector(p)-hit).dot(n)
@@ -146,6 +167,17 @@ with bpy.data.libraries.load(str(frontal), link=False) as (available, loaded):
     loaded.objects = names
 for ob in loaded.objects:
     col.objects.link(ob); ob.hide_render=False; ob.hide_viewport=False
+if DRY:
+    # Match the visible regional components' roughness without recoloring.
+    for groom in bpy.data.objects:
+        if groom.type!='CURVES' or groom.hide_render:continue
+        for slot,mat in enumerate(groom.data.materials):
+            if not mat or not mat.node_tree:continue
+            mat=mat.copy();groom.data.materials[slot]=mat
+            for node in mat.node_tree.nodes:
+                if node.type=='BSDF_HAIR_PRINCIPLED':
+                    node.inputs['Roughness'].default_value=.42
+                    node.inputs['Radial Roughness'].default_value=.48
 credits = bpy.data.texts.new('WHOLE_LOCK_GROOM_CREDITS')
 credits.write('Ddr Rcs Female Shaggy Mullet Haircut: BlenderKit Royalty Free. Side/rear native fibers shortened, layered, waved and tapered; source/derived geometry kept local, not an asset pack. Front locally authored; short scalp support retains Daniel Bystedt CC BY-SA, version unspecified in evidence. All historical hidden objects retained. Static unapproved study.\n')
 scene = bpy.context.scene
@@ -165,6 +197,10 @@ report = dict(version=version, source=side_version, frontal_source=front_version
     processing_script_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
     license='Ddr Rcs Royalty Free derivative + Bystedt CC BY-SA short frontal support; not CC0',
     status='unreviewed actual geometry', collision_scope='Nearest body checks; clothing and animation not verified')
+report['relaxed_clump_tip_spread']=FEATHER
+report.update(tip_clump_strength=TIP_CLUMP if FEATHER else .95,soft_tip_spread=SOFT_TIPS)
+report.update(dry_groom_roughness=DRY,visible_hair_roughness=.42 if DRY else 'retained component settings',visible_radial_roughness=.48 if DRY else 'retained component settings')
+report['continuous_lower_nape_s_bends']=NAPE_WAVE
 (out/'groom_manifest.json').write_text(json.dumps(report, indent=2), encoding='utf-8')
 bpy.ops.wm.save_as_mainfile(filepath=str(out/'Ember_Regent.blend'))
 for name in ['01_Front', '02_ThreeQuarter', '03_Side', '04_Back']:
