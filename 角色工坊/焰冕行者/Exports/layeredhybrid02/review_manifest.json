@@ -1,0 +1,37 @@
+{
+  "version": "layeredhybrid02",
+  "scene_sha256": "8a1bc7e571569e312f5a6fa3e7f80ece821a9e16d038a05263c1a19761b91746",
+  "samples": 192,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "denoising": false,
+  "actual_3d_render": true,
+  "review": "Whole-fiber composition retains long fringe and rear; crown tufts/grooves persist. Not accepted as better than regionalgroom08. Reference-quality goal remains active.",
+  "artistic_accepted": false,
+  "renders": [
+    {
+      "file": "01_Front.png",
+      "sha256": "b64fc5bfd3c0d64d25e35abd16f73747c0240e3ccbeaa56e23c5de72a5091c85",
+      "visually_reviewed": true
+    },
+    {
+      "file": "02_ThreeQuarter.png",
+      "sha256": "e55b3a75664b289245b59fe8bdcfe3d18b9954694fd8ed68b62f47d5960f5c29",
+      "visually_reviewed": true
+    },
+    {
+      "file": "03_Side.png",
+      "sha256": "53f5d036336b07c19c6b038b40f01aacfc356f3e1f6be77848e5dc10480d3ade",
+      "visually_reviewed": true
+    },
+    {
+      "file": "04_Back.png",
+      "sha256": "263cfaf5c5323f0d7417e12cffb54573c0ed459b94ff1a18ebdc71338bb3d7ed",
+      "visually_reviewed": true
+    }
+  ],
+  "collision_scope": "No exhaustive clothing or animation collision validation",
+  "release": "none"
+}

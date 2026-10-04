@@ -1,0 +1,17 @@
+{
+  "version": "layerednative02",
+  "source": "layeredasset05",
+  "source_sha256": "8c116c415d51eb5e5406992b121b387a26a8a05c0a4402242ec2fa3e2f8376c3",
+  "license": "Salman Ramezani, BlenderKit Royalty Free derivative, not CC0; geometry local",
+  "method": "Evaluated UV triangle barycentric sampling gated by actual grayscale opacity; native fibers",
+  "native_fibers": 35492,
+  "components": 195,
+  "skipped_uv_columns": 3468,
+  "extended_bangs": true,
+  "draft": true,
+  "artistic_status": "unreviewed actual geometry",
+  "processing_script_sha256": "5b72ebe426fe8a5edd71a1c41c0bf7aadade77037bebf85cbb29a3bfc5a10b71",
+  "extended_bang_fibers": 11224,
+  "higher_endpoint_root_rule": true,
+  "coherent_millimeter_lock_waves": true
+}

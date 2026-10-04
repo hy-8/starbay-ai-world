@@ -1,0 +1,17 @@
+{
+  "version": "texturedgroom01",
+  "source": "assetshag01",
+  "frontal_source": "spatialfringe10",
+  "source_sha256": "79c22585e21cbc763dad80203cc8b44e29c89f2beaeab399b04fb32476a7f7c1",
+  "frontal_sha256": "db2d09e5e0710f9f3a3f707d83036ba3c9af11c5824ac8ecd22315651d37e7f7",
+  "processing_script_sha256": "6dc74b2d9ca2549b35652d5b10baec8de952af012aeac9a4d4083937be12f2f9",
+  "retained_cards": 338,
+  "deleted_vertices": 4644,
+  "body_clearance_repairs": 1758,
+  "visible_hair": "Actual textured side/rear mesh cards plus native frontal fibers",
+  "texture_policy": "Original packed alpha and UV preserved; geometry derivatives local",
+  "license": "Ddr Rcs Royalty Free cards; Bystedt CC BY-SA short scalp support",
+  "draft": true,
+  "status": "unreviewed actual comparison",
+  "collision_scope": "nearest body only; clothing and animation not verified"
+}

@@ -1,0 +1,22 @@
+{
+  "asset": "Short hair card",
+  "author": "Salman Ramezani",
+  "asset_version_id": "0a91297d-d3c1-43a6-9d38-d1f00c352f00",
+  "asset_base_id": "4793aff4-5e46-4902-a329-314731ebde09",
+  "license": "BlenderKit Royalty Free, NOT CC0",
+  "license_source": "https://www.blenderkit.com/docs/licenses/",
+  "local_source_filename": "Salman_ShortHairCard.blend",
+  "source_sha256": "ead836aeaae3fd349da52b16c42e5cf9f3de3d41cf67f53db0b458a13198e6d1",
+  "source_bytes": 1844997,
+  "inspection": "Opened with automatic scripts disabled. Two UV meshes, packed grayscale opacity and RGB maps. No required external texture dependency.",
+  "modifications": [
+    "Bake updated parent/world transforms before actual body fitting",
+    "Crimson albedo remap; explicitly remove source roughness/specular links before parameter changes",
+    "Smooth spatial nape extension comparison",
+    "Evaluated UV triangle sampling gated by actual grayscale opacity; actual native CURVES",
+    "Whole-fiber crown composition with original long fringe and retained prior side/nape"
+  ],
+  "distribution": "Keep source, packed textures and geometric derivatives local. Synchronize processing code, non-geometric metadata and actual reviewed rendered evidence only. No standalone hair asset distribution.",
+  "artistic_status": "Not adopted as an improvement over regionalgroom08. Actual full-quality hybrid02 still has crown tufts/grooves and insufficient transitions. Goal active.",
+  "retained_components": "Ddr Rcs rear Royalty Free; Daniel Bystedt short support CC BY-SA, version unspecified. See THIRD_PARTY_ATELIER.md."
+}

@@ -1,5 +1,13 @@
 # Atelier 角色检查稿的第三方资产署名
 
+## 分层发片的实际拟合与转换研究
+
+**Short hair card — Salman Ramezani**，BlenderKit Royalty Free，**非 CC0**。基础资产 ID `4793aff4-5e46-4902-a329-314731ebde09`，版本 ID `0a91297d-d3c1-43a6-9d38-d1f00c352f00`；来源哈希及改动见 `Source/licensed_layered_sources.json`，许可见 https://www.blenderkit.com/docs/licenses/ 。通过官方免费资产端点获取，原作者预览只用于研究，不能当作本项目成果。
+
+实际试验保留原 UV/打包贴图，更新父级变换后烘焙并拟合；红色转换显式断开原粗糙度/镜面连接，减小不适用的次表面与涂层响应。随后在求值后的真实 UV 三角形内做重心坐标采样，以原灰度不透明度筛选，生成原生毛发；不是用生成肖像替代建模。分区组合选完整冠部发丝，保留原创长刘海、Ddr Rcs 侧后发和 Bystedt 短支撑，分别保留许可。
+
+原文件、打包贴图、UV/几何提取记录、衍生 `.blend` 留本地；仅同步加工代码、非几何来源/检查清单与实际已查看渲染。所有试验尚未通过参考级艺术验收，新来源未作为优于 regionalgroom08 的造型采用，不发布独立素材包或候选 Release。
+
 ## 授权发片与原生发丝的新试验
 
 **Female Shaggy Mullet Haircut — Ddr Rcs**，来自 BlenderKit / Blendkit，许可为 **Royalty Free，非 CC0**。免费获取不等于公有领域。

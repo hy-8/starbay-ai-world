@@ -1,5 +1,13 @@
 # 绯序 · 演唱会角色作品方向
 
+## 2026-10-04 · 更换方法后的分层发片/原生毛发对照
+
+新增研究 `Exports/layeredhybrid02/Ember_Regent.blend` 与 `Renders/layeredhybrid02` 全质量四视角，1200×1400、192 samples、不去噪，均实际查看。真实分层发片经 UV/灰度不透明度采样转换为原生发丝，仅取 7,019 条冠部，组合 25,040 条原创长刘海、74,113 条 Ddr Rcs 侧后与 23,657 条 Bystedt 短支撑；数量仅作结构记录。**顶部仍有团簇、沟槽与不自然衔接，未认定优于 regionalgroom08，也没有达到参考。** 不新增展示近景来掩盖该造型问题；先前完整检查点继续为 `regionalgroom08` / `editorial13`。
+
+已实际排除：单独 Salman 发片拟合过低/过高、前后发太短；延长后颈仍直且宽片；仅转原生毛发后仍偏圆帽；强化原创冠部 S 形导致交叉绳状。材质诊断发现原图连接覆盖 Roughness 默认值，已显式修复，用新目录保存所有对照。具体失败与方法边界见 `HAIR_RECONSTRUCTION_NOTES.md`。
+
+新来源 Salman Ramezani 的 BlenderKit Royalty Free **不是 CC0**，原/衍生几何留本地；Bystedt 与 Ddr Rcs 的保留组件继续各自署名。`layeredhybrid02` 的几何有限值、正半径与贴图检查通过，结果在 `structural_validation.json`，不能替代艺术验收或证明全量穿插。目标仍进行，面部和服装仍需独立打磨；没有新动作、UE 接入、候选 Release 或社交发布。
+
 ## 2026-10-04 · 整束分区与授权发片转发丝检查点
 
 本次实际几何检查点为 `Exports/regionalgroom08/Ember_Regent.blend`，中性四视角 `Renders/regionalgroom08` 均已实际查看：1200×1400、Cycles/OptiX 192 samples、不去噪。高清近景为 `Renders/editorial13/03_Portrait.png`，对应可编辑静态工程 `Exports/editorial13/Redline_Editorial.blend`，1800×2100、384 samples、不去噪，已查看。**仍未达到参考作品质量，目标继续；以下旧检查点均为历史记录。**

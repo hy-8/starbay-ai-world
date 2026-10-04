@@ -1,0 +1,19 @@
+{
+  "version": "layeredhybrid02",
+  "source": "layerednative02",
+  "source_sha256": "24428e84d997cf9616d6f26a794266fe64892b21a3f219b6d2096a8924400de5",
+  "method": "Whole-fiber composition, no crown point deletion; retained original long fringe, side/nape and short support",
+  "visible_component_curves": {
+    "Original long fringe \u2022 whole-fiber retained": 25040,
+    "Salman crown \u2022 whole-fiber selected": 7019,
+    "Ddr Rcs derivative \u2022 whole rear locks": 74113,
+    "Bystedt derivative \u2022 short scalp support": 23657
+  },
+  "license": "Salman crown and Ddr Rcs rear Royalty Free; Bystedt short support CC BY-SA, version unspecified; original frontal geometry; keep licensed geometry local",
+  "draft": false,
+  "artistic_status": "unreviewed actual composition",
+  "processing_script_sha256": "4ca89a2cd23a2a8b61a12e7400f80e0aab14b4f6898872e98c1d16d568aab722",
+  "crown_height_settlement": true,
+  "crown_clearance_repairs": 2229,
+  "samples": 192
+}

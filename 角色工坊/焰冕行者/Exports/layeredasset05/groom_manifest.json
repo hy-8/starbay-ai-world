@@ -1,0 +1,56 @@
+{
+  "version": "layeredasset05",
+  "base": "regionalgroom08",
+  "base_sha256": "210f725e4f53b0829f4e11ae876be2ce0fa81cd5eef7078a6be312de44543211",
+  "asset": "Short hair card",
+  "author": "Salman Ramezani",
+  "asset_sha256": "ead836aeaae3fd349da52b16c42e5cf9f3de3d41cf67f53db0b458a13198e6d1",
+  "license": "BlenderKit Royalty Free, not CC0; geometric source and derivatives local",
+  "source_center_m": [
+    0.0,
+    -0.012,
+    0.13
+  ],
+  "target_center_m": [
+    0.0,
+    -0.044,
+    1.771
+  ],
+  "scale": 0.45,
+  "body_clearance_repairs": 3567,
+  "objects": [
+    {
+      "name": "Salman layered hair derivative \u2022 Caps",
+      "vertices": 3633,
+      "min": [
+        -0.09015858939201045,
+        -0.16330215334892273,
+        1.592628170736134
+      ],
+      "max": [
+        0.08562369106570558,
+        0.07040812820196152,
+        1.8686353832483291
+      ]
+    },
+    {
+      "name": "Salman layered hair derivative \u2022 Short hair card.001",
+      "vertices": 5788,
+      "min": [
+        -0.10584537237882614,
+        -0.16470867395401,
+        1.5953888910227862
+      ],
+      "max": [
+        0.09530476259234583,
+        0.0764772263427035,
+        1.9302500292658804
+      ]
+    }
+  ],
+  "draft": true,
+  "status": "unreviewed actual fitted asset control",
+  "processing_script_sha256": "65f7486b34d4649e61025dfd9504864705a89a21501d73532d130a6ebcd69ada",
+  "crimson_value_remap": true,
+  "smooth_existing_card_nape_extension": true
+}

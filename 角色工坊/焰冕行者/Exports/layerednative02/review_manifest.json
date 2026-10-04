@@ -1,0 +1,37 @@
+{
+  "version": "layerednative02",
+  "scene_sha256": "24428e84d997cf9616d6f26a794266fe64892b21a3f219b6d2096a8924400de5",
+  "samples": 64,
+  "resolution": [
+    960,
+    1120
+  ],
+  "denoising": false,
+  "actual_3d_render": true,
+  "review": "Longer frontal fibers; still rounded cap, insufficient fringe separation and unnatural side/nape transition. Not adopted.",
+  "artistic_accepted": false,
+  "renders": [
+    {
+      "file": "01_Front.png",
+      "sha256": "7c11d989e0aa464b450b28f4d41cbe6141268b26d13e5ebf8af65f7bdce386f8",
+      "visually_reviewed": true
+    },
+    {
+      "file": "02_ThreeQuarter.png",
+      "sha256": "bfebffc0c658eeb158c33b57c0f12e89221b71d6b4fb545af75d01dfbe9e19b2",
+      "visually_reviewed": true
+    },
+    {
+      "file": "03_Side.png",
+      "sha256": "45bf4ddb01907d24fecba4a647d9250004317804731c1b4bd02e12c237014362",
+      "visually_reviewed": true
+    },
+    {
+      "file": "04_Back.png",
+      "sha256": "dec7bf78d1b0a16134a8c0ff73dd53e260c9a5982ce78e422c375d9c02dc270d",
+      "visually_reviewed": true
+    }
+  ],
+  "collision_scope": "No exhaustive clothing or animation collision validation",
+  "release": "none"
+}

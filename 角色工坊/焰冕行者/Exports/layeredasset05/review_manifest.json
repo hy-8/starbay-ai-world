@@ -1,0 +1,37 @@
+{
+  "version": "layeredasset05",
+  "scene_sha256": "8c116c415d51eb5e5406992b121b387a26a8a05c0a4402242ec2fa3e2f8376c3",
+  "samples": 64,
+  "resolution": [
+    960,
+    1120
+  ],
+  "denoising": false,
+  "actual_3d_render": true,
+  "review": "Correct crimson shader response, still broad cards, scalp gaps and straight extended rear. Not adopted.",
+  "artistic_accepted": false,
+  "renders": [
+    {
+      "file": "01_Front.png",
+      "sha256": "55c13375e07faefc1542b6a081577493c02f6e4b97d0343ce26b0ce6903677b3",
+      "visually_reviewed": true
+    },
+    {
+      "file": "02_ThreeQuarter.png",
+      "sha256": "9c127b37df3bc4ba79ee858d3807d8ccca3440dda64d83bc5b4e2b66ae62d841",
+      "visually_reviewed": true
+    },
+    {
+      "file": "03_Side.png",
+      "sha256": "54a64d3f71ba6a2b1b8df3044095d62977ae2e3e688478bf193211f558626f35",
+      "visually_reviewed": true
+    },
+    {
+      "file": "04_Back.png",
+      "sha256": "8557641fbe6185ba64812760843eccfd303d54f90e4bc8590f77bd2a36b2c97c",
+      "visually_reviewed": true
+    }
+  ],
+  "collision_scope": "No exhaustive clothing or animation collision validation",
+  "release": "none"
+}

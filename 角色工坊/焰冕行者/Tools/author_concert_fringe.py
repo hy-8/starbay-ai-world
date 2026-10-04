@@ -17,6 +17,8 @@ REFERENCE_CUT='--reference-cut' in args
 SCULPTED='--sculpted-clumps' in args
 ROOT_PATCHES='--root-patches' in args
 SOFT_PATCHES='--soft-patches' in args
+SECTIONED='--sectioned-locks' in args
+if SECTIONED and not SOFT_PATCHES:raise ValueError('--sectioned-locks requires --soft-patches')
 if SOFT_PATCHES and not ROOT_PATCHES:raise ValueError('--soft-patches requires --root-patches')
 PATCH_FIBERS=int(args[args.index('--fibers-per-guide')+1]) if '--fibers-per-guide' in args else 420
 if not 50<=PATCH_FIBERS<=2000:raise ValueError('Fibers per guide must be 50..2000')
@@ -171,6 +173,15 @@ if ROOT_PATCHES:
  # guides. Grow each long lock from its own small actual-surface root patch.
  # Side/nape and short coverage remain the attributed donor derivatives.
  for k,base in enumerate(paths):
+  base=base.copy()
+  if SECTIONED:
+   tang=np.gradient(base,axis=0);tang/=np.maximum(np.linalg.norm(tang,axis=1)[:,None],1e-8)
+   rad=base-center;rad/=np.maximum(np.linalg.norm(rad,axis=1)[:,None],1e-8)
+   local_normal=rad-tang*np.sum(rad*tang,axis=1)[:,None];local_normal/=np.maximum(np.linalg.norm(local_normal,axis=1)[:,None],1e-8)
+   # Low millimeter-scale independent relief, not a large crossed curl.
+   phase_k=(k*2.399963)%6.283185
+   amp=.0045 if 'crown' in spec[k][0] or 'feather' in spec[k][0] else .0018
+   base+=local_normal*(amp*np.sin(t*2.1*np.pi+phase_k)*np.sin(np.pi*t))[:,None]
   hit,root_normal,idx,dist=bv.find_nearest(Vector(base[0]));root_center=np.array(hit);root_normal=np.array(root_normal)
   growth=base[4]-base[0];growth-=root_normal*np.dot(growth,root_normal)
   if np.linalg.norm(growth)<1e-6:growth=np.cross(root_normal,np.array([1.,0.,0.]))
@@ -185,9 +196,16 @@ if ROOT_PATCHES:
    normal=radial-tangent*np.sum(radial*tangent,axis=1)[:,None];normal/=np.maximum(np.linalg.norm(normal,axis=1)[:,None],1e-8)
    across=np.cross(tangent,normal)
    # A finite lock cross-section, rather than a surface-wide root fan.
-   width=rng.normal(0,.0028 if SOFT_PATCHES else .00125);depth=rng.normal(0,.0014 if SOFT_PATCHES else .00085)
+   if SECTIONED:
+    sublock=strand%5
+    width=(sublock-2)*.00175+rng.normal(0,.00065)
+    depth=rng.normal(0,.00085)+(sublock%2)*.0010
+   else:
+    width=rng.normal(0,.0028 if SOFT_PATCHES else .00125);depth=rng.normal(0,.0014 if SOFT_PATCHES else .00085)
    env=(1-np.exp(-t*15))*(.18+.82*(1-t)**.6)
    s+=(across*width+normal*depth)*env[:,None]
+   if SECTIONED:
+    s+=normal*(.0011*np.sin(t*(1.35+sublock*.17)*np.pi+sublock*.67)*np.sin(np.pi*t))[:,None]
    phase=rng.uniform(0,2*np.pi)
    s+=normal*(.0004*np.sin(t*7+phase)*np.sin(np.pi*t))[:,None]
    if rng.random()<(.78 if SOFT_PATCHES else .36):
@@ -231,6 +249,7 @@ report['reference_cut']=REFERENCE_CUT
 report['sculpted_lock_relief']=SCULPTED
 report['local_scalp_patch_roots']=ROOT_PATCHES
 report['soft_patch_cross_sections']=SOFT_PATCHES
+report['sectioned_millimeter_lock_relief']=SECTIONED
 if ROOT_PATCHES:report['patch_fibers_per_guide']=PATCH_FIBERS
 if '--design' in args:
  report['design_sha256']=hashlib.sha256(design_path.read_bytes()).hexdigest()

@@ -1,0 +1,14 @@
+{
+  "version": "regionalgroom09",
+  "source": "regionalgroom08",
+  "front_source": "spatialfringe11",
+  "source_sha256": "210f725e4f53b0829f4e11ae876be2ce0fa81cd5eef7078a6be312de44543211",
+  "front_source_sha256": "3b660dc648c0b87d32b9032470132de3bef61803414ced17be046d763008f929",
+  "processing_script_sha256": "e4b0cee2d9285eb09843bb4d43e10b55fbf11987a6d9ace6dea902d671a6af13",
+  "method": "Only replace actual frontal native curves; preserve existing side/nape and short scalp support",
+  "frontal_curves": 32000,
+  "draft": true,
+  "status": "unreviewed actual static study",
+  "license": "Project-authored frontal patches; retained side/nape Ddr Rcs Royalty Free and short support Bystedt CC BY-SA",
+  "collision_scope": "No extra clothing/animation verification by replacement"
+}
