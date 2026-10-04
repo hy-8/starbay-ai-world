@@ -2,6 +2,53 @@
 
 用户要求持续改善真实三维发型，并允许更换方法。当前目标仍在进行，任何输入图、成功推理、通过文件检查或发丝数量都不能替代艺术验收。
 
+## 2026-10-04 · 整束分区、头皮小块与授权发片路线
+
+最新实际检查点为 `regionalgroom08`，四视角已经逐张查看，1200×1400、192 samples、不去噪；`editorial13` 的实际近景已经查看，1800×2100、384 samples、不去噪。两个工程的结构检查通过。**仍未通过参考级艺术验收，目标继续。下文其他“当前”段落均为历史检查点。**
+
+### 诊断与更换方法
+
+`diagnose_spatial_groom.py -- layerisolation01 spatialfringe04` 逐组隔离实际毛发，四张图均已查看；保留区域的 76,484 条曲线没有发丝到达所定义的上前额诊断区，宽冠部主要来自自绘前额。检查源文件哈希未变。该诊断区只是本次定位范围，不是全头的穿插检测。
+
+`author_concert_fringe.py` 增加 `--root-patches --soft-patches --fibers-per-guide`，改为从每条自绘导向线附近的实际 body 头皮小块生长长发，避免宽 donor-root 偏移扇成一大片。控制图07为 32 条明确设计的路径，不自动展开为随机大束；08加强部分横向转折却产生绳圈和空隙，09撤回过强冠部改动，只保留两束眉侧刘海的重画。可见 CURVES 本身可编辑，控制图修改后需要重新烘焙，隐藏路径不是实时驱动器。
+
+另从官方公开免费接口获取 Ddr Rcs 的 **Female Shaggy Mullet Haircut**，检查 424 个实际连接发片、Factor BYTE_COLOR、UV 和打包贴图。常量 `curve_group_id_ht` 不能分组，实际按网格连接分组。`groom_asset_card_guides.py --wave-cut --atlas-fibers` 从中心线生长真实原生毛发，并在原 UV 上采样 alpha，避免将贴图透明区域填成实心波波头。改编仍是 Royalty Free，不是 CC0，几何提取清单 `licensed_groom_design.json` 留本地。
+
+### 已查看的试验与不足
+
+| 试验 | 实际检查结论 |
+| --- | --- |
+| spatialfringe06 / 07 | 小块生根降低宽扇面；06 绳状交叉，07 湿细感和侧面缺口，未作为成品 |
+| spatialfringe08 | 软截面和更多长短发丝，冠部仍顺滑，前后衔接不足；全质量四视角已看 |
+| spatialfringe09 / 10 | 09 加强冠部转折导致圈状交叉和空隙；10 恢复较克制冠部，只保留两束眉侧的重画 |
+| assetshag01 | 原发片的实际拟合控制，覆盖连续，但微短刘海和直长侧后发不匹配目标 |
+| nativeasset01 / 02 | 从授权发片提取实际中心线转发丝；02 采样原 atlas 透明度，仍有圆帽与钝齐刘海 |
+| regionalgroom01 | 按发根高度删掉源冠部，却同时删掉覆盖后脑的长发；后方大块裸露，否定 |
+| regionalgroom02 | 改为按完整发束末端/走向保留侧后区域，恢复后脑覆盖；发尾仍偏直，耳前有硬角 |
+| regionalgroom03 | 上短下长和波浪调整过强，后方轮廓过圆；冠部控制08也带圈状空隙 |
+| regionalgroom04 | 压缩后脑、撤回冠部圈状改动；试验含后向位移未渐隐的问题，保留但不复用 |
+| regionalgroom05 / 06 | 修复位移、分散转折/剪裁；硬高度阈值仍造成横向条带，未采用为成品 |
+| regionalgroom07 / 08 | 后脑压缩用连续空间权重过渡，横向硬折线减轻；08 为全质量检查点，仍有顺滑宽冠部、偏直后发和针状尾部 |
+
+这批试验的四视角均已实际检查，草稿为 64 samples、80% 分辨率；无 `--draft` 为 192 samples、全分辨率。所有图都由实际 3D 工程渲染，没有使用生成肖像冒充建模。历史01—06的脚本参数和阈值经历调整，最终脚本不保证逐字节复现这些历史结果，源模型与旧图均保留。07/08 的清单记录处理脚本哈希。
+
+### 当前实际工程与复建条件
+
+`regionalgroom08` 可见几何由 32,000 条原创前额、23,657 条 Bystedt 短支撑、74,113 条 Ddr Rcs 衍生侧后发丝组成；数量只是结构记录。头皮间距修正针对最近 body 表面，未对全部衣物或动画穿插作证明，后颈/领口需继续检查。`editorial13` 使用静态几何摆姿，不是新骨骼或动画。
+
+本地依赖必须已经存在；仅从 GitHub 清单不能恢复授权源模型。用新版本名运行，不能覆盖历史目录：
+
+```text
+Blender --python author_concert_fringe.py -- 新前额版本 layercut08 --choppy-locks --reference-cut --root-patches --soft-patches --fibers-per-guide 1000 --design Source/HairReconstruction/concert_fringe_control09.json
+Blender --python shape_regional_groom.py -- 新组合版本 nativeasset02 新前额版本 --scissor-layers --lean-wolf --stagger-locks
+Blender --python render_editorial_pose.py -- 新展示版本 新组合版本 --portrait-only --hair-detail
+Blender --python validate_concert_still.py -- 新组合版本
+```
+
+08 组合使用 `spatialfringe10` 的实际几何，它虽按草稿参数渲染，模型几何精度相同。来源/许可见 `Source/licensed_shag_sources.json` 与 `THIRD_PARTY_ATELIER.md`。作者原资产、预览、贴图、提取的几何路径及含该资产的 `.blend` 均留本地；只同步源码、原创前额控制、非几何清单和所选真实渲染。没有新 Release、UE 接入、动作或社交发布。
+
+下一步应先打散冠部宽顺滑面和后颈针状尾部，比较保留授权发片贴图与原生发丝的实际差异；再独立重做面部神态和服装受力褶皱。提高采样已证明不能解决当前造型缺陷，不作为主要方法。
+
 ## 2026-10-04 · 改为在目标头皮直接重梳前额
 
 新的实际检查候选为 `Exports/targetfringe04/Ember_Regent.blend`，中性四视角 `Renders/targetfringe04` 已逐张查看，1200×1400、Cycles/OptiX 192 samples、不去噪。**仍未达到参考级作品质量，目标继续。** 相比旧版，前额的高起硬结减轻，侧面缺口得到补充，前额有不同长度与转折；仍有过厚、片状的刘海、相似的弯曲和不够自然的前后衔接，面部与衣服仍为 WIP。

@@ -15,6 +15,13 @@ RELAXED='--relaxed' in args
 CHOPPY='--choppy-locks' in args
 REFERENCE_CUT='--reference-cut' in args
 SCULPTED='--sculpted-clumps' in args
+ROOT_PATCHES='--root-patches' in args
+SOFT_PATCHES='--soft-patches' in args
+if SOFT_PATCHES and not ROOT_PATCHES:raise ValueError('--soft-patches requires --root-patches')
+PATCH_FIBERS=int(args[args.index('--fibers-per-guide')+1]) if '--fibers-per-guide' in args else 420
+if not 50<=PATCH_FIBERS<=2000:raise ValueError('Fibers per guide must be 50..2000')
+if ROOT_PATCHES and not REFERENCE_CUT:raise ValueError('--root-patches requires --reference-cut')
+if ROOT_PATCHES and SCULPTED:raise ValueError('Patch-root study must not include early-collapse sculpted flow')
 if SCULPTED and not REFERENCE_CUT:raise ValueError('--sculpted-clumps requires --reference-cut')
 if REFERENCE_CUT and not CHOPPY:raise ValueError('--reference-cut requires --choppy-locks')
 if CHOPPY and RELAXED:raise ValueError('Choppy authored locks must not be averaged by --relaxed')
@@ -124,6 +131,7 @@ for size in sizes:
   for j,pt in enumerate(under):
    hit,n,idx,dist=bv.find_nearest(Vector(pt));under[j]=np.array(hit+n*(.0005 if j==0 else .0018+.0015*np.sin(np.pi*t[j])))
   support.append(under.astype(np.float32))
+ if ROOT_PATCHES:continue
  if index%(2 if SCULPTED else (3 if REFERENCE_CUT else 4))!=0:continue
  distances=np.linalg.norm((roots-r)*np.array([1,1,1.2]),axis=1)
  if RELAXED or CHOPPY:
@@ -158,6 +166,37 @@ for size in sizes:
   hit,n,idx,dist=bv.find_nearest(Vector(pt));gap=(Vector(pt)-hit).dot(n)
   if gap<.0008 and dist<.040:s[j]=np.array(hit+n*.0010);repairs+=1
  s[0]=r;styled.append(s.astype(np.float32))
+if ROOT_PATCHES:
+ # Wide donor-root offsets created a fan/sheet even for independently authored
+ # guides. Grow each long lock from its own small actual-surface root patch.
+ # Side/nape and short coverage remain the attributed donor derivatives.
+ for k,base in enumerate(paths):
+  hit,root_normal,idx,dist=bv.find_nearest(Vector(base[0]));root_center=np.array(hit);root_normal=np.array(root_normal)
+  growth=base[4]-base[0];growth-=root_normal*np.dot(growth,root_normal)
+  if np.linalg.norm(growth)<1e-6:growth=np.cross(root_normal,np.array([1.,0.,0.]))
+  growth/=np.linalg.norm(growth);across_root=np.cross(root_normal,growth)
+  for strand in range(PATCH_FIBERS):
+   angle=rng.uniform(0,2*np.pi);span=(.0078 if SOFT_PATCHES else .0045)*np.sqrt(rng.random())
+   probe=root_center+(growth*np.cos(angle)+across_root*np.sin(angle))*span
+   hit,n,idx,dist=bv.find_nearest(Vector(probe));r=np.array(hit+n*.0005)
+   s=base+(r-base[0])[None,:]*(1-t[:,None])**2.0
+   tangent=np.gradient(s,axis=0);tangent/=np.maximum(np.linalg.norm(tangent,axis=1)[:,None],1e-8)
+   radial=s-center;radial/=np.maximum(np.linalg.norm(radial,axis=1)[:,None],1e-8)
+   normal=radial-tangent*np.sum(radial*tangent,axis=1)[:,None];normal/=np.maximum(np.linalg.norm(normal,axis=1)[:,None],1e-8)
+   across=np.cross(tangent,normal)
+   # A finite lock cross-section, rather than a surface-wide root fan.
+   width=rng.normal(0,.0028 if SOFT_PATCHES else .00125);depth=rng.normal(0,.0014 if SOFT_PATCHES else .00085)
+   env=(1-np.exp(-t*15))*(.18+.82*(1-t)**.6)
+   s+=(across*width+normal*depth)*env[:,None]
+   phase=rng.uniform(0,2*np.pi)
+   s+=normal*(.0004*np.sin(t*7+phase)*np.sin(np.pi*t))[:,None]
+   if rng.random()<(.78 if SOFT_PATCHES else .36):
+    q=t*rng.uniform(.74 if SOFT_PATCHES else .90,.99);s=np.stack([np.interp(q,t,s[:,j]) for j in range(3)],axis=1)
+   s+=rng.normal(0,.0006,3)[None,:]*t[:,None]**3
+   for j,pt in enumerate(s):
+    hit,n,idx,dist=bv.find_nearest(Vector(pt));gap=(Vector(pt)-hit).dot(n)
+    if gap<.0008 and dist<.040:s[j]=np.array(hit+n*.0010);repairs+=1
+   s[0]=r;styled.append(s.astype(np.float32));counts[k]+=1
 col=bpy.data.collections['05_Hair'];mat=old.materials[0]
 for o in list(col.objects):bpy.data.objects.remove(o,do_unlink=True)
 def create(name,curves,min_radius,max_radius):
@@ -167,7 +206,7 @@ def create(name,curves,min_radius,max_radius):
  o=bpy.data.objects.new(name,cu);col.objects.link(o)
 create('Bystedt derivative • retained side and nape',back,.000033,.000045)
 create('Bystedt derivative • short scalp support',support,.000028,.000039)
-create('Authored spatial fringe • retained Bystedt roots',styled,.000032,.000044)
+create('Authored spatial fringe • '+('actual scalp root patches' if ROOT_PATCHES else 'retained Bystedt roots'),styled,.000032,.000044)
 nt=mat.node_tree;bs=next(n for n in nt.nodes if n.type=='BSDF_HAIR_PRINCIPLED');bs.inputs['Roughness'].default_value=.34;bs.inputs['Radial Roughness'].default_value=.45
 ramp=next(n for n in nt.nodes if n.type=='VALTORGB');ramp.color_ramp.elements[0].color=(.025,.0015,.0025,1);ramp.color_ramp.elements[1].color=(.085,.005,.008,1)
 gc=bpy.data.collections.new('08_Authored_Spatial_Fringe');bpy.context.scene.collection.children.link(gc);gc.hide_render=True
@@ -180,6 +219,7 @@ for record,count in zip(design,counts):record['assigned_visible_fibers']=int(cou
 (out/'authored_fringe_design.json').write_text(json.dumps(design,indent=2),encoding='utf-8')
 tx=bpy.data.texts.get('ADAPTED_HAIR_CREDITS')
 if tx:tx.write('\nFurther modifications: explicit spatial frontal S guides, reduced frontal density, separate scalp support and retained side/nape. Original adapted roots and side/nape remain CC BY-SA. Hidden guide evidence is not live-linked to baked fibers.\n')
+if tx and ROOT_PATCHES:tx.write('Patch-root variant: new styling roots sampled from local patches on the actual body scalp; donor side/nape and short support remain CC BY-SA derivatives.\n')
 scene=bpy.context.scene;pref=bpy.context.preferences.addons['cycles'].preferences;pref.compute_device_type='OPTIX';pref.get_devices()
 for d in pref.devices:d.use=d.type=='OPTIX'
 scene.cycles.device='GPU';scene.cycles.samples=64 if DRAFT else 192;scene.cycles.use_denoising=False;scene.cycles_curves.shape='THICK'
@@ -189,6 +229,9 @@ report['relaxed_spatial_guides']=RELAXED
 report['discrete_choppy_layers']=CHOPPY
 report['reference_cut']=REFERENCE_CUT
 report['sculpted_lock_relief']=SCULPTED
+report['local_scalp_patch_roots']=ROOT_PATCHES
+report['soft_patch_cross_sections']=SOFT_PATCHES
+if ROOT_PATCHES:report['patch_fibers_per_guide']=PATCH_FIBERS
 if '--design' in args:
  report['design_sha256']=hashlib.sha256(design_path.read_bytes()).hexdigest()
 (out/'groom_manifest.json').write_text(json.dumps(report,indent=2),encoding='utf-8')

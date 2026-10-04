@@ -1,0 +1,34 @@
+{
+  "asset_name": "Female Shaggy Mullet Haircut",
+  "author": "Ddr Rcs",
+  "provider": "BlenderKit / Blendkit",
+  "asset_version_id": "ab9575fd-24cd-4790-a421-efa3f4c5e170",
+  "asset_base_id": "7e71d351-a00e-4188-82ef-54d0ade05423",
+  "acquisition": "Official free download endpoint; source opened with Blender automatic scripts disabled",
+  "source_local_file": "Source/BlenderKitResearch/DdrRcs_ShaggyMullet.blend",
+  "source_sha256": "59f67664be3a88217b14c273d941963ec2e02ca3ad93258e7e93fb0656019ba7",
+  "source_bytes": 36274728,
+  "license": "BlenderKit Royalty Free, not CC0",
+  "license_source": "https://www.blenderkit.com/docs/licenses/",
+  "official_license_quote": "Both allow you to sell higher-level-derivative works, but royalty free license doesn't allow to re-sell 3D models even if modified.",
+  "local_policy": "Keep source and source-derived geometric assets locally; do not redistribute them as a standalone hair asset pack. Commit project processing scripts, attribution, non-geometric manifests and reviewed render evidence only.",
+  "inspected_geometry": {
+    "vertices": 20880,
+    "faces": 13072,
+    "disconnected_card_strips": 424,
+    "uv_layers": ["UVMap", "HairTool_UV"],
+    "factor_attribute": "BYTE_COLOR; color_srgb[0] used to recover ordered rows",
+    "group_id_attribute": "curve_group_id_ht is constant zero, not usable for grouping",
+    "packed_images": ["depht+alpha.png", "hair_V2_bake_id.png", "hair_V2_bake_normal.png"]
+  },
+  "modifications": [
+    "Fit real card geometry to retained male body scalp",
+    "Recover per-card centerlines by connectivity and Factor",
+    "Convert real guide geometry to editable native fibers",
+    "Sample original UV alpha to preserve painted coverage and tips",
+    "Shorten and wave side/nape locks, taper fiber width, combine with locally authored frontal patches"
+  ],
+  "mixed_component_note": "Bystedt-derived short scalp support retains CC BY-SA (version unspecified in inspected evidence). No single CC0 license is assigned to the combined character.",
+  "artistic_status": "Unapproved modeling studies, not reference-quality character art",
+  "preview_note": "ShaggyMullet_preview.png is the asset author's preview, not this project's character render. It is kept local."
+}

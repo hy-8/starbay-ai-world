@@ -1,0 +1,19 @@
+{
+  "version": "nativeasset02",
+  "source": "assetshag01",
+  "source_sha256": "79c22585e21cbc763dad80203cc8b44e29c89f2beaeab399b04fb32476a7f7c1",
+  "asset_author": "Ddr Rcs",
+  "license": "BlenderKit Royalty Free derivative, not CC0; keep geometric assets local, no standalone asset resale",
+  "method": "actual fitted card centerlines, independent fiber cross-section, optional layered shortening and wavy fringe extension",
+  "guides": 424,
+  "skipped_components": 0,
+  "native_fibers": 92320,
+  "extended_bang_guides": 71,
+  "shortened_guides": 267,
+  "clearance_repairs": 277821,
+  "wave_cut": true,
+  "draft": true,
+  "status": "unreviewed actual geometry study",
+  "atlas_coverage_sampling": true,
+  "atlas_rejected_columns": 9757
+}

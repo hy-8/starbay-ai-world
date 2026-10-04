@@ -1,0 +1,18 @@
+{
+  "version": "editorial13",
+  "source": "regionalgroom08",
+  "source_sha256": "210f725e4f53b0829f4e11ae876be2ce0fa81cd5eef7078a6be312de44543211",
+  "renderer": "Blender 4.5.9 Cycles",
+  "samples": 384,
+  "draft": false,
+  "pose": "static geometric display pose, not a runtime rig",
+  "magic_particles": false,
+  "images": [
+    {
+      "file": "03_Portrait.png",
+      "bytes": 4514695,
+      "sha256": "726d254d169b15779916888ffb620dd6f251ccf0c10878cca4ab8df7b4928c60"
+    }
+  ],
+  "status": "visual study, not approved commercial-quality final"
+}

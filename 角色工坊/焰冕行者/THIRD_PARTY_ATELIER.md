@@ -1,5 +1,20 @@
 # Atelier 角色检查稿的第三方资产署名
 
+## 授权发片与原生发丝的新试验
+
+**Female Shaggy Mullet Haircut — Ddr Rcs**，来自 BlenderKit / Blendkit，许可为 **Royalty Free，非 CC0**。免费获取不等于公有领域。
+
+- 资产版本 ID：`ab9575fd-24cd-4790-a421-efa3f4c5e170`；基础 ID：`7e71d351-a00e-4188-82ef-54d0ade05423`。
+- 官方许可：https://www.blenderkit.com/docs/licenses/ 。原文："Both allow you to sell higher-level-derivative works, but royalty free license doesn't allow to re-sell 3D models even if modified."
+- 来源哈希、实际结构和使用清单：`Source/licensed_shag_sources.json`。36,274,728 字节原 `.blend` 含 424 个独立发片和打包贴图，打开时禁用自动脚本执行。
+- 修改：真实男性头皮拟合、逐片根部调整、红色材质；从连接关系与 Factor 提取中心线，结合原 UV alpha 采样成原生发丝；分层剪短、波浪、宽度收尖、完整发束分区与后脑轮廓平滑。
+- `assetshag01`、`nativeasset01/02`、`regionalgroom01—08` 及 `editorial13` 均为未验收试验；当前 `regionalgroom08` 仅选作实际几何检查点。
+- 原发片、作者预览、贴图、提取的几何导向线、含该来源的 `.blend` 全部留本地；不作为独立发型资产或素材包分发。GitHub 仅同步本项目加工代码、非几何来源清单与实际角色渲染证据。
+
+组合模型的原创前额来自角色实际头皮小块与本项目控制图；短头皮支撑依然是 **Daniel Bystedt Hair Styles 的 CC BY-SA 改编**，证据未注明版本。两种组件分别保留原许可，不能将整个组合写成 CC0 或全原创。当前没有新游戏包或公开社交发布。
+
+> Side/nape hair adapted from “Female Shaggy Mullet Haircut” by Ddr Rcs, BlenderKit Royalty Free. Modified scalp fitting, geometry-to-fiber conversion, layering and taper. Short frontal support adapted from “Hair Styles” by Daniel Bystedt, CC BY-SA (version unspecified in inspected evidence). Preserve component attribution and modification notices.
+
 ## 实际采用的皮靴
 
 **Shoes Biker Boots Male — Mindfront (Sweden)**，授权为 **Creative Commons Attribution 4.0 International (CC BY 4.0)**。

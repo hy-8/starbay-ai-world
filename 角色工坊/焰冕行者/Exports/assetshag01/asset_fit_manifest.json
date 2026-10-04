@@ -1,0 +1,49 @@
+{
+  "version": "assetshag01",
+  "base": "layercut08",
+  "base_sha256": "1ea8513608980d18d24ac8a45f694b7a5c0328768aed94e66c94ca8eed31118a",
+  "asset_author": "Ddr Rcs",
+  "asset_name": "Female Shaggy Mullet Haircut",
+  "asset_base_id": "7e71d351-a00e-4188-82ef-54d0ade05423",
+  "asset_sha256": "59f67664be3a88217b14c273d941963ec2e02ca3ad93258e7e93fb0656019ba7",
+  "license": "BlenderKit Royalty Free, not CC0; no standalone asset resale",
+  "source_origin": "https://www.blenderkit.com/",
+  "license_source": "https://www.blenderkit.com/docs/licenses/",
+  "visible_hair": "actual textured mesh cards, not native fibers or an image replacement",
+  "card_components": 424,
+  "vertices": 20880,
+  "root_adjustment_median_m": 0.008462040434627019,
+  "root_adjustment_max_m": 0.01703315274283186,
+  "clearance_repairs": 3633,
+  "source_center_m": [
+    0.034,
+    -0.0096,
+    0.27
+  ],
+  "target_center_m": [
+    0.0,
+    -0.044,
+    1.771
+  ],
+  "scale": 1.15,
+  "draft": true,
+  "artistic_status": "unreviewed control fitting, not final",
+  "images": [
+    {
+      "file": "01_Front.png",
+      "sha256": "a317fb069659e455a87ef8600d287584f90f65a631cbefdd28d0be5997800a16"
+    },
+    {
+      "file": "02_ThreeQuarter.png",
+      "sha256": "83b23aa84db840a1292e083b1bbfe5dcd319f290522348e6b8e29ec38d37d06c"
+    },
+    {
+      "file": "03_Side.png",
+      "sha256": "d1ebcf3fd162cea9e55f887b36ff81b0d00f1e8ffdc5dfc80a6bb3d1f3ab68c7"
+    },
+    {
+      "file": "04_Back.png",
+      "sha256": "37e0be798c1e0a61f5537f1772a3a332321de438408d9f35aea062ce9ef3f188"
+    }
+  ]
+}

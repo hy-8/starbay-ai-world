@@ -1,5 +1,15 @@
 # 绯序 · 演唱会角色作品方向
 
+## 2026-10-04 · 整束分区与授权发片转发丝检查点
+
+本次实际几何检查点为 `Exports/regionalgroom08/Ember_Regent.blend`，中性四视角 `Renders/regionalgroom08` 均已实际查看：1200×1400、Cycles/OptiX 192 samples、不去噪。高清近景为 `Renders/editorial13/03_Portrait.png`，对应可编辑静态工程 `Exports/editorial13/Redline_Editorial.blend`，1800×2100、384 samples、不去噪，已查看。**仍未达到参考作品质量，目标继续；以下旧检查点均为历史记录。**
+
+先做前额/支撑/保留毛发的隔离渲染，定位宽冠部主要来自自绘前发；随后把长发根改成实际头皮小块，重画刘海路径。另一条实际路线使用 Ddr Rcs 的授权发片，按连接关系和 Factor 提取导向线，结合原 UV alpha 转成原生发丝，再按完整发束走向保留耳侧和后颈。按发根高度直接删束的 `regionalgroom01` 导致后脑大块裸露，已否定；整束保留恢复覆盖，分层修剪改善齐尾。后方压缩从硬高度阈值改为连续空间过渡，消除试验中的横向硬折线。
+
+当前不足：冠部仍偏顺滑和宽片，侧后方较直且部分发尾呈针状，耳前衔接仍不够自然；面部仍像通用数字人，服装剪裁/褶皱与参考差距明显。高清图没有解决这些造型问题，不能称为成品或用来证明 AAA 质量。结构检查通过的范围仍仅是有限值、正半径、贴图存在和哈希；没有全量衣物穿插或动画验证。
+
+Ddr Rcs 来源为 **BlenderKit Royalty Free，非 CC0**；原资产、提取的几何导向线和模型留本地，不分发成独立发型资产包。Bystedt 短支撑保留 CC BY-SA 署名。来源及使用边界见 `Source/licensed_shag_sources.json`、`THIRD_PARTY_ATELIER.md`。本次仅同步加工源码、原创前额控制图、非几何清单与实际渲染证据，不新增 UE 接入、动作、候选 Release 或社交发布。
+
 ## 2026-10-04 · 目标头皮重梳检查点
 
 当前实际模型检查点改为 `Exports/targetfringe04/Ember_Regent.blend`，四视角在 `Renders/targetfringe04`，均已查看，1200×1400、Cycles 192 samples、不去噪。通过在角色实际头皮直接规划前额曲线，降低旧前额硬结，分开长短和侧向转折，增加短支撑发丝；保留 `layercut08` 的耳侧/后颈层次。不是 AI 肖像替换，也不是游戏接入。

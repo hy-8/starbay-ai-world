@@ -1,0 +1,47 @@
+{
+  "version": "regionalgroom08",
+  "actual_render_review": "All four saved views visually inspected",
+  "images": [
+    {
+      "file": "01_Front.png",
+      "sha256": "c1cb3a0efad18096dd208a09beda8e430180f76c14ac3cc7f31b6c950186e6c7",
+      "reviewed": true
+    },
+    {
+      "file": "02_ThreeQuarter.png",
+      "sha256": "2624b29b741ab62d3915468b0b3a6ee6e53668a7bddb01dbeaae1d913741a4f7",
+      "reviewed": true
+    },
+    {
+      "file": "03_Side.png",
+      "sha256": "b8c8ccc2a9762da1a409fbbb141979740416bf45e6bbece4975e18a74b13b7a4",
+      "reviewed": true
+    },
+    {
+      "file": "04_Back.png",
+      "sha256": "36d584c1bce3ba6c4b83e8a015742bbe9c21a09363d1ab2ac354f6fd2b379a4f",
+      "reviewed": true
+    }
+  ],
+  "render": {
+    "width": 1200,
+    "height": 1400,
+    "samples": 192,
+    "denoising": false
+  },
+  "artistic_passed": false,
+  "improvements": [
+    "Continuous rear coverage compared with regionalgroom01",
+    "Smooth spatial blending removes rear hard-threshold ledge",
+    "Separate asymmetric fringe and tapered layered nape"
+  ],
+  "remaining_flaws": [
+    "Broad smooth crown locks",
+    "Straight side/rear sections and needle-like tips",
+    "Hard temple transitions",
+    "Generic face and simplified clothing remain"
+  ],
+  "structural_validation_scope": "Finite coordinates, positive hair radii, texture presence, hashes only; no exhaustive scalp/clothing/animation test",
+  "editorial_reference": "Renders/editorial13/03_Portrait.png",
+  "publication": "WIP evidence only, no candidate Release or social post"
+}
