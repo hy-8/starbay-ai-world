@@ -1,0 +1,18 @@
+{
+  "version": "editorial11",
+  "source": "targetfringe04",
+  "source_sha256": "c5c67512f155731b36b6d6125dee80bd43216a05df6e3692cfd1b52ce0ec05f9",
+  "renderer": "Blender 4.5.9 Cycles",
+  "samples": 384,
+  "draft": false,
+  "pose": "static geometric display pose, not a runtime rig",
+  "magic_particles": false,
+  "images": [
+    {
+      "file": "03_Portrait.png",
+      "bytes": 4438044,
+      "sha256": "febc70e6e4381408c4271e976e9e189221f29bc84c60bc0cb007d4503e3f5cb7"
+    }
+  ],
+  "status": "visual study, not approved commercial-quality final"
+}

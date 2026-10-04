@@ -13,7 +13,17 @@ args=sys.argv[sys.argv.index('--')+1:];version=args[0]
 LOOSE='--loose' in args
 PART='--part' in args
 SWEEP='--sweep' in args
+SILK='--silk' in args
+FIBER='--fiber' in args
+LOW_CROWN='--low-crown' in args
+CLEAN_FLOW='--clean-flow' in args
+LOCK_FLOW='--lock-flow' in args
+CROWN_FRINGE='--crown-fringe' in args
+DIRECT_GROOM='--direct-groom' in args
+DRAFT='--draft' in args
 if not re.fullmatch('[A-Za-z0-9_-]+',version):raise ValueError(version)
+if LOCK_FLOW and not CLEAN_FLOW:raise ValueError('--lock-flow requires --clean-flow')
+if CROWN_FRINGE and not LOCK_FLOW:raise ValueError('--crown-fringe requires --lock-flow')
 out=ROOT/'Exports'/version;render=ROOT/'Renders'/version
 if out.exists() or render.exists():raise RuntimeError('Fresh version required')
 out.mkdir(parents=True);render.mkdir(parents=True)
@@ -25,9 +35,11 @@ for c in hair.data.curves:
  p=np.array([v.position for v in c.points],float)*.1;root=p[0].copy()
  arc=np.r_[0,np.cumsum(np.linalg.norm(np.diff(p,axis=0),axis=1))]
  front=root[1]<-.087 and root[2]>1.586 and -.045<root[0]<.075
+ if CROWN_FRINGE:front=root[1]<-.030 and root[2]>1.586 and -.075<root[0]<.080
  back=root[1]>-.015
  limit=rng.uniform(.108,.145) if front else (rng.uniform(.173,.240) if back else rng.uniform(.122,.180))
  if len(guides)%4==0:limit*=.77
+ if LOCK_FLOW and back and root[2]>1.594 and len(guides)%3==0:limit=rng.uniform(.083,.125)
  q=np.linspace(0,min(limit,float(arc[-1])),len(p))
  p=np.stack([np.interp(q,arc,p[:,j]) for j in range(3)],axis=1)
  t=np.linspace(0,1,len(p))
@@ -58,6 +70,32 @@ for c in hair.data.curves:
    p[:,2]+=.004*np.sin(np.pi*t)
   else:
    p[:,0]-=.004*np.sin(t*6.0)*np.sin(np.pi*t)
+ if CLEAN_FLOW and front:
+  # Replace inherited loop geometry, rather than displacing its endpoints.
+  # Original root and broad asymmetry are retained. No upward root handle.
+  end=np.array([root[0]+(.024 if root[0]>=-.005 else -.016),-.174+abs(root[0])*.10,1.547])
+  end[2]+=rng.uniform(-.015,.009)
+  if abs(end[0])<.020:end[2]=max(end[2],1.556)
+  a=root+np.array([.003 if root[0]>=-.005 else -.002,-.018,-.004])
+  b=end+np.array([-.012 if root[0]>=-.005 else .007,.003,.040])
+  u=t[:,None]
+  p=(1-u)**3*root+3*(1-u)**2*u*a+3*(1-u)*u*u*b+u**3*end
+  p[:,0]+=.004*np.sin(t*6.2+root[0]*42)*np.sin(np.pi*t)
+  if LOCK_FLOW:
+   heavy=root[0]>=-.005
+   end[0]+=rng.uniform(-.007,.010)
+   end[2]+=rng.uniform(-.013,.006)
+   a=root+np.array([.005 if heavy else -.004,-.017,-.006])
+   b=end+np.array([-.023 if heavy else .012,.002,.039])
+   p=(1-u)**3*root+3*(1-u)**2*u*a+3*(1-u)*u*u*b+u**3*end
+   p[:,0]+=(.009 if heavy else -.004)*np.sin(t*6.5)*np.sin(np.pi*t)
+   p[:,1]+=.003*np.sin(t*5.1)*np.sin(np.pi*t)
+   if CROWN_FRINGE:
+    # A shared crown part opens into unequal locks, including shorter top layers.
+    end[2]+=rng.uniform(-.007,.021)
+    b=end+np.array([-.018 if heavy else .010,.000,.034])
+    p=(1-u)**3*root+3*(1-u)**2*u*a+3*(1-u)*u*u*b+u**3*end
+    p[:,0]+=(.011 if heavy else -.005)*np.sin(t*6.0)*np.sin(np.pi*t)
  for v,pt in zip(c.points,p/.1):v.position=pt
  guides.append(p);design.append(dict(root=root.tolist(),cut_length_m=float(q[-1]),front=bool(front),back=bool(back)))
 changes=[]
@@ -69,17 +107,56 @@ for mod in hair.modifiers:
   if name.startswith('Roll Hair Curves'):values={'Factor':.18 if LOOSE else .45,'Roll Radius':.14 if LOOSE else .20,'Roll Length':.65 if LOOSE else .78,'Roll Taper':.65}
   elif name.startswith('Hair Curves Noise'):values={'Distance':.045,'Scale along Curve':4.5}
   elif name.startswith('Set Hair Curve Profile'):values={'Radius':.00040}
-  elif name.startswith('Interpolate Hair Curves'):values={'Density':18000.0 if LOOSE else 10000.0}
+  elif name.startswith('Interpolate Hair Curves'):values={'Density':54000.0 if FIBER else (18000.0 if LOOSE else 10000.0)}
   elif name.startswith('Duplicate Hair Curves'):values={'Amount':4,'Radius':.026}
+  if SILK:
+   if name.startswith('Roll Hair Curves'):values={'Factor':.065,'Roll Radius':.12,'Roll Length':.55,'Roll Taper':.85}
+   elif name.startswith('Hair Curves Noise'):values={'Distance':.030,'Scale along Curve':3.6}
+   elif name.startswith('Clump Hair Curves'):
+    factor=float(node.inputs['Factor'].default_value)
+    values={'Factor':.80 if factor>.5 else .30,'Tip Spread':.023,'Clump Offset':.045}
+  if CLEAN_FLOW:
+   if name.startswith('Roll Hair Curves'):values={'Factor':0.0}
+   elif name.startswith('Hair Curves Noise'):values={'Distance':.016,'Scale along Curve':3.8}
+   elif name.startswith('Clump Hair Curves'):
+    factor=float(node.inputs['Factor'].default_value)
+    values={'Factor':.48 if factor>.5 else .18,'Tip Spread':.036,'Clump Offset':.028}
+  if LOCK_FLOW:
+   if name.startswith('Roll Hair Curves'):values={'Factor':0.0 if CROWN_FRINGE else .055,'Roll Radius':.11,'Roll Length':.52,'Roll Taper':.75}
+   elif name.startswith('Clump Hair Curves'):
+    factor=float(node.inputs['Factor'].default_value)
+    values={'Factor':.90 if factor>.5 else .24,'Tip Spread':.008,'Clump Offset':.014}
   for key,value in values.items():
    sock=node.inputs.get(key)
    if sock is None or sock.is_linked:continue
    changes.append(dict(node=name,socket=key,before=str(sock.default_value),after=value));sock.default_value=value
+ if DIRECT_GROOM:
+  ng=mod.node_group
+  interp=next((n for n in ng.nodes if n.type=='GROUP' and n.node_tree.name.startswith('Interpolate Hair Curves')),None)
+  if interp is not None:
+   geom=interp.inputs['Geometry']
+   for link in list(geom.links):ng.links.remove(link)
+   ng.links.new(ng.nodes['Group Input'].outputs['Geometry'],geom)
+   output=next(n for n in ng.nodes if n.type=='GROUP_OUTPUT' and n.is_active_output)
+   for link in list(output.inputs['Geometry'].links):ng.links.remove(link)
+   ng.links.new(interp.outputs['Geometry'],output.inputs['Geometry'])
+   interp.inputs['Interpolation Guides'].default_value=3
+   changes.append(dict(node='direct-groom graph',socket='Geometry',before='roll + snap to parting + clump/noise + extra strands',after='raw shaped main guides -> native interpolation -> output; other branches excluded'))
+if DIRECT_GROOM:
+ source_credits=bpy.data.texts.get('Hair demo file info')
+ ids={hair}
+ if source_credits:ids.add(source_credits)
+ modified_credits=bpy.data.texts.new('STYLED_DONOR_CREDITS')
+ modified_credits.write('Hair Styles by Daniel Bystedt, CC BY-SA (version unspecified in inspected evidence).\nhttps://www.blender.org/download/demo-files/\nModified: regional guide cuts and frontal Bezier flow; bypass roll, parting snap, clump/noise and decorative strand branches; native interpolation retained.\nAuthored donor coordinate system, not the fitted target groom. Attribution and ShareAlike apply to adapted hair.\n')
+ ids.add(modified_credits)
+ bpy.data.libraries.write(str(out/'Authored_Groom_Source.blend'),ids,fake_user=True,compress=True)
 hair.update_tag();bpy.context.view_layer.update();dg=bpy.context.evaluated_depsgraph_get();dg.update()
 cu=hair.evaluated_get(dg).data
 xyz=np.empty(len(cu.points)*3,np.float32);cu.attributes['position'].data.foreach_get('vector',xyz);xyz=xyz.reshape(-1,3).astype(float)
 sizes=np.array([len(c.points) for c in cu.curves],np.int32)
-rad=np.empty(len(cu.points),np.float32);cu.attributes['radius'].data.foreach_get('value',rad);rad=np.maximum(rad*.1,.000002)
+rad=np.full(len(cu.points),.0004,np.float32)
+if cu.attributes.get('radius') is not None:cu.attributes['radius'].data.foreach_get('value',rad)
+rad=np.maximum(rad*.1,.000002)
 m=np.array(hair.matrix_world);xyz=xyz@m[:3,:3].T+m[:3,3];xyz[:,0]-=5;xyz*=.1
 guides=[(p/.1@m[:3,:3].T+m[:3,3]-np.array([5,0,0]))*.1 for p in guides]
 head=bpy.data.objects['head'];sv=np.array([head.matrix_world@v.co for v in head.data.vertices],float)*.1
@@ -108,6 +185,17 @@ def transfer(p):
  return radial*b[:,None]+free*(1-b[:,None])
 xyz=transfer(xyz);guides=[transfer(g) for g in guides]
 if '--mirror' in args:xyz[:,0]*=-1;guides=[g*np.array([-1,1,1]) for g in guides]
+def lower_crown(p):
+ w=np.exp(-((p[:,0]-.023)/.028)**2-((p[:,1]+.075)/.053)**2)*np.clip((p[:,2]-1.837)/.029,0,1)
+ changed=0
+ for i in np.flatnonzero(w>.015):
+  hit,n,_,dist=tb.find_nearest(Vector(p[i]));gap=(Vector(p[i])-hit).dot(n)
+  if gap>.006 and dist<.045:p[i]-=np.array(n)*(gap-.006)*.62*w[i];changed+=1
+ return changed
+crown_changed=0
+if LOW_CROWN:
+ crown_changed=lower_crown(xyz)
+ for g in guides:lower_crown(g)
 offset=0;repairs=0
 for size in sizes:
  size=int(size);s=xyz[offset:offset+size];hit,n,_,dist=tb.find_nearest(Vector(s[0]))
@@ -116,16 +204,23 @@ for size in sizes:
   if pt[2]<1.775:continue
   hit,n,_,dist=tb.find_nearest(Vector(pt));gap=(Vector(pt)-hit).dot(n)
   if gap<.0008 and dist<.04:s[j]=np.array(hit+n*.0010);repairs+=1
- rad[offset:offset+size]=max(float(rad[offset]),.000030)*(1-.994*np.linspace(0,1,size)**3)**.65
+ root_radius=rng.uniform(.000034,.000046) if FIBER else max(float(rad[offset]),.000030)
+ if CROWN_FRINGE and s[-1,1]<-.155:
+  u=np.linspace(0,1,size)
+  s+=np.array([0,.002,-.008])[None,:]*np.maximum(0,(u-.70)/.30)[:,None]**2
+ rad[offset:offset+size]=root_radius*(1-.994*np.linspace(0,1,size)**3)**.65
  offset+=size
 col=bpy.data.collections['05_Hair']
 for o in list(col.objects):bpy.data.objects.remove(o,do_unlink=True)
 cu=bpy.data.hair_curves.new('Cut Bystedt long hairstyle, fitted native strands');cu.add_curves(sizes.tolist())
 cu.attributes['position'].data.foreach_set('vector',xyz.astype(np.float32).ravel());cu.attributes.new('radius','FLOAT','POINT').data.foreach_set('value',rad)
 mat=bpy.data.materials.new('Deep cherry layer cut');mat.use_nodes=True;nt=mat.node_tree;nt.nodes.clear()
-bs=nt.nodes.new('ShaderNodeBsdfHairPrincipled');bs.parametrization='COLOR';bs.inputs['Roughness'].default_value=.32;bs.inputs['Radial Roughness'].default_value=.44
+bs=nt.nodes.new('ShaderNodeBsdfHairPrincipled');bs.parametrization='COLOR';bs.inputs['Roughness'].default_value=.32;bs.inputs['Radial Roughness'].default_value=.50 if SILK else .44
 hi=nt.nodes.new('ShaderNodeHairInfo');r=nt.nodes.new('ShaderNodeValToRGB');r.color_ramp.elements[0].color=(.010,.0011,.0015,1);r.color_ramp.elements[1].color=(.055,.0045,.006,1)
 nt.links.new(hi.outputs['Random'],r.inputs[0]);nt.links.new(r.outputs[0],bs.inputs['Color']);o=nt.nodes.new('ShaderNodeOutputMaterial');nt.links.new(bs.outputs[0],o.inputs[0]);cu.materials.append(mat)
+if SILK:
+ rough=nt.nodes.new('ShaderNodeMapRange');rough.inputs['From Min'].default_value=0;rough.inputs['From Max'].default_value=1;rough.inputs['To Min'].default_value=.32;rough.inputs['To Max'].default_value=.43
+ nt.links.new(hi.outputs['Random'],rough.inputs['Value']);nt.links.new(rough.outputs[0],bs.inputs['Roughness'])
 ob=bpy.data.objects.new('Daniel Bystedt adapted layered cut • CC BY-SA',cu);col.objects.link(ob)
 gc=bpy.data.collections.new('06_Licensed_Cut_Guides');bpy.context.scene.collection.children.link(gc);gc.hide_render=True
 gd=bpy.data.curves.new('Authored long-hair guides, cut before node styling','CURVE');gd.dimensions='3D'
@@ -138,8 +233,12 @@ scene=bpy.context.scene;pref=bpy.context.preferences.addons['cycles'].preference
 for d in pref.devices:d.use=d.type=='OPTIX'
 scene.cycles.device='GPU';scene.cycles_curves.shape='THICK';scene.cycles.samples=192;scene.cycles.use_denoising=False
 scene.render.resolution_x=1200;scene.render.resolution_y=1400;scene.render.resolution_percentage=100
-report=dict(version=version,loose=LOOSE,part_by_root_side=PART,fringe_sweep=SWEEP,source_style='long hair main',hair_author='Daniel Bystedt',license='CC BY-SA; version unspecified in inspected evidence',source_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),method='authored guide cuts and fringe reshaping before native interpolation/clump/noise; whole-fiber radial scalp transfer',source_guides=len(guides),strands=len(sizes),points=len(rad),field_misses=misses,clearance_repairs=repairs,modifier_changes=changes,status='unreviewed actual 3D study')
-(out/'groom_manifest.json').write_text(json.dumps(report,indent=2),encoding='utf-8');(out/'guide_cut_design.json').write_text(json.dumps(design,indent=2),encoding='utf-8')
+if DRAFT:scene.cycles.samples=64;scene.render.resolution_percentage=80
+report=dict(version=version,loose=LOOSE,part_by_root_side=PART,fringe_sweep=SWEEP,relaxed_native_clumps=SILK,physical_fiber_radius=FIBER,lower_crown=LOW_CROWN,crown_points_changed=crown_changed,radius_range_m=[float(rad.min()),float(rad.max())],source_style='long hair main',hair_author='Daniel Bystedt',license='CC BY-SA; version unspecified in inspected evidence',source_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),method='authored guide cuts and fringe reshaping before native interpolation/clump/noise; whole-fiber radial scalp transfer',source_guides=len(guides),strands=len(sizes),points=len(rad),field_misses=misses,clearance_repairs=repairs,modifier_changes=changes,status='unreviewed actual 3D study')
+(out/'guide_cut_design.json').write_text(json.dumps(design,indent=2),encoding='utf-8')
+report.update(clean_flow=CLEAN_FLOW,lock_flow=LOCK_FLOW,crown_fringe=CROWN_FRINGE,direct_groom=DIRECT_GROOM,draft=DRAFT,samples=scene.cycles.samples)
+if DIRECT_GROOM:report['authored_source_sha256']=hashlib.sha256((out/'Authored_Groom_Source.blend').read_bytes()).hexdigest()
+(out/'groom_manifest.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
 bpy.ops.wm.save_as_mainfile(filepath=str(out/'Ember_Regent.blend'))
 for name in ['01_Front','02_ThreeQuarter','03_Side','04_Back']:
  scene.camera=bpy.data.objects[name];scene.render.filepath=str(render/(name+'.png'));bpy.ops.render.render(write_still=True)

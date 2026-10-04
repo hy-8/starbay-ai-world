@@ -1,5 +1,13 @@
 # 绯序 · 演唱会角色作品方向
 
+## 2026-10-04 · 目标头皮重梳检查点
+
+当前实际模型检查点改为 `Exports/targetfringe04/Ember_Regent.blend`，四视角在 `Renders/targetfringe04`，均已查看，1200×1400、Cycles 192 samples、不去噪。通过在角色实际头皮直接规划前额曲线，降低旧前额硬结，分开长短和侧向转折，增加短支撑发丝；保留 `layercut08` 的耳侧/后颈层次。不是 AI 肖像替换，也不是游戏接入。
+
+**仍未达到要求，不作为成品发布。** 当前刘海仍偏厚、片状，部分弯曲和前后衔接不自然；面部神态、衣物褶皱与参考仍有明显差距。绕过原资产节点的对照并没有单独解决问题，不能把所有失败归因于分缝吸附。方法、失败版本、可编辑曲线与隐藏代表路径的区别见 `HAIR_RECONSTRUCTION_NOTES.md`；改编毛发继续保留 Bystedt CC BY-SA 署名。
+
+实际近景 `Renders/editorial11/03_Portrait.png` 已渲染并查看，1800×2100、Cycles/OptiX 384 samples、不去噪，展示工程 `Exports/editorial11/Redline_Editorial.blend`。细发丝可辨，旧分缝硬结减轻，但前额仍有宽带感，脸部仍像通用数字人；它是制作中检查图。两个工程的有限值、毛发半径、贴图与哈希检查通过，**不等于艺术验收或全量穿插检查**；静态几何摆姿，不是新动画或骨骼。
+
 ## 2026-10-04 · 改用原生长发导向线分区剪裁
 
 新的实际模型检查候选为 `Exports/layercut04/Ember_Regent.blend`，中性四视角在 `Renders/layercut04`，均已逐张查看。以 Daniel Bystedt 的 long hair main 原生导向线为起点，**在插值之前**按前额、耳侧、后颈剪短并塑形，随后保留原生 clump/noise 梳理、转移到实际头皮；不再依赖新画的一排平行束状曲线填充整个头顶。

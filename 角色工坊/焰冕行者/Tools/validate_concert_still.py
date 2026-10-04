@@ -12,7 +12,7 @@ folder=ROOT/'Exports'/VERSION;path=folder/'Redline_Editorial.blend'
 if not path.exists():path=folder/'Ember_Regent.blend'
 report_path=folder/'structural_validation.json'
 if report_path.exists():raise RuntimeError('Existing validation is preserved')
-bpy.ops.wm.open_mainfile(filepath=str(path))
+bpy.ops.wm.open_mainfile(filepath=str(path),use_scripts=False)
 errors=[];meshes=0;verts=0;grooms=[]
 for o in bpy.data.objects:
     if o.hide_render:continue

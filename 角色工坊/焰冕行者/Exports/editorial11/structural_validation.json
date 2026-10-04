@@ -1,0 +1,52 @@
+{
+  "version": "editorial11",
+  "file": "Redline_Editorial.blend",
+  "sha256": "f14a88e8ce6fbe900bd7edc54c00fb41d19a72fe9415d70ee517056322fc5e33",
+  "visible_mesh_objects": 113,
+  "source_mesh_vertices": 145835,
+  "native_grooms": [
+    {
+      "object": "Bystedt derivative • target scalp fringe flow",
+      "curves": 171110,
+      "points": 8213280,
+      "radius_min_m": 6.874892051200732e-07,
+      "radius_max_m": 4.599996827892028e-05
+    }
+  ],
+  "textures": [
+    {
+      "name": "brown_eye.png",
+      "packed": true,
+      "local_source_exists": true
+    },
+    {
+      "name": "eyebrow002.png",
+      "packed": true,
+      "local_source_exists": true
+    },
+    {
+      "name": "male_elegantsuit01_diffuse.png",
+      "packed": true,
+      "local_source_exists": true
+    },
+    {
+      "name": "Shoes_Biker_Boots.png",
+      "packed": true,
+      "local_source_exists": true
+    },
+    {
+      "name": "Shoes_Biker_Boots_NRM.png",
+      "packed": true,
+      "local_source_exists": true
+    },
+    {
+      "name": "young_lightskinned_male_diffuse.png",
+      "packed": true,
+      "local_source_exists": true
+    }
+  ],
+  "errors": [],
+  "structural_checks_passed": true,
+  "artistic_status": "WIP, not approved, not reference quality",
+  "game_validation": "none; still scene only"
+}

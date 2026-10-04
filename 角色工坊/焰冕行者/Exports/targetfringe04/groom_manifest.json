@@ -1,0 +1,19 @@
+{
+  "version": "targetfringe04",
+  "source": "layercut08",
+  "source_sha256": "1ea8513608980d18d24ac8a45f694b7a5c0328768aed94e66c94ca8eed31118a",
+  "hair_author": "Daniel Bystedt",
+  "license": "CC BY-SA; version unspecified in inspected source",
+  "method": "front flow designed directly in target scalp coordinates; retained side/back, continuous local scalp radius field; separate fiber ends",
+  "front_curves_rerouted": 70969,
+  "front_regions": 74,
+  "field_misses": 0,
+  "strands": 171110,
+  "points": 8213280,
+  "draft": false,
+  "samples": 192,
+  "status": "unreviewed geometry study",
+  "lock_clustering": true,
+  "loose_fringe": true,
+  "short_support_curves": 23657
+}
