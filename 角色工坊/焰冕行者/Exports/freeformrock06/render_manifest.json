@@ -1,0 +1,41 @@
+{
+  "version": "freeformrock06",
+  "source_scene": "freeformrock03",
+  "blender_file": "Ember_Regent.blend",
+  "renderer": "Blender 4.5.9 Cycles/OptiX",
+  "samples": 192,
+  "denoising": false,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "actual_3d_render": true,
+  "visible_solid_wig": false,
+  "artistic_status": "WIP; repeated locks, local scalp gaps, sparse straight nape tips remain",
+  "images": [
+    {
+      "file": "01_Front.png",
+      "bytes": 1658626,
+      "sha256": "405954064c3d17abff29783cccae921ea97f568e47b89363120ea59d2034bdbb",
+      "visually_reviewed": true
+    },
+    {
+      "file": "02_ThreeQuarter.png",
+      "bytes": 1722426,
+      "sha256": "86fb3f5652fea20c8ad18b7a5a9988baa34b0a1f5d41ac2e9bad8a925b7695ea",
+      "visually_reviewed": true
+    },
+    {
+      "file": "03_Side.png",
+      "bytes": 1690015,
+      "sha256": "5756cf2618bb80d721fa205f1e59ac74426a9b642edf493acc544286b11ddc54",
+      "visually_reviewed": true
+    },
+    {
+      "file": "04_Back.png",
+      "bytes": 1769716,
+      "sha256": "372d58bd8ced83545418181b4a9be8385c838bdf7e1a356c4087a467087ecb22",
+      "visually_reviewed": true
+    }
+  ]
+}

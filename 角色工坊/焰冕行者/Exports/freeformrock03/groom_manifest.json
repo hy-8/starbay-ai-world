@@ -1,0 +1,12 @@
+{
+  "version": "freeformrock03",
+  "base": "hairrecongroom05",
+  "refine": true,
+  "flow": true,
+  "method": "free-space independently authored S-shaped scalp-attached guides; tapered native hair fibers",
+  "seed": 100402,
+  "guides": 191,
+  "outer_fibers": 82180,
+  "guide_clearance_corrections": 754,
+  "status": "candidate requiring visual review"
+}

@@ -1,0 +1,13 @@
+{
+  "version": "freeformrock06",
+  "source": "freeformrock03",
+  "support_layers": true,
+  "gentler_shaft_taper": true,
+  "method": "undercoat physically cut by root zone; compressed crown peaks; independently extended wavy nape",
+  "undercoat_strands": 50460,
+  "undercoat_length_range_m": [
+    0.02600405206188341,
+    0.06399988982382292
+  ],
+  "status": "candidate requiring all-angle review"
+}

@@ -1,0 +1,25 @@
+{
+  "source": "https://files2.makehumancommunity.org/functional/haireditor.zip",
+  "author": "Tomas Klecer",
+  "license": "CC0",
+  "license_evidence": "https://static.makehumancommunity.org/assets/assetpacks/index.html",
+  "library_sha256": "93aedaef061dc14618a0fcfad33c3df816fa755e8093381cbdfd0fd4c34527f5",
+  "files": [
+    {
+      "style": "basic_short_hair",
+      "file": "Source\\HairEditorCC0\\native_basic_short_hair_evaluated.npz",
+      "sha256": "01ff5f7626ba2897d968a8b6b08e9bc4dce346c59a13376dcc8fcc5233be4a94",
+      "curves": 25324,
+      "points": 772252,
+      "modifier_changes": "none"
+    },
+    {
+      "style": "straight_hair_to_shoulder",
+      "file": "Source\\HairEditorCC0\\native_straight_hair_to_shoulder_evaluated.npz",
+      "sha256": "29da717dd403638e4be5ef7b6191f941ab26dbd4dee1961b9f1299123292e826",
+      "curves": 10191,
+      "points": 621651,
+      "modifier_changes": "none"
+    }
+  ]
+}

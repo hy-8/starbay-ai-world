@@ -41,7 +41,8 @@ if len(target)!=len(source_vertices):raise RuntimeError('Source topology corresp
 pack=ROOT/'Source/HairEditorCC0'/('baked2_'+STYLE+'.npz');data=np.load(pack)
 xyz=data['positions'].astype(float);sizes=data['sizes'];radii=data['radii'].astype(float)*.75
 matrix=data['matrix'];xyz=xyz@matrix[:3,:3].T+matrix[:3,3]
-bpy.ops.wm.open_mainfile(filepath=str(ROOT/'Exports/atelier09/Ember_Regent.blend'))
+base='hairrecongroom05' if '--neutral' in args else 'atelier09'
+bpy.ops.wm.open_mainfile(filepath=str(ROOT/'Exports'/base/'Ember_Regent.blend'))
 body=max((o for o in bpy.data.collections['01_Body'].objects if o.type=='MESH' and not o.hide_render and 'high-poly' not in o.name),key=lambda o:len(o.data.vertices))
 bpy.context.view_layer.update();target_bvh=BVHTree.FromObject(body,bpy.context.evaluated_depsgraph_get())
 # Match the sculpted scalp surface while retaining known source vertex IDs.
@@ -85,11 +86,14 @@ mat=bpy.data.materials.new('Deep auburn physical hair');mat.use_nodes=True;nt=ma
 hi=nt.nodes.new('ShaderNodeHairInfo');r=nt.nodes.new('ShaderNodeValToRGB');r.color_ramp.elements[0].color=(.007,.0011,.0013,1);r.color_ramp.elements[1].color=(.035,.005,.005,1);nt.links.new(hi.outputs['Random'],r.inputs[0]);nt.links.new(r.outputs[0],bs.inputs['Color']);out=nt.nodes.new('ShaderNodeOutputMaterial');nt.links.new(bs.outputs[0],out.inputs[0]);cu.materials.append(mat)
 ob=bpy.data.objects.new('Triangle-frame fitted authored '+STYLE,cu);haircol.objects.link(ob)
 scene=bpy.context.scene;scene.cycles.samples=96;scene.cycles.use_denoising=True
+pref=bpy.context.preferences.addons['cycles'].preferences;pref.compute_device_type='OPTIX';pref.get_devices()
+for d in pref.devices:d.use=d.type=='OPTIX'
+scene.cycles.device='GPU';scene.cycles_curves.shape='THICK'
 # Reuse protected source lights, with explicit front/side/back inspection cameras.
 cam=scene.camera;cam.data.type='ORTHO'
 for name,loc,target,scale in [('01_Front',(0,-4,1.76),(0,-.025,1.744),.51),('02_ThreeQuarter',(.8,-3,1.80),(0,-.025,1.744),.51),('03_Side',(4,-.025,1.76),(0,-.025,1.744),.51),('04_Back',(0,4,1.76),(0,-.025,1.744),.51)]:
  cam.location=loc;cam.rotation_euler=(Vector(target)-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.ortho_scale=scale;scene.render.resolution_x=1050;scene.render.resolution_y=1200;scene.render.resolution_percentage=100;scene.render.filepath=str(RENDER/(name+'.png'));bpy.ops.render.render(write_still=True)
 bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'Ember_Regent.blend'))
-report={'version':VERSION,'source_scene':'atelier09','groom_source':'https://files2.makehumancommunity.org/functional/haireditor.zip','groom_author':'Tomas Klecer','license':'CC0','style':STYLE,'groom_npz_sha256':hashlib.sha256(pack.read_bytes()).hexdigest(),'method':'identical scalp vertex correspondence and per triangle affine frame binding','bound_strands':bound,'fallback_strands':fallback,'median_root_correction_m':float(np.median(root_errors)),'status':'visual candidate, inspect all views before approval'}
+report={'version':VERSION,'source_scene':base,'groom_source':'https://files2.makehumancommunity.org/functional/haireditor.zip','groom_author':'Tomas Klecer','license':'CC0','style':STYLE,'groom_npz_sha256':hashlib.sha256(pack.read_bytes()).hexdigest(),'method':'identical scalp vertex correspondence and per triangle affine frame binding','bound_strands':bound,'fallback_strands':fallback,'median_root_correction_m':float(np.median(root_errors)),'status':'experimental method; prior candidates failed artistic review'}
 (OUT/'groom_manifest.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
 print('CORRESPONDENCE_GROOM_SAVED',VERSION,flush=True)

@@ -2,6 +2,31 @@
 
 用户要求持续改善真实三维发型，并允许更换方法。当前目标仍在进行，任何输入图、成功推理、通过文件检查或发丝数量都不能替代艺术验收。
 
+## 2026-10-04 · 头皮转移诊断与自由导向线
+
+上一轮尚未同步的 `groomart01/02` 与 `hairfit02` 已复核：前者仍像平滑短发帽，后者大面积露头皮，均未采用为成品。本轮没有复跑旧目录或覆盖历史工程。
+
+实际新证据：Hair Editor 人体有 13,380 个 `body` 顶点、4,778 个辅助几何顶点和 1,000 个关节辅助顶点；头顶最高的部分顶点属于 `helper-hair`。旧对应拟合把所有面都放入头皮 BVH，且只用发根三角面的线性坐标系变形整条头发。两者存在风险，但不能把所有视觉失败都归因于这一点。`radialgroom01` 排除辅助面、沿整个发丝保留径向头皮间距后仍然秃顶。`donorcontrol01` 把同一份旧缓存放回原头模也出现秃顶，证明缓存本身已经存在问题。未更改修改器参数的 `radialgroom02` 恢复更多前部覆盖，但侧后方仍太稀、太贴头；默认模板同样没有达到目标。
+
+因此新增 `build_freeform_rock_groom.py`：发根贴合实际头皮，可见层采用独立的空间 S 形导向线，不再沿实心假发网格追踪或全部紧贴球面。分别设计左右头顶、眉侧刘海、耳侧和后颈；原生毛发及隐藏导向线保留在 Blender 工程中。`freeformrock01` 出现成对过高的顶部拱形，`02` 压低并增加独立刘海，`03` 加入长短交错的上层及向下生长的后颈曲线。这些仍是未通过验收的结构试验。
+
+`finish_freeform_groom.py` 进一步裁剪旧底发：`freeformrock04` 的 12—23mm 底发暴露了过大的支撑空隙；`05` 按发根区域保留 26—64mm 的支撑层；`06` 保留毛发中段的厚度，把主要变细过程集中到发梢。最新检查工程为 `Exports/freeformrock06/Ember_Regent.blend`，实际四视角为 `Renders/freeformrock06`，Cycles/OptiX 192 samples、不去噪、1200×1400。
+
+**已经逐张查看，仍未达到用户参考级质量。** 顶部与侧面的发束仍有重复排布，局部头皮缝隙仍可见；后颈变长，但发梢过于直、偏稀。脸部及服装没有因此达到作品标准。结构验证只检查几何有限值、正半径、贴图存在和文件哈希，不能充当艺术验收。没有新骨骼、动作、UE 导入或发布。
+
+新增资源调查：Blender 官方 `Hair Styles` 示例已实际下载至 `Source/BlenderHairStyles/Bystedt_HairStyles.blend`，作者 Daniel Bystedt，官方页面和文件内 `Hair demo file info` 明确为 **CC BY-SA**，没有在这些证据中注明版本，不能写成 CC0 或擅自标 4.0。源文件 SHA-256 为 `1ad6202095c1793678fee7d69a7e9f8b5fdb6e5c293d300eb1062d2d437e8d48`。实际以关闭自动执行脚本的方式打开并检查，包含 curly hair、long hair main/strands、cyberpunk hair、braided hair 的原生导向线和节点设置；来源记录在 `Source/official_groom_sources.json`。原 curly hair 两张实际控制渲染在本地 `Renders/officialcurly01`，已经读图：分缕和头皮覆盖正常，但密集小卷的默认风格不符合目标，需要软化卷度及重新设计男性层次。图中灰色女性头模是原资产，**不是用户角色成果**。尚未拟合或采用到本轮角色中，也未分发原资产或改编资产。下一步评估松散波浪、偏分、耳侧及后颈造型与目标头部的贴合，不能仅凭来源成熟就宣布效果合格。
+
+复现需本地已有基础工程及许可资产；在干净副本中用全新版本名：
+
+```powershell
+# Blender 后台 --python Tools/build_freeform_rock_groom.py
+# -- 新导向线版本 --refine --flow
+# Blender 后台 --python Tools/finish_freeform_groom.py
+# -- 新修整版本 新导向线版本 --support --shaft
+```
+
+`fit_radial_groom.py` 保留作失败方法研究；`bake_native_donor_groom.py` 仅求值原修改器、不修改参数，生成缓存及哈希。不能用这些失败模板替换当前角色完成品。所有大型工程留在本地，GitHub 同步经过检查的源码、来源和真实渲染证据。
+
 ## 已实际检查的失败方案
 
 | 本地版本 | 方法 | 四视角实际结论 |

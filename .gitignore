@@ -173,3 +173,18 @@
 !/角色工坊/焰冕行者/Renders/hairrecongroom05/*.png
 !/角色工坊/焰冕行者/Renders/editorial09/
 !/角色工坊/焰冕行者/Renders/editorial09/*.png
+
+# Reviewed free-space groom WIP and diagnostic comparisons, not approved art.
+!/角色工坊/焰冕行者/Source/native_donor_groom_sources.json
+!/角色工坊/焰冕行者/Source/official_groom_sources.json
+!/角色工坊/焰冕行者/Exports/freeformrock03/
+!/角色工坊/焰冕行者/Exports/freeformrock03/guide_design.json
+!/角色工坊/焰冕行者/Exports/freeformrock03/groom_manifest.json
+!/角色工坊/焰冕行者/Exports/freeformrock06/
+!/角色工坊/焰冕行者/Exports/freeformrock06/*.json
+!/角色工坊/焰冕行者/Renders/freeformrock06/
+!/角色工坊/焰冕行者/Renders/freeformrock06/*.png
+!/角色工坊/焰冕行者/Renders/radialgroom01/
+!/角色工坊/焰冕行者/Renders/radialgroom01/01_Front.png
+!/角色工坊/焰冕行者/Renders/donorcontrol01/
+!/角色工坊/焰冕行者/Renders/donorcontrol01/01_Front.png

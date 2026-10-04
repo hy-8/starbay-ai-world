@@ -1,0 +1,22 @@
+{
+  "title": "Hair Styles",
+  "author": "Daniel Bystedt",
+  "source_page": "https://www.blender.org/download/demo-files/",
+  "download_url": "https://download.blender.org/demo/geometry-nodes/hair_nodes-female_hair_styles.blend",
+  "local_file": "Source/BlenderHairStyles/Bystedt_HairStyles.blend",
+  "license": "CC BY-SA",
+  "license_version": "not stated in inspected official page or embedded source text",
+  "embedded_evidence": "Hair demo file info: Daniel Bystedt. CC BY-SA license",
+  "sha256": "1ad6202095c1793678fee7d69a7e9f8b5fdb6e5c293d300eb1062d2d437e8d48",
+  "status": "downloaded and inventoried; not yet fitted, adopted or redistributed",
+  "auto_run_scripts": false,
+  "styles": [
+    "curly hair",
+    "long hair main",
+    "long hair strands",
+    "cyberpunk hair",
+    "braided hair"
+  ],
+  "source_control_render": "Renders/officialcurly01",
+  "source_control_review": "Two original-model renders inspected: coherent fibers and scalp coverage; tight curls do not match target; no character adoption"
+}
