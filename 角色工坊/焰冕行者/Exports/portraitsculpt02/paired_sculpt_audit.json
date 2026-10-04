@@ -1,0 +1,99 @@
+{
+  "version": "portraitsculpt02",
+  "source": "frontalenvelope03",
+  "source_sha256": "f346858c3f9572e5b593da54dfbee7fde0a90fee0110f7408cb3ebc5c1866afe",
+  "candidate_sha256": "1f579abd84e29fa67c82a5436deef88efa1a06c6ebf2b792a904c01a24eabea0",
+  "invariant_checks": {
+    "body_basis_exactly_preserved": true,
+    "body_topology_preserved": true,
+    "body_uvs_preserved": true,
+    "eyeball_mesh_and_uv_preserved": true,
+    "all_visible_native_grooms_exactly_preserved": true
+  },
+  "checks_passed": true,
+  "before_eye_opening_samples": [
+    {
+      "side": -1,
+      "grid": [
+        101,
+        97
+      ],
+      "visible_ray_count": 1496,
+      "approximate_projected_eye_area_m2": 0.00016954666666664799,
+      "visible_xz_bounds": [
+        [
+          -0.047920000000000004,
+          1.7429999999999999
+        ],
+        [
+          -0.02344,
+          1.7523333333333333
+        ]
+      ],
+      "scope": "Front orthographic ray grid through retained eye mesh and actual evaluated body, excludes hair/brows/lashes; not exhaustive eyelid/motion contact validation"
+    },
+    {
+      "side": 1,
+      "grid": [
+        101,
+        97
+      ],
+      "visible_ray_count": 1498,
+      "approximate_projected_eye_area_m2": 0.00016977333333331463,
+      "visible_xz_bounds": [
+        [
+          0.02344,
+          1.7429999999999999
+        ],
+        [
+          0.047920000000000004,
+          1.7523333333333333
+        ]
+      ],
+      "scope": "Front orthographic ray grid through retained eye mesh and actual evaluated body, excludes hair/brows/lashes; not exhaustive eyelid/motion contact validation"
+    }
+  ],
+  "after_eye_opening_samples": [
+    {
+      "side": -1,
+      "grid": [
+        101,
+        97
+      ],
+      "visible_ray_count": 1099,
+      "approximate_projected_eye_area_m2": 0.00012455333333331964,
+      "visible_xz_bounds": [
+        [
+          -0.047920000000000004,
+          1.7436666666666667
+        ],
+        [
+          -0.02344,
+          1.7503333333333333
+        ]
+      ],
+      "scope": "Front orthographic ray grid through retained eye mesh and actual evaluated body, excludes hair/brows/lashes; not exhaustive eyelid/motion contact validation"
+    },
+    {
+      "side": 1,
+      "grid": [
+        101,
+        97
+      ],
+      "visible_ray_count": 1100,
+      "approximate_projected_eye_area_m2": 0.00012466666666665293,
+      "visible_xz_bounds": [
+        [
+          0.02344,
+          1.7436666666666667
+        ],
+        [
+          0.047920000000000004,
+          1.7503333333333333
+        ]
+      ],
+      "scope": "Front orthographic ray grid through retained eye mesh and actual evaluated body, excludes hair/brows/lashes; not exhaustive eyelid/motion contact validation"
+    }
+  ],
+  "scope": "Paired static invariants and sampled front eye visibility; not art acceptance, full collision or animation validation"
+}

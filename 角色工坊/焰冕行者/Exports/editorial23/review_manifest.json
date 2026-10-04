@@ -1,0 +1,19 @@
+{
+  "version": "editorial23",
+  "actual_model_sha256": "8f841f1d7dab6af28bb99070675f635b850580cafbe21462e978aece738b4706",
+  "images": [
+    {
+      "file": "Renders/editorial23/03_Portrait.png",
+      "resolution": [
+        1800,
+        2100
+      ],
+      "sha256": "5eaf35debaeeb581341be08e02316b966e18f0019126d5d22d917863cc3cc3d5",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Actual 1800x2100/384-sample portrait reviewed, no denoising. All shape keys posed with explicit dependency updates. Facial change modest; broad crown/regular rear, simplified garments and lack of reference identity remain. Current progress portrait, not accepted.",
+  "artistic_acceptance": false,
+  "status": "Reviewed modeling progress / preserved experiment",
+  "validation_boundary": "Structural and paired-sample checks recorded separately; no full collision, animation, game or reference-quality acceptance"
+}

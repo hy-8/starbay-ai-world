@@ -1,0 +1,46 @@
+{
+  "version": "frontalenvelope01",
+  "actual_model_sha256": "458388ca5e138b9d9821ea8d337a426973cb537f73fa06860703f1aa69a5c8c7",
+  "images": [
+    {
+      "file": "Renders/frontalenvelope01/01_Front.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "8c77ae85b612a05b28c225152ec0dc74eb6c1cc47b6a33fbb0d28a2046ea0a0d",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/frontalenvelope01/02_ThreeQuarter.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "d557dc6d06b165f37ebaf669a961c770653cf1b37e0ac4fdedf00cb02385d4e5",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/frontalenvelope01/03_Side.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "eb23f458a2fe31a834499be57b0c508b86a025f04feb7d79cdf21d4da9e67ee6",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/frontalenvelope01/04_Back.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "e5dde503a17be43a5d6992f6cac1045b4b4c6578ca7fab6ca88f080f912648ca",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Four drafts reviewed. Upper 18mm clearance fit gives modest change and flattened broad fringe; not accepted.",
+  "artistic_acceptance": false,
+  "status": "Reviewed modeling progress / preserved experiment",
+  "validation_boundary": "Structural and paired-sample checks recorded separately; no full collision, animation, game or reference-quality acceptance"
+}

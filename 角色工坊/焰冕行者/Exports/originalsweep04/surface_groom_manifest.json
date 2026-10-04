@@ -1,0 +1,25 @@
+{
+  "version": "originalsweep04",
+  "source": "rootlayer06",
+  "source_sha256": "3c13d1a60056855d676e948519c71d107352c5670fe0e663ac3c6c97e221c0cd",
+  "method": "Original area-distributed scalp roots, irregular farthest-point guide patches; shorter crown and free long nape tips",
+  "original_new_curves": 64000,
+  "original_guides": 240,
+  "elongated_centripetal_nape": true,
+  "spread_soft_nape": true,
+  "varied_layer_lengths_and_normal_relief": true,
+  "hidden_old_rear": "Root-region shag \u2022 actual arc-length cut rear",
+  "scalp_area_m2": 0.04409976658070974,
+  "guide_length_quantiles_m": [
+    0.05001506203383909,
+    0.09550928879273193,
+    0.25279512124026526
+  ],
+  "nearest_body_point_repairs": 780577,
+  "samples": 64,
+  "draft": true,
+  "denoising": false,
+  "status": "Unreviewed actual 3D study; not artistic approval",
+  "license": "New posterior shape/roots original; retained original frontal/short posterior, Bystedt CC BY-SA support and Abhay Pratap Royalty Free source-flow support. Hidden donor rear remains local.",
+  "collision_scope": "Pointwise nearest body repairs, no exhaustive hair/clothing/motion verification"
+}

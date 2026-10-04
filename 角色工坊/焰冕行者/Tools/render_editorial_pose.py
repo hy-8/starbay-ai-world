@@ -65,7 +65,16 @@ for ob in list(bpy.data.objects):
     if group.startswith('90_'):continue
     matrix=ob.matrix_world.copy();inv=matrix.inverted()
     if ob.type=='MESH':
-        for v in ob.data.vertices:v.co=inv@pose_point(matrix@v.co,group)
+        if ob.data.shape_keys:
+            # Sculpted portraits have relative shape keys. Pose every absolute
+            # key coordinate, including Basis; changing only mesh vertices
+            # leaves the evaluated face in its neutral frame under posed hair.
+            for key in ob.data.shape_keys.key_blocks:
+                for p in key.data:p.co=inv@pose_point(matrix@p.co,group)
+            ob.data.shape_keys.update_tag()
+            ob.update_tag(refresh={'DATA'})
+        else:
+            for v in ob.data.vertices:v.co=inv@pose_point(matrix@v.co,group)
         ob.data.update()
     else:
         for sp in ob.data.splines:
@@ -74,6 +83,8 @@ for ob in list(bpy.data.objects):
                     for attr in ['co','handle_left','handle_right']:setattr(p,attr,inv@pose_point(matrix@getattr(p,attr),group))
             else:
                 for p in sp.points:p.co=(*(inv@pose_point(matrix@Vector(p.co[:3]),group)),p.co.w)
+
+bpy.context.view_layer.update()
 
 # More cohesive wine cloth surface; microstructure remains visible in close-ups.
 for name in ['Concert oxblood leather','Wine nappa tailored skirt']:
@@ -142,6 +153,7 @@ backdrop.rotation_euler.z=0
 bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'Redline_Editorial.blend'))
 report={'version':VERSION,'source':SOURCE,'source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'renderer':'Blender 4.5.9 Cycles','samples':scene.cycles.samples,'draft':DRAFT,'pose':'static geometric display pose, not a runtime rig','magic_particles':False,'images':[],'status':'visual study, not approved commercial-quality final'}
 report['physical_reference_portrait_lighting']='--reference-light' in args
+report['relative_shape_keys_posed']=True
 for p in sorted(RENDER.glob('*.png')):report['images'].append({'file':p.name,'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()})
 (OUT/'render_manifest.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
 print('EDITORIAL_SAVED',str(OUT),flush=True)

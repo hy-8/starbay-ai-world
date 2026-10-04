@@ -1,0 +1,46 @@
+{
+  "version": "portraitsculpt02",
+  "actual_model_sha256": "1f579abd84e29fa67c82a5436deef88efa1a06c6ebf2b792a904c01a24eabea0",
+  "images": [
+    {
+      "file": "Renders/portraitsculpt02/01_Front.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "4a6531a217d342c93406d934e9112caad0eb79dd0b1962588abd98509b72c97e",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/portraitsculpt02/02_ThreeQuarter.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "01d8b82d1e600694e453e9dd050127031ace055fac9efc50019240b05b33cdbf",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/portraitsculpt02/03_Side.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "b2e867589e7483b5344a77c6f17527e46adb9828bcf18a17cbca0a151c8c5c17",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/portraitsculpt02/04_Back.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "790dc8a62ca4f6517dd6ca105e5da37c4c32635601b3c2fb9792b6a12c0544a5",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Four 1200x1400/192-sample views reviewed, no denoising. Five editable shape keys; paired geometry/UV/eye/hair invariants pass separately. More focused face but still generic; hair broad/regular, clothes simplified. Current progress, not accepted.",
+  "artistic_acceptance": false,
+  "status": "Reviewed modeling progress / preserved experiment",
+  "validation_boundary": "Structural and paired-sample checks recorded separately; no full collision, animation, game or reference-quality acceptance"
+}

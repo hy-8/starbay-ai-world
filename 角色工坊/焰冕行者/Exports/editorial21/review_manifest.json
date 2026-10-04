@@ -1,0 +1,19 @@
+{
+  "version": "editorial21",
+  "actual_model_sha256": "800d4929c2910775598f26420bd1c6576e2a55625b825e16eb0fcdf0862dd065",
+  "images": [
+    {
+      "file": "Renders/editorial21/03_Portrait.png",
+      "resolution": [
+        990,
+        1155
+      ],
+      "sha256": "15594c9e114a216e9c9ec6bd23902110aea75edf8aa42ba88fe74b1491d676e1",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Corrected all-shape-key posing draft reviewed. Better registration/focused eyes. Not final quality.",
+  "artistic_acceptance": false,
+  "status": "Reviewed modeling progress / preserved experiment",
+  "validation_boundary": "Structural and paired-sample checks recorded separately; no full collision, animation, game or reference-quality acceptance"
+}

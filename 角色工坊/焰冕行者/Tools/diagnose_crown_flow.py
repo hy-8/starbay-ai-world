@@ -9,6 +9,7 @@ import numpy as np
 ROOT=Path(__file__).resolve().parents[1]
 args=sys.argv[sys.argv.index('--')+1:]
 version,source_version,design_version=args[:3]
+CURRENT_SURFACE_REAR='--current-surface-rear' in args
 if not all(re.fullmatch('[A-Za-z0-9_-]+',v) for v in args[:3]):raise ValueError(args)
 out=ROOT/'Renders'/version
 if out.exists():raise RuntimeError('Preserve diagnostic output')
@@ -18,6 +19,8 @@ design=ROOT/'Exports'/design_version/'authored_fringe_design.json'
 source_sha=hashlib.sha256(source.read_bytes()).hexdigest()
 bpy.ops.wm.open_mainfile(filepath=str(source),use_scripts=False)
 objects=[o for o in bpy.data.objects if o.type=='CURVES' and not o.hide_render]
+if CURRENT_SURFACE_REAR and not any(o.name.startswith('Original posterior shag') for o in objects):
+ raise RuntimeError('Current surface-rear diagnostic requires the actual rebuilt posterior groom')
 front=next(o for o in objects if o.name.startswith('Authored frontal revision'))
 records=json.loads(design.read_text(encoding='utf-8'))
 assert sum(r['assigned_visible_fibers'] for r in records)==len(front.data.curves)
@@ -51,14 +54,19 @@ report=dict(source=source_version,design_source=design_version,source_sha256=sou
             counts={key:len(indices) for key,indices in regions.items()},shots=[])
 shots=[('01_All','01_Front','All'),('02_Crown','01_Front','Crown'),('03_Fringe','01_Front','Fringe'),
        ('04_Support','01_Front','Support'),('05_Rear','01_Front','Rear'),('06_CrownSide','03_Side','Crown')]
+if CURRENT_SURFACE_REAR:
+ shots += [('07_RearSide','03_Side','Rear'),('08_SupportSide','03_Side','Support')]
 for name,camera,layer in shots:
  for ob in objects:
-  ob.hide_render=layer!='All' and not (layer=='Support' and 'short scalp' in ob.name or layer=='Rear' and 'whole rear' in ob.name)
+  support=('short scalp' in ob.name) or (CURRENT_SURFACE_REAR and ('short support' in ob.name or ob.name.startswith('Original posterior coverage')))
+  rear=('whole rear' in ob.name) or (CURRENT_SURFACE_REAR and ob.name.startswith('Original posterior shag'))
+  ob.hide_render=layer!='All' and not (layer=='Support' and support or layer=='Rear' and rear)
  for key,ob in region_objects.items():ob.hide_render=key!=layer
  scene.camera=bpy.data.objects[camera];scene.render.filepath=str(out/(name+'.png'))
  bpy.ops.render.render(write_still=True)
  report['shots'].append(dict(file=name+'.png',isolated_layer=layer,camera=camera,
                             sha256=hashlib.sha256((out/(name+'.png')).read_bytes()).hexdigest()))
 report['source_unchanged']=hashlib.sha256(source.read_bytes()).hexdigest()==source_sha
+report['current_surface_rear']=CURRENT_SURFACE_REAR
 (out/'region_diagnostic.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
 print('CROWN_DIAGNOSTIC_COMPLETE',version,report['source_unchanged'],flush=True)

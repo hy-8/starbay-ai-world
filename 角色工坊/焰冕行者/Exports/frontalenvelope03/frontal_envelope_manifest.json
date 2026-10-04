@@ -1,0 +1,30 @@
+{
+  "version": "frontalenvelope03",
+  "source": "originalsweep04",
+  "source_sha256": "12e508b23611d15f795b09e268c384de6e3e1179f253e64d5afb56a709d3de32",
+  "method": "Per-lock actual upper scalp normal clearance envelope; smooth along-path displacements, exact roots and fiber cross sections retained",
+  "limit_m": 0.022,
+  "modified_locks": 49,
+  "frontal_curves": 27760,
+  "lower_fringe_included": true,
+  "all_roots_preserved_exactly": true,
+  "max_displacement_m": 0.021889260038733482,
+  "selected_base_gap_before_quantiles_m": [
+    0.0014001387662574416,
+    0.016792774316854775,
+    0.03597057408478577,
+    0.0440834769688081
+  ],
+  "upper_base_gap_after_quantiles_m": [
+    0.0014001387662574416,
+    0.016792774316854775,
+    0.0220393109775614,
+    0.029400661325780675
+  ],
+  "samples": 192,
+  "draft": false,
+  "denoising": false,
+  "status": "Unreviewed actual geometric study; not artistic approval",
+  "collision_scope": "Upper median paths only; not exhaustive scalp/fibers/clothing/motion validation",
+  "license": "Original frontal and posterior geometry; Bystedt CC BY-SA support; Abhay Pratap Royalty Free flow-derived support; hidden donor rear stays local"
+}

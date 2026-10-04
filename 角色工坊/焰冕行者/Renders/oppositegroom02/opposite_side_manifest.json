@@ -1,0 +1,15 @@
+{
+  "version": "oppositegroom02",
+  "source": "frontalenvelope03",
+  "source_sha256": "f346858c3f9572e5b593da54dfbee7fde0a90fee0110f7408cb3ebc5c1866afe",
+  "source_unchanged": true,
+  "method": "Actual camera mirrored in world space with local-X handedness correction; no pixel flip or geometry edit",
+  "samples": 192,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "denoising": false,
+  "image_sha256": "4073b14d2d392656c141cabe1c55d273707c0abc0e890cee34369a355d8740f4",
+  "status": "Unreviewed actual opposite profile diagnostic, not artistic approval"
+}

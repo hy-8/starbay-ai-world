@@ -1,0 +1,46 @@
+{
+  "version": "portraitsculpt01",
+  "actual_model_sha256": "c7fa74e32bcb307adc38cd69cef6c8c32ee5625f08ac48606773ffbf1fc3f72b",
+  "images": [
+    {
+      "file": "Renders/portraitsculpt01/01_Front.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "409e5b6d871139b99fbeb211a6574e09524c9bf4584022deb2bf827c8f73b653",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/portraitsculpt01/02_ThreeQuarter.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "123179b74402c7b2f95f94b03c4309119d1d26bcab4ba930676fe8ad5d7407b9",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/portraitsculpt01/03_Side.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "5307097908e6e801057026378f6ae96c96275e25c019fadc5e263b4cb629582c",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/portraitsculpt01/04_Back.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "b73ff5ab6a2a7dce2710e6465891146fd8f09a6ac299696a78aa0f0d4b0364c7",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Four draft neutral views reviewed. Focused lids, angled brows and modest cheek/jaw planes. Hair identical to source. Static study, not accepted.",
+  "artistic_acceptance": false,
+  "status": "Reviewed modeling progress / preserved experiment",
+  "validation_boundary": "Structural and paired-sample checks recorded separately; no full collision, animation, game or reference-quality acceptance"
+}

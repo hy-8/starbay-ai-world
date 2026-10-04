@@ -1,0 +1,62 @@
+{
+  "source": "originalsweep03",
+  "design_source": "spatialfringe17",
+  "source_sha256": "6e7c08c1e9e2bb5b7659a684d140ba282656ce9ad756c1ab826b10fb099af1dc",
+  "method": "Actual per-guide native curve subsets; non-destructive isolation",
+  "counts": {
+    "Crown": 6160,
+    "Fringe": 21600
+  },
+  "shots": [
+    {
+      "file": "01_All.png",
+      "isolated_layer": "All",
+      "camera": "01_Front",
+      "sha256": "b15143d50620fe6c22ea0c9443dc2c4a814bd24bb57d4954709a674a7dd286bc"
+    },
+    {
+      "file": "02_Crown.png",
+      "isolated_layer": "Crown",
+      "camera": "01_Front",
+      "sha256": "84dc4416b1393fdc0c98773c20ce2a9b25bc3b3894bc53f73c96d67e44c52808"
+    },
+    {
+      "file": "03_Fringe.png",
+      "isolated_layer": "Fringe",
+      "camera": "01_Front",
+      "sha256": "6c6ac66e2dd3936e447655418268124ba52e2dd2990dc05a163b7c3aa0decf88"
+    },
+    {
+      "file": "04_Support.png",
+      "isolated_layer": "Support",
+      "camera": "01_Front",
+      "sha256": "2732984830b44934409e5f8d5f35596b11bb0d55d19d126b75ecddff9842a042"
+    },
+    {
+      "file": "05_Rear.png",
+      "isolated_layer": "Rear",
+      "camera": "01_Front",
+      "sha256": "bbe02aaf8ab566bef49247a6f6f3f97b7d6b8610c612043806708d766223bd72"
+    },
+    {
+      "file": "06_CrownSide.png",
+      "isolated_layer": "Crown",
+      "camera": "03_Side",
+      "sha256": "a5c4569bf5313521379238aab02c59cce717c4fb465f5b1968cd33a36a5a3a72"
+    },
+    {
+      "file": "07_RearSide.png",
+      "isolated_layer": "Rear",
+      "camera": "03_Side",
+      "sha256": "5c673db16350ee032aa16e7de4392d57b1e894069b8a7e3ca9dd312cbd2349f5"
+    },
+    {
+      "file": "08_SupportSide.png",
+      "isolated_layer": "Support",
+      "camera": "03_Side",
+      "sha256": "cc9162decb8eda41fb832ddd60d2919b882b3570bfb2494579cbdd7d66976951"
+    }
+  ],
+  "source_unchanged": true,
+  "current_surface_rear": true
+}

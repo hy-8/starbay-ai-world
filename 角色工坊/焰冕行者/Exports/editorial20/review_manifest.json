@@ -1,0 +1,19 @@
+{
+  "version": "editorial20",
+  "actual_model_sha256": "cd170ae9445c197235c84a55366416475a3797254788e1c5073b1d65073cb04c",
+  "images": [
+    {
+      "file": "Renders/editorial20/03_Portrait.png",
+      "resolution": [
+        990,
+        1155
+      ],
+      "sha256": "0e2f9978a0bfe1bd408b09d66f360bc7a39f3033f04ee297753c00c1bbb90b31",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Draft portrait reviewed. Mesh-only posing omits shape keys, causing face versus eyes/hair misalignment. Rejected presentation; historical source preserved.",
+  "artistic_acceptance": false,
+  "status": "Reviewed modeling progress / preserved experiment",
+  "validation_boundary": "Structural and paired-sample checks recorded separately; no full collision, animation, game or reference-quality acceptance"
+}

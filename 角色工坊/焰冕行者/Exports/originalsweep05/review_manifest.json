@@ -1,0 +1,46 @@
+{
+  "version": "originalsweep05",
+  "actual_model_sha256": "7cd3186f2915201e32c2c2e6f6e739565ed4a602067bd12835b2bdde2f850320",
+  "images": [
+    {
+      "file": "Renders/originalsweep05/01_Front.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "09ae71c2df549e98263d7193385d0f5bb332165f0ec4daa93f0c850174eff11b",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/originalsweep05/02_ThreeQuarter.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "0e48b2e09f21e9bf47435ef5aeb8d69c6b484b34707b463e982ba96c4b215fa3",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/originalsweep05/03_Side.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "f95b26ddbccdcc55f540ee475af40f3bdf0569e703148f5667b5409abe1fe5ac",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/originalsweep05/04_Back.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "fffc5f2129221f7e71f17758bb2d7e6f71f149fdb489453a15f38e99f018189d",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Actual three-neighbor guide blending; four drafts reviewed. Smooth bob-like shell and ear paddles. Rejected experiment.",
+  "artistic_acceptance": false,
+  "status": "Reviewed modeling progress / preserved experiment",
+  "validation_boundary": "Structural and paired-sample checks recorded separately; no full collision, animation, game or reference-quality acceptance"
+}

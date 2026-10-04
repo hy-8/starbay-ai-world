@@ -1,0 +1,46 @@
+{
+  "version": "frontalenvelope03",
+  "actual_model_sha256": "f346858c3f9572e5b593da54dfbee7fde0a90fee0110f7408cb3ebc5c1866afe",
+  "images": [
+    {
+      "file": "Renders/frontalenvelope03/01_Front.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "d5215d3d6f6c4496a2181cf37591aba78755634a12c28952538d7752cb0459a1",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/frontalenvelope03/02_ThreeQuarter.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "3cc41a59fda25ad680f164619a2740bb1a3bbeba056509b70fe4147468d6d730",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/frontalenvelope03/03_Side.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "f4ab946e98781ced86bf60f931ec28d0f6fd0eb1bf7cc70a2e60272c2e9b0427",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/frontalenvelope03/04_Back.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "de70d20ac33b82056d11bad012eb092d63c80945017d44f1d563ab1f589d742e",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Four 1200x1400/192-sample images reviewed, no denoising. Same geometric fit as02. Clearer brow-side placement; broad crown, rounded/regular rear and generic face/clothes remain. Hair progress checkpoint, not accepted.",
+  "artistic_acceptance": false,
+  "status": "Reviewed modeling progress / preserved experiment",
+  "validation_boundary": "Structural and paired-sample checks recorded separately; no full collision, animation, game or reference-quality acceptance"
+}

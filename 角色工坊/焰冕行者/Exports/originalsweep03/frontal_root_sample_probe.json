@@ -1,0 +1,31 @@
+{
+  "source": "originalsweep03",
+  "source_sha256": "6e7c08c1e9e2bb5b7659a684d140ba282656ce9ad756c1ab826b10fb099af1dc",
+  "source_unchanged": true,
+  "method": "Every 24th real root in known authored crown/fringe groups against actual evaluated body BVH",
+  "regions": [
+    {
+      "region": "Crown",
+      "stride": 24,
+      "sampled_roots": 257,
+      "signed_gap_quantiles_m": [
+        0.0004980255927478083,
+        0.0005000014011784515,
+        0.0005000579302247843,
+        0.0005001063254894689
+      ]
+    },
+    {
+      "region": "Fringe",
+      "stride": 24,
+      "sampled_roots": 900,
+      "signed_gap_quantiles_m": [
+        0.0004992752146790735,
+        0.0004999977918487275,
+        0.0005000586457754253,
+        0.0005001709723728709
+      ]
+    }
+  ],
+  "scope": "Sampled roots only; does not prove all-root/all-strand attachment or collisions"
+}

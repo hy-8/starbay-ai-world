@@ -1,0 +1,17 @@
+{
+  "version": "oppositegroom02",
+  "images": [
+    {
+      "file": "Renders/oppositegroom02/05_OppositeSide.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "4073b14d2d392656c141cabe1c55d273707c0abc0e890cee34369a355d8740f4",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Actual opposite camera view reviewed, no pixel flip. Side/rear remain rounded/regular. Frontalenvelope03 source unchanged.",
+  "artistic_acceptance": false,
+  "status": "Reviewed diagnostic, not artwork"
+}

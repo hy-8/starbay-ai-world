@@ -1,0 +1,46 @@
+{
+  "version": "frontalenvelope02",
+  "actual_model_sha256": "0f25a8ab0f0ffed73ba3bd1ae8c2ff7d044c40375f152f80d67e34aaffc88100",
+  "images": [
+    {
+      "file": "Renders/frontalenvelope02/01_Front.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "4f1e4536255e0383ac9e0d053c67f01ada6abfd5b48c1246e83e428a57e070c7",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/frontalenvelope02/02_ThreeQuarter.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "6559d3c58ff491d2c631945fc9f1e449f9c456b92f2a01db9e9e47477ef12285",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/frontalenvelope02/03_Side.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "a23e4e0ce7c76c78504cf4caac2aea2b273d731523e74f4398bb00f0f443063c",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/frontalenvelope02/04_Back.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "7af65f707a7098131642921a12e532e4c76cddd904e0321ea92a6ccf3bc1bf50",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Four drafts reviewed. 22mm fit including brow fringe reduces floating tips; crown/rear still broad/regular; not accepted.",
+  "artistic_acceptance": false,
+  "status": "Reviewed modeling progress / preserved experiment",
+  "validation_boundary": "Structural and paired-sample checks recorded separately; no full collision, animation, game or reference-quality acceptance"
+}

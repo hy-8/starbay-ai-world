@@ -1,0 +1,19 @@
+{
+  "version": "editorial19",
+  "actual_model_sha256": "c6951a4980e9e3f69dde8396b332925b3b7f4028ecf176fbbc07d08ad166c153",
+  "images": [
+    {
+      "file": "Renders/editorial19/03_Portrait.png",
+      "resolution": [
+        1800,
+        2100
+      ],
+      "sha256": "bce0c6c04e2900070d9975bb921946159262913497dd852dd382ff250f67c172",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Actual 1800x2100/384-sample portrait reviewed, no denoising. Frontalenvelope03 source. Fibers visible; broad crown and generic face/clothes remain. Not accepted.",
+  "artistic_acceptance": false,
+  "status": "Reviewed modeling progress / preserved experiment",
+  "validation_boundary": "Structural and paired-sample checks recorded separately; no full collision, animation, game or reference-quality acceptance"
+}

@@ -1,0 +1,72 @@
+{
+  "version": "portraitsculpt01",
+  "source": "frontalenvelope03",
+  "source_sha256": "f346858c3f9572e5b593da54dfbee7fde0a90fee0110f7408cb3ebc5c1866afe",
+  "measured_eye_center_z_m": 1.7487836480140686,
+  "measured_eye_abs_x_mean_m": 0.03392813577407733,
+  "method": "Five editable relative anatomical shape keys, actual eyebrow surface re-projection, continuous lash following",
+  "controls": [
+    {
+      "name": "01_Focused_upper_lids",
+      "value": 1,
+      "changed_vertices": 1436,
+      "maximum_displacement_m": 0.0027019761451955292
+    },
+    {
+      "name": "02_Angled_brow_ridge",
+      "value": 1,
+      "changed_vertices": 1313,
+      "maximum_displacement_m": 0.0014710484774932656
+    },
+    {
+      "name": "03_Cheek_and_jaw_planes",
+      "value": 1,
+      "changed_vertices": 2447,
+      "maximum_displacement_m": 0.002561579973094187
+    },
+    {
+      "name": "04_Nasal_bridge_and_alar",
+      "value": 1,
+      "changed_vertices": 1944,
+      "maximum_displacement_m": 0.0010949832894431059
+    },
+    {
+      "name": "05_Resting_lip_balance",
+      "value": 1,
+      "changed_vertices": 948,
+      "maximum_displacement_m": 0.0005473299145135436
+    }
+  ],
+  "original_topology_retained": true,
+  "original_uvs_retained": true,
+  "scalp_z_ge_1_782_unchanged": true,
+  "eyeball_geometry_unchanged": true,
+  "accessory_following": [
+    {
+      "object": "Upper eyelashes",
+      "method": "Continuous eyelid-region deformation; no lash root re-anchoring claim"
+    },
+    {
+      "object": "Upper eyelashes.001",
+      "method": "Continuous eyelid-region deformation; no lash root re-anchoring claim"
+    },
+    {
+      "object": "Fitted CC0 eyebrow002",
+      "reprojected_vertices": 124,
+      "missed": 0
+    }
+  ],
+  "eyelid_eye_sample_count": 12287,
+  "eyelid_eye_signed_gap_quantiles_m": [
+    -0.00442978588398546,
+    0.000939194273087196,
+    0.006484549271408467,
+    0.007991545207914896
+  ],
+  "collision_scope": "Spatially selected evaluated eyelid vertices near retained eye mesh only; normal signed gap is approximate, not exhaustive eyelid/contact/motion validation",
+  "status": "Unreviewed static sculpture experiment; not artistic or animation acceptance",
+  "license": "Retained CC0 mesh/UV, original shape-key sculpture; retained hair licenses unchanged",
+  "samples": 64,
+  "draft": true,
+  "denoising": false
+}

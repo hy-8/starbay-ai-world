@@ -1,0 +1,19 @@
+{
+  "version": "editorial19",
+  "source": "frontalenvelope03",
+  "source_sha256": "f346858c3f9572e5b593da54dfbee7fde0a90fee0110f7408cb3ebc5c1866afe",
+  "renderer": "Blender 4.5.9 Cycles",
+  "samples": 384,
+  "draft": false,
+  "pose": "static geometric display pose, not a runtime rig",
+  "magic_particles": false,
+  "images": [
+    {
+      "file": "03_Portrait.png",
+      "bytes": 4330818,
+      "sha256": "bce0c6c04e2900070d9975bb921946159262913497dd852dd382ff250f67c172"
+    }
+  ],
+  "status": "visual study, not approved commercial-quality final",
+  "physical_reference_portrait_lighting": true
+}

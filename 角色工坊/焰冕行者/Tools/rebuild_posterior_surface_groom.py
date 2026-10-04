@@ -45,6 +45,8 @@ mask &= (n[:, 2]>-.45)&(c[:, 2]<1.900)
 xyz, area = xyz[mask], area[mask]
 rng = np.random.default_rng(100409)
 soft_nape = '--soft-nape' in args
+textured_layers = '--textured-layers' in args
+blend_guides = '--blend-guides' in args
 if soft_nape and '--long-nape' not in args:
     raise ValueError('Soft-nape requires long-nape')
 count, N, guide_count = 64000, 64, (240 if soft_nape else 160)
@@ -84,13 +86,17 @@ for gi, root in enumerate(guide_roots):
             lateral = (side*.55)*(1-neck)+(side*.14+.09*np.sin(gi*1.37))*neck
             lateral += .18*upper*(1-abs(root[0])/.105)
         heading = Vector((lateral, .35, -.90-.20*neck))
+    if textured_layers:
+        length = .050+.060*(.5+.5*np.sin(gi*2.399))+neck*(.090+.055*np.exp(-(root[0]/.055)**2))
     heading -= normal*heading.dot(normal)
     if heading.length<1e-6:
         heading = Vector((side*.4, .7, -.2))
         heading -= normal*heading.dot(normal)
     heading.normalize()
     p = np.empty((N, 3), float)
+    frame_normal = np.empty((N, 3), float)
     p[0] = hit+normal*.00055
+    frame_normal[0] = normal
     position = hit
     release = .64 if upper>.55 else .52
     current_normal = normal.copy()
@@ -111,6 +117,7 @@ for gi, root in enumerate(guide_roots):
             heading.normalize()
         lift = .00055+(.006+.003*np.sin(gi*1.71))*np.sin(np.pi*t[j])**1.2+.003*t[j]
         p[j] = position+current_normal*lift
+        frame_normal[j] = current_normal
     tangent = np.gradient(p, axis=0)
     tangent /= np.maximum(np.linalg.norm(tangent, axis=1)[:, None], 1e-8)
     lateral = np.cross(tangent, np.array([0, 1, 0]))
@@ -119,14 +126,28 @@ for gi, root in enumerate(guide_roots):
     p += lateral*(.005*np.sin(t*1.8*np.pi+phase)*np.sin(np.pi*t))[:, None]
     if soft_nape:
         p[:, 1] += .006*neck*np.sin(t*1.75*np.pi+phase*.6)*np.sin(np.pi*t)
+    if textured_layers:
+        # Different layer lengths and actual depth relief disrupt the old
+        # parallel continuous shell. The separate short coverage is retained.
+        relief = (.006+.004*(.5+.5*np.sin(gi*1.37)))*np.sin(t*1.85*np.pi+phase*.71)*np.sin(np.pi*t)
+        relief += .007*upper*t**3
+        p += frame_normal*relief[:, None]
     p[0] = hit+normal*.00055
     guides.append(p)
     lengths.append(length)
 guides = np.array(guides)
 labels = np.empty(count, int)
+neighbor_indices = np.empty((count, 3), int) if blend_guides else None
+neighbor_weights = np.empty((count, 3), float) if blend_guides else None
 for start in range(0, count, 2048):
     distance = np.sum((roots[start:start+2048, None]-guide_roots[None])**2, axis=2)
     labels[start:start+2048] = np.argmin(distance, axis=1)
+    if blend_guides:
+        indices = np.argsort(distance, axis=1)[:, :3]
+        weights = 1/(np.take_along_axis(distance, indices, axis=1)+.000004)
+        weights /= weights.sum(axis=1)[:, None]
+        neighbor_indices[start:start+2048] = indices
+        neighbor_weights[start:start+2048] = weights
 paths = np.empty((count, N, 3), np.float32)
 repairs = 0
 for i, root in enumerate(roots):
@@ -138,6 +159,14 @@ for i, root in enumerate(roots):
     attached = np.array(hit+normal*.00055)
     offset = attached-guide[0]
     p += offset[None, :]*(1-.70*t[:, None]**1.1)
+    if blend_guides:
+        # Blend three actual nearby guide flows, rooted at the new follicle.
+        # Soft tip clumping keeps local character without full patch borders.
+        blended = np.sum(guides[neighbor_indices[i]]*neighbor_weights[i, :, None, None], axis=0)
+        blended = np.stack([np.interp(t*fraction, t, blended[:, k]) for k in range(3)], axis=1)
+        blended += (attached-blended[0])[None, :]*(1-.70*t[:, None]**1.1)
+        clump = .20*t[:, None]**2.5
+        p = blended*(1-clump)+p*clump
     # Submillimeter fiber variation, keeping narrow coherent guide patches.
     phase = rng.uniform(0, 2*np.pi)
     p[:, 0] += .00035*np.sin(t*6+phase)*np.sin(np.pi*t)
@@ -181,6 +210,8 @@ report = dict(version=version, source=source_version,
     original_new_curves=count, original_guides=guide_count,
     elongated_centripetal_nape=long_nape,
     spread_soft_nape=soft_nape,
+    varied_layer_lengths_and_normal_relief=textured_layers,
+    three_guide_flow_interpolation=blend_guides,
     hidden_old_rear=rear.name, scalp_area_m2=float(area.sum()),
     guide_length_quantiles_m=np.quantile(lengths, [0, .5, 1]).tolist(),
     nearest_body_point_repairs=repairs,

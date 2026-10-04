@@ -1,0 +1,19 @@
+{
+  "version": "editorial20",
+  "source": "portraitsculpt01",
+  "source_sha256": "c7fa74e32bcb307adc38cd69cef6c8c32ee5625f08ac48606773ffbf1fc3f72b",
+  "renderer": "Blender 4.5.9 Cycles",
+  "samples": 32,
+  "draft": true,
+  "pose": "static geometric display pose, not a runtime rig",
+  "magic_particles": false,
+  "images": [
+    {
+      "file": "03_Portrait.png",
+      "bytes": 1208365,
+      "sha256": "0e2f9978a0bfe1bd408b09d66f360bc7a39f3033f04ee297753c00c1bbb90b31"
+    }
+  ],
+  "status": "visual study, not approved commercial-quality final",
+  "physical_reference_portrait_lighting": true
+}

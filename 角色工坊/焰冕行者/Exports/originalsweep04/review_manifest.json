@@ -1,0 +1,46 @@
+{
+  "version": "originalsweep04",
+  "actual_model_sha256": "12e508b23611d15f795b09e268c384de6e3e1179f253e64d5afb56a709d3de32",
+  "images": [
+    {
+      "file": "Renders/originalsweep04/01_Front.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "c087035d17ae4005f430afcd040ca06fc41d8e19a897552bc4c17964928eca7c",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/originalsweep04/02_ThreeQuarter.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "bc8e2009c15c15cc1b7d102982543cf176fea32546ca8882d121059be5c73b57",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/originalsweep04/03_Side.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "4e17e609bd138f676b948e433d9b6688454b264d45e890722a2db299ba3ff507",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/originalsweep04/04_Back.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "35d723e44d761ca57eb142a7dbdcf28bc28982eb007a70e3b28ef98f18aa0feb",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Actual posterior layer-length/depth variation; four draft images reviewed. More depth but rounded/regular rear remains. Progress source, not accepted.",
+  "artistic_acceptance": false,
+  "status": "Reviewed modeling progress / preserved experiment",
+  "validation_boundary": "Structural and paired-sample checks recorded separately; no full collision, animation, game or reference-quality acceptance"
+}
