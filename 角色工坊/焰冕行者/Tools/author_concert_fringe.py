@@ -20,6 +20,7 @@ SOFT_PATCHES='--soft-patches' in args
 SECTIONED='--sectioned-locks' in args
 AIRY='--airy-feathers' in args
 SEGMENTED='--segmented-crown' in args
+FINE_LOCKS='--fine-locks' in args
 if SECTIONED and not SOFT_PATCHES:raise ValueError('--sectioned-locks requires --soft-patches')
 if SOFT_PATCHES and not ROOT_PATCHES:raise ValueError('--soft-patches requires --root-patches')
 PATCH_FIBERS=int(args[args.index('--fibers-per-guide')+1]) if '--fibers-per-guide' in args else 420
@@ -27,6 +28,7 @@ if not 50<=PATCH_FIBERS<=2000:raise ValueError('Fibers per guide must be 50..200
 if ROOT_PATCHES and not REFERENCE_CUT:raise ValueError('--root-patches requires --reference-cut')
 if AIRY and not ROOT_PATCHES:raise ValueError('--airy-feathers requires --root-patches')
 if SEGMENTED and not ROOT_PATCHES:raise ValueError('--segmented-crown requires --root-patches')
+if FINE_LOCKS and not ROOT_PATCHES:raise ValueError('--fine-locks requires --root-patches')
 if ROOT_PATCHES and SCULPTED:raise ValueError('Patch-root study must not include early-collapse sculpted flow')
 if SCULPTED and not REFERENCE_CUT:raise ValueError('--sculpted-clumps requires --reference-cut')
 if REFERENCE_CUT and not CHOPPY:raise ValueError('--reference-cut requires --choppy-locks')
@@ -194,7 +196,7 @@ if ROOT_PATCHES:
   growth/=np.linalg.norm(growth);across_root=np.cross(root_normal,growth)
   lock_count=max(80,int(PATCH_FIBERS*(.26 if airy_lock else .55))) if airy_lock or narrow_lock else PATCH_FIBERS
   for strand in range(lock_count):
-   angle=rng.uniform(0,2*np.pi);span=(.003 if airy_lock else (.0045 if narrow_lock else (.0078 if SOFT_PATCHES else .0045)))*np.sqrt(rng.random())
+   angle=rng.uniform(0,2*np.pi);span=(.0035 if FINE_LOCKS else (.003 if airy_lock else (.0045 if narrow_lock else (.0078 if SOFT_PATCHES else .0045))))*np.sqrt(rng.random())
    probe=root_center+(growth*np.cos(angle)+across_root*np.sin(angle))*span
    hit,n,idx,dist=bv.find_nearest(Vector(probe));r=np.array(hit+n*.0005)
    s=base+(r-base[0])[None,:]*(1-t[:,None])**2.0
@@ -203,7 +205,9 @@ if ROOT_PATCHES:
    normal=radial-tangent*np.sum(radial*tangent,axis=1)[:,None];normal/=np.maximum(np.linalg.norm(normal,axis=1)[:,None],1e-8)
    across=np.cross(tangent,normal)
    # A finite lock cross-section, rather than a surface-wide root fan.
-   if SECTIONED:
+   if FINE_LOCKS:
+    width=rng.normal(0,.00115);depth=rng.normal(0,.0011)
+   elif SECTIONED:
     sublock=strand%5
     width=(sublock-2)*.00175+rng.normal(0,.00065)
     depth=rng.normal(0,.00085)+(sublock%2)*.0010
@@ -259,12 +263,17 @@ report['soft_patch_cross_sections']=SOFT_PATCHES
 report['sectioned_millimeter_lock_relief']=SECTIONED
 report['sparse_micro_feather_layers']=AIRY
 report['narrow_paired_crown_guides']=SEGMENTED
+report['fine_volumetric_lock_cross_sections']=FINE_LOCKS
+report['build_only']='--build-only' in args
 if ROOT_PATCHES:report['patch_fibers_per_guide']=PATCH_FIBERS
 if '--design' in args:
  report['design_sha256']=hashlib.sha256(design_path.read_bytes()).hexdigest()
 (out/'groom_manifest.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
 bpy.ops.wm.save_as_mainfile(filepath=str(out/'Ember_Regent.blend'))
 print('SPATIAL_FRINGE_SAVED',version,'VISIBLE',len(styled),'SUPPORT',len(support),flush=True)
+if '--build-only' in args:
+ print('SPATIAL_FRINGE_BUILD_ONLY: no images rendered or reviewed',flush=True)
+ sys.exit(0)
 for name in ['01_Front','02_ThreeQuarter','03_Side','04_Back']:
  scene.camera=bpy.data.objects[name];scene.render.filepath=str(render/(name+'.png'));bpy.ops.render.render(write_still=True)
 print('SPATIAL_FRINGE_RENDERED',version,flush=True)

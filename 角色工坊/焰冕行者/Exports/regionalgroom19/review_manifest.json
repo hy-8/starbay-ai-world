@@ -1,0 +1,58 @@
+{
+  "version": "regionalgroom19",
+  "scene_sha256": "ae82c9e2dfea3969da475d9b813ade3dea7caee0fa269aa95dfb1ec1a433f15a",
+  "actual_3d_render": true,
+  "four_views": [
+    {
+      "file": "01_Front.png",
+      "sha256": "eabee41b46364afe8d47dacf969516ae3b4c24664d12ddb9c74d4eeab8f725e6",
+      "visually_reviewed": true
+    },
+    {
+      "file": "02_ThreeQuarter.png",
+      "sha256": "b1e699f12489df4a062a8a37256654590fc33e5df0ffc08779ab587b0db396ce",
+      "visually_reviewed": true
+    },
+    {
+      "file": "03_Side.png",
+      "sha256": "43777b661fc0e65b5cb50dc3635e98621fcdbc0a5c6db84e01041d7ba186fa3f",
+      "visually_reviewed": true
+    },
+    {
+      "file": "04_Back.png",
+      "sha256": "3e5ad8530c7368fd67b5d147141f30d1ac610fbca7347775c298df2ac223a36e",
+      "visually_reviewed": true
+    }
+  ],
+  "samples": 192,
+  "denoising": false,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "portrait": {
+    "version": "editorial15",
+    "file": "03_Portrait.png",
+    "sha256": "ebcd5512ae951996fde67313222244ad5edc6cfb67c05f16932af6bd9b36d7c4",
+    "samples": 384,
+    "denoising": false,
+    "resolution": [
+      1800,
+      2100
+    ],
+    "visually_reviewed": true
+  },
+  "improvements": "Clearer fine brow/temple locks and staggered lateral short crown silhouettes",
+  "remaining": "Broad crown, crossed rope-like fine locks, localized crown gaps and round side/rear. Face and clothes still generic. Reference quality not achieved.",
+  "artistic_accepted": false,
+  "goal": "active",
+  "game_validation": "none; static editable geometry display pose only",
+  "structural_scope": "Finite mesh/curve coordinates, positive radii, texture existence; no exhaustive scalp, eyelid, clothing or motion clearance",
+  "trial_review": {
+    "regionalgroom15": "Four draft views reviewed; density reduction insufficient",
+    "regionalgroom16": "Four draft views reviewed; lateral shorter crown not enough",
+    "regionalgroom17": "Four draft views reviewed; fine-lock version before full quality 19",
+    "regionalgroom18": "Four draft views reviewed; arc-scissor not adopted due local flips/shape",
+    "anatomy01": "Four draft views reviewed; subtle anatomy change, not adopted as current baseline"
+  }
+}

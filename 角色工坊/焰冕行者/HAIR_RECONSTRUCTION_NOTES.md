@@ -1,5 +1,31 @@
 # 红发角色 · 更换发型方法记录
 
+## 2026-10-04 · 密度反证、独立细束和真实剪裁试验
+
+本轮继续实际Blender几何。当前19四张全质量检查图和15高清近景都已实际查看，**艺术验收仍未通过**。不存在工具无法运行的阻塞，瓶颈仍为原创冠部/前额流向、发束衔接与面部服装的造型水平。
+
+| 试验 | 实际方法与查看结果 |
+| --- | --- |
+| spatialfringe15 / regionalgroom15 | 保持控制12和材质，fibers-per-guide从1000改600；前额20,040条。四张960×1120、64 samples、不去噪草稿已看；减轻密度，没有消除宽片。密度不是已确认的唯一原因。 |
+| spatialfringe16 / regionalgroom16 | 控制13分开侧向短层和下垂长层，46导向、23,380条前额。四张草稿已看；短层轮廓变动，眉侧仍连片，未作为主检查点。 |
+| spatialfringe17 / regionalgroom17 | 控制14拆分18条宽眉侧/鬓角路径成54条独立细束，保留28冠部，82导向、27,760条前额。fine-locks将根部范围改为3.5mm、截面sigma为1.15/1.10mm。四张草稿已看；分缕更明显，但交叉绳感及宽冠部仍在。 |
+| regionalgroom18 | 真实沿原生长路径剪短保留的侧后整束，并重新收尖半径；与单纯抬旧末端不同。四张草稿已看，有外翻和不理想轮廓，未采用。 |
+| regionalgroom19 / editorial15 | 与17相同前额几何组合，19为1200×1400、192 samples不去噪四视角；15为1800×2100、384 samples不去噪近景。全部实际查看；分缕改善，但尚未达到参考，局部冠部小缝、交叉及偏圆侧后仍需处理。 |
+| anatomy01 | 在19的CC0脸部上做局部实际雕刻，眉/睫毛跟随，眼球不改。2,808个顶点发生位移；四张草稿已看，神态略变化，依旧通用数字人，未替代主检查点。 |
+
+`author_concert_fringe.py --build-only`只保存实际几何，不渲染，清单也明确标记；随后需要组合工程实渲才能评价。原创控制13/14由`design_feathered_crown.py`、`design_independent_fringe.py`写出，脚本拒绝覆盖已有控制文件。隐藏导向仍为证据，编辑它们不会实时更新烘焙发丝。
+
+有既有本地许可依赖时，使用全新版本名复建当前发型：
+
+```text
+author_concert_fringe.py -- 新前额版本 layercut08 --choppy-locks --reference-cut --root-patches --soft-patches --segmented-crown --fine-locks --fibers-per-guide 400 --design <绝对路径>/concert_fringe_control14.json --build-only
+replace_frontal_groom.py -- 新组合版本 regionalgroom13 新前额版本 --dry-groom
+render_editorial_pose.py -- 新近景版本 新组合版本 --portrait-only --hair-detail
+validate_concert_still.py -- 新组合版本
+```
+
+组合替换脚本仍要求源工程中存在可见的canonical前額对象，故这里指定regionalgroom13；不能直接以19替代该源参数。19/15/anatomy01结构检查通过，仅有限值、正半径和贴图存在。既有侧后及短支撑分别保留Royalty Free/CC BY-SA，含授权几何的模型不进入Git；没有新动画/UE/候选Release。
+
 ## 2026-10-04 · 窄冠部路径与发尾释放
 
 本轮最新真实几何 `regionalgroom14` 四视角及 `editorial14` 高清近景均已实际查看；文件结构检查通过，**仍未达到参考，目标继续**。变化是几何和材质的局部加工，没有新生成肖像、动画或UE接入。

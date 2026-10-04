@@ -22,6 +22,7 @@ if not .50<=TIP_CLUMP<=.97:raise ValueError('Tip clump must be .50..97')
 SOFT_TIPS='--soft-tip-spread' in args
 DRY='--dry-groom' in args
 NAPE_WAVE='--nape-s-waves' in args
+ARC_SCISSOR='--arc-scissor' in args
 if not all(re.fullmatch('[A-Za-z0-9_-]+', v) for v in args[:3]):
     raise ValueError('Invalid versions')
 out, render = ROOT/'Exports'/version, ROOT/'Renders'/version
@@ -99,6 +100,27 @@ for record in records:
         else:
             target[2] = rng.uniform(1.670, 1.757)
             target[0] += side*rng.uniform(.002, .009)
+        if ARC_SCISSOR:
+            # Actually cut along existing growth, rather than lifting the old
+            # long endpoints into a shorter haircut and compressing the lock.
+            # Preserve the full scalp-facing portion of every retained lock.
+            crossings=np.flatnonzero(center[:,2]<=target[2])
+            if len(crossings) and crossings[0]>3:
+                j=int(crossings[0]);a,b=center[j-1,2],center[j,2]
+                q=(j-1+np.clip((a-target[2])/max(a-b,1e-8),0,1))/(N-1)
+                q=max(.30,float(q))
+                query=t*q
+                group=np.stack([np.stack([np.interp(query,t,s[:,k]) for k in range(3)],axis=1) for s in group])
+                group_rad=np.stack([np.interp(query,t,r) for r in group_rad])
+                group_rad*=((1-.997*t**2.4)**.65)[None,:]
+                center=np.median(group,axis=0);shaped=center.copy()
+                # Keep the newly cut location and give select tips a small
+                # lateral flick. No artificial vertical endpoint compression.
+                target=center[-1].copy()
+                if retained%3==0:
+                    target[0]+=side*.009
+                    target[1]+=.005 if posterior else .003
+                    target[2]+=.002
         start = rng.uniform(.05, .44) if STAGGER else .32
         env = np.maximum(0, (t-start)/(1-start))**1.65
         shaped += (target-end)[None, :]*env[:, None]
@@ -201,6 +223,7 @@ report['relaxed_clump_tip_spread']=FEATHER
 report.update(tip_clump_strength=TIP_CLUMP if FEATHER else .95,soft_tip_spread=SOFT_TIPS)
 report.update(dry_groom_roughness=DRY,visible_hair_roughness=.42 if DRY else 'retained component settings',visible_radial_roughness=.48 if DRY else 'retained component settings')
 report['continuous_lower_nape_s_bends']=NAPE_WAVE
+report['actual_along_growth_scissor_cut']=ARC_SCISSOR
 (out/'groom_manifest.json').write_text(json.dumps(report, indent=2), encoding='utf-8')
 bpy.ops.wm.save_as_mainfile(filepath=str(out/'Ember_Regent.blend'))
 for name in ['01_Front', '02_ThreeQuarter', '03_Side', '04_Back']:

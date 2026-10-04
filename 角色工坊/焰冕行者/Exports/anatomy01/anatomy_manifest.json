@@ -1,0 +1,10 @@
+{
+  "version": "anatomy01",
+  "source": "regionalgroom19",
+  "source_sha256": "ae82c9e2dfea3969da475d9b813ade3dea7caee0fa269aa95dfb1ec1a433f15a",
+  "changed_body_vertices": 2808,
+  "method": "Actual local anatomical face sculpture; retained UV/topology, unchanged eyeball geometry, brow/lash following",
+  "status": "unreviewed anatomical study; no artistic or motion acceptance",
+  "license": "Retained CC0 body and original sculpture; hair components retain their own licenses",
+  "collision_scope": "No exhaustive eyelid/eyeball or motion intersection test"
+}
