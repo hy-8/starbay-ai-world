@@ -13,7 +13,13 @@ args=sys.argv[sys.argv.index('--')+1:];version,source_version=args[:2]
 DRAFT='--draft' in args
 LOCKS='--locks' in args
 LOOSE='--loose-fringe' in args
+VOLUME='--volume-locks' in args
+ANATOMICAL='--anatomical-flow' in args
+TIERED='--tiered-cut' in args
 if LOOSE and not LOCKS:raise ValueError('--loose-fringe requires --locks')
+if VOLUME and not LOOSE:raise ValueError('--volume-locks requires --locks --loose-fringe')
+if ANATOMICAL and not VOLUME:raise ValueError('--anatomical-flow requires --volume-locks')
+if TIERED and not ANATOMICAL:raise ValueError('--tiered-cut requires --anatomical-flow')
 if not all(re.fullmatch('[A-Za-z0-9_-]+',s) for s in [version,source_version]):raise ValueError(args)
 out=ROOT/'Exports'/version;render=ROOT/'Renders'/version
 if out.exists() or render.exists():raise RuntimeError('Fresh output required')
@@ -39,6 +45,7 @@ def radius(d):
 ob=next(o for o in bpy.data.collections['05_Hair'].objects if o.type=='CURVES')
 old=ob.data;p=np.empty(len(old.points)*3,np.float32);old.attributes['position'].data.foreach_get('vector',p);p=p.reshape(-1,3)
 sizes=np.array([len(c.points) for c in old.curves]);N=48;t=np.linspace(0,1,N);h=t*t*(3-2*t)
+if ANATOMICAL:h=t**1.05
 rng=np.random.default_rng(100410);cache={};guide_evidence={};new_positions=[];new_radii=[];offset=0;changed=0;support=0
 for size in sizes:
  s=p[offset:offset+size].astype(float);offset+=size;r=s[0]
@@ -65,17 +72,55 @@ for size in sizes:
   if LOOSE:
    endz=1.779+dz+rng.uniform(-.0025,.0025)
    if abs(endx)<.018:endz=max(endz,1.777)
+  if ANATOMICAL:
+   # Actual retained eyebrow is at z=1.753..1.767, not at 1.79.
+   # Stagger the heavy-side locks near the eyebrow and temple, open light side.
+   endz=(1.754+dz*.60 if heavy else 1.771+dz*.40)+rng.uniform(-.0025,.0025)
+   if abs(endx)<.018:endz=max(endz,1.762)
   endpoint=np.array([endx,-.169,endz])+rng.normal(0,.00065,3)
   a=r-center;a/=np.linalg.norm(a);b=endpoint-center;b/=np.linalg.norm(b)
   d=a[None,:]*(1-h[:,None])+b[None,:]*h[:,None]
   d[:,0]+=(swing/.12)*np.sin(t*6.2+phase*(1.0 if LOOSE else .18))*np.sin(np.pi*t)*(1 if heavy else -1)
+  if ANATOMICAL:
+   d=a[None,:]*(1-h[:,None])+b[None,:]*h[:,None]
+   d[:,0]+=(swing/.12)*.9*np.sin(np.pi*t)*(1-2*t)*np.cos(phase)*(1 if heavy else -1)
   d/=np.linalg.norm(d,axis=1)[:,None]
   gap=.0005+lift*np.sin(np.pi*t)**.65+.002*t**3
+  if ANATOMICAL:gap=.0005+lift*np.sin(np.pi*t)**1.6+.002*t**3
   if LOCKS:gap+=.003*t**3
   # Tiny independent fibers remain within a coherent lock, no reused endpoints.
   gap+=rng.uniform(-.0004,.0004)*np.sin(np.pi*t)
   s=center+d*(radius(d)+gap)[:,None]
   s[0]=r
+  if VOLUME:
+   # A shell alone is a hair-card-like sheet even when made of real strands.
+   # Give each lock a 3D cross-section and smaller coherent sub-locks.
+   tangent=np.gradient(s,axis=0);tangent/=np.maximum(np.linalg.norm(tangent,axis=1)[:,None],1e-8)
+   normal=d-tangent*np.sum(d*tangent,axis=1)[:,None]
+   normal/=np.maximum(np.linalg.norm(normal,axis=1)[:,None],1e-8)
+   across=np.cross(tangent,normal)
+   sub=int(rng.integers(0,7));subphase=sub*2.399963+phase
+   aw=.0024*np.cos(subphase)+rng.normal(0,.00065)
+   depth=.0017*np.sin(subphase)+rng.normal(0,.00055)
+   envelope=np.minimum(1,t/.16)*(.12+.88*(1-t)**.7)
+   s+=(across*aw+normal*depth)*envelope[:,None]
+   # Small sub-lock undulations change strand tangents; do not coil the roots.
+   s+=normal*(.0006*np.sin(t*9.0+subphase)*np.sin(np.pi*t))[:,None]
+   if rng.random()<.22:
+    limit=rng.uniform(.83,.985);q=t*limit
+    s=np.stack([np.interp(q,t,s[:,j]) for j in range(3)],axis=1)
+   if TIERED:
+    # Crown layers should not all descend to the same brow-length curtain.
+    short=rng.random()<(.64 if r[1]>-.083 else .16)
+    if short:
+     limit=rng.uniform(.52,.83) if r[1]>-.083 else rng.uniform(.74,.92)
+     s=np.stack([np.interp(t*limit,t,s[:,j]) for j in range(3)],axis=1)
+    drop=rng.uniform(.001,.006)
+    s+=np.array([rng.uniform(-.0015,.0015),rng.uniform(-.001,.002),-drop])[None,:]*np.maximum(0,(t-.78)/.22)[:,None]**2
+   delta=s-center;direction=delta/np.linalg.norm(delta,axis=1)[:,None]
+   minimum=radius(direction)+.0008;length=np.linalg.norm(delta,axis=1)
+   s+=direction*np.maximum(minimum-length,0)[:,None]
+   s[0]=r
   if key not in guide_evidence:guide_evidence[key]=s.copy()
   changed+=1
  else:
@@ -108,7 +153,7 @@ for d in pref.devices:d.use=d.type=='OPTIX'
 scene.cycles.device='GPU';scene.cycles.samples=64 if DRAFT else 192;scene.cycles.use_denoising=False;scene.cycles_curves.shape='THICK'
 scene.render.resolution_x=1200;scene.render.resolution_y=1400;scene.render.resolution_percentage=80 if DRAFT else 100
 report=dict(version=version,source=source_version,source_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),hair_author='Daniel Bystedt',license='CC BY-SA; version unspecified in inspected source',method='front flow designed directly in target scalp coordinates; retained side/back, continuous local scalp radius field; separate fiber ends',front_curves_rerouted=changed,front_regions=len(cache),field_misses=misses,strands=len(xyz),points=int(xyz.shape[0]*N),draft=DRAFT,samples=scene.cycles.samples,status='unreviewed geometry study')
-report.update(lock_clustering=LOCKS,loose_fringe=LOOSE,short_support_curves=support)
+report.update(lock_clustering=LOCKS,loose_fringe=LOOSE,volumetric_lock_cross_sections=VOLUME,anatomical_fringe_length_and_tangent_start=ANATOMICAL,tiered_crown_lengths=TIERED,short_support_curves=support)
 (out/'groom_manifest.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
 bpy.ops.wm.save_as_mainfile(filepath=str(out/'Ember_Regent.blend'))
 for name in ['01_Front','02_ThreeQuarter','03_Side','04_Back']:

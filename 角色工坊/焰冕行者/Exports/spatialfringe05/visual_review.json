@@ -1,0 +1,28 @@
+{
+  "version": "spatialfringe05",
+  "images": [
+    {
+      "file": "01_Front.png",
+      "sha256": "9d9a8886b32e3ea089db2ad03c532ed2c7db7143aa56bf6a8008feefc58c4e83",
+      "reviewed": true
+    },
+    {
+      "file": "02_ThreeQuarter.png",
+      "sha256": "aacd2266d109eb318d0e2009ab29527048875db49bb84db0d76200feb4800252",
+      "reviewed": true
+    },
+    {
+      "file": "03_Side.png",
+      "sha256": "e1d078a3fe08d50fadd0ca97da2749788fac4be7384a12e78a339a1a6efa9fc7",
+      "reviewed": true
+    },
+    {
+      "file": "04_Back.png",
+      "sha256": "906bc716a9232f415b9dd44443da94f1c7cc36c823cda28d1b67089e785e5288",
+      "reviewed": true
+    }
+  ],
+  "artistic_acceptance": false,
+  "findings": "Early clump convergence gives narrow rope-like crossing locks. Rejected as editorial basis.",
+  "no_game_or_animation_validation": true
+}

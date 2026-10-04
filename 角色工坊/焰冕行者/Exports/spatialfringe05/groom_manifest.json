@@ -1,0 +1,21 @@
+{
+  "version": "spatialfringe05",
+  "source": "layercut08",
+  "source_sha256": "1ea8513608980d18d24ac8a45f694b7a5c0328768aed94e66c94ca8eed31118a",
+  "hair_author": "Daniel Bystedt + project spatial fringe design",
+  "license": "Bystedt-derived roots/support/side/nape retain CC BY-SA; source version unspecified",
+  "method": "explicit spatial guide shapes; actual scalp roots, separate short support, sparse volumetric styling fibers; retain side/nape",
+  "front_roots": 35485,
+  "support_curves": 23657,
+  "side_nape_curves": 76484,
+  "guide_count": 54,
+  "clearance_repairs": 7479,
+  "draft": false,
+  "samples": 192,
+  "status": "unreviewed actual geometry study",
+  "relaxed_spatial_guides": false,
+  "discrete_choppy_layers": true,
+  "reference_cut": true,
+  "sculpted_lock_relief": true,
+  "design_sha256": "2c9dd796392925d439dcb06187cfdf8a5bea248b2f6dbf74b85196308e3b8b4a"
+}

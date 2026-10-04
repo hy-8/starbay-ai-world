@@ -1,0 +1,66 @@
+{
+  "version": "editorial12",
+  "file": "Redline_Editorial.blend",
+  "sha256": "e8ff12c3798ea15644f450db7e22ef017aa1999eac737f5f25fa2e262ab01c0a",
+  "visible_mesh_objects": 113,
+  "source_mesh_vertices": 145835,
+  "native_grooms": [
+    {
+      "object": "Authored spatial fringe • retained Bystedt roots",
+      "curves": 23657,
+      "points": 1514048,
+      "radius_min_m": 7.333009079957264e-07,
+      "radius_max_m": 4.39984978584107e-05
+    },
+    {
+      "object": "Bystedt derivative • retained side and nape",
+      "curves": 76484,
+      "points": 4894976,
+      "radius_min_m": 7.562112500636431e-07,
+      "radius_max_m": 4.4999800593359396e-05
+    },
+    {
+      "object": "Bystedt derivative • short scalp support",
+      "curves": 23657,
+      "points": 1514048,
+      "radius_min_m": 6.416343012460857e-07,
+      "radius_max_m": 3.899993680533953e-05
+    }
+  ],
+  "textures": [
+    {
+      "name": "brown_eye.png",
+      "packed": true,
+      "local_source_exists": true
+    },
+    {
+      "name": "eyebrow002.png",
+      "packed": true,
+      "local_source_exists": true
+    },
+    {
+      "name": "male_elegantsuit01_diffuse.png",
+      "packed": true,
+      "local_source_exists": true
+    },
+    {
+      "name": "Shoes_Biker_Boots.png",
+      "packed": true,
+      "local_source_exists": true
+    },
+    {
+      "name": "Shoes_Biker_Boots_NRM.png",
+      "packed": true,
+      "local_source_exists": true
+    },
+    {
+      "name": "young_lightskinned_male_diffuse.png",
+      "packed": true,
+      "local_source_exists": true
+    }
+  ],
+  "errors": [],
+  "structural_checks_passed": true,
+  "artistic_status": "WIP, not approved, not reference quality",
+  "game_validation": "none; still scene only"
+}

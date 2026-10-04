@@ -68,6 +68,33 @@
 
 原 `officialwave` 的起点是 curly hair，新 `layercut` 的起点是 long hair main；两者都是 Daniel Bystedt 改编毛发，CC BY-SA，所检查证据未注明版本。不要把“更换方法”误写成原创/CC0 毛发。
 
+## 2026-10-04 · 独立空间发束方法与实际结果
+
+这轮进一步试验 `targetfringe05—07`：真实体积截面、眉毛解剖位置对应的放长和冠部分层裁剪。眉毛实际范围为 z=1.752859—1.767436m，平均约 1.760511m。此前把眉毛估在 1.79m 附近造成过短刘海；纠正落点没有自动解决厚重规则前帘。三个版本的四视角都已查看，仍未采用为作品。
+
+新的 `Tools/author_concert_fringe.py` 在实际头皮发根上建立独立空间路径，将原生 CURVES 拆为保留侧后发、短底发与刘海三个对象。18 组初始空间路径的原始版 `spatialfringe01` 形成大卷/交叉；`02` 平滑与相邻导向线混合，变为两片厚扫发；`03` 拆为 54 组离散长、中、短路径、缩短底发，前额开始出现错落的细束，但上部仍像较厚发帽。前三个版本均为 960×1120、64 samples 的检查稿，四视角都已实际查看。
+
+`spatialfringe04` 用保存的 `Source/HairReconstruction/concert_fringe_control04.json` 实际重建：调整部分冠部和眉眼发束的末端，减少底发与改变根部扇出；该输入分支已执行，不是只提供未验证接口。1200×1400、Cycles/OptiX 192 samples、不去噪四视角均已查看。真实刘海落点和小幅波浪改善，但冠部仍偏厚，部分高光依旧连成宽片，侧后发偏规则，**没有达到参考级艺术质量**。结构验证通过仅检查有限坐标、正半径、贴图文件和哈希，没有做全量穿插或动画验收。
+
+`spatialfringe05` 保留同一控制图，添加锁级空间起伏、更早汇聚及更多长发丝；四视角实际读图发现细绳状交叉和过窄发束，未选为展示基础。它也通过文件结构检查，进一步说明结构通过不能替代造型判断。
+
+`editorial12` 由 `spatialfringe04` 生成，实际 1800×2100、Cycles/OptiX 384 samples、不去噪近景已完成并查看，结构验证通过。细发丝存在，但大片上部刘海、头顶小隆起与规则后颈仍可见；面部神态与衣物也仍是制作中状态。没有用生成肖像替代模型，不新增动作、绑定或游戏接入。
+
+新空间路径可在控制图中改动并重新烘焙；隐藏 Blender 路径仅为可编辑证据，**不与密集可见发丝实时连接**。`--choppy-locks` 与 `--relaxed` 互斥；提供 `--design` 时不再重复扩展导向线。`--reference-cut` 需要 `--choppy-locks`，`--sculpted-clumps` 需要前者；不同造型方法保留，不能把细绳状版本称为最佳结果。
+
+重建较柔和检查点（需本地许可资产、`layercut08` 基础工程，使用全新输出名）：
+
+```powershell
+# Blender --background --factory-startup --python Tools/author_concert_fringe.py --
+# 新版本 layercut08 --choppy-locks --reference-cut --design Source/HairReconstruction/concert_fringe_control04.json
+# Blender --background --factory-startup --python Tools/render_editorial_pose.py --
+# 新展示版本 新版本 --portrait-only --hair-detail
+```
+
+源导向线、根部及侧后发为 Daniel Bystedt 改编，保留 CC BY-SA 署名/修改说明，所检查证据未注明许可版本。原始与派生大工程仍在本地。最新静态工作继续，未创建新 Release。
+
+资源调查实际边界：UE5.6 MetaHuman 插件本地 `.uasset`/`.abc` 文件检索只确认毛发材质、纹理和工具管线，未找到可直接采用的完整发型几何。额外查看 Cem Yuksel 的 Hair Model Files 页面及 natural/dark/wWavyThin 预览；页面明确允许个人/研究用途并要求公开材料链接来源，未把它记作无条件游戏商用许可。预览为中长女性发型，没有下载几何或采用进角色，研究预览仅留本地。来源：https://www.cemyuksel.com/research/hairmodels/ 。
+
 ## 2026-10-04 · 头皮转移诊断与自由导向线
 
 上一轮尚未同步的 `groomart01/02` 与 `hairfit02` 已复核：前者仍像平滑短发帽，后者大面积露头皮，均未采用为成品。本轮没有复跑旧目录或覆盖历史工程。

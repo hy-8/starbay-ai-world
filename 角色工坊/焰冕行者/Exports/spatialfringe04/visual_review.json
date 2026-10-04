@@ -1,0 +1,28 @@
+{
+  "version": "spatialfringe04",
+  "images": [
+    {
+      "file": "01_Front.png",
+      "sha256": "15aaedb8c623184d320898904b7285422567473b744ac6810d8bea02a1be3a93",
+      "reviewed": true
+    },
+    {
+      "file": "02_ThreeQuarter.png",
+      "sha256": "09ea32b809ee79dd27521d36fdcc8f42159d11b0d81e8017b8d12b4159f65a9a",
+      "reviewed": true
+    },
+    {
+      "file": "03_Side.png",
+      "sha256": "969c909b5a71530d7f9a27defbb7b86044e1d81958f6e536742ef5d93857b263",
+      "reviewed": true
+    },
+    {
+      "file": "04_Back.png",
+      "sha256": "ce59fcb1b7ba34e4261efd12b3632f26f7507b7a832d2b784ae61e576d334eb9",
+      "reviewed": true
+    }
+  ],
+  "artistic_acceptance": false,
+  "findings": "Eyebrow-level irregular tips and finer waves; crown still heavy, broad highlights, regular side/nape. Not reference quality.",
+  "no_game_or_animation_validation": true
+}

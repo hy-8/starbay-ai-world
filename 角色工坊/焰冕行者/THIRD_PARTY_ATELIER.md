@@ -30,6 +30,7 @@
 - 原始哈希和使用版本：`Source/official_groom_sources.json`。
 - 改动：卷度/噪声节点、导向线分区剪短和刘海塑形、真实头皮转移、发根与穿插修正、红色毛发材质。`officialwave`、`hybridshag`、`layercut` 系列均包含该来源的改编毛发。
 - 后续 `layerflow`、`rootflow`、`directgroom`、`targetfringe` 及对应静态展示工程仍包含该来源的改编毛发；新增局部冠部/发根梳理、节点旁路对照、目标头皮前额规划、独立末端和短支撑曲线。它们不是全部原创或 CC0 毛发，未发布为最终作品。
+- `spatialfringe01—05` 及对应展示工程继续包含该来源的根部、短支撑和耳侧/后颈；前额改为独立空间 S 导向线，增加离散长短层次、重新剪裁、体积扰动和锁级起伏。改编毛发继续保留 CC BY-SA，证据未注明版本。隐藏导向线是可编辑设计证据，烘焙后的密集发丝须通过脚本重建。
 - 改编毛发继续保留 CC BY-SA、作者署名与修改说明；工程内嵌 `ADAPTED_HAIR_CREDITS`。大型原资产和改编 `.blend` 目前保留本地，无新 Release 或社交发布。GitHub 的检查图仅是制作证据，不是已验收成品。
 
 > Hair adapted from “Hair Styles” by Daniel Bystedt, CC BY-SA (version unspecified in the inspected source). Source: https://www.blender.org/download/demo-files/ . Modified guide lengths/shape, grooming nodes, scalp fitting and red hair material. Preserve attribution and ShareAlike for adapted hair.

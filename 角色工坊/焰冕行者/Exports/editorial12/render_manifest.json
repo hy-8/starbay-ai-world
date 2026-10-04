@@ -1,0 +1,18 @@
+{
+  "version": "editorial12",
+  "source": "spatialfringe04",
+  "source_sha256": "121388f60ebb02e857cfae4cb359831a0533be4c5aad5614a3a6221f61169839",
+  "renderer": "Blender 4.5.9 Cycles",
+  "samples": 384,
+  "draft": false,
+  "pose": "static geometric display pose, not a runtime rig",
+  "magic_particles": false,
+  "images": [
+    {
+      "file": "03_Portrait.png",
+      "bytes": 4515928,
+      "sha256": "3da149b61c696f22f8d4e38bbc9100b1afe725c8c3c2038223df441c4742f84e"
+    }
+  ],
+  "status": "visual study, not approved commercial-quality final"
+}
