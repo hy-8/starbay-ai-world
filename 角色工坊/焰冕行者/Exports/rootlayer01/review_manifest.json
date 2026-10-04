@@ -1,0 +1,46 @@
+{
+  "version": "rootlayer01",
+  "actual_model_sha256": "f4c78567de615473a2eb0416f84baa776544038b6f7711bf740bf09268807c74",
+  "images": [
+    {
+      "file": "Renders/rootlayer01/01_Front.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "0f8e6d6dc5730ad22be513b3b5f395c1e79a284bca5af2b339874f161471a933",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/rootlayer01/02_ThreeQuarter.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "f0e1c354f38467ae72385f5a19a9fd544fce1808069bc796b2c760aa420567cf",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/rootlayer01/03_Side.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "ac83cb3a5ab1c9c4bb0babc91c10d2154fd8734d8c964e03a554eb30ba3aa10e",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/rootlayer01/04_Back.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "c1c7cdd6a09c05c28aafbbb894ec7c01d380a9a751d2a6a6ab3d4a743f9e448d",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Arc-length cuts without a complete long coverage shell revealed a low posterior scalp stripe. Reject this uncovered combination.",
+  "artistic_acceptance": false,
+  "status": "Reviewed modeling progress / comparison only",
+  "validation_boundary": "Visual observations, not exhaustive collision, motion or game verification"
+}

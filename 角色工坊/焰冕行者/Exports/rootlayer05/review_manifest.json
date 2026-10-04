@@ -1,0 +1,37 @@
+{
+  "version": "rootlayer05",
+  "actual_model_sha256": "206bba7ede50aba1d8335f22f4d42cc3a9a805b59c813188788d0dd6b7905de5",
+  "images": [
+    {
+      "file": "Renders/rootlayer05/02_ThreeQuarter.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "bdd02b52fcb58645b3a9387463e324403e309fd62d06ae5046a326298553cdf1",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/rootlayer05/03_Side.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "fbd1f87abca0cdb8f850225b0106a040ce2fd5c201b36486920c333f8aa23911",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/rootlayer05/04_Back.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "4f832e28c0baee389faa7e2b0b28f69cec61c220773c45b0cc106d9e5dd3e5a4",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Wider temple selection with 36000 fibers does not fix the too-high lower sampling boundary; rejected.",
+  "artistic_acceptance": false,
+  "status": "Reviewed modeling progress / comparison only",
+  "validation_boundary": "Visual observations, not exhaustive collision, motion or game verification"
+}

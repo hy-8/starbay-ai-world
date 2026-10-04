@@ -1,0 +1,64 @@
+{
+  "version": "sheengroom02",
+  "source": "referenceflow04",
+  "source_sha256": "9c30fbc86a3c93fe25e89d0ae2158b0be0393b80e3c1732638b5df4d915d1ae8",
+  "method": "Fresh cloned hair materials, explicit Roughness/Radial Roughness, preserve color and actual geometry",
+  "visible_strands": 139530,
+  "geometry_before_sha256": "883692781b0237cb8e5cef59ab4b5d7ef35ab74cd1a03cda6bf935c93e88fe60",
+  "geometry_after_sha256": "883692781b0237cb8e5cef59ab4b5d7ef35ab74cd1a03cda6bf935c93e88fe60",
+  "all_positions_and_radii_unchanged": true,
+  "materials": [
+    {
+      "source": "Deep cherry layer cut.004",
+      "new_material": "Deep cherry layer cut.004 \u2022 restrained sheen study",
+      "changes": {
+        "Roughness": {
+          "old_default": 0.41999998688697815,
+          "removed_input_links": 0,
+          "new_default": 0.3
+        },
+        "Radial Roughness": {
+          "old_default": 0.47999998927116394,
+          "removed_input_links": 0,
+          "new_default": 0.36
+        }
+      }
+    },
+    {
+      "source": "Deep cherry layer cut.003",
+      "new_material": "Deep cherry layer cut.003 \u2022 restrained sheen study",
+      "changes": {
+        "Roughness": {
+          "old_default": 0.41999998688697815,
+          "removed_input_links": 0,
+          "new_default": 0.3
+        },
+        "Radial Roughness": {
+          "old_default": 0.47999998927116394,
+          "removed_input_links": 0,
+          "new_default": 0.36
+        }
+      }
+    },
+    {
+      "source": "Project physical crimson hair \u2022 Ddr Rcs geometry derivativ",
+      "new_material": "Project physical crimson hair \u2022 Ddr Rcs geometry derivativ ",
+      "changes": {
+        "Roughness": {
+          "old_default": 0.41999998688697815,
+          "removed_input_links": 0,
+          "new_default": 0.3
+        },
+        "Radial Roughness": {
+          "old_default": 0.47999998927116394,
+          "removed_input_links": 0,
+          "new_default": 0.36
+        }
+      }
+    }
+  ],
+  "samples": 192,
+  "draft": false,
+  "status": "unreviewed true Blender surface study",
+  "license": "Retained project original frontal / Ddr Rcs Royalty Free rear / Bystedt CC BY-SA support / Abhay Pratap Royalty Free source-flow support"
+}

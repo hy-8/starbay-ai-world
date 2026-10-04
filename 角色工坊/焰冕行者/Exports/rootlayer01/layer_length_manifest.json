@@ -1,0 +1,51 @@
+{
+  "version": "rootlayer01",
+  "source": "sheengroom02",
+  "source_sha256": "cbce18881c8998ab234739696d0758ece40d2609523c10741f2dfdbfa71570e2",
+  "method": "Continuous root-region arc-length cuts on all posterior fibers; separate short scalp coverage retained; tapered curved nape",
+  "actual_rear_curves": 74113,
+  "all_roots_preserved_exactly": true,
+  "unchanged_long_coverage_shell": false,
+  "lower_root_nape_extensions": 12126,
+  "length_fraction_quantiles": [
+    0.7447295524896606,
+    0.8070092879748026,
+    0.9671554800787491,
+    0.9832251578614329,
+    0.9999996563510599
+  ],
+  "root_coordinate_quantiles_m": [
+    [
+      -0.08447321504354477,
+      -0.10510075837373734,
+      1.754618525505066
+    ],
+    [
+      -0.02146945334970951,
+      -0.04668538644909859,
+      1.7655519247055054
+    ],
+    [
+      -0.0010193564230576158,
+      -0.026485303416848183,
+      1.7772629261016846
+    ],
+    [
+      0.041891757398843765,
+      -0.010091972537338734,
+      1.8711447715759277
+    ],
+    [
+      0.09085434675216675,
+      0.06909039616584778,
+      1.8729357719421387
+    ]
+  ],
+  "nearest_body_repairs": 236302,
+  "draft": true,
+  "samples": 64,
+  "denoising": false,
+  "status": "Unreviewed actual geometry study, not artistic approval",
+  "license": "Ddr Rcs Royalty Free rear; retained original frontal, Bystedt CC BY-SA short support and Abhay Pratap Royalty Free flow-derived scalp support",
+  "collision_scope": "Nearest body point repairs only; not exhaustive scalp/clothing/motion validation"
+}

@@ -1,0 +1,83 @@
+{
+  "source_version": "rootlayer05",
+  "source_sha256": "206bba7ede50aba1d8335f22f4d42cc3a9a805b59c813188788d0dd6b7905de5",
+  "camera": "03_Side",
+  "camera_type": "ORTHO",
+  "ortho_scale_m": 0.550000011920929,
+  "resolution": [
+    960,
+    1120
+  ],
+  "image_sha256": "fbd1f87abca0cdb8f850225b0106a040ce2fd5c201b36486920c333f8aa23911",
+  "method": "Actual orthographic camera rays intersect retained CC0 body BVH; no pixel/model edit",
+  "probes": [
+    {
+      "pixel": [
+        440,
+        490
+      ],
+      "body_point_m": [
+        0.0826678276,
+        -0.0446430296,
+        1.7796853781
+      ]
+    },
+    {
+      "pixel": [
+        520,
+        490
+      ],
+      "body_point_m": [
+        0.0761146545,
+        -0.0053573144,
+        1.779660821
+      ]
+    },
+    {
+      "pixel": [
+        600,
+        505
+      ],
+      "body_point_m": [
+        0.0633406639,
+        0.033928398,
+        1.7722469568
+      ]
+    },
+    {
+      "pixel": [
+        670,
+        515
+      ],
+      "body_point_m": [
+        0.0063972473,
+        0.0683033988,
+        1.7671226263
+      ]
+    },
+    {
+      "pixel": [
+        520,
+        460
+      ],
+      "body_point_m": [
+        0.0744056702,
+        -0.0053573153,
+        1.7943867445
+      ]
+    },
+    {
+      "pixel": [
+        620,
+        540
+      ],
+      "body_point_m": [
+        0.0540108681,
+        0.0437498279,
+        1.7550243139
+      ]
+    }
+  ],
+  "finding": "Exposed lower scalp band lay below previous 1.807m sampling boundary; corrected geometry in rootlayer06",
+  "scope": "Six camera/body rays only; not exhaustive collision validation"
+}

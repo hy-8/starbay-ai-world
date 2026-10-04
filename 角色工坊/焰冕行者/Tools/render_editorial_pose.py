@@ -101,6 +101,15 @@ area('Warm portrait softbox',(-1.6,-2.6,3),185,(1,.87,.78),1.7,(0,0,1.3),1.3)
 area('Cool detail fill',(1.8,-2.4,1.9),80,(.77,.85,1),1.6,(0,0,1.25),1.4)
 area('Wine edge softbox',(-1.3,1.4,2.2),125,(1,.19,.15),1.2,(0,0,1.3),1.7)
 area('Neutral contour',(1.3,1.7,2.7),160,(1,.91,.83),1.4,(0,0,1.3),1.8)
+if '--reference-light' in args:
+    # Physical portrait lighting only. Neutral geometry check cameras are
+    # rendered independently before this presentation variant is inspected.
+    key=bpy.data.objects['Warm portrait softbox'];key.location=(-1.8,-2.5,2.45)
+    key.rotation_euler=(Vector((0,-.025,1.75))-key.location).to_track_quat('-Z','Y').to_euler()
+    key.data.energy=180;key.data.size=.90;key.data.size_y=1.15;key.data.color=(1,.87,.85)
+    fill=bpy.data.objects['Cool detail fill'];fill.data.energy=45
+    bpy.data.objects['Wine edge softbox'].data.energy=65
+    bpy.data.objects['Neutral contour'].data.energy=110
 scene.world.use_nodes=True;scene.world.node_tree.nodes['Background'].inputs['Color'].default_value=(.04,.048,.068,1);scene.world.node_tree.nodes['Background'].inputs['Strength'].default_value=.28
 scene.render.engine='CYCLES';scene.cycles.samples=32 if DRAFT else 192;scene.cycles.use_denoising=True
 if '--hair-detail' in args:
@@ -132,6 +141,7 @@ scene.camera=bpy.data.objects[shots[0][0]];scene.render.resolution_x=shots[0][4]
 backdrop.rotation_euler.z=0
 bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'Redline_Editorial.blend'))
 report={'version':VERSION,'source':SOURCE,'source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'renderer':'Blender 4.5.9 Cycles','samples':scene.cycles.samples,'draft':DRAFT,'pose':'static geometric display pose, not a runtime rig','magic_particles':False,'images':[],'status':'visual study, not approved commercial-quality final'}
+report['physical_reference_portrait_lighting']='--reference-light' in args
 for p in sorted(RENDER.glob('*.png')):report['images'].append({'file':p.name,'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()})
 (OUT/'render_manifest.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
 print('EDITORIAL_SAVED',str(OUT),flush=True)

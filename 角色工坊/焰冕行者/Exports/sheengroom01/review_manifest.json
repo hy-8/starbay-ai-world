@@ -1,0 +1,46 @@
+{
+  "version": "sheengroom01",
+  "actual_model_sha256": "f363db8850b9ccd35560ce02532ef1875ddf0f5b89ce5952f8c18e5d86fe4af4",
+  "images": [
+    {
+      "file": "Renders/sheengroom01/01_Front.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "194bb8e816f67f7bfc3fb3d1c1fd4f4db3cc7d40408c4845fdb1346c45e6c718",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/sheengroom01/02_ThreeQuarter.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "1df58015f41fc7e5839f1dba90176dce003afb63cf40b29f27765146425a3e02",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/sheengroom01/03_Side.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "1850d51a711a997eb998141b3705762162bdbe5a1f400a2aa4280dfef90bca6a",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/sheengroom01/04_Back.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "0adaa43a0890af3f66d78f85c6d63b240ab18ad034dbd8a92f6f2b250a01cbd6",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Roughness .30 / radial .36 produced stronger sheen on unchanged geometry; shape remains broad.",
+  "artistic_acceptance": false,
+  "status": "Reviewed modeling progress / comparison only",
+  "validation_boundary": "Visual observations, not exhaustive collision, motion or game verification"
+}

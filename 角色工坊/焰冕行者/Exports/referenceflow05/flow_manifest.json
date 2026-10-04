@@ -1,0 +1,32 @@
+{
+  "version": "referenceflow05",
+  "source": "smoothflow02",
+  "source_sha256": "51e19418cae2bdfee9b60b637cd5022c12f5a9c0b5bde776c69873bb7af1232f",
+  "design_source": "spatialfringe17",
+  "method": "Sort real roots into smaller sublocks, recomb coherent spatial flow, varied along-growth layer cuts; preserve all roots",
+  "components": [
+    {
+      "object": "Volumetric recomb \u2022 retained rear",
+      "strands": 74113,
+      "parent_locks": 333,
+      "volumetric_sublocks": 666,
+      "cut_strands": 35949,
+      "body_clearance_repairs": 452092,
+      "all_roots_preserved_exactly": true,
+      "untouched_interleaved_coverage_curves": 24590
+    }
+  ],
+  "status": "unreviewed actual 3D study",
+  "license": "Project original frontal roots/design; Ddr Rcs Royalty Free rear; Bystedt CC BY-SA short support retained; Abhay Pratap Royalty Free flow-derived scalp support retained",
+  "collision_scope": "Nearest-body point checks only; not exhaustive scalp/clothing/motion validation",
+  "draft": true,
+  "samples": 64,
+  "preserve_actual_lock_width": true,
+  "gentle_along_growth_cuts": false,
+  "rear_only": true,
+  "processing_script_sha256": "d6da0a2eaecfe2cce9ea135dbf17b608315a840778d1d1d2dc7187e9356c703d",
+  "reference_flow": true,
+  "interleaved_original_coverage_layer": true,
+  "separate_narrow_overlying_root_patches": true,
+  "tapered_central_nape_extension": true
+}

@@ -1,0 +1,46 @@
+{
+  "version": "referenceflow02",
+  "actual_model_sha256": "aaaf19d480c60d953a31ec0dfc62f76b1c46707f282693a2a208a40079049d45",
+  "images": [
+    {
+      "file": "Renders/referenceflow02/01_Front.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "7372e52321a382d8a26656ac7be788dd5c23fdac4e5a165886f5e7b6862fe968",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/referenceflow02/02_ThreeQuarter.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "3e9504447d85c808511a3c49febd450900638d27a452b44e5a05d5c2c8f70e66",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/referenceflow02/03_Side.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "fbeb18d8197db8cd59ce1c12281a3a588ad8f5dc248eb484a0aa9c5ad39c206d",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/referenceflow02/04_Back.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "bba82d88358fdc3cfcfc03cba07f65d9a4f09c779603d70b7999b4cfb87c42c9",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Intact interleaved long coverage restored skin coverage, but preserved a broad round rear shell.",
+  "artistic_acceptance": false,
+  "status": "Reviewed modeling progress / comparison only",
+  "validation_boundary": "Visual observations, not exhaustive collision, motion or game verification"
+}

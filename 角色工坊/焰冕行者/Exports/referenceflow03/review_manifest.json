@@ -1,0 +1,46 @@
+{
+  "version": "referenceflow03",
+  "actual_model_sha256": "75af3f9d809b714794b647e16137e2e763caa376a5a2c723ca29102c8ffb6d6d",
+  "images": [
+    {
+      "file": "Renders/referenceflow03/01_Front.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "1a39904e3bada7c4fb0a8befe6e8b869dd23bb5068cdaa22d884c102e91d6262",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/referenceflow03/02_ThreeQuarter.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "bbc83390d9f36a1d534e88b76054ec46f54ea03549d4e3d74631175d4672d909",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/referenceflow03/03_Side.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "4c6b53102ef23ac78be3fddf3114856edd40409acba40790739ab38de4bc70a3",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/referenceflow03/04_Back.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "fab30a55423593deb759a8f268856c00e8c8dfba1c597b87c87871d850829b37",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Narrower overlying root patches/waves improved local separation; rear still round and generic.",
+  "artistic_acceptance": false,
+  "status": "Reviewed modeling progress / comparison only",
+  "validation_boundary": "Visual observations, not exhaustive collision, motion or game verification"
+}

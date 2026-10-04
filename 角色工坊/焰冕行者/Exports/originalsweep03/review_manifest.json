@@ -1,0 +1,46 @@
+{
+  "version": "originalsweep03",
+  "actual_model_sha256": "6e7c08c1e9e2bb5b7659a684d140ba282656ce9ad756c1ab826b10fb099af1dc",
+  "images": [
+    {
+      "file": "Renders/originalsweep03/01_Front.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "0105086eca84ad8837bce16a9b93b7297affc33b0539ff3b9334834c733639fc",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/originalsweep03/02_ThreeQuarter.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "7e03f7543d4f835933a8efd8706f3236d6559d417a21b75de542c98e249adc0b",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/originalsweep03/03_Side.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "ef855dd373e69245f7d41ff0eb7b79c0c95ad6a0b00eadd6e1c4e819828f6dad",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/originalsweep03/04_Back.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "6accbfadd2133a02516e4b9d64205d9017d2d591ccfe4cfd2c9a3ca5f797ebf0",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "240 original surface guide patches/64000 rear fibers. Slimmer ears/rear than old donor shell; lower spread improves pointed tails. Crown still broad, rear smooth/regular, some straight ends; artistic acceptance failed.",
+  "artistic_acceptance": false,
+  "status": "Reviewed modeling progress only",
+  "validation_boundary": "Finite data/radii/texture checks pass separately; no exhaustive collisions/motion/game validation"
+}

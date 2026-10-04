@@ -1,0 +1,19 @@
+{
+  "version": "editorial17",
+  "actual_model_sha256": "0117f1f6b3f95a203d771c9fca3e37e0837f0a678ae3497906769eeff723992a",
+  "images": [
+    {
+      "file": "Renders/editorial17/03_Portrait.png",
+      "resolution": [
+        1800,
+        2100
+      ],
+      "sha256": "55d94ab0faa406a3cbcbd7044d916b16838540312fab2f2ea1d9b5319f734fe9",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Physical portrait light/sheengroom02: hair definition improves, crown broad and face/clothes generic; not artistic acceptance.",
+  "artistic_acceptance": false,
+  "status": "Reviewed modeling progress / comparison only",
+  "validation_boundary": "Visual observations, not exhaustive collision, motion or game verification"
+}

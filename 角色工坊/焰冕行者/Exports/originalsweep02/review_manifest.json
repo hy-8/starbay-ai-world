@@ -1,0 +1,46 @@
+{
+  "version": "originalsweep02",
+  "actual_model_sha256": "e0ddd4aa65cfad4d19f872eac927501e3e5adca96326e0fa010d0b495dc80cf5",
+  "images": [
+    {
+      "file": "Renders/originalsweep02/01_Front.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "4fe22534ef002c704e7c9af237321c19c0b32fd192c0b4a55abf314e1027907b",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/originalsweep02/02_ThreeQuarter.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "8a8f0880e40a6b5f7d9e696d6b35b48bd2049390bc9c1e2f9a9475d492f90584",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/originalsweep02/03_Side.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "777c5dd31750a2873f33381699b0eecd9feaca082727d93a8cc79de2f19ddfa8",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/originalsweep02/04_Back.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "1087e2ff1f1e6fd9aa2c64d9ecc5928f104bbd03c442b90b9b914addf9e9d681",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Longer centered nape and asymmetric upper sweep. Old round shell reduced; lower tips converge into a few pointed tails; not accepted.",
+  "artistic_acceptance": false,
+  "status": "Reviewed modeling progress / comparison only",
+  "validation_boundary": "Visual observations, not exhaustive collision, motion or game verification"
+}

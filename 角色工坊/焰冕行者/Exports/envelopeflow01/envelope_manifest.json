@@ -1,0 +1,28 @@
+{
+  "version": "envelopeflow01",
+  "source": "sheengroom01",
+  "source_sha256": "f363db8850b9ccd35560ce02532ef1875ddf0f5b89ce5952f8c18e5d86fe4af4",
+  "method": "Posterior/upper native strand clearance compressed along actual nearest-scalp normals with smooth root and spatial envelopes; lower nape unchanged",
+  "target_gap_m": 0.016,
+  "modified_points": 7217,
+  "exact_roots_preserved": true,
+  "max_displacement_m": 0.003943659830838442,
+  "affected_point_gap_before_quantiles_m": [
+    0.01600113508902723,
+    0.018220592100988142,
+    0.02412421964545501,
+    0.028489334905316355
+  ],
+  "affected_point_gap_after_quantiles_m": [
+    0.01600000826874748,
+    0.018020338859059848,
+    0.02331353592890082,
+    0.028215918280693586
+  ],
+  "geometry_finite": true,
+  "draft": true,
+  "samples": 64,
+  "status": "unreviewed actual geometry study",
+  "collision_scope": "Selected posterior points only, no exhaustive hair/clothing/motion check",
+  "license": "Project original frontal; Ddr Rcs Royalty Free rear; Bystedt CC BY-SA support; Abhay Pratap Royalty Free source-flow support"
+}

@@ -1,0 +1,46 @@
+{
+  "version": "rootlayer04",
+  "actual_model_sha256": "cb7cdd264484aa018e53666120946516e7358c732c7036f0023fdea7ffddcbb1",
+  "images": [
+    {
+      "file": "Renders/rootlayer04/01_Front.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "cbe7a95dc2e1cb2e65919835e28fa4b0dc05b981616e8118e45269c91410fca2",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/rootlayer04/02_ThreeQuarter.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "299032d8d84badbbb147add2af92b98b5db143c5bff971322351d9cb12abca8b",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/rootlayer04/03_Side.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "6be1e7ab72ba6c6200ef53f3e3903600b227f725a882f112d2cd679a4dfe3f08",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/rootlayer04/04_Back.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "dedf411e814a45ccef127d178dea76a26d0e5a7a74f5c179a32e24a821442389",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Stronger crown cuts with short coverage reveal a lower stripe, below assumed sampling boundary; rejected.",
+  "artistic_acceptance": false,
+  "status": "Reviewed modeling progress / comparison only",
+  "validation_boundary": "Visual observations, not exhaustive collision, motion or game verification"
+}

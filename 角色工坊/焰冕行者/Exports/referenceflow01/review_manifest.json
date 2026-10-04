@@ -1,0 +1,46 @@
+{
+  "version": "referenceflow01",
+  "actual_model_sha256": "0bc65e06851f0e960b704361a1362c57e9652a7b1edabc9c71eed71ee4d17bde",
+  "images": [
+    {
+      "file": "Renders/referenceflow01/01_Front.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "de2fbf7791d81049c2c8b988afa172e061c9e585a23e18b51ef10e7a170760e9",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/referenceflow01/02_ThreeQuarter.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "d8df9e0eab479a6250bbbcb81a415c5f5c432aa8fd57af1a5d7fe432f2c702f3",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/referenceflow01/03_Side.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "af29415d88ed02321559e7e4a7da207fcc079cdeca09a1a719c69a550338a4f5",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/referenceflow01/04_Back.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "e82e723ef89b506540f2d1f0938c08b1d563dee7a6984763ba78ec82c2300e1a",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Upper layer cuts exposed a transverse posterior scalp band; rejected.",
+  "artistic_acceptance": false,
+  "status": "Reviewed modeling progress / comparison only",
+  "validation_boundary": "Visual observations, not exhaustive collision, motion or game verification"
+}

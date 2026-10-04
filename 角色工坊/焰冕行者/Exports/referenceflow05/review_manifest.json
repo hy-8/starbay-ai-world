@@ -1,0 +1,46 @@
+{
+  "version": "referenceflow05",
+  "actual_model_sha256": "70e6b8f6c514417cbf5bcbba386e859b3ff9ec88db2b57df0555ea929bc7a98c",
+  "images": [
+    {
+      "file": "Renders/referenceflow05/01_Front.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "b7b4a5fd3ba078fc674a4e2b46de1a0233856b5ecda9ef7157689d97b479f9a3",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/referenceflow05/02_ThreeQuarter.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "abf4ffb0d01246c4bf7ced66eb282ef7748bc71b869f3347177fe7d92750e02e",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/referenceflow05/03_Side.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "1ae9b4432ad48d7c28a07b0c8404f7108fcd0ab214300ee82e58c842c36a06be",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/referenceflow05/04_Back.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "b3b64e4007b649764e8c0ffc2f5e477a0cd7f55544e965b6d69d194a6f0d4885",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Long central nape extends below collar, but some ends appear as straight tails; not accepted.",
+  "artistic_acceptance": false,
+  "status": "Reviewed modeling progress / comparison only",
+  "validation_boundary": "Visual observations, not exhaustive collision, motion or game verification"
+}

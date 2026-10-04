@@ -1,0 +1,46 @@
+{
+  "version": "envelopeflow01",
+  "actual_model_sha256": "eb3a15d1934165da25f648cbebe48aebf83ef5ea678b402d418db590fb174098",
+  "images": [
+    {
+      "file": "Renders/envelopeflow01/01_Front.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "d0bc1c1db756af10de18c21b05c365b79d13c9a99cf5109b361ccd41f3decd21",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/envelopeflow01/02_ThreeQuarter.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "a9bee1c7ef1672ebcc5508a4d6d33d90332ee0b8d5e036097701ae3b629bd67f",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/envelopeflow01/03_Side.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "d4148f984190c372e19644b8b78bf8c4dda85045b71f4622b2a9ddc618773e8c",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/envelopeflow01/04_Back.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "2f8fee194f505eb8f4bf860a49eebb85cfa84d6904b01720b1326d87a48ec910",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Selected posterior clearance compression changed 7217 points by at most 3.94mm; little meaningful visual benefit.",
+  "artistic_acceptance": false,
+  "status": "Reviewed modeling progress / comparison only",
+  "validation_boundary": "Visual observations, not exhaustive collision, motion or game verification"
+}

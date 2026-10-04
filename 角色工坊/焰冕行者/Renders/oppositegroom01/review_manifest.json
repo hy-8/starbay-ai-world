@@ -1,0 +1,12 @@
+{
+  "version": "oppositegroom01",
+  "source": "originalsweep03",
+  "actually_inspected": true,
+  "image_sha256": "56ad2ac065737522d70a0906b20a2288bb98258c91ebb222693611bb2a36f3d2",
+  "resolution": [
+    1200,
+    1400
+  ],
+  "visual_observation": "Actual opposite-side camera shows clear ear silhouette and lower nape. Frontal join/crown and posterior flow remain too regular; not artistic acceptance.",
+  "artistic_acceptance": false
+}

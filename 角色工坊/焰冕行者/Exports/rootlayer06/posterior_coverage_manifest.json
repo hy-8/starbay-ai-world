@@ -1,0 +1,23 @@
+{
+  "version": "rootlayer06",
+  "source": "rootlayer03",
+  "source_sha256": "6bfa8f4cfb0d59bdb454bfbab05f1d560d82f465a36dba3fb09551b3f69899d7",
+  "method": "Area-sampled real posterior scalp; original anatomical backward/downward flow parallel-transported on surface",
+  "additional_native_curves": 36000,
+  "points_per_curve": 36,
+  "wide_temple_selection": false,
+  "ray_measured_lower_scalp_band": true,
+  "scalp_area_m2": 0.04409976658070974,
+  "scalp_triangles": 4218,
+  "root_gap_quantiles_m": [
+    0.0004999425050300488,
+    0.000499999962585207,
+    0.000500059260616581
+  ],
+  "samples": 64,
+  "draft": true,
+  "denoising": false,
+  "status": "Unreviewed actual 3D study, not artistic approval",
+  "license": "New short coverage original; previous Ddr Rcs Royalty Free rear, original frontal, Bystedt CC BY-SA support and Abhay Pratap Royalty Free flow-derived support retained",
+  "collision_scope": "Root/surface attachment only; not exhaustive hair/clothing/motion validation"
+}

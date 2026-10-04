@@ -1,0 +1,19 @@
+{
+  "version": "editorial17",
+  "source": "sheengroom02",
+  "source_sha256": "cbce18881c8998ab234739696d0758ece40d2609523c10741f2dfdbfa71570e2",
+  "renderer": "Blender 4.5.9 Cycles",
+  "samples": 384,
+  "draft": false,
+  "pose": "static geometric display pose, not a runtime rig",
+  "magic_particles": false,
+  "images": [
+    {
+      "file": "03_Portrait.png",
+      "bytes": 4478073,
+      "sha256": "55d94ab0faa406a3cbcbd7044d916b16838540312fab2f2ea1d9b5319f734fe9"
+    }
+  ],
+  "status": "visual study, not approved commercial-quality final",
+  "physical_reference_portrait_lighting": true
+}

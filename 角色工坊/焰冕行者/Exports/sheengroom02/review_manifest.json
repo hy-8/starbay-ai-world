@@ -1,0 +1,46 @@
+{
+  "version": "sheengroom02",
+  "actual_model_sha256": "cbce18881c8998ab234739696d0758ece40d2609523c10741f2dfdbfa71570e2",
+  "images": [
+    {
+      "file": "Renders/sheengroom02/01_Front.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "c166e1704d7cf900b93543b36676acb7778855524dd4b50ffdc192166c708d9a",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/sheengroom02/02_ThreeQuarter.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "cc72bd4bbda6a24447be56d40148fb2da2198aa214f9872e5bb8331a45e3af80",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/sheengroom02/03_Side.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "24fd1864d0c81d2dd0ec92207bdd09528a862ca434c9108101a22209e1064bfc",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/sheengroom02/04_Back.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "d9eba65c441111ac20dd2f804b1317e88585ec90724aaae89bcc9b8d06787f7d",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Four full-resolution neutral views inspected. Layered rear longer than smoothflow02, still broad/round. WIP.",
+  "artistic_acceptance": false,
+  "status": "Reviewed modeling progress / comparison only",
+  "validation_boundary": "Visual observations, not exhaustive collision, motion or game verification"
+}

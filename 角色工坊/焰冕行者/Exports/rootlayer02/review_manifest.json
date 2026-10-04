@@ -1,0 +1,46 @@
+{
+  "version": "rootlayer02",
+  "actual_model_sha256": "43ca4e5b9e7f670482b5264a170517d733bd5f582c77c375615de0c17f4d56c1",
+  "images": [
+    {
+      "file": "Renders/rootlayer02/01_Front.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "51a94a8f7fe5c045127c303c9969b9f3e0245e392577566bfac40a83f9323bf6",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/rootlayer02/02_ThreeQuarter.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "6214324c004b6537cb9acbf07d619ff6f36e81c89cc769f4a3eb56bbe27d19fd",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/rootlayer02/03_Side.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "fea3cab983fb5a778f1a2d31e4cbca763b44cc7a7ce65cf4c0945b6581b57b3f",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/rootlayer02/04_Back.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "7878170483bff73e60cf0401abf15cfca740f40ccd23f435b8fb7d317f874a83",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "26000 real surface-grown short fibers cover the mild-cut stripe; old silhouette remains broad.",
+  "artistic_acceptance": false,
+  "status": "Reviewed modeling progress / comparison only",
+  "validation_boundary": "Visual observations, not exhaustive collision, motion or game verification"
+}

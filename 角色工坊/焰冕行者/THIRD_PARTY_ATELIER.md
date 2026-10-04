@@ -81,3 +81,9 @@ Tomáš Klecer 的 Hair Editor 功能资产包，官方功能包页面标为 CC0
 > Natural scalp flow adapted from “Realistic Hair” by Abhay Pratap, BlenderKit Royalty Free (not CC0). Modified scalp fitting, actual growth-path cuts, native fibers, and surface-sampled short support flow. License: https://www.blenderkit.com/docs/licenses/ . Original/derived geometric assets retained locally.
 
 最新组合另含Ddr Rcs Royalty Free侧后、Bystedt CC BY-SA短支撑与项目原创前额；不能给整个模型贴单一CC0许可。图片仍是未验收制作证据。
+
+## 2026-10-04 后部造型替换补充
+
+`originalsweep03`新增后部64,000条毛发的根分布/240造型路径，以及测量带区补充的36,000条短覆盖，均由项目在真实CC0人体表面原创生成。旧Ddr侧后组件隐藏保留，并未删除其来源/许可。仍可见Bystedt CC BY-SA短支撑和Abhay Pratap BlenderKit Royalty Free发流衍生短支撑；整个角色不能因此宣称完全原创或完全CC0。原/衍生几何保持本地，不作为独立发型素材包分发。
+
+本轮只查看Radhe Rathod Stylized Hairstyle与Dr toxic Male Character Base Mesh with Hair Cards的官方预览以评估替代路线，未取得或导入其.blend，预览不作为项目渲染证据。原始检索元数据/签名下载地址不进入仓库。材质研究sheengroom01/02不改变既有几何或许可；原创短覆盖/后发替换也不改变其他组件归属。

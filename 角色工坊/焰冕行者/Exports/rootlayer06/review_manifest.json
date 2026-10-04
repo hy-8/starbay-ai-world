@@ -1,0 +1,46 @@
+{
+  "version": "rootlayer06",
+  "actual_model_sha256": "3c13d1a60056855d676e948519c71d107352c5670fe0e663ac3c6c97e221c0cd",
+  "images": [
+    {
+      "file": "Renders/rootlayer06/01_Front.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "9dec2fc43d07faa194ce958894114cee56a8ea4d0720944d38c34ecdf7ee0d31",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/rootlayer06/02_ThreeQuarter.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "0fafec9cabfa8e7ea4cae14296c860bc187a4a814ec2c895dee8d9841751d14c",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/rootlayer06/03_Side.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "659966f2f165ce71d18771845674fc7966258cd025ea47c5c52c40b1f50a02f4",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/rootlayer06/04_Back.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "debd1d811ee1eaf8fe12e9434f76947055b0ac60b0d68ddaff8d05aa8a3a074a",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Camera ray probes located skin around z1.77..1.79m. Corrected scalp sampling restored coverage; original rear still broad/round. WIP.",
+  "artistic_acceptance": false,
+  "status": "Reviewed modeling progress / comparison only",
+  "validation_boundary": "Visual observations, not exhaustive collision, motion or game verification"
+}

@@ -1,5 +1,50 @@
 # 红发角色 · 更换发型方法记录
 
+## 2026-10-04 · 分开覆盖与造型，重建真实侧后发根
+
+本轮完整实渲检查点为 `originalsweep03` 四视角（1200×1400、192 samples、不去噪）及 `editorial18` 近景（1800×2100、384 samples、不去噪），均实际查看。**仍非参考级作品；没有将结构验证或渲染成功当作艺术验收。** 旧检查点与试验不覆盖。
+
+### 保留长覆盖壳的对照
+
+`recomb_visible_locks.py` 新增 smoothflow02 特定入口，必须同时指定 reference-flow / rear-only / preserve-width，并确认canonical后发可见且无重复替代。referenceflow01改变波浪与长短但后方露皮；02保留24,590条交错原长发，恢复覆盖同时保留圆壳；03把外层分为较窄相邻小块，局部层次改善，仍圆。04为同几何全质量源工程，其四张原输出未直接审核；其材质副本sheengroom02的四张192 samples输出已审核。05中央后颈延长更明显，末端有直尾感，未采用。
+
+`finish_native_hair_surface.py`显式改克隆材质粗糙度 .30 / radial .36，以位置/半径哈希验证几何完全不变；sheengroom01/02已查看，只是表面定义改善。editorial17加入真实物理近景灯位，已查看；不解决形状。envelopeflow01沿头皮法线压低选定后部间距，仅7,217个点改变，最大3.94mm，四张已看，视觉改善有限。不能继续把后方偏圆归因于巨大离头皮距离。
+
+### 弧长剪裁与相机射线定位
+
+新脚本 `sculpt_shag_layer_lengths.py` 对74,113条侧后发全部按真实弧长/连续根部空间场剪短，保留所有旧根，不再保留完整长覆盖壳；rootlayer01四张已看，露皮。26000条原创短发按真实头皮面积采样、平行传输后，rootlayer02恢复温和剪裁下覆盖，但轮廓仍圆。
+
+rootlayer03是更短冠部的 **build-only中间模型**，没有自己的渲染评价。rootlayer04组合短底发后仍露皮；rootlayer05扩大侧部采样，但下边界仍偏高，查看三个侧/后图仍有缝隙。通过rootlayer05实际03_Side正交相机射线求交CC0人体，发现选取的露皮带约z=1.77—1.79m，低于原假设1.807m。六个实际求交记录在 `Source/scalp_band_ray_diagnostic.json`，仅该样本，不是全量穿插证明。
+
+`grow_posterior_short_coverage.py --measured-band`改为后部y>.025且z>1.754、其余侧后y>-.074且z>1.773，并排除明显朝下三角面。rootlayer06新增36,000条37—61mm短发，四张草稿均看，修复带状露皮；没有实心毛发帽或图像涂抹。但旧侧后总轮廓仍圆，不能仅把增发当质量提升。
+
+### 原创侧后造型替换
+
+`rebuild_posterior_surface_groom.py`只接受已检查的rootlayer06，要求独立短底发存在；隐藏旧侧后，保留全部历史。以真实头皮按三角面积取新根，通过不规则最远点分布划分造型小块，根部切线沿头皮传输，末段离开表面形成自由下垂。各纤维有轻微弧长差和亚毫米扰动，点检查修复近体穿插；不是读取隐藏Ddr旧曲线重生一份重复毛发。
+
+| 版本 | 实际查看与结论 |
+| --- | --- |
+| originalsweep01 | 160路径/64,000原创长发，四张草稿已看；侧后收窄、耳侧更清楚，后颈过短且对称分开，不采用为成品 |
+| originalsweep02 | 长后颈、较向中央的下部走向和上部偏向，四张草稿已看；长度恢复，但聚为少数尖尾，未接受 |
+| originalsweep03 | 240较细分区、下部根分布保留而非统一聚中，后颈加入小幅空间弯曲；四张192 samples实际看，侧后比旧壳收窄，但上后部仍较顺滑/规则，部分发尾偏直，作品验收未通过 |
+| editorial18 | 03实际近景384 samples已看；耳侧简洁，前额仍宽，脸服仍通用，仍是制作中检查图 |
+
+03可见原生发丝165,417条，包含27,760原创前额、23,657 Bystedt短支撑、14,000 Abhay发流支撑、36,000原创后部短覆盖、64,000原创后部造型；数量仅记录。源Royalty Free资产与隐藏衍生几何仍本地；原创替换并不把所有保留组件改成原创或CC0。
+
+另完成 `Renders/oppositegroom01/05_OppositeSide.png` 并实际查看：1200×1400、192 samples、不去噪。反射相机世界位置/局部X以保持正手性，不翻转像素、不改模型，前后源工程哈希相同；另一侧仍能看到较规则的冠部/后发走向与前后衔接，艺术验收未通过。
+
+完整本地依赖存在时，以全新版本名复建（源版本参数绑定已审核输入，不能随意替换）：
+
+```text
+sculpt_shag_layer_lengths.py -- 新剪裁 sheengroom02 --shorter-crown --build-only
+grow_posterior_short_coverage.py -- 新短覆盖 rootlayer03 --measured-band --draft
+rebuild_posterior_surface_groom.py -- 新侧后 rootlayer06 --long-nape --soft-nape
+render_editorial_pose.py -- 新近景 originalsweep03 --portrait-only --hair-detail --reference-light
+validate_concert_still.py -- 新侧后
+```
+
+第一、第二行解释rootlayer03/06构建沿革；脚本当前明确绑定这些实际源名称，不能把示例的新版本直接传给后续入口。角色.blend与许可依赖不在Git，仓库不是独立完整重建包。没有新UE、动作、布料或候选Release。另查BlenderKit免费狼尾/男性/波浪发型，仅查看不适合的Radhe/Dr toxic作者预览；没有导入其资产。MetaHuman本地仍未找到可用核心groom集合，此路线未采用。原始搜索JSON可能含signed URL，保留本地。
+
 ## 2026-10-04 · 冠部隔离、自然发流替代与真实头皮补发
 
 当前实际进度检查点为 `Exports/smoothflow02/Ember_Regent.blend`，四视角 `Renders/smoothflow02` 已逐张查看：1200×1400、192 samples、不去噪。高清近景 `Renders/editorial16/03_Portrait.png` 已查看，1800×2100、384 samples、不去噪；展示工程 `Exports/editorial16/Redline_Editorial.blend`。**目标仍进行，尚未达到参考级角色作品质量。** 19/15及全部历史版本保留。

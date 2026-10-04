@@ -1,0 +1,46 @@
+{
+  "version": "originalsweep01",
+  "actual_model_sha256": "5bec2bd6377e89249bbaecde4179d59672ed33b91e711f2df472c92a7d395321",
+  "images": [
+    {
+      "file": "Renders/originalsweep01/01_Front.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "f77bdf4ef8f0f09bed6f5b00776971465567058a90fae443794ed8c6b31282e4",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/originalsweep01/02_ThreeQuarter.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "1757db93c806be58dcf87087e334087c9f77fe0a84ca3fa1ece006aa4d28313c",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/originalsweep01/03_Side.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "4d8311a0d3a618c0ff45a2cc73586d573eff145286339f04e34bca9e4fe37386",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/originalsweep01/04_Back.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "49c5f9d028ef8f903246e6e2645f12364dc6702187da9c02824ed9bfafe67458",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Replaced old rear with 64000 original fibers distributed over scalp/160 guides. Slimmer side; nape too short and rear split symmetrically.",
+  "artistic_acceptance": false,
+  "status": "Reviewed modeling progress / comparison only",
+  "validation_boundary": "Visual observations, not exhaustive collision, motion or game verification"
+}

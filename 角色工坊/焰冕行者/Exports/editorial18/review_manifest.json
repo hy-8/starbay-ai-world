@@ -1,0 +1,19 @@
+{
+  "version": "editorial18",
+  "actual_model_sha256": "9c06f3bd6a00ed162c174f9577bd978d2ceddfff77421aa1cc192fddf7048af4",
+  "images": [
+    {
+      "file": "Renders/editorial18/03_Portrait.png",
+      "resolution": [
+        1800,
+        2100
+      ],
+      "sha256": "02193c5ad5276fdc2b73f6282f3b25eed66a009f47183eb518b44222e84b39a4",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Actual 384-sample close-up from originalsweep03. Cleaner ear silhouette, still broad frontal crown and generic face/clothes; WIP, not accepted.",
+  "artistic_acceptance": false,
+  "status": "Reviewed modeling progress only",
+  "validation_boundary": "Finite data/radii/texture checks pass separately; no exhaustive collisions/motion/game validation"
+}
