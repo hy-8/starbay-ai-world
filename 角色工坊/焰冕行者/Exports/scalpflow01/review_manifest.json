@@ -1,0 +1,31 @@
+{
+  "version": "scalpflow01",
+  "all_four_views_actually_inspected": true,
+  "conclusion": "真实头皮面积采样14000条短底发，顶部露皮减轻，原刘海后颈保留；交叉绳感/宽冠部仍在，艺术未通过。",
+  "artistic_acceptance": false,
+  "status": "WIP, not reference-quality accepted art",
+  "images": [
+    {
+      "file": "01_Front.png",
+      "bytes": 1713003,
+      "sha256": "dfb674de0e74b9f1cf34357f8cf22c9a5e39dc37cf34ddae8bc6feb6ae54f7f1"
+    },
+    {
+      "file": "02_ThreeQuarter.png",
+      "bytes": 1721790,
+      "sha256": "baea40dc1386a33b72e9ee414ee2dc1043ec8a77db5700ed232561a29e55f5f3"
+    },
+    {
+      "file": "03_Side.png",
+      "bytes": 1690289,
+      "sha256": "c4f5097726701d33177ced81aca80534b5739481de77240cdc3e9483943d7366"
+    },
+    {
+      "file": "04_Back.png",
+      "bytes": 1749559,
+      "sha256": "161de0bef52c2406f825c97607fdf54f7b00811bf894ca92437c61b7c03fb6ac"
+    }
+  ],
+  "geometry_file_sha256": "1a5ee6b94b93b99f5c4f3dc57d426da9794061414e0549c03a6bf0861190f92d",
+  "review_basis": "Actual Blender native geometry render; no generated portrait substitution"
+}

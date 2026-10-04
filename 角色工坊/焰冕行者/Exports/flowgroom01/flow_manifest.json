@@ -1,0 +1,33 @@
+{
+  "version": "flowgroom01",
+  "source": "regionalgroom19",
+  "source_sha256": "ae82c9e2dfea3969da475d9b813ade3dea7caee0fa269aa95dfb1ec1a433f15a",
+  "design_source": "spatialfringe17",
+  "method": "Sort real roots into smaller sublocks, recomb coherent spatial flow, varied along-growth layer cuts; preserve all roots",
+  "components": [
+    {
+      "object": "Volumetric recomb \u2022 authored front",
+      "strands": 27760,
+      "parent_locks": 82,
+      "volumetric_sublocks": 164,
+      "cut_strands": 13880,
+      "body_clearance_repairs": 10042,
+      "all_roots_preserved_exactly": true
+    },
+    {
+      "object": "Volumetric recomb \u2022 retained rear",
+      "strands": 74113,
+      "parent_locks": 333,
+      "volumetric_sublocks": 999,
+      "cut_strands": 49523,
+      "body_clearance_repairs": 432591,
+      "all_roots_preserved_exactly": true
+    }
+  ],
+  "status": "unreviewed actual 3D study",
+  "license": "Project original frontal roots/design; Ddr Rcs Royalty Free rear; Bystedt CC BY-SA short support retained",
+  "collision_scope": "Nearest-body point checks only; not exhaustive scalp/clothing/motion validation",
+  "draft": true,
+  "samples": 64,
+  "processing_script_sha256": "d3ae549358ebd95a142e2b4370db6202d9a101aee57dbff4f6e808b50b627812"
+}

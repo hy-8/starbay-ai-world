@@ -1,0 +1,49 @@
+{
+  "source": "regionalgroom19",
+  "design_source": "spatialfringe17",
+  "source_sha256": "ae82c9e2dfea3969da475d9b813ade3dea7caee0fa269aa95dfb1ec1a433f15a",
+  "method": "Actual per-guide native curve subsets; non-destructive isolation",
+  "counts": {
+    "Crown": 6160,
+    "Fringe": 21600
+  },
+  "shots": [
+    {
+      "file": "01_All.png",
+      "isolated_layer": "All",
+      "camera": "01_Front",
+      "sha256": "6c110ee30855da23a3d8616bc93aec2e4f0adb721514f1ff9ba5a1432606a283"
+    },
+    {
+      "file": "02_Crown.png",
+      "isolated_layer": "Crown",
+      "camera": "01_Front",
+      "sha256": "ad0ea6b115b685450d300bc72134d7602b41ef8f5e193bb92e895269ba3fa935"
+    },
+    {
+      "file": "03_Fringe.png",
+      "isolated_layer": "Fringe",
+      "camera": "01_Front",
+      "sha256": "a5e1bd812941e75ffd151a4eeda3d3dddfae47c77682a7c21acddf7ea6c87bc4"
+    },
+    {
+      "file": "04_Support.png",
+      "isolated_layer": "Support",
+      "camera": "01_Front",
+      "sha256": "85a094951182566030f640bcaa3f52f26b926b6459e32e0ae14251972113bcf5"
+    },
+    {
+      "file": "05_Rear.png",
+      "isolated_layer": "Rear",
+      "camera": "01_Front",
+      "sha256": "42cf7596fac83192f0d66f6548004bfaa21e08987a6d1cb47a95ad2d01b9ce68"
+    },
+    {
+      "file": "06_CrownSide.png",
+      "isolated_layer": "Crown",
+      "camera": "03_Side",
+      "sha256": "126f44397c6456be55cbd57ccfed9d410ba282af1307dceffbf333e0098e3c8d"
+    }
+  ],
+  "source_unchanged": true
+}

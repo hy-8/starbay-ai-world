@@ -1,0 +1,31 @@
+{
+  "version": "abhaygroom01",
+  "all_four_views_actually_inspected": true,
+  "conclusion": "新原生曲线自然但偏中分女性波波头，开放额头且遗留长侧发，未采用。",
+  "artistic_acceptance": false,
+  "status": "WIP, not reference-quality accepted art",
+  "images": [
+    {
+      "file": "01_Front.png",
+      "bytes": 1233081,
+      "sha256": "667befeaf740b04563bfb44364023a2ad03504eaaa692c81e78b86e1433aa399"
+    },
+    {
+      "file": "02_ThreeQuarter.png",
+      "bytes": 1224261,
+      "sha256": "062470aa76d6a1d3cde761dc90524e034470c9a5e500bf18b10bb7a547610e46"
+    },
+    {
+      "file": "03_Side.png",
+      "bytes": 1245753,
+      "sha256": "879635b92317a6dde8edeef40d7bfddd318464e7960a9e69d61b6927dd986db5"
+    },
+    {
+      "file": "04_Back.png",
+      "bytes": 1261234,
+      "sha256": "1c410119b0d964c932d756cfae7f4788a0c608c23483f9fd7f841f11b3ec300d"
+    }
+  ],
+  "geometry_file_sha256": "97995bb24961891f0afe1d6f70ee217ae0a71c182f32e15e48f955dc49748389",
+  "review_basis": "Actual Blender native geometry render; no generated portrait substitution"
+}

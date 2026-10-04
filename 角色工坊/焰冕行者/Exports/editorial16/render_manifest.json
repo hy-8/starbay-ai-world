@@ -1,0 +1,18 @@
+{
+  "version": "editorial16",
+  "source": "smoothflow02",
+  "source_sha256": "51e19418cae2bdfee9b60b637cd5022c12f5a9c0b5bde776c69873bb7af1232f",
+  "renderer": "Blender 4.5.9 Cycles",
+  "samples": 384,
+  "draft": false,
+  "pose": "static geometric display pose, not a runtime rig",
+  "magic_particles": false,
+  "images": [
+    {
+      "file": "03_Portrait.png",
+      "bytes": 4511369,
+      "sha256": "0c0a66098a92b01a2fe54e214b35f0e4b731567603fe61a31e168386ba9d4860"
+    }
+  ],
+  "status": "visual study, not approved commercial-quality final"
+}

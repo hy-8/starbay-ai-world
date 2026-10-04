@@ -1,0 +1,31 @@
+{
+  "version": "abhayfoundation01",
+  "all_four_views_actually_inspected": true,
+  "conclusion": "真实自然底发替换仍有前顶头皮空隙、背部小缝；否定该替换方案。",
+  "artistic_acceptance": false,
+  "status": "WIP, not reference-quality accepted art",
+  "images": [
+    {
+      "file": "01_Front.png",
+      "bytes": 1689448,
+      "sha256": "913c687fbc1b84d960c9cd2ecb5ad2d5996edca7b4b91a1abef922509b4f8191"
+    },
+    {
+      "file": "02_ThreeQuarter.png",
+      "bytes": 1700310,
+      "sha256": "d183a91d3ccd4a61fe9d18a914564ed72513fcf665f44f5453a819105bf70ee3"
+    },
+    {
+      "file": "03_Side.png",
+      "bytes": 1674571,
+      "sha256": "25972d54a55a9eb30fc9fc79f61adbc777a48b25bb0d0c813860bc9c1f5cb766"
+    },
+    {
+      "file": "04_Back.png",
+      "bytes": 1725420,
+      "sha256": "b47f1504cbae5a26bda5ec4d5e172dd0a11e219f251b506805e83317a3bf4514"
+    }
+  ],
+  "geometry_file_sha256": "4cc04211b138b172c01a3df17fc7b3e153a29ffcfc40ad5453c56397761f4500",
+  "review_basis": "Actual Blender native geometry render; no generated portrait substitution"
+}

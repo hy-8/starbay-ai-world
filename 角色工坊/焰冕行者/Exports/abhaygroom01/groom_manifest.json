@@ -1,0 +1,19 @@
+{
+  "version": "abhaygroom01",
+  "source_body": "regionalgroom19",
+  "author": "Abhay Pratap",
+  "asset": "Realistic Hair",
+  "license": "BlenderKit Royalty Free, not CC0; retained Bystedt support CC BY-SA",
+  "asset_sha256": "016558262252e29d841eadc87cc12554d26b6800734939deac693c9cf2bb9c1e",
+  "body_sha256": "ae82c9e2dfea3969da475d9b813ade3dea7caee0fa269aa95dfb1ec1a433f15a",
+  "original_splines": 9870,
+  "native_fibers": 39480,
+  "actually_trimmed_splines": 9155,
+  "roots_attached": 9870,
+  "base_body_clearance_repairs": 121024,
+  "method": "Actual existing poly fiber shapes, affine scalp fitting, along-growth cuts, native CURVES conversion",
+  "draft": true,
+  "samples": 64,
+  "status": "unreviewed real-geometry alternative",
+  "collision_scope": "Base centerline clearance only; no exhaustive fine-fiber/clothing/motion test"
+}

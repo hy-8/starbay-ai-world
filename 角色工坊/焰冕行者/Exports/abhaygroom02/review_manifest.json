@@ -1,0 +1,31 @@
+{
+  "version": "abhaygroom02",
+  "all_four_views_actually_inspected": true,
+  "conclusion": "修复496条低根长发漏剪，接入21600条原创低刘海；仍偏圆，层间接缝明显，未采用。",
+  "artistic_acceptance": false,
+  "status": "WIP, not reference-quality accepted art",
+  "images": [
+    {
+      "file": "01_Front.png",
+      "bytes": 1172047,
+      "sha256": "081b7620a1f2ab33a1181e0d119d798b8f4adc39574785e804a0607b29684f52"
+    },
+    {
+      "file": "02_ThreeQuarter.png",
+      "bytes": 1183884,
+      "sha256": "00b1a7db361ac827143ae3de3174d6a186b919ffef86de6f2d1a2e594ba42d1d"
+    },
+    {
+      "file": "03_Side.png",
+      "bytes": 1213629,
+      "sha256": "8512a8adf2f13afa094d7bdca8041816adcfdba11fd5798f02f1d7ba116da448"
+    },
+    {
+      "file": "04_Back.png",
+      "bytes": 1175982,
+      "sha256": "af06837ba0a98d1a2c8e84f0063d17c19700ba8fec6235607e8b2016863235cf"
+    }
+  ],
+  "geometry_file_sha256": "48564b12051a94571a0feaa4abb8c20208a835129a17707d4865e9da1371b5dd",
+  "review_basis": "Actual Blender native geometry render; no generated portrait substitution"
+}

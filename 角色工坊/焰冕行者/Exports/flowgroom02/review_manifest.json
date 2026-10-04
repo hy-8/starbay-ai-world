@@ -1,0 +1,31 @@
+{
+  "version": "flowgroom02",
+  "all_four_views_actually_inspected": true,
+  "conclusion": "保留截面/温和剪裁恢复覆盖，后发略细，仍偏圆，未取代19。",
+  "artistic_acceptance": false,
+  "status": "WIP, not reference-quality accepted art",
+  "images": [
+    {
+      "file": "01_Front.png",
+      "bytes": 1168808,
+      "sha256": "7025226dd3c044f5737d3ce8d9b1a8e42e58890ec11bf98772acb3ee686d09f6"
+    },
+    {
+      "file": "02_ThreeQuarter.png",
+      "bytes": 1176471,
+      "sha256": "b7721d7df5c52ef41f97a8c042776a226a6acc49595a036ca3721a3e2506b47f"
+    },
+    {
+      "file": "03_Side.png",
+      "bytes": 1159901,
+      "sha256": "e6bf8dd3f39c07a074f023c21eb80187b4428d096a85541b564ab657bd392564"
+    },
+    {
+      "file": "04_Back.png",
+      "bytes": 1183883,
+      "sha256": "ca51654a65138aab9be4137260aada5f35de7bf6f912081fb61ae42fef9a7245"
+    }
+  ],
+  "geometry_file_sha256": "31d5854fc7a179876ddc68ce522094d65ed5477dae6687271b60b5eec9f6a0bb",
+  "review_basis": "Actual Blender native geometry render; no generated portrait substitution"
+}

@@ -1,0 +1,16 @@
+{
+  "version": "smoothflow02",
+  "source": "scalpflow01",
+  "source_sha256": "1a5ee6b94b93b99f5c4f3dc57d426da9794061414e0549c03a6bf0861190f92d",
+  "method": "Actual per-lock median paths blended 78% spatial cubic, 22% old shape; retain true fiber offsets and exact roots",
+  "frontal_groups": 82,
+  "frontal_curves": 27760,
+  "exact_original_roots_preserved": true,
+  "base_clearance_repairs": 167,
+  "max_delta_m": 0.015262850114219403,
+  "samples": 192,
+  "draft": false,
+  "status": "unreviewed actual geometry study",
+  "license": "Project original frontal; Ddr Rcs Royalty Free rear; Bystedt CC BY-SA support; Abhay Pratap Royalty Free flow-derived scalp support",
+  "collision_scope": "Base clearance only, not exhaustive fiber/clothing/motion validation"
+}

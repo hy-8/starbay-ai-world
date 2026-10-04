@@ -1,0 +1,16 @@
+{
+  "version": "editorial16",
+  "all_output_images_actually_inspected": true,
+  "images": [
+    {
+      "file": "03_Portrait.png",
+      "bytes": 4511369,
+      "sha256": "0c0a66098a92b01a2fe54e214b35f0e4b731567603fe61a31e168386ba9d4860"
+    }
+  ],
+  "artistic_acceptance": false,
+  "status": "WIP, not reference-quality accepted art",
+  "conclusion": "真实头皮面积采样底发减少冠部露皮；82束空间三次路径减少前额交叉。但宽冠部、偏圆侧后、脸服通用感仍在。当前进度检查点，非最终作品。",
+  "render_basis": "Actual native Blender geometry; no image substitution",
+  "validation_scope": "Finite geometry, positive radii, texture structure only; not full collisions or animation"
+}

@@ -1,0 +1,19 @@
+{
+  "version": "scalpflow01",
+  "source": "regionalgroom19",
+  "source_sha256": "ae82c9e2dfea3969da475d9b813ade3dea7caee0fa269aa95dfb1ec1a433f15a",
+  "flow_source": "abhayfoundation01",
+  "flow_sha256": "4cc04211b138b172c01a3df17fc7b3e153a29ffcfc40ad5453c56397761f4500",
+  "method": "Area-weighted real scalp roots; nearest-six native flow tangents, parallel transport on real scalp; short support only",
+  "additional_native_curves": 14000,
+  "points_per_curve": 40,
+  "root_gap_min_m": 0.0005499426802657581,
+  "root_gap_max_m": 0.0005500585509139455,
+  "scalp_triangle_count": 4234,
+  "scalp_area_m2": 0.04563273850733708,
+  "draft": false,
+  "samples": 192,
+  "status": "unreviewed actual geometric study",
+  "collision_scope": "Exact root attachment and centerline surface projection; not exhaustive fibers/clothing/motion verification",
+  "license": "Abhay Pratap BlenderKit Royalty Free flow derivative; Ddr Rcs Royalty Free rear; Bystedt CC BY-SA short support retained; project original frontal"
+}

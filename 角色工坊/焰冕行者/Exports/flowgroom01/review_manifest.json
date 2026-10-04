@@ -1,0 +1,31 @@
+{
+  "version": "flowgroom01",
+  "all_four_views_actually_inspected": true,
+  "conclusion": "强剪裁造成侧后横向头皮暴露，否定。",
+  "artistic_acceptance": false,
+  "status": "WIP, not reference-quality accepted art",
+  "images": [
+    {
+      "file": "01_Front.png",
+      "bytes": 1150972,
+      "sha256": "aabe42a74df6d623bef83c7f1744f7759dc95b4d2a546a71938ff69ef7d3d2e4"
+    },
+    {
+      "file": "02_ThreeQuarter.png",
+      "bytes": 1160253,
+      "sha256": "189bab88a6b60ca122a93af37f853d965311221ea1b3165d239f66f33e3b25b8"
+    },
+    {
+      "file": "03_Side.png",
+      "bytes": 1149858,
+      "sha256": "3008841e53d2ca73f025b9ecaf37b88c9765b8c852a5888c1e113b54028067c8"
+    },
+    {
+      "file": "04_Back.png",
+      "bytes": 1169896,
+      "sha256": "a69cd4f44c75c003f5ac0e03a6d27c2ce59ff4c4fa017decf1ac40c8651fc52f"
+    }
+  ],
+  "geometry_file_sha256": "bbece3d132ed82dc7a51a076866a6a3b4f3a95372c8bf69cc971c8defabadc03",
+  "review_basis": "Actual Blender native geometry render; no generated portrait substitution"
+}

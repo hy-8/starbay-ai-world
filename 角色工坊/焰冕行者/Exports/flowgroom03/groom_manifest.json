@@ -1,0 +1,16 @@
+{
+  "version": "flowgroom03",
+  "source": "flowgroom02",
+  "front_source": "spatialfringe18",
+  "source_sha256": "31d5854fc7a179876ddc68ce522094d65ed5477dae6687271b60b5eec9f6a0bb",
+  "front_source_sha256": "6f9632320b03bacd9588bdeba4aa5b1065411e086db6f9605e2ea711b1d8b65f",
+  "processing_script_sha256": "07e1d7875b24c30e15326987b01f92ae76c5bcdbae1026a37c1d7739c71fe1b7",
+  "method": "Only replace actual frontal native curves; preserve existing side/nape and short scalp support",
+  "frontal_curves": 27760,
+  "draft": true,
+  "status": "unreviewed actual static study",
+  "license": "Project-authored frontal patches; retained side/nape Ddr Rcs Royalty Free and short support Bystedt CC BY-SA",
+  "collision_scope": "No extra clothing/animation verification by replacement",
+  "frontal_dry_roughness_matched": true,
+  "source_frontal_object": "Authored frontal revision \u2022 native scalp-patch geometry"
+}

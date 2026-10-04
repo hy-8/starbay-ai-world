@@ -1,0 +1,31 @@
+{
+  "version": "flowgroom03",
+  "all_four_views_actually_inspected": true,
+  "conclusion": "降低前额根部效果有限，顶部小缝稍明显，未采用。",
+  "artistic_acceptance": false,
+  "status": "WIP, not reference-quality accepted art",
+  "images": [
+    {
+      "file": "01_Front.png",
+      "bytes": 1163757,
+      "sha256": "471e0126998c611aa176e99a4a2a0f4b05584a946812a9323b82ffbe3fd7c146"
+    },
+    {
+      "file": "02_ThreeQuarter.png",
+      "bytes": 1171806,
+      "sha256": "c054b5462b692531f59ecac47bcb9f56a7fda99260bf70133f9baf133a8e4d84"
+    },
+    {
+      "file": "03_Side.png",
+      "bytes": 1155390,
+      "sha256": "0a4ffcf323a8d914f55662eda16af49d357ca6ad9c11ebdcf31cca551519719f"
+    },
+    {
+      "file": "04_Back.png",
+      "bytes": 1178594,
+      "sha256": "d0145094815c62063066c28e4f408aee3883894b93df7ecd21aee24a098c759e"
+    }
+  ],
+  "geometry_file_sha256": "feb1107ff7a196c10323caa40f7362b2f330c33814d6c6026836bbcd543ff29a",
+  "review_basis": "Actual Blender native geometry render; no generated portrait substitution"
+}

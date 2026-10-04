@@ -71,3 +71,13 @@ Tomáš Klecer 的 Hair Editor 功能资产包，官方功能包页面标为 CC0
 - 哈希与本地检查记录：`Source/hair_editor_sources.json`。
 
 拟合渲染没有通过检查，模板不包含在 `atelier09` / `editorial08` 中。不得把下载成功或模板存在写成高质量发型已实现。
+
+## 本轮自然原生发流试验：Abhay Pratap
+
+**Realistic Hair — Abhay Pratap**，BlenderKit官方元数据标记免费/validated，许可 **BlenderKit Royalty Free，非CC0**。版本ID `dc2bed6d-0cd8-43be-b94e-801688a39a18`，来源/哈希见 `Source/licensed_abhay_sources.json`，许可 https://www.blenderkit.com/docs/licenses/ 。
+
+实际读取10个普通CURVE对象/9,870条POLY发丝；原女模人体未导入项目。拟合世界坐标、沿生长剪裁、原生纤维转换，比较完整发型与短底层后，完整发型均未采用；当前smoothflow02/editorial16只新增依据该原生发流方向、在实际角色头皮面积采样并沿表面传输的短支持发丝。原/衍生几何留本地，不重发独立发型资产；GitHub仅加工脚本、非几何记录和实渲证据。
+
+> Natural scalp flow adapted from “Realistic Hair” by Abhay Pratap, BlenderKit Royalty Free (not CC0). Modified scalp fitting, actual growth-path cuts, native fibers, and surface-sampled short support flow. License: https://www.blenderkit.com/docs/licenses/ . Original/derived geometric assets retained locally.
+
+最新组合另含Ddr Rcs Royalty Free侧后、Bystedt CC BY-SA短支撑与项目原创前额；不能给整个模型贴单一CC0许可。图片仍是未验收制作证据。

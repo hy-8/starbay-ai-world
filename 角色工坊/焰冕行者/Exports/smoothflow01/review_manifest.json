@@ -1,0 +1,31 @@
+{
+  "version": "smoothflow01",
+  "all_four_views_actually_inspected": true,
+  "conclusion": "实际82束路径以空间三次曲线重梳，保留所有发根；前额交叉减少，整体仍偏圆/片状，草稿非成品。",
+  "artistic_acceptance": false,
+  "status": "WIP, not reference-quality accepted art",
+  "images": [
+    {
+      "file": "01_Front.png",
+      "bytes": 1172254,
+      "sha256": "d19d87ca237bb9873b79018e4041a0aecb0a2ec2e7e72d352f5994a76060ad74"
+    },
+    {
+      "file": "02_ThreeQuarter.png",
+      "bytes": 1180837,
+      "sha256": "2d849c2b735c4143c2c86de58a3f908efde2e22a0168462d409b8ebb41af1860"
+    },
+    {
+      "file": "03_Side.png",
+      "bytes": 1162658,
+      "sha256": "c996c87c52e2700108d452cde745489495e30a32f56dd6ee1fa19ec0accc1aab"
+    },
+    {
+      "file": "04_Back.png",
+      "bytes": 1187291,
+      "sha256": "20d5c9d70067fef834e52421a47ff5cc4cf7263baec41bbf6bcce8aa1e29f7be"
+    }
+  ],
+  "geometry_file_sha256": "cf867f9dbdb53a98f284664466f0de4422d8fbca7d794f242dfdd3f06c730e52",
+  "review_basis": "Actual Blender native geometry render; no generated portrait substitution"
+}

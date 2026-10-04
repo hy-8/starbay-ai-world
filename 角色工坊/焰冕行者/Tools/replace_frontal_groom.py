@@ -15,10 +15,12 @@ out.mkdir(parents=True);render.mkdir(parents=True)
 source=ROOT/'Exports'/source_version/'Ember_Regent.blend'
 front=ROOT/'Exports'/front_version/'Ember_Regent.blend'
 bpy.ops.wm.open_mainfile(filepath=str(source),use_scripts=False)
-old=bpy.data.objects.get('Authored spatial fringe • actual scalp root patches')
+canonical_name='Authored spatial fringe • actual scalp root patches'
+source_front_name=args[args.index('--source-frontal-name')+1] if '--source-frontal-name' in args else canonical_name
+old=bpy.data.objects.get(source_front_name)
 if old is None or old.hide_render:raise RuntimeError('Expected visible canonical frontal groom')
 old.hide_render=True;old.hide_viewport=True
-name=old.name
+name=canonical_name
 with bpy.data.libraries.load(str(front),link=False) as (available,loaded):
     if name not in available.objects:raise RuntimeError('Frontal candidate missing')
     loaded.objects=[name]
@@ -40,6 +42,7 @@ scene.cycles.device='GPU';scene.cycles.samples=64 if DRAFT else 192;scene.cycles
 scene.render.resolution_x=1200;scene.render.resolution_y=1400;scene.render.resolution_percentage=80 if DRAFT else 100
 report=dict(version=version,source=source_version,front_source=front_version,source_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),front_source_sha256=hashlib.sha256(front.read_bytes()).hexdigest(),processing_script_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),method='Only replace actual frontal native curves; preserve existing side/nape and short scalp support',frontal_curves=len(new.data.curves),draft=DRAFT,status='unreviewed actual static study',license='Project-authored frontal patches; retained side/nape Ddr Rcs Royalty Free and short support Bystedt CC BY-SA',collision_scope='No extra clothing/animation verification by replacement')
 report['frontal_dry_roughness_matched']='--dry-groom' in args
+report['source_frontal_object']=source_front_name
 (out/'groom_manifest.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
 bpy.ops.wm.save_as_mainfile(filepath=str(out/'Ember_Regent.blend'))
 for name in ['01_Front','02_ThreeQuarter','03_Side','04_Back']:

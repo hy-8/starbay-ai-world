@@ -1,0 +1,35 @@
+{
+  "asset_name": "Realistic Hair",
+  "author": "Abhay Pratap",
+  "provider": "BlenderKit",
+  "asset_version_id": "dc2bed6d-0cd8-43be-b94e-801688a39a18",
+  "asset_base_id": "44b2f4f2-a632-4639-956e-e946cdc02bbc",
+  "official_metadata_endpoint": "https://www.blenderkit.com/api/v1/assets/dc2bed6d-0cd8-43be-b94e-801688a39a18/",
+  "is_free": true,
+  "verification_status": "validated",
+  "acquisition": "Official public free download endpoint; source opened with automatic scripts disabled",
+  "source_local_file": "Source/BlenderKitResearch/Abhay_RealisticHair.blend",
+  "source_sha256": "016558262252e29d841eadc87cc12554d26b6800734939deac693c9cf2bb9c1e",
+  "source_bytes": 13366164,
+  "license": "BlenderKit Royalty Free, not CC0",
+  "license_source": "https://www.blenderkit.com/docs/licenses/",
+  "local_policy": "Source and derivative geometry remain local. Sync processing scripts, attribution, non-geometric manifests and reviewed project renders only.",
+  "inspected_geometry": {
+    "ordinary_curve_objects": 10,
+    "poly_splines": 9870,
+    "native_textures_used": false,
+    "typical_points_per_spline_samples": [
+      105,
+      129
+    ]
+  },
+  "modifications": [
+    "Read actual world transforms without adding canceled object offsets",
+    "Fit real spline hair to retained scalp, cut by growth arc and convert into fine native CURVES",
+    "Test short layered crown plus original lower brow/temple subsets",
+    "Test source-flow short surface foundation and independently area-sampled real scalp roots"
+  ],
+  "mixed_component_note": "Original frontal controls remain project-authored; retained Ddr Rcs rear uses Royalty Free; Bystedt short support retains CC BY-SA, unspecified version in inspected evidence.",
+  "artistic_status": "Local unapproved modeling studies, not reference-quality character art",
+  "preview_note": "RealisticHair_preview.png is the author preview, not project output; remains local. No source female body is imported into the project."
+}

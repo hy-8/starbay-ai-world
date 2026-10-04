@@ -1,0 +1,31 @@
+{
+  "version": "smoothflow02",
+  "all_output_images_actually_inspected": true,
+  "images": [
+    {
+      "file": "01_Front.png",
+      "bytes": 1701476,
+      "sha256": "0d7c9ec31e4c4b5d00c89ccab2a4021230facaf7c2749b7c2a4a1df72aaf80ab"
+    },
+    {
+      "file": "02_ThreeQuarter.png",
+      "bytes": 1710100,
+      "sha256": "41382218285c561247fe31b8bbfe855729c44d13db6c831c38656ac176f6ebbc"
+    },
+    {
+      "file": "03_Side.png",
+      "bytes": 1679382,
+      "sha256": "ccec7bb8c59d7cca646b06851852edbd9018a9399505010e98d441b3d69713b1"
+    },
+    {
+      "file": "04_Back.png",
+      "bytes": 1738726,
+      "sha256": "3385ebeb7b05fd8c627d082f82d83882041e6564c0812564c954c2eb2037e3f7"
+    }
+  ],
+  "artistic_acceptance": false,
+  "status": "WIP, not reference-quality accepted art",
+  "conclusion": "真实头皮面积采样底发减少冠部露皮；82束空间三次路径减少前额交叉。但宽冠部、偏圆侧后、脸服通用感仍在。当前进度检查点，非最终作品。",
+  "render_basis": "Actual native Blender geometry; no image substitution",
+  "validation_scope": "Finite geometry, positive radii, texture structure only; not full collisions or animation"
+}
