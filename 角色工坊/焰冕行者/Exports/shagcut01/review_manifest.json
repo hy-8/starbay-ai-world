@@ -1,0 +1,46 @@
+{
+  "version": "shagcut01",
+  "actual_model_sha256": "3db0d22fe507c080f10d09a6a621b306a73f7bd09a45fbc4721f18b3d7cbebe8",
+  "images": [
+    {
+      "file": "Renders/shagcut01/01_Front.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "fca3bb56d0b90122637dc216d02df1726fd0a899a49032ed4b6a40063765c09b",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/shagcut01/02_ThreeQuarter.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "35ecb0e3505680289c6360b3a2171a69fc090fceb5897edd53855fdd6f496394",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/shagcut01/03_Side.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "fbca0ed7f0440d597e91e2e038a2ef459d4d9e7e66fbfa5a6c331ded92a89170",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/shagcut01/04_Back.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "60322abe4d55dce6afb13583b98d657feb792ee24090e1438111d8f2e8aa0531",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Four draft views inspected. Bangs too short; personal cuts were not correctly applied to center paths. Rejected experiment, not successful staggered length evidence.",
+  "artistic_acceptance": false,
+  "status": "Reviewed actual hair study, unfinished",
+  "validation_boundary": "Finite data and source-paired invariants recorded separately; no exhaustive collision/motion or reference-quality acceptance"
+}

@@ -1,0 +1,46 @@
+{
+  "version": "shagcut05",
+  "actual_model_sha256": "f8e081623f7441daad8de60f34d0f96668fe1d81233a39ca9c02531e86a4b78d",
+  "images": [
+    {
+      "file": "Renders/shagcut05/01_Front.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "5e7bb359eeddde1812ed979a763d8f5fbd99b5bcca81904f9f0a17faa0623a80",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/shagcut05/02_ThreeQuarter.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "8f5b453a1d8de2fd7d1a40a80430af39f0ddf371a399866efdd61653a6d6ecf0",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/shagcut05/03_Side.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "e0cc52a25e6c1673f33afaa0b9598fd02aab8a7d3393d8757e4fff87a2b39f01",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/shagcut05/04_Back.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "65154d4389dfb64d509e4e45e62b6739394b0bbce232eed5eb7df0206e836dc6",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Four 1200x1400/192-sample views inspected, no denoising. Front adjacent-root crown sublocks narrowed without shortening center paths; rear from04 retained. Feathered upper edges improved; broad crown, rounded/striped rear and thin nape tails remain. Current WIP checkpoint, not accepted.",
+  "artistic_acceptance": false,
+  "status": "Reviewed actual hair study, unfinished",
+  "validation_boundary": "Finite data and source-paired invariants recorded separately; no exhaustive collision/motion or reference-quality acceptance"
+}

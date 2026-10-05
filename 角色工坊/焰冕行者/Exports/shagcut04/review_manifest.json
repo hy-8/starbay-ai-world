@@ -1,0 +1,28 @@
+{
+  "version": "shagcut04",
+  "actual_model_sha256": "42803f61c16fea73148804e99deea29d74a4e5333337b5412ffc76ebed6169c7",
+  "images": [
+    {
+      "file": "Renders/shagcut04/03_Side.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "d0c99bf844d3e6e9232051576ee577c79a6152479149f5bc83862d6fa5487e0c",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/shagcut04/04_Back.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "89cea1773b74c9b8d1645e196f4f7a1ad7020ed0464ecb43dd1d9d5d67a68811",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Two side/back drafts inspected. Explicit upper posterior tips detach horizontally and turn upward; lower nape retained. More feathered upper silhouette, rounded mid/rear and regular lower flows remain. Progress only.",
+  "artistic_acceptance": false,
+  "status": "Reviewed actual hair study, unfinished",
+  "validation_boundary": "Finite data and source-paired invariants recorded separately; no exhaustive collision/motion or reference-quality acceptance"
+}

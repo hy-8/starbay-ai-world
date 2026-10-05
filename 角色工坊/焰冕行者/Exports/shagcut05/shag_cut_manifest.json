@@ -1,0 +1,45 @@
+{
+  "version": "shagcut05",
+  "source": "shagcut04",
+  "source_sha256": "42803f61c16fea73148804e99deea29d74a4e5333337b5412ffc76ebed6169c7",
+  "method": "Actual arc-length layered cuts, adjacent-root crown subdivisions, independently staggered fiber lengths and narrower ends; retain short scalp coverage",
+  "components": [
+    {
+      "object": "Authored frontal revision \u2022 native scalp-patch geometry",
+      "curves": 27760,
+      "local_groups": 110,
+      "exact_roots_preserved": true,
+      "actual_fiber_arc_before_quantiles_m": [
+        0.05677609145641327,
+        0.11693650111556053,
+        0.17648845314979553,
+        0.21777641773223877
+      ],
+      "actual_fiber_arc_after_quantiles_m": [
+        0.06144704669713974,
+        0.11468490213155746,
+        0.17019819393754004,
+        0.20509490370750427
+      ],
+      "maximum_displacement_m": 0.015114068053662777,
+      "positions_before_sha256": "ddc580e482993f54ecb73982d22c6cfcb0c0f93fcbb01597eb3dd21e9213095b",
+      "positions_after_sha256": "fa8f6fac00045fa4f258212c4a29afd0d192df12d19ce81daaf4c07550fffb68"
+    }
+  ],
+  "front_only": true,
+  "rear_only": false,
+  "gentle": false,
+  "coverage_only": false,
+  "keep_front_length": true,
+  "preview": false,
+  "personal_cut_applied_to_center_paths": true,
+  "feathered_flow": false,
+  "median_study_paths": 110,
+  "guide_status": "Baked evidence only; not live-linked",
+  "status": "Unreviewed real 3D hair study; no artistic or animation approval",
+  "collision_scope": "Every fourth interior hair point with smoothed correction; not exhaustive scalp/eyes/clothes/strand or motion verification",
+  "license": "Modified front/posterior fibers original; retained Bystedt CC BY-SA and Abhay Pratap Royalty Free short support unchanged; hidden licensed donor geometry local",
+  "samples": 192,
+  "draft": false,
+  "denoising": false
+}

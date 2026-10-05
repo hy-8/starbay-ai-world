@@ -1,0 +1,13 @@
+{
+  "version": "oppositegroom03",
+  "source": "shagcut05",
+  "images": [
+    {
+      "file": "Renders/oppositegroom03/05_OppositeSide.png",
+      "sha256": "79407bd562c1ff20a232ea51ce9ebc9cae8c375a333e9767b9c7af0739c826cf",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Actual opposite camera inspected, no pixel flip. More upper feathers; rounded mid/lower posterior and regular nape remain. Source unchanged, WIP.",
+  "artistic_acceptance": false
+}

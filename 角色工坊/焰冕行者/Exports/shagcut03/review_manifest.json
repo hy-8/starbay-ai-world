@@ -1,0 +1,28 @@
+{
+  "version": "shagcut03",
+  "actual_model_sha256": "44971ff5b70d7c4dbd58b74889b0d2f786b2a461a933fe2338e01add9c0b696a",
+  "images": [
+    {
+      "file": "Renders/shagcut03/03_Side.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "58378b0fb67eed2590abd48bfecbda5065e0aae85eccadfdad9d762482285676",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/shagcut03/04_Back.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "3c6971b2a7a9d78de4e1aa98f411b0018167fb739b410ce1c8251457e3696563",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Two side/back drafts inspected. 36k coverage fibers shortened along old paths to18..29mm, without new contact-repair sampling. External silhouette changes negligibly; coverage is not the main rounded-shell cause. Not selected.",
+  "artistic_acceptance": false,
+  "status": "Reviewed actual hair study, unfinished",
+  "validation_boundary": "Finite data and source-paired invariants recorded separately; no exhaustive collision/motion or reference-quality acceptance"
+}
