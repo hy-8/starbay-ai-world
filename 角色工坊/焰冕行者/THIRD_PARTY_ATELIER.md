@@ -113,3 +113,6 @@ fabfit01—04均未通过目标艺术验收，稳定基础不变。原始头皮�
 
 
 2026-10-05 nativebranches07/nativeaffine08/nativefront09/nativefrontwave10/nativefinish11/nativepart12 为现有Bystedt衍生毛发的本地几何/材质研究，CC BY-SA（原来源版本未指定）。Abhay/原创短支撑保留。Fab来源原文件不变，Standard/NoAI且非CC0，未送入神经重建。原/衍生几何与导向坐标不上传；仅加工代码、非几何聚合记录和角色实渲同步。目标未验收。
+
+
+2026-10-06：nativeunderflow14 延展本地已授权Abhay短底发；15/17/18修改Bystedt主发（CC BY-SA，来源版本未指定），来源/衍生几何留本地。原Fab Standard/NoAI文件哈希保持，未用作神经重建输入。组件ID/聚合点深度仅梳理诊断，512样本图为实际Cycles+OpenImageDenoise，无AI肖像替代或作品验收。

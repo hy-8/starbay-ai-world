@@ -1,0 +1,11 @@
+{
+  "status": "Actual high-sample render inspected; not art acceptance",
+  "judgment": "Less sampling grain and more readable fine fibers; broad crown structure still visible. Denoising improves presentation, not geometric acceptance.",
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "source_sha256": "dc02906ce699f9149f430db21b00c53ac396449cae1062ee2f75e428f3117edb"
+}

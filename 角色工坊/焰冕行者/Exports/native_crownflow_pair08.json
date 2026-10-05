@@ -1,0 +1,18 @@
+{
+  "source": "nativeunderflow14",
+  "source_sha256": "d400c1977ba21a9423ea08ce74f89ddc3aa7f1da84090b1fe501b58ac13e3b52",
+  "candidate": "nativecrownflow17",
+  "candidate_sha256": "dbe519dc33b9be4405a592cbae33b72eb1857da17d9e6fc9fd51b5229870f941",
+  "mesh_count": 141,
+  "mesh_geometry_uv_shape_keys_transforms_exact": true,
+  "visible_native_objects": 4,
+  "curves_finite_radii_positive_textures_available": true,
+  "edited_object": "Bystedt layercut derivative \u2022 native root reflow",
+  "edited_fibers": 3593,
+  "all_radii_topology_transforms_exact": true,
+  "all_roots_exact": true,
+  "unselected_fibers_exact": true,
+  "other_native_objects_exact": true,
+  "max_displacement_m": 0.19185586273670197,
+  "scope": "Static localized file comparison. Not art, segment/body/eye/clothing/animation collision acceptance."
+}

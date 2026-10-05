@@ -322,3 +322,11 @@ sintelfit01/02/03的九张角色实渲均已查看：960×1120、Cycles/OptiX64 
 - Scalp-fitted diagonal fringe with 231 sections and small layered waves; all five neutral views inspected, target quality still unmet. Continue sculpting from nativefrontwave10, preserve backups.
 - Rejected shader-only and local part-cover controls after actual paired renders. Six static character/curve checks and localized source comparison pass within their stated scope.
 - No animation, UE migration, candidate Release, paid service or artwork acceptance. Raw/derived geometry remains local.
+
+
+### 2026-10-06 · Undercoat attribution and side/back layered cut (WIP)
+
+- Actual component IDs identify exposed Abhay undercoat; extend local fibers into a scalp-following side layer.
+- Preserve fringe and layer 38,176 existing side/back shafts using measured root/end-flow partitions. Five neutral views inspected; crown bands and part still require work. Rejected flat crown reflow.
+- Four localized file comparisons pass within their stated static scope. Actual 1920×2240/512-sample denoised Cycles presentation inspected; no geometry/lighting substitution or art acceptance.
+- Continue from nativelayerflow18; preserve old candidates/source geometry locally. No new fee, animation, UE migration, candidate Release or social posting.

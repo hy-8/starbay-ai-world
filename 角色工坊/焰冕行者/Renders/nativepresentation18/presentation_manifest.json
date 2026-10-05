@@ -1,0 +1,15 @@
+{
+  "source": "nativelayerflow18",
+  "source_sha256": "dc02906ce699f9149f430db21b00c53ac396449cae1062ee2f75e428f3117edb",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "a72df5a63d5e0e80b4c720db96a44f44a7b762f90657f003386d081193d10cae",
+  "status": "Actual render pending art review; no generative image replacement"
+}

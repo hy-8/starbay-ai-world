@@ -1,0 +1,17 @@
+{
+  "source": "nativeunderflow14",
+  "source_sha256": "d400c1977ba21a9423ea08ce74f89ddc3aa7f1da84090b1fe501b58ac13e3b52",
+  "changed_fibers": 17379,
+  "method": "Real follicle elevation bands .66/.78/.90 arc-length cuts, preserved full-length lower back, narrowed cut tips and soft 4mm final feather flick",
+  "scope": "Cut-length design only; no exhaustive collision or artistic approval",
+  "status": "Actual renders inspected; target incomplete",
+  "art_judgment": "17,379 fibers cut by upper-root height bands. Three actual views show limited impact on broad mid-crown/back. Do not advance independently.",
+  "model_sha256": "d1793891344fc1f3d77ca9219364743a1a2f4c2f2d8282e0e466a6ebe612d3b2",
+  "sections_count": 472,
+  "original_manifest_local": "crown_cut_manifest.json",
+  "inspected_images": {
+    "02_ThreeQuarter.png": "2c62340c80f69557fcbe0dfe964d05741c0eeca8a81bf623d57c16a9c2e54821",
+    "03_Side.png": "1e172c008c9418f8bf807e8b17374c2e9f331e97ae923562aeae776afc53d13d",
+    "04_Back.png": "50629e370a6f11eba96c5c031b25536d48aabb22afa08a4c1b3b4888c026051c"
+  }
+}

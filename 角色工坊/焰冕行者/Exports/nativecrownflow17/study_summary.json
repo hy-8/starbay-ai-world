@@ -1,0 +1,16 @@
+{
+  "source": "nativeunderflow14",
+  "source_sha256": "d400c1977ba21a9423ea08ce74f89ddc3aa7f1da84090b1fe501b58ac13e3b52",
+  "changed_fibers": 3593,
+  "method": "Actual 8mm root sections, intermediate side layer from measured scalp arcs; primary mode adds small coherent waves and leaves the designed fringe unchanged",
+  "scope": "Static discrete body points only; not full hair segments/eye/clothing/animation or art acceptance",
+  "status": "Actual renders inspected; target incomplete",
+  "art_judgment": "3,593 short-tip main shafts / 97 root sections reflowed down the sides. Two actual views show flatter/blockier top, rejected.",
+  "model_sha256": "dbe519dc33b9be4405a592cbae33b72eb1857da17d9e6fc9fd51b5229870f941",
+  "sections_count": 97,
+  "original_manifest_local": "undercoat_flow_manifest.json",
+  "inspected_images": {
+    "05_OppositeSide.png": "da8f31970f341358287da6a0d10117e154cb0a5bc1216350943e44a9c1f685e4",
+    "02_ThreeQuarter.png": "74a840fc1705ecdbc93cda032dde4dc2cd2e4aeafc32b90d8efea11ee1e90fab"
+  }
+}

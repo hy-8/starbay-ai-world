@@ -1,0 +1,16 @@
+{
+  "source": "nativefrontwave10",
+  "source_sha256": "251b69d984725b1cb61a5f8e757196dd7e2692e05ae871d8b1dbfa7bf11badb2",
+  "changed_fibers": 4179,
+  "method": "Component-ID-led actual short undercoat follicles, 8mm root sections, intermediate side layer from measured scalp arcs",
+  "scope": "Static discrete body points only; not full hair segments/eye/clothing/animation or art acceptance",
+  "status": "Actual renders inspected; target incomplete",
+  "art_judgment": "IDs show exposed short Abhay undercoat. 4,179 fibers / 335 root sections extended into a side layer; pale part reduced in two actual views. Local improvement, incomplete target.",
+  "model_sha256": "d400c1977ba21a9423ea08ce74f89ddc3aa7f1da84090b1fe501b58ac13e3b52",
+  "sections_count": 335,
+  "original_manifest_local": "undercoat_flow_manifest.json",
+  "inspected_images": {
+    "05_OppositeSide.png": "315de4a3e485977c16c664eda42a9daf549f33751c3489522b6638576c4cf45d",
+    "02_ThreeQuarter.png": "8b2761760c852d0487ac280be92ee85ef5dbf854eee87e28153a455e7499788a"
+  }
+}

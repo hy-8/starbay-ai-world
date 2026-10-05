@@ -1,0 +1,17 @@
+{
+  "source": "nativeunderflow14",
+  "source_sha256": "d400c1977ba21a9423ea08ce74f89ddc3aa7f1da84090b1fe501b58ac13e3b52",
+  "changed_fibers": 38176,
+  "method": "Root/end-flow partitions, continuous .75-.98 arc-length layers, small 6mm coherent cross-flow wave by actual scalp angle/elevation, narrowed ends; designed fringe retained",
+  "scope": "Cut-length design only; no exhaustive collision or artistic approval",
+  "status": "Actual renders inspected; target incomplete",
+  "art_judgment": "38,176 non-frontal shafts / 2,618 root/end-flow partitions, continuous .75-.98 arc-length cuts and small coherent cross-flow wave. Side/nape tips more separated. Five actual neutral views inspected; broad upper bands and pale part still remain. New continuation WIP only.",
+  "model_sha256": "dc02906ce699f9149f430db21b00c53ac396449cae1062ee2f75e428f3117edb",
+  "sections_count": 2618,
+  "original_manifest_local": "crown_cut_manifest.json",
+  "inspected_images": {
+    "02_ThreeQuarter.png": "405ef1823d1ef5c1fa0808c3059faaf826e30f7357f5399ff7c6a25f42838169",
+    "03_Side.png": "ffb7d02ca5008c9f27339e21c0161179d40a13a84300a0089fc68ce6ffba62c8",
+    "04_Back.png": "652a9194358fff6309ff6d6581a4e67c81f4e565c9996abafeb94e79fb81f717"
+  }
+}
