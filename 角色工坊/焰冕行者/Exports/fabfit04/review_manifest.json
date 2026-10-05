@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-05",
+  "version": "fabfit04",
+  "images_sha256": {
+    "02_ThreeQuarter.png": "00c57ad5886398cb7e1542e59d3160b7320ef39b834e102c781540b7171f7b77",
+    "03_Side.png": "32af688695c50bef744099b8664da2ad9c1d2702b857f77eb031d887910d293f",
+    "04_Back.png": "8a57c155b51f399cd2c68c623b5f74e3e6bcdfa60845e4e557550af4c5f5abb7"
+  },
+  "all_listed_images_actually_inspected": true,
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 64,
+  "denoising": false,
+  "verdict": "Rejected for advancement: exact same new geometry as 03, original directional shader tinted red reduces pink fuzz but creates dark/light component mismatch and does not fix round rear.",
+  "artistic_goal_completed": false
+}

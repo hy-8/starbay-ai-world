@@ -1,5 +1,23 @@
 # 红发角色 · 更换发型方法记录
 
+## 2026-10-05 · Fab 专业资产的短路径与材质诊断
+
+实际来源：Muzammil, Free Medium Layered HairStyle for MetaHuman - MHPKG，Fab Standard / NoAI；原/衍生几何留本地，不作生成模型输入。`Source/FabMediumLayered/acquisition.json` 保存来源/用户同意/文件 SHA，无签名下载 URL 或账号内容。
+
+工具顺序：`inspect_fab_groom.py` → `bake_fab_groom.py -- fabcontrol01` → `fit_fab_groom.py -- 新版本 [--hybrid --longback --retain-support --source-response]`。只在全新版本目录运行。`render_fab_particle_control.py` 是固定名字的一次性源对照，已执行，不重跑覆盖。`validate_fab_studies.py` 是四个已保存候选的只读检查，也拒绝覆盖已有报告。
+
+源粒子设置 count=0，但实际已保存粒子是 17,012 / 15,926 / 21,826，不应根据 count=0 判为空文件。世界路径在刷新求值后可读；三个系统都是连续 33 点，没有丢短子发。后方长度中位 25.6 mm、两侧 28.8 mm、冠前 31.5 mm。这是大量分布在头皮上的短轨迹，不能只凭商品名「Medium Layered」断言已经有目标的长而松散的层次。
+
+| 候选 | 已查看的实渲及判断 |
+| --- | --- |
+| fabfit01 | 完整发型，原始流向/长度，投影目标根；三视角。贴头短发，未采用。 |
+| fabfit02 | 保留原创刘海；现有后轨迹×3、侧轨迹×2.6，半径55µm；三视角。长度增加但底发隐藏导致大块头皮暴露，否定。 |
+| fabfit03 | 恢复已有短覆盖，侧根阈值扩到 y>−65 mm；三视角。衔接露头皮减轻，但仍蓬直圆帽，未采用。 |
+| fabfit04 | 与03新毛发的几何/半径/变换完全相同；仅导入源 Hair 材质，改红色渐变；三视角。降低粉色雾状高光，产生组件明暗不一致，没有解决轮廓。 |
+
+原始粒子材质/半径控制也已实际渲染两张；它与原生控制的粗细、材质和光向不同，不能直接把所有图片差异归于某一个变量。真正的材质单变量比较仅03/04；完整路径哈希验证相同。所有草稿不是成品图，也不把更多发丝或更高采样当成通过艺术验收。
+
+
 ## 2026-10-05 · 切线弯曲分束与后枕体积对照（未通过作品验收）
 
 工具：`Tools/style_posterior_rollers.py`，每版独立从napeunderlay02读取，不能在已有目录重跑。默认分区只塑形高根；`--loose-tips`降低中段弯度并开放末梢；`--tuck-occipital`对所有合格后发点按实际头部法线收拢；`--whole-rear`加入下层独立浅S弯；`--restore-nape-length`恢复部分长下层最多45mm。留住原发根，重做修改曲线末梢半径。隐藏可编辑POLY构造线并非实时Groom链接，也不是最终包络修正后的毛发中心线。

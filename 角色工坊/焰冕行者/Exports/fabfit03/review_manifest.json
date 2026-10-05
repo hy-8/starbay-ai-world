@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-05",
+  "version": "fabfit03",
+  "images_sha256": {
+    "02_ThreeQuarter.png": "d27f233aa830834a6c7a08f9bd054a839854a23ab50a93ecaa5156af6851cccb",
+    "03_Side.png": "965d3b45eceb86efa4b200bdf8c90fed7d2d2c5ca50d0c40225cfe726ef8e052",
+    "04_Back.png": "fcc7d49e9829dc505dc1dedd2119118c64533a32e470f221f791b3aead8612d9"
+  },
+  "all_listed_images_actually_inspected": true,
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 64,
+  "denoising": false,
+  "verdict": "Rejected for advancement: retained short supports reduce exposed scalp, but enlarged rear remains round, straight and fluffy; not target shag.",
+  "artistic_goal_completed": false
+}

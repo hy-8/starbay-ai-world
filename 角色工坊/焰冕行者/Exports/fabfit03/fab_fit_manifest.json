@@ -1,0 +1,74 @@
+{
+  "source": "napeunderlay02",
+  "source_sha256": "f99bd15ad542205b562e4d01a435f7039d598282e27ced6dc020b4cd3a84c1e4",
+  "cache_sha256": "b2999c243601c69fedef02ffffd07bd7738fbfd5c18cba5741dc9449a30c4b64",
+  "method": "Existing licensed particle paths, original flow retained. Each root projected to evaluated target body; full strand translated; discrete point guard.",
+  "affine_translation_m": [
+    0,
+    -0.025,
+    1.785
+  ],
+  "root_correction_quantiles_m": [
+    8.027841551234123e-08,
+    0.004753213603771212,
+    0.021234446543449456,
+    0.0325669567797062,
+    0.036252892685329774
+  ],
+  "point_guard_repairs": 50371,
+  "maximum_guard_repair_m": 0.0203446665452444,
+  "components": [
+    {
+      "object": "Muzammil Fab Standard \u2022 Curves-Back",
+      "curves": 17012
+    },
+    {
+      "object": "Muzammil Fab Standard \u2022 Curves-Sides",
+      "curves": 14495
+    },
+    {
+      "object": "Muzammil Fab Standard \u2022 Curves-Front",
+      "curves": 13062
+    }
+  ],
+  "old_hidden_objects": [
+    "Original nape underlay 00",
+    "Original nape underlay 01",
+    "Original nape underlay 02",
+    "Original nape underlay 03",
+    "Original nape underlay 04",
+    "Original nape underlay 05",
+    "Original nape underlay 06",
+    "Original nape underlay 07",
+    "Original nape underlay 08",
+    "Original nape underlay 09",
+    "Original nape underlay 10",
+    "Original nape underlay 11",
+    "Original nape underlay 12",
+    "Original nape underlay 13",
+    "Original nape underlay 14",
+    "Original nape underlay 15",
+    "Original nape underlay 16",
+    "Original nape underlay 17",
+    "Original nape underlay 18",
+    "Original nape underlay 19",
+    "Original nape underlay 20",
+    "Original nape underlay 21",
+    "Original nape underlay 22",
+    "Original nape underlay 23",
+    "Original nape underlay 24",
+    "Original nape underlay 25",
+    "Original nape underlay 26",
+    "Original nape underlay 27",
+    "Original posterior shag \u2022 distributed surface roots"
+  ],
+  "layered_cut": false,
+  "retained_original_front": true,
+  "retained_existing_short_support": true,
+  "existing_side_back_length_scale": [
+    3.0,
+    2.6
+  ],
+  "collision_scope": "Discrete hair points nearest body only; not complete segments, clothes, eyes or animation",
+  "status": "Unreviewed real 3D candidate"
+}

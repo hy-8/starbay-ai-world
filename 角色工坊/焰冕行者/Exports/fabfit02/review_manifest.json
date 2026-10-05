@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-05",
+  "version": "fabfit02",
+  "images_sha256": {
+    "02_ThreeQuarter.png": "60161ddc918a9bfaa249790ddbdc6d47ff846b1b4dce493dc3c7918df2017acc",
+    "03_Side.png": "d5e7a1081454616d2e1fdf1c61fbc341743fd38d63ad22b2a1d0a2b431d711d2",
+    "04_Back.png": "44d95b8561ac99a8d18b6812d93f62ea35f8a1a4fffde904b591684f969cf05c"
+  },
+  "all_listed_images_actually_inspected": true,
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 64,
+  "denoising": false,
+  "verdict": "Rejected: longer rear with original fringe retained leaves front/crown gaps after hiding short supports.",
+  "artistic_goal_completed": false
+}

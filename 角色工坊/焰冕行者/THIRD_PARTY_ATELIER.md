@@ -98,3 +98,11 @@ Tomáš Klecer 的 Hair Editor 功能资产包，官方功能包页面标为 CC0
 容器内Scthe代码、Unity着色器、Vincent Page发卡、NC-SA睫毛各有独立许可，不给整包声明CC BY或CC0；这些组件未采用，源自动脚本未执行。03保留旧原创前额，其他旧许可毛发隐藏但未删除，不改其归属。
 
 > Hair flow derived from original Sintel (Blender Foundation / Durian), Sintel Lite by BenDansie, CC BY 3.0. Source container supplied by Scthe, unity-hair. Modified particle-path extraction, native curves, head fit, regional cuts and red hair materials. https://durian.blender.org/sharing/ — https://creativecommons.org/licenses/by/3.0/
+
+## 免费 Fab 毛发的本地研究
+
+Free Medium Layered HairStyle for MetaHuman - MHPKG — Muzammil。https://www.fab.com/listings/a87649a9-ae53-4d58-84b7-b4cdd47151fc ，Fab Standard License https://www.fab.com/eula ，NoAI，非CC0。用户于2026-10-05明确同意该免费资产的EULA，实际费用0。
+
+本轮关闭源自动脚本，从 Blender 版提取已有粒子轨迹，转为原生曲线、在角色实际身体表面拟合根、延长侧后、改红色材质、做离散身体保护。普通脚本仅操作既有内容；没有送入生成模型、训练集或生成AI开发。04另导入原始方向性 Hair 材质并改变红色渐变。来源哈希与边界见 Source/FabMediumLayered/acquisition.json。
+
+fabfit01—04均未通过目标艺术验收，稳定基础不变。原始头皮只在源控制图使用，没有导入人物身体；旧许可组件隐藏但未删除，03/04恢复的Bystedt/Abhay等短支撑仍依其原许可。原/衍生几何留本地，不出售或分发成独立发型包。GitHub仅审查代码、非几何清单和项目渲染证据；没有新的候选Release。

@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-05",
+  "version": "fabcontrol01",
+  "images_sha256": {
+    "01_SourceThreeQuarter.png": "d4495760e6e58507fc4aa89e39b33b8f7ee323298eedbf4a1ed177fd8f9d2f63",
+    "02_SourceBack.png": "c22eb5ead47cee654e1856150be9bdeda9374d1b2797c3b5e8a2aca1a1dcbdf5"
+  },
+  "all_listed_images_actually_inspected": true,
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 64,
+  "denoising": false,
+  "verdict": "Source-only: complete native paths read successfully; short smooth source style differs from reference.",
+  "artistic_goal_completed": false
+}

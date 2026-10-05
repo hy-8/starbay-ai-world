@@ -1,0 +1,20 @@
+{
+  "title": "Free Medium Layered HairStyle for MetaHuman - MHPKG",
+  "author": "Muzammil",
+  "listing": "https://www.fab.com/listings/a87649a9-ae53-4d58-84b7-b4cdd47151fc",
+  "license": "Fab Standard License; not CC0",
+  "license_url": "https://www.fab.com/eula",
+  "no_ai_tag": true,
+  "price_paid": 0,
+  "legal_acceptance": "Human explicitly accepted this specific listing's Fab EULA on 2026-10-05; browser acceptance submitted after that response.",
+  "file_delivery": "Automated browser displayed Done without a usable local path. User then supplied hairstyle.blend in the requested local source folder; existence and hash checked.",
+  "source_file": "hairstyle.blend",
+  "source_bytes": 5343277,
+  "source_sha256": "0adca6484a4d6c51c3dfd33e5d13ed42f3bf44cae3fcea8f4aa10c710077ecd4",
+  "source_header": "Blender 5.1; read-only inspection and path extraction with Blender 4.5.9, source unchanged, automatic script execution disabled.",
+  "actual_particle_groups": {"Curves-Back": 17012, "Curves-Sides": 15926, "Curves-Front": 21826},
+  "observed_style_limit": "Source particle paths mostly 2-4 cm. The untouched fit looks short and slick on the target, not the required medium layered reference. Download completion is not art acceptance.",
+  "processing": "Ordinary deterministic scripts operate on existing content only: particle-path readout, native-curve conversion, scalp fitting, material assignment, regional length edits. No generative model input, training, or dataset use.",
+  "distribution": "Original and derived geometric source assets remain local. Do not sell or redistribute as standalone groom assets. Project renders and processing code can be reviewed separately.",
+  "metadata_scope": "Provenance and aggregate observations only; no credentials, signed download URLs or source geometric arrays."
+}

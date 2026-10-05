@@ -1,0 +1,142 @@
+{
+  "source_sha256": "f99bd15ad542205b562e4d01a435f7039d598282e27ced6dc020b4cd3a84c1e4",
+  "studies": [
+    {
+      "version": "fabfit01",
+      "file_sha256": "32b80c540e3376372b2531d3faae874b52fcf9245fa05faa9b2879bf296d31f4",
+      "all_original_mesh_geometry_uv_shape_keys_transforms_preserved": true,
+      "original_mesh_count": 141,
+      "new_grooms": [
+        {
+          "object": "Muzammil Fab Standard \u2022 Curves-Back",
+          "curves": 17012,
+          "points": 561396,
+          "finite": true,
+          "positive_radii": true,
+          "geometry_sha256": "258babe4db4d65f4b9a081d86db6c4b5a670a6d940dd62804fb278782c997d1f"
+        },
+        {
+          "object": "Muzammil Fab Standard \u2022 Curves-Front",
+          "curves": 21826,
+          "points": 720258,
+          "finite": true,
+          "positive_radii": true,
+          "geometry_sha256": "819bf7ffb7b2cddc08cb4c7c2508ba06df851977ac06d04b16c9277f94055925"
+        },
+        {
+          "object": "Muzammil Fab Standard \u2022 Curves-Sides",
+          "curves": 15926,
+          "points": 525558,
+          "finite": true,
+          "positive_radii": true,
+          "geometry_sha256": "a0b3d5ed521b8e622d22029347d3553a7551c50e02ed5805d8792d3c99643420"
+        }
+      ],
+      "all_file_textures_available": true,
+      "scope": "File invariants only; not artistic acceptance, complete collisions or animation"
+    },
+    {
+      "version": "fabfit02",
+      "file_sha256": "d8bdff44c2e37ca8f496cfe81ca0412eeffffb4174474ed2483e9ca266748c9b",
+      "all_original_mesh_geometry_uv_shape_keys_transforms_preserved": true,
+      "original_mesh_count": 141,
+      "new_grooms": [
+        {
+          "object": "Muzammil Fab Standard \u2022 Curves-Back",
+          "curves": 17012,
+          "points": 561396,
+          "finite": true,
+          "positive_radii": true,
+          "geometry_sha256": "140b52e7e66a31ecf45916474a059bb47ea45210937f81255ae4ef26bc56dbd2"
+        },
+        {
+          "object": "Muzammil Fab Standard \u2022 Curves-Front",
+          "curves": 13062,
+          "points": 431046,
+          "finite": true,
+          "positive_radii": true,
+          "geometry_sha256": "c033fafe070904bb6c39678ee6b14dfb80cba07ea0d42e431a34759e23347476"
+        },
+        {
+          "object": "Muzammil Fab Standard \u2022 Curves-Sides",
+          "curves": 11147,
+          "points": 367851,
+          "finite": true,
+          "positive_radii": true,
+          "geometry_sha256": "d0594fca4af689ba0e6b05a2387e99307bd776c9526cf15f89db7f70f3e02e90"
+        }
+      ],
+      "all_file_textures_available": true,
+      "scope": "File invariants only; not artistic acceptance, complete collisions or animation"
+    },
+    {
+      "version": "fabfit03",
+      "file_sha256": "76741caeb62af0b651cec9c5e8a90733cce80665a2af371a5326fcc2bc1e5ca9",
+      "all_original_mesh_geometry_uv_shape_keys_transforms_preserved": true,
+      "original_mesh_count": 141,
+      "new_grooms": [
+        {
+          "object": "Muzammil Fab Standard \u2022 Curves-Back",
+          "curves": 17012,
+          "points": 561396,
+          "finite": true,
+          "positive_radii": true,
+          "geometry_sha256": "140b52e7e66a31ecf45916474a059bb47ea45210937f81255ae4ef26bc56dbd2"
+        },
+        {
+          "object": "Muzammil Fab Standard \u2022 Curves-Front",
+          "curves": 13062,
+          "points": 431046,
+          "finite": true,
+          "positive_radii": true,
+          "geometry_sha256": "c033fafe070904bb6c39678ee6b14dfb80cba07ea0d42e431a34759e23347476"
+        },
+        {
+          "object": "Muzammil Fab Standard \u2022 Curves-Sides",
+          "curves": 14495,
+          "points": 478335,
+          "finite": true,
+          "positive_radii": true,
+          "geometry_sha256": "55012b0f4d3d3e806cb9e365bcebd8d2328956bb8c4392de14a5639c06937268"
+        }
+      ],
+      "all_file_textures_available": true,
+      "scope": "File invariants only; not artistic acceptance, complete collisions or animation"
+    },
+    {
+      "version": "fabfit04",
+      "file_sha256": "7728857da7d814d3b851960de9a34cf7844ad634d5375d14d014b439db3c7b24",
+      "all_original_mesh_geometry_uv_shape_keys_transforms_preserved": true,
+      "original_mesh_count": 141,
+      "new_grooms": [
+        {
+          "object": "Muzammil Fab Standard \u2022 Curves-Back",
+          "curves": 17012,
+          "points": 561396,
+          "finite": true,
+          "positive_radii": true,
+          "geometry_sha256": "140b52e7e66a31ecf45916474a059bb47ea45210937f81255ae4ef26bc56dbd2"
+        },
+        {
+          "object": "Muzammil Fab Standard \u2022 Curves-Front",
+          "curves": 13062,
+          "points": 431046,
+          "finite": true,
+          "positive_radii": true,
+          "geometry_sha256": "c033fafe070904bb6c39678ee6b14dfb80cba07ea0d42e431a34759e23347476"
+        },
+        {
+          "object": "Muzammil Fab Standard \u2022 Curves-Sides",
+          "curves": 14495,
+          "points": 478335,
+          "finite": true,
+          "positive_radii": true,
+          "geometry_sha256": "55012b0f4d3d3e806cb9e365bcebd8d2328956bb8c4392de14a5639c06937268"
+        }
+      ],
+      "all_file_textures_available": true,
+      "scope": "File invariants only; not artistic acceptance, complete collisions or animation"
+    }
+  ],
+  "fabfit03_vs_04_geometry_exactly_unchanged": true
+}

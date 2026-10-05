@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-05",
+  "version": "fabfit01",
+  "images_sha256": {
+    "02_ThreeQuarter.png": "0cb13e7a2c300d6498031787a4f22c7163723d7cc74728e1d8de3fbb4b861158",
+    "03_Side.png": "a1ba7621cb00f68ed41bc53a72d607fc24076509d1959c0575f854412a3a9bd6",
+    "04_Back.png": "9499447fefe619e47e339a9aba2e698895f2ae16a7ab557b72e0dcb50a84e5b5"
+  },
+  "all_listed_images_actually_inspected": true,
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 64,
+  "denoising": false,
+  "verdict": "Rejected: untouched 2-4 cm source trajectories make a slick short haircut; forehead is bare, wrong silhouette.",
+  "artistic_goal_completed": false
+}

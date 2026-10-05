@@ -1,0 +1,65 @@
+{
+  "source_sha256": "0adca6484a4d6c51c3dfd33e5d13ed42f3bf44cae3fcea8f4aa10c710077ecd4",
+  "original_particle_count": 54764,
+  "groups": [
+    {
+      "name": "Curves-Back",
+      "range": [
+        0,
+        17012
+      ],
+      "particles": 17012,
+      "cache_steps": 33
+    },
+    {
+      "name": "Curves-Sides",
+      "range": [
+        17012,
+        32938
+      ],
+      "particles": 15926,
+      "cache_steps": 33
+    },
+    {
+      "name": "Curves-Front",
+      "range": [
+        32938,
+        54764
+      ],
+      "particles": 21826,
+      "cache_steps": 33
+    }
+  ],
+  "source_blender_header": "5.1 file read with 4.5.9, cache validity checked; source unchanged",
+  "cache_step_range": [
+    33,
+    33
+  ],
+  "positions_per_path": 33,
+  "hair_bounds_m": [
+    [
+      -0.08336884528398514,
+      -0.09289807081222534,
+      -0.14960306882858276
+    ],
+    [
+      0.08359355479478836,
+      0.10721413046121597,
+      0.09299852699041367
+    ]
+  ],
+  "root_bounds_m": [
+    [
+      -0.07934856414794922,
+      -0.08849558234214783,
+      -0.13156771659851074
+    ],
+    [
+      0.07921619713306427,
+      0.09589619189500809,
+      0.07415038347244263
+    ]
+  ],
+  "license": "Fab Standard License, NoAI; Muzammil; used locally as existing geometry, not generative model input",
+  "scope": "Original source control on gray source scalp. Not target character or artistic acceptance."
+}

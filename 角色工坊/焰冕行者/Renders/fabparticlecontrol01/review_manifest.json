@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-05",
+  "version": "fabparticlecontrol01",
+  "images_sha256": {
+    "01_OriginalFront.png": "6d2c1adc4f50832fe9461c2ca95dcfb6818e1adacffda26345d8f5c7d535a240",
+    "02_OriginalBack.png": "afb31a6742fcc1792170aabbde1dbbc612946f4bec8c71e3d7be7f30a22fca26"
+  },
+  "all_listed_images_actually_inspected": true,
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 96,
+  "denoising": false,
+  "verdict": "Source-only: original particle geometry, radii and shader retained. Feathered source response differs from small-radius Principled native control; still short swept style.",
+  "artistic_goal_completed": false
+}
