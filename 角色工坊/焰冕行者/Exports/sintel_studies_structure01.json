@@ -1,0 +1,32 @@
+[
+  {
+    "version": "sintelfit01",
+    "sha256": "17806991351076aed8488cba23e706260795bc813cf540e35bbb85cab9acd794",
+    "all_original_mesh_geometry_uv_shape_keys_transforms_preserved": true,
+    "original_mesh_count": 141,
+    "new_groom_finite": true,
+    "new_groom_positive_radii": true,
+    "curve_count": 57228,
+    "scope": "File invariants only, not artistic acceptance or full collision validation"
+  },
+  {
+    "version": "sintelfit02",
+    "sha256": "4361a19666d745a211a7df9b01539eb8842a05df0511a91e5118c478a8d99f37",
+    "all_original_mesh_geometry_uv_shape_keys_transforms_preserved": true,
+    "original_mesh_count": 141,
+    "new_groom_finite": true,
+    "new_groom_positive_radii": true,
+    "curve_count": 57228,
+    "scope": "File invariants only, not artistic acceptance or full collision validation"
+  },
+  {
+    "version": "sintelfit03",
+    "sha256": "79518843694914d15c1c5c6a1c7d6e9a16df00df93c0378e7b071201463a3b17",
+    "all_original_mesh_geometry_uv_shape_keys_transforms_preserved": true,
+    "original_mesh_count": 141,
+    "new_groom_finite": true,
+    "new_groom_positive_radii": true,
+    "curve_count": 39927,
+    "scope": "File invariants only, not artistic acceptance or full collision validation"
+  }
+]

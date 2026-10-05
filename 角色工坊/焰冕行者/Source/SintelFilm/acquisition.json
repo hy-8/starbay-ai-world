@@ -1,0 +1,21 @@
+{
+  "asset": "Original Sintel legacy particle hair only",
+  "source_object": "SintelHairOriginal",
+  "source_url": "https://media.githubusercontent.com/media/Scthe/unity-hair/f183bb39d370cc8786d0f4fe649d72878b0cc167/unity-hair.blend",
+  "repository": "https://github.com/Scthe/unity-hair",
+  "commit": "f183bb39d370cc8786d0f4fe649d72878b0cc167",
+  "bytes": 27850433,
+  "sha256": "2a32f792a27beb8a85cb0be52bbcdc0970b6fcafc1fe31f7f808610166f32e57",
+  "container": "Zstandard-compressed .blend; successfully read in Blender 4.5.9 with autoexec disabled",
+  "license": "Original Sintel / Sintel Lite 2.57b: CC BY 3.0",
+  "attribution": "Sintel: Blender Foundation / Durian; Sintel Lite by BenDansie; Scthe as source container provider",
+  "license_evidence": [
+    "BLENDSWAP_LICENSE.txt",
+    "https://durian.blender.org/sharing/"
+  ],
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "mixed_bundle_boundary": "Repository GPLv3 and separate external-asset licenses apply to their respective components. No bundle-wide CC BY declaration. No Unity shaders, Vincent Page cards, NC-SA eyelashes, imported body/materials or rig scripts adopted.",
+  "local_policy": "Source and derived geometry remain local during evaluation; reviewed renders, processing source and non-geometric evidence may be synchronized.",
+  "download_verified": true,
+  "artistic_status": "Source controls and character fitting studies, not accepted hero art"
+}

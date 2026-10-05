@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-05",
+  "version": "authoredrear02",
+  "all_listed_images_actually_inspected": true,
+  "images_sha256": {
+    "02_ThreeQuarter.png": "f392204edb52731eda4667e29b2420251abbc85cbfd0ba665f6f56ec9e7d5521",
+    "03_Side.png": "bf6f72657d0dc3cbed1612a27d9e7df807b79580fc6fbe261ebc0db72b3fb03f",
+    "04_Back.png": "106b359d8871ccbb9b3e93a4fb01181afadda74dca99615cc508202e8565471f"
+  },
+  "verdict": "Rejected: transported ribbon offsets cause crown spikes and hard folds.",
+  "artistic_goal_completed": false,
+  "source_control_only": false,
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 64,
+  "denoising": false
+}

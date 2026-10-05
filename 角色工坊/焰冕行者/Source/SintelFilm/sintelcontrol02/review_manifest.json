@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-05",
+  "version": "sintelcontrol02",
+  "all_listed_images_actually_inspected": true,
+  "images_sha256": {
+    "01_SourceThreeQuarter.png": "63b1a9d8b438ec1d8bc57b5e947a6166ecafe4c4c3da0768329442a49d28867b",
+    "02_SourceBack.png": "7b5a9d81ae03a1d199645acfd71f3ff445d4522530e8f5c5b2188e53f3163eca"
+  },
+  "verdict": "Source-only: 57,228 hairs with 40um radii provide coverage; smooth asymmetrical haircut differs from target layered medium hair.",
+  "artistic_goal_completed": false,
+  "source_control_only": true,
+  "resolution": [
+    1000,
+    1200
+  ],
+  "samples": 96,
+  "denoising": false
+}

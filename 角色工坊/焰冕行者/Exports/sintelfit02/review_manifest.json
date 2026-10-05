@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-05",
+  "version": "sintelfit02",
+  "all_listed_images_actually_inspected": true,
+  "images_sha256": {
+    "02_ThreeQuarter.png": "5bfcd9893db4787da51cd45dc19d1769267077d83ed5dfff43dc3f5d31378c48",
+    "03_Side.png": "323782a6941c1dd25c2781c71ddf238d483d5461d42a3c6642fceb791526079d",
+    "04_Back.png": "9bfc44b7fdf300e09099210362c85299aed6f8d381d6eeb122caba2d89dc48dd"
+  },
+  "verdict": "Rejected for target advancement: cut upper layers and longer nape still form soft round/straight sheets; not desired shag.",
+  "artistic_goal_completed": false,
+  "source_control_only": false,
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 64,
+  "denoising": false
+}

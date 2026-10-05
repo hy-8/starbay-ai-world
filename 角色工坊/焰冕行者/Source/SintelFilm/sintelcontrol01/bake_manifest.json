@@ -1,0 +1,42 @@
+{
+  "original_object": "SintelHairOriginal",
+  "source_sha256": "2a32f792a27beb8a85cb0be52bbcdc0970b6fcafc1fe31f7f808610166f32e57",
+  "source_saved": false,
+  "autoexec_disabled": true,
+  "license": "Original Sintel / BenDansie CC BY3.0; Scthe supplied mixed-license container; only original hair paths adopted for local evaluation",
+  "actual_parents": 228,
+  "actual_children": 11400,
+  "actual_valid_paths": 11628,
+  "cache_points_per_path": 65,
+  "actual_cache_step_range": [
+    33,
+    65
+  ],
+  "resampling": "Per-hair contiguous actual cache; normalized interpolation retains actual tips",
+  "root_bounds_m": [
+    [
+      -0.08315422385931015,
+      -0.09823862463235855,
+      1.4764269590377808
+    ],
+    [
+      0.08258998394012451,
+      0.10406094789505005,
+      1.6592682600021362
+    ]
+  ],
+  "hair_bounds_m": [
+    [
+      -0.11610857397317886,
+      -0.13374976813793182,
+      1.3928091526031494
+    ],
+    [
+      0.1030486673116684,
+      0.13036169111728668,
+      1.6769829988479614
+    ]
+  ],
+  "radius_note": "Legacy settings are not imported. New control uses original physical red hair shader and30um fibers.",
+  "preview_scope": "Gray source collider with original particle path shape. Not target-character results or artistic acceptance."
+}

@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-05",
+  "version": "authoredrear03",
+  "all_listed_images_actually_inspected": true,
+  "images_sha256": {
+    "02_ThreeQuarter.png": "1a2c761ad4d3fdc3a5c3e85eaebfccdd38a43fd62df8fd788a866fbe7f9c823c",
+    "03_Side.png": "e84760be384ca6e2533662a108d813461d1439188a1b2bb0fc8dc8e858ac751f",
+    "04_Back.png": "aa0e3e1becaccf660a2b4553fb1bce44323d898f1cec6ca0c97f0dc0a04b1c7e"
+  },
+  "verdict": "Rejected: head envelope merges upper locks into smooth fake-hair sheets.",
+  "artistic_goal_completed": false,
+  "source_control_only": false,
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 64,
+  "denoising": false
+}

@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-05",
+  "version": "sintelfit01",
+  "all_listed_images_actually_inspected": true,
+  "images_sha256": {
+    "02_ThreeQuarter.png": "e7596a135dbb763bea121662542a8689a1476836aaf672fc5d2c81b5827fe501",
+    "03_Side.png": "eed86f280bdfc4c4ec9c94aa75c28a7dda0012fd61cff678d556882f3cf66cef",
+    "04_Back.png": "385d2fa3dc0b2e045d291967921d544bdb543c9252d6e4a79040ee9d4712c73a"
+  },
+  "verdict": "Rejected for target advancement: smoother actual hair flow, but straight side curtain and round back remain; wrong style.",
+  "artistic_goal_completed": false,
+  "source_control_only": false,
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 64,
+  "denoising": false
+}

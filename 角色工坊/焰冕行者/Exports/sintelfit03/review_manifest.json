@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-05",
+  "version": "sintelfit03",
+  "all_listed_images_actually_inspected": true,
+  "images_sha256": {
+    "02_ThreeQuarter.png": "014aa3b86fbd81165d81d82d1c0099bb17ca36f6d355b66d7133d877df1bdd36",
+    "03_Side.png": "bf0c2cdb258e00399ac1435e4c375cf41915435d3fbad21db4681f68b23025b3",
+    "04_Back.png": "3412f416defcaba447d8f591ebfd2c43074ed8a7f8b5580dcd648ea1f12ef419"
+  },
+  "verdict": "Rejected: preserving old frontal hair creates visible front/crown attachment gaps; do not use as base.",
+  "artistic_goal_completed": false,
+  "source_control_only": false,
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 64,
+  "denoising": false
+}

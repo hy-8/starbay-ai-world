@@ -87,3 +87,14 @@ Tomáš Klecer 的 Hair Editor 功能资产包，官方功能包页面标为 CC0
 `originalsweep03`新增后部64,000条毛发的根分布/240造型路径，以及测量带区补充的36,000条短覆盖，均由项目在真实CC0人体表面原创生成。旧Ddr侧后组件隐藏保留，并未删除其来源/许可。仍可见Bystedt CC BY-SA短支撑和Abhay Pratap BlenderKit Royalty Free发流衍生短支撑；整个角色不能因此宣称完全原创或完全CC0。原/衍生几何保持本地，不作为独立发型素材包分发。
 
 本轮只查看Radhe Rathod Stylized Hairstyle与Dr toxic Male Character Base Mesh with Hair Cards的官方预览以评估替代路线，未取得或导入其.blend，预览不作为项目渲染证据。原始检索元数据/签名下载地址不进入仓库。材质研究sheengroom01/02不改变既有几何或许可；原创短覆盖/后发替换也不改变其他组件归属。
+
+
+## 原始 Sintel 粒子毛发的本地电影发流对照
+
+原始Sintel / Blender Foundation / Durian，以及BenDansie的Sintel Lite 2.57b，CC BY 3.0。来源容器为Scthe `unity-hair` 固定提交 f183bb39d370cc8786d0f4fe649d72878b0cc167，哈希与获取边界见 `Source/SintelFilm/acquisition.json`；许可证据 `BLENDSWAP_LICENSE.txt`，官方 https://durian.blender.org/sharing/ ，许可 https://creativecommons.org/licenses/by/3.0/ 。
+
+仅从SintelHairOriginal提取原始粒子发流，转为原生毛发、按目标头皮拟合并做分层剪裁、红色材质与有限离散身体保护。源/衍生几何留本地，sintelfit01—03全部未通过艺术验收。源灰头控制仅用于本地对照，未导入角色身体。
+
+容器内Scthe代码、Unity着色器、Vincent Page发卡、NC-SA睫毛各有独立许可，不给整包声明CC BY或CC0；这些组件未采用，源自动脚本未执行。03保留旧原创前额，其他旧许可毛发隐藏但未删除，不改其归属。
+
+> Hair flow derived from original Sintel (Blender Foundation / Durian), Sintel Lite by BenDansie, CC BY 3.0. Source container supplied by Scthe, unity-hair. Modified particle-path extraction, native curves, head fit, regional cuts and red hair materials. https://durian.blender.org/sharing/ — https://creativecommons.org/licenses/by/3.0/

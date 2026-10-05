@@ -1,0 +1,30 @@
+{
+  "version": "authoredrear03",
+  "source": "napeunderlay02",
+  "source_sha256": "f99bd15ad542205b562e4d01a435f7039d598282e27ced6dc020b4cd3a84c1e4",
+  "method": "31 explicitly authored full spatial knot paths for unequal crown, diagonal back, ear passage and loose long nape; actual arc interpolation, restrained local flow blending, original follicle coverage retained",
+  "original_authored_paths": 31,
+  "flow_interpolation_strength": 0.35,
+  "rotation_minimizing_thin_lock_cross_sections": false,
+  "measured_head_envelope": true,
+  "guide_envelope_points": 1876,
+  "rear_only": true,
+  "front_only": false,
+  "components": [
+    {
+      "object": "Original posterior shag \u2022 distributed surface roots",
+      "curves": 64000,
+      "actually_modified_curves": 64000,
+      "exact_roots_preserved": true,
+      "maximum_displacement_m": 0.201074481010437,
+      "positions_before_sha256": "fc2d11ae302906baf12c5bd396bbe64e1807a8410191a8418907e10c1be89a07",
+      "positions_after_sha256": "14a74716863df9398c6caecf8cde1ecd0b7a2f23f848cad0f91e9c387c51c0b3"
+    }
+  ],
+  "guide_point_repairs": 0,
+  "fiber_point_repairs": 182744,
+  "maximum_fiber_point_repair_m": 0.03159340873733163,
+  "saved_controls": "Editable authored knot paths. Native fibers are baked after root attachment, interpolation and point repairs; not live linked.",
+  "collision_scope": "Modified discrete points nearest head/body guard only; not full curve interiors, garment faces, eyes or motion",
+  "status": "Unreviewed authored-flow study, not artistic acceptance"
+}

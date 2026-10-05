@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-05",
+  "version": "sintelcontrol01",
+  "all_listed_images_actually_inspected": true,
+  "images_sha256": {
+    "01_SourceThreeQuarter.png": "603a189448f308e7173ccc074c9bd5000fcca625473c0f5a268e7a6ee51a0d79",
+    "02_SourceBack.png": "82e3163f313ebdc10b1ca5ad6fa37ae82f4f81bc0a6b0d33aabfa78449270656"
+  },
+  "verdict": "Source-only: natural source flow but too transparent at 11,628 hairs and 30um radius.",
+  "artistic_goal_completed": false,
+  "source_control_only": true,
+  "resolution": [
+    1000,
+    1200
+  ],
+  "samples": 96,
+  "denoising": false
+}

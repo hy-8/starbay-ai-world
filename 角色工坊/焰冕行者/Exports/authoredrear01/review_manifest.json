@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-05",
+  "version": "authoredrear01",
+  "all_listed_images_actually_inspected": true,
+  "images_sha256": {
+    "02_ThreeQuarter.png": "ff021d239cb1fd63e85eaea55b1d12b6edace5349daf1360cad5e84fda047bc1",
+    "03_Side.png": "1e11f454bf090e75d3ee9ba25311db9024b4c97ddbb40a1ee0f08f29e7be8111",
+    "04_Back.png": "2d851bd7c318457daea7192c9819344f3cbf7dc6e1286e9201cc3ff11a149cbe"
+  },
+  "verdict": "Rejected: broad root patches form cotton/pillow-like locks.",
+  "artistic_goal_completed": false,
+  "source_control_only": false,
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 64,
+  "denoising": false
+}
