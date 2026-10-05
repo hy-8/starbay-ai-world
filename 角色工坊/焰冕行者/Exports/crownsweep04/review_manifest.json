@@ -1,0 +1,29 @@
+{
+  "version": "crownsweep04",
+  "model_sha256": "82c843a0337dd1253fe24d9692c3c1d43cd5e9f8c4b17cc1e8033692d7d97250",
+  "creation_manifest_sha256": "aafe74d69619acdd013ce68ca709061785ffbbb14d5c1b4126bf72e5722aa506",
+  "observations": "正侧草稿已看。短冠末44%重新沿切线离开，但有抬高尖束，未选。",
+  "images": [
+    {
+      "file": "Renders/crownsweep04/01_Front.png",
+      "sha256": "e982200a00b249d9d5904eebb2f7b8802c94f0b23ae04867e48b4f1a4cd72c84",
+      "resolution": [
+        960,
+        1120
+      ],
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/crownsweep04/03_Side.png",
+      "sha256": "e4c711cedc5c1b3e18340c74732a913d606b4c06a6daa10547f0fb8a2436f293",
+      "resolution": [
+        960,
+        1120
+      ],
+      "actually_inspected": true
+    }
+  ],
+  "artistic_acceptance": false,
+  "status": "Reviewed WIP; goal remains active",
+  "boundary": "Native geometry still study; structure/sample contact checks do not establish reference quality, full collisions or motion."
+}

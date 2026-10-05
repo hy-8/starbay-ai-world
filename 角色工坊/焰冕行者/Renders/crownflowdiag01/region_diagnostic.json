@@ -1,0 +1,39 @@
+{
+  "source": "crownflow01",
+  "design_source": "spatialfringe17",
+  "source_sha256": "17df63e45465f6821e8c27446eb8ccdaefb677107e8e2d632c35278a066c861a",
+  "method": "Actual per-guide native curve subsets; non-destructive isolation",
+  "counts": {
+    "Crown": 6160,
+    "Fringe": 21600
+  },
+  "shots": [
+    {
+      "file": "06_CrownSide.png",
+      "isolated_layer": "Crown",
+      "camera": "03_Side",
+      "sha256": "e0a0e0db360c6721c320c7fcbfb2f2fdc8a84884932b78349163746cafba4326"
+    },
+    {
+      "file": "07_RearSide.png",
+      "isolated_layer": "Rear",
+      "camera": "03_Side",
+      "sha256": "4eefb10969492d7a12fac248e6804b926c3b64b7b2d7b3f2495f628e5d08db8f"
+    },
+    {
+      "file": "08_SupportSide.png",
+      "isolated_layer": "Support",
+      "camera": "03_Side",
+      "sha256": "316793756b4dafadb584824f9b59520987ba264b62735d4c9a5e98684376764a"
+    },
+    {
+      "file": "09_FringeSide.png",
+      "isolated_layer": "Fringe",
+      "camera": "03_Side",
+      "sha256": "6e1acffa0ccb2340e52a3a48aee8df9a3418e4a6ae6e73ed09a82f170ab14879"
+    }
+  ],
+  "source_unchanged": true,
+  "current_surface_rear": true,
+  "profile_layers_only": true
+}

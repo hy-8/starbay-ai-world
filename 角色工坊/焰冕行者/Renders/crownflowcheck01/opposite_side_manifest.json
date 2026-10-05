@@ -1,0 +1,22 @@
+{
+  "version": "crownflowcheck01",
+  "source": "crownflow04",
+  "source_sha256": "3f7f4739fa773a0189637b2c7dc197f4ed5b62138a08f5e9e15feec5afcbfd75",
+  "source_unchanged": true,
+  "method": "Existing four neutral cameras when requested, plus actual opposite camera mirrored in world space with local-X handedness correction; no pixel flip or geometry edit",
+  "samples": 192,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "denoising": false,
+  "image_sha256": "25ffe4a1113c522f6eb02a97c280efbbb07c7f0c4e27f43fef5180892a7ad74a",
+  "images_sha256": {
+    "01_Front.png": "a7b718e94543b908b00f43ef57ebce1e1e075dbd50a6bcb49cd2e179c68bc692",
+    "02_ThreeQuarter.png": "3ed653d4a0dd044962582e0e3c25a0f1d3468d89874e641616ec32fb8c52be9b",
+    "03_Side.png": "3c89ed230b603845a9b29326ffa8887fdefefc5675e73d5861de7e0631e75359",
+    "04_Back.png": "832cd8441ac1486c3318b943924e7d7f565f219109481b17bd261760f5b9e12c",
+    "05_OppositeSide.png": "25ffe4a1113c522f6eb02a97c280efbbb07c7f0c4e27f43fef5180892a7ad74a"
+  },
+  "status": "Unreviewed actual neutral/opposite profile diagnostic, not artistic approval"
+}

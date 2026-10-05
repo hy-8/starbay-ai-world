@@ -1,0 +1,47 @@
+{
+  "version": "crownsweep02",
+  "model_sha256": "d41217d189af5d269012389a0adae3a8038949f266b5af9126385f63be2e655d",
+  "creation_manifest_sha256": "91f157aecab4869138afb1e5ee240f2b12a3b987231bcd284efddcdefc2cb788",
+  "observations": "四张192 samples和oppositegroom06另一侧已看。前额流动较松，侧面上部仍有回头圈/翘束，未接受为成品。结构通过、12k限定后颈接触标记0，不代表艺术或全量穿插。",
+  "images": [
+    {
+      "file": "Renders/crownsweep02/01_Front.png",
+      "sha256": "118e8dbe693fcf1e0c08ccf380fd61506b9568eb700b36cadbed7fc248226f32",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/crownsweep02/02_ThreeQuarter.png",
+      "sha256": "d5dcfc77408d1f26279b60d8421f0ea1f34f2d36feb80c44b8a6c0a05ac5c17e",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/crownsweep02/03_Side.png",
+      "sha256": "8dd93af6e0f411833579136c23bcf9c407e5afd48f5c18c711e4070d5f9c46c4",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/crownsweep02/04_Back.png",
+      "sha256": "fd5f5f82c87db83493b6faec4ae31223ce4fc92a8570293b7fa067ed5d428b7a",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "actually_inspected": true
+    }
+  ],
+  "artistic_acceptance": false,
+  "status": "Reviewed WIP; goal remains active",
+  "boundary": "Native geometry still study; structure/sample contact checks do not establish reference quality, full collisions or motion."
+}

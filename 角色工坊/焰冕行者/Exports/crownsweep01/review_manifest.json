@@ -1,0 +1,30 @@
+{
+  "version": "crownsweep01",
+  "model_sha256": "9462d27963458ca796d2068f9eb1a1de3f3e76d819ac8b9db8bc853b676f236c",
+  "creation_manifest_sha256": "1c71d3ce762a4444fe2665d4b38b3ea47fab082076ced99d9b92b645034ca853",
+  "observations": "正面/三分之四草稿已看。平面前额扫掠减少部分平行感，尚无侧面证据。",
+  "images": [
+    {
+      "file": "Renders/crownsweep01/01_Front.png",
+      "sha256": "bce6baa593307ddfac4383630c11e50a065be9a19f16e1faeeeac72e47f5748a",
+      "resolution": [
+        960,
+        1120
+      ],
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/crownsweep01/02_ThreeQuarter.png",
+      "sha256": "c7a96f9f03405e7b2fc9a6d842b2d7a92f0b400e63c9ff80e6d9c69626ebd0ea",
+      "resolution": [
+        960,
+        1120
+      ],
+      "actually_inspected": true
+    }
+  ],
+  "artistic_acceptance": false,
+  "status": "Reviewed WIP; goal remains active",
+  "boundary": "Native geometry still study; structure/sample contact checks do not establish reference quality, full collisions or motion.",
+  "creation_wording_correction": "Raw creation text preserved; effective operation is described in observations and actual boolean parameters, not merely ordinary arc cutting."
+}

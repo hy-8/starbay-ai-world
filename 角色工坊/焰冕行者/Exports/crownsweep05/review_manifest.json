@@ -1,0 +1,29 @@
+{
+  "version": "crownsweep05",
+  "model_sha256": "bece4372d2be8332222b5de7622792ffcac603145c39e475eda042e6a9bc5a45",
+  "creation_manifest_sha256": "ea9813d2304a81b5907be2e769ceff1f67f0e387670ef42ad5bf041044e31655",
+  "observations": "正侧草稿已看。水平外法线和更强重力出口降低04的尖束，冠部仍宽/局部圈结。不是完成品。",
+  "images": [
+    {
+      "file": "Renders/crownsweep05/01_Front.png",
+      "sha256": "7c443300798e1d9be76265ae625f46d3fd7340c400b25a6f9daff3d292e0059f",
+      "resolution": [
+        960,
+        1120
+      ],
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/crownsweep05/03_Side.png",
+      "sha256": "191e445fe4b29840d3256c74628fc8a08884d68304bd13c014b456f5c5a3a39b",
+      "resolution": [
+        960,
+        1120
+      ],
+      "actually_inspected": true
+    }
+  ],
+  "artistic_acceptance": false,
+  "status": "Reviewed WIP; goal remains active",
+  "boundary": "Native geometry still study; structure/sample contact checks do not establish reference quality, full collisions or motion."
+}

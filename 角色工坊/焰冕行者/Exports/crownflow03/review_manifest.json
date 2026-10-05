@@ -1,0 +1,29 @@
+{
+  "version": "crownflow03",
+  "model_sha256": "3bae7c6eabfbc00fee7b1e099ffef850f54a09917fa96f3ac531312ef5c5f29a",
+  "creation_manifest_sha256": "f6f8b97ee9e4d00d0b04d52032ec8304fda2364a2042e33df149da64eaa90171",
+  "observations": "正侧草稿已看。增加较早释放、抬高和波动，仍偏平/顺滑。",
+  "images": [
+    {
+      "file": "Renders/crownflow03/01_Front.png",
+      "sha256": "084a04e67553fd62a027d2219565a7bd19434679c3b017e9a735cab1627597fe",
+      "resolution": [
+        960,
+        1120
+      ],
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/crownflow03/03_Side.png",
+      "sha256": "0091ad528dadcd87d184532603bb04b5fc0e5759725f8a6af667ee98269d4a59",
+      "resolution": [
+        960,
+        1120
+      ],
+      "actually_inspected": true
+    }
+  ],
+  "artistic_acceptance": false,
+  "status": "Reviewed WIP; goal remains active",
+  "boundary": "Native geometry still study; structure/sample contact checks do not establish reference quality, full collisions or motion."
+}

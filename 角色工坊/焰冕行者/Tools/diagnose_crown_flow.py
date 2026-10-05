@@ -56,6 +56,8 @@ shots=[('01_All','01_Front','All'),('02_Crown','01_Front','Crown'),('03_Fringe',
        ('04_Support','01_Front','Support'),('05_Rear','01_Front','Rear'),('06_CrownSide','03_Side','Crown')]
 if CURRENT_SURFACE_REAR:
  shots += [('07_RearSide','03_Side','Rear'),('08_SupportSide','03_Side','Support')]
+if '--profile-layers-only' in args:
+ shots=[('06_CrownSide','03_Side','Crown'),('07_RearSide','03_Side','Rear'),('08_SupportSide','03_Side','Support'),('09_FringeSide','03_Side','Fringe')]
 for name,camera,layer in shots:
  for ob in objects:
   support=('short scalp' in ob.name) or (CURRENT_SURFACE_REAR and ('short support' in ob.name or ob.name.startswith('Original posterior coverage')))
@@ -68,5 +70,6 @@ for name,camera,layer in shots:
                             sha256=hashlib.sha256((out/(name+'.png')).read_bytes()).hexdigest()))
 report['source_unchanged']=hashlib.sha256(source.read_bytes()).hexdigest()==source_sha
 report['current_surface_rear']=CURRENT_SURFACE_REAR
+report['profile_layers_only']='--profile-layers-only' in args
 (out/'region_diagnostic.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
 print('CROWN_DIAGNOSTIC_COMPLETE',version,report['source_unchanged'],flush=True)

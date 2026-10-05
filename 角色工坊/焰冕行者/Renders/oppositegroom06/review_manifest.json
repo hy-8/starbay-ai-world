@@ -1,0 +1,18 @@
+{
+  "version": "oppositegroom06",
+  "source": "crownsweep02",
+  "images": [
+    {
+      "file": "05_OppositeSide.png",
+      "sha256": "db0a5f883addd88f211f1f9535e91857ccd2c28db002e7ce54b2666e42b4c206",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "actually_inspected": true
+    }
+  ],
+  "observations": "Actual opposite camera inspected; old top arcs remain. Not a pixel flip, not artistic acceptance.",
+  "artistic_acceptance": false,
+  "source_unchanged": true
+}

@@ -26,14 +26,42 @@ gentle = '--gentle' in args
 keep_front_length = '--keep-front-length' in args
 preview = '--preview' in args
 preview_front = '--preview-front' in args
+preview_crown = '--preview-crown' in args
 coverage_only = '--coverage-only' in args
 feathered_flow = '--feathered-flow' in args
 spatial_rear = '--spatial-rear' in args
 loose_wave = '--loose-wave' in args
 front_wave = '--front-wave' in args
+redirect_crown = '--redirect-crown' in args
+retain_crown_arch = '--retain-crown-arch' in args
+affine_crown_turn = '--affine-crown-turn' in args
+free_crown_tips = '--free-crown-tips' in args
+soft_crown_exits = '--soft-crown-exits' in args
+rebuild_crown_flow = '--rebuild-crown-flow' in args
+if rebuild_crown_flow and not front_only:raise ValueError('Crown rebuilding requires front-only')
+rebuild_rear_crown = '--rebuild-rear-crown' in args
+if rebuild_rear_crown and not rear_only:raise ValueError('Posterior crown rebuilding requires rear-only')
+lifted_rear_layers = '--lifted-rear-layers' in args
+if lifted_rear_layers and not rebuild_rear_crown:raise ValueError('Lifted layers require posterior crown rebuild')
+clumped_rear_layers = '--clumped-rear-layers' in args
+if clumped_rear_layers and not lifted_rear_layers:raise ValueError('Clumped layers require lifted layers')
+if soft_crown_exits and not free_crown_tips:raise ValueError('Soft exits require free crown tips')
+if free_crown_tips and not redirect_crown:raise ValueError('Free tips require crown redirect')
+if affine_crown_turn and not redirect_crown:raise ValueError('Affine turn requires crown redirect')
+fringe_sweep = '--fringe-sweep' in args
+if fringe_sweep and not front_only:raise ValueError('Fringe sweep is isolated to front-only')
+recover_nape_fan = '--recover-nape-fan' in args
+retain_personal_nape = '--retain-personal-nape' in args
+if retain_personal_nape and not recover_nape_fan:raise ValueError('Personal nape requires fan recovery')
+if recover_nape_fan and not rear_only:raise ValueError('Nape fan is isolated to rear-only')
+if retain_crown_arch and not redirect_crown:raise ValueError('Arch requires crown redirect')
+if redirect_crown and not front_only:
+    raise ValueError('Crown direction study is isolated to front-only')
 transport_wave = '--transport-wave' in args
 garment_clearance = '--garment-clearance' in args
 free_nape = '--free-nape' in args
+layered_nape = '--layered-nape' in args
+if layered_nape and not (spatial_rear and free_nape):raise ValueError('Layered nape requires spatial rear and free nape')
 if free_nape and not spatial_rear:raise ValueError('Free nape requires spatial rear')
 nape_extra = float(args[args.index('--nape-extra')+1]) if '--nape-extra' in args else .092
 guard_transition = float(args[args.index('--guard-transition')+1]) if '--guard-transition' in args else .055
@@ -104,6 +132,11 @@ def spatial_posterior(root, label, N):
     phase = label*2.399963
     upper = float(smooth((root[2]-1.798)/.047))
     nape = float((1-smooth((root[2]-1.777)/.025))*smooth((root[1]-.008)/.045))
+    if layered_nape:
+        # Longer lower layers include the occipital roots above the neckline.
+        # This adds overlapping lengths using existing follicles, instead of
+        # broadening only a few thin bottom-root patches into a sheer fan.
+        nape=float((1-smooth((root[2]-1.788)/.035))*smooth((root[1]-.015)/.040))
     side = 1 if root[0]>=0 else -1
     length = .058+.038*(.5+.5*np.sin(phase*.73))+nape_extra*nape
     release = .26+.17*upper-.12*nape
@@ -160,13 +193,48 @@ def spatial_posterior(root, label, N):
     p[0]=root
     return p
 
-def sublock(p,ids,label,crown=False,nape=False,rear_component=False):
+def trace_rear_crown(root,label,N):
+    """Attached scalp growth followed by a smooth gravity exit, no old curls."""
+    tt=np.linspace(0,1,N);phase=label*2.399963
+    side=1 if root[0]>=(.014 if clumped_rear_layers else 0) else -1
+    length=(.122 if clumped_rear_layers else .104 if lifted_rear_layers else .086)+.018*np.sin(phase*.73)
+    release=.36 if lifted_rear_layers else .52
+    position,normal,_,_=bv.find_nearest(Vector(root))
+    heading=Vector((side*(.85 if clumped_rear_layers else .48),.55 if clumped_rear_layers else .92,-.15))
+    heading-=normal*heading.dot(normal);heading.normalize()
+    p=np.empty((N,3),float);p[0]=root
+    for j in range(1,N):
+        if tt[j]<release:
+            position,nn,_,_=bv.find_nearest(position+heading*length/(N-1))
+            heading-=nn*heading.dot(nn);heading.normalize();normal=nn
+            lift=(.019+.004*np.sin(phase*.47)) if clumped_rear_layers else .014 if lifted_rear_layers else .007
+            p[j]=position+normal*(.0007+lift*np.sin(.5*np.pi*tt[j]/release))
+        else:
+            if tt[j-1]<release:position=Vector(p[j-1])
+            u=(tt[j]-release)/(1-release)
+            direction=heading+normal*((.23 if lifted_rear_layers else .10)*np.sin(np.pi*u))
+            direction.z-=(.68 if lifted_rear_layers else .78)*np.sin(.5*np.pi*u)
+            if lifted_rear_layers:direction.x+=side*.30*np.sin(np.pi*u)
+            direction.normalize();position+=direction*length/(N-1)
+            p[j]=position
+    if lifted_rear_layers:
+        p[:,0]+=.006*np.sin(tt*1.55*np.pi+phase*.39)*np.sin(np.pi*tt)
+        p[:,1]+=.002*np.sin(tt*1.5*np.pi+phase*.39)*np.sin(np.pi*tt)
+    return p
+
+def sublock(p,ids,label,crown=False,nape=False,rear_component=False,name=''):
     global garment_repairs,garment_max_shift
     old = p[ids].astype(float)
+    if rebuild_rear_crown and float(old[:,0,2].max())<1.825:return old.astype(np.float32)
+    if rebuild_crown_flow and not crown and not fringe_sweep:return old.astype(np.float32)
+    if redirect_crown and not crown and not fringe_sweep:return old.astype(np.float32)
+    if fringe_sweep and crown and not (redirect_crown or rebuild_crown_flow):return old.astype(np.float32)
     N = old.shape[1]
     t = np.linspace(0,1,N)
     base = np.median(old,axis=0)
     root = base[0]
+    if recover_nape_fan and (not rear_component or root[2]>1.792 or root[1]<.035):
+        return old.astype(np.float32)
     upper = float(smooth((root[2]-1.795)/.045))
     side = 1 if root[0]>=0 else -1
     phase = (label*2.399963)%6.283185
@@ -183,6 +251,93 @@ def sublock(p,ids,label,crown=False,nape=False,rear_component=False):
     if gentle:
         fraction = 1-(1-fraction)*.55
     new_base = sample_arc(base,t*fraction)
+    if rebuild_rear_crown:
+        new_base=trace_rear_crown(root,label,N);fraction=1.0
+    if recover_nape_fan:
+        new_base=base.copy();fraction=1.0
+    if rebuild_crown_flow and crown:
+        # Rebuild the full center, not an endpoint displacement of an already
+        # twisted path. Follicles stay exact. Surface tracing is restricted to
+        # the attached root section; free tips retain a continuous exit tangent.
+        lateral='lateral scissor layer' in name
+        side=-1 if name.startswith('heavy') else 1
+        length=(.105 if lateral else .155)+.013*np.sin(label*.53)
+        release=.44 if lateral else .38
+        position,normal,_,_=bv.find_nearest(Vector(root))
+        heading=Vector((side*(.86 if lateral else .60),-.72,-.06))
+        heading-=normal*heading.dot(normal);heading.normalize()
+        new_base=np.empty((N,3),float);new_base[0]=root
+        for j in range(1,N):
+            if t[j]<release:
+                position,nn,_,_=bv.find_nearest(position+heading*length/(N-1))
+                heading-=nn*heading.dot(nn);heading.normalize();normal=nn
+                lift=.001+.009*np.sin(.5*np.pi*t[j]/release)
+                new_base[j]=position+normal*lift
+                if j==int(release*(N-1)):position=Vector(new_base[j])
+            else:
+                if t[j-1]<release:position=Vector(new_base[j-1])
+                u=(t[j]-release)/(1-release)
+                outward=Vector((normal.x,normal.y,0))
+                if outward.length>1e-8:outward.normalize()
+                direction=heading+outward*(.12*np.sin(np.pi*u))
+                direction.z-=.85*np.sin(.5*np.pi*u)
+                direction.x+=side*.12*np.sin(1.2*np.pi*u)
+                direction.normalize();position+=direction*length/(N-1)
+                new_base[j]=position
+        fraction=1.0
+    if redirect_crown and crown:
+        # Redirect the actual short overlay centers, keeping the longer brow
+        # layers. This changes the head's flow rather than adding another wave
+        # to all of its old parallel paths. Root/face/coverage stay intact.
+        lateral_layer='lateral scissor layer' in name
+        direction=-1 if name.startswith(('heavy','short heavy')) else 1
+        end_shift=np.array([direction*(.004 if lateral_layer else .001),
+            (.038+.010*np.sin(label*.71)) if lateral_layer else .007,
+            (.004 if retain_crown_arch else -.024) if lateral_layer else -.003])
+        if affine_crown_turn and lateral_layer:
+            # Turn the entire overlay path by shortening its forward reach.
+            # End-only dragging left the earlier path in front of the new tip
+            # and created a local return loop visible in profile.
+            new_base=root[None]+(new_base-root[None])*np.array([.95,.60,.95])[None]
+        else:
+            new_base += end_shift[None]*smooth(t/.94)[:,None]
+            new_base[:,2] -= (.002 if retain_crown_arch else .005)*np.sin(np.pi*t)
+        if free_crown_tips and lateral_layer:
+            # Replace the returning last part of a short overlay with a free
+            # exit from its current tangent. Retain the attached root section;
+            # do not move one endpoint backward through an existing arc.
+            release_index=int(.56*(N-1))
+            remaining=float(np.linalg.norm(np.diff(new_base[release_index:],axis=0),axis=1).sum())
+            heading=new_base[release_index]-new_base[release_index-3]
+            heading/=max(float(np.linalg.norm(heading)),1e-8)
+            hit,nn,_,_=bv.find_nearest(Vector(new_base[release_index]))
+            normal=np.array(nn)
+            heading-=normal*min(0,float(np.dot(heading,normal)))
+            exit_normal=normal.copy()
+            if soft_crown_exits:
+                exit_normal[2]=0
+                exit_normal/=max(float(np.linalg.norm(exit_normal)),1e-8)
+            position=new_base[release_index].copy()
+            for j in range(release_index+1,N):
+                u=(j-release_index)/(N-1-release_index)
+                direction=heading+exit_normal*((.16 if soft_crown_exits else .30)*np.sin(np.pi*u*.8))
+                direction[2]-=.80*np.sin(.5*np.pi*u) if soft_crown_exits else .22*u
+                direction/=max(float(np.linalg.norm(direction)),1e-8)
+                position+=direction*remaining/(N-1-release_index)
+                new_base[j]=position
+    if fringe_sweep and not crown:
+        # Broad horizontal shaping uses a stable world-space plane rather
+        # than lifting strands with rapidly changing nearest-face frames.
+        # Neighboring children retain one parent flow; all endpoints remain
+        # close to their already measured brow/temple locations.
+        parent=re.search(r'(forehead|temple) (\d+)',name)
+        if parent:
+            parent_index=int(parent.group(2))
+            phase0=parent_index*.83+(0 if name.startswith('heavy') else 1.1)
+            amp=.010 if parent.group(1)=='forehead' else .006
+            envelope=4*t*(1-t)
+            new_base[:,0]+=amp*np.cos(np.pi*t+phase0)*envelope
+            new_base[:,1]+=.003*np.sin(np.pi*t+phase0)*envelope
     if rear_component and spatial_rear:
         replacement=spatial_posterior(root,label,N)
         weight=1-float(smooth((root[2]-(1.834 if loose_wave else 1.816))/.024))
@@ -240,6 +395,7 @@ def sublock(p,ids,label,crown=False,nape=False,rear_component=False):
             relief=wave_strength*(.006 if crown else .0035)*np.sin(phase*.61)*np.sin(np.pi*t)**1.4
             new_base += normals*relief[:,None]
     new_base[0] = base[0]
+    if retain_personal_nape:new_base=base.copy()
     guide_studies.append(new_base)
     result = np.empty_like(old,dtype=np.float32)
     for i,fiber in enumerate(old):
@@ -253,9 +409,37 @@ def sublock(p,ids,label,crown=False,nape=False,rear_component=False):
         # End width is reduced independently of cut length. The root fan is
         # kept exactly; the separate short support covers the spaces below.
         width = 1-(.65 if rear_component else .38)*smooth(t/.82)
+        if redirect_crown or fringe_sweep:width=np.ones_like(t)
         if gentle:
             width = 1-(1-width)*.60
         q = personal_base+offsets*width[:,None]
+        if rebuild_rear_crown:
+            root_offset=fiber[0]-base[0]
+            q=personal_base+root_offset[None]*(1-(.82 if clumped_rear_layers else .35)*smooth(t/.9))[:,None]
+            q+=rng.normal(0,.0007,3)[None]*np.sin(np.pi*t)[:,None]
+        if rebuild_crown_flow and crown:
+            # Old interior offsets also contained the knots. Replace them with
+            # a follicle-spread field and small coherent individual deviations,
+            # rather than transporting the old curls onto the new center.
+            root_offset=fiber[0]-base[0]
+            q=personal_base+root_offset[None]*(1-.45*smooth(t/.9))[:,None]
+            scatter=rng.normal(0,.0010,3)
+            q+=scatter[None]*(np.sin(np.pi*t))[:,None]
+        if recover_nape_fan:
+            # Repeated narrowing compounded the inherited endpoint offsets.
+            # Recover a coherent root-spread fan on the actual current median
+            # center path, with independent endpoint sampling. Strand counts
+            # and exact follicles are unchanged; no new blanket hair shell.
+            personal=rng.uniform(.86,1.0)
+            personal_base=sample_arc(new_base,t*personal)
+            root_offset=fiber[0]-base[0]
+            fan_width=1-.45*smooth(t/.92)
+            q=personal_base+root_offset[None]*fan_width[:,None]
+            if retain_personal_nape:
+                # Keep the already staggered real strand paths/ends. Add back
+                # root-spread width continuously, without averaging their
+                # independent length variations into a sheer flat curtain.
+                q=fiber+root_offset[None]*(.55*smooth(t/.82))[:,None]
         q += rng.normal(0,.0006,3)[None]*t[:,None]**3
         # Sample contact repair displacements, smooth along the whole path.
         # This is only a point-sampled guard, never a full collision proof.
@@ -283,6 +467,10 @@ def sublock(p,ids,label,crown=False,nape=False,rear_component=False):
                     q[j,1]+=shift
                     garment_repairs+=1;garment_max_shift=max(garment_max_shift,shift)
         q[0] = fiber[0]
+        if rebuild_rear_crown:
+            weight=float(smooth((fiber[0,2]-1.825)/.020))
+            q=fiber*(1-weight)+q*weight
+            q[0]=fiber[0]
         result[i] = q
     return result
 
@@ -318,7 +506,7 @@ for ob,is_rear in [(front,False),(rear,True)]:
             labels[start:start+2048] = np.argmin(distances,axis=1)
         for label in range(len(centers)):
             ids = np.flatnonzero(labels==label)
-            if len(ids):groups.append((ids,label,False,centers[label,2]<1.799 and centers[label,1]>.020))
+            if len(ids):groups.append((ids,label,False,centers[label,2]<1.799 and centers[label,1]>.020,''))
     else:
         assert sum(r['assigned_visible_fibers'] for r in records)==len(raw)
         offset = 0
@@ -334,10 +522,10 @@ for ob,is_rear in [(front,False),(rear,True)]:
             ordered = ids[np.argsort(raw[ids,0]@across)]
             parts = np.array_split(ordered,2 if 'segmented crown' in record['name'] else 1)
             for child,part in enumerate(parts):
-                groups.append((part,label*2+child,'segmented crown' in record['name'],False))
+                groups.append((part,label*2+child,'segmented crown' in record['name'],False,record['name']))
             offset += count
-    for gi,(ids,label,crown,nape) in enumerate(groups):
-        result[ids] = sublock(raw,ids,label,crown,nape,is_rear)
+    for gi,(ids,label,crown,nape,name) in enumerate(groups):
+        result[ids] = sublock(raw,ids,label,crown,nape,is_rear,name)
     assert np.isfinite(result).all() and np.array_equal(raw[:,0],result[:,0])
     data = ob.data.copy()
     data.attributes['position'].data.foreach_set('vector',result.ravel())
@@ -356,6 +544,7 @@ for ob,is_rear in [(front,False),(rear,True)]:
         actual_fiber_arc_before_quantiles_m=np.quantile(before_arc,[0,.5,.95,1]).tolist(),
         actual_fiber_arc_after_quantiles_m=np.quantile(after_arc,[0,.5,.95,1]).tolist(),
         maximum_displacement_m=float(np.linalg.norm(result-raw,axis=2).max()),
+        actually_modified_curves=int(np.any(result!=raw,axis=(1,2)).sum()),
         positions_before_sha256=hashlib.sha256(raw.tobytes()).hexdigest(),positions_after_sha256=hashlib.sha256(result.tobytes()).hexdigest()))
     print('RESTYLED_COMPONENT',ob.name,len(groups),flush=True)
 
@@ -412,16 +601,29 @@ scene.render.resolution_x,scene.render.resolution_y=1200,1400
 scene.render.resolution_percentage=80 if '--draft' in args else 100
 out.mkdir(parents=True);render.mkdir(parents=True)
 report=dict(version=version,source=source_version,source_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),
-    method=('Explicit scalp-root spatial posterior guides with early surface release and free draping/waving ends; independent per-fiber endpoint sampling; retain front and short coverage' if spatial_rear else 'Actual arc-length layered cuts, adjacent-root crown subdivisions, independently staggered fiber lengths and narrower ends; retain short scalp coverage'),
+    method=('Rebuild upper posterior centers from actual scalp roots and replace inherited curly interior offsets, continuous root-height transition; retain lower nape and frontal groom' if rebuild_rear_crown else 'Rebuild complete frontal crown centers from scalp-traced attachment and free gravity exits; replace inherited internal offsets with follicle spread; retain brow/temple' if rebuild_crown_flow else 'Explicit scalp-root spatial posterior guides with early surface release and free draping/waving ends; independent per-fiber endpoint sampling; retain front and short coverage' if spatial_rear else 'Recover nape root-spread width on existing actual center/individual paths; existing follicles and strand count retained' if recover_nape_fan else 'Redirect short crown layers toward sides/back, retain longer brow layers; optional broad planar forehead/temple center sweeps; exact roots retained' if redirect_crown or fringe_sweep else 'Actual arc-length layered cuts, adjacent-root crown subdivisions, independently staggered fiber lengths and narrower ends; retain short scalp coverage'),
     components=report_components,front_only=front_only,rear_only=rear_only,gentle=gentle,coverage_only=coverage_only,
     keep_front_length=keep_front_length,preview=preview,personal_cut_applied_to_center_paths=True,feathered_flow=feathered_flow,
     spatial_rear=spatial_rear,
     loose_wave=loose_wave,
     front_wave=front_wave,front_wave_strength=wave_strength,preview_front=preview_front,
+    crown_direction_redirect=redirect_crown,
+    crown_arch_retained=retain_crown_arch,
+    whole_crown_forward_reach_scaled=affine_crown_turn,preview_crown=preview_crown,
+    free_short_crown_exits=free_crown_tips,
+    soft_horizontal_crown_exits=soft_crown_exits,
+    full_crown_flow_rebuilt=rebuild_crown_flow,
+    upper_posterior_flow_rebuilt=rebuild_rear_crown,
+    upper_posterior_lifted_layers=lifted_rear_layers,
+    upper_posterior_clumped_layers=clumped_rear_layers,
+    planar_fringe_sweep=fringe_sweep,
+    nape_root_fan_recovery=recover_nape_fan,
+    nape_personal_paths_retained=retain_personal_nape,
     transported_front_frame=transport_wave,
     garment_clearance=garment_clearance,garment_point_adjustments=garment_repairs,garment_maximum_y_shift_m=garment_max_shift,
     nape_extra_length_m=nape_extra,garment_bend_transition_m=guard_transition,
     free_falling_nape=free_nape,
+    longer_occipital_nape_layers=layered_nape,
     garment_scope='Every point on modified rear fibers in posterior collar region; ray-constrained back envelope of actual suit and rear collar, with declared upper bend transition. Not an all-garment/strand/motion collision proof' if garment_clearance else 'No new garment guard',
     median_study_paths=len(guide_studies),guide_status='Baked evidence only; not live-linked',
     status='Unreviewed real 3D hair study; no artistic or animation approval',
@@ -430,7 +632,7 @@ report=dict(version=version,source=source_version,source_sha256=hashlib.sha256(s
     samples=scene.cycles.samples,draft='--draft' in args,denoising=False)
 (out/'shag_cut_manifest.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
 bpy.ops.wm.save_as_mainfile(filepath=str(out/'Ember_Regent.blend'))
-for name in (['01_Front','02_ThreeQuarter'] if preview_front else ['03_Side','04_Back'] if preview else ['01_Front','02_ThreeQuarter','03_Side','04_Back']):
+for name in (['01_Front','03_Side'] if preview_crown else ['01_Front','02_ThreeQuarter'] if preview_front else ['03_Side','04_Back'] if preview else ['01_Front','02_ThreeQuarter','03_Side','04_Back']):
     scene.camera=bpy.data.objects[name]
     scene.render.filepath=str(render/(name+'.png'))
     bpy.ops.render.render(write_still=True)

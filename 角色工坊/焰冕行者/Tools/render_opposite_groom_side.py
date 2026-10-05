@@ -22,9 +22,15 @@ pref=bpy.context.preferences.addons['cycles'].preferences;pref.compute_device_ty
 for d in pref.devices:d.use=d.type=='OPTIX'
 scene.cycles.device='GPU';scene.cycles.samples=192;scene.cycles.use_denoising=False
 scene.render.resolution_x=1200;scene.render.resolution_y=1400;scene.render.resolution_percentage=100
-out.mkdir(parents=True);image=out/'05_OppositeSide.png';scene.render.filepath=str(image)
-bpy.ops.render.render(write_still=True)
+out.mkdir(parents=True)
+shots=['01_Front','02_ThreeQuarter','03_Side','04_Back','05_OppositeSide'] if '--five-views' in args else ['05_OppositeSide']
+images={}
+for name in shots:
+ scene.camera=bpy.data.objects[name]
+ image=out/(name+'.png');scene.render.filepath=str(image)
+ bpy.ops.render.render(write_still=True)
+ images[name+'.png']=hashlib.sha256(image.read_bytes()).hexdigest()
 assert hashlib.sha256(source.read_bytes()).hexdigest()==before
-report=dict(version=version,source=source_version,source_sha256=before,source_unchanged=True,method='Actual camera mirrored in world space with local-X handedness correction; no pixel flip or geometry edit',samples=192,resolution=[1200,1400],denoising=False,image_sha256=hashlib.sha256(image.read_bytes()).hexdigest(),status='Unreviewed actual opposite profile diagnostic, not artistic approval')
+report=dict(version=version,source=source_version,source_sha256=before,source_unchanged=True,method='Existing four neutral cameras when requested, plus actual opposite camera mirrored in world space with local-X handedness correction; no pixel flip or geometry edit',samples=192,resolution=[1200,1400],denoising=False,image_sha256=images['05_OppositeSide.png'],images_sha256=images,status='Unreviewed actual neutral/opposite profile diagnostic, not artistic approval')
 (out/'opposite_side_manifest.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
 print('OPPOSITE_GROOM_SIDE_RENDERED',version,flush=True)

@@ -1,0 +1,30 @@
+{
+  "version": "napefan01",
+  "model_sha256": "1966408582bf5e5403f2dda3b8ee3850397e1cd91b81d74fba9347b8982e901a",
+  "creation_manifest_sha256": "240403c02b4601d2f25f7f2be0a5f67f0d2d6655fa1b27af9a6ec500f16c1255",
+  "observations": "侧背已看。按组中位中心恢复根部展宽，变成较薄的帘状，丢失个人路径，未选。",
+  "images": [
+    {
+      "file": "Renders/napefan01/03_Side.png",
+      "sha256": "83c0fea534356ac0b2e0c5835748c464c0fe37b38c93e2f040675489b3e67a44",
+      "resolution": [
+        960,
+        1120
+      ],
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/napefan01/04_Back.png",
+      "sha256": "02f98fcdb6d28ac482c110b62cf85092d20cbb5722f6246cff8571695d0302a3",
+      "resolution": [
+        960,
+        1120
+      ],
+      "actually_inspected": true
+    }
+  ],
+  "artistic_acceptance": false,
+  "status": "Reviewed WIP; goal remains active",
+  "boundary": "Native geometry still study; structure/sample contact checks do not establish reference quality, full collisions or motion.",
+  "creation_wording_correction": "Raw creation text preserved; effective operation is described in observations and actual boolean parameters, not merely ordinary arc cutting."
+}

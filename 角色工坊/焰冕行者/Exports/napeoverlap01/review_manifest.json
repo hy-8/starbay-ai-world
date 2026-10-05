@@ -1,0 +1,29 @@
+{
+  "version": "napeoverlap01",
+  "model_sha256": "a34a6563b028efd44f12480ef419e75e8d576d0035b5bdd72f15c8d46442c818",
+  "creation_manifest_sha256": "dfb2a9ad95bf1c5cc75dd663837d86a277f73cf9e454be40166a14b7ccbb7b53",
+  "observations": "侧背已看。较高后枕根加入较长后颈层，比均值展宽保留更多重叠；仍薄/条状，与颈部脱开。后续前发试验的后颈基础。",
+  "images": [
+    {
+      "file": "Renders/napeoverlap01/03_Side.png",
+      "sha256": "541582e0e6cea9e67dcb9039a4a810d18fb60e80f2c3afacf4805c8f5a0651b1",
+      "resolution": [
+        960,
+        1120
+      ],
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/napeoverlap01/04_Back.png",
+      "sha256": "fe74bd82a3ee5fc25b0b2620f4080203a7f61cea72ca467e6e5ba306461785ad",
+      "resolution": [
+        960,
+        1120
+      ],
+      "actually_inspected": true
+    }
+  ],
+  "artistic_acceptance": false,
+  "status": "Reviewed WIP; goal remains active",
+  "boundary": "Native geometry still study; structure/sample contact checks do not establish reference quality, full collisions or motion."
+}

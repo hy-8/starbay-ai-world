@@ -1,0 +1,30 @@
+{
+  "version": "crownflow01",
+  "model_sha256": "17df63e45465f6821e8c27446eb8ccdaefb677107e8e2d632c35278a066c861a",
+  "creation_manifest_sha256": "f330bc95b17824d7c737f927576b3063ba2114c2d3b6c4f492c237e340933514",
+  "observations": "正侧草稿及crownflowdiag01四层隔离已看。重画整个前冠中心并替换内部偏移；前冠隔离没有旧大圈，整体左侧大圈来自保留上部后发。",
+  "images": [
+    {
+      "file": "Renders/crownflow01/01_Front.png",
+      "sha256": "a90a072989c8f9a7ba590b4035d2ba9e61b96722b96f5fb77bc6aad496912d37",
+      "resolution": [
+        960,
+        1120
+      ],
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/crownflow01/03_Side.png",
+      "sha256": "257ebb9ac9fff532d8116ac8e3f46bdbdb41dcadd8e3927f2fec172f0cbbd5b8",
+      "resolution": [
+        960,
+        1120
+      ],
+      "actually_inspected": true
+    }
+  ],
+  "artistic_acceptance": false,
+  "status": "Reviewed WIP; goal remains active",
+  "boundary": "Native geometry still study; structure/sample contact checks do not establish reference quality, full collisions or motion.",
+  "creation_wording_correction": "Raw creation text preserved; effective operation is described in observations and actual boolean parameters, not merely ordinary arc cutting."
+}

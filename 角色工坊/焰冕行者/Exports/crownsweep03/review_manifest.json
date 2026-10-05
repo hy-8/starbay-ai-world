@@ -1,0 +1,29 @@
+{
+  "version": "crownsweep03",
+  "model_sha256": "6bd36ad5c92813a509dba0e7595e00a07ed91a44d6b9a2636b0d4f867fc1e068",
+  "creation_manifest_sha256": "2843a900cfb9b52774492b7423d364f315af16949596d909a6485a4bcfc591ac",
+  "observations": "正侧草稿已看。整个短冠仿射缩短前伸，减少只拉终点的回头风险，但仍有局部圈结。",
+  "images": [
+    {
+      "file": "Renders/crownsweep03/01_Front.png",
+      "sha256": "644a25aef126da3d0c0f61102670a5080030df52f80bdbedd1d8c37562a847b6",
+      "resolution": [
+        960,
+        1120
+      ],
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/crownsweep03/03_Side.png",
+      "sha256": "1e5dcd748c9232a9917b7f1d4248a5e97ff2caf6e3f17d5c5b491aaa778fd27e",
+      "resolution": [
+        960,
+        1120
+      ],
+      "actually_inspected": true
+    }
+  ],
+  "artistic_acceptance": false,
+  "status": "Reviewed WIP; goal remains active",
+  "boundary": "Native geometry still study; structure/sample contact checks do not establish reference quality, full collisions or motion."
+}

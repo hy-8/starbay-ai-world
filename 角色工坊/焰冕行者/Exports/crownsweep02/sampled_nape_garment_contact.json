@@ -1,0 +1,19 @@
+{
+  "source": "crownsweep02",
+  "source_sha256": "d41217d189af5d269012389a0adae3a8038949f266b5af9126385f63be2e655d",
+  "source_unchanged": true,
+  "tested_objects": [
+    "Fitted CC0 male_elegantsuit01",
+    "Tailored standing rear collar"
+  ],
+  "region": "Posterior styling points z<1.735m and y>-.015m; every fourth curve point, up to 12000 deterministic uniform samples",
+  "sampled_points": 12000,
+  "potential_contact_flags": 0,
+  "closest_distance_quantiles_m": [
+    0.009371694177389145,
+    0.08675911650061607,
+    0.12419343739748001
+  ],
+  "flagged_examples": [],
+  "boundary": "Nearest-face normals on open garments indicate potential contact only. Does not prove all-fiber clearance, surface crossing, cloth thickness, or motion safety."
+}

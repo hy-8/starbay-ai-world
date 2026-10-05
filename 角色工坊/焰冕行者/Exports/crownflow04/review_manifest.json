@@ -1,0 +1,29 @@
+{
+  "version": "crownflow04",
+  "model_sha256": "3f7f4739fa773a0189637b2c7dc197f4ed5b62138a08f5e9e15feec5afcbfd75",
+  "creation_manifest_sha256": "15610e5701bfcf2ccafbbe1e34f26f8d31368a176a59c7f86f9a56a524235d37",
+  "observations": "正侧草稿和crownflowcheck01五张全质量均已看。侧向偏分/较窄出口聚束改善上层轮廓，左侧大圈减轻；另一侧交叉细弧、宽前额高光、规则侧后层与薄后颈仍需打磨。选为WIP方法检查点，尚未达到参考质量。",
+  "images": [
+    {
+      "file": "Renders/crownflow04/01_Front.png",
+      "sha256": "32fee40729b2147a34928aba68461f9f91e5d4844ebc9950a992cf9637dacb2e",
+      "resolution": [
+        960,
+        1120
+      ],
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/crownflow04/03_Side.png",
+      "sha256": "d790249d642d90415e4534e42e37e2da0025a92d48053553e19392594e2c3200",
+      "resolution": [
+        960,
+        1120
+      ],
+      "actually_inspected": true
+    }
+  ],
+  "artistic_acceptance": false,
+  "status": "Reviewed WIP; goal remains active",
+  "boundary": "Native geometry still study; structure/sample contact checks do not establish reference quality, full collisions or motion."
+}

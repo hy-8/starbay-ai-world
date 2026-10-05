@@ -1,0 +1,54 @@
+{
+  "version": "crownflowcheck01",
+  "source": "crownflow04",
+  "images": [
+    {
+      "file": "01_Front.png",
+      "sha256": "a7b718e94543b908b00f43ef57ebce1e1e075dbd50a6bcb49cd2e179c68bc692",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "actually_inspected": true
+    },
+    {
+      "file": "02_ThreeQuarter.png",
+      "sha256": "3ed653d4a0dd044962582e0e3c25a0f1d3468d89874e641616ec32fb8c52be9b",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "actually_inspected": true
+    },
+    {
+      "file": "03_Side.png",
+      "sha256": "3c89ed230b603845a9b29326ffa8887fdefefc5675e73d5861de7e0631e75359",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "actually_inspected": true
+    },
+    {
+      "file": "04_Back.png",
+      "sha256": "832cd8441ac1486c3318b943924e7d7f565f219109481b17bd261760f5b9e12c",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "actually_inspected": true
+    },
+    {
+      "file": "05_OppositeSide.png",
+      "sha256": "25ffe4a1113c522f6eb02a97c280efbbb07c7f0c4e27f43fef5180892a7ad74a",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "actually_inspected": true
+    }
+  ],
+  "observations": "Five actual neutral cameras inspected.04 improves large left top loops; opposite fine intersecting arcs, broad fringe sheen and sparse nape remain.",
+  "artistic_acceptance": false,
+  "source_unchanged": true
+}

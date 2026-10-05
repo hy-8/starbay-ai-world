@@ -1,0 +1,30 @@
+{
+  "version": "crownredirect01",
+  "model_sha256": "f6cb400f9038889c5db733b3ab058106b5d9fc8ba1e7003e711a728016231198",
+  "creation_manifest_sha256": "4ad61b9a0aec9fd530663fbb25287f6206d3ab6c2fe3f589fb9bebe1f2d6b39c",
+  "observations": "前冠末端后移/下压；正面和三分之四已看。顶部太平，未选。",
+  "images": [
+    {
+      "file": "Renders/crownredirect01/01_Front.png",
+      "sha256": "2331b267b5f9e07dcbdc841a0ad533fe8ae319a638d7cc391b8f7833356a3050",
+      "resolution": [
+        960,
+        1120
+      ],
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/crownredirect01/02_ThreeQuarter.png",
+      "sha256": "a9367597075924ff541074b415c76ffa585ac30f345b4cdc49ba83e908a27ebf",
+      "resolution": [
+        960,
+        1120
+      ],
+      "actually_inspected": true
+    }
+  ],
+  "artistic_acceptance": false,
+  "status": "Reviewed WIP; goal remains active",
+  "boundary": "Native geometry still study; structure/sample contact checks do not establish reference quality, full collisions or motion.",
+  "creation_wording_correction": "Raw creation text preserved; effective operation is described in observations and actual boolean parameters, not merely ordinary arc cutting."
+}

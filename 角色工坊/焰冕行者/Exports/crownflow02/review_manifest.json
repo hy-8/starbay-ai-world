@@ -1,0 +1,29 @@
+{
+  "version": "crownflow02",
+  "model_sha256": "af63cd88e37a2f86f6fc3d7a10d5f481ad64d5d5a7cdd541bb0cbf70110dc2bd",
+  "creation_manifest_sha256": "efd2a114cb865abd7e6615852b277eb221741c2a2bca0ff14158a708d2afb2ba",
+  "observations": "正侧草稿已看。重画上部后发后左侧明显圈结减轻，但太贴头。",
+  "images": [
+    {
+      "file": "Renders/crownflow02/01_Front.png",
+      "sha256": "7b95dfceba76654b4c8357ed18d5417173b981e4b3cb43a5bf1c87191f2fe941",
+      "resolution": [
+        960,
+        1120
+      ],
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/crownflow02/03_Side.png",
+      "sha256": "017587e2bd672c2d2c9171e4f42056efb5997194d49278927a2005dd15515dc7",
+      "resolution": [
+        960,
+        1120
+      ],
+      "actually_inspected": true
+    }
+  ],
+  "artistic_acceptance": false,
+  "status": "Reviewed WIP; goal remains active",
+  "boundary": "Native geometry still study; structure/sample contact checks do not establish reference quality, full collisions or motion."
+}

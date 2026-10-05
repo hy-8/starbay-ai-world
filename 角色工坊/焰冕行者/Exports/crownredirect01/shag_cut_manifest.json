@@ -1,0 +1,59 @@
+{
+  "version": "crownredirect01",
+  "source": "spatialrear08",
+  "source_sha256": "2ca887b1456de41c6e9c4af9737abf90f12b90db23f52f06c16c5b5b00f50697",
+  "method": "Actual arc-length layered cuts, adjacent-root crown subdivisions, independently staggered fiber lengths and narrower ends; retain short scalp coverage",
+  "components": [
+    {
+      "object": "Authored frontal revision \u2022 native scalp-patch geometry",
+      "curves": 27760,
+      "local_groups": 110,
+      "exact_roots_preserved": true,
+      "actual_fiber_arc_before_quantiles_m": [
+        0.06144704669713974,
+        0.11468490213155746,
+        0.17019819393754004,
+        0.20509490370750427
+      ],
+      "actual_fiber_arc_after_quantiles_m": [
+        0.05330546200275421,
+        0.11292082071304321,
+        0.1674192763864994,
+        0.20509490370750427
+      ],
+      "maximum_displacement_m": 0.05590462684631348,
+      "positions_before_sha256": "fa8f6fac00045fa4f258212c4a29afd0d192df12d19ce81daaf4c07550fffb68",
+      "positions_after_sha256": "88907449ac372058a9db909d1d8939e671325791cacd123886c8655e448e2c95"
+    }
+  ],
+  "front_only": true,
+  "rear_only": false,
+  "gentle": false,
+  "coverage_only": false,
+  "keep_front_length": true,
+  "preview": false,
+  "personal_cut_applied_to_center_paths": true,
+  "feathered_flow": false,
+  "spatial_rear": false,
+  "loose_wave": false,
+  "front_wave": false,
+  "front_wave_strength": 1.0,
+  "preview_front": true,
+  "crown_direction_redirect": true,
+  "transported_front_frame": false,
+  "garment_clearance": false,
+  "garment_point_adjustments": 0,
+  "garment_maximum_y_shift_m": 0.0,
+  "nape_extra_length_m": 0.092,
+  "garment_bend_transition_m": 0.055,
+  "free_falling_nape": false,
+  "garment_scope": "No new garment guard",
+  "median_study_paths": 56,
+  "guide_status": "Baked evidence only; not live-linked",
+  "status": "Unreviewed real 3D hair study; no artistic or animation approval",
+  "collision_scope": "Every fourth interior hair point with smoothed correction; not exhaustive scalp/eyes/clothes/strand or motion verification",
+  "license": "Modified front/posterior fibers original; retained Bystedt CC BY-SA and Abhay Pratap Royalty Free short support unchanged; hidden licensed donor geometry local",
+  "samples": 64,
+  "draft": true,
+  "denoising": false
+}

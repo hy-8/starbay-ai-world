@@ -1,0 +1,62 @@
+{
+  "version": "napefan01",
+  "source": "spatialrear08",
+  "source_sha256": "2ca887b1456de41c6e9c4af9737abf90f12b90db23f52f06c16c5b5b00f50697",
+  "method": "Actual arc-length layered cuts, adjacent-root crown subdivisions, independently staggered fiber lengths and narrower ends; retain short scalp coverage",
+  "components": [
+    {
+      "object": "Original posterior shag \u2022 distributed surface roots",
+      "curves": 64000,
+      "local_groups": 240,
+      "exact_roots_preserved": true,
+      "actual_fiber_arc_before_quantiles_m": [
+        0.021475980058312416,
+        0.07129989191889763,
+        0.14386055991053576,
+        0.1877138465642929
+      ],
+      "actual_fiber_arc_after_quantiles_m": [
+        0.021475980058312416,
+        0.07129989191889763,
+        0.1326773665845394,
+        0.1594020426273346
+      ],
+      "maximum_displacement_m": 0.05087997764348984,
+      "actually_modified_curves": 8816,
+      "positions_before_sha256": "45b9f67dd85d48dd1f18c450af2f7243991001a883d9eea682fbfbd2fc2b4c56",
+      "positions_after_sha256": "134aea3bd78ea9bd8e724d206bd4e5168e295a5edd4ac720bdeb9501fc4d675a"
+    }
+  ],
+  "front_only": false,
+  "rear_only": true,
+  "gentle": false,
+  "coverage_only": false,
+  "keep_front_length": false,
+  "preview": true,
+  "personal_cut_applied_to_center_paths": true,
+  "feathered_flow": false,
+  "spatial_rear": false,
+  "loose_wave": false,
+  "front_wave": false,
+  "front_wave_strength": 1.0,
+  "preview_front": false,
+  "crown_direction_redirect": false,
+  "crown_arch_retained": false,
+  "nape_root_fan_recovery": true,
+  "transported_front_frame": false,
+  "garment_clearance": true,
+  "garment_point_adjustments": 26823,
+  "garment_maximum_y_shift_m": 0.003692192957186872,
+  "nape_extra_length_m": 0.092,
+  "garment_bend_transition_m": 0.1,
+  "free_falling_nape": false,
+  "garment_scope": "Every point on modified rear fibers in posterior collar region; ray-constrained back envelope of actual suit and rear collar, with declared upper bend transition. Not an all-garment/strand/motion collision proof",
+  "median_study_paths": 31,
+  "guide_status": "Baked evidence only; not live-linked",
+  "status": "Unreviewed real 3D hair study; no artistic or animation approval",
+  "collision_scope": "Every fourth interior hair point with smoothed correction; not exhaustive scalp/eyes/clothes/strand or motion verification",
+  "license": "Modified front/posterior fibers original; retained Bystedt CC BY-SA and Abhay Pratap Royalty Free short support unchanged; hidden licensed donor geometry local",
+  "samples": 64,
+  "draft": true,
+  "denoising": false
+}
