@@ -1,0 +1,28 @@
+{
+  "version": "spatialrear04",
+  "actual_model_sha256": "34499ba9abd9e49146377bf6669ee431deb25be4a15207b76d5ef8b66ab323f2",
+  "images": [
+    {
+      "file": "Renders/spatialrear04/03_Side.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "ce9e1a029b68dbdab685d33d187323711362bb2cfc247931e81cec49d1afa547",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/spatialrear04/04_Back.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "54c99802944a24e08bcb9378d4bbf56b8eb8e4e2d61875cd934cc590be40ec8d",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Side/back drafts inspected. All eligible rear points routed outside actual coat/collar back envelope; sampled flags0/12000. Collar detour creates stiff lower turn, not accepted.",
+  "artistic_acceptance": false,
+  "status": "Reviewed actual geometry, unfinished",
+  "validation_boundary": "Structural and sampled contact reports have explicit limited scopes; no full collision/motion or reference-quality acceptance"
+}

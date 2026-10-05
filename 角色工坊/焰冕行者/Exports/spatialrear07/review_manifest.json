@@ -1,0 +1,28 @@
+{
+  "version": "spatialrear07",
+  "actual_model_sha256": "338291b39f9952a84d7e0b0d49d4f1a638c9d104db35ee3144cd085866539564",
+  "images": [
+    {
+      "file": "Renders/spatialrear07/03_Side.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "fb09852f76063c016850b1a61805541839a3e54fc5262fb11fa6439b1000b8cd",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/spatialrear07/04_Back.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "1435ef871073de1fda6f86ca5bf270d298b3581132fbf8fb0a7c06ccce9d9b8d",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Side/back drafts inspected. Longer nape center paths fall from root depth rather than follow inward neck tangent. Collar kink reduced; ends remain fine/sparse and crown broad. Progress only.",
+  "artistic_acceptance": false,
+  "status": "Reviewed actual geometry, unfinished",
+  "validation_boundary": "Structural and sampled contact reports have explicit limited scopes; no full collision/motion or reference-quality acceptance"
+}

@@ -1,0 +1,46 @@
+{
+  "version": "spatialrear08",
+  "actual_model_sha256": "2ca887b1456de41c6e9c4af9737abf90f12b90db23f52f06c16c5b5b00f50697",
+  "images": [
+    {
+      "file": "Renders/spatialrear08/01_Front.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "ae156b155ab559faefdee4783922f60c4be9e3eeb58c2cd6d94d42884a88021f",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/spatialrear08/02_ThreeQuarter.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "39a68495aa989ca8314511bc3ac12a0e8292f95e040941d40062c5db2545bf94",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/spatialrear08/03_Side.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "f8f62375cca058e9d5d946dceaaf305da115c3f3241c119d55756429a03c5cb1",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/spatialrear08/04_Back.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "40403b5d6808c7e96da08fe7040628defdba3a074ad91db5152801803b1324d7",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Four 1200x1400,192-sample views and real opposite camera inspected. Same07 spatial method; full render. Better middle/back waves and free draping nape than shagcut05, broad crown and wispy/regular nape ends remain. Current WIP checkpoint, not reference quality.",
+  "artistic_acceptance": false,
+  "status": "Reviewed actual geometry, unfinished",
+  "validation_boundary": "Structural and sampled contact reports have explicit limited scopes; no full collision/motion or reference-quality acceptance"
+}

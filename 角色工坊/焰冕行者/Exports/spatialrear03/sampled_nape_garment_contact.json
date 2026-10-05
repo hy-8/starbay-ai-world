@@ -1,0 +1,220 @@
+{
+  "source": "spatialrear03",
+  "source_sha256": "871f4fa068a5fbd965b4894f104a08eadd610dbd6a8471e4bc26feea8a64e715",
+  "source_unchanged": true,
+  "tested_objects": [
+    "Fitted CC0 male_elegantsuit01",
+    "Tailored standing rear collar"
+  ],
+  "region": "Posterior styling points z<1.735m and y>-.015m; every fourth curve point, up to 12000 deterministic uniform samples",
+  "sampled_points": 12000,
+  "potential_contact_flags": 246,
+  "closest_distance_quantiles_m": [
+    1.0475921953911893e-05,
+    0.07149114087224007,
+    0.11937841773033142
+  ],
+  "flagged_examples": [
+    {
+      "position_m": [
+        0.03636118024587631,
+        0.027841920033097267,
+        1.61355721950531
+      ],
+      "distance_m": 0.005989287048578262,
+      "signed_face_gap_m": -0.005989285069517791,
+      "nearest_object": "Fitted CC0 male_elegantsuit01"
+    },
+    {
+      "position_m": [
+        0.027476614341139793,
+        0.029156096279621124,
+        1.616439938545227
+      ],
+      "distance_m": 0.005965175572782755,
+      "signed_face_gap_m": -0.005965175718301907,
+      "nearest_object": "Fitted CC0 male_elegantsuit01"
+    },
+    {
+      "position_m": [
+        0.03519947826862335,
+        0.027724603191018105,
+        1.6146948337554932
+      ],
+      "distance_m": 0.0058409119956195354,
+      "signed_face_gap_m": -0.005840911820996553,
+      "nearest_object": "Fitted CC0 male_elegantsuit01"
+    },
+    {
+      "position_m": [
+        0.008866674266755581,
+        0.03586543723940849,
+        1.615967035293579
+      ],
+      "distance_m": 0.005795709323137999,
+      "signed_face_gap_m": -0.0057957094759331085,
+      "nearest_object": "Fitted CC0 male_elegantsuit01"
+    },
+    {
+      "position_m": [
+        0.025922272354364395,
+        0.031015386804938316,
+        1.6123631000518799
+      ],
+      "distance_m": 0.005695100873708725,
+      "signed_face_gap_m": -0.005671040940796956,
+      "nearest_object": "Fitted CC0 male_elegantsuit01"
+    },
+    {
+      "position_m": [
+        0.008735401555895805,
+        0.04710085317492485,
+        1.6109439134597778
+      ],
+      "distance_m": 0.005873122718185186,
+      "signed_face_gap_m": -0.005636420563746469,
+      "nearest_object": "Fitted CC0 male_elegantsuit01"
+    },
+    {
+      "position_m": [
+        0.035709068179130554,
+        0.027301283553242683,
+        1.6152046918869019
+      ],
+      "distance_m": 0.005611358676105738,
+      "signed_face_gap_m": -0.005610605585388839,
+      "nearest_object": "Fitted CC0 male_elegantsuit01"
+    },
+    {
+      "position_m": [
+        0.03541368618607521,
+        0.027238566428422928,
+        1.6155658960342407
+      ],
+      "distance_m": 0.00555666908621788,
+      "signed_face_gap_m": -0.005556669028010219,
+      "nearest_object": "Fitted CC0 male_elegantsuit01"
+    },
+    {
+      "position_m": [
+        0.02700897864997387,
+        0.02806190587580204,
+        1.6195520162582397
+      ],
+      "distance_m": 0.005535953212529421,
+      "signed_face_gap_m": -0.0055359533143928275,
+      "nearest_object": "Fitted CC0 male_elegantsuit01"
+    },
+    {
+      "position_m": [
+        0.013544587418437004,
+        0.035545915365219116,
+        1.6129189729690552
+      ],
+      "distance_m": 0.005501390900462866,
+      "signed_face_gap_m": -0.005501391220605001,
+      "nearest_object": "Fitted CC0 male_elegantsuit01"
+    },
+    {
+      "position_m": [
+        -0.01792142540216446,
+        0.03801843523979187,
+        1.613884449005127
+      ],
+      "distance_m": 0.0054652635008096695,
+      "signed_face_gap_m": -0.005465263413498178,
+      "nearest_object": "Fitted CC0 male_elegantsuit01"
+    },
+    {
+      "position_m": [
+        0.028029505163431168,
+        0.027189763262867928,
+        1.621090292930603
+      ],
+      "distance_m": 0.005457863677293062,
+      "signed_face_gap_m": -0.005457863386254758,
+      "nearest_object": "Fitted CC0 male_elegantsuit01"
+    },
+    {
+      "position_m": [
+        0.010450383648276329,
+        0.03492974862456322,
+        1.61690354347229
+      ],
+      "distance_m": 0.005352994427084923,
+      "signed_face_gap_m": -0.0053529941505985335,
+      "nearest_object": "Fitted CC0 male_elegantsuit01"
+    },
+    {
+      "position_m": [
+        0.008486837148666382,
+        0.048130448907613754,
+        1.6116666793823242
+      ],
+      "distance_m": 0.005324653349816799,
+      "signed_face_gap_m": -0.005302851058331726,
+      "nearest_object": "Fitted CC0 male_elegantsuit01"
+    },
+    {
+      "position_m": [
+        0.02845829911530018,
+        0.026629209518432617,
+        1.6221928596496582
+      ],
+      "distance_m": 0.005202209576964378,
+      "signed_face_gap_m": -0.005202209496928845,
+      "nearest_object": "Fitted CC0 male_elegantsuit01"
+    },
+    {
+      "position_m": [
+        0.03401512652635574,
+        0.026785878464579582,
+        1.6176512241363525
+      ],
+      "distance_m": 0.0052000186406075954,
+      "signed_face_gap_m": -0.005200019106268883,
+      "nearest_object": "Fitted CC0 male_elegantsuit01"
+    },
+    {
+      "position_m": [
+        0.03666258230805397,
+        0.030399542301893234,
+        1.612177848815918
+      ],
+      "distance_m": 0.005150591488927603,
+      "signed_face_gap_m": -0.005149946897290647,
+      "nearest_object": "Fitted CC0 male_elegantsuit01"
+    },
+    {
+      "position_m": [
+        0.026278626173734665,
+        0.02776785008609295,
+        1.6207691431045532
+      ],
+      "distance_m": 0.0051473649218678474,
+      "signed_face_gap_m": -0.0051473649673425825,
+      "nearest_object": "Fitted CC0 male_elegantsuit01"
+    },
+    {
+      "position_m": [
+        0.013398931361734867,
+        0.034150075167417526,
+        1.616582989692688
+      ],
+      "distance_m": 0.005118089262396097,
+      "signed_face_gap_m": -0.005118089116876945,
+      "nearest_object": "Fitted CC0 male_elegantsuit01"
+    },
+    {
+      "position_m": [
+        0.03510545194149017,
+        0.026376910507678986,
+        1.6176660060882568
+      ],
+      "distance_m": 0.005055022891610861,
+      "signed_face_gap_m": -0.005055022542364895,
+      "nearest_object": "Fitted CC0 male_elegantsuit01"
+    }
+  ],
+  "boundary": "Nearest-face normals on open garments indicate potential contact only. Does not prove all-fiber clearance, surface crossing, cloth thickness, or motion safety."
+}

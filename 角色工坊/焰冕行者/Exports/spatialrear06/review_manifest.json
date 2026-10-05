@@ -1,0 +1,46 @@
+{
+  "version": "spatialrear06",
+  "actual_model_sha256": "b01c11ada2829d828be6a3340c7d6f08bab62f125b0c4d3c4ef31413f8324ef5",
+  "images": [
+    {
+      "file": "Renders/spatialrear06/01_Front.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "0cd699d77291cec12979862559a4901a85c186ca48c2c9ea133a826481b328f1",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/spatialrear06/02_ThreeQuarter.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "c66b4072edb385a9a1caaa4bfaf565e39fa694f3459c2c9029c169da643882e8",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/spatialrear06/03_Side.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "59cd643fb5b3eab6dd13df14ca9ad55156250756244a0e89ccd19c2b3e40e3af",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/spatialrear06/04_Back.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "de6e9bc40dc7ef63cbdc016f2e06f34b5cdc930563c599b9ba9eda93f42f6a41",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Four full192-sample views and actual opposite camera inspected. Exact source-paired saved geometry invariants pass; sampled nape flags0/12000. Inward neck tangent makes lower collar detour stiff, no art acceptance.",
+  "artistic_acceptance": false,
+  "status": "Reviewed actual geometry, unfinished",
+  "validation_boundary": "Structural and sampled contact reports have explicit limited scopes; no full collision/motion or reference-quality acceptance"
+}

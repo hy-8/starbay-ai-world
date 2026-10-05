@@ -1,0 +1,29 @@
+{
+  "version": "spatialrear02",
+  "actual_model_sha256": "9205a370a576ea2bf54ee9e5f393555cc0f9e4fc64a15fa9ba7a7a36bd50eb02",
+  "images": [
+    {
+      "file": "Renders/spatialrear02/03_Side.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "55198a08c2d50fbb289a2e2a70b2736768dcdd2c64c7460966d43728aca4ff9a",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/spatialrear02/04_Back.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "31868821c35b61839604b759e630e244abce6cdc8c2808d3c8dc7d5712b8e780",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Side/back drafts inspected. Broad loose waves and a higher continuous upper transition introduce middle/back layers. Retains wide frontal crown; no garment guard yet.",
+  "artistic_acceptance": false,
+  "status": "Reviewed actual geometry, unfinished",
+  "validation_boundary": "Structural and sampled contact reports have explicit limited scopes; no full collision/motion or reference-quality acceptance",
+  "creation_method_wording_correction": "Raw creation manifest retained. spatial_rear=True used newly authored center paths from group root medians with early scalp release, not merely arc cuts of old center paths."
+}

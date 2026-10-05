@@ -1,0 +1,28 @@
+{
+  "version": "spatialrear05",
+  "actual_model_sha256": "44123d4816218c8d7e2cf2297dbb869cbd171d2f6c5ce8f189be0c48d86ca146",
+  "images": [
+    {
+      "file": "Renders/spatialrear05/03_Side.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "ab01181276dbac4d671b863bbda2c1b742fbeb5df91ae67d0876bfb119c12135",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/spatialrear05/04_Back.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "866da58515494561c07c14c403d86b99cf592701be4394a2ccf596a06836d2b2",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Side/back drafts inspected. Reduced nape extra length and100mm upper guard transition. Stiff inward-then-outward tail remains; sample only.",
+  "artistic_acceptance": false,
+  "status": "Reviewed actual geometry, unfinished",
+  "validation_boundary": "Structural and sampled contact reports have explicit limited scopes; no full collision/motion or reference-quality acceptance"
+}

@@ -1,0 +1,15 @@
+{
+  "version": "oppositegroom05",
+  "source": "spatialrear08",
+  "source_sha256": "2ca887b1456de41c6e9c4af9737abf90f12b90db23f52f06c16c5b5b00f50697",
+  "source_unchanged": true,
+  "method": "Actual camera mirrored in world space with local-X handedness correction; no pixel flip or geometry edit",
+  "samples": 192,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "denoising": false,
+  "image_sha256": "14b517cdc661070516d0c23e7673f695e989c19a0310721a79a62ba0b01123ce",
+  "status": "Unreviewed actual opposite profile diagnostic, not artistic approval"
+}

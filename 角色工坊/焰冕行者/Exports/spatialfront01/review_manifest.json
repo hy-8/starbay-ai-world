@@ -1,0 +1,28 @@
+{
+  "version": "spatialfront01",
+  "actual_model_sha256": "f4e61434e914a474dd0d96365697e6ad66661a0bde3d017aacd8dbf4497a6984",
+  "images": [
+    {
+      "file": "Renders/spatialfront01/01_Front.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "f00a65a2100811d3f80f26b43a1acb43bad8cb504dc427a0e361237e4ff31232",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/spatialfront01/02_ThreeQuarter.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "4a8ee4cd044ee3a4329eb6472e56deffe0d77cd7554d32287def50a25af0b8aa",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Front/three-quarter drafts inspected. Strong frontal wave introduces fine lifted loops. Not selected; rear03 unchanged.",
+  "artistic_acceptance": false,
+  "status": "Reviewed actual geometry, unfinished",
+  "validation_boundary": "Structural and sampled contact reports have explicit limited scopes; no full collision/motion or reference-quality acceptance"
+}

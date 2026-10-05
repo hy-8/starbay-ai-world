@@ -1,0 +1,28 @@
+{
+  "version": "spatialfront02",
+  "actual_model_sha256": "c8804c1e8e18ae164a522cdd07a698b3a1abbf24b6ab1042e289e05f780025ac",
+  "images": [
+    {
+      "file": "Renders/spatialfront02/01_Front.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "5b933e64224fe3ac274f836925d4c7334e4acf78ec9a0f341b020a1a6b3c1f5e",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/spatialfront02/02_ThreeQuarter.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "336303eb0413f358e30674ea09293227a8254331cd22075e25bf183816922090",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Front/three-quarter drafts inspected. Halved wave still gives lifted fine arcs and limited silhouette improvement. Not selected.",
+  "artistic_acceptance": false,
+  "status": "Reviewed actual geometry, unfinished",
+  "validation_boundary": "Structural and sampled contact reports have explicit limited scopes; no full collision/motion or reference-quality acceptance"
+}

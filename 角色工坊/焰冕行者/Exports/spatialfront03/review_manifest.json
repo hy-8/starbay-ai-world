@@ -1,0 +1,28 @@
+{
+  "version": "spatialfront03",
+  "actual_model_sha256": "da3adce49035ee2d530a4813e3be4b0bcf79947119e3cb7a54dde30a778bec02",
+  "images": [
+    {
+      "file": "Renders/spatialfront03/01_Front.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "5757d5639d519618f9abf15deadd52286891adc6c72b1163575a97bbb1465d0c",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/spatialfront03/02_ThreeQuarter.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "b83e786dd6d453ac349b6cdeb595cae326a63d5fbffa7d9bbfc2c7c55380f812",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Front/three-quarter drafts inspected. Continuous transported shaping frame tried; lifted thin top arcs still present. No proof nearest-face frame instability was the main artifact cause. Not selected.",
+  "artistic_acceptance": false,
+  "status": "Reviewed actual geometry, unfinished",
+  "validation_boundary": "Structural and sampled contact reports have explicit limited scopes; no full collision/motion or reference-quality acceptance"
+}

@@ -1,0 +1,29 @@
+{
+  "version": "spatialrear01",
+  "actual_model_sha256": "534e2ee0aa9dbc62ac6c1e5c4efd1ef9d5babb8969c1bd9072e68f787a2f82e2",
+  "images": [
+    {
+      "file": "Renders/spatialrear01/03_Side.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "5758baea71e7625ec37cbccb0186484ad14fc4c12e931155777afb23695bc7a2",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/spatialrear01/04_Back.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "530007e10ccd16e943863e827eb5dc91d7d06b80ea959b1918986d4089509d86",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Side/back drafts inspected. New spatial center paths reduce lower bowl perimeter and spread the nape. Lower fibers still parallel. Not accepted.",
+  "artistic_acceptance": false,
+  "status": "Reviewed actual geometry, unfinished",
+  "validation_boundary": "Structural and sampled contact reports have explicit limited scopes; no full collision/motion or reference-quality acceptance",
+  "creation_method_wording_correction": "Raw creation manifest retained. spatial_rear=True used newly authored center paths from group root medians with early scalp release, not merely arc cuts of old center paths."
+}

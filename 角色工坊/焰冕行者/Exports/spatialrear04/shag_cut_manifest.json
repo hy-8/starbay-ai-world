@@ -1,0 +1,55 @@
+{
+  "version": "spatialrear04",
+  "source": "shagcut05",
+  "source_sha256": "f8e081623f7441daad8de60f34d0f96668fe1d81233a39ca9c02531e86a4b78d",
+  "method": "Explicit scalp-root spatial posterior guides with early surface release and free draping/waving ends; independent per-fiber endpoint sampling; retain front and short coverage",
+  "components": [
+    {
+      "object": "Original posterior shag \u2022 distributed surface roots",
+      "curves": 64000,
+      "local_groups": 240,
+      "exact_roots_preserved": true,
+      "actual_fiber_arc_before_quantiles_m": [
+        0.02918132394552231,
+        0.0819934643805027,
+        0.1869240656495094,
+        0.2584336996078491
+      ],
+      "actual_fiber_arc_after_quantiles_m": [
+        0.021475980058312416,
+        0.07140122726559639,
+        0.16461759135127066,
+        0.21920356154441833
+      ],
+      "maximum_displacement_m": 0.1519048511981964,
+      "positions_before_sha256": "2ace66fe1f231420584d4e56c3e19df281aeaa45e1da0ef56b7f78fdc9a1b8ea",
+      "positions_after_sha256": "83787c56e44b943a96b8787e5212283bb0f6ae811394b112aa8348834962647d"
+    }
+  ],
+  "front_only": false,
+  "rear_only": true,
+  "gentle": false,
+  "coverage_only": false,
+  "keep_front_length": false,
+  "preview": true,
+  "personal_cut_applied_to_center_paths": true,
+  "feathered_flow": false,
+  "spatial_rear": true,
+  "loose_wave": true,
+  "front_wave": false,
+  "front_wave_strength": 1.0,
+  "preview_front": false,
+  "transported_front_frame": false,
+  "garment_clearance": true,
+  "garment_point_adjustments": 97484,
+  "garment_maximum_y_shift_m": 0.04191944782211769,
+  "garment_scope": "Every point on modified rear fibers in posterior collar region; ray-constrained back envelope of actual suit and rear collar, with 55mm upper bend transition. Not an all-garment/strand/motion collision proof",
+  "median_study_paths": 240,
+  "guide_status": "Baked evidence only; not live-linked",
+  "status": "Unreviewed real 3D hair study; no artistic or animation approval",
+  "collision_scope": "Every fourth interior hair point with smoothed correction; not exhaustive scalp/eyes/clothes/strand or motion verification",
+  "license": "Modified front/posterior fibers original; retained Bystedt CC BY-SA and Abhay Pratap Royalty Free short support unchanged; hidden licensed donor geometry local",
+  "samples": 64,
+  "draft": true,
+  "denoising": false
+}

@@ -1,0 +1,47 @@
+{
+  "version": "spatialrear03",
+  "actual_model_sha256": "871f4fa068a5fbd965b4894f104a08eadd610dbd6a8471e4bc26feea8a64e715",
+  "images": [
+    {
+      "file": "Renders/spatialrear03/01_Front.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "3b9d927cad0d7d23da686e4d20b8cc8cb5228c9d27d860d6ba25d144b801bbe1",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/spatialrear03/02_ThreeQuarter.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "65bbddfd30305cedf981e77d34dae09259fee466c39a675e51c7a06bc0c861fc",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/spatialrear03/03_Side.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "89f21ba22310b4ac0eba77bca65c90229173403d8573a2f06406e9a9bf41a679",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/spatialrear03/04_Back.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "dd8f82281cd61232ce859dfa8b6958ea5b62b24316b98d41b45a2a61d4a1b251",
+      "actually_inspected": true
+    }
+  ],
+  "visual_observation": "Four 1200x1400,192-sample views inspected. Same02 spatial geometry, full render. Round lower outline improved, longer nape distributed; collar contact and crown width remain. Nape garment probe flags246/12000 samples, not a full collision proof.",
+  "artistic_acceptance": false,
+  "status": "Reviewed actual geometry, unfinished",
+  "validation_boundary": "Structural and sampled contact reports have explicit limited scopes; no full collision/motion or reference-quality acceptance",
+  "creation_method_wording_correction": "Raw creation manifest retained. spatial_rear=True used newly authored center paths from group root medians with early scalp release, not merely arc cuts of old center paths."
+}

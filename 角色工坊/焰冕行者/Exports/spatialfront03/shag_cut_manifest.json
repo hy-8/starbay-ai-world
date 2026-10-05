@@ -1,0 +1,51 @@
+{
+  "version": "spatialfront03",
+  "source": "spatialrear03",
+  "source_sha256": "871f4fa068a5fbd965b4894f104a08eadd610dbd6a8471e4bc26feea8a64e715",
+  "method": "Actual arc-length layered cuts, adjacent-root crown subdivisions, independently staggered fiber lengths and narrower ends; retain short scalp coverage",
+  "components": [
+    {
+      "object": "Authored frontal revision \u2022 native scalp-patch geometry",
+      "curves": 27760,
+      "local_groups": 110,
+      "exact_roots_preserved": true,
+      "actual_fiber_arc_before_quantiles_m": [
+        0.06144704669713974,
+        0.11468490213155746,
+        0.17019819393754004,
+        0.20509490370750427
+      ],
+      "actual_fiber_arc_after_quantiles_m": [
+        0.06766065210103989,
+        0.11582627147436142,
+        0.16942759826779366,
+        0.19861160218715668
+      ],
+      "maximum_displacement_m": 0.011199215427041054,
+      "positions_before_sha256": "fa8f6fac00045fa4f258212c4a29afd0d192df12d19ce81daaf4c07550fffb68",
+      "positions_after_sha256": "3aa65aa313a87182f0cd0c25f8375689dcfdd747351b128fa8168068950dcdf8"
+    }
+  ],
+  "front_only": true,
+  "rear_only": false,
+  "gentle": false,
+  "coverage_only": false,
+  "keep_front_length": true,
+  "preview": false,
+  "personal_cut_applied_to_center_paths": true,
+  "feathered_flow": false,
+  "spatial_rear": false,
+  "loose_wave": false,
+  "front_wave": true,
+  "front_wave_strength": 0.6,
+  "preview_front": true,
+  "transported_front_frame": true,
+  "median_study_paths": 110,
+  "guide_status": "Baked evidence only; not live-linked",
+  "status": "Unreviewed real 3D hair study; no artistic or animation approval",
+  "collision_scope": "Every fourth interior hair point with smoothed correction; not exhaustive scalp/eyes/clothes/strand or motion verification",
+  "license": "Modified front/posterior fibers original; retained Bystedt CC BY-SA and Abhay Pratap Royalty Free short support unchanged; hidden licensed donor geometry local",
+  "samples": 64,
+  "draft": true,
+  "denoising": false
+}

@@ -1,0 +1,149 @@
+{
+  "version": "spatialrear06",
+  "file": "Ember_Regent.blend",
+  "sha256": "b01c11ada2829d828be6a3340c7d6f08bab62f125b0c4d3c4ef31413f8324ef5",
+  "visible_mesh_objects": 112,
+  "source_mesh_vertices": 145749,
+  "native_grooms": [
+    {
+      "object": "Abhay flow derivative • real scalp sampled short support",
+      "curves": 14000,
+      "points": 560000,
+      "radius_min_m": 6.187599979057268e-07,
+      "radius_max_m": 3.799874320975505e-05
+    },
+    {
+      "object": "Authored frontal revision • native scalp-patch geometry",
+      "curves": 27760,
+      "points": 1776640,
+      "radius_min_m": 5.484567964231246e-07,
+      "radius_max_m": 4.399945100885816e-05
+    },
+    {
+      "object": "Bystedt derivative • short scalp support",
+      "curves": 23657,
+      "points": 1514048,
+      "radius_min_m": 6.416628366423538e-07,
+      "radius_max_m": 3.899990042555146e-05
+    },
+    {
+      "object": "Original posterior coverage • surface-grown short fibers",
+      "curves": 36000,
+      "points": 1296000,
+      "radius_min_m": 8.011963359422225e-07,
+      "radius_max_m": 4.1999290260719135e-05
+    },
+    {
+      "object": "Original posterior shag • distributed surface roots",
+      "curves": 64000,
+      "points": 4096000,
+      "radius_min_m": 4.6275266640805057e-07,
+      "radius_max_m": 3.7999860069248825e-05
+    }
+  ],
+  "textures": [
+    {
+      "name": "brown_eye.png",
+      "packed": true,
+      "local_source_exists": true
+    },
+    {
+      "name": "depht+alpha.png",
+      "packed": true,
+      "local_source_exists": false
+    },
+    {
+      "name": "eyebrow002.png",
+      "packed": true,
+      "local_source_exists": true
+    },
+    {
+      "name": "hair_V2_bake_id.png",
+      "packed": true,
+      "local_source_exists": false
+    },
+    {
+      "name": "hair_V2_bake_normal.png",
+      "packed": true,
+      "local_source_exists": false
+    },
+    {
+      "name": "male_elegantsuit01_diffuse.png",
+      "packed": true,
+      "local_source_exists": true
+    },
+    {
+      "name": "Shoes_Biker_Boots.png",
+      "packed": true,
+      "local_source_exists": true
+    },
+    {
+      "name": "Shoes_Biker_Boots_NRM.png",
+      "packed": true,
+      "local_source_exists": true
+    },
+    {
+      "name": "young_lightskinned_male_diffuse.png",
+      "packed": true,
+      "local_source_exists": true
+    }
+  ],
+  "errors": [],
+  "structural_checks_passed": true,
+  "artistic_status": "WIP, not approved, not reference quality",
+  "game_validation": "none; still scene only",
+  "relative_shape_key_checks": [
+    {
+      "object": "CC0 male body • retained topology",
+      "key": "Basis",
+      "value": 0.0,
+      "points": 8415,
+      "finite": true
+    },
+    {
+      "object": "CC0 male body • retained topology",
+      "key": "01_Focused_upper_lids",
+      "value": 1.0,
+      "points": 8415,
+      "finite": true
+    },
+    {
+      "object": "CC0 male body • retained topology",
+      "key": "02_Angled_brow_ridge",
+      "value": 1.0,
+      "points": 8415,
+      "finite": true
+    },
+    {
+      "object": "CC0 male body • retained topology",
+      "key": "03_Cheek_and_jaw_planes",
+      "value": 1.0,
+      "points": 8415,
+      "finite": true
+    },
+    {
+      "object": "CC0 male body • retained topology",
+      "key": "04_Nasal_bridge_and_alar",
+      "value": 1.0,
+      "points": 8415,
+      "finite": true
+    },
+    {
+      "object": "CC0 male body • retained topology",
+      "key": "05_Resting_lip_balance",
+      "value": 1.0,
+      "points": 8415,
+      "finite": true
+    }
+  ],
+  "paired_cut_invariants": {
+    "all_visible_meshes_uvs_shape_keys_and_transforms_unchanged": true,
+    "native_groom_object_set_unchanged": true,
+    "all_native_groom_transforms_unchanged": true,
+    "all_native_groom_roots_exactly_unchanged": true,
+    "all_native_root_radii_exactly_unchanged": true,
+    "unmodified_native_grooms_exactly_unchanged": true
+  },
+  "declared_cut_source": "shagcut05",
+  "paired_scope": "Exact saved root/root-radius/transform hashes and unmodified mesh/UV/shape-key/groom data; does not prove silhouette quality or full collisions/animation"
+}
