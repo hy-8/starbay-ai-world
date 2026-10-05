@@ -1,0 +1,9 @@
+{
+  "version": "nativefrontwave10",
+  "status": "Inspected WIP; reference quality not achieved",
+  "art_judgment": "231 frontal sections / 11,092 fibers, small coherent layered-wave variation. Five-view inspection: softer fringe and eyes visible; broad crown, pale opposite undercoat and broad rear bands persist. New continuation study only; target incomplete.",
+  "inspected_images": {
+    "02_ThreeQuarter.png": "3b1b58196b7bd367d0c411dd0d22ce8c19a89f8605b698fb0eba892c171c1c51"
+  },
+  "scope": "Actual 3D render review plus static file checks, not full collision/animation validation"
+}

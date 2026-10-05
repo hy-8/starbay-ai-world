@@ -1,0 +1,9 @@
+{
+  "version": "nativeaffine08",
+  "status": "Inspected WIP; reference quality not achieved",
+  "art_judgment": "One global whole-shaft affine transfer, no root reflow. Generic historical method text mentions reflow incorrectly; head_transfer is authoritative. Broad crown persists; do not advance.",
+  "inspected_images": {
+    "02_ThreeQuarter.png": "ce9a026487bddd19bcaa8d234496010c30316909b33826752fb556f1a135b6b9"
+  },
+  "scope": "Actual 3D render review plus static file checks, not full collision/animation validation"
+}

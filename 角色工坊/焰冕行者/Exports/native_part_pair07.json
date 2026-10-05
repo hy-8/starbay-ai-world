@@ -1,0 +1,10 @@
+{
+  "source": "nativefrontwave10",
+  "source_sha256": "251b69d984725b1cb61a5f8e757196dd7e2692e05ae871d8b1dbfa7bf11badb2",
+  "candidate": "nativepart12",
+  "candidate_sha256": "c2f9d78fe7d65e35f0fc9b15207b11d15eee109df97e52ec25883def9e62ca8f",
+  "changed_fibers": 2931,
+  "all_roots_exactly_equal": true,
+  "unselected_primary_exactly_equal": true,
+  "scope": "Static local coordinate pair; no artistic or collision approval"
+}

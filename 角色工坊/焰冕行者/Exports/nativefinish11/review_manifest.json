@@ -1,0 +1,10 @@
+{
+  "version": "nativefinish11",
+  "status": "Inspected WIP; reference quality not achieved",
+  "art_judgment": "Paired shader-only control actually inspected. Stronger pink highlights, does not solve undercoat patch. Rejected finish; geometry exactly same as wave10.",
+  "inspected_images": {
+    "02_ThreeQuarter.png": "3ba9aeb632e56767a70496597c11b72a39d4d310b8bfcbe63c7105c33eec83a8",
+    "05_OppositeSide.png": "8d4c3c4f3da24cef41d121b43b883c23bdd6f232b183588126f693dbcccc5bf1"
+  },
+  "scope": "Actual 3D render review plus static file checks, not full collision/animation validation"
+}

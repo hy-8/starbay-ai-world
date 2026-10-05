@@ -1,0 +1,23 @@
+{
+  "version": "nativefrontcheck09",
+  "source": "nativefront09",
+  "source_sha256": "4eb23211e3147e565ecf31dcd58926514b9ad34c131f4ae3861961809c1ed148",
+  "source_unchanged": true,
+  "method": "Existing four neutral cameras when requested, plus actual opposite camera mirrored in world space with local-X handedness correction; no pixel flip or geometry edit",
+  "samples": 192,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "denoising": false,
+  "image_sha256": "aabb2665d474a389915dd5de8c76ce11f51bc92d0c8c53df8eae8a56ebb554d9",
+  "images_sha256": {
+    "01_Front.png": "7b6c3f3b6a05b33b0d18b974dbba512038f98907f4ddb4c9f71d942908fa6987",
+    "02_ThreeQuarter.png": "8c32aba80a885f0eb537a38092a1ee7072b2f4e66a5321e30ba80a46e4a7f88c",
+    "03_Side.png": "c491f6ebbdc173bfec46860349ec12644509af65692bc3da662bad8ff5554cbf",
+    "04_Back.png": "25277a39f2bea1bef9a2f67d458ebf222d65698179f0dd36d757501a2b82d52d",
+    "05_OppositeSide.png": "aabb2665d474a389915dd5de8c76ce11f51bc92d0c8c53df8eae8a56ebb554d9"
+  },
+  "status": "Unreviewed actual neutral/opposite profile diagnostic, not artistic approval",
+  "opposite_image_reused_from": null
+}

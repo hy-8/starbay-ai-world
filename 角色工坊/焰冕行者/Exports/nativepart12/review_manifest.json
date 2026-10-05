@@ -1,0 +1,10 @@
+{
+  "version": "nativepart12",
+  "status": "Inspected WIP; reference quality not achieved",
+  "art_judgment": "248 actual 6mm root sections / 2,931 shafts redirected on upper opposite scalp. Paired views inspected; pale part change insufficient. Rejected as remedy, preserve local experiment.",
+  "inspected_images": {
+    "02_ThreeQuarter.png": "9ff1264ec580e00a0522d1389d54581f2c2490e9f52db30f74259492b0b9319a",
+    "05_OppositeSide.png": "a589203e07d2af70fdf36b7b2b06443e9e836fdf7c5f0abf1ab579fe144de093"
+  },
+  "scope": "Actual 3D render review plus static file checks, not full collision/animation validation"
+}

@@ -1,0 +1,11 @@
+{
+  "version": "nativebranches07",
+  "status": "Inspected WIP; reference quality not achieved",
+  "art_judgment": "Source attribution: main 49,118 fibers carries broad fringe/crown; accent 150 has no frontal tips. Removing accent is not a remedy.",
+  "inspected_images": {
+    "02_ThreeQuarter.png": "f61e5a1b11a3966577ac199bb5ff34a00bc23e9d49082dfc6d65d4279d7a6cfb",
+    "08_MainOnly.png": "6abc01048be1310299b3344b7803e979e3333f304e3fc1a6837aad9f554999db",
+    "09_AccentOnly.png": "c90ab1af15f24d50411ac7c9dca09876e162ad909b0ceecaf22cd0e862d8a0a1"
+  },
+  "scope": "Actual 3D render review plus static file checks, not full collision/animation validation"
+}

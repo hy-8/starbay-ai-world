@@ -1,0 +1,1006 @@
+{
+  "source": "nativefrontwave10",
+  "source_sha256": "251b69d984725b1cb61a5f8e757196dd7e2692e05ae871d8b1dbfa7bf11badb2",
+  "changed_fibers": 2931,
+  "sections": [
+    {
+      "fibers": 2,
+      "max_displacement_m": 0.05695116769840318
+    },
+    {
+      "fibers": 10,
+      "max_displacement_m": 0.09005462212959787
+    },
+    {
+      "fibers": 22,
+      "max_displacement_m": 0.07440815396890832
+    },
+    {
+      "fibers": 16,
+      "max_displacement_m": 0.08629132631482651
+    },
+    {
+      "fibers": 16,
+      "max_displacement_m": 0.08688384446284074
+    },
+    {
+      "fibers": 14,
+      "max_displacement_m": 0.05964887112474187
+    },
+    {
+      "fibers": 19,
+      "max_displacement_m": 0.0962680240852035
+    },
+    {
+      "fibers": 17,
+      "max_displacement_m": 0.05498941622516119
+    },
+    {
+      "fibers": 15,
+      "max_displacement_m": 0.0951589925735157
+    },
+    {
+      "fibers": 10,
+      "max_displacement_m": 0.09299335461722717
+    },
+    {
+      "fibers": 21,
+      "max_displacement_m": 0.08468368008731648
+    },
+    {
+      "fibers": 6,
+      "max_displacement_m": 0.10198560543751392
+    },
+    {
+      "fibers": 19,
+      "max_displacement_m": 0.0897139466960597
+    },
+    {
+      "fibers": 1,
+      "max_displacement_m": 0.09166219349349963
+    },
+    {
+      "fibers": 11,
+      "max_displacement_m": 0.1191069475561513
+    },
+    {
+      "fibers": 5,
+      "max_displacement_m": 0.10700526895464914
+    },
+    {
+      "fibers": 1,
+      "max_displacement_m": 0.12075699258522947
+    },
+    {
+      "fibers": 2,
+      "max_displacement_m": 0.06402936800692342
+    },
+    {
+      "fibers": 12,
+      "max_displacement_m": 0.05657529639999562
+    },
+    {
+      "fibers": 6,
+      "max_displacement_m": 0.06676649708637686
+    },
+    {
+      "fibers": 6,
+      "max_displacement_m": 0.06043353932397083
+    },
+    {
+      "fibers": 12,
+      "max_displacement_m": 0.06807920657169923
+    },
+    {
+      "fibers": 1,
+      "max_displacement_m": 0.0688951396114283
+    },
+    {
+      "fibers": 6,
+      "max_displacement_m": 0.05668166335396675
+    },
+    {
+      "fibers": 24,
+      "max_displacement_m": 0.07134847215687223
+    },
+    {
+      "fibers": 2,
+      "max_displacement_m": 0.06141767051321992
+    },
+    {
+      "fibers": 8,
+      "max_displacement_m": 0.05860301993553246
+    },
+    {
+      "fibers": 20,
+      "max_displacement_m": 0.07148525815835491
+    },
+    {
+      "fibers": 3,
+      "max_displacement_m": 0.05523496597520862
+    },
+    {
+      "fibers": 13,
+      "max_displacement_m": 0.09271075066544834
+    },
+    {
+      "fibers": 13,
+      "max_displacement_m": 0.06333669634285698
+    },
+    {
+      "fibers": 2,
+      "max_displacement_m": 0.05462119827650983
+    },
+    {
+      "fibers": 16,
+      "max_displacement_m": 0.10225117335417165
+    },
+    {
+      "fibers": 17,
+      "max_displacement_m": 0.10858440748496612
+    },
+    {
+      "fibers": 2,
+      "max_displacement_m": 0.09382998315365138
+    },
+    {
+      "fibers": 14,
+      "max_displacement_m": 0.10067863584078098
+    },
+    {
+      "fibers": 20,
+      "max_displacement_m": 0.1107315066607562
+    },
+    {
+      "fibers": 5,
+      "max_displacement_m": 0.10208331858923177
+    },
+    {
+      "fibers": 21,
+      "max_displacement_m": 0.11726466499557814
+    },
+    {
+      "fibers": 13,
+      "max_displacement_m": 0.114026753600665
+    },
+    {
+      "fibers": 13,
+      "max_displacement_m": 0.1383104432077267
+    },
+    {
+      "fibers": 23,
+      "max_displacement_m": 0.12153695565318776
+    },
+    {
+      "fibers": 2,
+      "max_displacement_m": 0.12065506467372106
+    },
+    {
+      "fibers": 21,
+      "max_displacement_m": 0.1344350794721464
+    },
+    {
+      "fibers": 15,
+      "max_displacement_m": 0.12153486410546273
+    },
+    {
+      "fibers": 1,
+      "max_displacement_m": 0.12641661743581376
+    },
+    {
+      "fibers": 22,
+      "max_displacement_m": 0.12614833695574937
+    },
+    {
+      "fibers": 9,
+      "max_displacement_m": 0.12667184965827097
+    },
+    {
+      "fibers": 19,
+      "max_displacement_m": 0.14421887889868434
+    },
+    {
+      "fibers": 5,
+      "max_displacement_m": 0.11945708168439358
+    },
+    {
+      "fibers": 13,
+      "max_displacement_m": 0.1413610144943012
+    },
+    {
+      "fibers": 1,
+      "max_displacement_m": 0.13458146214806968
+    },
+    {
+      "fibers": 4,
+      "max_displacement_m": 0.05968805540446138
+    },
+    {
+      "fibers": 6,
+      "max_displacement_m": 0.06920692746520873
+    },
+    {
+      "fibers": 18,
+      "max_displacement_m": 0.057214064667509945
+    },
+    {
+      "fibers": 3,
+      "max_displacement_m": 0.04863325424991441
+    },
+    {
+      "fibers": 15,
+      "max_displacement_m": 0.06438932032387869
+    },
+    {
+      "fibers": 6,
+      "max_displacement_m": 0.03624354791182043
+    },
+    {
+      "fibers": 19,
+      "max_displacement_m": 0.0625059848533166
+    },
+    {
+      "fibers": 8,
+      "max_displacement_m": 0.012636213990412632
+    },
+    {
+      "fibers": 27,
+      "max_displacement_m": 0.0781044198585957
+    },
+    {
+      "fibers": 5,
+      "max_displacement_m": 0.08958447756777654
+    },
+    {
+      "fibers": 3,
+      "max_displacement_m": 0.08057189618273346
+    },
+    {
+      "fibers": 24,
+      "max_displacement_m": 0.09309757782098893
+    },
+    {
+      "fibers": 1,
+      "max_displacement_m": 0.0924373499396479
+    },
+    {
+      "fibers": 4,
+      "max_displacement_m": 0.11241113092627156
+    },
+    {
+      "fibers": 20,
+      "max_displacement_m": 0.12349251575761058
+    },
+    {
+      "fibers": 11,
+      "max_displacement_m": 0.11433388471673822
+    },
+    {
+      "fibers": 21,
+      "max_displacement_m": 0.1176057787781431
+    },
+    {
+      "fibers": 17,
+      "max_displacement_m": 0.12695651980346415
+    },
+    {
+      "fibers": 7,
+      "max_displacement_m": 0.1094483048696883
+    },
+    {
+      "fibers": 3,
+      "max_displacement_m": 0.1358870274145344
+    },
+    {
+      "fibers": 22,
+      "max_displacement_m": 0.1253473719969949
+    },
+    {
+      "fibers": 7,
+      "max_displacement_m": 0.10474211685807916
+    },
+    {
+      "fibers": 7,
+      "max_displacement_m": 0.1381818563255627
+    },
+    {
+      "fibers": 18,
+      "max_displacement_m": 0.10862305531910565
+    },
+    {
+      "fibers": 17,
+      "max_displacement_m": 0.16262600612610875
+    },
+    {
+      "fibers": 13,
+      "max_displacement_m": 0.15728819142650985
+    },
+    {
+      "fibers": 5,
+      "max_displacement_m": 0.12555669113155452
+    },
+    {
+      "fibers": 23,
+      "max_displacement_m": 0.17030996574897087
+    },
+    {
+      "fibers": 17,
+      "max_displacement_m": 0.15676067433475113
+    },
+    {
+      "fibers": 11,
+      "max_displacement_m": 0.15984749265648482
+    },
+    {
+      "fibers": 20,
+      "max_displacement_m": 0.17302803473478032
+    },
+    {
+      "fibers": 1,
+      "max_displacement_m": 0.15591493697990502
+    },
+    {
+      "fibers": 2,
+      "max_displacement_m": 0.16728609705310202
+    },
+    {
+      "fibers": 4,
+      "max_displacement_m": 0.07044823943694785
+    },
+    {
+      "fibers": 7,
+      "max_displacement_m": 0.06381534948120153
+    },
+    {
+      "fibers": 11,
+      "max_displacement_m": 0.0737504806932292
+    },
+    {
+      "fibers": 12,
+      "max_displacement_m": 0.05990771418303421
+    },
+    {
+      "fibers": 2,
+      "max_displacement_m": 0.062223512150039274
+    },
+    {
+      "fibers": 15,
+      "max_displacement_m": 0.06689875682765017
+    },
+    {
+      "fibers": 34,
+      "max_displacement_m": 0.04569131772077783
+    },
+    {
+      "fibers": 15,
+      "max_displacement_m": 0.044964890157609926
+    },
+    {
+      "fibers": 1,
+      "max_displacement_m": 0.01344028342164925
+    },
+    {
+      "fibers": 19,
+      "max_displacement_m": 0.00963625655252601
+    },
+    {
+      "fibers": 3,
+      "max_displacement_m": 0.024382575642136986
+    },
+    {
+      "fibers": 26,
+      "max_displacement_m": 0.06744494775930482
+    },
+    {
+      "fibers": 2,
+      "max_displacement_m": 0.019164467229401495
+    },
+    {
+      "fibers": 19,
+      "max_displacement_m": 0.09442911317589942
+    },
+    {
+      "fibers": 19,
+      "max_displacement_m": 0.081046626209749
+    },
+    {
+      "fibers": 10,
+      "max_displacement_m": 0.11927758251581361
+    },
+    {
+      "fibers": 16,
+      "max_displacement_m": 0.08015986361528615
+    },
+    {
+      "fibers": 18,
+      "max_displacement_m": 0.05544350892553622
+    },
+    {
+      "fibers": 9,
+      "max_displacement_m": 0.06550822911494882
+    },
+    {
+      "fibers": 13,
+      "max_displacement_m": 0.051364043223031376
+    },
+    {
+      "fibers": 4,
+      "max_displacement_m": 0.06543812165303857
+    },
+    {
+      "fibers": 5,
+      "max_displacement_m": 0.06246933675875442
+    },
+    {
+      "fibers": 25,
+      "max_displacement_m": 0.05439628036710045
+    },
+    {
+      "fibers": 11,
+      "max_displacement_m": 0.15738961166914342
+    },
+    {
+      "fibers": 12,
+      "max_displacement_m": 0.05185301745421249
+    },
+    {
+      "fibers": 19,
+      "max_displacement_m": 0.1674134915365169
+    },
+    {
+      "fibers": 6,
+      "max_displacement_m": 0.1562021004911708
+    },
+    {
+      "fibers": 12,
+      "max_displacement_m": 0.15498600929684261
+    },
+    {
+      "fibers": 16,
+      "max_displacement_m": 0.17227639887104806
+    },
+    {
+      "fibers": 1,
+      "max_displacement_m": 0.16039128015192286
+    },
+    {
+      "fibers": 21,
+      "max_displacement_m": 0.16051581307738688
+    },
+    {
+      "fibers": 1,
+      "max_displacement_m": 0.1709625611428933
+    },
+    {
+      "fibers": 17,
+      "max_displacement_m": 0.147555559138579
+    },
+    {
+      "fibers": 12,
+      "max_displacement_m": 0.15840362308521064
+    },
+    {
+      "fibers": 6,
+      "max_displacement_m": 0.11320513452971838
+    },
+    {
+      "fibers": 1,
+      "max_displacement_m": 0.061697443715730486
+    },
+    {
+      "fibers": 9,
+      "max_displacement_m": 0.07467778916691956
+    },
+    {
+      "fibers": 11,
+      "max_displacement_m": 0.07908900284962307
+    },
+    {
+      "fibers": 5,
+      "max_displacement_m": 0.05857643910415886
+    },
+    {
+      "fibers": 21,
+      "max_displacement_m": 0.08965667388677576
+    },
+    {
+      "fibers": 25,
+      "max_displacement_m": 0.06926636493178509
+    },
+    {
+      "fibers": 23,
+      "max_displacement_m": 0.0760470035605205
+    },
+    {
+      "fibers": 22,
+      "max_displacement_m": 0.03573962165272248
+    },
+    {
+      "fibers": 20,
+      "max_displacement_m": 0.030908817010531935
+    },
+    {
+      "fibers": 1,
+      "max_displacement_m": 0.0991222237483844
+    },
+    {
+      "fibers": 18,
+      "max_displacement_m": 0.07598775361958257
+    },
+    {
+      "fibers": 9,
+      "max_displacement_m": 0.09104063273181558
+    },
+    {
+      "fibers": 15,
+      "max_displacement_m": 0.09142758809498197
+    },
+    {
+      "fibers": 14,
+      "max_displacement_m": 0.0754968568903438
+    },
+    {
+      "fibers": 10,
+      "max_displacement_m": 0.09610573219758177
+    },
+    {
+      "fibers": 13,
+      "max_displacement_m": 0.05353029262415315
+    },
+    {
+      "fibers": 3,
+      "max_displacement_m": 0.0645518447880158
+    },
+    {
+      "fibers": 24,
+      "max_displacement_m": 0.07509658647811192
+    },
+    {
+      "fibers": 1,
+      "max_displacement_m": 0.05172790081149793
+    },
+    {
+      "fibers": 20,
+      "max_displacement_m": 0.07067293064761318
+    },
+    {
+      "fibers": 13,
+      "max_displacement_m": 0.06015919768328874
+    },
+    {
+      "fibers": 10,
+      "max_displacement_m": 0.044317227483831774
+    },
+    {
+      "fibers": 17,
+      "max_displacement_m": 0.1579236889788983
+    },
+    {
+      "fibers": 11,
+      "max_displacement_m": 0.1510012174087778
+    },
+    {
+      "fibers": 19,
+      "max_displacement_m": 0.09102151537812452
+    },
+    {
+      "fibers": 20,
+      "max_displacement_m": 0.15942689444296207
+    },
+    {
+      "fibers": 6,
+      "max_displacement_m": 0.07935906848771684
+    },
+    {
+      "fibers": 11,
+      "max_displacement_m": 0.12641909231518605
+    },
+    {
+      "fibers": 12,
+      "max_displacement_m": 0.11923512008848587
+    },
+    {
+      "fibers": 2,
+      "max_displacement_m": 0.10510342209896618
+    },
+    {
+      "fibers": 8,
+      "max_displacement_m": 0.1199489849063435
+    },
+    {
+      "fibers": 5,
+      "max_displacement_m": 0.07913663627975287
+    },
+    {
+      "fibers": 16,
+      "max_displacement_m": 0.08719451933610534
+    },
+    {
+      "fibers": 4,
+      "max_displacement_m": 0.0865354183938213
+    },
+    {
+      "fibers": 7,
+      "max_displacement_m": 0.07379135790123106
+    },
+    {
+      "fibers": 4,
+      "max_displacement_m": 0.08926085545606334
+    },
+    {
+      "fibers": 7,
+      "max_displacement_m": 0.0744915787577452
+    },
+    {
+      "fibers": 12,
+      "max_displacement_m": 0.077383899179553
+    },
+    {
+      "fibers": 8,
+      "max_displacement_m": 0.04715825069504078
+    },
+    {
+      "fibers": 11,
+      "max_displacement_m": 0.06492276930896695
+    },
+    {
+      "fibers": 12,
+      "max_displacement_m": 0.04482509154754417
+    },
+    {
+      "fibers": 11,
+      "max_displacement_m": 0.03989596353338951
+    },
+    {
+      "fibers": 15,
+      "max_displacement_m": 0.030500770667289796
+    },
+    {
+      "fibers": 7,
+      "max_displacement_m": 0.04729077224383331
+    },
+    {
+      "fibers": 15,
+      "max_displacement_m": 0.02942008773007364
+    },
+    {
+      "fibers": 20,
+      "max_displacement_m": 0.06974933802701497
+    },
+    {
+      "fibers": 30,
+      "max_displacement_m": 0.07582452457950067
+    },
+    {
+      "fibers": 5,
+      "max_displacement_m": 0.05906674520264177
+    },
+    {
+      "fibers": 10,
+      "max_displacement_m": 0.07663477601210873
+    },
+    {
+      "fibers": 14,
+      "max_displacement_m": 0.05761700973300921
+    },
+    {
+      "fibers": 6,
+      "max_displacement_m": 0.057542084304817484
+    },
+    {
+      "fibers": 17,
+      "max_displacement_m": 0.014682066161656595
+    },
+    {
+      "fibers": 1,
+      "max_displacement_m": 0.01864306820650545
+    },
+    {
+      "fibers": 5,
+      "max_displacement_m": 0.09403355433771743
+    },
+    {
+      "fibers": 16,
+      "max_displacement_m": 0.08238513932854122
+    },
+    {
+      "fibers": 15,
+      "max_displacement_m": 0.08192542177317477
+    },
+    {
+      "fibers": 4,
+      "max_displacement_m": 0.1012272790415966
+    },
+    {
+      "fibers": 19,
+      "max_displacement_m": 0.108825436585966
+    },
+    {
+      "fibers": 16,
+      "max_displacement_m": 0.12109968452435499
+    },
+    {
+      "fibers": 6,
+      "max_displacement_m": 0.1269934036670985
+    },
+    {
+      "fibers": 10,
+      "max_displacement_m": 0.11189318065931181
+    },
+    {
+      "fibers": 11,
+      "max_displacement_m": 0.08016565110715415
+    },
+    {
+      "fibers": 23,
+      "max_displacement_m": 0.019020628929257356
+    },
+    {
+      "fibers": 17,
+      "max_displacement_m": 0.06241497106466456
+    },
+    {
+      "fibers": 20,
+      "max_displacement_m": 0.08590109222207054
+    },
+    {
+      "fibers": 21,
+      "max_displacement_m": 0.0664837666948504
+    },
+    {
+      "fibers": 16,
+      "max_displacement_m": 0.0717278715154709
+    },
+    {
+      "fibers": 21,
+      "max_displacement_m": 0.03543072761468251
+    },
+    {
+      "fibers": 3,
+      "max_displacement_m": 0.025997546133126416
+    },
+    {
+      "fibers": 16,
+      "max_displacement_m": 0.02874109191138148
+    },
+    {
+      "fibers": 14,
+      "max_displacement_m": 0.060727936886592275
+    },
+    {
+      "fibers": 8,
+      "max_displacement_m": 0.05363841073308454
+    },
+    {
+      "fibers": 18,
+      "max_displacement_m": 0.08480907200878658
+    },
+    {
+      "fibers": 18,
+      "max_displacement_m": 0.06283389730687257
+    },
+    {
+      "fibers": 5,
+      "max_displacement_m": 0.013733383952424162
+    },
+    {
+      "fibers": 23,
+      "max_displacement_m": 0.015244602795485845
+    },
+    {
+      "fibers": 21,
+      "max_displacement_m": 0.10825570840336064
+    },
+    {
+      "fibers": 1,
+      "max_displacement_m": 0.13544128944371925
+    },
+    {
+      "fibers": 18,
+      "max_displacement_m": 0.11723491750545653
+    },
+    {
+      "fibers": 8,
+      "max_displacement_m": 0.10278686299493153
+    },
+    {
+      "fibers": 9,
+      "max_displacement_m": 0.1090150601870464
+    },
+    {
+      "fibers": 23,
+      "max_displacement_m": 0.10757551430657561
+    },
+    {
+      "fibers": 2,
+      "max_displacement_m": 0.147967332048293
+    },
+    {
+      "fibers": 8,
+      "max_displacement_m": 0.13339962478692877
+    },
+    {
+      "fibers": 14,
+      "max_displacement_m": 0.023776580298677345
+    },
+    {
+      "fibers": 15,
+      "max_displacement_m": 0.021893451546603677
+    },
+    {
+      "fibers": 19,
+      "max_displacement_m": 0.06236996607355983
+    },
+    {
+      "fibers": 19,
+      "max_displacement_m": 0.08110765125500766
+    },
+    {
+      "fibers": 16,
+      "max_displacement_m": 0.07830814443051276
+    },
+    {
+      "fibers": 19,
+      "max_displacement_m": 0.06298202200459346
+    },
+    {
+      "fibers": 25,
+      "max_displacement_m": 0.02508026223374874
+    },
+    {
+      "fibers": 17,
+      "max_displacement_m": 0.026188294845595192
+    },
+    {
+      "fibers": 15,
+      "max_displacement_m": 0.060399716388347346
+    },
+    {
+      "fibers": 1,
+      "max_displacement_m": 0.0855036346875827
+    },
+    {
+      "fibers": 23,
+      "max_displacement_m": 0.06895896350137386
+    },
+    {
+      "fibers": 18,
+      "max_displacement_m": 0.08520633178290493
+    },
+    {
+      "fibers": 6,
+      "max_displacement_m": 0.07744428797671277
+    },
+    {
+      "fibers": 23,
+      "max_displacement_m": 0.0607043154242619
+    },
+    {
+      "fibers": 12,
+      "max_displacement_m": 0.1362681850550546
+    },
+    {
+      "fibers": 13,
+      "max_displacement_m": 0.11952609963994189
+    },
+    {
+      "fibers": 6,
+      "max_displacement_m": 0.12705838859588311
+    },
+    {
+      "fibers": 24,
+      "max_displacement_m": 0.1383044886504656
+    },
+    {
+      "fibers": 9,
+      "max_displacement_m": 0.09540701700111115
+    },
+    {
+      "fibers": 8,
+      "max_displacement_m": 0.11088870618799632
+    },
+    {
+      "fibers": 6,
+      "max_displacement_m": 0.14831844213504966
+    },
+    {
+      "fibers": 2,
+      "max_displacement_m": 0.02278098095362892
+    },
+    {
+      "fibers": 1,
+      "max_displacement_m": 0.0238933321615464
+    },
+    {
+      "fibers": 5,
+      "max_displacement_m": 0.0204647293457162
+    },
+    {
+      "fibers": 6,
+      "max_displacement_m": 0.018632750936767223
+    },
+    {
+      "fibers": 15,
+      "max_displacement_m": 0.014200990278839665
+    },
+    {
+      "fibers": 9,
+      "max_displacement_m": 0.06885428363218721
+    },
+    {
+      "fibers": 5,
+      "max_displacement_m": 0.08469438879991854
+    },
+    {
+      "fibers": 10,
+      "max_displacement_m": 0.062319947702557194
+    },
+    {
+      "fibers": 5,
+      "max_displacement_m": 0.024058156592481734
+    },
+    {
+      "fibers": 6,
+      "max_displacement_m": 0.023895294312129122
+    },
+    {
+      "fibers": 9,
+      "max_displacement_m": 0.03505618728374825
+    },
+    {
+      "fibers": 15,
+      "max_displacement_m": 0.04989334865942431
+    },
+    {
+      "fibers": 13,
+      "max_displacement_m": 0.04941845028346984
+    },
+    {
+      "fibers": 11,
+      "max_displacement_m": 0.06766212833041828
+    },
+    {
+      "fibers": 8,
+      "max_displacement_m": 0.07815257136257438
+    },
+    {
+      "fibers": 14,
+      "max_displacement_m": 0.015196085053815181
+    },
+    {
+      "fibers": 6,
+      "max_displacement_m": 0.1178234263543276
+    },
+    {
+      "fibers": 1,
+      "max_displacement_m": 0.14153289765906424
+    },
+    {
+      "fibers": 11,
+      "max_displacement_m": 0.12900198278366543
+    },
+    {
+      "fibers": 9,
+      "max_displacement_m": 0.14712166762072365
+    },
+    {
+      "fibers": 12,
+      "max_displacement_m": 0.14962045510828986
+    },
+    {
+      "fibers": 8,
+      "max_displacement_m": 0.15510614511386261
+    },
+    {
+      "fibers": 1,
+      "max_displacement_m": 0.1653981372138969
+    }
+  ],
+  "all_roots_exactly_retained": true,
+  "unselected_primary_exactly_retained": true,
+  "short_support_unchanged": true,
+  "discrete_contact_events": 104,
+  "method": "Actual 6mm root sections redirected along measured upper-side scalp arcs with short ear-level feather tips",
+  "status": "Unreviewed paired actual 3D study",
+  "scope": "Static discrete body points only, not whole-segment/eye/clothing/animation or art acceptance"
+}

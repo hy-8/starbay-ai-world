@@ -1,0 +1,11 @@
+{
+  "status": "All five actual views inspected; target incomplete",
+  "judgment": "Softer diagonal fringe; opposite pale/undercoat part and broad crown/rear bands remain",
+  "source_sha256": "251b69d984725b1cb61a5f8e757196dd7e2692e05ae871d8b1dbfa7bf11badb2",
+  "resolution": [
+    1200,
+    1400
+  ],
+  "samples": 192,
+  "denoising": false
+}

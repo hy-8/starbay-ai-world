@@ -1,0 +1,9 @@
+{
+  "version": "nativefront09",
+  "status": "Inspected WIP; reference quality not achieved",
+  "art_judgment": "Scalp-fitted diagonal fringe softens previous hard arches and opens eyes, but too slick; opposite profile shows pale/undercoat part. Useful local study, not artwork acceptance.",
+  "inspected_images": {
+    "02_ThreeQuarter.png": "395cf9b134aea1a2453dff2e4311d7b7036c118b72c7b1ce48ad4a9998ab8a83"
+  },
+  "scope": "Actual 3D render review plus static file checks, not full collision/animation validation"
+}

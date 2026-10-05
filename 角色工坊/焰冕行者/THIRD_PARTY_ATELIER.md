@@ -110,3 +110,6 @@ fabfit01—04均未通过目标艺术验收，稳定基础不变。原始头皮�
 2026-10-05追加修改记录：Bystedt long hair的已改编layercut04毛发重新用于根区头皮重铺、实测负X冠部局部收低；原生源梳理求值后分区剪短对照；完整前额发丝组合；原创材质分支对照。均为本地CC BY-SA改编，版本沿用已检查证据的“未注明”，未变成CC0。原始资产、提取/派生几何留本地，未新增独立发型分发或Release。
 
 2026-10-05 补充：Fab源用官方便携Blender5.1.2做只读版本控制，求值粒子/原素材渲染与4.5.9对照。Bystedt本地派生毛发试验包含实际发束分层、近似静态杆松弛、反向梳理、三个聚束Factor（其中两个连接上游轮廓）的缩放，以及Roll控制。既有CC BY-SA（版本未注明）、Royalty Free短支持和Fab Standard/NoAI边界保持；原/派生几何保留本地，没有独立发型包或新Release。
+
+
+2026-10-05 nativebranches07/nativeaffine08/nativefront09/nativefrontwave10/nativefinish11/nativepart12 为现有Bystedt衍生毛发的本地几何/材质研究，CC BY-SA（原来源版本未指定）。Abhay/原创短支撑保留。Fab来源原文件不变，Standard/NoAI且非CC0，未送入神经重建。原/衍生几何与导向坐标不上传；仅加工代码、非几何聚合记录和角色实渲同步。目标未验收。

@@ -1,0 +1,24 @@
+{
+  "branches": [
+    {
+      "tag": 1,
+      "source": "Main interpolated/clumped groom",
+      "fibers": 49118,
+      "highest_z_m": 1.8895665407180786,
+      "frontal_tip_fibers": 11092,
+      "visible_crown_points": 287563
+    },
+    {
+      "tag": 2,
+      "source": "Separate authored-strand duplicate/clump/noise accent branch",
+      "fibers": 150,
+      "highest_z_m": 1.884950876235962,
+      "frontal_tip_fibers": 0,
+      "visible_crown_points": 2311
+    }
+  ],
+  "tag_method": "Store integer CURVE attribute on each observed original source join input, propagated through whole-shaft fitting/resampling",
+  "saved_model": "Full tagged groom; split views temporary diagnostics, saved whole model unchanged",
+  "short_support_retained_in_both_diagnostics": true,
+  "scope": "Actual source attribution and one-view removal controls, not whole-head art acceptance"
+}

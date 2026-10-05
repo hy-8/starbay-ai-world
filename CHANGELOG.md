@@ -314,3 +314,11 @@ sintelfit01/02/03的九张角色实渲均已查看：960×1120、Cycles/OptiX64 
 - 全部九段宣传镜头重新录制，并使用固定 30 fps 时间步长采集运动；完整替换宣传身份和片头文案。
 - 重编玩法与 AI 技术说明，更新截图和架构描述。
 - 入口、导航、任务存档与四类步态回归通过。
+
+
+### 2026-10-05 · Native frontal guide study (WIP)
+
+- Tagged/isolated original main and accent source branches; global affine fit control did not fix broad crown.
+- Scalp-fitted diagonal fringe with 231 sections and small layered waves; all five neutral views inspected, target quality still unmet. Continue sculpting from nativefrontwave10, preserve backups.
+- Rejected shader-only and local part-cover controls after actual paired renders. Six static character/curve checks and localized source comparison pass within their stated scope.
+- No animation, UE migration, candidate Release, paid service or artwork acceptance. Raw/derived geometry remains local.

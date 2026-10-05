@@ -49,16 +49,34 @@ for version in a[1:]:
   original_mesh_geometry_uv_shape_keys_transforms_preserved=True,original_mesh_count=len(original),
   visible_native_curve_count=count,visible_curve_points_finite=True,radii_finite_positive=True,file_textures_available=True,
   visible_curve_geometry_by_object=geometry))
- if version.startswith(('nativesublayer','nativesections','nativerods','crosspart','nativedeclump','nativenodecontrol','nativeroll')):
+ if version.startswith(('nativesublayer','nativesections','nativerods','crosspart','nativedeclump','nativenodecontrol','nativeroll','nativebranches','nativeaffine','nativefront','nativefinish','nativepart')):
   for name,digest in coverage_support.items():assert geometry.get(name)==digest,version+' short support changed'
   rows[-1]['short_support_geometry_exactly_unchanged_from']='nativecoverage05'
-  if version.startswith(('nativesublayer','nativesections','nativerods','crosspart')):
+  if version.startswith(('nativesublayer','nativesections','nativerods','crosspart','nativefront','nativefinish','nativepart')):
    main=bpy.data.objects[primary_name].data
    pts=np.empty((len(main.points),3),np.float32);main.attributes['position'].data.foreach_get('vector',pts.ravel())
    roots=pts[np.array([c.first_point_index for c in main.curves])]
    assert np.array_equal(roots,base_roots),version+' actual follicle points changed'
    rows[-1]['all_primary_roots_exactly_unchanged_from']='nativecoverage05'
+   if version.startswith(('nativefront','nativefinish')):
+    labels=np.empty(len(main.curves),np.int32);main.attributes['native_front_guide_index'].data.foreach_get('value',labels)
+    lengths=np.array([c.points_length for c in main.curves]);assert (lengths==65).all()
+    assert np.array_equal(pts.reshape(-1,65,3)[labels<0],base_positions.reshape(-1,65,3)[labels<0])
+    rows[-1]['nonfrontal_primary_exactly_unchanged_from']='nativecoverage05'
 byversion={r['version']:r for r in rows}
+if 'nativefinish11' in byversion and 'nativefrontwave10' in byversion:
+ assert byversion['nativefinish11']['visible_curve_geometry_by_object']==byversion['nativefrontwave10']['visible_curve_geometry_by_object']
+ byversion['nativefinish11']['visible_curve_geometry_exactly_unchanged_from']='nativefrontwave10'
+if 'nativepart12' in byversion and 'nativefrontwave10' in byversion:
+ bpy.ops.wm.open_mainfile(filepath=str(ROOT/'Exports/nativefrontwave10/Ember_Regent.blend'),use_scripts=False)
+ data=bpy.data.objects[primary_name].data
+ before=np.empty((len(data.points),3),np.float32);data.attributes['position'].data.foreach_get('vector',before.ravel())
+ bpy.ops.wm.open_mainfile(filepath=str(ROOT/'Exports/nativepart12/Ember_Regent.blend'),use_scripts=False)
+ data=bpy.data.objects[primary_name].data
+ after=np.empty_like(before);data.attributes['position'].data.foreach_get('vector',after.ravel())
+ selected=np.empty(len(data.curves),bool);data.attributes['native_part_cover'].data.foreach_get('value',selected)
+ assert np.array_equal(after.reshape(-1,65,3)[~selected],before.reshape(-1,65,3)[~selected])
+ byversion['nativepart12']['unselected_primary_exactly_unchanged_from']='nativefrontwave10'
 for control in ['nativelobe03','nativelobe04']:
  if control in byversion and 'nativeroot03' in byversion:
   assert byversion[control]['visible_curve_geometry_by_object']==byversion['nativeroot03']['visible_curve_geometry_by_object'],'Shader control changed geometry'

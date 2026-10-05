@@ -1,0 +1,13 @@
+{
+  "source": "nativefrontwave10",
+  "source_sha256": "251b69d984725b1cb61a5f8e757196dd7e2692e05ae871d8b1dbfa7bf11badb2",
+  "geometry_edit": false,
+  "visible_native_objects": [
+    "Abhay flow derivative \u2022 real scalp sampled short support",
+    "Bystedt derivative \u2022 short scalp support",
+    "Bystedt layercut derivative \u2022 native root reflow",
+    "Original posterior coverage \u2022 surface-grown short fibers"
+  ],
+  "shader": "Principled Hair COLOR, random per-strand garnet ramp, roughness .235/radial .30/random .08",
+  "status": "Unreviewed actual paired shader study; not artistic acceptance"
+}
