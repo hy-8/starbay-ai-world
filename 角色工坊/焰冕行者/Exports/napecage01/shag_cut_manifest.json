@@ -1,0 +1,29 @@
+{
+  "version": "napecage01",
+  "source": "fringefield02",
+  "source_sha256": "54c4d7a0fb429b54095acbbcf47314efd189a565bdbc3534b47f5776a9caf547",
+  "method": "Continuous individual-fiber regional cage; move lower posterior hair toward actual neck/coat back-ray envelopes with smoothed displacement and lateral widening; do not average clump centers",
+  "components": [
+    {
+      "object": "Original posterior shag \u2022 distributed surface roots",
+      "curves": 64000,
+      "actually_modified_curves": 23373,
+      "exact_roots_preserved": true,
+      "maximum_displacement_m": 0.13299717009067535,
+      "positions_before_sha256": "e207e6456d49bce7c3c091d5380501b53712d82d0ecf56311d63e2c51d82b8cd",
+      "positions_after_sha256": "cab7a660628684eb7f6b687b486760e53731c8c228188c0a2f6832d0bda2516b"
+    }
+  ],
+  "rear_only": true,
+  "front_only": false,
+  "radii_unchanged": true,
+  "sampled_body_envelopes": 1438735,
+  "neck_pull_quantiles_m": [
+    -0.0062014467716216964,
+    0.02441217810151714,
+    0.05769692140982487,
+    0.13282660997986792
+  ],
+  "collision_scope": "Modified lower posterior points only, back ray envelopes; no exhaustive strand/scalp/eyes/garment or motion guarantee",
+  "status": "Unreviewed native 3D nape cage study, not artistic acceptance"
+}

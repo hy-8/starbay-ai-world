@@ -1,0 +1,37 @@
+{
+  "version": "crowncage02",
+  "source": "napecage02",
+  "source_sha256": "3af777737d7d078c4bf255dd5b36e73bd15390f4d0812c297e0c568c4f0497dd",
+  "method": "Single smooth world-space vector field shared by adjacent crown positions; bounded lateral/depth bending and small height variation; exact roots, fringe and other objects retained",
+  "crown_spatial_field": true,
+  "full_crown_flow_rebuilt": false,
+  "front_only": true,
+  "rear_only": false,
+  "radii_unchanged": true,
+  "field_amplitudes_m": [
+    0.01,
+    0.006,
+    0.003
+  ],
+  "field_spatial_frequencies": [
+    52,
+    46,
+    26
+  ],
+  "attenuation_points": 13011,
+  "scalp_point_repairs": 0,
+  "maximum_scalp_repair_m": 0.0,
+  "components": [
+    {
+      "object": "Authored frontal revision \u2022 native scalp-patch geometry",
+      "curves": 27760,
+      "actually_modified_curves": 6160,
+      "exact_roots_preserved": true,
+      "maximum_displacement_m": 0.010540762916207314,
+      "positions_before_sha256": "be3e2226d1034fdff657daf0dbe9868ae8e2efc2440de5739533ccae98bddc09",
+      "positions_after_sha256": "e5acdd38c409050ed07762b0137afa4bffcfe0e6428a81845b3c19eb6feb0e43"
+    }
+  ],
+  "collision_scope": "Source-distance field attenuation and every modified crown interior point nearest-body guard; only discrete points, not full curve/strand/eye/garment or motion collision proof",
+  "status": "Unreviewed coherent field study; not artistic acceptance"
+}

@@ -1,0 +1,11 @@
+{
+  "version": "napecage01",
+  "model_sha256": "ab72c5f2d085b9b4257d7715bd06ea230b111b4c5a866eabe2c8caf9f3b1790d",
+  "creation_report_sha256": "9cf44f83ba6b5e6468b34250193d4c61660e25c3b2c63ab623b7c340699d6a6f",
+  "actual_geometry": "Native Blender CURVES, editable as baked fibers; no new interactive mesh cage, guide driver or live groom controller",
+  "inspection": "Rejected over-pull: first side/back draft flattened lower hair abruptly and maximum displacement reached133mm. Original raw report retained. Do not use as a base.",
+  "artistic_acceptance": false,
+  "goal_completed": false,
+  "chosen_as_next_research_base": false,
+  "license": "Original modified frontal/posterior fibers. Retained Bystedt CC BY-SA and Abhay Pratap Royalty Free support; hidden licensed donor geometry stays local. No new asset source."
+}

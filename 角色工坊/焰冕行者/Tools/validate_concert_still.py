@@ -36,7 +36,8 @@ def cut_snapshot():
             r=np.empty(len(ob.data.points),np.float32);ob.data.attributes['radius'].data.foreach_get('value',r)
             p=p.reshape(-1,sizes[0],3);r=r.reshape(-1,sizes[0])
             grooms[ob.name]=dict(roots=p[:,0].copy(),root_radii=r[:,0].copy(),matrix=matrix,
-                sha256=hashlib.sha256(p.tobytes()+r.tobytes()+matrix).hexdigest())
+                sha256=hashlib.sha256(p.tobytes()+r.tobytes()+matrix).hexdigest(),
+                radii_sha256=hashlib.sha256(r.tobytes()).hexdigest())
             if AUDIT_FRINGE and ob.name.startswith('Authored frontal revision'):
                 design=json.loads((ROOT/'Exports/spatialfringe17/authored_fringe_design.json').read_text(encoding='utf-8'))
                 if sum(row['assigned_visible_fibers'] for row in design)!=len(p):raise RuntimeError('Frontal region counts differ')
@@ -73,9 +74,12 @@ if AUDIT_CUT:
                 unmodified_native_grooms_exactly_unchanged=all(source_grooms[n]['sha256']==candidate_grooms[n]['sha256'] for n in set(source_grooms)-modified))
     for key,passed in checks.items():
         if not passed:errors.append('Cut invariant failed: '+key)
+    if cut_manifest.get('radii_unchanged'):
+        checks['all_native_groom_radii_exactly_unchanged']=all(source_grooms[n]['radii_sha256']==candidate_grooms[n]['radii_sha256'] for n in source_grooms)
+        if not checks['all_native_groom_radii_exactly_unchanged']:errors.append('Declared unchanged native radii differ')
     if AUDIT_FRINGE:
         frontal=next(name for name in source_grooms if name.startswith('Authored frontal revision'))
-        unchanged_region='crown' if cut_manifest.get('fringe_fiber_fields_reset') else 'fringe' if cut_manifest.get('full_crown_flow_rebuilt') else None
+        unchanged_region='crown' if cut_manifest.get('fringe_fiber_fields_reset') else 'fringe' if cut_manifest.get('full_crown_flow_rebuilt') or cut_manifest.get('crown_spatial_field') else None
         if unchanged_region is None:raise RuntimeError('Declare an isolated fringe or crown rebuild for subset audit')
         region_passed=source_grooms[frontal]['region_sha256'][unchanged_region]==candidate_grooms[frontal]['region_sha256'][unchanged_region]
         if not region_passed:errors.append('Declared untouched frontal region changed: '+unchanged_region)

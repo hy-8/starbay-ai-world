@@ -1,0 +1,11 @@
+{
+  "version": "napecage02",
+  "model_sha256": "3af777737d7d078c4bf255dd5b36e73bd15390f4d0812c297e0c568c4f0497dd",
+  "creation_report_sha256": "9ec68ce765fd96d557748c5d9899c299088b3a11183ea389b2f2fbc0625d98a1",
+  "actual_geometry": "Native Blender CURVES, editable as baked fibers; no new interactive mesh cage, guide driver or live groom controller",
+  "inspection": "Lower posterior hair is closer to neck; bounded field limited to lower fiber heights. Side/back draft reviewed. Nape remains thin/stringy and upper rear layering repetitive; WIP only.",
+  "artistic_acceptance": false,
+  "goal_completed": false,
+  "chosen_as_next_research_base": false,
+  "license": "Original modified frontal/posterior fibers. Retained Bystedt CC BY-SA and Abhay Pratap Royalty Free support; hidden licensed donor geometry stays local. No new asset source."
+}

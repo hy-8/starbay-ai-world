@@ -1,0 +1,11 @@
+{
+  "version": "crowncage02",
+  "model_sha256": "88795027a52507866097eb958d25ae4df232ab7737b674b8b20420fb3f4b59f9",
+  "creation_report_sha256": "097113f810bef252a23044e31ba2ef41f80e43f86918915e9ba674b4ef22ad56",
+  "actual_geometry": "Native Blender CURVES, editable as baked fibers; no new interactive mesh cage, guide driver or live groom controller",
+  "inspection": "Five full native views inspected. Source-distance attenuation removes new sampled crown contact flags; nape lay-down retained. Modest crown bending, no new large crossing loop identified in these views. Rear volume still round/repetitive, nape thin and a small opposite-side arc remains; reference quality not reached.",
+  "artistic_acceptance": false,
+  "goal_completed": false,
+  "chosen_as_next_research_base": true,
+  "license": "Original modified frontal/posterior fibers. Retained Bystedt CC BY-SA and Abhay Pratap Royalty Free support; hidden licensed donor geometry stays local. No new asset source."
+}

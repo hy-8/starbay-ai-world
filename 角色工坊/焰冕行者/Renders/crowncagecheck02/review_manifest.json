@@ -1,0 +1,28 @@
+{
+  "source": "crowncage02",
+  "source_sha256": "88795027a52507866097eb958d25ae4df232ab7737b674b8b20420fb3f4b59f9",
+  "actual_images_reviewed": [
+    "01_Front.png",
+    "02_ThreeQuarter.png",
+    "03_Side.png",
+    "04_Back.png",
+    "05_OppositeSide.png"
+  ],
+  "images_sha256": {
+    "01_Front.png": "9ea4dd5a2f5dd64901119b34ff05bc30c855da5862faa97f8212f1d6246923a5",
+    "02_ThreeQuarter.png": "a7ac0f9dce5b4acad46e4c94dc3c8aece6a5888dba2c738d978555e2d1d306c8",
+    "03_Side.png": "ea4fbefa12d61b574d87ded1cbb6e304b7321c2975c8068562dc46b59b76d805",
+    "04_Back.png": "e36905709ae3ce993e7258e69df5458dfd34b8f27f349c7b1c77c9abfb244202",
+    "05_OppositeSide.png": "8646b3aba4b19d31cffe382c08f2b67abbb14e11d889d0317f17e95586cf66fd"
+  },
+  "resolution": [
+    1200,
+    1400
+  ],
+  "cycles_samples": 192,
+  "denoising": false,
+  "ai_image_substitution": false,
+  "assessment": "Five full native views inspected. Source-distance attenuation removes new sampled crown contact flags; nape lay-down retained. Modest crown bending, no new large crossing loop identified in these views. Rear volume still round/repetitive, nape thin and a small opposite-side arc remains; reference quality not reached.",
+  "artistic_acceptance": false,
+  "goal_completed": false
+}

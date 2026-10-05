@@ -1,0 +1,41 @@
+{
+  "source": "fringefield02",
+  "candidate": "napecage02",
+  "source_sha256": "54c4d7a0fb429b54095acbbcf47314efd189a565bdbc3534b47f5776a9caf547",
+  "candidate_sha256": "3af777737d7d078c4bf255dd5b36e73bd15390f4d0812c297e0c568c4f0497dd",
+  "source_and_candidate_unchanged": true,
+  "components": [
+    {
+      "object": "Original posterior shag \u2022 distributed surface roots",
+      "sampled_points": 20000,
+      "paired": {
+        "source": {
+          "potential_contact_flags": 1,
+          "signed_gaps_quantiles_m": [
+            -0.0010481478602741845,
+            0.0008763183349219616,
+            0.008379852697544266,
+            0.04762580996612087
+          ],
+          "flagged_point_indices": [
+            341808
+          ]
+        },
+        "candidate": {
+          "potential_contact_flags": 1,
+          "signed_gaps_quantiles_m": [
+            -0.0010479496613697847,
+            0.0009250198574136448,
+            0.008267494943083875,
+            0.04765404999488965
+          ],
+          "flagged_point_indices": [
+            341808
+          ]
+        }
+      }
+    }
+  ],
+  "scope": "At most20000 seeded samples per modified object, changed interior points z>1.745m, evaluated body nearest-face gap <-0.5mm and distance<20mm; source and candidate compared at identical indices",
+  "boundary": "Finite sampled proximity on head skin. Does not prove all-fiber, strand-strand, eye, garment, scalp surface-crossing or animated collision safety."
+}

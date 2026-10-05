@@ -1,0 +1,58 @@
+{
+  "source": "napecage02",
+  "candidate": "crowncage01",
+  "source_sha256": "3af777737d7d078c4bf255dd5b36e73bd15390f4d0812c297e0c568c4f0497dd",
+  "candidate_sha256": "f9e28e1dbf6b3eb30e205908af4a24ff719edc503737a6463090bc60d5cf1eae",
+  "source_and_candidate_unchanged": true,
+  "components": [
+    {
+      "object": "Authored frontal revision \u2022 native scalp-patch geometry",
+      "sampled_points": 20000,
+      "paired": {
+        "source": {
+          "potential_contact_flags": 0,
+          "signed_gaps_quantiles_m": [
+            0.0009391419007442892,
+            0.0014948752905911532,
+            0.010715910314502253,
+            0.03749705131758674
+          ],
+          "flagged_point_indices": []
+        },
+        "candidate": {
+          "potential_contact_flags": 167,
+          "signed_gaps_quantiles_m": [
+            -0.004073313262779266,
+            -0.0002922073847588535,
+            0.010808702738813736,
+            0.03857357695233077
+          ],
+          "flagged_point_indices": [
+            152600,
+            11959,
+            97850,
+            146705,
+            9914,
+            159833,
+            1466,
+            143195,
+            89912,
+            56874,
+            6652,
+            159253,
+            146192,
+            4863,
+            164890,
+            145175,
+            95486,
+            137311,
+            86650,
+            166610
+          ]
+        }
+      }
+    }
+  ],
+  "scope": "At most20000 seeded samples per modified object, changed interior points z>1.745m, evaluated body nearest-face gap <-0.5mm and distance<20mm; source and candidate compared at identical indices",
+  "boundary": "Finite sampled proximity on head skin. Does not prove all-fiber, strand-strand, eye, garment, scalp surface-crossing or animated collision safety."
+}
