@@ -1,0 +1,29 @@
+{
+  "version": "rollerflow03",
+  "source": "napeunderlay02",
+  "source_sha256": "f99bd15ad542205b562e4d01a435f7039d598282e27ced6dc020b4cd3a84c1e4",
+  "method": "96 regional transported-tangent roller bends and staggered actual arc lengths, frontal geometry retained; lower-root roller shaping excluded; actual head-skin occipital contraction including eligible low-root interior points",
+  "rear_only": true,
+  "front_only": false,
+  "opened_loose_tips": true,
+  "occipital_envelope_tuck": true,
+  "tucked_points": 1928994,
+  "components": [
+    {
+      "object": "Original posterior shag \u2022 distributed surface roots",
+      "curves": 64000,
+      "actually_modified_curves": 61756,
+      "exact_roots_preserved": true,
+      "maximum_displacement_m": 0.20584005117416382,
+      "positions_before_sha256": "fc2d11ae302906baf12c5bd396bbe64e1807a8410191a8418907e10c1be89a07",
+      "positions_after_sha256": "5b5418b6bbb0e4a4926335727441fa8091545a318db108c64f6c154fe2b70574"
+    }
+  ],
+  "sampled_point_repairs": 6679,
+  "maximum_point_repair_m": 0.0041833327261665545,
+  "unchanged_low_posterior_fibers": 2244,
+  "saved_control_paths": "Editable pre-envelope construction guides; personal strand detail/clearance/envelope corrections baked separately. Not live linked or simulated.",
+  "collision_scope": "Modified discrete fiber interior points checked against body; not all surfaces, clothes, segment interiors or motion",
+  "status": "Unreviewed roller-shape study, no artistic acceptance",
+  "method_description_reviewed": true
+}

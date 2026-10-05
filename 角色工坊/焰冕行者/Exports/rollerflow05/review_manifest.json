@@ -1,0 +1,18 @@
+{
+  "version": "rollerflow05",
+  "source": "napeunderlay02",
+  "blend_sha256": "d5101c79a58698c7fba1e38a084a017812345aaf00629f3e5ae4e84ab8d8de22",
+  "images_reviewed_sha256": {
+    "03_Side.png": "f8575e1bfe80b73a654bfe0aaf3d3e090700f0a01e541ea52bbdd1006fac517a",
+    "04_Back.png": "4aa4c9241fb665d83e46aa6fc935d1fe037ac58c0fe9bdd2a5f98cf889a0d180"
+  },
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 64,
+  "denoising": false,
+  "artistic_review": "Side/back64-sample drafts and all five192-sample views inspected: loose silhouette and more separate nape tips, but crown spike/hard clumps and opposite-side folds/gaps remain. Rejected for advancing the current model. Source napeunderlay02 remains the stable WIP, not an approved final.",
+  "accepted_as_final": false,
+  "selected_for_next_base": false
+}

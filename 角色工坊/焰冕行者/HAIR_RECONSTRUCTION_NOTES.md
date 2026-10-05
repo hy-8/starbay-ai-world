@@ -1,5 +1,19 @@
 # 红发角色 · 更换发型方法记录
 
+## 2026-10-05 · 切线弯曲分束与后枕体积对照（未通过作品验收）
+
+工具：`Tools/style_posterior_rollers.py`，每版独立从napeunderlay02读取，不能在已有目录重跑。默认分区只塑形高根；`--loose-tips`降低中段弯度并开放末梢；`--tuck-occipital`对所有合格后发点按实际头部法线收拢；`--whole-rear`加入下层独立浅S弯；`--restore-nape-length`恢复部分长下层最多45mm。留住原发根，重做修改曲线末梢半径。隐藏可编辑POLY构造线并非实时Groom链接，也不是最终包络修正后的毛发中心线。
+
+| 版本 | 实际查看与结论 |
+|---|---|
+| rollerflow01 | Side/back64-sample drafts inspected: actual large-roller bends produced small unnatural crown rings. Rejected. |
+| rollerflow02 | Side/back64-sample drafts inspected: open tips removed some rings, but the middle posterior remained round and diffuse. Not adopted. |
+| rollerflow03 | Side/back64-sample drafts inspected: actual head-normal envelope contraction reduced some upper volume; low-root paths still diffuse. Not adopted. |
+| rollerflow04 | Side/back64-sample drafts inspected: lower paths also grouped and bent, but long nape shortened and upper locks still hard. Not adopted. |
+| rollerflow05 | Side/back64-sample drafts and all five192-sample views inspected: loose silhouette and more separate nape tips, but crown spike/hard clumps and opposite-side folds/gaps remain. Rejected for advancing the current model. Source napeunderlay02 remains the stable WIP, not an approved final. |
+
+05全五视角是真实3D渲染，不作最终作品。头皮配对20k诊断5→0，结构不变量通过；没有穷尽线段/衣物或运动验证。原生发丝隔离对照保留底层网格，仅支持主后发体积判断。当前稳定基础仍为napeunderlay02，下一步不采用这些失败候选。几何控制JSON/NPZ和.blend继续留本地，Git只收加工源码、非几何清单和精选原生渲染。
+
 ## 2026-10-05 · 原生密度诊断、原创透明底层发片与否定的上层方案
 
 当前下一轮基础为 `Exports/napeunderlay02/Ember_Regent.blend`，五张中性图 `Renders/napeunderlaycheck02` 已实际查看（1200×1400、192 samples、不去噪）。新增28个原创细窄扁平网格锁束，沿真实后颈路径下垫约1mm，尖尾、独立UV方向与程序化纵向细丝透明；本轮没有新导入素材或贴图。所有原生毛发/身体/衣物保留。新增网格直接可编辑，原生CURVES仍是烘焙点，没有新增实时导向/模拟驱动。

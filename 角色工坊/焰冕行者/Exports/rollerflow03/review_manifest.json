@@ -1,0 +1,18 @@
+{
+  "version": "rollerflow03",
+  "source": "napeunderlay02",
+  "blend_sha256": "480c2f0679d4c7b43fa10668955753288b80e798dd05e00c7427ed43fad34f76",
+  "images_reviewed_sha256": {
+    "03_Side.png": "aad9f3a05813037b1f87b7850302c2a1a0c3c049e227cb70b440ace74c3d5a3b",
+    "04_Back.png": "789691f6267da30a215ee23d6f530f0ad5282e9fc43169164b96da5555c9ca39"
+  },
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 64,
+  "denoising": false,
+  "artistic_review": "Side/back64-sample drafts inspected: actual head-normal envelope contraction reduced some upper volume; low-root paths still diffuse. Not adopted.",
+  "accepted_as_final": false,
+  "selected_for_next_base": false
+}

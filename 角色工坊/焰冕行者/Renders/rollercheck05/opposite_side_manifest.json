@@ -1,0 +1,23 @@
+{
+  "version": "rollercheck05",
+  "source": "rollerflow05",
+  "source_sha256": "d5101c79a58698c7fba1e38a084a017812345aaf00629f3e5ae4e84ab8d8de22",
+  "source_unchanged": true,
+  "method": "Existing four neutral cameras when requested, plus actual opposite camera mirrored in world space with local-X handedness correction; no pixel flip or geometry edit",
+  "samples": 192,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "denoising": false,
+  "image_sha256": "7ca6366697d19a5fbd7522025ee33169bf845ec58ac2c71a84950f413d1837bc",
+  "images_sha256": {
+    "01_Front.png": "49fc338c6b4492c1d1d277810bf40ab5416d13af510d8c8e122d7920baa1aa41",
+    "02_ThreeQuarter.png": "6de707d187d2e1126a663e59e44acdb4643c5deb07fe2d4431e06bc81568a0ea",
+    "03_Side.png": "78a4a04f7967fd3e52e2e1e2c524aad3480f6444af259457ec2e56f7445c410e",
+    "04_Back.png": "9ddaaf733298060cb329eb049e8dc0368c95c9a39d92d87fcb87d601eccc0cdf",
+    "05_OppositeSide.png": "7ca6366697d19a5fbd7522025ee33169bf845ec58ac2c71a84950f413d1837bc"
+  },
+  "status": "Unreviewed actual neutral/opposite profile diagnostic, not artistic approval",
+  "opposite_image_reused_from": null
+}

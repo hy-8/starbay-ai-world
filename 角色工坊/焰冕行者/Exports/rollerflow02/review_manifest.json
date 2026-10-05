@@ -1,0 +1,18 @@
+{
+  "version": "rollerflow02",
+  "source": "napeunderlay02",
+  "blend_sha256": "e6daedaf4985be42de3bdf982218f1778bd31e8c14b94d1607cff660c74b31d9",
+  "images_reviewed_sha256": {
+    "03_Side.png": "9dff2febd711dcce5a5978d99120d4ce02b0149228f661f6c2967e69adbd1ca6",
+    "04_Back.png": "4a0c456de74e48e2fce257c4c1261517efb30b0fd7bb55be43c9627bd6d3c87b"
+  },
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 64,
+  "denoising": false,
+  "artistic_review": "Side/back64-sample drafts inspected: open tips removed some rings, but the middle posterior remained round and diffuse. Not adopted.",
+  "accepted_as_final": false,
+  "selected_for_next_base": false
+}

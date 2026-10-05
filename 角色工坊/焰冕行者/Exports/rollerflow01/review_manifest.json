@@ -1,0 +1,18 @@
+{
+  "version": "rollerflow01",
+  "source": "napeunderlay02",
+  "blend_sha256": "3ec1dec1c762d6592261ea9d79eede8e5313c4fd535d8e4e617650cec2aa18f6",
+  "images_reviewed_sha256": {
+    "03_Side.png": "e3cd560557ec7690487e5dc7759e4cb259a115fad541c3e01295c36e8933eb00",
+    "04_Back.png": "8f2b501b55b9a97d0916a2ad55b72c4eff689f68799b00a715faaf4d7d5474eb"
+  },
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 64,
+  "denoising": false,
+  "artistic_review": "Side/back64-sample drafts inspected: actual large-roller bends produced small unnatural crown rings. Rejected.",
+  "accepted_as_final": false,
+  "selected_for_next_base": false
+}

@@ -1,0 +1,18 @@
+{
+  "version": "rollerflow04",
+  "source": "napeunderlay02",
+  "blend_sha256": "6c08606f017c87ca05bea5c4fd7159f80bde1c3908a9a7a3a311cadfe2ac9754",
+  "images_reviewed_sha256": {
+    "03_Side.png": "45dea2a3390acecd7c142f4ffa2babd49a270f0879f83208034dde3e1fef1127",
+    "04_Back.png": "5643a008accdd216c28566719bbf377436d5c079f36fc61ef9ca9c9a18c3e8e3"
+  },
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 64,
+  "denoising": false,
+  "artistic_review": "Side/back64-sample drafts inspected: lower paths also grouped and bent, but long nape shortened and upper locks still hard. Not adopted.",
+  "accepted_as_final": false,
+  "selected_for_next_base": false
+}

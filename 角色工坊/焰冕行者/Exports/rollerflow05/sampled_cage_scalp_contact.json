@@ -1,0 +1,43 @@
+{
+  "source": "napeunderlay02",
+  "candidate": "rollerflow05",
+  "source_sha256": "f99bd15ad542205b562e4d01a435f7039d598282e27ced6dc020b4cd3a84c1e4",
+  "candidate_sha256": "d5101c79a58698c7fba1e38a084a017812345aaf00629f3e5ae4e84ab8d8de22",
+  "source_and_candidate_unchanged": true,
+  "components": [
+    {
+      "object": "Original posterior shag \u2022 distributed surface roots",
+      "sampled_points": 20000,
+      "paired": {
+        "source": {
+          "potential_contact_flags": 5,
+          "signed_gaps_quantiles_m": [
+            -0.001249601891686325,
+            0.0009916208291906514,
+            0.012854381580837071,
+            0.06233300097301253
+          ],
+          "flagged_point_indices": [
+            276652,
+            2339747,
+            214570,
+            3779174,
+            2127713
+          ]
+        },
+        "candidate": {
+          "potential_contact_flags": 0,
+          "signed_gaps_quantiles_m": [
+            0.0008085636991381762,
+            0.0014139505312448363,
+            0.008119502599583939,
+            0.04797538323327899
+          ],
+          "flagged_point_indices": []
+        }
+      }
+    }
+  ],
+  "scope": "At most20000 seeded samples per modified object, changed interior points z>1.745m, evaluated body nearest-face gap <-0.5mm and distance<20mm; source and candidate compared at identical indices",
+  "boundary": "Finite sampled proximity on head skin. Does not prove all-fiber, strand-strand, eye, garment, scalp surface-crossing or animated collision safety."
+}
