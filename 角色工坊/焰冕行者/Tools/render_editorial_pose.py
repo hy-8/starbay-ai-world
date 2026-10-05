@@ -53,7 +53,7 @@ def pose_point(p,group):
     return c
 
 for ob in list(bpy.data.objects):
-    if ob.type=='CURVES' and not ob.hide_render:
+    if (ob.type=='CURVES' or ob.type=='MESH' and ob.name.startswith('Original nape underlay ')) and not ob.hide_render:
         # Native hair is attached rigidly to the head. Moving just the neck mesh
         # while leaving millions of strand points in the rest frame breaks roots.
         pivot=Vector((0,-.015,1.60));shift=Vector((.009*math.sin(math.pi*1.6),0,0))

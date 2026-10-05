@@ -1,0 +1,27 @@
+{
+  "source": "rearfeather02",
+  "source_sha256": "5128985444513e97583ee8758830e28d9a82f068d2b6c5cb74931787ce8571b0",
+  "actual_images_reviewed": [
+    "01_Front.png",
+    "02_ThreeQuarter.png",
+    "03_Side.png",
+    "04_Back.png",
+    "05_OppositeSide.png"
+  ],
+  "images_sha256": {
+    "01_Front.png": "2abdf755cf4707b035115ae8feea4191c452065d6ce83ed24744d0cae93d9831",
+    "02_ThreeQuarter.png": "d7c5b4bad8123b71375a36ff231f7312725c52f759825d3cd1fe26fcaf167828",
+    "03_Side.png": "4cfe68541e64f0abf159ed2ac073c052476b3d4a8c3d5849337bbc16a8844c27",
+    "04_Back.png": "4c20edb5abb635fd5e4dac32999213f8b54e5f257c2217209cc235cfe900172e",
+    "05_OppositeSide.png": "12ef9f1ca81553b8751bdf93196d13a88e65faa9faab37ae54a8279f01649638"
+  },
+  "resolution": [
+    1200,
+    1400
+  ],
+  "samples": 192,
+  "denoising": false,
+  "assessment": "Side/back drafts and all five192-sample neutral renders reviewed. Include upper sides, modify41003 fibers; stronger feather outline but tips form diffuse horizontal sprays. Not adopted.",
+  "artistic_acceptance": false,
+  "goal_completed": false
+}

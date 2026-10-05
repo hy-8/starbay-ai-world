@@ -1,0 +1,77 @@
+{
+  "source": "crowncage02",
+  "source_sha256": "88795027a52507866097eb958d25ae4df232ab7737b674b8b20420fb3f4b59f9",
+  "posterior_curve_count": 64000,
+  "root_height_groups": [
+    {
+      "root_z": [
+        1.73,
+        1.775
+      ],
+      "curves": 5373,
+      "lengths_m": [
+        0.06383037567138672,
+        0.1432441622018814,
+        0.20549076795578003
+      ],
+      "below172": 5373
+    },
+    {
+      "root_z": [
+        1.775,
+        1.805
+      ],
+      "curves": 8323,
+      "lengths_m": [
+        0.046420302242040634,
+        0.13259217143058777,
+        0.20133720338344574
+      ],
+      "below172": 7174
+    },
+    {
+      "root_z": [
+        1.805,
+        1.825
+      ],
+      "curves": 5388,
+      "lengths_m": [
+        0.0451645627617836,
+        0.09223280102014542,
+        0.18988078832626343
+      ],
+      "below172": 537
+    },
+    {
+      "root_z": [
+        1.825,
+        1.845
+      ],
+      "curves": 5113,
+      "lengths_m": [
+        0.04796236380934715,
+        0.09211337566375732,
+        0.15838369727134705
+      ],
+      "below172": 7
+    },
+    {
+      "root_z": [
+        1.845,
+        1.9
+      ],
+      "curves": 2872,
+      "lengths_m": [
+        0.09329117089509964,
+        0.1295754760503769,
+        0.16785851120948792
+      ],
+      "below172": 0
+    }
+  ],
+  "actual12k_posterior_sample_ray_hits": 237,
+  "ray_points_behind_clothing2mm": 0,
+  "negative_deep6mm_nearest_face_samples": 0,
+  "conclusion": "Existing long-fiber count is substantial; adding raw fiber count alone is not justified. Sparse clothing rays and nearest-face samples do not establish complete occlusion/contact safety. Test a small directional-opacity underlay and actual layer shape instead.",
+  "scope": "Read-only quantile summaries and finite12k posterior samples. Not an artistic score or exhaustive collision proof."
+}

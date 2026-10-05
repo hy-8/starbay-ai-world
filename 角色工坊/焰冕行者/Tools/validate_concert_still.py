@@ -72,6 +72,12 @@ if AUDIT_CUT:
                 all_native_groom_roots_exactly_unchanged=all(np.array_equal(source_grooms[n]['roots'],candidate_grooms[n]['roots']) for n in source_grooms),
                 all_native_root_radii_exactly_unchanged=all(np.array_equal(source_grooms[n]['root_radii'],candidate_grooms[n]['root_radii']) for n in source_grooms),
                 unmodified_native_grooms_exactly_unchanged=all(source_grooms[n]['sha256']==candidate_grooms[n]['sha256'] for n in set(source_grooms)-modified))
+    if cut_manifest.get('added_visible_meshes'):
+        declared=set(cut_manifest['added_visible_meshes'])
+        added=set(candidate_meshes)-set(source_meshes)
+        checks.pop('all_visible_meshes_uvs_shape_keys_and_transforms_unchanged')
+        checks['retained_visible_meshes_uvs_shape_keys_and_transforms_unchanged']=all(candidate_meshes.get(n)==sha for n,sha in source_meshes.items())
+        checks['added_visible_mesh_set_exactly_declared']=added==declared and declared.isdisjoint(source_meshes)
     for key,passed in checks.items():
         if not passed:errors.append('Cut invariant failed: '+key)
     if cut_manifest.get('radii_unchanged'):

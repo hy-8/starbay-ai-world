@@ -1,0 +1,29 @@
+{
+  "version": "rearcubic02",
+  "source": "napeunderlay02",
+  "source_sha256": "f99bd15ad542205b562e4d01a435f7039d598282e27ced6dc020b4cd3a84c1e4",
+  "method": "Rebuild220 whole upper/side cubic parent paths with explicit lifted root handle, bowed side handle and inward/downward loose exit, independently staggered84..100% arc lengths and shrinking follicle field; lower nape/frontal object/underlay retained",
+  "components": [
+    {
+      "object": "Original posterior shag \u2022 distributed surface roots",
+      "curves": 64000,
+      "actually_modified_curves": 41003,
+      "exact_roots_preserved": true,
+      "maximum_displacement_m": 0.2050362527370453,
+      "positions_before_sha256": "fc2d11ae302906baf12c5bd396bbe64e1807a8410191a8418907e10c1be89a07",
+      "positions_after_sha256": "96bf5b86bd85d236ba5ffba72e860b60059cc547c5174d0c249fb6356dab28ed"
+    }
+  ],
+  "rear_only": true,
+  "front_only": false,
+  "cut_fraction_quantiles": null,
+  "scalp_sampled_point_repairs": 162003,
+  "complete_cubic_upper_paths": true,
+  "independent_parent_layer_lengths_and_handles": true,
+  "upper_side_region_included": true,
+  "local_shortened_tip_gather": false,
+  "local_tip_groups": 0,
+  "unchanged_low_rear_curves": 22997,
+  "collision_scope": "Every modified cubic interior point scalp guard; discrete points, not full surface/strand/garment or motion collision proof",
+  "status": "Unreviewed isolated scissor-layer native groom study; not artistic acceptance"
+}

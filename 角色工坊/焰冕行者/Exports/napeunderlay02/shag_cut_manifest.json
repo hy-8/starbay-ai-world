@@ -1,0 +1,242 @@
+{
+  "version": "napeunderlay02",
+  "source": "crowncage02",
+  "source_sha256": "88795027a52507866097eb958d25ae4df232ab7737b674b8b20420fb3f4b59f9",
+  "method": "Add28 narrow original flattened loft underlay locks following actual nape groups, tapered ends and original UV directional procedural shading; all native fibers unchanged",
+  "components": [],
+  "added_visible_meshes": [
+    "Original nape underlay 00",
+    "Original nape underlay 01",
+    "Original nape underlay 02",
+    "Original nape underlay 03",
+    "Original nape underlay 04",
+    "Original nape underlay 05",
+    "Original nape underlay 06",
+    "Original nape underlay 07",
+    "Original nape underlay 08",
+    "Original nape underlay 09",
+    "Original nape underlay 10",
+    "Original nape underlay 11",
+    "Original nape underlay 12",
+    "Original nape underlay 13",
+    "Original nape underlay 14",
+    "Original nape underlay 15",
+    "Original nape underlay 16",
+    "Original nape underlay 17",
+    "Original nape underlay 18",
+    "Original nape underlay 19",
+    "Original nape underlay 20",
+    "Original nape underlay 21",
+    "Original nape underlay 22",
+    "Original nape underlay 23",
+    "Original nape underlay 24",
+    "Original nape underlay 25",
+    "Original nape underlay 26",
+    "Original nape underlay 27"
+  ],
+  "added_mesh_details": [
+    {
+      "object": "Original nape underlay 00",
+      "vertices": 512,
+      "faces": 504,
+      "native_source_fibers": 828,
+      "maximum_halfwidth_m": 0.0045
+    },
+    {
+      "object": "Original nape underlay 01",
+      "vertices": 512,
+      "faces": 504,
+      "native_source_fibers": 177,
+      "maximum_halfwidth_m": 0.005513194770826726
+    },
+    {
+      "object": "Original nape underlay 02",
+      "vertices": 512,
+      "faces": 504,
+      "native_source_fibers": 163,
+      "maximum_halfwidth_m": 0.0030057530867462386
+    },
+    {
+      "object": "Original nape underlay 03",
+      "vertices": 512,
+      "faces": 504,
+      "native_source_fibers": 361,
+      "maximum_halfwidth_m": 0.005690501795773729
+    },
+    {
+      "object": "Original nape underlay 04",
+      "vertices": 512,
+      "faces": 504,
+      "native_source_fibers": 391,
+      "maximum_halfwidth_m": 0.004238509828165531
+    },
+    {
+      "object": "Original nape underlay 05",
+      "vertices": 512,
+      "faces": 504,
+      "native_source_fibers": 497,
+      "maximum_halfwidth_m": 0.0036951406229993474
+    },
+    {
+      "object": "Original nape underlay 06",
+      "vertices": 512,
+      "faces": 504,
+      "native_source_fibers": 441,
+      "maximum_halfwidth_m": 0.005948486664823917
+    },
+    {
+      "object": "Original nape underlay 07",
+      "vertices": 512,
+      "faces": 504,
+      "native_source_fibers": 225,
+      "maximum_halfwidth_m": 0.003168649449627743
+    },
+    {
+      "object": "Original nape underlay 08",
+      "vertices": 512,
+      "faces": 504,
+      "native_source_fibers": 264,
+      "maximum_halfwidth_m": 0.005014972393229843
+    },
+    {
+      "object": "Original nape underlay 09",
+      "vertices": 512,
+      "faces": 504,
+      "native_source_fibers": 457,
+      "maximum_halfwidth_m": 0.0050718757374824145
+    },
+    {
+      "object": "Original nape underlay 10",
+      "vertices": 512,
+      "faces": 504,
+      "native_source_fibers": 467,
+      "maximum_halfwidth_m": 0.003141632456990064
+    },
+    {
+      "object": "Original nape underlay 11",
+      "vertices": 512,
+      "faces": 504,
+      "native_source_fibers": 575,
+      "maximum_halfwidth_m": 0.005931427641739045
+    },
+    {
+      "object": "Original nape underlay 12",
+      "vertices": 512,
+      "faces": 504,
+      "native_source_fibers": 348,
+      "maximum_halfwidth_m": 0.0037473160484691433
+    },
+    {
+      "object": "Original nape underlay 13",
+      "vertices": 512,
+      "faces": 504,
+      "native_source_fibers": 674,
+      "maximum_halfwidth_m": 0.004178621189556168
+    },
+    {
+      "object": "Original nape underlay 14",
+      "vertices": 512,
+      "faces": 504,
+      "native_source_fibers": 788,
+      "maximum_halfwidth_m": 0.005726649381789663
+    },
+    {
+      "object": "Original nape underlay 15",
+      "vertices": 512,
+      "faces": 504,
+      "native_source_fibers": 692,
+      "maximum_halfwidth_m": 0.003012331719835326
+    },
+    {
+      "object": "Original nape underlay 16",
+      "vertices": 512,
+      "faces": 504,
+      "native_source_fibers": 362,
+      "maximum_halfwidth_m": 0.005467345099417301
+    },
+    {
+      "object": "Original nape underlay 17",
+      "vertices": 512,
+      "faces": 504,
+      "native_source_fibers": 584,
+      "maximum_halfwidth_m": 0.004561039886024797
+    },
+    {
+      "object": "Original nape underlay 18",
+      "vertices": 512,
+      "faces": 504,
+      "native_source_fibers": 428,
+      "maximum_halfwidth_m": 0.0034426340438786203
+    },
+    {
+      "object": "Original nape underlay 19",
+      "vertices": 512,
+      "faces": 504,
+      "native_source_fibers": 649,
+      "maximum_halfwidth_m": 0.005998350136117532
+    },
+    {
+      "object": "Original nape underlay 20",
+      "vertices": 512,
+      "faces": 504,
+      "native_source_fibers": 545,
+      "maximum_halfwidth_m": 0.0033476180080144993
+    },
+    {
+      "object": "Original nape underlay 21",
+      "vertices": 512,
+      "faces": 504,
+      "native_source_fibers": 221,
+      "maximum_halfwidth_m": 0.004701168341468486
+    },
+    {
+      "object": "Original nape underlay 22",
+      "vertices": 512,
+      "faces": 504,
+      "native_source_fibers": 288,
+      "maximum_halfwidth_m": 0.005355701450456067
+    },
+    {
+      "object": "Original nape underlay 23",
+      "vertices": 512,
+      "faces": 504,
+      "native_source_fibers": 580,
+      "maximum_halfwidth_m": 0.003036853914639851
+    },
+    {
+      "object": "Original nape underlay 24",
+      "vertices": 512,
+      "faces": 504,
+      "native_source_fibers": 454,
+      "maximum_halfwidth_m": 0.005802128006070627
+    },
+    {
+      "object": "Original nape underlay 25",
+      "vertices": 512,
+      "faces": 504,
+      "native_source_fibers": 296,
+      "maximum_halfwidth_m": 0.0040427840683466745
+    },
+    {
+      "object": "Original nape underlay 26",
+      "vertices": 512,
+      "faces": 504,
+      "native_source_fibers": 405,
+      "maximum_halfwidth_m": 0.0038721683032223618
+    },
+    {
+      "object": "Original nape underlay 27",
+      "vertices": 512,
+      "faces": 504,
+      "native_source_fibers": 535,
+      "maximum_halfwidth_m": 0.005883134226896178
+    }
+  ],
+  "radii_unchanged": true,
+  "scalp_vertex_repairs": 861,
+  "coat_vertex_repairs": 0,
+  "shader": "Dark matte underlay with long directional procedural transparency, maximum per-surface opaque blend .48; no coated specular ribbon",
+  "license": "New mesh/UV/procedural shader original. Retained support/donors retain existing licenses; no new source asset or imported textures.",
+  "collision_scope": "Discrete added vertices nearest-body guard and posterior clothing-ray guard, not full surface/strand/animation collision proof",
+  "status": "Unreviewed nape underlay prototype; not artistic approval"
+}

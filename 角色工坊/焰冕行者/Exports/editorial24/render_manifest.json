@@ -1,0 +1,20 @@
+{
+  "version": "editorial24",
+  "source": "rearfeather03",
+  "source_sha256": "165d5499b72bbdf12311f406347c4e45c7e8235b84213f964123800fe739c249",
+  "renderer": "Blender 4.5.9 Cycles",
+  "samples": 384,
+  "draft": false,
+  "pose": "static geometric display pose, not a runtime rig",
+  "magic_particles": false,
+  "images": [
+    {
+      "file": "03_Portrait.png",
+      "bytes": 4391191,
+      "sha256": "d6397f381acb445a35a5247c578ba70099df196f34f0a2cb71806a8c44bcbbbb"
+    }
+  ],
+  "status": "visual study, not approved commercial-quality final",
+  "physical_reference_portrait_lighting": true,
+  "relative_shape_keys_posed": true
+}

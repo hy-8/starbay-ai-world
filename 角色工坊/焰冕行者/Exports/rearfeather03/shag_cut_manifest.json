@@ -1,0 +1,31 @@
+{
+  "version": "rearfeather03",
+  "source": "napeunderlay02",
+  "source_sha256": "f99bd15ad542205b562e4d01a435f7039d598282e27ced6dc020b4cd3a84c1e4",
+  "method": "Cut high roots on the original posterior object to spatially coherent63..91mm scissor lengths, continuous height transition and gentle outward exits; optional upper side region; regenerate taper on modified fibers; lower nape/frontal object/underlay retained",
+  "components": [
+    {
+      "object": "Original posterior shag \u2022 distributed surface roots",
+      "curves": 64000,
+      "actually_modified_curves": 41003,
+      "exact_roots_preserved": true,
+      "maximum_displacement_m": 0.1679123044013977,
+      "positions_before_sha256": "fc2d11ae302906baf12c5bd396bbe64e1807a8410191a8418907e10c1be89a07",
+      "positions_after_sha256": "696e23fb78e809d168e5e1feef70112842fc8776653ba09202055e74f8b2dc5c"
+    }
+  ],
+  "rear_only": true,
+  "front_only": false,
+  "cut_fraction_quantiles": [
+    0.34983311046422283,
+    0.7123661271148392,
+    1.0
+  ],
+  "scalp_sampled_point_repairs": 213,
+  "upper_side_region_included": true,
+  "local_shortened_tip_gather": true,
+  "local_tip_groups": 220,
+  "unchanged_low_rear_curves": 22997,
+  "collision_scope": "Every fourth modified high posterior point scalp guard; not full surface/strand/garment or motion collision proof",
+  "status": "Unreviewed isolated scissor-layer native groom study; not artistic acceptance"
+}

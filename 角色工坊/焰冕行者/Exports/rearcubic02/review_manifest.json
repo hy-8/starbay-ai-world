@@ -1,0 +1,11 @@
+{
+  "version": "rearcubic02",
+  "model_sha256": "cee9b5667ef4b1843e9e05d5fcb32c8931ca1a119e0bf7d5a5f88b0f6cf1fee0",
+  "raw_creation_report_sha256": "3aa9b7da5770de6a50a7b59b0445902d861c9cdd2f6497742595f8081e4ab6d0",
+  "inspection": "Side/back drafts reviewed only. Whole cubic parents add different45..115mm endpoint drops and independent handles, but rounded crown mass and parallel curtain-like flow remain. Rejected; no full five-view render or contact validation was needed after artistic sample rejection.",
+  "artistic_acceptance": false,
+  "goal_completed": false,
+  "chosen_as_next_research_base": false,
+  "editable_scope": "Native baked CURVES remain directly editable. Added original underlay mesh/UV/procedural shader in01/02. New cubic/scissor guides are computed paths, not persistent live groom controls.",
+  "license": "No new downloaded source. Original new underlay/procedural shader, retained Bystedt CC BY-SA and Abhay Royalty Free support. Models and source-derived geometry stay local."
+}

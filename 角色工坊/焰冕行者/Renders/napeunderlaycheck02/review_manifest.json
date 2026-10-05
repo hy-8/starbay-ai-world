@@ -1,0 +1,27 @@
+{
+  "source": "napeunderlay02",
+  "source_sha256": "f99bd15ad542205b562e4d01a435f7039d598282e27ced6dc020b4cd3a84c1e4",
+  "actual_images_reviewed": [
+    "01_Front.png",
+    "02_ThreeQuarter.png",
+    "03_Side.png",
+    "04_Back.png",
+    "05_OppositeSide.png"
+  ],
+  "images_sha256": {
+    "01_Front.png": "8c4c05947f7260eddb81a2ef1dba737ecd341270661ff8081bf4690ede9aa998",
+    "02_ThreeQuarter.png": "cfdb725e8e8051256c83051f7dadad7da42c8826605ad105e90a0230109c8b1b",
+    "03_Side.png": "0181b83ffcd315367933d2f7aa678aa1e1525a246d44468b9d0bc3f40d00e358",
+    "04_Back.png": "87988439a77c49841d6f419488f6bd91ccd10aa0e14088f51d6b2960e2c37a64",
+    "05_OppositeSide.png": "01bb82ff0b89c009580f8ee3ca8e513b096eecfa1850b3e450357399f3038c08"
+  },
+  "resolution": [
+    1200,
+    1400
+  ],
+  "samples": 192,
+  "denoising": false,
+  "assessment": "Side/back drafts and all five192-sample neutral renders reviewed. Dark matte procedural directional transparency reduces plastic edges and adds modest nape opacity. Entire native groom, retained body/clothing/UV/shape keys untouched. Selected as next WIP base only; upper rear remains rounded, nape thin, opposite side small arc remains; not reference quality.",
+  "artistic_acceptance": false,
+  "goal_completed": false
+}

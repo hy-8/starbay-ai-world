@@ -1,0 +1,11 @@
+{
+  "version": "rearfeather03",
+  "model_sha256": "165d5499b72bbdf12311f406347c4e45c7e8235b84213f964123800fe739c249",
+  "raw_creation_report_sha256": "7f8edf7fc73f63e13bd2ebc8bc48405145ee395e404bc1225ccc94383a0effc0",
+  "inspection": "Side/back drafts, all five192-sample neutral renders and actual editorial24 portrait reviewed.220 local tip groups gather shortened ends, but portrait exposes brush-like horizontal tips and repeated silhouette. Rejected for adoption despite passing limited geometry/contact checks.",
+  "artistic_acceptance": false,
+  "goal_completed": false,
+  "chosen_as_next_research_base": false,
+  "editable_scope": "Native baked CURVES remain directly editable. Added original underlay mesh/UV/procedural shader in01/02. New cubic/scissor guides are computed paths, not persistent live groom controls.",
+  "license": "No new downloaded source. Original new underlay/procedural shader, retained Bystedt CC BY-SA and Abhay Royalty Free support. Models and source-derived geometry stay local."
+}

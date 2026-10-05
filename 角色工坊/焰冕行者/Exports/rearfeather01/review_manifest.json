@@ -1,0 +1,11 @@
+{
+  "version": "rearfeather01",
+  "model_sha256": "6d8d72cf7f3df75586dd1e737b874dba4e1b5f32736621334bf27ba6b8856737",
+  "raw_creation_report_sha256": "2db2267851b8b47e4ff85ad3f2c68e36a9a74e636e48b3f1f14ec641cdaad737",
+  "inspection": "Side/back drafts reviewed. Upper rear-only arc scissors affect12629 fibers, leaving upper side bulk nearly unchanged. Insufficient silhouette improvement; not adopted.",
+  "artistic_acceptance": false,
+  "goal_completed": false,
+  "chosen_as_next_research_base": false,
+  "editable_scope": "Native baked CURVES remain directly editable. Added original underlay mesh/UV/procedural shader in01/02. New cubic/scissor guides are computed paths, not persistent live groom controls.",
+  "license": "No new downloaded source. Original new underlay/procedural shader, retained Bystedt CC BY-SA and Abhay Royalty Free support. Models and source-derived geometry stay local."
+}

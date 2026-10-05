@@ -1,0 +1,16 @@
+{
+  "source": "rearfeather03",
+  "model_sha256": "40daec36572fd3be17a52007c3160e3670fab7b270889b936b79e429efd62c47",
+  "actual_image_reviewed": "03_Portrait.png",
+  "image_sha256": "d6397f381acb445a35a5247c578ba70099df196f34f0a2cb71806a8c44bcbbbb",
+  "resolution": [
+    1800,
+    2100
+  ],
+  "samples": 384,
+  "denoising": false,
+  "assessment": "Actual native Cycles portrait exposes repeated horizontal brush tips. Presentation rejected as reference-quality art; keep diagnostic evidence only. Does not show selected napeunderlay02 hair. Face/clothing also unfinished.",
+  "pose_scope": "Existing static geometric display pose. New underlay meshes follow the same rigid head matrix as native hair; no new rig, motion or UE runtime.",
+  "artistic_acceptance": false,
+  "goal_completed": false
+}

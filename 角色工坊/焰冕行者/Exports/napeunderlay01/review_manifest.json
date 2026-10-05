@@ -1,0 +1,11 @@
+{
+  "version": "napeunderlay01",
+  "model_sha256": "da9207d9b9fbda5e275a458b2385caba593837980d0696b19b1dfa20bdbe9795",
+  "raw_creation_report_sha256": "ad6e5c078755704342c16cc7904c9dc95eb10c02f355f1417267da1904fbe68d",
+  "inspection": "Side/back64-sample drafts reviewed. Added28 narrow original mesh underlays, but opaque/specular surfaces form plastic strips visible from back. Rejected; raw shader report was less detailed than02.",
+  "artistic_acceptance": false,
+  "goal_completed": false,
+  "chosen_as_next_research_base": false,
+  "editable_scope": "Native baked CURVES remain directly editable. Added original underlay mesh/UV/procedural shader in01/02. New cubic/scissor guides are computed paths, not persistent live groom controls.",
+  "license": "No new downloaded source. Original new underlay/procedural shader, retained Bystedt CC BY-SA and Abhay Royalty Free support. Models and source-derived geometry stay local."
+}

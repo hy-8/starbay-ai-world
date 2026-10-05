@@ -1,0 +1,11 @@
+{
+  "version": "rearcubic01",
+  "model_sha256": "5fb7468003e3d64bfe2e3da260a4da7de179c441b85b40b36ebbdd79b59048ff",
+  "raw_creation_report_sha256": "51d83c837fc6f7720bdba8ee02c1abe17328a7c003032a14852699080d325a5d",
+  "inspection": "Side/back drafts reviewed only.220 whole cubic parent paths on upper/side roots remove old shortened paths; lifted handle/bowed side/inward-down exit repeats a large smooth bowl silhouette. Rejected; do not use as base.",
+  "artistic_acceptance": false,
+  "goal_completed": false,
+  "chosen_as_next_research_base": false,
+  "editable_scope": "Native baked CURVES remain directly editable. Added original underlay mesh/UV/procedural shader in01/02. New cubic/scissor guides are computed paths, not persistent live groom controls.",
+  "license": "No new downloaded source. Original new underlay/procedural shader, retained Bystedt CC BY-SA and Abhay Royalty Free support. Models and source-derived geometry stay local."
+}
