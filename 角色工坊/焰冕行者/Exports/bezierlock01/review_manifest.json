@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-05",
+  "version": "bezierlock01",
+  "images_sha256": {
+    "02_ThreeQuarter.png": "226df702899fe09304e5251f7152219795e3da218a85701f7f3d002a5404b788",
+    "03_Side.png": "0e7328e208fc92d17969745862782d2fcdf81b62aadb933bddc57d29bac7defb",
+    "04_Back.png": "874849d75f4589a5ef6ef1fe0e0426cbfbdf4d346a9661bfdfd522a7ad5faa5d"
+  },
+  "all_listed_images_actually_inspected": true,
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 96,
+  "denoising": false,
+  "verdict": "Rejected placement sample: front intersects actual deep forehead; opposite side sample mostly hidden.",
+  "artistic_goal_completed": false
+}

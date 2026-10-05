@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-05",
+  "version": "bezierlock03",
+  "images_sha256": {
+    "02_ThreeQuarter.png": "13e4a2cebbbf227350e153eb09f47e9ccb868c0f3a5081b41f7117569a10bf63",
+    "03_Side.png": "bb7a3f57b799bf19fc2cda2fef2882ec3dc96eb129145a63cbf3a56504d54f06",
+    "04_Back.png": "cd6606a959ba8ebdb91324f7bf17da008afa9803f275297d6fb9035d75eee3a9",
+    "06_LockCloseup.png": "d09e3ed1039c93793c57ed38983d799d79da5bb19538f5e417eb6c89ebd95d2a"
+  },
+  "all_listed_images_actually_inspected": true,
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 96,
+  "denoising": false,
+  "verdict": "Fine fibers visible in actual closeup; still ribbon-like macro shape. Representative sample only, not a completed groom.",
+  "artistic_goal_completed": false,
+  "closeup_override": {
+    "image": "06_LockCloseup.png",
+    "resolution": [
+      1200,
+      1400
+    ],
+    "samples": 192
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "source": "napeunderlay02",
+  "source_sha256": "f99bd15ad542205b562e4d01a435f7039d598282e27ced6dc020b4cd3a84c1e4",
+  "cache_sha256": "b2999c243601c69fedef02ffffd07bd7738fbfd5c18cba5741dc9449a30c4b64",
+  "method": "Existing licensed particle paths, original flow retained. Each root projected to evaluated target body; full strand translated; discrete point guard.",
+  "affine_translation_m": [
+    0.0,
+    -0.054,
+    1.797
+  ],
+  "affine_scale": [
+    1.05,
+    1.2,
+    1.0
+  ],
+  "root_correction_quantiles_m": [
+    1.9987430285486535e-07,
+    0.0027617678946967525,
+    0.00872338456416622,
+    0.01152795662346993,
+    0.011782532867644038
+  ],
+  "point_guard_repairs": 161389,
+  "maximum_guard_repair_m": 0.011734939032723195,
+  "components": [
+    {
+      "object": "Muzammil Fab Standard \u2022 Curves-Back",
+      "curves": 17012
+    },
+    {
+      "object": "Muzammil Fab Standard \u2022 Curves-Sides",
+      "curves": 15926
+    },
+    {
+      "object": "Muzammil Fab Standard \u2022 Curves-Front",
+      "curves": 21826
+    }
+  ],
+  "old_hidden_objects": [
+    "Abhay flow derivative \u2022 real scalp sampled short support",
+    "Authored frontal revision \u2022 native scalp-patch geometry",
+    "Bystedt derivative \u2022 short scalp support",
+    "Original nape underlay 00",
+    "Original nape underlay 01",
+    "Original nape underlay 02",
+    "Original nape underlay 03",
+    "Original nape underlay 04",
+    "Original nape underlay 05",
+    "Original nape underlay 06",
+    "Original nape underlay 07",
+    "Original nape underlay 08",
+    "Original nape underlay 09",
+    "Original nape underlay 10",
+    "Original nape underlay 11",
+    "Original nape underlay 12",
+    "Original nape underlay 13",
+    "Original nape underlay 14",
+    "Original nape underlay 15",
+    "Original nape underlay 16",
+    "Original nape underlay 17",
+    "Original nape underlay 18",
+    "Original nape underlay 19",
+    "Original nape underlay 20",
+    "Original nape underlay 21",
+    "Original nape underlay 22",
+    "Original nape underlay 23",
+    "Original nape underlay 24",
+    "Original nape underlay 25",
+    "Original nape underlay 26",
+    "Original nape underlay 27",
+    "Original posterior coverage \u2022 surface-grown short fibers",
+    "Original posterior shag \u2022 distributed surface roots"
+  ],
+  "layered_cut": false,
+  "retained_original_front": false,
+  "retained_existing_short_support": false,
+  "existing_side_back_length_scale": [
+    1.0,
+    1.0
+  ],
+  "source_directional_shader_red_tint": true,
+  "collision_scope": "Discrete hair points nearest body only; not complete segments, clothes, eyes or animation",
+  "status": "Unreviewed real 3D candidate"
+}

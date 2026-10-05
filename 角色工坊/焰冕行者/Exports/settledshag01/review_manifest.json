@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-05",
+  "version": "settledshag01",
+  "images_sha256": {
+    "02_ThreeQuarter.png": "da80ae5c6d2a942d46f2e0ac081068048577cacf506c9a7b224cf14590900374"
+  },
+  "all_listed_images_actually_inspected": true,
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 96,
+  "denoising": false,
+  "verdict": "Single-view refinement study: slightly narrower silhouette; still broad regular front locks and feathered rear. Not a replacement for stable WIP.",
+  "artistic_goal_completed": false
+}

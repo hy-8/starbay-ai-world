@@ -16,7 +16,9 @@ if out.exists() or render.exists():raise RuntimeError('Fresh candidate required'
 source=ROOT/'Exports/napeunderlay02/Ember_Regent.blend'
 folder=ROOT/'Source/FabMediumLayered/fabcontrol01';cache=folder/'licensed_particle_paths.npz'
 raw=np.load(cache)['positions'];groups=json.loads((folder/'bake_manifest.json').read_text())['groups']
-p=raw+np.array([0,-.025,1.785]);N=p.shape[1];t=np.linspace(0,1,N)
+scale=np.array([1.05,1.20,1.0]) if '--measured-affine' in a else np.ones(3)
+translation=np.array([0,-.054,1.797]) if '--measured-affine' in a else np.array([0,-.025,1.785])
+p=raw*scale+translation;N=p.shape[1];t=np.linspace(0,1,N)
 bpy.ops.wm.open_mainfile(filepath=str(source),use_scripts=False);bpy.context.view_layer.update()
 body=bpy.data.objects['CC0 male body • retained topology'];bv=BVHTree.FromObject(body,bpy.context.evaluated_depsgraph_get())
 mat=next(o for o in bpy.data.objects if not o.hide_render and o.type=='CURVES' and o.name.startswith('Authored')).data.materials[0]
@@ -85,7 +87,7 @@ for group in groups:
  kept.append(dict(object=ob.name,curves=len(q)))
 report=dict(source='napeunderlay02',source_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),cache_sha256=hashlib.sha256(cache.read_bytes()).hexdigest(),
  method='Existing licensed particle paths, original flow retained. Each root projected to evaluated target body; full strand translated; discrete point guard.',
- affine_translation_m=[0,-.025,1.785],root_correction_quantiles_m=np.quantile(corrections,[0,.5,.9,.99,1]).tolist(),
+ affine_translation_m=translation.tolist(),affine_scale=scale.tolist(),root_correction_quantiles_m=np.quantile(corrections,[0,.5,.9,.99,1]).tolist(),
  point_guard_repairs=repairs,maximum_guard_repair_m=maxrepair,components=kept,old_hidden_objects=hidden,
  layered_cut='--layered' in a,retained_original_front=hybrid,retained_existing_short_support='--retain-support' in a,
  existing_side_back_length_scale=[3.0,2.6] if '--longback' in a else [1.0,1.0],
@@ -96,6 +98,6 @@ s=bpy.context.scene;pref=bpy.context.preferences.addons['cycles'].preferences;pr
 for d in pref.devices:d.use=d.type=='OPTIX'
 s.cycles.device='GPU';s.cycles.samples=64;s.cycles.use_denoising=False;s.render.resolution_x,s.render.resolution_y=1200,1400;s.render.resolution_percentage=80
 bpy.ops.wm.save_as_mainfile(filepath=str(out/'Ember_Regent.blend'))
-for name in ['02_ThreeQuarter','03_Side','04_Back']:
+for name in (['02_ThreeQuarter'] if '--single-view' in a else ['02_ThreeQuarter','03_Side','04_Back']):
  s.camera=bpy.data.objects[name];s.render.filepath=str(render/(name+'.png'));bpy.ops.render.render(write_still=True)
 print('FAB_FITTED_RENDERED',version,flush=True)

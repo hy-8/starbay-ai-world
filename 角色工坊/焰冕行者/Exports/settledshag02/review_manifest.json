@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-05",
+  "version": "settledshag02",
+  "images_sha256": {
+    "02_ThreeQuarter.png": "b5c453d99ba32efdfdb31782e656a558901ba91ec8d7219ebbd4745bbf0b3b29"
+  },
+  "all_listed_images_actually_inspected": true,
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 96,
+  "denoising": false,
+  "verdict": "Rejected material-only pigment control: orange-brown response does not match desired burgundy-red hair. Geometry unchanged from settledshag01.",
+  "artistic_goal_completed": false
+}

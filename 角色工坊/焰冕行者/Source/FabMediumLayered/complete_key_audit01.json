@@ -1,0 +1,94 @@
+{
+  "source_sha256": "0adca6484a4d6c51c3dfd33e5d13ed42f3bf44cae3fcea8f4aa10c710077ecd4",
+  "all_particles_read": 54764,
+  "groups": [
+    {
+      "name": "Curves-Back",
+      "actual_key_count_distribution": {
+        "8": 17012
+      },
+      "total_keys": 136096,
+      "complete_key_length_quantiles_m": [
+        0.0064296904020011425,
+        0.014503780659288168,
+        0.025543072260916233,
+        0.03127074725925923,
+        0.035159629508852944,
+        0.04097725823521614
+      ],
+      "baked_root_difference_quantiles_m": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "baked_tip_difference_quantiles_m": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        3.725290298461914e-09
+      ]
+    },
+    {
+      "name": "Curves-Sides",
+      "actual_key_count_distribution": {
+        "8": 15926
+      },
+      "total_keys": 127408,
+      "complete_key_length_quantiles_m": [
+        0.010813063941895962,
+        0.022152977995574474,
+        0.028739755041897297,
+        0.0317879244685173,
+        0.03380363900214434,
+        0.03572118654847145
+      ],
+      "baked_root_difference_quantiles_m": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "baked_tip_difference_quantiles_m": [
+        0.0,
+        0.0,
+        0.0,
+        5.820766091346741e-11,
+        1.862645149230957e-09
+      ]
+    },
+    {
+      "name": "Curves-Front",
+      "actual_key_count_distribution": {
+        "8": 21826
+      },
+      "total_keys": 174608,
+      "complete_key_length_quantiles_m": [
+        0.005304957740008831,
+        0.015304816886782646,
+        0.0314559992402792,
+        0.04077036678791046,
+        0.04344480484724045,
+        0.04554256051778793
+      ],
+      "baked_root_difference_quantiles_m": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "baked_tip_difference_quantiles_m": [
+        0.0,
+        0.0,
+        0.0,
+        2.9103830456733704e-11,
+        3.725290298461914e-09
+      ]
+    }
+  ],
+  "purpose": "Test whether using first particle cache step count truncated other hairs. Complete keys compared against bake 01."
+}

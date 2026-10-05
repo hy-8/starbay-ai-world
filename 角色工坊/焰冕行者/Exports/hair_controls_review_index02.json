@@ -1,0 +1,17 @@
+{
+  "review_files": [
+    "Exports\\bezierlock01\\review_manifest.json",
+    "Exports\\bezierlock01\\lock_control_summary.json",
+    "Exports\\bezierlock02\\review_manifest.json",
+    "Exports\\bezierlock02\\lock_control_summary.json",
+    "Exports\\bezierlock03\\review_manifest.json",
+    "Exports\\bezierlock03\\lock_control_summary.json",
+    "Exports\\cubicshag01\\review_manifest.json",
+    "Exports\\cubicshag01\\lock_control_summary.json",
+    "Exports\\fabfit05\\review_manifest.json",
+    "Exports\\settledshag01\\review_manifest.json",
+    "Exports\\settledshag02\\review_manifest.json"
+  ],
+  "stable_wip": "Exports/napeunderlay02/Ember_Regent.blend",
+  "artistic_goal_completed": false
+}

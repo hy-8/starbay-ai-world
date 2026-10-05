@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-05",
+  "version": "fabfit05",
+  "images_sha256": {
+    "02_ThreeQuarter.png": "80dc4a71fd926e77eb6983907ad1f148f1fef64fe4bd5a98b5f584b5fe83683c"
+  },
+  "all_listed_images_actually_inspected": true,
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 64,
+  "denoising": false,
+  "verdict": "Rejected as target hairstyle: measured affine reduces root correction but remains short swept hair; no medium loose layers.",
+  "artistic_goal_completed": false
+}

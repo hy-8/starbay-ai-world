@@ -1,0 +1,23 @@
+{
+  "version": "settledshagcheck03",
+  "source": "settledshag03",
+  "source_sha256": "5289eed81f9b08ceb08d6c6f22e0460a6c18b39c728700031d4f86fbb7bc02eb",
+  "source_unchanged": true,
+  "method": "Existing four neutral cameras when requested, plus actual opposite camera mirrored in world space with local-X handedness correction; no pixel flip or geometry edit",
+  "samples": 192,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "denoising": false,
+  "image_sha256": "4e746a7d68f1a2a31b7ada146c963d380e72b20214521fdf740d53602d3e827f",
+  "images_sha256": {
+    "01_Front.png": "188afe651dca81b9ae0c9cc7bdb8158c310d02043a31ce962f979721f6cc9868",
+    "02_ThreeQuarter.png": "6cdd5dd8e769d5336e001d5825cb3089acf73d010c7d9a6ad7b2d961a507d06f",
+    "03_Side.png": "e9d07ce63f5a1e03ccf1cc9e8fb732e7fcc208528fd9440bec8461d234a329ca",
+    "04_Back.png": "31aec5594738fa6fe61c6af9cfae184c3c7bce9a3ba030cc00e932fe889ebd68",
+    "05_OppositeSide.png": "4e746a7d68f1a2a31b7ada146c963d380e72b20214521fdf740d53602d3e827f"
+  },
+  "status": "Unreviewed actual neutral/opposite profile diagnostic, not artistic approval",
+  "opposite_image_reused_from": null
+}

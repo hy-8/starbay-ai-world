@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-05",
+  "version": "settledshag03",
+  "images_sha256": {
+    "01_Front.png": "801c8a70b7d29cf93c8f7f42f69f6d2f93c59d5db8314b1fb9fa89ed8e779b4d",
+    "02_ThreeQuarter.png": "ee8f0b8f173e5fb97493932e959e97180e9416ccf0500c0437941514f6599b2c",
+    "03_Side.png": "56e00047b4ddfb6b711a63af8c1c1dfe0a71b5a2bcc02644709bed201a9f3c74",
+    "04_Back.png": "46138dc492748ff5f9aa09a9b110c6410bb1f7adb025b979cbd54c51b978c255"
+  },
+  "all_listed_images_actually_inspected": true,
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 96,
+  "denoising": false,
+  "verdict": "Provisional shape study only: side tips settle downward and maintain coverage; crown remains broad and rear round. Does not replace stable WIP or complete target.",
+  "artistic_goal_completed": false
+}

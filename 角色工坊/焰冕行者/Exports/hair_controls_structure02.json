@@ -1,0 +1,86 @@
+{
+  "source_sha256": "f99bd15ad542205b562e4d01a435f7039d598282e27ced6dc020b4cd3a84c1e4",
+  "studies": [
+    {
+      "version": "bezierlock01",
+      "file_sha256": "36c8adb2887be8f4bbd6f0eac4d27a2fab4efd29bab6081820f185f136e22686",
+      "original_mesh_geometry_uv_shape_keys_transforms_preserved": true,
+      "original_mesh_count": 141,
+      "visible_native_curve_count": 1400,
+      "visible_curve_points_finite": true,
+      "radii_finite_positive": true,
+      "file_textures_available": true
+    },
+    {
+      "version": "bezierlock02",
+      "file_sha256": "5b9f53e71e5ad87f42c62d9a5d209ddf2cddaf51efcd98cae598058d418cf857",
+      "original_mesh_geometry_uv_shape_keys_transforms_preserved": true,
+      "original_mesh_count": 141,
+      "visible_native_curve_count": 1400,
+      "visible_curve_points_finite": true,
+      "radii_finite_positive": true,
+      "file_textures_available": true
+    },
+    {
+      "version": "bezierlock03",
+      "file_sha256": "af21d32f42b6769d87cbb34096fbba77c4e8b99d76e6c33ca1e31854994a0b23",
+      "original_mesh_geometry_uv_shape_keys_transforms_preserved": true,
+      "original_mesh_count": 141,
+      "visible_native_curve_count": 1000,
+      "visible_curve_points_finite": true,
+      "radii_finite_positive": true,
+      "file_textures_available": true
+    },
+    {
+      "version": "cubicshag01",
+      "file_sha256": "4b7d33822110c3dd7d658c72b017eb48d4211a97b21f1bdce457a6caa26b0225",
+      "original_mesh_geometry_uv_shape_keys_transforms_preserved": true,
+      "original_mesh_count": 141,
+      "visible_native_curve_count": 95657,
+      "visible_curve_points_finite": true,
+      "radii_finite_positive": true,
+      "file_textures_available": true
+    },
+    {
+      "version": "fabfit05",
+      "file_sha256": "05a92f570c12e68946dfa86829cb98add435f6f4282f88125daf8ccb3e6069b4",
+      "original_mesh_geometry_uv_shape_keys_transforms_preserved": true,
+      "original_mesh_count": 141,
+      "visible_native_curve_count": 54764,
+      "visible_curve_points_finite": true,
+      "radii_finite_positive": true,
+      "file_textures_available": true
+    },
+    {
+      "version": "settledshag01",
+      "file_sha256": "ef8976835e6d0a564af526ee4b0140292deb4b37a2062783806392504ff61d6d",
+      "original_mesh_geometry_uv_shape_keys_transforms_preserved": true,
+      "original_mesh_count": 141,
+      "visible_native_curve_count": 165417,
+      "visible_curve_points_finite": true,
+      "radii_finite_positive": true,
+      "file_textures_available": true
+    },
+    {
+      "version": "settledshag02",
+      "file_sha256": "8ab66d31c492fd51f5e837ce6a72d1a1dd352406c0bdf06ea8d36766c0369c1d",
+      "original_mesh_geometry_uv_shape_keys_transforms_preserved": true,
+      "original_mesh_count": 141,
+      "visible_native_curve_count": 165417,
+      "visible_curve_points_finite": true,
+      "radii_finite_positive": true,
+      "file_textures_available": true
+    },
+    {
+      "version": "settledshag03",
+      "file_sha256": "5289eed81f9b08ceb08d6c6f22e0460a6c18b39c728700031d4f86fbb7bc02eb",
+      "original_mesh_geometry_uv_shape_keys_transforms_preserved": true,
+      "original_mesh_count": 141,
+      "visible_native_curve_count": 165417,
+      "visible_curve_points_finite": true,
+      "radii_finite_positive": true,
+      "file_textures_available": true
+    }
+  ],
+  "scope": "Static file checks only. Not artistic acceptance or exhaustive head/clothing/segments/animation validation."
+}

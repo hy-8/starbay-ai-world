@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-05",
+  "version": "bezierlock02",
+  "images_sha256": {
+    "02_ThreeQuarter.png": "bb7ed83f56989ba8a4fdb1908f14507e118e5a267c69cdf38f8cb20f47bbf4b9",
+    "03_Side.png": "ae6b3d4656dd3ad7a50390e8d9e592e40230ac4446017f610304731c6670df75",
+    "04_Back.png": "e4acee1916644f2508c9e9052de51f12ea13ffd0991e9e79a02a2dd2891c167e"
+  },
+  "all_listed_images_actually_inspected": true,
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 96,
+  "denoising": false,
+  "verdict": "Two locks only. Corrected placement but repeated subordinate stripes and flat band remain; no full scalp coverage test.",
+  "artistic_goal_completed": false
+}

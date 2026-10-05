@@ -1,0 +1,53 @@
+{
+  "source_sha256": "f99bd15ad542205b562e4d01a435f7039d598282e27ced6dc020b4cd3a84c1e4",
+  "components": [
+    {
+      "object": "Abhay flow derivative \u2022 real scalp sampled short support",
+      "curves": 14000,
+      "geometry_modified": false,
+      "max_displacement_m": 0.0,
+      "finite": true,
+      "body_point_repairs": 0,
+      "maximum_repair_m": 0.0
+    },
+    {
+      "object": "Authored frontal revision \u2022 native scalp-patch geometry",
+      "curves": 27760,
+      "geometry_modified": true,
+      "max_displacement_m": 0.0073117478750646114,
+      "finite": true,
+      "body_point_repairs": 8405,
+      "maximum_repair_m": 0.000862998967122985
+    },
+    {
+      "object": "Bystedt derivative \u2022 short scalp support",
+      "curves": 23657,
+      "geometry_modified": false,
+      "max_displacement_m": 0.0,
+      "finite": true,
+      "body_point_repairs": 0,
+      "maximum_repair_m": 0.0
+    },
+    {
+      "object": "Original posterior coverage \u2022 surface-grown short fibers",
+      "curves": 36000,
+      "geometry_modified": false,
+      "max_displacement_m": 0.0,
+      "finite": true,
+      "body_point_repairs": 0,
+      "maximum_repair_m": 0.0
+    },
+    {
+      "object": "Original posterior shag \u2022 distributed surface roots",
+      "curves": 64000,
+      "geometry_modified": true,
+      "max_displacement_m": 0.01084118988364935,
+      "finite": true,
+      "body_point_repairs": 15826,
+      "maximum_repair_m": 0.003888478825602215
+    }
+  ],
+  "method": "Preserved complete existing fibers; smooth crown and side settlement, two low-pass path passes; unified physical hair material",
+  "artistic_status": "Unreviewed real 3D candidate",
+  "scope": "Static discrete body guard only, no complete clothing/segment/animation proof"
+}

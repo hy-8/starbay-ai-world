@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-05",
+  "version": "cubicshag01",
+  "images_sha256": {
+    "01_Front.png": "2e2e191c579f6b42446a9b903cde2f25f069bc1ce177d98da59c6f89424ac71a",
+    "02_ThreeQuarter.png": "6d56878cbded8a3c13ba02d2bc7dad810ac691ada28001c97f43e8af8646a2de",
+    "03_Side.png": "959296a03a9a2b43bc6a92e6729843d00d814640f56a11a03763b743b54142ba",
+    "04_Back.png": "8a429a5da08f90baa47fc4c1e68b39aab23dcc9b50806d6919619cb344f96923"
+  },
+  "all_listed_images_actually_inspected": true,
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 96,
+  "denoising": false,
+  "verdict": "Rejected whole-groom assembly: separated hanging ribbons, arches and gaps behind ears and crown; sparse rear curtain. Fine fibers did not solve whole-head shape.",
+  "artistic_goal_completed": false
+}
