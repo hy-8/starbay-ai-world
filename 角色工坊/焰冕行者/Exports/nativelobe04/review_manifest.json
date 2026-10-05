@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-05",
+  "version": "nativelobe04",
+  "images_sha256": {
+    "02_ThreeQuarter.png": "978b7db7039f68a623af659a89ea564f8324b2f95e4da2f7dbdea003db1f30f4"
+  },
+  "all_listed_images_actually_inspected": true,
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 96,
+  "denoising": false,
+  "verdict": "Provisional material-only study: 25% directional lobe blend modestly reduces pale pink while retaining volume; broad fringe still unresolved. No art acceptance.",
+  "artistic_goal_completed": false
+}

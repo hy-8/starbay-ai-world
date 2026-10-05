@@ -106,3 +106,5 @@ Free Medium Layered HairStyle for MetaHuman - MHPKG — Muzammil。https://www.f
 本轮关闭源自动脚本，从 Blender 版提取已有粒子轨迹，转为原生曲线、在角色实际身体表面拟合根、延长侧后、改红色材质、做离散身体保护。普通脚本仅操作既有内容；没有送入生成模型、训练集或生成AI开发。04另导入原始方向性 Hair 材质并改变红色渐变。来源哈希与边界见 Source/FabMediumLayered/acquisition.json。
 
 fabfit01—04均未通过目标艺术验收，稳定基础不变。原始头皮只在源控制图使用，没有导入人物身体；旧许可组件隐藏但未删除，03/04恢复的Bystedt/Abhay等短支撑仍依其原许可。原/衍生几何留本地，不出售或分发成独立发型包。GitHub仅审查代码、非几何清单和项目渲染证据；没有新的候选Release。
+
+2026-10-05追加修改记录：Bystedt long hair的已改编layercut04毛发重新用于根区头皮重铺、实测负X冠部局部收低；原生源梳理求值后分区剪短对照；完整前额发丝组合；原创材质分支对照。均为本地CC BY-SA改编，版本沿用已检查证据的“未注明”，未变成CC0。原始资产、提取/派生几何留本地，未新增独立发型分发或Release。

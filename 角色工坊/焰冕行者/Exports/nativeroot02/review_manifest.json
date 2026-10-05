@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-05",
+  "version": "nativeroot02",
+  "images_sha256": {
+    "01_Front.png": "3bcb4a3dc1771ee323bbb58192b14d6beda3b180352f17714c6ccf6f78a1e9f4",
+    "02_ThreeQuarter.png": "1c4cae653d8226a078fa45edf3299cb308ca32ca18a600141823e060ccc68fa7",
+    "03_Side.png": "96ec974404a43bf19128300324f0236baf1ee24484905a138399c616d9152ffd",
+    "04_Back.png": "58fe8d39b00508fec19780b8df622933a42da44fb767f6e4badd379793f73098"
+  },
+  "all_listed_images_actually_inspected": true,
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 96,
+  "denoising": false,
+  "verdict": "Whole root region reflow preserves source waves and longer nape; crown hard arches reduce, but broad clump bands remain. Incomplete.",
+  "artistic_goal_completed": false
+}

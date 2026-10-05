@@ -17,24 +17,42 @@ def meshes():
     p=np.empty(len(k.data)*3,np.float32);k.data.foreach_get('co',p);h.update(p.tobytes()+repr((k.name,k.value)).encode())
   result[o.name]=h.hexdigest()
  return result
+def curve_geometry(o):
+ p=np.empty(len(o.data.points)*3,np.float32);o.data.attributes['position'].data.foreach_get('vector',p)
+ r=np.empty(len(o.data.points),np.float32);o.data.attributes['radius'].data.foreach_get('value',r)
+ return hashlib.sha256(p.tobytes()+r.tobytes()+np.array(o.matrix_world,np.float32).tobytes()+repr([c.points_length for c in o.data.curves]).encode()).hexdigest()
 source=ROOT/'Exports/napeunderlay02/Ember_Regent.blend'
 bpy.ops.wm.open_mainfile(filepath=str(source),use_scripts=False);original=meshes();rows=[]
+original_curves={o.name:curve_geometry(o) for o in bpy.data.objects if o.type=='CURVES' and not o.hide_render}
 for version in a[1:]:
  path=ROOT/'Exports'/version/'Ember_Regent.blend'
  bpy.ops.wm.open_mainfile(filepath=str(path),use_scripts=False)
  assert meshes()==original,version+' original mesh changed'
- count=0
+ count=0;geometry={}
  for o in bpy.data.objects:
   if o.type!='CURVES' or o.hide_render:continue
   p=np.empty(len(o.data.points)*3,np.float32);o.data.attributes['position'].data.foreach_get('vector',p)
   r=np.empty(len(o.data.points),np.float32);o.data.attributes['radius'].data.foreach_get('value',r)
   assert np.isfinite(p).all() and np.isfinite(r).all() and (r>0).all(),o.name
   count+=len(o.data.curves)
+  geometry[o.name]=hashlib.sha256(p.tobytes()+r.tobytes()+np.array(o.matrix_world,np.float32).tobytes()+repr([c.points_length for c in o.data.curves]).encode()).hexdigest()
  missing=[im.name for im in bpy.data.images if im.source=='FILE' and not im.packed_file and not Path(bpy.path.abspath(im.filepath)).is_file()]
  assert not missing,missing
  rows.append(dict(version=version,file_sha256=hashlib.sha256(path.read_bytes()).hexdigest(),
   original_mesh_geometry_uv_shape_keys_transforms_preserved=True,original_mesh_count=len(original),
-  visible_native_curve_count=count,visible_curve_points_finite=True,radii_finite_positive=True,file_textures_available=True))
+  visible_native_curve_count=count,visible_curve_points_finite=True,radii_finite_positive=True,file_textures_available=True,
+  visible_curve_geometry_by_object=geometry))
+byversion={r['version']:r for r in rows}
+for control in ['nativelobe03','nativelobe04']:
+ if control in byversion and 'nativeroot03' in byversion:
+  assert byversion[control]['visible_curve_geometry_by_object']==byversion['nativeroot03']['visible_curve_geometry_by_object'],'Shader control changed geometry'
+  byversion[control]['visible_curve_geometry_exactly_unchanged_from']='nativeroot03'
+if 'nativecoverage05' in byversion and 'nativelobe04' in byversion:
+ before=byversion['nativelobe04']['visible_curve_geometry_by_object'];after=byversion['nativecoverage05']['visible_curve_geometry_by_object']
+ for name,digest in before.items():assert after[name]==digest,'Undercoat changed primary geometry'
+ for name in set(after)-set(before):assert after[name]==original_curves[name],'Restored support geometry changed'
+ byversion['nativecoverage05']['primary_geometry_exactly_unchanged_from']='nativelobe04'
+ byversion['nativecoverage05']['restored_short_geometry_exactly_unchanged_from_stable']=True
 output.write_text(json.dumps(dict(source_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),studies=rows,
  scope='Static file checks only. Not artistic acceptance or exhaustive head/clothing/segments/animation validation.'),indent=2),encoding='utf-8')
 print('HAIR_CANDIDATE_FILES_PASS',flush=True)

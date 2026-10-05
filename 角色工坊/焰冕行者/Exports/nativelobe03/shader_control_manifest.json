@@ -1,0 +1,10 @@
+{
+  "source": "nativeroot03",
+  "source_sha256": "2e7e8eedfb8baa17437c800c1373f71fd3bd9abef45e2750ddc6af4bfb548fad",
+  "components": [
+    "Bystedt layercut derivative \u2022 native root reflow"
+  ],
+  "method": "Material only; native Hair BSDF reflection/transmission lobes with unlinked default tangent input, all geometry preserved",
+  "status": "Unreviewed actual material comparison",
+  "artistic_goal_completed": false
+}

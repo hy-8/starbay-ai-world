@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-05",
+  "version": "nativecompose01",
+  "images_sha256": {
+    "01_Front.png": "9eb0fed17c4e538bdcbb437f17fa94a435d3d089d8246e90aa3117fabcc653a7",
+    "02_ThreeQuarter.png": "c2ab30a0f92a6d5d8bbef3f5491e4e7b69e894dc0fd49e566e1414f3ad8d6a70",
+    "03_Side.png": "8e22663d5dcbd2d4129c87dad102150381b84ca1927183b591e8ca98440d4977",
+    "04_Back.png": "065d570f58675646a336dec37d627fbc08468d1b281b35b17fb076551e867f6e"
+  },
+  "all_listed_images_actually_inspected": true,
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 96,
+  "denoising": false,
+  "verdict": "Rejected for advancement: complete fringe added over natural crown; no obvious scalp gap in four views, but crown/rear too rounded and broad.",
+  "artistic_goal_completed": false
+}

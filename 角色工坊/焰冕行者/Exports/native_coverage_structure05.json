@@ -1,0 +1,37 @@
+{
+  "source_sha256": "f99bd15ad542205b562e4d01a435f7039d598282e27ced6dc020b4cd3a84c1e4",
+  "studies": [
+    {
+      "version": "nativelobe04",
+      "file_sha256": "bea3b1ec3ebd0cd92e051640d5237e4b842f378edbe07c827ad15adbaea4afad",
+      "original_mesh_geometry_uv_shape_keys_transforms_preserved": true,
+      "original_mesh_count": 141,
+      "visible_native_curve_count": 49268,
+      "visible_curve_points_finite": true,
+      "radii_finite_positive": true,
+      "file_textures_available": true,
+      "visible_curve_geometry_by_object": {
+        "Bystedt layercut derivative \u2022 native root reflow": "2a5de7136fbd8631ff08522194f548d23ee74c59466b87028c2494c36d6d9b36"
+      }
+    },
+    {
+      "version": "nativecoverage05",
+      "file_sha256": "0cc37c32f46a587bc1a6848d3b51a2c4d7b73cc5ecf828b63c7078f870b057fa",
+      "original_mesh_geometry_uv_shape_keys_transforms_preserved": true,
+      "original_mesh_count": 141,
+      "visible_native_curve_count": 122925,
+      "visible_curve_points_finite": true,
+      "radii_finite_positive": true,
+      "file_textures_available": true,
+      "visible_curve_geometry_by_object": {
+        "Abhay flow derivative \u2022 real scalp sampled short support": "1d25c2870aa4075344d1769057d998032d5b6ec8f809199001800ad0ad5768ab",
+        "Bystedt derivative \u2022 short scalp support": "c292138825cfed04ade63474a185beb24f94fdde35de13471373a6fcb475d32d",
+        "Bystedt layercut derivative \u2022 native root reflow": "2a5de7136fbd8631ff08522194f548d23ee74c59466b87028c2494c36d6d9b36",
+        "Original posterior coverage \u2022 surface-grown short fibers": "3687affd2b5e4903ccd4af06b4232fdf6fc4d8bc3ce41c8b5e6bc6d57aebdd52"
+      },
+      "primary_geometry_exactly_unchanged_from": "nativelobe04",
+      "restored_short_geometry_exactly_unchanged_from_stable": true
+    }
+  ],
+  "scope": "Static file checks only. Not artistic acceptance or exhaustive head/clothing/segments/animation validation."
+}

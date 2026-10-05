@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-05",
+  "version": "postscissor02",
+  "images_sha256": {
+    "02_ThreeQuarter.png": "3769a43da81ec093c7569715f40e0c6b3a75aca247cd92a25b18360cb6e6610a"
+  },
+  "all_listed_images_actually_inspected": true,
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 96,
+  "denoising": false,
+  "verdict": "Rejected target style: original native guides/style retained and cut after evaluation, but bare forehead and rounded rear do not match reference.",
+  "artistic_goal_completed": false
+}

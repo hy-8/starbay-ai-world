@@ -1,0 +1,68 @@
+{
+  "source_sha256": "1ad6202095c1793678fee7d69a7e9f8b5fdb6e5c293d300eb1062d2d437e8d48",
+  "stable_sha256": "f99bd15ad542205b562e4d01a435f7039d598282e27ced6dc020b4cd3a84c1e4",
+  "author": "Daniel Bystedt",
+  "license": "CC BY-SA; version unspecified",
+  "guides_reshaped": false,
+  "native_style_node_changes": [
+    {
+      "node": "Interpolate Hair Curves",
+      "socket": "Density",
+      "before": 4000.0,
+      "after": 18000.0
+    }
+  ],
+  "method": "Original native artist flow evaluated before regional complete-shaft scissor cuts; scalp radial transfer; root attachment",
+  "curves": 49388,
+  "curves_cut": 47401,
+  "regions": {
+    "front": 8207,
+    "side": 23677,
+    "rear": 17504
+  },
+  "radial_field_misses": 0,
+  "discrete_guard_events": 18576,
+  "root_correction_quantiles_m": [
+    1.7242954717896316e-06,
+    0.0004859650760798345,
+    0.0016978569115892134,
+    0.010787181989462474
+  ],
+  "hidden_old_components": [
+    "Abhay flow derivative \u2022 real scalp sampled short support",
+    "Authored frontal revision \u2022 native scalp-patch geometry",
+    "Bystedt derivative \u2022 short scalp support",
+    "Original nape underlay 00",
+    "Original nape underlay 01",
+    "Original nape underlay 02",
+    "Original nape underlay 03",
+    "Original nape underlay 04",
+    "Original nape underlay 05",
+    "Original nape underlay 06",
+    "Original nape underlay 07",
+    "Original nape underlay 08",
+    "Original nape underlay 09",
+    "Original nape underlay 10",
+    "Original nape underlay 11",
+    "Original nape underlay 12",
+    "Original nape underlay 13",
+    "Original nape underlay 14",
+    "Original nape underlay 15",
+    "Original nape underlay 16",
+    "Original nape underlay 17",
+    "Original nape underlay 18",
+    "Original nape underlay 19",
+    "Original nape underlay 20",
+    "Original nape underlay 21",
+    "Original nape underlay 22",
+    "Original nape underlay 23",
+    "Original nape underlay 24",
+    "Original nape underlay 25",
+    "Original nape underlay 26",
+    "Original nape underlay 27",
+    "Original posterior coverage \u2022 surface-grown short fibers",
+    "Original posterior shag \u2022 distributed surface roots"
+  ],
+  "status": "Unreviewed actual 3D study",
+  "scope": "Discrete scalp points only; not complete segments/clothing/animation proof"
+}

@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-05",
+  "version": "nativeroot03",
+  "images_sha256": {
+    "01_Front.png": "ce62654a08dac4efefcd1ad0c64c72f447949dd20867d60ac2e529f0c08fc10d",
+    "02_ThreeQuarter.png": "d2d67555e6a0a83d4043d2b5cafb6fba962118cf2ef0399900c982fc144eabec",
+    "03_Side.png": "d9170b1a85cd1b11305e18a9e8ea97af8f622b9b55f119721109527df0a3f023",
+    "04_Back.png": "d5ece2a50393088735bdb7c20f3bd38dc76c5d94a5b12a5d76cb07a1343e69da"
+  },
+  "all_listed_images_actually_inspected": true,
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 96,
+  "denoising": false,
+  "verdict": "Measured negative-X crest locally settled. Overall source-wave silhouette preserved; visual improvement is modest and frontal broad bands remain. Incomplete.",
+  "artistic_goal_completed": false
+}

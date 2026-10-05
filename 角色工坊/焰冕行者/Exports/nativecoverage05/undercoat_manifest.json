@@ -1,0 +1,29 @@
+{
+  "source": "nativelobe04",
+  "source_sha256": "bea3b1ec3ebd0cd92e051640d5237e4b842f378edbe07c827ad15adbaea4afad",
+  "primary_geometry_unchanged": true,
+  "restored_short_components": [
+    {
+      "object": "Abhay flow derivative \u2022 real scalp sampled short support",
+      "curves": 14000,
+      "geometry_unchanged": true,
+      "material_unified_with_primary": true
+    },
+    {
+      "object": "Bystedt derivative \u2022 short scalp support",
+      "curves": 23657,
+      "geometry_unchanged": true,
+      "material_unified_with_primary": true
+    },
+    {
+      "object": "Original posterior coverage \u2022 surface-grown short fibers",
+      "curves": 36000,
+      "geometry_unchanged": true,
+      "material_unified_with_primary": true
+    }
+  ],
+  "method": "Restore retained native short actual-scalp supports under the complete native waves; copy materials only",
+  "license": "Bystedt CC BY-SA (version unspecified), Abhay BlenderKit Royalty Free (not CC0); original anatomical posterior short fibers",
+  "status": "Unreviewed real 3D coverage candidate",
+  "scope": "Visibility/material operation; no complete clothing/segments/animation collision proof"
+}

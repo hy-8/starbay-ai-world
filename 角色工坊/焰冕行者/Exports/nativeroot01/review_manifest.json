@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-05",
+  "version": "nativeroot01",
+  "images_sha256": {
+    "02_ThreeQuarter.png": "c70295b5a613e7475d14f88b150631f483b754cb91189c0a5c58abbffdc9169a"
+  },
+  "all_listed_images_actually_inspected": true,
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 96,
+  "denoising": false,
+  "verdict": "Limited camera-side root reflow study. Right crown attachment is gentler; left raised part and broad bangs remain. Single-view evidence only.",
+  "artistic_goal_completed": false
+}

@@ -1,0 +1,100 @@
+{
+  "source_sha256": "f99bd15ad542205b562e4d01a435f7039d598282e27ced6dc020b4cd3a84c1e4",
+  "studies": [
+    {
+      "version": "nativeroot01",
+      "file_sha256": "f8d82b8611c437d7227409895ca8e56ed2788dddb4ba3a498cc9152bef392c6b",
+      "original_mesh_geometry_uv_shape_keys_transforms_preserved": true,
+      "original_mesh_count": 141,
+      "visible_native_curve_count": 49268,
+      "visible_curve_points_finite": true,
+      "radii_finite_positive": true,
+      "file_textures_available": true,
+      "visible_curve_geometry_by_object": {
+        "Bystedt layercut derivative \u2022 native root reflow": "2f6a46baa6f760d23f35d3bb1ccd48b1bf3f65aaa8035b734a3c19c68e886eeb"
+      }
+    },
+    {
+      "version": "nativeroot02",
+      "file_sha256": "c7d63f0587b726ceef668727c960ea518fc774c713001b31e1554d7b9e97583a",
+      "original_mesh_geometry_uv_shape_keys_transforms_preserved": true,
+      "original_mesh_count": 141,
+      "visible_native_curve_count": 49268,
+      "visible_curve_points_finite": true,
+      "radii_finite_positive": true,
+      "file_textures_available": true,
+      "visible_curve_geometry_by_object": {
+        "Bystedt layercut derivative \u2022 native root reflow": "8afb98d6bdb428fdc675205b6e7aeba299ed2fbcde7c2da003b44db2786c238a"
+      }
+    },
+    {
+      "version": "nativeroot03",
+      "file_sha256": "2e7e8eedfb8baa17437c800c1373f71fd3bd9abef45e2750ddc6af4bfb548fad",
+      "original_mesh_geometry_uv_shape_keys_transforms_preserved": true,
+      "original_mesh_count": 141,
+      "visible_native_curve_count": 49268,
+      "visible_curve_points_finite": true,
+      "radii_finite_positive": true,
+      "file_textures_available": true,
+      "visible_curve_geometry_by_object": {
+        "Bystedt layercut derivative \u2022 native root reflow": "2a5de7136fbd8631ff08522194f548d23ee74c59466b87028c2494c36d6d9b36"
+      }
+    },
+    {
+      "version": "postscissor02",
+      "file_sha256": "c0cf8997a52f780783e1d6192e90fd39bce3418783df4e2e4a65834578b91800",
+      "original_mesh_geometry_uv_shape_keys_transforms_preserved": true,
+      "original_mesh_count": 141,
+      "visible_native_curve_count": 49388,
+      "visible_curve_points_finite": true,
+      "radii_finite_positive": true,
+      "file_textures_available": true,
+      "visible_curve_geometry_by_object": {
+        "Bystedt derivative \u2022 unreshaped source flow, regional scissor": "5cf390a45a3076927f26f8990f52434e62f255d9841f4bfe437962ed8346a474"
+      }
+    },
+    {
+      "version": "nativecompose01",
+      "file_sha256": "6bfef2318ef42d702d345131ed5122d1926db7c38136951764891a1666429e3d",
+      "original_mesh_geometry_uv_shape_keys_transforms_preserved": true,
+      "original_mesh_count": 141,
+      "visible_native_curve_count": 60480,
+      "visible_curve_points_finite": true,
+      "radii_finite_positive": true,
+      "file_textures_available": true,
+      "visible_curve_geometry_by_object": {
+        "Bystedt derivative \u2022 unreshaped source flow, regional scissor": "5cf390a45a3076927f26f8990f52434e62f255d9841f4bfe437962ed8346a474",
+        "Bystedt derivative \u2022 whole frontal shafts over natural source": "2f9361e8ca3ed8d4852474cec57a262e42e12421945683638d949e1a9fd3429b"
+      }
+    },
+    {
+      "version": "nativelobe03",
+      "file_sha256": "9f47e02d9e71cd1863f5c71e001aa9fad66f3eea2308136b581801d57dc83aad",
+      "original_mesh_geometry_uv_shape_keys_transforms_preserved": true,
+      "original_mesh_count": 141,
+      "visible_native_curve_count": 49268,
+      "visible_curve_points_finite": true,
+      "radii_finite_positive": true,
+      "file_textures_available": true,
+      "visible_curve_geometry_by_object": {
+        "Bystedt layercut derivative \u2022 native root reflow": "2a5de7136fbd8631ff08522194f548d23ee74c59466b87028c2494c36d6d9b36"
+      },
+      "visible_curve_geometry_exactly_unchanged_from": "nativeroot03"
+    },
+    {
+      "version": "nativelobe04",
+      "file_sha256": "bea3b1ec3ebd0cd92e051640d5237e4b842f378edbe07c827ad15adbaea4afad",
+      "original_mesh_geometry_uv_shape_keys_transforms_preserved": true,
+      "original_mesh_count": 141,
+      "visible_native_curve_count": 49268,
+      "visible_curve_points_finite": true,
+      "radii_finite_positive": true,
+      "file_textures_available": true,
+      "visible_curve_geometry_by_object": {
+        "Bystedt layercut derivative \u2022 native root reflow": "2a5de7136fbd8631ff08522194f548d23ee74c59466b87028c2494c36d6d9b36"
+      },
+      "visible_curve_geometry_exactly_unchanged_from": "nativeroot03"
+    }
+  ],
+  "scope": "Static file checks only. Not artistic acceptance or exhaustive head/clothing/segments/animation validation."
+}

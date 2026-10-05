@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-05",
+  "images_sha256": {
+    "01_Front.png": "b1c9241b57dd7cb3a69a5c447eeb7f47a3945f90b458691ee6c1382f92d3ede9",
+    "02_ThreeQuarter.png": "5cda112e7613b593ef818326626f42135e922cc16a1c5d7250192110ca4b268e",
+    "03_Side.png": "93e91b43bc868cb6caf10f682623b94400e5f4df1e542e1b84b0d434bf3a0d42",
+    "04_Back.png": "a54c84ea163b9ea0361cfc2c0ab6790f887a3bcf43bd3d8140a459cb6355c494",
+    "05_OppositeSide.png": "7721375bb04e7a6343029095ad40489372670a556a35e6694a8ec72938687fcd"
+  },
+  "all_five_images_actually_inspected": true,
+  "verdict": "Provisional current sculpting candidate: restored real-scalp short undercoat reduces opposite-temple exposure while retaining full native waves/nape. Broad forehead bands and crown clumps still unresolved; no reference-quality art acceptance.",
+  "artistic_goal_completed": false
+}

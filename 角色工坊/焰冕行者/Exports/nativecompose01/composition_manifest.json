@@ -1,0 +1,12 @@
+{
+  "base": "postscissor02",
+  "fringe": "nativeroot03",
+  "base_sha256": "c0cf8997a52f780783e1d6192e90fd39bce3418783df4e2e4a65834578b91800",
+  "fringe_sha256": "2e7e8eedfb8baa17437c800c1373f71fd3bd9abef45e2750ddc6af4bfb548fad",
+  "frontal_complete_fibers": 11092,
+  "author": "Daniel Bystedt",
+  "license": "CC BY-SA; version unspecified",
+  "method": "Complete actual frontal fibers selected by root and free-tip region, no per-point shell selection; natural unreshaped source crown/rear retained",
+  "scope": "Static combination; does not assert seam/collision/art quality",
+  "status": "Unreviewed real 3D composition"
+}

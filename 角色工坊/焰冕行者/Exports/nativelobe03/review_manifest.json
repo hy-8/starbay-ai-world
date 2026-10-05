@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-05",
+  "version": "nativelobe03",
+  "images_sha256": {
+    "02_ThreeQuarter.png": "8faa5c6aa1fcafe169bce5b231c5bdb179d879c7c0cc048bbe18f95d5e380412"
+  },
+  "all_listed_images_actually_inspected": true,
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 96,
+  "denoising": false,
+  "verdict": "Rejected material-only directional shader: much darker, flatter hair loses readable volume. Does not fix geometry.",
+  "artistic_goal_completed": false
+}
