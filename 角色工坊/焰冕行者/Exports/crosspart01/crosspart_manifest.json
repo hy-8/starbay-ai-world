@@ -1,0 +1,13 @@
+{
+  "source": "nativecoverage05",
+  "source_sha256": "0cc37c32f46a587bc1a6848d3b51a2c4d7b73cc5ecf828b63c7078f870b057fa",
+  "author": "Daniel Bystedt",
+  "license": "CC BY-SA; version unspecified",
+  "changed_fibers": 6270,
+  "all_original_roots_unchanged": true,
+  "smooth_contact_events": 40166,
+  "max_displacement_m": 0.12141900366544724,
+  "method": "Native positive-part fringe counter-combed across actual part by smooth whole-shaft X warp; original micro-waves, follicles and rear/support retained",
+  "status": "Unreviewed actual direction study",
+  "scope": "Discrete body contact only, not full segment/eye/clothing/animation/art acceptance"
+}

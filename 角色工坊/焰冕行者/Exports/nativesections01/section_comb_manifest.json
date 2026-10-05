@@ -1,0 +1,100 @@
+{
+  "source": "nativecoverage05",
+  "source_sha256": "0cc37c32f46a587bc1a6848d3b51a2c4d7b73cc5ecf828b63c7078f870b057fa",
+  "author": "Daniel Bystedt",
+  "license": "CC BY-SA; version unspecified",
+  "representative_sample": true,
+  "sections": [
+    {
+      "fibers": 556,
+      "subsection_counts": [
+        186,
+        185,
+        185
+      ],
+      "section_cut_factors": [
+        0.91,
+        1.0,
+        0.96
+      ],
+      "max_displacement_m": 0.014477379351518356
+    },
+    {
+      "fibers": 523,
+      "subsection_counts": [
+        175,
+        174,
+        174
+      ],
+      "section_cut_factors": [
+        0.91,
+        1.0,
+        0.96
+      ],
+      "max_displacement_m": 0.01766425480137366
+    },
+    {
+      "fibers": 478,
+      "subsection_counts": [
+        160,
+        159,
+        159
+      ],
+      "section_cut_factors": [
+        0.91,
+        1.0,
+        0.96
+      ],
+      "max_displacement_m": 0.020914747325397397
+    },
+    {
+      "fibers": 420,
+      "subsection_counts": [
+        140,
+        140,
+        140
+      ],
+      "section_cut_factors": [
+        0.91,
+        1.0,
+        0.96
+      ],
+      "max_displacement_m": 0.016265817744787612
+    },
+    {
+      "fibers": 374,
+      "subsection_counts": [
+        125,
+        125,
+        124
+      ],
+      "section_cut_factors": [
+        0.91,
+        1.0,
+        0.96
+      ],
+      "max_displacement_m": 0.014558396861391827
+    },
+    {
+      "fibers": 366,
+      "subsection_counts": [
+        122,
+        122,
+        122
+      ],
+      "section_cut_factors": [
+        0.91,
+        1.0,
+        0.96
+      ],
+      "max_displacement_m": 0.016308338598905188
+    }
+  ],
+  "changed_fibers": 2717,
+  "all_original_roots_unchanged": true,
+  "all_support_geometry_unchanged": true,
+  "method": "Existing endpoint sections split by real root ordering; coherent 3D depth comb, gentle layer cuts along shafts, tight crest relaxation, terminal fairing",
+  "smooth_contact_events": 6514,
+  "status": "Unreviewed 3D section sculpt",
+  "scope": "Discrete body contact only; not exhaustive segment/clothing/animation or artistic validation"
+}

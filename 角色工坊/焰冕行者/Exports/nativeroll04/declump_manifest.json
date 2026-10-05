@@ -1,0 +1,121 @@
+{
+  "source_sha256": "1ad6202095c1793678fee7d69a7e9f8b5fdb6e5c293d300eb1062d2d437e8d48",
+  "character_source_sha256": "0cc37c32f46a587bc1a6848d3b51a2c4d7b73cc5ecf828b63c7078f870b057fa",
+  "author": "Daniel Bystedt",
+  "license": "CC BY-SA; version unspecified",
+  "native_node_changes": [
+    {
+      "node": "Roll Hair Curves",
+      "socket": "Factor",
+      "before": 0.6499999761581421,
+      "after": 0.03,
+      "new_clump_control": false
+    },
+    {
+      "node": "Roll Hair Curves",
+      "socket": "Roll Radius",
+      "before": 0.4699999988079071,
+      "after": 0.14,
+      "new_clump_control": false
+    },
+    {
+      "node": "Roll Hair Curves",
+      "socket": "Roll Length",
+      "before": 0.699999988079071,
+      "after": 0.65,
+      "new_clump_control": false
+    },
+    {
+      "node": "Roll Hair Curves",
+      "socket": "Roll Taper",
+      "before": 0.5,
+      "after": 0.65,
+      "new_clump_control": false
+    },
+    {
+      "node": "Duplicate Hair Curves",
+      "socket": "Amount",
+      "before": 8.0,
+      "after": 4,
+      "new_clump_control": false
+    },
+    {
+      "node": "Duplicate Hair Curves",
+      "socket": "Radius",
+      "before": 0.04600000008940697,
+      "after": 0.026,
+      "new_clump_control": false
+    },
+    {
+      "node": "Clump Hair Curves",
+      "socket": "Factor",
+      "before": 1.0,
+      "after": 1.0,
+      "new_clump_control": true
+    },
+    {
+      "node": "Hair Curves Noise",
+      "socket": "Distance",
+      "before": 0.10000000149011612,
+      "after": 0.045,
+      "new_clump_control": false
+    },
+    {
+      "node": "Hair Curves Noise",
+      "socket": "Scale along Curve",
+      "before": 2.0999999046325684,
+      "after": 4.5,
+      "new_clump_control": false
+    },
+    {
+      "node": "Clump Hair Curves",
+      "socket": "Factor",
+      "before": "Linked source field from Reroute.005",
+      "after": "Same source field multiplied by 1.0",
+      "new_clump_control": true
+    },
+    {
+      "node": "Clump Hair Curves",
+      "socket": "Factor",
+      "before": "Linked source field from Reroute.007",
+      "after": "Same source field multiplied by 1.0",
+      "new_clump_control": true
+    },
+    {
+      "node": "Hair Curves Noise",
+      "socket": "Distance",
+      "before": 0.10999998450279236,
+      "after": 0.045,
+      "new_clump_control": false
+    },
+    {
+      "node": "Hair Curves Noise",
+      "socket": "Scale along Curve",
+      "before": 7.199999809265137,
+      "after": 4.5,
+      "new_clump_control": false
+    },
+    {
+      "node": "Interpolate Hair Curves",
+      "socket": "Density",
+      "before": 4000.0,
+      "after": 18000.0,
+      "new_clump_control": false
+    }
+  ],
+  "factor_only": true,
+  "linked_factor_profile_scale": 1.0,
+  "native_roll_factor": 0.03,
+  "method": "Reproduce layercut04 loose/part/sweep guide cuts and prior styling parameters (native Roll Factor 0.03); scale all three clump Factors, multiply the two linked source fields; preserve Tip Spread/Clump Offset before evaluation; scalp transfer and root reflow, retain all short support",
+  "strands": 49268,
+  "field_misses": 0,
+  "smooth_contact_events": 52,
+  "root_correction_quantiles_m": [
+    1.7242954717896316e-06,
+    0.00010006299842901811,
+    0.0016978569115892134,
+    0.010787181989462474
+  ],
+  "status": "Unreviewed actual source-clump study",
+  "scope": "Same guide-shaping design, new evaluation; not identical final geometry outside clumps or full collision/art acceptance"
+}

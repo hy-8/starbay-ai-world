@@ -1,0 +1,94 @@
+{
+  "source": "nativecoverage05",
+  "source_sha256": "0cc37c32f46a587bc1a6848d3b51a2c4d7b73cc5ecf828b63c7078f870b057fa",
+  "author": "Daniel Bystedt",
+  "license": "CC BY-SA; version unspecified",
+  "representative_sample": true,
+  "sections": [
+    {
+      "fibers": 556,
+      "max_displacement_m": 0.021914540328276208,
+      "original_center_arc_m": 0.17230974745903976,
+      "relaxed_center_arc_m": 0.16116875869525316,
+      "final_fiber_length_ratio_quantiles": [
+        0.921214387125838,
+        0.9354835353917679,
+        0.9429952743546016,
+        0.9568677630864468
+      ],
+      "discrete_contact_events": 356
+    },
+    {
+      "fibers": 523,
+      "max_displacement_m": 0.023208091596104836,
+      "original_center_arc_m": 0.20596101681204942,
+      "relaxed_center_arc_m": 0.19303894684263267,
+      "final_fiber_length_ratio_quantiles": [
+        0.9212803469527848,
+        0.9362039074492047,
+        0.9423827388767235,
+        1.1524230578106067
+      ],
+      "discrete_contact_events": 1536
+    },
+    {
+      "fibers": 478,
+      "max_displacement_m": 0.04451601121707434,
+      "original_center_arc_m": 0.2007268058951282,
+      "relaxed_center_arc_m": 0.19710270046358386,
+      "final_fiber_length_ratio_quantiles": [
+        0.9600759523379911,
+        0.9848081834168607,
+        0.9918490813132249,
+        1.0434445947307311
+      ],
+      "discrete_contact_events": 1281
+    },
+    {
+      "fibers": 420,
+      "max_displacement_m": 0.01632024708816878,
+      "original_center_arc_m": 0.17005789167928437,
+      "relaxed_center_arc_m": 0.16606320823420395,
+      "final_fiber_length_ratio_quantiles": [
+        0.9621895267727665,
+        0.9772055272204943,
+        0.9797141541505241,
+        1.0089483628720832
+      ],
+      "discrete_contact_events": 148
+    },
+    {
+      "fibers": 374,
+      "max_displacement_m": 0.0213447772307537,
+      "original_center_arc_m": 0.16842945064828532,
+      "relaxed_center_arc_m": 0.15751338446362284,
+      "final_fiber_length_ratio_quantiles": [
+        0.9216402676394874,
+        0.9353870952948712,
+        0.9407358574750566,
+        0.9678655821667527
+      ],
+      "discrete_contact_events": 90
+    },
+    {
+      "fibers": 366,
+      "max_displacement_m": 0.039429735417951355,
+      "original_center_arc_m": 0.18896806472883915,
+      "relaxed_center_arc_m": 0.1769715811435168,
+      "final_fiber_length_ratio_quantiles": [
+        0.9227727113324989,
+        0.9321728855219109,
+        0.9649452144679143,
+        1.0180025211755064
+      ],
+      "discrete_contact_events": 1279
+    }
+  ],
+  "all_original_roots_unchanged": true,
+  "support_geometry_unchanged": true,
+  "method": "360-step quasi-static centerline rod study, segment-length and reduced-rest-curvature projection with scalp contact; transfer displacements onto original native shafts",
+  "approximate_solver": true,
+  "runtime_simulation": false,
+  "status": "Unreviewed actual shape study",
+  "scope": "Centerline segment lengths approximate, individual native lengths not constrained; discrete body points only, not full collision/art acceptance"
+}

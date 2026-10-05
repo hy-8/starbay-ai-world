@@ -1,0 +1,39 @@
+{
+  "version": "nativesections01",
+  "actual_3d_image_inspected": true,
+  "inspected_views": [
+    "02_ThreeQuarter"
+  ],
+  "image_sha256": "2a366177f6f906722c390bf77d00869737bcd9d6210301e9e1670dc169b6f064",
+  "model_sha256": "fd673bdfc66ff9ff08329e4e337599a5e68a0654736115ca7e72958a189e7f0f",
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 96,
+  "denoising": false,
+  "decision": "Six larger native sections separated more deeply, gentle layer cuts and crest relaxation. Broad bands persist; not advanced.",
+  "artistic_goal_completed": false,
+  "whole_head_art_acceptance": false,
+  "current_sculpting_candidate_unchanged": "nativecoverage05",
+  "stable_backup_unchanged": "napeunderlay02",
+  "static_checks": {
+    "version": "nativesections01",
+    "file_sha256": "fd673bdfc66ff9ff08329e4e337599a5e68a0654736115ca7e72958a189e7f0f",
+    "original_mesh_geometry_uv_shape_keys_transforms_preserved": true,
+    "original_mesh_count": 141,
+    "visible_native_curve_count": 122925,
+    "visible_curve_points_finite": true,
+    "radii_finite_positive": true,
+    "file_textures_available": true,
+    "visible_curve_geometry_by_object": {
+      "Abhay flow derivative \u2022 real scalp sampled short support": "1d25c2870aa4075344d1769057d998032d5b6ec8f809199001800ad0ad5768ab",
+      "Bystedt derivative \u2022 short scalp support": "c292138825cfed04ade63474a185beb24f94fdde35de13471373a6fcb475d32d",
+      "Bystedt layercut derivative \u2022 native root reflow": "932968aca138e3114b3330e4cb1d11f1eb836d0c7fbab43a9d23c64179408da0",
+      "Original posterior coverage \u2022 surface-grown short fibers": "3687affd2b5e4903ccd4af06b4232fdf6fc4d8bc3ce41c8b5e6bc6d57aebdd52"
+    },
+    "short_support_geometry_exactly_unchanged_from": "nativecoverage05",
+    "all_primary_roots_exactly_unchanged_from": "nativecoverage05"
+  },
+  "source_and_derived_geometry_retained_locally": true
+}

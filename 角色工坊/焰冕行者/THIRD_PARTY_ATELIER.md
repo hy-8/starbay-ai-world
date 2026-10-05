@@ -108,3 +108,5 @@ Free Medium Layered HairStyle for MetaHuman - MHPKG — Muzammil。https://www.f
 fabfit01—04均未通过目标艺术验收，稳定基础不变。原始头皮只在源控制图使用，没有导入人物身体；旧许可组件隐藏但未删除，03/04恢复的Bystedt/Abhay等短支撑仍依其原许可。原/衍生几何留本地，不出售或分发成独立发型包。GitHub仅审查代码、非几何清单和项目渲染证据；没有新的候选Release。
 
 2026-10-05追加修改记录：Bystedt long hair的已改编layercut04毛发重新用于根区头皮重铺、实测负X冠部局部收低；原生源梳理求值后分区剪短对照；完整前额发丝组合；原创材质分支对照。均为本地CC BY-SA改编，版本沿用已检查证据的“未注明”，未变成CC0。原始资产、提取/派生几何留本地，未新增独立发型分发或Release。
+
+2026-10-05 补充：Fab源用官方便携Blender5.1.2做只读版本控制，求值粒子/原素材渲染与4.5.9对照。Bystedt本地派生毛发试验包含实际发束分层、近似静态杆松弛、反向梳理、三个聚束Factor（其中两个连接上游轮廓）的缩放，以及Roll控制。既有CC BY-SA（版本未注明）、Royalty Free短支持和Fab Standard/NoAI边界保持；原/派生几何保留本地，没有独立发型包或新Release。

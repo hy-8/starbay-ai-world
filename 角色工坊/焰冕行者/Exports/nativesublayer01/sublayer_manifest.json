@@ -1,0 +1,35 @@
+{
+  "source": "nativecoverage05",
+  "source_sha256": "0cc37c32f46a587bc1a6848d3b51a2c4d7b73cc5ecf828b63c7078f870b057fa",
+  "author": "Daniel Bystedt",
+  "license": "CC BY-SA; version unspecified",
+  "two_group_sample": true,
+  "groups": [
+    {
+      "fibers": 493,
+      "sub_layer_counts": [
+        185,
+        143,
+        165
+      ],
+      "root_width_quantile_m": 0.011728420768810421,
+      "max_displacement_m": 0.00293006760535064
+    },
+    {
+      "fibers": 476,
+      "sub_layer_counts": [
+        143,
+        155,
+        178
+      ],
+      "root_width_quantile_m": 0.012958676987190332,
+      "max_displacement_m": 0.0027241004765262487
+    }
+  ],
+  "method": "Existing full native shafts grouped by free endpoint proximity, subordinate coherent depth layers from actual root coordinate; no strands added",
+  "original_roots_unchanged": true,
+  "discrete_body_guard_events": 259,
+  "geometry_finite": true,
+  "status": "Unreviewed actual shape study",
+  "scope": "Root unchanged and discrete body points only; not complete segment/clothing/animation proof"
+}

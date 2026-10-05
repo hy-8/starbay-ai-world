@@ -1,0 +1,39 @@
+{
+  "version": "crosspart01",
+  "actual_3d_image_inspected": true,
+  "inspected_views": [
+    "02_ThreeQuarter"
+  ],
+  "image_sha256": "994ed89539784664b0f1c36d510d0310c6869b4120dbc0ef58baf9fb4624959a",
+  "model_sha256": "61ff3a25a498bc8b7b5246270a0711a53971e405fca1875290bde5d55542fa1c",
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 96,
+  "denoising": false,
+  "decision": "Native fringe counter-comb creates large overlapping S-shaped sheets. Rejected.",
+  "artistic_goal_completed": false,
+  "whole_head_art_acceptance": false,
+  "current_sculpting_candidate_unchanged": "nativecoverage05",
+  "stable_backup_unchanged": "napeunderlay02",
+  "static_checks": {
+    "version": "crosspart01",
+    "file_sha256": "61ff3a25a498bc8b7b5246270a0711a53971e405fca1875290bde5d55542fa1c",
+    "original_mesh_geometry_uv_shape_keys_transforms_preserved": true,
+    "original_mesh_count": 141,
+    "visible_native_curve_count": 122925,
+    "visible_curve_points_finite": true,
+    "radii_finite_positive": true,
+    "file_textures_available": true,
+    "visible_curve_geometry_by_object": {
+      "Abhay flow derivative \u2022 real scalp sampled short support": "1d25c2870aa4075344d1769057d998032d5b6ec8f809199001800ad0ad5768ab",
+      "Bystedt derivative \u2022 short scalp support": "c292138825cfed04ade63474a185beb24f94fdde35de13471373a6fcb475d32d",
+      "Bystedt layercut derivative \u2022 native root reflow": "3e152aa8ec355557d892d08aa7b20319575ae4c796ee29a43b73c31837d59bbe",
+      "Original posterior coverage \u2022 surface-grown short fibers": "3687affd2b5e4903ccd4af06b4232fdf6fc4d8bc3ce41c8b5e6bc6d57aebdd52"
+    },
+    "short_support_geometry_exactly_unchanged_from": "nativecoverage05",
+    "all_primary_roots_exactly_unchanged_from": "nativecoverage05"
+  },
+  "source_and_derived_geometry_retained_locally": true
+}

@@ -24,6 +24,13 @@ def curve_geometry(o):
 source=ROOT/'Exports/napeunderlay02/Ember_Regent.blend'
 bpy.ops.wm.open_mainfile(filepath=str(source),use_scripts=False);original=meshes();rows=[]
 original_curves={o.name:curve_geometry(o) for o in bpy.data.objects if o.type=='CURVES' and not o.hide_render}
+coverage_source=ROOT/'Exports/nativecoverage05/Ember_Regent.blend'
+bpy.ops.wm.open_mainfile(filepath=str(coverage_source),use_scripts=False)
+primary_name='Bystedt layercut derivative • native root reflow'
+coverage_support={o.name:curve_geometry(o) for o in bpy.data.objects if o.type=='CURVES' and not o.hide_render and o.name!=primary_name}
+base_primary=bpy.data.objects[primary_name].data
+base_positions=np.empty((len(base_primary.points),3),np.float32);base_primary.attributes['position'].data.foreach_get('vector',base_positions.ravel())
+base_roots=base_positions[np.array([c.first_point_index for c in base_primary.curves])]
 for version in a[1:]:
  path=ROOT/'Exports'/version/'Ember_Regent.blend'
  bpy.ops.wm.open_mainfile(filepath=str(path),use_scripts=False)
@@ -42,6 +49,15 @@ for version in a[1:]:
   original_mesh_geometry_uv_shape_keys_transforms_preserved=True,original_mesh_count=len(original),
   visible_native_curve_count=count,visible_curve_points_finite=True,radii_finite_positive=True,file_textures_available=True,
   visible_curve_geometry_by_object=geometry))
+ if version.startswith(('nativesublayer','nativesections','nativerods','crosspart','nativedeclump','nativenodecontrol','nativeroll')):
+  for name,digest in coverage_support.items():assert geometry.get(name)==digest,version+' short support changed'
+  rows[-1]['short_support_geometry_exactly_unchanged_from']='nativecoverage05'
+  if version.startswith(('nativesublayer','nativesections','nativerods','crosspart')):
+   main=bpy.data.objects[primary_name].data
+   pts=np.empty((len(main.points),3),np.float32);main.attributes['position'].data.foreach_get('vector',pts.ravel())
+   roots=pts[np.array([c.first_point_index for c in main.curves])]
+   assert np.array_equal(roots,base_roots),version+' actual follicle points changed'
+   rows[-1]['all_primary_roots_exactly_unchanged_from']='nativecoverage05'
 byversion={r['version']:r for r in rows}
 for control in ['nativelobe03','nativelobe04']:
  if control in byversion and 'nativeroot03' in byversion:

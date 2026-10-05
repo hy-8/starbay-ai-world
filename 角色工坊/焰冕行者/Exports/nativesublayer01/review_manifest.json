@@ -1,0 +1,39 @@
+{
+  "version": "nativesublayer01",
+  "actual_3d_image_inspected": true,
+  "inspected_views": [
+    "02_ThreeQuarter"
+  ],
+  "image_sha256": "128ae0821e4765d72a0bd4b70fc3e695d6853b51c71214ac776551420b4efecb",
+  "model_sha256": "73ff1ad15342b434c621b4b428e57c7fd24d0ae8667b14119213687eac712266",
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 96,
+  "denoising": false,
+  "decision": "Two endpoint groups, three shallow sublayers. Modest visible change; no whole-head advancement.",
+  "artistic_goal_completed": false,
+  "whole_head_art_acceptance": false,
+  "current_sculpting_candidate_unchanged": "nativecoverage05",
+  "stable_backup_unchanged": "napeunderlay02",
+  "static_checks": {
+    "version": "nativesublayer01",
+    "file_sha256": "73ff1ad15342b434c621b4b428e57c7fd24d0ae8667b14119213687eac712266",
+    "original_mesh_geometry_uv_shape_keys_transforms_preserved": true,
+    "original_mesh_count": 141,
+    "visible_native_curve_count": 122925,
+    "visible_curve_points_finite": true,
+    "radii_finite_positive": true,
+    "file_textures_available": true,
+    "visible_curve_geometry_by_object": {
+      "Abhay flow derivative \u2022 real scalp sampled short support": "1d25c2870aa4075344d1769057d998032d5b6ec8f809199001800ad0ad5768ab",
+      "Bystedt derivative \u2022 short scalp support": "c292138825cfed04ade63474a185beb24f94fdde35de13471373a6fcb475d32d",
+      "Bystedt layercut derivative \u2022 native root reflow": "6118415152a7e0d2f422c51ad4723820cef257ea3c451c212dc8128baf3f0948",
+      "Original posterior coverage \u2022 surface-grown short fibers": "3687affd2b5e4903ccd4af06b4232fdf6fc4d8bc3ce41c8b5e6bc6d57aebdd52"
+    },
+    "short_support_geometry_exactly_unchanged_from": "nativecoverage05",
+    "all_primary_roots_exactly_unchanged_from": "nativecoverage05"
+  },
+  "source_and_derived_geometry_retained_locally": true
+}

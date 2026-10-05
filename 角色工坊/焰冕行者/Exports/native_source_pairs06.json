@@ -1,0 +1,62 @@
+{
+  "candidates": {
+    "nativedeclump02": {
+      "file_sha256": "b197ab7a4b6bd7252afdc029a159e1bc50fc51ffa054eda8ba94988b8d8894c0",
+      "curves": 49268,
+      "radius_sha256": "a62f987562f0ab46fa5a0e95a017234ace947ae2f7091a913832db6d8378bfa6"
+    },
+    "nativenodecontrol03": {
+      "file_sha256": "86ed65fbb026317940419acaed417aa780ea5aeead6784bf37b8ce0f509fd42b",
+      "curves": 49268,
+      "radius_sha256": "a62f987562f0ab46fa5a0e95a017234ace947ae2f7091a913832db6d8378bfa6"
+    },
+    "nativeroll04": {
+      "file_sha256": "6c584a6c7cc670c6324e2b1f658726a66f6bbae916fc2b359417103856ed151a",
+      "curves": 49268,
+      "radius_sha256": "a62f987562f0ab46fa5a0e95a017234ace947ae2f7091a913832db6d8378bfa6"
+    }
+  },
+  "pairs": [
+    {
+      "version": "nativedeclump02",
+      "control": "nativenodecontrol03",
+      "primary_radii_exactly_equal": true,
+      "primary_roots_exactly_equal": true,
+      "root_difference_quantiles_m": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "point_displacement_quantiles_m": [
+        0.0,
+        0.0026675123954191804,
+        0.007034862274304035,
+        0.014395232228562246,
+        0.04843467101454735
+      ],
+      "intended_source_difference": "Three clump Factors scaled by .55; linked profiles retained"
+    },
+    {
+      "version": "nativeroll04",
+      "control": "nativenodecontrol03",
+      "primary_radii_exactly_equal": true,
+      "primary_roots_exactly_equal": true,
+      "root_difference_quantiles_m": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "point_displacement_quantiles_m": [
+        0.0,
+        0.0014688490191474557,
+        0.007063396694138646,
+        0.02242001386359334,
+        0.057296112179756165
+      ],
+      "intended_source_difference": "Roll Factor .18 to .03; clump factors at original scale1"
+    }
+  ],
+  "scope": "Paired source-control geometry/radius observations, not art acceptance or final-groom identity outside control operations"
+}

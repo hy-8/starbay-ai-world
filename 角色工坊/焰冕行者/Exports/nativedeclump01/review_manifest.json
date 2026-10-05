@@ -1,0 +1,38 @@
+{
+  "version": "nativedeclump01",
+  "actual_3d_image_inspected": true,
+  "inspected_views": [
+    "02_ThreeQuarter"
+  ],
+  "image_sha256": "091c8389f6c5c0d7b9a34141c6d043975f55fcdfb67e4697abfceeb057591325",
+  "model_sha256": "f4e1e43f4ee3b3b0e9f30d41334c56e2239a45f9c5e015caaa6cb78b0fb90459",
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 96,
+  "denoising": false,
+  "decision": "One unlinked clump Factor and Tip Spread/Clump Offset changed; two linked Factors were skipped. Round broad locks persist. Rejected; not a complete Factor control.",
+  "artistic_goal_completed": false,
+  "whole_head_art_acceptance": false,
+  "current_sculpting_candidate_unchanged": "nativecoverage05",
+  "stable_backup_unchanged": "napeunderlay02",
+  "static_checks": {
+    "version": "nativedeclump01",
+    "file_sha256": "f4e1e43f4ee3b3b0e9f30d41334c56e2239a45f9c5e015caaa6cb78b0fb90459",
+    "original_mesh_geometry_uv_shape_keys_transforms_preserved": true,
+    "original_mesh_count": 141,
+    "visible_native_curve_count": 122925,
+    "visible_curve_points_finite": true,
+    "radii_finite_positive": true,
+    "file_textures_available": true,
+    "visible_curve_geometry_by_object": {
+      "Abhay flow derivative \u2022 real scalp sampled short support": "1d25c2870aa4075344d1769057d998032d5b6ec8f809199001800ad0ad5768ab",
+      "Bystedt derivative \u2022 relaxed native clump nodes": "0712b6039f70d70038bc6dd32315f26622ea29a03b4f5d58643b5d562e142f52",
+      "Bystedt derivative \u2022 short scalp support": "c292138825cfed04ade63474a185beb24f94fdde35de13471373a6fcb475d32d",
+      "Original posterior coverage \u2022 surface-grown short fibers": "3687affd2b5e4903ccd4af06b4232fdf6fc4d8bc3ce41c8b5e6bc6d57aebdd52"
+    },
+    "short_support_geometry_exactly_unchanged_from": "nativecoverage05"
+  },
+  "source_and_derived_geometry_retained_locally": true
+}

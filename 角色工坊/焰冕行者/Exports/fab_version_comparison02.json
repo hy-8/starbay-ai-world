@@ -1,0 +1,68 @@
+{
+  "versions": [
+    "4.5.9 LTS",
+    "5.1.2"
+  ],
+  "source_sha256": "0adca6484a4d6c51c3dfd33e5d13ed42f3bf44cae3fcea8f4aa10c710077ecd4",
+  "portable_official_zip_sha256": "345bedea7b0acf7cc9666423d8553f9129622aea34ded65c23e8cb70f83f14ff",
+  "systems": [
+    {
+      "system": "Curves-Back",
+      "evaluated_full_keys_equal": true,
+      "count": 17012,
+      "key_counts": [
+        8
+      ],
+      "length_quantiles_m": [
+        0.0064296904020011425,
+        0.025543072260916233,
+        0.03127074725925923,
+        0.04097725823521614
+      ],
+      "common_scalar_settings_equal": true,
+      "new_api_properties": [
+        "is_linked_packed"
+      ]
+    },
+    {
+      "system": "Curves-Sides",
+      "evaluated_full_keys_equal": true,
+      "count": 15926,
+      "key_counts": [
+        8
+      ],
+      "length_quantiles_m": [
+        0.010813063941895962,
+        0.028739755041897297,
+        0.0317879244685173,
+        0.03572118654847145
+      ],
+      "common_scalar_settings_equal": true,
+      "new_api_properties": [
+        "is_linked_packed"
+      ]
+    },
+    {
+      "system": "Curves-Front",
+      "evaluated_full_keys_equal": true,
+      "count": 21826,
+      "key_counts": [
+        8
+      ],
+      "length_quantiles_m": [
+        0.005304957740008831,
+        0.0314559992402792,
+        0.04077036678791046,
+        0.04554256051778793
+      ],
+      "common_scalar_settings_equal": true,
+      "new_api_properties": [
+        "is_linked_packed"
+      ]
+    }
+  ],
+  "original_front_render_mean_absolute_pixel_delta_8bit": 0.004871651785714286,
+  "render_review": "Both actual source renders inspected: same short swept silhouette, no missing medium-length tail restored",
+  "conclusion": "Cross-version saved-key interpretation hypothesis closed for these evaluated particles/settings and control view; no universal Blender compatibility guarantee",
+  "initial_probe_correction": "01 audit used unevaluated zero keys; invalid as geometry evidence, retained locally. 02 requires evaluated positive-length keys. Render 512_01 itself valid."
+}
