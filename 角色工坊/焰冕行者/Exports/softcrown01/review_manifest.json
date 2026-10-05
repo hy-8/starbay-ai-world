@@ -1,0 +1,28 @@
+{
+  "version": "softcrown01",
+  "model_sha256": "6b54659fd65f73b88721ec3d06e795048ae9d8cfb7ecce4eb657e25bb17bf32e",
+  "observations": "Actual front/side drafts, opposite camera and five full views inspected. Added broad stable-world crown bends after crown rebuilding. Three-quarter reveals tighter crossing loops/tufts. REJECTED crown experiment; retain fringefield02 as current checkpoint. Structure passes but does not establish art quality.",
+  "images": [
+    {
+      "file": "Renders/softcrown01/01_Front.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "b787ab7a0f43df9c0e751ea62a974f75d27495fe6619cc2d444d1f292a23d4f0",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/softcrown01/03_Side.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "11c6ec6a6623852bce9fd8038fb2e8fe7291d99bcd92974495ee8d7c685e07e0",
+      "actually_inspected": true
+    }
+  ],
+  "artistic_acceptance": false,
+  "status": "Rejected crown experiment",
+  "boundary": "Static native geometry; not complete reference hairstyle or full scalp/eye/strand/clothes/motion collision verification"
+}

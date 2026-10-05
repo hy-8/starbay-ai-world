@@ -1,0 +1,18 @@
+{
+  "version": "softcrownside01",
+  "source": "softcrown01",
+  "images": [
+    {
+      "file": "05_OppositeSide.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "23dbfca613c8190a42a4166e7236d11df05a10292b446b047debe3091ae1dc37",
+      "actually_inspected": true
+    }
+  ],
+  "source_unchanged": true,
+  "observations": "Failed broad-crown-wave study. Whole five-view set exposes tighter crossing loops in three-quarter; not adopted. Isolated opposite initially looked less problematic, so its single view alone is insufficient.",
+  "artistic_acceptance": false
+}

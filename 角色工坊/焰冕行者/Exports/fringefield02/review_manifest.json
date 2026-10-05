@@ -1,0 +1,29 @@
+{
+  "version": "fringefield02",
+  "model_sha256": "54c4d7a0fb429b54095acbbcf47314efd189a565bdbc3534b47f5776a9caf547",
+  "observations": "Actual front/side drafts and fringefieldcheck01 five full views inspected. Whole cubic center fitting and per-parent handles plus reset fine field. Better brow separation and tips; crown still smooth/repetitive, opposite small arcs and thin nape persist. Current WIP checkpoint, not reference quality.",
+  "images": [
+    {
+      "file": "Renders/fringefield02/01_Front.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "6301123b85aefa0e35e50f332a3ce01231ab8fe85d0537103a0c3c459a032885",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/fringefield02/03_Side.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "32cf0526e2e3a148a2f44d9fcf66c95b587e9b5755b409929c3d7bc047fd56b3",
+      "actually_inspected": true
+    }
+  ],
+  "artistic_acceptance": false,
+  "status": "Reviewed WIP, goal active",
+  "boundary": "Static native geometry; not complete reference hairstyle or full scalp/eye/strand/clothes/motion collision verification",
+  "creation_wording_correction": "Raw unchanged-median-centers text is the01 wording.02 fitted and sculpted whole cubic centers as whole_fringe_cubic_sculpt=true declares. Raw report preserved; future code wording fixed."
+}

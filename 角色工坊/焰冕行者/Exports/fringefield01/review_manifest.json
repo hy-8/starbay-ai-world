@@ -1,0 +1,28 @@
+{
+  "version": "fringefield01",
+  "model_sha256": "7775955733f5e5d52f8dc6c92bad52c90ba5079236fb8986fe116bde1f504d0e",
+  "observations": "Actual front/side drafts inspected. Reset inherited fine-fiber offsets and lengths on existing centers. Finer tips and less broad fringe fanning; remains partly repetitive. Width-only method study, no full artistic acceptance.",
+  "images": [
+    {
+      "file": "Renders/fringefield01/01_Front.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "3413aab640cba0c2cd83d07df9e3a568424095a04efa0716b1d5b1d8527775b2",
+      "actually_inspected": true
+    },
+    {
+      "file": "Renders/fringefield01/03_Side.png",
+      "resolution": [
+        960,
+        1120
+      ],
+      "sha256": "4383f756d22f6a01e2d91f3f0be22ece59f231b3e48ecf4d242dabebe7f5e67e",
+      "actually_inspected": true
+    }
+  ],
+  "artistic_acceptance": false,
+  "status": "Reviewed WIP, goal active",
+  "boundary": "Static native geometry; not complete reference hairstyle or full scalp/eye/strand/clothes/motion collision verification"
+}

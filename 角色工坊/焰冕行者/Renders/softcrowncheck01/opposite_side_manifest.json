@@ -1,0 +1,23 @@
+{
+  "version": "softcrowncheck01",
+  "source": "softcrown01",
+  "source_sha256": "6b54659fd65f73b88721ec3d06e795048ae9d8cfb7ecce4eb657e25bb17bf32e",
+  "source_unchanged": true,
+  "method": "Existing four neutral cameras when requested, plus actual opposite camera mirrored in world space with local-X handedness correction; no pixel flip or geometry edit",
+  "samples": 192,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "denoising": false,
+  "image_sha256": "23dbfca613c8190a42a4166e7236d11df05a10292b446b047debe3091ae1dc37",
+  "images_sha256": {
+    "01_Front.png": "6ae4ce3f85f234f9c39c3b307bb50df9dd5f7e50ca0073b7633adac4a34eb8dc",
+    "02_ThreeQuarter.png": "6f0140f506531a10b80aa748e7daff93e14d11b969a80b81eb509cbc0921f8cc",
+    "03_Side.png": "89b690bc3922f7d907285ac68f3175762b61ed4c142bd5ef679d384f02def6b5",
+    "04_Back.png": "6df34301fa9b754521dacf63278142ea26706f77452461fa75a3611b29039071",
+    "05_OppositeSide.png": "23dbfca613c8190a42a4166e7236d11df05a10292b446b047debe3091ae1dc37"
+  },
+  "status": "Unreviewed actual neutral/opposite profile diagnostic, not artistic approval",
+  "opposite_image_reused_from": "softcrownside01"
+}

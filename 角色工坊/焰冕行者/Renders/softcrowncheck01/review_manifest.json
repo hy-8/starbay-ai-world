@@ -1,0 +1,54 @@
+{
+  "version": "softcrowncheck01",
+  "source": "softcrown01",
+  "images": [
+    {
+      "file": "01_Front.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "6ae4ce3f85f234f9c39c3b307bb50df9dd5f7e50ca0073b7633adac4a34eb8dc",
+      "actually_inspected": true
+    },
+    {
+      "file": "02_ThreeQuarter.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "6f0140f506531a10b80aa748e7daff93e14d11b969a80b81eb509cbc0921f8cc",
+      "actually_inspected": true
+    },
+    {
+      "file": "03_Side.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "89b690bc3922f7d907285ac68f3175762b61ed4c142bd5ef679d384f02def6b5",
+      "actually_inspected": true
+    },
+    {
+      "file": "04_Back.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "6df34301fa9b754521dacf63278142ea26706f77452461fa75a3611b29039071",
+      "actually_inspected": true
+    },
+    {
+      "file": "05_OppositeSide.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "23dbfca613c8190a42a4166e7236d11df05a10292b446b047debe3091ae1dc37",
+      "actually_inspected": true
+    }
+  ],
+  "source_unchanged": true,
+  "observations": "Failed broad-crown-wave study. Whole five-view set exposes tighter crossing loops in three-quarter; not adopted. Isolated opposite initially looked less problematic, so its single view alone is insufficient.",
+  "artistic_acceptance": false
+}

@@ -1,0 +1,54 @@
+{
+  "version": "fringefieldcheck01",
+  "source": "fringefield02",
+  "images": [
+    {
+      "file": "01_Front.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "9db5c40c3cf40b317a61bbe53c5c8b564eb017eac644209b5c5224a0b9de74c9",
+      "actually_inspected": true
+    },
+    {
+      "file": "02_ThreeQuarter.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "e13e2954d4c5c9646b47c84e85929f6ab48364a924d5d3e6f87c579bc6342a6a",
+      "actually_inspected": true
+    },
+    {
+      "file": "03_Side.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "4cfdb1d2c1214f0d3e9a4b843f693a3897d28bf019b15a26f4f9eec72a61fa04",
+      "actually_inspected": true
+    },
+    {
+      "file": "04_Back.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "41aea0c55a587b8fe261e944192de8cd64098c868e6309051f20210b0c4a5e50",
+      "actually_inspected": true
+    },
+    {
+      "file": "05_OppositeSide.png",
+      "resolution": [
+        1200,
+        1400
+      ],
+      "sha256": "109e96f2c71923939529ef7522b52e5eca1b01bafa86b9a28ea429918ad090fb",
+      "actually_inspected": true
+    }
+  ],
+  "source_unchanged": true,
+  "observations": "Current02: finer fringe/brow separation in five actual cameras. Crown still regular and rear/nape unmodified and unfinished.",
+  "artistic_acceptance": false
+}

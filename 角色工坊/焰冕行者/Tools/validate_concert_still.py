@@ -11,6 +11,8 @@ if not re.fullmatch('[A-Za-z0-9_-]+',VERSION):raise ValueError(VERSION)
 folder=ROOT/'Exports'/VERSION;path=folder/'Redline_Editorial.blend'
 if not path.exists():path=folder/'Ember_Regent.blend'
 AUDIT_CUT='--audit-cut' in sys.argv[sys.argv.index('--')+1:]
+AUDIT_FRINGE='--audit-fringe' in sys.argv[sys.argv.index('--')+1:]
+if AUDIT_FRINGE and not AUDIT_CUT:raise ValueError('Fringe subset audit requires source-paired cut audit')
 report_path=folder/('groom_cut_validation.json' if AUDIT_CUT else 'structural_validation.json')
 if report_path.exists():raise RuntimeError('Existing validation is preserved')
 def cut_snapshot():
@@ -35,6 +37,22 @@ def cut_snapshot():
             p=p.reshape(-1,sizes[0],3);r=r.reshape(-1,sizes[0])
             grooms[ob.name]=dict(roots=p[:,0].copy(),root_radii=r[:,0].copy(),matrix=matrix,
                 sha256=hashlib.sha256(p.tobytes()+r.tobytes()+matrix).hexdigest())
+            if AUDIT_FRINGE and ob.name.startswith('Authored frontal revision'):
+                design=json.loads((ROOT/'Exports/spatialfringe17/authored_fringe_design.json').read_text(encoding='utf-8'))
+                if sum(row['assigned_visible_fibers'] for row in design)!=len(p):raise RuntimeError('Frontal region counts differ')
+                ids={'crown':[],'fringe':[]};offset=0;spread=[]
+                for row in design:
+                    count=row['assigned_visible_fibers'];key='crown' if 'segmented crown' in row['name'] else 'fringe'
+                    ids[key].extend(range(offset,offset+count))
+                    if key=='fringe':
+                        group=p[offset:offset+count]
+                        median=np.median(group,axis=0)
+                        j=np.array([0,int(.5*(group.shape[1]-1)),group.shape[1]-1])
+                        spread.append(np.quantile(np.linalg.norm(group[:,j]-median[None,j],axis=2),.9,axis=0))
+                    offset+=count
+                grooms[ob.name]['region_sha256']={key:hashlib.sha256(p[index].tobytes()+r[index].tobytes()+matrix).hexdigest() for key,index in ids.items()}
+                grooms[ob.name]['fringe_group_spread90_quantiles_m']=np.quantile(np.array(spread),[0,.5,1],axis=0).tolist()
+                grooms[ob.name]['region_counts']={key:len(index) for key,index in ids.items()}
     return meshes,grooms
 if AUDIT_CUT:
     cut_manifest=json.loads((folder/'shag_cut_manifest.json').read_text(encoding='utf-8'))
@@ -55,6 +73,12 @@ if AUDIT_CUT:
                 unmodified_native_grooms_exactly_unchanged=all(source_grooms[n]['sha256']==candidate_grooms[n]['sha256'] for n in set(source_grooms)-modified))
     for key,passed in checks.items():
         if not passed:errors.append('Cut invariant failed: '+key)
+    if AUDIT_FRINGE:
+        frontal=next(name for name in source_grooms if name.startswith('Authored frontal revision'))
+        unchanged_region='crown' if cut_manifest.get('fringe_fiber_fields_reset') else 'fringe' if cut_manifest.get('full_crown_flow_rebuilt') else None
+        if unchanged_region is None:raise RuntimeError('Declare an isolated fringe or crown rebuild for subset audit')
+        region_passed=source_grooms[frontal]['region_sha256'][unchanged_region]==candidate_grooms[frontal]['region_sha256'][unchanged_region]
+        if not region_passed:errors.append('Declared untouched frontal region changed: '+unchanged_region)
 for o in bpy.data.objects:
     if o.hide_render:continue
     if o.type=='MESH':
@@ -84,6 +108,13 @@ if AUDIT_CUT:
     report['paired_cut_invariants']=checks
     report['declared_cut_source']=cut_manifest['source']
     report['paired_scope']='Exact saved root/root-radius/transform hashes and unmodified mesh/UV/shape-key/groom data; does not prove silhouette quality or full collisions/animation'
+    if AUDIT_FRINGE:
+        report['frontal_subset_audit']=dict(unchanged_region=unchanged_region,unchanged_region_exactly_preserved=region_passed,
+            source_region_sha256=source_grooms[frontal]['region_sha256'],candidate_region_sha256=candidate_grooms[frontal]['region_sha256'],
+            region_counts=candidate_grooms[frontal]['region_counts'],
+            source_fringe_spread90_quantiles_m=source_grooms[frontal]['fringe_group_spread90_quantiles_m'],
+            candidate_fringe_spread90_quantiles_m=candidate_grooms[frontal]['fringe_group_spread90_quantiles_m'],
+            spread_scope='Per fine-guide group90% Euclidean point distance to actual group median at root, middle and tip; each column reports min/median/max across groups. Includes staggered lengths; not a projected ribbon width or artistic score.')
 report_path.write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
 print('STRUCTURAL_VALIDATION',not errors,len(grooms),meshes,flush=True)
 if errors:raise RuntimeError(errors)

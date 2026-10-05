@@ -39,6 +39,8 @@ free_crown_tips = '--free-crown-tips' in args
 soft_crown_exits = '--soft-crown-exits' in args
 rebuild_crown_flow = '--rebuild-crown-flow' in args
 if rebuild_crown_flow and not front_only:raise ValueError('Crown rebuilding requires front-only')
+soft_crown_wave = '--soft-crown-wave' in args
+if soft_crown_wave and not rebuild_crown_flow:raise ValueError('Soft crown wave requires full crown rebuild')
 rebuild_rear_crown = '--rebuild-rear-crown' in args
 if rebuild_rear_crown and not rear_only:raise ValueError('Posterior crown rebuilding requires rear-only')
 lifted_rear_layers = '--lifted-rear-layers' in args
@@ -50,6 +52,10 @@ if free_crown_tips and not redirect_crown:raise ValueError('Free tips require cr
 if affine_crown_turn and not redirect_crown:raise ValueError('Affine turn requires crown redirect')
 fringe_sweep = '--fringe-sweep' in args
 if fringe_sweep and not front_only:raise ValueError('Fringe sweep is isolated to front-only')
+reset_fringe_fibers = '--reset-fringe-fibers' in args
+if reset_fringe_fibers and not front_only:raise ValueError('Fringe fiber rebuilding requires front-only')
+sculpt_fringe_centers = '--sculpt-fringe-centers' in args
+if sculpt_fringe_centers and not reset_fringe_fibers:raise ValueError('Fringe sculpt requires rebuilt fine fields')
 recover_nape_fan = '--recover-nape-fan' in args
 retain_personal_nape = '--retain-personal-nape' in args
 if retain_personal_nape and not recover_nape_fan:raise ValueError('Personal nape requires fan recovery')
@@ -225,6 +231,7 @@ def trace_rear_crown(root,label,N):
 def sublock(p,ids,label,crown=False,nape=False,rear_component=False,name=''):
     global garment_repairs,garment_max_shift
     old = p[ids].astype(float)
+    if reset_fringe_fibers and crown:return old.astype(np.float32)
     if rebuild_rear_crown and float(old[:,0,2].max())<1.825:return old.astype(np.float32)
     if rebuild_crown_flow and not crown and not fringe_sweep:return old.astype(np.float32)
     if redirect_crown and not crown and not fringe_sweep:return old.astype(np.float32)
@@ -284,6 +291,17 @@ def sublock(p,ids,label,crown=False,nape=False,rear_component=False,name=''):
                 direction.x+=side*.12*np.sin(1.2*np.pi*u)
                 direction.normalize();position+=direction*length/(N-1)
                 new_base[j]=position
+        if soft_crown_wave:
+            # A shared parent lock bends in a stable spatial plane; no nearest
+            # face frame flips and no inherited micro-curl field. Leave roots
+            # and tips unchanged and smoothly introduce one broad S bend.
+            parent_index=int(re.search(r'crown (\d+)',name).group(1))
+            phase0=parent_index*.79+(0 if name.startswith('heavy') else 1.15)
+            u=np.clip((t-.18)/.82,0,1)
+            envelope=np.sin(np.pi*u)*smooth(u/.18)*smooth((1-u)/.18)
+            new_base[:,0]+=.016*np.sin(u*1.55*np.pi+phase0)*envelope
+            new_base[:,1]+=.006*np.cos(u*1.3*np.pi+phase0)*envelope
+            new_base[:,2]+=.005*np.cos(phase0*.71)*envelope
         fraction=1.0
     if redirect_crown and crown:
         # Redirect the actual short overlay centers, keeping the longer brow
@@ -395,6 +413,30 @@ def sublock(p,ids,label,crown=False,nape=False,rear_component=False,name=''):
             relief=wave_strength*(.006 if crown else .0035)*np.sin(phase*.61)*np.sin(np.pi*t)**1.4
             new_base += normals*relief[:,None]
     new_base[0] = base[0]
+    if reset_fringe_fibers:
+        # Isolate inherited fiber-width/length drift from center-path design.
+        # Preserve the actual current median center rather than re-sculpting
+        # its silhouette in the same experiment.
+        new_base=base.copy();fraction=1.0
+        if sculpt_fringe_centers:
+            # Fit a whole cubic path to the current silhouette, then author
+            # its two free handles per parent lock. This separates large-scale
+            # soft bends from inherited microscopic offsets/old repeated kinks.
+            parent=re.search(r'(forehead|temple) (\d+)',name)
+            child=int(re.search(r'independent (\d+)',name).group(1))
+            parent_index=int(parent.group(2));temple=parent.group(1)=='temple'
+            phase0=parent_index*1.17+(0 if name.startswith('heavy') else 1.3)
+            end=base[-1].copy()
+            basis=np.stack([3*(1-t)**2*t,3*(1-t)*t*t],axis=1)
+            residual=base-(1-t)[:,None]**3*root[None]-t[:,None]**3*end[None]
+            handles=np.linalg.lstsq(basis,residual,rcond=None)[0]
+            amplitude=.017 if temple else .027
+            handles[0,0]+=amplitude*np.sin(phase0)+.005*(child-2)
+            handles[1,0]-=amplitude*.75*np.sin(phase0)
+            handles[0,1]+=.004*np.cos(phase0)
+            handles[1,2]+=.006*np.cos(phase0*.71)
+            end[0]+=.004*np.sin(phase0*.63)
+            new_base=(1-t)[:,None]**3*root[None]+basis@handles+t[:,None]**3*end[None]
     if retain_personal_nape:new_base=base.copy()
     guide_studies.append(new_base)
     result = np.empty_like(old,dtype=np.float32)
@@ -413,6 +455,12 @@ def sublock(p,ids,label,crown=False,nape=False,rear_component=False,name=''):
         if gentle:
             width = 1-(1-width)*.60
         q = personal_base+offsets*width[:,None]
+        if reset_fringe_fibers:
+            personal=rng.uniform(.90,1.0)
+            personal_base=sample_arc(new_base,t*personal)
+            root_offset=fiber[0]-base[0]
+            q=personal_base+root_offset[None]*(1-.76*smooth(t/.85))[:,None]
+            q+=rng.normal(0,.00065,3)[None]*np.sin(np.pi*t)[:,None]
         if rebuild_rear_crown:
             root_offset=fiber[0]-base[0]
             q=personal_base+root_offset[None]*(1-(.82 if clumped_rear_layers else .35)*smooth(t/.9))[:,None]
@@ -601,7 +649,7 @@ scene.render.resolution_x,scene.render.resolution_y=1200,1400
 scene.render.resolution_percentage=80 if '--draft' in args else 100
 out.mkdir(parents=True);render.mkdir(parents=True)
 report=dict(version=version,source=source_version,source_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),
-    method=('Rebuild upper posterior centers from actual scalp roots and replace inherited curly interior offsets, continuous root-height transition; retain lower nape and frontal groom' if rebuild_rear_crown else 'Rebuild complete frontal crown centers from scalp-traced attachment and free gravity exits; replace inherited internal offsets with follicle spread; retain brow/temple' if rebuild_crown_flow else 'Explicit scalp-root spatial posterior guides with early surface release and free draping/waving ends; independent per-fiber endpoint sampling; retain front and short coverage' if spatial_rear else 'Recover nape root-spread width on existing actual center/individual paths; existing follicles and strand count retained' if recover_nape_fan else 'Redirect short crown layers toward sides/back, retain longer brow layers; optional broad planar forehead/temple center sweeps; exact roots retained' if redirect_crown or fringe_sweep else 'Actual arc-length layered cuts, adjacent-root crown subdivisions, independently staggered fiber lengths and narrower ends; retain short scalp coverage'),
+    method=('Fit complete fringe centers to cubic paths and sculpt per-parent free handles; rebuild fine-fiber spread and staggered lengths, retaining crown and other objects' if sculpt_fringe_centers else 'Rebuild fringe fine-fiber spread and individual lengths on unchanged actual median centers; remove inherited interior offsets; retain crown and all other groom objects' if reset_fringe_fibers else 'Rebuild upper posterior centers from actual scalp roots and replace inherited curly interior offsets, continuous root-height transition; retain lower nape and frontal groom' if rebuild_rear_crown else 'Rebuild complete frontal crown centers from scalp-traced attachment and free gravity exits; replace inherited internal offsets with follicle spread; retain brow/temple' if rebuild_crown_flow else 'Explicit scalp-root spatial posterior guides with early surface release and free draping/waving ends; independent per-fiber endpoint sampling; retain front and short coverage' if spatial_rear else 'Recover nape root-spread width on existing actual center/individual paths; existing follicles and strand count retained' if recover_nape_fan else 'Redirect short crown layers toward sides/back, retain longer brow layers; optional broad planar forehead/temple center sweeps; exact roots retained' if redirect_crown or fringe_sweep else 'Actual arc-length layered cuts, adjacent-root crown subdivisions, independently staggered fiber lengths and narrower ends; retain short scalp coverage'),
     components=report_components,front_only=front_only,rear_only=rear_only,gentle=gentle,coverage_only=coverage_only,
     keep_front_length=keep_front_length,preview=preview,personal_cut_applied_to_center_paths=True,feathered_flow=feathered_flow,
     spatial_rear=spatial_rear,
@@ -613,10 +661,13 @@ report=dict(version=version,source=source_version,source_sha256=hashlib.sha256(s
     free_short_crown_exits=free_crown_tips,
     soft_horizontal_crown_exits=soft_crown_exits,
     full_crown_flow_rebuilt=rebuild_crown_flow,
+    broad_world_space_crown_bends=soft_crown_wave,
     upper_posterior_flow_rebuilt=rebuild_rear_crown,
     upper_posterior_lifted_layers=lifted_rear_layers,
     upper_posterior_clumped_layers=clumped_rear_layers,
     planar_fringe_sweep=fringe_sweep,
+    fringe_fiber_fields_reset=reset_fringe_fibers,
+    whole_fringe_cubic_sculpt=sculpt_fringe_centers,
     nape_root_fan_recovery=recover_nape_fan,
     nape_personal_paths_retained=retain_personal_nape,
     transported_front_frame=transport_wave,

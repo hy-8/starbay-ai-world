@@ -1,5 +1,33 @@
 # 红发角色 · 更换发型方法记录
 
+## 2026-10-05 · 细束扩散场重置与整条刘海曲线塑形
+
+最新研究工程是 `Exports/fringefield02/Ember_Regent.blend`，`Renders/fringefieldcheck01` 正面/三分之四/左右侧/背面五张全部实际查看，1200×1400、192 samples、不去噪。前额末梢和眉侧分束有改善，顶冠仍顺滑/部分规则，另一侧细弧及薄后颈仍在。**未完成参考级发型，不作为作品成品。** 本轮没有重新雕脸、改衣物、摆新姿势、做动画或接入UE；旧检查点保留。
+
+实际读取crownflow04前发数据发现：若干细束根部90%点到束中位路径的距离约3.3mm，而末端达到10—18mm。该值包括个人剪裁后的长度/位置差异，不能直接称作发束横截面宽度。长期复用旧内部偏移会将这些差异再次带入新中心路径，所以这轮先把造型中心和细发丝场分开。
+
+| 版本 | 实际方法/检查与选择 |
+| --- | --- |
+| fringefield01 | 只改54组刘海/鬓角细束内部场：中位中心不重新塑形，个人弧长90—100%，毛囊偏移连续收窄并加少量细散布；正/侧草稿已看，末梢变细，但部分走向仍重复 |
+| fringefield02 | 从crownflow04独立构建，在上述场重建之外，对全中心路径最小二乘拟合三次曲线，再按父束修改两个自由手柄、轻微区分同一父束的三个细束。正/侧草稿和完整五视角已看；选为有改善的WIP，不是最终成品 |
+| softcrown01 | 在fringefield02上只重画6160条前冠，加入稳定世界平面的大弯，正/侧和另一侧后补全五视角。三分之四出现更紧的交叉圈结，不能因正面有大弯就采用；该冠部被否定，当前仍用02 |
+
+原生数量和真实根均未减少。新参数沿用同一脚本：
+
+```text
+restyle_reference_shag.py -- 新版本 crownflow04
+  --front-only --keep-front-length --reset-fringe-fibers
+  [--sculpt-fringe-centers] --preview-crown --draft
+```
+
+02带`--sculpt-fringe-centers`。该版本早期创建清单的通用文字“unchanged actual median centers”只描述01，不准确描述02；保留原报告，在review中按实际布尔字段`whole_fringe_cubic_sculpt=true`纠正。当前脚本已修正后续方法文字。失败大弯为`restyle_reference_shag.py -- 新失败研究 fringefield02 --front-only --keep-front-length --rebuild-crown-flow --soft-crown-wave --preview-crown --draft`，不要自动把它作为新基础。
+
+复用`validate_concert_still.py -- 版本 --audit-cut --audit-fringe`：按既有原创设计的连续曲线数准确分出前冠6160条和刘海21600条，计算实际位置/半径/变换的区域哈希。02前冠完全保留，softcrown01刘海完全保留；两者全量根/根半径、其他毛发/网格/UV/形态键/变换不变量和有限值均通过。02的54组实际刘海90%点距离分布中位数：根3.335→3.335mm、中段5.461→3.562mm、末端10.863→5.462mm；末端跨组最大18.342→8.809mm。它是三维分布证据，不是艺术合格证明，也没有证明全部眼睛/头皮/发丝之间的穿插安全。
+
+本轮没有新增后颈衣物接触测试：02及softcrown01都只编辑前发，后发与衣物保存数据未变；crownflow04旧12k限定抽查仍仅有其旧范围。大波浪失败版本的完整检查先实渲另一侧，再以`render_opposite_groom_side.py -- 新检查 softcrown01 --five-views --reuse-opposite softcrownside01`复用同源SHA、图像SHA、192采样、1200×1400及无去噪设置均匹配的已完成原图，另四张真实相机新渲；不是翻图或使用不同模型。最终fringefieldcheck01五张均新渲，没有沿用不同冠部图片。
+
+所有模型/失败稿留本地，六项无关修改不动。同步所改源码、成对检查、审核清单与精选实渲；源/衍生许可几何和原始诊断日志不进入Git。Bystedt CC BY-SA和Abhay Pratap Royalty Free署名沿用，未取得新资产或增加付费工具。没有新Release或社交发布，目标保持进行。下一轮应处理冠部的清晰分层与后颈厚度，避免再次用全束同一种波浪叠加制造交叉圈结。
+
 ## 2026-10-05 · 中段扭转定位与从毛囊重新规划完整路径
 
 当前研究工程 `Exports/crownflow04/Ember_Regent.blend`；`Renders/crownflowcheck01` 五张真实相机图均已查看，1200×1400、192 samples、不去噪。**这是有改善的制作中检查点，尚未达到参考质量。** 正面偏分与长短层更清晰，左侧较大的上部圈结减轻；另一侧仍有局部交叉细弧，部分冠部高光/侧后层次过于规则，后颈梢偏薄。脸服未在此轮重做。不发布候选成品，不把192 samples或结构检查作为艺术验收。

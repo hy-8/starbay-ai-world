@@ -1,0 +1,18 @@
+{
+  "version": "softcrownside01",
+  "source": "softcrown01",
+  "source_sha256": "6b54659fd65f73b88721ec3d06e795048ae9d8cfb7ecce4eb657e25bb17bf32e",
+  "source_unchanged": true,
+  "method": "Existing four neutral cameras when requested, plus actual opposite camera mirrored in world space with local-X handedness correction; no pixel flip or geometry edit",
+  "samples": 192,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "denoising": false,
+  "image_sha256": "23dbfca613c8190a42a4166e7236d11df05a10292b446b047debe3091ae1dc37",
+  "images_sha256": {
+    "05_OppositeSide.png": "23dbfca613c8190a42a4166e7236d11df05a10292b446b047debe3091ae1dc37"
+  },
+  "status": "Unreviewed actual neutral/opposite profile diagnostic, not artistic approval"
+}
