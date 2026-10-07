@@ -1,0 +1,19 @@
+{
+  "source": "nativeshortveil98",
+  "source_sha256": "dec7c081f4dc0592ccc5c3868f0ea6987cc1aa94b6738f860681474988635cbb",
+  "selection_attribute": "native_authored_upper_canopy",
+  "eligible_fibers": 15257,
+  "changed_fibers": 15257,
+  "edited_groups": 64,
+  "discrete_body_repairs": 9889,
+  "method": "New full65-point upper-front canopy, actual follicles;64 scalp clusters split across offset partX=-8mm, minimum35 fibers. Scalp-tangent cubic first control, single broad swept silhouettes, root-height/depth staggered tips,82% root scatter taper,5mm irregular terminal scatter; no periodic curls. Roots/explicit foreground/other components/materials/lights retained.",
+  "status": "Actually inspected; reference incomplete",
+  "model_sha256": "657e955efb5df9be4717c6efb22665521aadafd6f8c477bb5ba550e09cad3c80",
+  "art_judgment": "All3 actual drafts inspected. Full upper-front cubic redesign becomes over-uniform broad side-combed canopy; opposite side too smooth. Rejected, do not adopt.",
+  "goal_complete": false,
+  "inspected_draft_sha256": {
+    "01_Front.png": "b82c7833ee0e48fbfcea7e86190b7b2df805725b599743bf362a7e390ec2e6bc",
+    "02_ThreeQuarter.png": "4b565dac5e19bfa4ef3631b282bf0583759be8819819d3ca7fb6bc4b0499f779",
+    "05_OppositeSide.png": "2ca036984ec09ec6ad46ac9b6ae8f7f5e9c7fdd6f1a0eb3e141c86aa28126883"
+  }
+}

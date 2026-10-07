@@ -1,0 +1,15 @@
+{
+  "source": "nativecrimsonflow103",
+  "source_sha256": "1f1d0e7065b0bbfc24e9cf17eb7103668a842588ccd03b783a76108512fc951f",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "5befb2600e40b23f52da1f5b7a571155593990737dfe3977cf15953a382576fb",
+  "status": "Actual render pending art review; no generative image replacement"
+}

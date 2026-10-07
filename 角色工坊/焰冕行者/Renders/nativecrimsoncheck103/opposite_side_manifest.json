@@ -1,0 +1,24 @@
+{
+  "version": "nativecrimsoncheck103",
+  "source": "nativecrimsonflow103",
+  "source_sha256": "1f1d0e7065b0bbfc24e9cf17eb7103668a842588ccd03b783a76108512fc951f",
+  "source_unchanged": true,
+  "method": "Existing neutral cameras when requested, plus actual opposite camera mirrored in world space with local-X handedness correction; no pixel flip or geometry edit",
+  "samples": 192,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "denoising": false,
+  "image_sha256": "1f43fd0672eb2f834d5aa3b58a7248a09a2804dd2e8a94a26c4638d072ec71aa",
+  "images_sha256": {
+    "01_Front.png": "e7dfee86585caa878f9592228d8e26bbb74c872c25edb70eb9168db81327e49a",
+    "02_ThreeQuarter.png": "0a672c0dc7dad3c8b5f5115645a30f90e947c525ac25f7c2edc9990ae520b35a",
+    "03_Side.png": "d801a3fbb101858e07b18af8afb138819c7dd9f907a66129d3b38e0e8cf0a076",
+    "04_Back.png": "e61cb773e4ff0547356616364cbbd6cb13171c3271cb265b770199e26513e5b9",
+    "05_OppositeSide.png": "1f43fd0672eb2f834d5aa3b58a7248a09a2804dd2e8a94a26c4638d072ec71aa"
+  },
+  "status": "Unreviewed actual neutral/opposite profile diagnostic, not artistic approval",
+  "single_camera": null,
+  "opposite_image_reused_from": null
+}

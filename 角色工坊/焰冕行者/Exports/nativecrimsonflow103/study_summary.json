@@ -1,0 +1,44 @@
+{
+  "source": "nativeshortveil98",
+  "source_sha256": "dec7c081f4dc0592ccc5c3868f0ea6987cc1aa94b6738f860681474988635cbb",
+  "changed_object": "Bystedt layercut derivative \u2022 native root reflow",
+  "source_material": "Original red directional reflection-transmission control",
+  "new_material": "Primary scarlet \u2022 pure Huang control",
+  "colors_linear_rgba": [
+    [
+      0.11,
+      0.005,
+      0.007,
+      1
+    ],
+    [
+      0.25,
+      0.013,
+      0.015,
+      1
+    ]
+  ],
+  "model": "HUANG",
+  "parametrization": "COLOR",
+  "inputs": {
+    "Roughness": 0.32,
+    "Random Roughness": 0.12,
+    "IOR": 1.55,
+    "Reflection": 0.55,
+    "Transmission": 1.0,
+    "Secondary Reflection": 0.85
+  },
+  "geometry_before_sha256": "034ec34002dcf5dccad05a8f8daf208e5fa5aec0dc3e3e45811c0271a87475b0",
+  "geometry_after_sha256": "034ec34002dcf5dccad05a8f8daf208e5fa5aec0dc3e3e45811c0271a87475b0",
+  "support_material_slots_exact": true,
+  "method": "Primary only: pure Huang replaces legacy75%Chiang/25%directional mix; explicitly new red pigment and controlled reflection weights. No assumption of model-switch absorption equivalence. Existing geometry, support materials and lighting retained.",
+  "status": "Actually inspected; reference incomplete",
+  "model_sha256": "1f1d0e7065b0bbfc24e9cf17eb7103668a842588ccd03b783a76108512fc951f",
+  "art_judgment": "All3 drafts,5 actual neutral views and actual512-sample high portrait inspected. Reuses existing recalibrated pure Huang recipe70 on improved98 geometry. Scarlet color clearer, sharp white primary bands reduced; layered side/nape geometry retained exactly. Front bands remain broad, repeated waves/front pale support/part remain, face/clothes unfinished. Adopt as next WIP, reference still incomplete.",
+  "goal_complete": false,
+  "inspected_draft_sha256": {
+    "01_Front.png": "3cda213d05b87ace2ff832b1c9658919419bff7b1f2f8feb12be04ae3580db7a",
+    "02_ThreeQuarter.png": "84c5696da499475981e69f3a1fb90d66120fca14d0dc0cd59ce2662837916b84",
+    "05_OppositeSide.png": "7f7e2e9f9eeaec5da7ad46b1c4911dede6644a2611f2669ec5fdd0bf3b5125bb"
+  }
+}

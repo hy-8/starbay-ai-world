@@ -1,0 +1,20 @@
+{
+  "source": "nativeshortveil98",
+  "source_sha256": "dec7c081f4dc0592ccc5c3868f0ea6987cc1aa94b6738f860681474988635cbb",
+  "selection_attribute": "native_authored_upper_canopy",
+  "eligible_fibers": 6350,
+  "changed_fibers": 6350,
+  "edited_groups": 36,
+  "discrete_body_repairs": 43380,
+  "hero_only": true,
+  "method": "Limited high central crown rootsZ>1.862m, absX<46mm, Y(-99,+35)mm;36 follicle groups,12-18mm normal departure, staggered front-falling tips, original surrounding98 hair retained,82% root scatter taper,5mm irregular terminal scatter; no periodic curls. Roots/explicit foreground/other components/materials/lights retained.",
+  "status": "Actually inspected; reference incomplete",
+  "model_sha256": "a68b550f69870be471ee2d050482a1dc8f12cde39f4cccf17da5c1df10b9e7c6",
+  "art_judgment": "All3 actual drafts inspected. Limited high crown front-falling locks preserve surrounding coverage but leave an overly rounded smooth crown and pale crest. Rejected, do not adopt.",
+  "goal_complete": false,
+  "inspected_draft_sha256": {
+    "01_Front.png": "75696ff6f631ebce923df6ec988087be7c5599336d1b57e8d738f8342ace12f5",
+    "02_ThreeQuarter.png": "ada8016973e0ee0306983d0801ad20a833cc866a46f3f6e0ca87bfc9b1a05eef",
+    "05_OppositeSide.png": "e54304ca0685458355f3d7b79bfd5214265159c94c7c1757fea42e5f8040c8b6"
+  }
+}

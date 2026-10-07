@@ -1,0 +1,10 @@
+{
+  "source": "nativecrimsonflow103",
+  "source_sha256": "1f1d0e7065b0bbfc24e9cf17eb7103668a842588ccd03b783a76108512fc951f",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "02_ThreeQuarter.png": "5befb2600e40b23f52da1f5b7a571155593990737dfe3977cf15953a382576fb"
+  },
+  "art_judgment": "Actual1920x2240/512/OIDN portrait inspected. Brighter dyed red with smoother colored highlights versus98. Some front pale strands remain, broad flat front clumps/repetitive side bends and face/clothes quality gap persist; no artistic completion.",
+  "goal_complete": false
+}
