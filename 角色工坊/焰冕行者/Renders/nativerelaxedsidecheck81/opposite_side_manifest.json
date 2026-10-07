@@ -1,0 +1,20 @@
+{
+  "version": "nativerelaxedsidecheck81",
+  "source": "nativerelaxedside81",
+  "source_sha256": "03c08a8d5cb3d646092d18d6148cbb36b997ad425ee638823e690df9f6f77e3a",
+  "source_unchanged": true,
+  "method": "Existing neutral camera 03_Side; no pixel flip or geometry edit",
+  "samples": 192,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "denoising": false,
+  "image_sha256": "b7a4aa68f769442bb114e6fc7709fca8c3df72bbb53766a86987ec069b5ecf3e",
+  "images_sha256": {
+    "03_Side.png": "b7a4aa68f769442bb114e6fc7709fca8c3df72bbb53766a86987ec069b5ecf3e"
+  },
+  "status": "Unreviewed actual neutral/opposite profile diagnostic, not artistic approval",
+  "single_camera": "03_Side",
+  "opposite_image_reused_from": null
+}

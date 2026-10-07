@@ -1,0 +1,37 @@
+{
+  "source": "nativetieredside82",
+  "source_sha256": "ad73f8f65ffed23704d0dd561cb2a395897a30a2732da0207a84cb8a8ab04b28",
+  "donor": "nativeentrynape68",
+  "donor_sha256": "30a95a79f0b27d51d5e6ee00b2327f7735e57ae46bbf239a939d8fd7500191e6",
+  "eligible_shafts": 414,
+  "changed_fibers": 279,
+  "selection_attribute": "native_temporal_coverage_restore",
+  "roi": {
+    "camera": "03_Side",
+    "resolution": [
+      1200,
+      1400
+    ],
+    "center_pixels": [
+      560,
+      615
+    ],
+    "ellipse_radii_pixels": [
+      88,
+      63
+    ],
+    "selected_from": "Manually observed sparse temple in actual82 side render"
+  },
+  "all_roots_exact": true,
+  "donor_paths_exact": true,
+  "unselected_primary_exact": true,
+  "method": "Select already reshaped shafts with>=4 old first40 points inside side-view ellipse and new point count<65% old;restore2/3 index-interleaved exact protected68 paths. Local backing beneath retained curls, no new source/geometry density/material/light changes. Screen-point attribution only; no ray/continuous visibility proof.",
+  "status": "Actually reviewed; incomplete reference target",
+  "model_sha256": "2701c6bf080ab6e58fb50829fb50e20ae2745b9c5410b3ac149a6692d7b90a20",
+  "art_judgment": "279 of414 screen-point dropout candidates restored from68. All three drafts inspected. Insufficient temple coverage improvement; not adopted. Approximate manually located ellipse, no ray visibility proof.",
+  "inspected_draft_sha256": {
+    "01_Front.png": "94c7a2c9fc3cf61324374b57e362df6604e507986805fa0e41bc2c5b3f0eaf03",
+    "02_ThreeQuarter.png": "4a1b3764dd4db6b5aedef637eab682da4f2a6494b53617d152e98a6889681b6e",
+    "03_Side.png": "b6c2ca60ad1796eebf514281b6882980adf9d7f3c8ba39b2dd53346f9411f12b"
+  }
+}

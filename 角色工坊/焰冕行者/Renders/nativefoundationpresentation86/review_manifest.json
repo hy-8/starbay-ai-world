@@ -1,0 +1,12 @@
+{
+  "source": "nativefrontfoundation86",
+  "source_sha256": "21822e86f58dfc45561ddaf3fe986513f68de6e2ff30032cc0d2335af892c4db",
+  "all_images_actually_reviewed": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "art_judgment": "Actual512-sample high portrait inspected: cleaner side root flow, distinct full-length bends; broad smooth front/crown sheet, some pale part support and repetitive locks remain. New continuation WIP86, reference incomplete; no generative image replacement."
+}

@@ -1,0 +1,15 @@
+{
+  "source": "nativetieredside82",
+  "source_sha256": "ad73f8f65ffed23704d0dd561cb2a395897a30a2732da0207a84cb8a8ab04b28",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "b26cb47bf65870dce846b31e91388f2762055c42847354af0c3214b4f94e59c3",
+  "status": "Actual render pending art review; no generative image replacement"
+}

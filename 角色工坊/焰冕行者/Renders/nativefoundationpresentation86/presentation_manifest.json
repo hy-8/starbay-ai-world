@@ -1,0 +1,15 @@
+{
+  "source": "nativefrontfoundation86",
+  "source_sha256": "21822e86f58dfc45561ddaf3fe986513f68de6e2ff30032cc0d2335af892c4db",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "27a0269dbd33cbf123d47c814b3936bfc0f4b72989a65ec9f27431a8b18598e7",
+  "status": "Actual render pending art review; no generative image replacement"
+}

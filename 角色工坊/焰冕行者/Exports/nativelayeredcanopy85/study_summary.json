@@ -1,0 +1,24 @@
+{
+  "source": "nativetieredside82",
+  "source_sha256": "ad73f8f65ffed23704d0dd561cb2a395897a30a2732da0207a84cb8a8ab04b28",
+  "donor": "nativerelaxedside81",
+  "donor_sha256": "03c08a8d5cb3d646092d18d6148cbb36b997ad425ee638823e690df9f6f77e3a",
+  "eligible_shafts": 16448,
+  "changed_fibers": 6602,
+  "selection_attribute": "native_temporal_coverage_restore",
+  "layered_floor": true,
+  "long_lock_floor": true,
+  "roi": null,
+  "all_roots_exact": true,
+  "donor_paths_exact": true,
+  "unselected_primary_exact": true,
+  "method": "Retain about60% tiered short canopy and restore index-interleaved40% exact longer authored donor paths as a curved foundation. Selected hair index modulo5<2; actual count recorded. Original total strand density retained. No new source/geometry density/material/light changes; no continuous collision proof.",
+  "status": "Actually reviewed; incomplete reference target",
+  "model_sha256": "511bcc3459a4c2a253f2bdfeadd1087195111ffc0879ca6a1be810cee4d0f25b",
+  "art_judgment": "6602 of16448 side shafts copied from longer authored81 into short-tier82. Three drafts inspected; partial temple improvement, still sparser than the long-front version. Not adopted.",
+  "inspected_draft_sha256": {
+    "01_Front.png": "b8a9ac048172d40ea93c8145b442fb8a23386a69b5c3463cdb00908733fbbfe0",
+    "02_ThreeQuarter.png": "36162f19f6217a1fbdecd57a0049dea13e05a362cbaa4830d0ef286f67659c29",
+    "03_Side.png": "95e1d8319f1f298d2888fb61644740e726b03cb1dbd2939c1f181b398145f26e"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "source": "nativeentrynape68",
+  "source_sha256": "30a95a79f0b27d51d5e6ee00b2327f7735e57ae46bbf239a939d8fd7500191e6",
+  "source_unchanged": true,
+  "legend": [
+    {
+      "first_point_zero_based": 0,
+      "last_point_zero_based": 7,
+      "linear_color": [
+        0.03,
+        0.12,
+        1,
+        1
+      ],
+      "actual_positions_sha256": "031798b64b6668fb612286a0e847fbfef8ae2e02b6c485e8402b367f9a38f72a",
+      "method": "Direct saved point/radius slices; adjacent sections share exact boundary point"
+    },
+    {
+      "first_point_zero_based": 7,
+      "last_point_zero_based": 16,
+      "linear_color": [
+        0,
+        1,
+        0.08,
+        1
+      ],
+      "actual_positions_sha256": "11659258aedddf9b12a60fcaacf312ea90a7ea75dd24ab6f63d4c5d29fabcf10",
+      "method": "Direct saved point/radius slices; adjacent sections share exact boundary point"
+    },
+    {
+      "first_point_zero_based": 16,
+      "last_point_zero_based": 32,
+      "linear_color": [
+        1,
+        0.03,
+        0.05,
+        1
+      ],
+      "actual_positions_sha256": "2c00d1ae0d656ad8f389aad71d332b382f79de158d939f5fdd265681cc3a0548",
+      "method": "Direct saved point/radius slices; adjacent sections share exact boundary point"
+    },
+    {
+      "first_point_zero_based": 32,
+      "last_point_zero_based": 64,
+      "linear_color": [
+        1,
+        0.6,
+        0.02,
+        1
+      ],
+      "actual_positions_sha256": "5022c808f7eda3f67c332a77244aeba4ca4f84bb4da37684152013e1ae542e23",
+      "method": "Direct saved point/radius slices; adjacent sections share exact boundary point"
+    }
+  ],
+  "images_sha256": {
+    "02_ThreeQuarter.png": "fb1b9642e9378df1c60669defb785bb6675da3f42673c380123b3c53e6398642",
+    "05_OppositeSide.png": "682731552e838b3167ca54b25d856a84aac93208d7663e8f3e38ecd2a5293eb3"
+  },
+  "method": "Primary-only emission ID sections. Saved65-point fibers split at7/16/32 with shared endpoints. Geometry taken directly from saved primary, all support hidden temporarily; no source save. Not final hair appearance or continuous visibility proof."
+}

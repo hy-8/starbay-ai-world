@@ -1,0 +1,2558 @@
+{
+  "source": "nativeentrynape68",
+  "source_sha256": "30a95a79f0b27d51d5e6ee00b2327f7735e57ae46bbf239a939d8fd7500191e6",
+  "eligible_fibers": 22522,
+  "changed_fibers": 21481,
+  "patch_count": 362,
+  "selection_attribute": "native_entry_microtufts",
+  "patches": [
+    {
+      "patch": 0,
+      "fibers": 67,
+      "lift_m": 0.005,
+      "mean_entry_arc_m": 0.024378578452673393,
+      "max_displacement_m": 0.00913848341730891
+    },
+    {
+      "patch": 1,
+      "fibers": 18,
+      "lift_m": 0.003262631277101175,
+      "mean_entry_arc_m": 0.023190785331077587,
+      "max_displacement_m": 0.0066480932544919075
+    },
+    {
+      "patch": 2,
+      "fibers": 105,
+      "lift_m": 0.004087425267018888,
+      "mean_entry_arc_m": 0.024405269663526463,
+      "max_displacement_m": 0.008611606721250012
+    },
+    {
+      "patch": 3,
+      "fibers": 15,
+      "lift_m": 0.004608439407917213,
+      "mean_entry_arc_m": 0.02571498782873002,
+      "max_displacement_m": 0.006693257072020067
+    },
+    {
+      "patch": 4,
+      "fibers": 109,
+      "lift_m": 0.0030152863546266478,
+      "mean_entry_arc_m": 0.02939988587107998,
+      "max_displacement_m": 0.006668480956610256
+    },
+    {
+      "patch": 5,
+      "fibers": 17,
+      "lift_m": 0.004843754678302777,
+      "mean_entry_arc_m": 0.03059365168418923,
+      "max_displacement_m": 0.006279853714050222
+    },
+    {
+      "patch": 6,
+      "fibers": 27,
+      "lift_m": 0.0037403970262132958,
+      "mean_entry_arc_m": 0.03154269177066981,
+      "max_displacement_m": 0.006984973791424361
+    },
+    {
+      "patch": 7,
+      "fibers": 17,
+      "lift_m": 0.0035390915481809003,
+      "mean_entry_arc_m": 0.032599520547792346,
+      "max_displacement_m": 0.00545644797897304
+    },
+    {
+      "patch": 9,
+      "fibers": 15,
+      "lift_m": 0.0030756552327541285,
+      "mean_entry_arc_m": 0.03572764682796488,
+      "max_displacement_m": 0.005246954879204709
+    },
+    {
+      "patch": 10,
+      "fibers": 21,
+      "lift_m": 0.004423843914315647,
+      "mean_entry_arc_m": 0.03678717748388674,
+      "max_displacement_m": 0.006806588264013289
+    },
+    {
+      "patch": 11,
+      "fibers": 17,
+      "lift_m": 0.004299286275631137,
+      "mean_entry_arc_m": 0.03687831321124711,
+      "max_displacement_m": 0.005177226096117363
+    },
+    {
+      "patch": 12,
+      "fibers": 26,
+      "lift_m": 0.003134787407997801,
+      "mean_entry_arc_m": 0.03916979484564329,
+      "max_displacement_m": 0.004648623925370744
+    },
+    {
+      "patch": 16,
+      "fibers": 18,
+      "lift_m": 0.0047646513642178746,
+      "mean_entry_arc_m": 0.02544359444230836,
+      "max_displacement_m": 0.006578006791717872
+    },
+    {
+      "patch": 17,
+      "fibers": 18,
+      "lift_m": 0.0030008541073624426,
+      "mean_entry_arc_m": 0.02504938173164194,
+      "max_displacement_m": 0.0046278535022541804
+    },
+    {
+      "patch": 18,
+      "fibers": 19,
+      "lift_m": 0.004708826497469649,
+      "mean_entry_arc_m": 0.026352914984026102,
+      "max_displacement_m": 0.006140731895924759
+    },
+    {
+      "patch": 19,
+      "fibers": 16,
+      "lift_m": 0.003953812914245474,
+      "mean_entry_arc_m": 0.02683411900628431,
+      "max_displacement_m": 0.005071726956586728
+    },
+    {
+      "patch": 21,
+      "fibers": 15,
+      "lift_m": 0.00499107005602773,
+      "mean_entry_arc_m": 0.027272200617015917,
+      "max_displacement_m": 0.006748129426752249
+    },
+    {
+      "patch": 22,
+      "fibers": 25,
+      "lift_m": 0.003179144549562314,
+      "mean_entry_arc_m": 0.029359017581899124,
+      "max_displacement_m": 0.005881046888467142
+    },
+    {
+      "patch": 23,
+      "fibers": 19,
+      "lift_m": 0.004219476214319822,
+      "mean_entry_arc_m": 0.03304773255438099,
+      "max_displacement_m": 0.006127548394759204
+    },
+    {
+      "patch": 24,
+      "fibers": 21,
+      "lift_m": 0.004497185658718329,
+      "mean_entry_arc_m": 0.027566868975091162,
+      "max_displacement_m": 0.004543744632774527
+    },
+    {
+      "patch": 26,
+      "fibers": 16,
+      "lift_m": 0.004907788628380512,
+      "mean_entry_arc_m": 0.02640971026694954,
+      "max_displacement_m": 0.005297975297906668
+    },
+    {
+      "patch": 27,
+      "fibers": 54,
+      "lift_m": 0.0036139446396032905,
+      "mean_entry_arc_m": 0.03887934706050403,
+      "max_displacement_m": 0.005770169509863346
+    },
+    {
+      "patch": 28,
+      "fibers": 73,
+      "lift_m": 0.003661541667747423,
+      "mean_entry_arc_m": 0.04071046498802719,
+      "max_displacement_m": 0.009730156987139969
+    },
+    {
+      "patch": 29,
+      "fibers": 81,
+      "lift_m": 0.004885192536811808,
+      "mean_entry_arc_m": 0.04332911138435875,
+      "max_displacement_m": 0.011721245198710492
+    },
+    {
+      "patch": 31,
+      "fibers": 42,
+      "lift_m": 0.004540831748184506,
+      "mean_entry_arc_m": 0.04408797148339477,
+      "max_displacement_m": 0.005634610830881937
+    },
+    {
+      "patch": 32,
+      "fibers": 60,
+      "lift_m": 0.004169383417600514,
+      "mean_entry_arc_m": 0.04678408520456986,
+      "max_displacement_m": 0.005971606621671155
+    },
+    {
+      "patch": 33,
+      "fibers": 19,
+      "lift_m": 0.003209372183182836,
+      "mean_entry_arc_m": 0.04465046451145997,
+      "max_displacement_m": 0.0037502435725248894
+    },
+    {
+      "patch": 34,
+      "fibers": 43,
+      "lift_m": 0.0049965850295490034,
+      "mean_entry_arc_m": 0.04137216968541971,
+      "max_displacement_m": 0.007722217265047261
+    },
+    {
+      "patch": 36,
+      "fibers": 18,
+      "lift_m": 0.004004870007030181,
+      "mean_entry_arc_m": 0.04061503012022044,
+      "max_displacement_m": 0.0054908491429774674
+    },
+    {
+      "patch": 37,
+      "fibers": 12,
+      "lift_m": 0.004671891462451402,
+      "mean_entry_arc_m": 0.04205323192222371,
+      "max_displacement_m": 0.004482871910395933
+    },
+    {
+      "patch": 38,
+      "fibers": 13,
+      "lift_m": 0.003004266493780992,
+      "mean_entry_arc_m": 0.038612525206538025,
+      "max_displacement_m": 0.0055335914281200655
+    },
+    {
+      "patch": 40,
+      "fibers": 111,
+      "lift_m": 0.003821025457648121,
+      "mean_entry_arc_m": 0.021969193730182343,
+      "max_displacement_m": 0.006693646948983214
+    },
+    {
+      "patch": 43,
+      "fibers": 202,
+      "lift_m": 0.003110318208386935,
+      "mean_entry_arc_m": 0.025197211322488484,
+      "max_displacement_m": 0.007870630805970204
+    },
+    {
+      "patch": 45,
+      "fibers": 25,
+      "lift_m": 0.004377052229367114,
+      "mean_entry_arc_m": 0.024626678407679833,
+      "max_displacement_m": 0.008276483268933373
+    },
+    {
+      "patch": 46,
+      "fibers": 203,
+      "lift_m": 0.003096339617304321,
+      "mean_entry_arc_m": 0.028282351456284476,
+      "max_displacement_m": 0.006315506959267745
+    },
+    {
+      "patch": 47,
+      "fibers": 82,
+      "lift_m": 0.0049556095752780385,
+      "mean_entry_arc_m": 0.030475782985872907,
+      "max_displacement_m": 0.007589742585954778
+    },
+    {
+      "patch": 48,
+      "fibers": 27,
+      "lift_m": 0.0034943871584703565,
+      "mean_entry_arc_m": 0.031233209023219712,
+      "max_displacement_m": 0.006009585373530461
+    },
+    {
+      "patch": 49,
+      "fibers": 29,
+      "lift_m": 0.0037900366152018757,
+      "mean_entry_arc_m": 0.03346117524184994,
+      "max_displacement_m": 0.006067660138874877
+    },
+    {
+      "patch": 50,
+      "fibers": 14,
+      "lift_m": 0.004815253707337859,
+      "mean_entry_arc_m": 0.03580515624673822,
+      "max_displacement_m": 0.008136095535674138
+    },
+    {
+      "patch": 51,
+      "fibers": 16,
+      "lift_m": 0.0030076782147616266,
+      "mean_entry_arc_m": 0.036675847406635945,
+      "max_displacement_m": 0.005719875228611484
+    },
+    {
+      "patch": 52,
+      "fibers": 26,
+      "lift_m": 0.004648160387633943,
+      "mean_entry_arc_m": 0.038551341124045915,
+      "max_displacement_m": 0.00782623671420785
+    },
+    {
+      "patch": 53,
+      "fibers": 34,
+      "lift_m": 0.004036455390711877,
+      "mean_entry_arc_m": 0.03843082199048754,
+      "max_displacement_m": 0.006760516154683632
+    },
+    {
+      "patch": 54,
+      "fibers": 25,
+      "lift_m": 0.003298077482582067,
+      "mean_entry_arc_m": 0.040973729117170926,
+      "max_displacement_m": 0.005098201660232689
+    },
+    {
+      "patch": 56,
+      "fibers": 23,
+      "lift_m": 0.003229108085342392,
+      "mean_entry_arc_m": 0.044621417694198126,
+      "max_displacement_m": 0.006437314082769038
+    },
+    {
+      "patch": 59,
+      "fibers": 21,
+      "lift_m": 0.0030254625690432353,
+      "mean_entry_arc_m": 0.022188721814977462,
+      "max_displacement_m": 0.005569332053807644
+    },
+    {
+      "patch": 61,
+      "fibers": 16,
+      "lift_m": 0.0036914344663221046,
+      "mean_entry_arc_m": 0.025771003758634087,
+      "max_displacement_m": 0.00550072849384207
+    },
+    {
+      "patch": 64,
+      "fibers": 17,
+      "lift_m": 0.00305738148431606,
+      "mean_entry_arc_m": 0.02478283998534072,
+      "max_displacement_m": 0.004202557506078486
+    },
+    {
+      "patch": 65,
+      "fibers": 17,
+      "lift_m": 0.00446953023957379,
+      "mean_entry_arc_m": 0.02281555017302557,
+      "max_displacement_m": 0.00611328692503909
+    },
+    {
+      "patch": 69,
+      "fibers": 26,
+      "lift_m": 0.0033838598660304634,
+      "mean_entry_arc_m": 0.02602728050969864,
+      "max_displacement_m": 0.006568605278946049
+    },
+    {
+      "patch": 70,
+      "fibers": 31,
+      "lift_m": 0.003922281485181266,
+      "mean_entry_arc_m": 0.026119927623157305,
+      "max_displacement_m": 0.005690567171217137
+    },
+    {
+      "patch": 71,
+      "fibers": 30,
+      "lift_m": 0.004730754538004483,
+      "mean_entry_arc_m": 0.030482779731499078,
+      "max_displacement_m": 0.007635471231165141
+    },
+    {
+      "patch": 72,
+      "fibers": 30,
+      "lift_m": 0.003000047433936948,
+      "mean_entry_arc_m": 0.032440434570521856,
+      "max_displacement_m": 0.004620087979078811
+    },
+    {
+      "patch": 73,
+      "fibers": 54,
+      "lift_m": 0.004743912955190147,
+      "mean_entry_arc_m": 0.03075228308099391,
+      "max_displacement_m": 0.004742668874277142
+    },
+    {
+      "patch": 74,
+      "fibers": 54,
+      "lift_m": 0.003902876274630167,
+      "mean_entry_arc_m": 0.029680144367089777,
+      "max_displacement_m": 0.004512830194864578
+    },
+    {
+      "patch": 75,
+      "fibers": 16,
+      "lift_m": 0.0033993190394881333,
+      "mean_entry_arc_m": 0.02838033724196962,
+      "max_displacement_m": 0.004457532370594023
+    },
+    {
+      "patch": 76,
+      "fibers": 113,
+      "lift_m": 0.004982970430814399,
+      "mean_entry_arc_m": 0.04112962130833395,
+      "max_displacement_m": 0.0074413519291471435
+    },
+    {
+      "patch": 77,
+      "fibers": 23,
+      "lift_m": 0.0031510576580780296,
+      "mean_entry_arc_m": 0.04116034627756182,
+      "max_displacement_m": 0.008099099016067729
+    },
+    {
+      "patch": 78,
+      "fibers": 123,
+      "lift_m": 0.004268996630141072,
+      "mean_entry_arc_m": 0.04209510695886187,
+      "max_displacement_m": 0.010338256911875711
+    },
+    {
+      "patch": 79,
+      "fibers": 157,
+      "lift_m": 0.0044522429386595315,
+      "mean_entry_arc_m": 0.04817815420929544,
+      "max_displacement_m": 0.011428426724248548
+    },
+    {
+      "patch": 80,
+      "fibers": 56,
+      "lift_m": 0.0030640637736201294,
+      "mean_entry_arc_m": 0.046447342449217506,
+      "max_displacement_m": 0.007537202942829406
+    },
+    {
+      "patch": 81,
+      "fibers": 74,
+      "lift_m": 0.004928017261261402,
+      "mean_entry_arc_m": 0.04771005282005938,
+      "max_displacement_m": 0.006323352055492971
+    },
+    {
+      "patch": 82,
+      "fibers": 38,
+      "lift_m": 0.003567354420851109,
+      "mean_entry_arc_m": 0.04271008601518448,
+      "max_displacement_m": 0.004925027427277426
+    },
+    {
+      "patch": 83,
+      "fibers": 57,
+      "lift_m": 0.003710021375068297,
+      "mean_entry_arc_m": 0.043881552225449,
+      "max_displacement_m": 0.005922569110102497
+    },
+    {
+      "patch": 84,
+      "fibers": 30,
+      "lift_m": 0.004860287915816605,
+      "mean_entry_arc_m": 0.04004960242781128,
+      "max_displacement_m": 0.005438987333259869
+    },
+    {
+      "patch": 85,
+      "fibers": 15,
+      "lift_m": 0.0030212798213097507,
+      "mean_entry_arc_m": 0.04149944063782579,
+      "max_displacement_m": 0.005005284659690749
+    },
+    {
+      "patch": 87,
+      "fibers": 21,
+      "lift_m": 0.0041188488790141675,
+      "mean_entry_arc_m": 0.0380763002923058,
+      "max_displacement_m": 0.0060421483612470555
+    },
+    {
+      "patch": 89,
+      "fibers": 39,
+      "lift_m": 0.004999500968655667,
+      "mean_entry_arc_m": 0.02212904433371904,
+      "max_displacement_m": 0.0076340671127321505
+    },
+    {
+      "patch": 90,
+      "fibers": 70,
+      "lift_m": 0.003284336767341421,
+      "mean_entry_arc_m": 0.025053240272451496,
+      "max_displacement_m": 0.005873970150976936
+    },
+    {
+      "patch": 91,
+      "fibers": 140,
+      "lift_m": 0.0040559143991265485,
+      "mean_entry_arc_m": 0.024785777004228397,
+      "max_displacement_m": 0.006448646742696796
+    },
+    {
+      "patch": 92,
+      "fibers": 90,
+      "lift_m": 0.0046332041745074035,
+      "mean_entry_arc_m": 0.024440603075902748,
+      "max_displacement_m": 0.007752551054179549
+    },
+    {
+      "patch": 93,
+      "fibers": 100,
+      "lift_m": 0.003010275693892011,
+      "mean_entry_arc_m": 0.02881784484376755,
+      "max_displacement_m": 0.006199073204192042
+    },
+    {
+      "patch": 94,
+      "fibers": 127,
+      "lift_m": 0.004826379320726147,
+      "mean_entry_arc_m": 0.030383378139116554,
+      "max_displacement_m": 0.007734096747408226
+    },
+    {
+      "patch": 97,
+      "fibers": 34,
+      "lift_m": 0.004949689090108752,
+      "mean_entry_arc_m": 0.03320856676020689,
+      "max_displacement_m": 0.006557260659666894
+    },
+    {
+      "patch": 98,
+      "fibers": 32,
+      "lift_m": 0.0030881692459117705,
+      "mean_entry_arc_m": 0.035842654795450395,
+      "max_displacement_m": 0.0055095484468797905
+    },
+    {
+      "patch": 101,
+      "fibers": 16,
+      "lift_m": 0.0031193806943234054,
+      "mean_entry_arc_m": 0.03877354790177142,
+      "max_displacement_m": 0.004398354751360922
+    },
+    {
+      "patch": 102,
+      "fibers": 35,
+      "lift_m": 0.004969405050917345,
+      "mean_entry_arc_m": 0.04075259553916798,
+      "max_displacement_m": 0.008223228550096242
+    },
+    {
+      "patch": 105,
+      "fibers": 29,
+      "lift_m": 0.004784626603249148,
+      "mean_entry_arc_m": 0.020391133155038037,
+      "max_displacement_m": 0.007694581198058454
+    },
+    {
+      "patch": 106,
+      "fibers": 41,
+      "lift_m": 0.0030026579910239115,
+      "mean_entry_arc_m": 0.01962144975690874,
+      "max_displacement_m": 0.0042768835174331575
+    },
+    {
+      "patch": 108,
+      "fibers": 34,
+      "lift_m": 0.003985390440916657,
+      "mean_entry_arc_m": 0.02241530535963343,
+      "max_displacement_m": 0.0053866379424531785
+    },
+    {
+      "patch": 110,
+      "fibers": 26,
+      "lift_m": 0.004994787519768312,
+      "mean_entry_arc_m": 0.024747045290603564,
+      "max_displacement_m": 0.0058583387091381296
+    },
+    {
+      "patch": 111,
+      "fibers": 25,
+      "lift_m": 0.0031975953337936673,
+      "mean_entry_arc_m": 0.02467569414123542,
+      "max_displacement_m": 0.006153060677259735
+    },
+    {
+      "patch": 113,
+      "fibers": 37,
+      "lift_m": 0.004524344855407562,
+      "mean_entry_arc_m": 0.027021352693169704,
+      "max_displacement_m": 0.006896072172862667
+    },
+    {
+      "patch": 114,
+      "fibers": 34,
+      "lift_m": 0.0030381803190501445,
+      "mean_entry_arc_m": 0.02523588117791538,
+      "max_displacement_m": 0.00434807716079787
+    },
+    {
+      "patch": 115,
+      "fibers": 37,
+      "lift_m": 0.004894086644194309,
+      "mean_entry_arc_m": 0.029807640559548272,
+      "max_displacement_m": 0.0066233278390804605
+    },
+    {
+      "patch": 116,
+      "fibers": 36,
+      "lift_m": 0.0036432766269689325,
+      "mean_entry_arc_m": 0.03196781402427584,
+      "max_displacement_m": 0.005757605350909609
+    },
+    {
+      "patch": 117,
+      "fibers": 18,
+      "lift_m": 0.003631986671805857,
+      "mean_entry_arc_m": 0.033346543338415184,
+      "max_displacement_m": 0.0032672786278585574
+    },
+    {
+      "patch": 118,
+      "fibers": 48,
+      "lift_m": 0.004899446408671623,
+      "mean_entry_arc_m": 0.033124206915726775,
+      "max_displacement_m": 0.004377680670884519
+    },
+    {
+      "patch": 119,
+      "fibers": 78,
+      "lift_m": 0.0030415660288379224,
+      "mean_entry_arc_m": 0.032857605181025526,
+      "max_displacement_m": 0.003963108577254701
+    },
+    {
+      "patch": 121,
+      "fibers": 113,
+      "lift_m": 0.004200430636496508,
+      "mean_entry_arc_m": 0.04155478735795061,
+      "max_displacement_m": 0.006037940631170407
+    },
+    {
+      "patch": 122,
+      "fibers": 68,
+      "lift_m": 0.003190425377147849,
+      "mean_entry_arc_m": 0.04327343422780962,
+      "max_displacement_m": 0.01573333526029132
+    },
+    {
+      "patch": 123,
+      "fibers": 72,
+      "lift_m": 0.004993479374991028,
+      "mean_entry_arc_m": 0.04516489961056169,
+      "max_displacement_m": 0.0068289468234927694
+    },
+    {
+      "patch": 124,
+      "fibers": 33,
+      "lift_m": 0.0033444533869252183,
+      "mean_entry_arc_m": 0.0374796145244021,
+      "max_displacement_m": 0.0042800032397403735
+    },
+    {
+      "patch": 125,
+      "fibers": 137,
+      "lift_m": 0.003973279762776187,
+      "mean_entry_arc_m": 0.04707944498306477,
+      "max_displacement_m": 0.011822834578225526
+    },
+    {
+      "patch": 126,
+      "fibers": 18,
+      "lift_m": 0.004694951947469375,
+      "mean_entry_arc_m": 0.036164999165839304,
+      "max_displacement_m": 0.004450543290099385
+    },
+    {
+      "patch": 127,
+      "fibers": 90,
+      "lift_m": 0.0030018485772607675,
+      "mean_entry_arc_m": 0.045233823270048774,
+      "max_displacement_m": 0.006468128386261374
+    },
+    {
+      "patch": 129,
+      "fibers": 22,
+      "lift_m": 0.003852192927907294,
+      "mean_entry_arc_m": 0.04746264476888209,
+      "max_displacement_m": 0.00429719982586284
+    },
+    {
+      "patch": 130,
+      "fibers": 59,
+      "lift_m": 0.00344091729174844,
+      "mean_entry_arc_m": 0.04251827552060567,
+      "max_displacement_m": 0.00510463945452989
+    },
+    {
+      "patch": 131,
+      "fibers": 31,
+      "lift_m": 0.004972307277249267,
+      "mean_entry_arc_m": 0.04312827248253447,
+      "max_displacement_m": 0.00504858748163239
+    },
+    {
+      "patch": 133,
+      "fibers": 23,
+      "lift_m": 0.004317815518768553,
+      "mean_entry_arc_m": 0.04036008355562433,
+      "max_displacement_m": 0.006288447244502394
+    },
+    {
+      "patch": 136,
+      "fibers": 20,
+      "lift_m": 0.004945825680384449,
+      "mean_entry_arc_m": 0.03584468570548899,
+      "max_displacement_m": 0.007095648511934026
+    },
+    {
+      "patch": 138,
+      "fibers": 18,
+      "lift_m": 0.0037592573293759976,
+      "mean_entry_arc_m": 0.037719562670161515,
+      "max_displacement_m": 0.006326164366684031
+    },
+    {
+      "patch": 139,
+      "fibers": 67,
+      "lift_m": 0.004833139715163488,
+      "mean_entry_arc_m": 0.02751804815830106,
+      "max_displacement_m": 0.007810051161246362
+    },
+    {
+      "patch": 140,
+      "fibers": 22,
+      "lift_m": 0.0030120803350912597,
+      "mean_entry_arc_m": 0.027711935496774955,
+      "max_displacement_m": 0.005755799976008341
+    },
+    {
+      "patch": 141,
+      "fibers": 58,
+      "lift_m": 0.004623782408117317,
+      "mean_entry_arc_m": 0.027023221887586664,
+      "max_displacement_m": 0.0073696778867128705
+    },
+    {
+      "patch": 142,
+      "fibers": 70,
+      "lift_m": 0.00406800438962829,
+      "mean_entry_arc_m": 0.019284932603112048,
+      "max_displacement_m": 0.006747624133439949
+    },
+    {
+      "patch": 146,
+      "fibers": 20,
+      "lift_m": 0.0041068129697994765,
+      "mean_entry_arc_m": 0.029430944251170498,
+      "max_displacement_m": 0.005701964497940791
+    },
+    {
+      "patch": 147,
+      "fibers": 54,
+      "lift_m": 0.00459286552778094,
+      "mean_entry_arc_m": 0.02144877135035371,
+      "max_displacement_m": 0.00748018037255269
+    },
+    {
+      "patch": 148,
+      "fibers": 12,
+      "lift_m": 0.0030188660360594296,
+      "mean_entry_arc_m": 0.03378501125459666,
+      "max_displacement_m": 0.005061347281752976
+    },
+    {
+      "patch": 150,
+      "fibers": 16,
+      "lift_m": 0.0037216352326429176,
+      "mean_entry_arc_m": 0.03399854910418504,
+      "max_displacement_m": 0.005724297164878491
+    },
+    {
+      "patch": 151,
+      "fibers": 30,
+      "lift_m": 0.003556465477826077,
+      "mean_entry_arc_m": 0.025933021199566184,
+      "max_displacement_m": 0.007376673452279136
+    },
+    {
+      "patch": 152,
+      "fibers": 27,
+      "lift_m": 0.004932461735710889,
+      "mean_entry_arc_m": 0.019412245698043774,
+      "max_displacement_m": 0.007228313582392248
+    },
+    {
+      "patch": 158,
+      "fibers": 23,
+      "lift_m": 0.003409047351134818,
+      "mean_entry_arc_m": 0.023539549158884995,
+      "max_displacement_m": 0.006308875618268121
+    },
+    {
+      "patch": 159,
+      "fibers": 32,
+      "lift_m": 0.003890827624066896,
+      "mean_entry_arc_m": 0.02421956822087929,
+      "max_displacement_m": 0.008124120894543781
+    },
+    {
+      "patch": 161,
+      "fibers": 25,
+      "lift_m": 0.0030002387758580763,
+      "mean_entry_arc_m": 0.022698469306790828,
+      "max_displacement_m": 0.00659037918085842
+    },
+    {
+      "patch": 164,
+      "fibers": 26,
+      "lift_m": 0.0033743643943141585,
+      "mean_entry_arc_m": 0.02319473258235526,
+      "max_displacement_m": 0.007390215728537984
+    },
+    {
+      "patch": 165,
+      "fibers": 30,
+      "lift_m": 0.004988284663147585,
+      "mean_entry_arc_m": 0.026411628336672474,
+      "max_displacement_m": 0.0055137810196225715
+    },
+    {
+      "patch": 166,
+      "fibers": 32,
+      "lift_m": 0.0031681752058345626,
+      "mean_entry_arc_m": 0.02643813210748931,
+      "max_displacement_m": 0.006491824723573241
+    },
+    {
+      "patch": 169,
+      "fibers": 35,
+      "lift_m": 0.0030534064375126544,
+      "mean_entry_arc_m": 0.027946074681704278,
+      "max_displacement_m": 0.005768706183022716
+    },
+    {
+      "patch": 170,
+      "fibers": 35,
+      "lift_m": 0.004915786376350948,
+      "mean_entry_arc_m": 0.026352003184898748,
+      "max_displacement_m": 0.006194578532589937
+    },
+    {
+      "patch": 171,
+      "fibers": 30,
+      "lift_m": 0.0035960491009312473,
+      "mean_entry_arc_m": 0.02620748765391475,
+      "max_displacement_m": 0.007106680549381175
+    },
+    {
+      "patch": 172,
+      "fibers": 17,
+      "lift_m": 0.003679935140769323,
+      "mean_entry_arc_m": 0.03773304249025317,
+      "max_displacement_m": 0.005436752173359384
+    },
+    {
+      "patch": 173,
+      "fibers": 24,
+      "lift_m": 0.00487596253206014,
+      "mean_entry_arc_m": 0.036993658313359476,
+      "max_displacement_m": 0.005716828879866938
+    },
+    {
+      "patch": 174,
+      "fibers": 60,
+      "lift_m": 0.0030282501120858485,
+      "mean_entry_arc_m": 0.03720459034800175,
+      "max_displacement_m": 0.005107548218673626
+    },
+    {
+      "patch": 176,
+      "fibers": 13,
+      "lift_m": 0.004150153872377741,
+      "mean_entry_arc_m": 0.033780179791310705,
+      "max_displacement_m": 0.01356439053677016
+    },
+    {
+      "patch": 177,
+      "fibers": 71,
+      "lift_m": 0.003221449046176521,
+      "mean_entry_arc_m": 0.03684268173807471,
+      "max_displacement_m": 0.011730592519368999
+    },
+    {
+      "patch": 178,
+      "fibers": 21,
+      "lift_m": 0.004998004372687235,
+      "mean_entry_arc_m": 0.034697877043560525,
+      "max_displacement_m": 0.006895233145057234
+    },
+    {
+      "patch": 180,
+      "fibers": 22,
+      "lift_m": 0.004024347725158655,
+      "mean_entry_arc_m": 0.03321853912893915,
+      "max_displacement_m": 0.006898374982891923
+    },
+    {
+      "patch": 181,
+      "fibers": 73,
+      "lift_m": 0.004657336963636698,
+      "mean_entry_arc_m": 0.03323171394160659,
+      "max_displacement_m": 0.008981920954011905
+    },
+    {
+      "patch": 182,
+      "fibers": 90,
+      "lift_m": 0.003006252840059366,
+      "mean_entry_arc_m": 0.0500276288608095,
+      "max_displacement_m": 0.01785226583332961
+    },
+    {
+      "patch": 183,
+      "fibers": 35,
+      "lift_m": 0.004808179184782839,
+      "mean_entry_arc_m": 0.039703685804816424,
+      "max_displacement_m": 0.01232882365092696
+    },
+    {
+      "patch": 185,
+      "fibers": 23,
+      "lift_m": 0.003483973598420791,
+      "mean_entry_arc_m": 0.03703149953528194,
+      "max_displacement_m": 0.00431782159353563
+    },
+    {
+      "patch": 186,
+      "fibers": 87,
+      "lift_m": 0.0049591084042018806,
+      "mean_entry_arc_m": 0.038030122097749315,
+      "max_displacement_m": 0.0069043749061096
+    },
+    {
+      "patch": 189,
+      "fibers": 35,
+      "lift_m": 0.004358939514379215,
+      "mean_entry_arc_m": 0.036094332103472015,
+      "max_displacement_m": 0.00570656536670077
+    },
+    {
+      "patch": 190,
+      "fibers": 23,
+      "lift_m": 0.0031048528939209277,
+      "mean_entry_arc_m": 0.04036006608484134,
+      "max_displacement_m": 0.006723234729885227
+    },
+    {
+      "patch": 192,
+      "fibers": 51,
+      "lift_m": 0.003477677487012042,
+      "mean_entry_arc_m": 0.04287816553566326,
+      "max_displacement_m": 0.005417906043475554
+    },
+    {
+      "patch": 196,
+      "fibers": 26,
+      "lift_m": 0.004662870648202219,
+      "mean_entry_arc_m": 0.03853356330508095,
+      "max_displacement_m": 0.0054343953437709595
+    },
+    {
+      "patch": 197,
+      "fibers": 26,
+      "lift_m": 0.004016982548843694,
+      "mean_entry_arc_m": 0.04052898160912273,
+      "max_displacement_m": 0.0060164452121168185
+    },
+    {
+      "patch": 201,
+      "fibers": 25,
+      "lift_m": 0.004157432978607375,
+      "mean_entry_arc_m": 0.03530219239432455,
+      "max_displacement_m": 0.004734056310409273
+    },
+    {
+      "patch": 204,
+      "fibers": 21,
+      "lift_m": 0.00487949230548812,
+      "mean_entry_arc_m": 0.029867244516705478,
+      "max_displacement_m": 0.008234415733274828
+    },
+    {
+      "patch": 205,
+      "fibers": 62,
+      "lift_m": 0.0036729646466233993,
+      "mean_entry_arc_m": 0.029533846886781772,
+      "max_displacement_m": 0.00804179948272921
+    },
+    {
+      "patch": 206,
+      "fibers": 87,
+      "lift_m": 0.0036027989762360537,
+      "mean_entry_arc_m": 0.015879167611990083,
+      "max_displacement_m": 0.005241941960027411
+    },
+    {
+      "patch": 207,
+      "fibers": 32,
+      "lift_m": 0.004912802576630463,
+      "mean_entry_arc_m": 0.01623708578893588,
+      "max_displacement_m": 0.0059596014095690646
+    },
+    {
+      "patch": 209,
+      "fibers": 25,
+      "lift_m": 0.004486639371371496,
+      "mean_entry_arc_m": 0.01748467558544762,
+      "max_displacement_m": 0.006558318312131065
+    },
+    {
+      "patch": 210,
+      "fibers": 130,
+      "lift_m": 0.004231277813052592,
+      "mean_entry_arc_m": 0.018304085825100888,
+      "max_displacement_m": 0.005970200050072866
+    },
+    {
+      "patch": 212,
+      "fibers": 29,
+      "lift_m": 0.004989382165736921,
+      "mean_entry_arc_m": 0.017637190865678318,
+      "max_displacement_m": 0.006395568729994397
+    },
+    {
+      "patch": 213,
+      "fibers": 77,
+      "lift_m": 0.0033686344946457568,
+      "mean_entry_arc_m": 0.017891938758500994,
+      "max_displacement_m": 0.006553899752396898
+    },
+    {
+      "patch": 215,
+      "fibers": 60,
+      "lift_m": 0.004717318826878163,
+      "mean_entry_arc_m": 0.02152297074537339,
+      "max_displacement_m": 0.006788290497286757
+    },
+    {
+      "patch": 219,
+      "fibers": 17,
+      "lift_m": 0.0034150061488421586,
+      "mean_entry_arc_m": 0.01915631058747111,
+      "max_displacement_m": 0.0057253698033057614
+    },
+    {
+      "patch": 220,
+      "fibers": 51,
+      "lift_m": 0.0049792044189735825,
+      "mean_entry_arc_m": 0.023281651212897266,
+      "max_displacement_m": 0.006299175873031919
+    },
+    {
+      "patch": 221,
+      "fibers": 16,
+      "lift_m": 0.003140924427406968,
+      "mean_entry_arc_m": 0.019455941711550857,
+      "max_displacement_m": 0.005184849326393447
+    },
+    {
+      "patch": 222,
+      "fibers": 68,
+      "lift_m": 0.004287706496699392,
+      "mean_entry_arc_m": 0.023366610756635594,
+      "max_displacement_m": 0.009472112318792575
+    },
+    {
+      "patch": 223,
+      "fibers": 16,
+      "lift_m": 0.0044347840285111975,
+      "mean_entry_arc_m": 0.024140703675337483,
+      "max_displacement_m": 0.006509879786866169
+    },
+    {
+      "patch": 224,
+      "fibers": 60,
+      "lift_m": 0.00307110121562046,
+      "mean_entry_arc_m": 0.02313197599994208,
+      "max_displacement_m": 0.007662764837821198
+    },
+    {
+      "patch": 227,
+      "fibers": 62,
+      "lift_m": 0.0037287183198271975,
+      "mean_entry_arc_m": 0.026859181135377337,
+      "max_displacement_m": 0.00799074508486162
+    },
+    {
+      "patch": 230,
+      "fibers": 17,
+      "lift_m": 0.00459878185465328,
+      "mean_entry_arc_m": 0.02750155534827084,
+      "max_displacement_m": 0.006798084539851382
+    },
+    {
+      "patch": 232,
+      "fibers": 12,
+      "lift_m": 0.003254503129733324,
+      "mean_entry_arc_m": 0.025928074826462682,
+      "max_displacement_m": 0.005322156302358456
+    },
+    {
+      "patch": 234,
+      "fibers": 60,
+      "lift_m": 0.0032708676194570605,
+      "mean_entry_arc_m": 0.023807515266041756,
+      "max_displacement_m": 0.005505226434396651
+    },
+    {
+      "patch": 235,
+      "fibers": 62,
+      "lift_m": 0.004075352190123769,
+      "mean_entry_arc_m": 0.021184044848733437,
+      "max_displacement_m": 0.005056556078748595
+    },
+    {
+      "patch": 238,
+      "fibers": 41,
+      "lift_m": 0.004837191354155021,
+      "mean_entry_arc_m": 0.021392409968112792,
+      "max_displacement_m": 0.007227404190243014
+    },
+    {
+      "patch": 239,
+      "fibers": 60,
+      "lift_m": 0.0037521138244518684,
+      "mean_entry_arc_m": 0.030711572361268383,
+      "max_displacement_m": 0.008442230420373613
+    },
+    {
+      "patch": 240,
+      "fibers": 38,
+      "lift_m": 0.0035283756712213028,
+      "mean_entry_arc_m": 0.02896125334550731,
+      "max_displacement_m": 0.005752288706298673
+    },
+    {
+      "patch": 241,
+      "fibers": 91,
+      "lift_m": 0.004943408233547232,
+      "mean_entry_arc_m": 0.030488232984469055,
+      "max_displacement_m": 0.0089403669395187
+    },
+    {
+      "patch": 244,
+      "fibers": 107,
+      "lift_m": 0.004310822139932405,
+      "mean_entry_arc_m": 0.03014448841017825,
+      "max_displacement_m": 0.008579945625771034
+    },
+    {
+      "patch": 246,
+      "fibers": 29,
+      "lift_m": 0.004974002537065127,
+      "mean_entry_arc_m": 0.031987745725045216,
+      "max_displacement_m": 0.005940952709239878
+    },
+    {
+      "patch": 247,
+      "fibers": 89,
+      "lift_m": 0.003434824644028749,
+      "mean_entry_arc_m": 0.030576439137473974,
+      "max_displacement_m": 0.00918281348065887
+    },
+    {
+      "patch": 249,
+      "fibers": 70,
+      "lift_m": 0.00477240144492412,
+      "mean_entry_arc_m": 0.029660396903328713,
+      "max_displacement_m": 0.008074400682964408
+    },
+    {
+      "patch": 250,
+      "fibers": 20,
+      "lift_m": 0.0030014279421545936,
+      "mean_entry_arc_m": 0.031439393737416256,
+      "max_displacement_m": 0.01306314696106256
+    },
+    {
+      "patch": 252,
+      "fibers": 20,
+      "lift_m": 0.003965916418582955,
+      "mean_entry_arc_m": 0.03192415116961557,
+      "max_displacement_m": 0.01359718309883203
+    },
+    {
+      "patch": 253,
+      "fibers": 12,
+      "lift_m": 0.0033500341726949634,
+      "mean_entry_arc_m": 0.03690962549363823,
+      "max_displacement_m": 0.00793525115129525
+    },
+    {
+      "patch": 254,
+      "fibers": 36,
+      "lift_m": 0.004992612525432708,
+      "mean_entry_arc_m": 0.03343948021036038,
+      "max_displacement_m": 0.010297133442727053
+    },
+    {
+      "patch": 258,
+      "fibers": 41,
+      "lift_m": 0.003043693861121237,
+      "mean_entry_arc_m": 0.05001775031106833,
+      "max_displacement_m": 0.008815190177628506
+    },
+    {
+      "patch": 259,
+      "fibers": 18,
+      "lift_m": 0.004902641479227457,
+      "mean_entry_arc_m": 0.041633164614261774,
+      "max_displacement_m": 0.005141206319616868
+    },
+    {
+      "patch": 264,
+      "fibers": 12,
+      "lift_m": 0.004530603416423916,
+      "mean_entry_arc_m": 0.040799618227401954,
+      "max_displacement_m": 0.005032930534048657
+    },
+    {
+      "patch": 268,
+      "fibers": 24,
+      "lift_m": 0.0033298682017994076,
+      "mean_entry_arc_m": 0.03670884582197012,
+      "max_displacement_m": 0.0045051422426129325
+    },
+    {
+      "patch": 269,
+      "fibers": 21,
+      "lift_m": 0.003992756750634783,
+      "mean_entry_arc_m": 0.038534424183135414,
+      "max_displacement_m": 0.005374119129862974
+    },
+    {
+      "patch": 273,
+      "fibers": 27,
+      "lift_m": 0.003832956050209918,
+      "mean_entry_arc_m": 0.015945820725857127,
+      "max_displacement_m": 0.005505606792907982
+    },
+    {
+      "patch": 274,
+      "fibers": 18,
+      "lift_m": 0.003457173532500052,
+      "mean_entry_arc_m": 0.01699827847994739,
+      "max_displacement_m": 0.005481467031760133
+    },
+    {
+      "patch": 275,
+      "fibers": 53,
+      "lift_m": 0.004967570467982398,
+      "mean_entry_arc_m": 0.017437097480152458,
+      "max_displacement_m": 0.0063589087152979805
+    },
+    {
+      "patch": 276,
+      "fibers": 98,
+      "lift_m": 0.003115914066918354,
+      "mean_entry_arc_m": 0.018575353837378114,
+      "max_displacement_m": 0.004857454477020733
+    },
+    {
+      "patch": 277,
+      "fibers": 268,
+      "lift_m": 0.0043362241628360386,
+      "mean_entry_arc_m": 0.017646500481827643,
+      "max_displacement_m": 0.006544941665076347
+    },
+    {
+      "patch": 278,
+      "fibers": 198,
+      "lift_m": 0.0043882435699653935,
+      "mean_entry_arc_m": 0.01781110270947569,
+      "max_displacement_m": 0.005664562116543652
+    },
+    {
+      "patch": 281,
+      "fibers": 79,
+      "lift_m": 0.0035048749076924297,
+      "mean_entry_arc_m": 0.01805748306513341,
+      "max_displacement_m": 0.004933103843139504
+    },
+    {
+      "patch": 282,
+      "fibers": 627,
+      "lift_m": 0.003778208985353278,
+      "mean_entry_arc_m": 0.021419887474875873,
+      "max_displacement_m": 0.0063721139703764714
+    },
+    {
+      "patch": 283,
+      "fibers": 120,
+      "lift_m": 0.004822208606748632,
+      "mean_entry_arc_m": 0.019162307143495025,
+      "max_displacement_m": 0.00704582862022255
+    },
+    {
+      "patch": 284,
+      "fibers": 441,
+      "lift_m": 0.0030092491940174326,
+      "mean_entry_arc_m": 0.022992917170074408,
+      "max_displacement_m": 0.005331458633813762
+    },
+    {
+      "patch": 285,
+      "fibers": 118,
+      "lift_m": 0.0046388887062880696,
+      "mean_entry_arc_m": 0.01921423118343679,
+      "max_displacement_m": 0.006954420239620925
+    },
+    {
+      "patch": 286,
+      "fibers": 20,
+      "lift_m": 0.004048557707122372,
+      "mean_entry_arc_m": 0.023324844671568593,
+      "max_displacement_m": 0.005145474663691373
+    },
+    {
+      "patch": 287,
+      "fibers": 68,
+      "lift_m": 0.0032895014247365756,
+      "mean_entry_arc_m": 0.019473451935014752,
+      "max_displacement_m": 0.005643978190659949
+    },
+    {
+      "patch": 288,
+      "fibers": 29,
+      "lift_m": 0.0049992411470045515,
+      "mean_entry_arc_m": 0.023356484510311217,
+      "max_displacement_m": 0.007144501951097947
+    },
+    {
+      "patch": 289,
+      "fibers": 206,
+      "lift_m": 0.0032368802383940035,
+      "mean_entry_arc_m": 0.01946824194612142,
+      "max_displacement_m": 0.005504939845296083
+    },
+    {
+      "patch": 290,
+      "fibers": 547,
+      "lift_m": 0.004126160141063948,
+      "mean_entry_arc_m": 0.02347197857820214,
+      "max_displacement_m": 0.00799218123730229
+    },
+    {
+      "patch": 291,
+      "fibers": 330,
+      "lift_m": 0.004577066677411887,
+      "mean_entry_arc_m": 0.024123600449564304,
+      "max_displacement_m": 0.007369589939868154
+    },
+    {
+      "patch": 292,
+      "fibers": 435,
+      "lift_m": 0.0030228180210347677,
+      "mean_entry_arc_m": 0.02305623458455624,
+      "max_displacement_m": 0.008253174589121493
+    },
+    {
+      "patch": 293,
+      "fibers": 153,
+      "lift_m": 0.004864020178326828,
+      "mean_entry_arc_m": 0.024216502137947654,
+      "max_displacement_m": 0.00740002866462331
+    },
+    {
+      "patch": 294,
+      "fibers": 562,
+      "lift_m": 0.003702979068061946,
+      "mean_entry_arc_m": 0.02681430660547679,
+      "max_displacement_m": 0.007384619367734897
+    },
+    {
+      "patch": 295,
+      "fibers": 39,
+      "lift_m": 0.003574007712188021,
+      "mean_entry_arc_m": 0.03960369421559969,
+      "max_displacement_m": 0.0069438609261692225
+    },
+    {
+      "patch": 296,
+      "fibers": 44,
+      "lift_m": 0.004925247710395474,
+      "mean_entry_arc_m": 0.026974390256716142,
+      "max_displacement_m": 0.005661595456228814
+    },
+    {
+      "patch": 298,
+      "fibers": 370,
+      "lift_m": 0.004458800988217983,
+      "mean_entry_arc_m": 0.03889623055037825,
+      "max_displacement_m": 0.009304421479818253
+    },
+    {
+      "patch": 299,
+      "fibers": 324,
+      "lift_m": 0.004261894159852751,
+      "mean_entry_arc_m": 0.025470693068977885,
+      "max_displacement_m": 0.005635844727150127
+    },
+    {
+      "patch": 302,
+      "fibers": 466,
+      "lift_m": 0.003393445744720101,
+      "mean_entry_arc_m": 0.03840937496391621,
+      "max_displacement_m": 0.011232925075382564
+    },
+    {
+      "patch": 303,
+      "fibers": 239,
+      "lift_m": 0.0039102107821108985,
+      "mean_entry_arc_m": 0.021919433233306834,
+      "max_displacement_m": 0.0059568674201257495
+    },
+    {
+      "patch": 304,
+      "fibers": 13,
+      "lift_m": 0.004738969777129926,
+      "mean_entry_arc_m": 0.021535309973196137,
+      "max_displacement_m": 0.006097454505156234
+    },
+    {
+      "patch": 306,
+      "fibers": 417,
+      "lift_m": 0.004735763515448884,
+      "mean_entry_arc_m": 0.03725603774106158,
+      "max_displacement_m": 0.009841705453555208
+    },
+    {
+      "patch": 307,
+      "fibers": 175,
+      "lift_m": 0.003914939176272959,
+      "mean_entry_arc_m": 0.02079807406531109,
+      "max_displacement_m": 0.006448067922231175
+    },
+    {
+      "patch": 309,
+      "fibers": 448,
+      "lift_m": 0.004985124253302731,
+      "mean_entry_arc_m": 0.03577951233833869,
+      "max_displacement_m": 0.009090826098504213
+    },
+    {
+      "patch": 310,
+      "fibers": 219,
+      "lift_m": 0.0031575215084192086,
+      "mean_entry_arc_m": 0.03005058215084403,
+      "max_displacement_m": 0.009277877009984774
+    },
+    {
+      "patch": 311,
+      "fibers": 431,
+      "lift_m": 0.004257310325510643,
+      "mean_entry_arc_m": 0.034030568609490275,
+      "max_displacement_m": 0.01106183256929907
+    },
+    {
+      "patch": 312,
+      "fibers": 232,
+      "lift_m": 0.00446301331935994,
+      "mean_entry_arc_m": 0.030798062033043253,
+      "max_displacement_m": 0.010210307069199087
+    },
+    {
+      "patch": 313,
+      "fibers": 538,
+      "lift_m": 0.0030598665945262534,
+      "mean_entry_arc_m": 0.03204028550450033,
+      "max_displacement_m": 0.013135447869827219
+    },
+    {
+      "patch": 314,
+      "fibers": 254,
+      "lift_m": 0.004923436617737506,
+      "mean_entry_arc_m": 0.030326262715231013,
+      "max_displacement_m": 0.011066629575683036
+    },
+    {
+      "patch": 315,
+      "fibers": 43,
+      "lift_m": 0.003578306846475571,
+      "mean_entry_arc_m": 0.026392280743422137,
+      "max_displacement_m": 0.005108314518941869
+    },
+    {
+      "patch": 316,
+      "fibers": 464,
+      "lift_m": 0.0036984500664015508,
+      "mean_entry_arc_m": 0.025453503089541002,
+      "max_displacement_m": 0.011589288442402576
+    },
+    {
+      "patch": 317,
+      "fibers": 136,
+      "lift_m": 0.004866400132379942,
+      "mean_entry_arc_m": 0.029528852711989684,
+      "max_displacement_m": 0.010990215197921557
+    },
+    {
+      "patch": 318,
+      "fibers": 203,
+      "lift_m": 0.003023837215333758,
+      "mean_entry_arc_m": 0.031495864524945856,
+      "max_displacement_m": 0.009715011708791224
+    },
+    {
+      "patch": 319,
+      "fibers": 123,
+      "lift_m": 0.0045731836793615095,
+      "mean_entry_arc_m": 0.026637543075514476,
+      "max_displacement_m": 0.010002671236136585
+    },
+    {
+      "patch": 320,
+      "fibers": 55,
+      "lift_m": 0.004130867349391809,
+      "mean_entry_arc_m": 0.02245551832297438,
+      "max_displacement_m": 0.010711598764274728
+    },
+    {
+      "patch": 321,
+      "fibers": 165,
+      "lift_m": 0.0032338213400581865,
+      "mean_entry_arc_m": 0.027161043889453545,
+      "max_displacement_m": 0.00765155226378036
+    },
+    {
+      "patch": 322,
+      "fibers": 263,
+      "lift_m": 0.0049990450105955155,
+      "mean_entry_arc_m": 0.030780982899441953,
+      "max_displacement_m": 0.017841341117258363
+    },
+    {
+      "patch": 323,
+      "fibers": 28,
+      "lift_m": 0.0032928495727793557,
+      "mean_entry_arc_m": 0.02702347599352179,
+      "max_displacement_m": 0.008865278162411405
+    },
+    {
+      "patch": 324,
+      "fibers": 29,
+      "lift_m": 0.004043816204238647,
+      "mean_entry_arc_m": 0.04482854490559345,
+      "max_displacement_m": 0.011230295408121824
+    },
+    {
+      "patch": 325,
+      "fibers": 156,
+      "lift_m": 0.004642533030097277,
+      "mean_entry_arc_m": 0.04229673198487661,
+      "max_displacement_m": 0.017958511187452543
+    },
+    {
+      "patch": 326,
+      "fibers": 13,
+      "lift_m": 0.003008616276115123,
+      "mean_entry_arc_m": 0.03645908052635853,
+      "max_displacement_m": 0.01053085860289229
+    },
+    {
+      "patch": 327,
+      "fibers": 89,
+      "lift_m": 0.004819497670670098,
+      "mean_entry_arc_m": 0.045545495680155174,
+      "max_displacement_m": 0.010950917829208168
+    },
+    {
+      "patch": 329,
+      "fibers": 51,
+      "lift_m": 0.003500756575262148,
+      "mean_entry_arc_m": 0.046298700689758276,
+      "max_displacement_m": 0.009943514760281477
+    },
+    {
+      "patch": 331,
+      "fibers": 46,
+      "lift_m": 0.0030932093498996604,
+      "mean_entry_arc_m": 0.04552965370049336,
+      "max_displacement_m": 0.010270183090051378
+    },
+    {
+      "patch": 333,
+      "fibers": 31,
+      "lift_m": 0.004340690595307395,
+      "mean_entry_arc_m": 0.037936679242155436,
+      "max_displacement_m": 0.0070520285262679816
+    },
+    {
+      "patch": 334,
+      "fibers": 23,
+      "lift_m": 0.0031137058452924203,
+      "mean_entry_arc_m": 0.042878550074754246,
+      "max_displacement_m": 0.006989350003161263
+    },
+    {
+      "patch": 336,
+      "fibers": 35,
+      "lift_m": 0.003461166017358123,
+      "mean_entry_arc_m": 0.04418160990786714,
+      "max_displacement_m": 0.008034903536100858
+    },
+    {
+      "patch": 338,
+      "fibers": 15,
+      "lift_m": 0.004792078745084969,
+      "mean_entry_arc_m": 0.033916314704304465,
+      "max_displacement_m": 0.007084932417396662
+    },
+    {
+      "patch": 340,
+      "fibers": 38,
+      "lift_m": 0.004677329374219999,
+      "mean_entry_arc_m": 0.034715328322844685,
+      "max_displacement_m": 0.00818733392709708
+    },
+    {
+      "patch": 341,
+      "fibers": 64,
+      "lift_m": 0.00399750326273513,
+      "mean_entry_arc_m": 0.038693372462676665,
+      "max_displacement_m": 0.0075535327242133715
+    },
+    {
+      "patch": 343,
+      "fibers": 20,
+      "lift_m": 0.0049959496981918875,
+      "mean_entry_arc_m": 0.04179900578686514,
+      "max_displacement_m": 0.005507029581160438
+    },
+    {
+      "patch": 348,
+      "fibers": 15,
+      "lift_m": 0.004888595689322333,
+      "mean_entry_arc_m": 0.015596510392852944,
+      "max_displacement_m": 0.0068741904221352014
+    },
+    {
+      "patch": 350,
+      "fibers": 33,
+      "lift_m": 0.003620750715675301,
+      "mean_entry_arc_m": 0.016217812435507302,
+      "max_displacement_m": 0.006806909426215248
+    },
+    {
+      "patch": 354,
+      "fibers": 14,
+      "lift_m": 0.004212283175398899,
+      "mean_entry_arc_m": 0.017630897356618682,
+      "max_displacement_m": 0.006757047713821895
+    },
+    {
+      "patch": 356,
+      "fibers": 14,
+      "lift_m": 0.004992025455805682,
+      "mean_entry_arc_m": 0.018346550889611644,
+      "max_displacement_m": 0.007948028208416611
+    },
+    {
+      "patch": 359,
+      "fibers": 19,
+      "lift_m": 0.004703610920159525,
+      "mean_entry_arc_m": 0.022057388356076457,
+      "max_displacement_m": 0.007655770622321835
+    },
+    {
+      "patch": 360,
+      "fibers": 17,
+      "lift_m": 0.003001185623440803,
+      "mean_entry_arc_m": 0.023062518300490296,
+      "max_displacement_m": 0.006123733088993753
+    },
+    {
+      "patch": 362,
+      "fibers": 25,
+      "lift_m": 0.0038641837675262285,
+      "mean_entry_arc_m": 0.023444596613189986,
+      "max_displacement_m": 0.006656759273538439
+    },
+    {
+      "patch": 365,
+      "fibers": 15,
+      "lift_m": 0.003131117183696696,
+      "mean_entry_arc_m": 0.03792670556098931,
+      "max_displacement_m": 0.0038425507086362687
+    },
+    {
+      "patch": 367,
+      "fibers": 17,
+      "lift_m": 0.004417160134130223,
+      "mean_entry_arc_m": 0.03663769022904593,
+      "max_displacement_m": 0.005876383706210953
+    },
+    {
+      "patch": 368,
+      "fibers": 13,
+      "lift_m": 0.003078491139871705,
+      "mean_entry_arc_m": 0.03701992726659617,
+      "max_displacement_m": 0.004525335137567988
+    },
+    {
+      "patch": 369,
+      "fibers": 19,
+      "lift_m": 0.004941823488535267,
+      "mean_entry_arc_m": 0.03592226167486905,
+      "max_displacement_m": 0.00578424498519633
+    },
+    {
+      "patch": 371,
+      "fibers": 20,
+      "lift_m": 0.003747518205809541,
+      "mean_entry_arc_m": 0.03456538141493434,
+      "max_displacement_m": 0.004231023726069492
+    },
+    {
+      "patch": 373,
+      "fibers": 24,
+      "lift_m": 0.003014029934915721,
+      "mean_entry_arc_m": 0.033125455353602576,
+      "max_displacement_m": 0.004398784025635274
+    },
+    {
+      "patch": 374,
+      "fibers": 31,
+      "lift_m": 0.0046142691133940076,
+      "mean_entry_arc_m": 0.032928487820964206,
+      "max_displacement_m": 0.006584607446844855
+    },
+    {
+      "patch": 376,
+      "fibers": 22,
+      "lift_m": 0.0032676274204984524,
+      "mean_entry_arc_m": 0.03668733426337398,
+      "max_displacement_m": 0.0055448897031202
+    },
+    {
+      "patch": 377,
+      "fibers": 14,
+      "lift_m": 0.004999972865501037,
+      "mean_entry_arc_m": 0.038268444395465694,
+      "max_displacement_m": 0.005989916891707856
+    },
+    {
+      "patch": 379,
+      "fibers": 17,
+      "lift_m": 0.004094761387790928,
+      "mean_entry_arc_m": 0.04217684640344676,
+      "max_displacement_m": 0.005089702635925717
+    },
+    {
+      "patch": 381,
+      "fibers": 12,
+      "lift_m": 0.0030165962137603526,
+      "mean_entry_arc_m": 0.04179566302936563,
+      "max_displacement_m": 0.008198467406150286
+    },
+    {
+      "patch": 384,
+      "fibers": 19,
+      "lift_m": 0.0035456416151481117,
+      "mean_entry_arc_m": 0.04666127904701876,
+      "max_displacement_m": 0.006327945345792526
+    },
+    {
+      "patch": 387,
+      "fibers": 13,
+      "lift_m": 0.004430504692916608,
+      "mean_entry_arc_m": 0.03899734136394349,
+      "max_displacement_m": 0.004929769954001612
+    },
+    {
+      "patch": 393,
+      "fibers": 13,
+      "lift_m": 0.004759883189219087,
+      "mean_entry_arc_m": 0.03527856483792194,
+      "max_displacement_m": 0.004998800132336428
+    },
+    {
+      "patch": 398,
+      "fibers": 13,
+      "lift_m": 0.004990060871870961,
+      "mean_entry_arc_m": 0.017515439874311194,
+      "max_displacement_m": 0.005985253981535902
+    },
+    {
+      "patch": 404,
+      "fibers": 17,
+      "lift_m": 0.0036071595143688847,
+      "mean_entry_arc_m": 0.01809374961922335,
+      "max_displacement_m": 0.005185547627195449
+    },
+    {
+      "patch": 405,
+      "fibers": 30,
+      "lift_m": 0.0036684827787132907,
+      "mean_entry_arc_m": 0.02106523797669756,
+      "max_displacement_m": 0.006588262372674188
+    },
+    {
+      "patch": 407,
+      "fibers": 38,
+      "lift_m": 0.0030311802411431025,
+      "mean_entry_arc_m": 0.020898908598256848,
+      "max_displacement_m": 0.0076304475625600405
+    },
+    {
+      "patch": 409,
+      "fibers": 15,
+      "lift_m": 0.004162118569064179,
+      "mean_entry_arc_m": 0.02019833112158556,
+      "max_displacement_m": 0.007319370224733351
+    },
+    {
+      "patch": 410,
+      "fibers": 18,
+      "lift_m": 0.0032139042447163163,
+      "mean_entry_arc_m": 0.02016879102253466,
+      "max_displacement_m": 0.007038401316712201
+    },
+    {
+      "patch": 411,
+      "fibers": 33,
+      "lift_m": 0.004997166277235218,
+      "mean_entry_arc_m": 0.020445588885735187,
+      "max_displacement_m": 0.008462155217904997
+    },
+    {
+      "patch": 414,
+      "fibers": 36,
+      "lift_m": 0.004666417087806423,
+      "mean_entry_arc_m": 0.022806350473504867,
+      "max_displacement_m": 0.008846525900527083
+    },
+    {
+      "patch": 418,
+      "fibers": 15,
+      "lift_m": 0.0034736357555376885,
+      "mean_entry_arc_m": 0.023199337334911366,
+      "max_displacement_m": 0.008231549207936414
+    },
+    {
+      "patch": 421,
+      "fibers": 17,
+      "lift_m": 0.0043545052224436415,
+      "mean_entry_arc_m": 0.023173185583587455,
+      "max_displacement_m": 0.007884093682129643
+    },
+    {
+      "patch": 423,
+      "fibers": 25,
+      "lift_m": 0.0030995189254524277,
+      "mean_entry_arc_m": 0.042178650617904496,
+      "max_displacement_m": 0.003910703276255873
+    },
+    {
+      "patch": 424,
+      "fibers": 17,
+      "lift_m": 0.004957754139756561,
+      "mean_entry_arc_m": 0.039151276478757796,
+      "max_displacement_m": 0.005589495325911488
+    },
+    {
+      "patch": 426,
+      "fibers": 32,
+      "lift_m": 0.003797244802702438,
+      "mean_entry_arc_m": 0.03948751758729707,
+      "max_displacement_m": 0.004753600833500773
+    },
+    {
+      "patch": 427,
+      "fibers": 22,
+      "lift_m": 0.004810965501003931,
+      "mean_entry_arc_m": 0.035841019933914336,
+      "max_displacement_m": 0.006868316499656701
+    },
+    {
+      "patch": 428,
+      "fibers": 21,
+      "lift_m": 0.0030067940057170468,
+      "mean_entry_arc_m": 0.035954281787882764,
+      "max_displacement_m": 0.005288781779777518
+    },
+    {
+      "patch": 429,
+      "fibers": 28,
+      "lift_m": 0.0046537525701559205,
+      "mean_entry_arc_m": 0.03388067422524822,
+      "max_displacement_m": 0.006363520811028967
+    },
+    {
+      "patch": 430,
+      "fibers": 22,
+      "lift_m": 0.0040290925987877275,
+      "mean_entry_arc_m": 0.03439920679097788,
+      "max_displacement_m": 0.006576161201490942
+    },
+    {
+      "patch": 431,
+      "fibers": 35,
+      "lift_m": 0.0033033434850164205,
+      "mean_entry_arc_m": 0.03224685228597492,
+      "max_displacement_m": 0.0048157024458302285
+    },
+    {
+      "patch": 432,
+      "fibers": 15,
+      "lift_m": 0.004998292850717516,
+      "mean_entry_arc_m": 0.03301348824366618,
+      "max_displacement_m": 0.0065018438579584545
+    },
+    {
+      "patch": 434,
+      "fibers": 33,
+      "lift_m": 0.0041454594392863805,
+      "mean_entry_arc_m": 0.03903142945716828,
+      "max_displacement_m": 0.005640206913758025
+    },
+    {
+      "patch": 436,
+      "fibers": 12,
+      "lift_m": 0.0030271408099225706,
+      "mean_entry_arc_m": 0.03794678052331488,
+      "max_displacement_m": 0.00470999039541081
+    },
+    {
+      "patch": 437,
+      "fibers": 38,
+      "lift_m": 0.0048736630252143335,
+      "mean_entry_arc_m": 0.03830516180332883,
+      "max_displacement_m": 0.005719240648841257
+    },
+    {
+      "patch": 439,
+      "fibers": 32,
+      "lift_m": 0.0035917115946466354,
+      "mean_entry_arc_m": 0.04002069105323787,
+      "max_displacement_m": 0.005312573516590397
+    },
+    {
+      "patch": 440,
+      "fibers": 28,
+      "lift_m": 0.004917682588274781,
+      "mean_entry_arc_m": 0.03967170284808513,
+      "max_displacement_m": 0.006076329572822845
+    },
+    {
+      "patch": 442,
+      "fibers": 35,
+      "lift_m": 0.004476021678852091,
+      "mean_entry_arc_m": 0.04038386988172795,
+      "max_displacement_m": 0.008077412232797555
+    },
+    {
+      "patch": 445,
+      "fibers": 19,
+      "lift_m": 0.004987549102226424,
+      "mean_entry_arc_m": 0.04290906447339159,
+      "max_displacement_m": 0.007758541040565655
+    },
+    {
+      "patch": 446,
+      "fibers": 12,
+      "lift_m": 0.003378074302896851,
+      "mean_entry_arc_m": 0.04316748582685874,
+      "max_displacement_m": 0.006037701676883313
+    },
+    {
+      "patch": 447,
+      "fibers": 24,
+      "lift_m": 0.003929628011795493,
+      "mean_entry_arc_m": 0.04108732762044926,
+      "max_displacement_m": 0.00615352796594915
+    },
+    {
+      "patch": 450,
+      "fibers": 21,
+      "lift_m": 0.0047488157618397085,
+      "mean_entry_arc_m": 0.03955151451256089,
+      "max_displacement_m": 0.005274731102322173
+    },
+    {
+      "patch": 451,
+      "fibers": 18,
+      "lift_m": 0.003895547037956686,
+      "mean_entry_arc_m": 0.04000806656057595,
+      "max_displacement_m": 0.005187812298269137
+    },
+    {
+      "patch": 452,
+      "fibers": 15,
+      "lift_m": 0.0034052249326100574,
+      "mean_entry_arc_m": 0.039431317697858695,
+      "max_displacement_m": 0.005151681421313381
+    },
+    {
+      "patch": 455,
+      "fibers": 17,
+      "lift_m": 0.004276084502251937,
+      "mean_entry_arc_m": 0.03405175774133232,
+      "max_displacement_m": 0.005520583837444514
+    },
+    {
+      "patch": 456,
+      "fibers": 15,
+      "lift_m": 0.0044456603463300815,
+      "mean_entry_arc_m": 0.03572169240138682,
+      "max_displacement_m": 0.006053105067495965
+    },
+    {
+      "patch": 458,
+      "fibers": 22,
+      "lift_m": 0.004930736449560524,
+      "mean_entry_arc_m": 0.03703209716040271,
+      "max_displacement_m": 0.005220881278994243
+    },
+    {
+      "patch": 462,
+      "fibers": 22,
+      "lift_m": 0.0030197947357480707,
+      "mean_entry_arc_m": 0.03310573752193069,
+      "max_displacement_m": 0.004973706989467889
+    },
+    {
+      "patch": 466,
+      "fibers": 12,
+      "lift_m": 0.004999706548390787,
+      "mean_entry_arc_m": 0.042701870743296996,
+      "max_displacement_m": 0.004919226649827062
+    },
+    {
+      "patch": 468,
+      "fibers": 21,
+      "lift_m": 0.004063268056712428,
+      "mean_entry_arc_m": 0.0422865062914825,
+      "max_displacement_m": 0.0046931495792031375
+    },
+    {
+      "patch": 469,
+      "fibers": 16,
+      "lift_m": 0.0046274852793707485,
+      "mean_entry_arc_m": 0.041100201065237416,
+      "max_displacement_m": 0.0057425055645371065
+    },
+    {
+      "patch": 471,
+      "fibers": 23,
+      "lift_m": 0.0048305051879260815,
+      "mean_entry_arc_m": 0.03891673130510639,
+      "max_displacement_m": 0.006777236768049202
+    },
+    {
+      "patch": 475,
+      "fibers": 15,
+      "lift_m": 0.003085169469519007,
+      "mean_entry_arc_m": 0.033622091660531706,
+      "max_displacement_m": 0.0054803083877233
+    },
+    {
+      "patch": 476,
+      "fibers": 15,
+      "lift_m": 0.004401778726943834,
+      "mean_entry_arc_m": 0.02163834470184344,
+      "max_displacement_m": 0.008273544272149238
+    },
+    {
+      "patch": 481,
+      "fibers": 30,
+      "lift_m": 0.0038475001730768886,
+      "mean_entry_arc_m": 0.02328959927009669,
+      "max_displacement_m": 0.006788591516685612
+    },
+    {
+      "patch": 484,
+      "fibers": 23,
+      "lift_m": 0.004691531079143087,
+      "mean_entry_arc_m": 0.02322195627005686,
+      "max_displacement_m": 0.008599255881714455
+    },
+    {
+      "patch": 491,
+      "fibers": 26,
+      "lift_m": 0.0030402225649228116,
+      "mean_entry_arc_m": 0.04134506798932878,
+      "max_displacement_m": 0.004439699706642467
+    },
+    {
+      "patch": 492,
+      "fibers": 16,
+      "lift_m": 0.004897361884418608,
+      "mean_entry_arc_m": 0.04227299571288831,
+      "max_displacement_m": 0.0048288459983603545
+    },
+    {
+      "patch": 494,
+      "fibers": 45,
+      "lift_m": 0.0036388463659944607,
+      "mean_entry_arc_m": 0.035650839588952266,
+      "max_displacement_m": 0.006291690050237141
+    },
+    {
+      "patch": 495,
+      "fibers": 20,
+      "lift_m": 0.004896202526060501,
+      "mean_entry_arc_m": 0.04022552634905306,
+      "max_displacement_m": 0.007149397506566673
+    },
+    {
+      "patch": 497,
+      "fibers": 41,
+      "lift_m": 0.0045202972285942195,
+      "mean_entry_arc_m": 0.029753063637259464,
+      "max_displacement_m": 0.005650773983116095
+    },
+    {
+      "patch": 498,
+      "fibers": 15,
+      "lift_m": 0.004193207984241737,
+      "mean_entry_arc_m": 0.03647036836546984,
+      "max_displacement_m": 0.006161288600447082
+    },
+    {
+      "patch": 499,
+      "fibers": 13,
+      "lift_m": 0.003194771722217585,
+      "mean_entry_arc_m": 0.026678618905756863,
+      "max_displacement_m": 0.00510512810947428
+    },
+    {
+      "patch": 500,
+      "fibers": 27,
+      "lift_m": 0.004994292309419219,
+      "mean_entry_arc_m": 0.02942613835582741,
+      "max_displacement_m": 0.005915934675079334
+    },
+    {
+      "patch": 501,
+      "fibers": 15,
+      "lift_m": 0.0033389081770133448,
+      "mean_entry_arc_m": 0.0343650434234809,
+      "max_displacement_m": 0.005034825726722324
+    },
+    {
+      "patch": 502,
+      "fibers": 36,
+      "lift_m": 0.00398064455704992,
+      "mean_entry_arc_m": 0.029475515753477923,
+      "max_displacement_m": 0.008525336306394174
+    },
+    {
+      "patch": 503,
+      "fibers": 37,
+      "lift_m": 0.0046896360194851406,
+      "mean_entry_arc_m": 0.03227529384768561,
+      "max_displacement_m": 0.006576337762812575
+    },
+    {
+      "patch": 506,
+      "fibers": 36,
+      "lift_m": 0.003844911153328642,
+      "mean_entry_arc_m": 0.04534695098589967,
+      "max_displacement_m": 0.005805576897599917
+    },
+    {
+      "patch": 507,
+      "fibers": 32,
+      "lift_m": 0.0034470402803264666,
+      "mean_entry_arc_m": 0.04042082724995115,
+      "max_displacement_m": 0.006144677194223865
+    },
+    {
+      "patch": 509,
+      "fibers": 33,
+      "lift_m": 0.003121639648428287,
+      "mean_entry_arc_m": 0.04255805150836477,
+      "max_displacement_m": 0.006799632197423439
+    },
+    {
+      "patch": 510,
+      "fibers": 39,
+      "lift_m": 0.004324791650075081,
+      "mean_entry_arc_m": 0.04324871795245527,
+      "max_displacement_m": 0.0064949835381639875
+    },
+    {
+      "patch": 511,
+      "fibers": 20,
+      "lift_m": 0.004399377943123762,
+      "mean_entry_arc_m": 0.041526118340271714,
+      "max_displacement_m": 0.006063264679623643
+    },
+    {
+      "patch": 512,
+      "fibers": 19,
+      "lift_m": 0.003086230742174841,
+      "mean_entry_arc_m": 0.039575682022648134,
+      "max_displacement_m": 0.004174486016722663
+    },
+    {
+      "patch": 513,
+      "fibers": 34,
+      "lift_m": 0.004948191798209815,
+      "mean_entry_arc_m": 0.041002635100024026,
+      "max_displacement_m": 0.00641826927481906
+    },
+    {
+      "patch": 514,
+      "fibers": 34,
+      "lift_m": 0.0035154353072070444,
+      "mean_entry_arc_m": 0.041324585191980324,
+      "max_displacement_m": 0.00733637213394528
+    },
+    {
+      "patch": 518,
+      "fibers": 27,
+      "lift_m": 0.004629523280043864,
+      "mean_entry_arc_m": 0.03878089849977378,
+      "max_displacement_m": 0.004845620821071406
+    },
+    {
+      "patch": 520,
+      "fibers": 28,
+      "lift_m": 0.0032810296191905157,
+      "mean_entry_arc_m": 0.04139354503914101,
+      "max_displacement_m": 0.004348809250676424
+    },
+    {
+      "patch": 522,
+      "fibers": 16,
+      "lift_m": 0.0032447643649142015,
+      "mean_entry_arc_m": 0.04170783411873983,
+      "max_displacement_m": 0.005441405383065385
+    },
+    {
+      "patch": 524,
+      "fibers": 25,
+      "lift_m": 0.004586917026690503,
+      "mean_entry_arc_m": 0.03666431506885982,
+      "max_displacement_m": 0.006289384104253707
+    },
+    {
+      "patch": 527,
+      "fibers": 24,
+      "lift_m": 0.0037145672520357293,
+      "mean_entry_arc_m": 0.04365076051830343,
+      "max_displacement_m": 0.004072397053132515
+    },
+    {
+      "patch": 530,
+      "fibers": 12,
+      "lift_m": 0.0030657459089663617,
+      "mean_entry_arc_m": 0.03378015512856118,
+      "max_displacement_m": 0.005921744735598309
+    },
+    {
+      "patch": 532,
+      "fibers": 23,
+      "lift_m": 0.004273565202214269,
+      "mean_entry_arc_m": 0.0354743597422212,
+      "max_displacement_m": 0.0055463910925421704
+    },
+    {
+      "patch": 542,
+      "fibers": 25,
+      "lift_m": 0.004987133527339906,
+      "mean_entry_arc_m": 0.04220799655393334,
+      "max_displacement_m": 0.009499758538571662
+    },
+    {
+      "patch": 543,
+      "fibers": 15,
+      "lift_m": 0.003164108976629563,
+      "mean_entry_arc_m": 0.04035135120606944,
+      "max_displacement_m": 0.004749993884810812
+    },
+    {
+      "patch": 544,
+      "fibers": 12,
+      "lift_m": 0.00424558626543064,
+      "mean_entry_arc_m": 0.04133870005091186,
+      "max_displacement_m": 0.007328598257691021
+    },
+    {
+      "patch": 545,
+      "fibers": 31,
+      "lift_m": 0.004473715761566248,
+      "mean_entry_arc_m": 0.04232493743932121,
+      "max_displacement_m": 0.007762181405898374
+    },
+    {
+      "patch": 546,
+      "fibers": 28,
+      "lift_m": 0.003055807362322943,
+      "mean_entry_arc_m": 0.04210603258876405,
+      "max_displacement_m": 0.004573277336079939
+    },
+    {
+      "patch": 548,
+      "fibers": 34,
+      "lift_m": 0.0035893211476369447,
+      "mean_entry_arc_m": 0.04014999457719498,
+      "max_displacement_m": 0.006415105766114291
+    },
+    {
+      "patch": 549,
+      "fibers": 52,
+      "lift_m": 0.0036869230045145905,
+      "mean_entry_arc_m": 0.03769794767799392,
+      "max_displacement_m": 0.007519865895604116
+    },
+    {
+      "patch": 550,
+      "fibers": 31,
+      "lift_m": 0.0048723852210233514,
+      "mean_entry_arc_m": 0.03943366529721758,
+      "max_displacement_m": 0.006247456024337666
+    },
+    {
+      "patch": 551,
+      "fibers": 16,
+      "lift_m": 0.003026537842881947,
+      "mean_entry_arc_m": 0.03990119931170209,
+      "max_displacement_m": 0.004810514173783811
+    },
+    {
+      "patch": 553,
+      "fibers": 38,
+      "lift_m": 0.0041428666174479194,
+      "mean_entry_arc_m": 0.0338488039104734,
+      "max_displacement_m": 0.006777794056040198
+    },
+    {
+      "patch": 554,
+      "fibers": 35,
+      "lift_m": 0.0032260933753495897,
+      "mean_entry_arc_m": 0.034439605368868115,
+      "max_displacement_m": 0.006108574766666341
+    },
+    {
+      "patch": 556,
+      "fibers": 24,
+      "lift_m": 0.0033014661392389466,
+      "mean_entry_arc_m": 0.035410113580662206,
+      "max_displacement_m": 0.005508264238969856
+    },
+    {
+      "patch": 557,
+      "fibers": 23,
+      "lift_m": 0.004031711580147025,
+      "mean_entry_arc_m": 0.03206588848339322,
+      "max_displacement_m": 0.004560132619223458
+    },
+    {
+      "patch": 558,
+      "fibers": 30,
+      "lift_m": 0.004651767606052818,
+      "mean_entry_arc_m": 0.03208628905986672,
+      "max_displacement_m": 0.007390751561339134
+    },
+    {
+      "patch": 559,
+      "fibers": 33,
+      "lift_m": 0.003007102325248903,
+      "mean_entry_arc_m": 0.03197117221686423,
+      "max_displacement_m": 0.005277753071119713
+    },
+    {
+      "patch": 560,
+      "fibers": 14,
+      "lift_m": 0.004812495774747962,
+      "mean_entry_arc_m": 0.028491473601112653,
+      "max_displacement_m": 0.006017366755335781
+    },
+    {
+      "patch": 561,
+      "fibers": 14,
+      "lift_m": 0.003794679731177827,
+      "mean_entry_arc_m": 0.02864990275200263,
+      "max_displacement_m": 0.0044792160175312215
+    },
+    {
+      "patch": 562,
+      "fibers": 24,
+      "lift_m": 0.0034902977140651597,
+      "mean_entry_arc_m": 0.028280322848795343,
+      "max_displacement_m": 0.0046880451023978125
+    },
+    {
+      "patch": 563,
+      "fibers": 42,
+      "lift_m": 0.004956997316098768,
+      "mean_entry_arc_m": 0.029031250156386176,
+      "max_displacement_m": 0.0066321404288837696
+    },
+    {
+      "patch": 565,
+      "fibers": 16,
+      "lift_m": 0.004372651760614807,
+      "mean_entry_arc_m": 0.03392666007479664,
+      "max_displacement_m": 0.0073087345181963035
+    },
+    {
+      "patch": 566,
+      "fibers": 16,
+      "lift_m": 0.004352053986023054,
+      "mean_entry_arc_m": 0.026167118469637554,
+      "max_displacement_m": 0.005179427801818757
+    },
+    {
+      "patch": 567,
+      "fibers": 23,
+      "lift_m": 0.00310816104325485,
+      "mean_entry_arc_m": 0.027261493222759673,
+      "max_displacement_m": 0.004355217630613171
+    },
+    {
+      "patch": 569,
+      "fibers": 27,
+      "lift_m": 0.0034714097215227634,
+      "mean_entry_arc_m": 0.026998533068782922,
+      "max_displacement_m": 0.006209997048593554
+    },
+    {
+      "patch": 572,
+      "fibers": 35,
+      "lift_m": 0.003004715701841964,
+      "mean_entry_arc_m": 0.03403502027232108,
+      "max_displacement_m": 0.006561628282808321
+    },
+    {
+      "patch": 574,
+      "fibers": 19,
+      "lift_m": 0.0040096164509027124,
+      "mean_entry_arc_m": 0.02619330597755839,
+      "max_displacement_m": 0.005791180537984768
+    },
+    {
+      "patch": 575,
+      "fibers": 12,
+      "lift_m": 0.003317449900316065,
+      "mean_entry_arc_m": 0.02524792560260802,
+      "max_displacement_m": 0.005772564763146524
+    },
+    {
+      "patch": 576,
+      "fibers": 19,
+      "lift_m": 0.004996965739733943,
+      "mean_entry_arc_m": 0.0259736920171559,
+      "max_displacement_m": 0.006590855856158822
+    },
+    {
+      "patch": 577,
+      "fibers": 19,
+      "lift_m": 0.00321228739112084,
+      "mean_entry_arc_m": 0.03164185988876214,
+      "max_displacement_m": 0.005267985149834612
+    },
+    {
+      "patch": 578,
+      "fibers": 30,
+      "lift_m": 0.004164703541107187,
+      "mean_entry_arc_m": 0.03277879472418462,
+      "max_displacement_m": 0.006082975640066216
+    },
+    {
+      "patch": 579,
+      "fibers": 38,
+      "lift_m": 0.004544818129353094,
+      "mean_entry_arc_m": 0.029789533759076166,
+      "max_displacement_m": 0.006661294172098895
+    },
+    {
+      "patch": 581,
+      "fibers": 15,
+      "lift_m": 0.004882974349750024,
+      "mean_entry_arc_m": 0.03202583129580226,
+      "max_displacement_m": 0.005821874990575035
+    },
+    {
+      "patch": 582,
+      "fibers": 33,
+      "lift_m": 0.0036660119003583892,
+      "mean_entry_arc_m": 0.0362420295373667,
+      "max_displacement_m": 0.006885307894597802
+    },
+    {
+      "patch": 583,
+      "fibers": 18,
+      "lift_m": 0.003609570407242395,
+      "mean_entry_arc_m": 0.04335033742571266,
+      "max_displacement_m": 0.008165941112872634
+    },
+    {
+      "patch": 584,
+      "fibers": 17,
+      "lift_m": 0.004909769240028815,
+      "mean_entry_arc_m": 0.038368249115168854,
+      "max_displacement_m": 0.00547617428044659
+    },
+    {
+      "patch": 586,
+      "fibers": 32,
+      "lift_m": 0.004493061737111849,
+      "mean_entry_arc_m": 0.03982390758623709,
+      "max_displacement_m": 0.0053380292015884935
+    },
+    {
+      "patch": 588,
+      "fibers": 15,
+      "lift_m": 0.0031764428680187006,
+      "mean_entry_arc_m": 0.03761842019477688,
+      "max_displacement_m": 0.0046325392959393535
+    },
+    {
+      "patch": 590,
+      "fibers": 13,
+      "lift_m": 0.0033629388585505685,
+      "mean_entry_arc_m": 0.03826813179157879,
+      "max_displacement_m": 0.0035982367158976314
+    },
+    {
+      "patch": 593,
+      "fibers": 33,
+      "lift_m": 0.0030006692268400243,
+      "mean_entry_arc_m": 0.033166483877654446,
+      "max_displacement_m": 0.005858630119143862
+    },
+    {
+      "patch": 594,
+      "fibers": 14,
+      "lift_m": 0.004761583860732897,
+      "mean_entry_arc_m": 0.033221083683476614,
+      "max_displacement_m": 0.006091358596791596
+    },
+    {
+      "patch": 601,
+      "fibers": 13,
+      "lift_m": 0.0030738545578994944,
+      "mean_entry_arc_m": 0.030485213206408013,
+      "max_displacement_m": 0.004208052645145744
+    }
+  ],
+  "all_roots_exact": true,
+  "all_points16_through64_exact": true,
+  "unselected_primary_exact": true,
+  "other_components_exact": true,
+  "discrete_body_repairs": 0,
+  "method": "Positive-X upper primary entry indices1-15 only; actual8mm follicle cells split by departure quadrant; min12 fibers. Cubic scalp-tangent entry and existing exit tangent,3-5mm tuft lift,1.5mm phase bend,55% intermediate root/end spread contraction. All true follicles and point16 onward retained. First4 are intentionally no longer fixed; no shader/light change.",
+  "status": "Actually reviewed; incomplete reference target",
+  "model_sha256": "46457653d7cef998194cab5630d5334a6d06abdecd100ee2933ab1b4c2c84ce0",
+  "art_judgment": "21481 shafts in362 small entry patches. Three drafts inspected: raised dense little knots, pale patch not adequately solved; not adopted.",
+  "inspected_draft_sha256": {
+    "01_Front.png": "75b0486bdc28ae821a9874e144ce0d9605da862bda596fb1c1ad4900f88afb5f",
+    "02_ThreeQuarter.png": "99ca69a8a5535141e5ec4a06c0cfee2522400b83911db7fc570b1fc9ee7b1984",
+    "05_OppositeSide.png": "4ccdb8cfecf1604efb2f74f88ff23b3830b9b7a96b487c50e9ea4633f5e9f699"
+  }
+}

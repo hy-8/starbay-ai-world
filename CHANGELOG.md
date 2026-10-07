@@ -382,3 +382,10 @@ sintelfit01/02/03的九张角色实渲均已查看：960×1120、Cycles/OptiX64 
 -69 support roughness,70 primary pure Huang,71 lifted crown locks and72 support legacy-lobe removal inspected; none adopted. Correct69 summary to actual Hair sockets only. Independent material scopes verify primary/support and mesh material boundaries.
 -73 Abhay medium followers bring little benefit. Actual IDs74 locate remaining Bystedt/posterior support.75 changes9067 posterior shafts;76 changes16082 Bystedt shafts on75. Actual drafts and reloaded512-sample portrait show unresolved pale part and small scalp exposure; retain68 as continuation.
 - Seven localized geometry/material comparisons pass; saved frame1 evaluation76 matches all four visible native position arrays. These do not prove artistic or continuous collision acceptance. Original/derived geometry local; no fee, Release, UE integration or generated portrait replacement.
+
+
+### 2026-10-07 · Primary entry attribution and authored side locks (WIP)
+
+- Actual primary-only ablation77 retains pale fan; saved shaft-section IDs78 locate the0-7 entry region. Probe79 describes22522 positive-X shafts. Prior support attribution is view/component-specific, not an explanation for all pale hair.
+- Entry microtufts80 rejected. Full side locks81 reduce the brushed fan; tiered82 improves length scatter but shows a sparse Side03 temple. Restores83/84 and partial long/short mix85 insufficient.86 combines9140 exact front81 paths with7308 back82 tiers; five neutral views and actual512-sample portrait inspected. Better temple coverage and side flow; broad crown sheet/repeated curls/pale part remain incomplete. Continue from86, retain68 and stable backup.
+- Seven file comparisons preserve141 meshes, hair roots/radii/topology, untouched shafts/components, materials and scene presentation.85/86 selected saved donor paths independently exact. No long primary tails below1.640m. Static proof only; source/derived geometry local, no fee/Release/UE/animation integration.

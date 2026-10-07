@@ -1,0 +1,12 @@
+{
+  "source": "nativerelaxedside81",
+  "source_sha256": "03c08a8d5cb3d646092d18d6148cbb36b997ad425ee638823e690df9f6f77e3a",
+  "all_images_actually_reviewed": true,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "samples": 192,
+  "denoising": false,
+  "art_judgment": "Single actual Side03 inspected: longer side locks cover the temple better than short tiers82; repetitive ribs remain. Not a five-view adoption audit."
+}

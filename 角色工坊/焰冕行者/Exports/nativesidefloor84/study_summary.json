@@ -1,0 +1,23 @@
+{
+  "source": "nativetieredside82",
+  "source_sha256": "ad73f8f65ffed23704d0dd561cb2a395897a30a2732da0207a84cb8a8ab04b28",
+  "donor": "nativeentrynape68",
+  "donor_sha256": "30a95a79f0b27d51d5e6ee00b2327f7735e57ae46bbf239a939d8fd7500191e6",
+  "eligible_shafts": 16448,
+  "changed_fibers": 4146,
+  "selection_attribute": "native_temporal_coverage_restore",
+  "layered_floor": true,
+  "roi": null,
+  "all_roots_exact": true,
+  "donor_paths_exact": true,
+  "unselected_primary_exact": true,
+  "method": "Keep75% newly authored side locks and restore an index-interleaved25% of exact protected68 full paths as distributed long foundation across the already edited side region. Original total strand density retained. This is a geometry-layer coverage study, not the local point ROI attribution. No new source/geometry density/material/light changes; no continuous collision proof.",
+  "status": "Actually reviewed; incomplete reference target",
+  "model_sha256": "0759d7cb09333e1d11e547c812a99f64c094ebe43fe70c5537a2df6c01530633",
+  "art_judgment": "4146 of16448 reshaped side shafts restored from68 as interleaved old foundation. Three drafts inspected; temple still sparse and some old root flow returns. Not adopted.",
+  "inspected_draft_sha256": {
+    "01_Front.png": "b57911782d02b31c321d82b8d67c16611d0e4a059e1c5a642e2099d6dfbf6ee3",
+    "02_ThreeQuarter.png": "f90b1a0172aae56197bb4e3c9d3eee9b5d77ed71a04714ffe73a70cf6edc6805",
+    "03_Side.png": "ef3a21338b991502d1454fa2f5814944223894f80643c8f8945438dbd25e256d"
+  }
+}

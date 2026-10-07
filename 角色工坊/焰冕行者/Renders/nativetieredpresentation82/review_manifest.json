@@ -1,0 +1,12 @@
+{
+  "source": "nativetieredside82",
+  "source_sha256": "ad73f8f65ffed23704d0dd561cb2a395897a30a2732da0207a84cb8a8ab04b28",
+  "all_images_actually_reviewed": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "art_judgment": "Actual high ThreeQuarter portrait inspected. Pale brushed side fan reduced; broad smooth front/crown sheet and repeated locks remain. Side deficiency identified independently; not adopted."
+}

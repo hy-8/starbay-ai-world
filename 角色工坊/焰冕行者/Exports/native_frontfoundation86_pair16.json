@@ -1,0 +1,33 @@
+{
+  "source": "nativetieredside82",
+  "source_sha256": "ad73f8f65ffed23704d0dd561cb2a395897a30a2732da0207a84cb8a8ab04b28",
+  "candidate": "nativefrontfoundation86",
+  "candidate_sha256": "21822e86f58dfc45561ddaf3fe986513f68de6e2ff30032cc0d2335af892c4db",
+  "mesh_count": 141,
+  "mesh_geometry_uv_shape_keys_transforms_exact": true,
+  "visible_native_objects": 4,
+  "curves_finite_radii_positive_textures_available": true,
+  "edited_object": "Bystedt layercut derivative \u2022 native root reflow",
+  "edited_fibers": 9140,
+  "all_radii_topology_transforms_exact": true,
+  "all_roots_exact": true,
+  "unselected_fibers_exact": true,
+  "other_native_objects_exact": true,
+  "max_displacement_m": 0.06901173293590546,
+  "scope": "Static localized file comparison. Not art, segment/body/eye/clothing/animation collision acceptance.",
+  "tip_profile": {
+    "explicit_foreground_exact": true,
+    "explicit_foreground_fibers": 6074,
+    "all_true_follicles_exact": true,
+    "first_four_intentionally_allowed_to_change": true,
+    "minimum_primary_tip_z_m": 1.651498794555664,
+    "primary_tips_below_1_640m": 0,
+    "no_long_tail_gate": true
+  },
+  "all_material_slots_graphs_exact": true,
+  "light_world_camera_display_exact": true,
+  "donor": "nativerelaxedside81",
+  "donor_sha256": "03c08a8d5cb3d646092d18d6148cbb36b997ad425ee638823e690df9f6f77e3a",
+  "selected_saved_paths_exact_to_donor": true,
+  "all_radii_topology_transforms_exact_to_donor": true
+}

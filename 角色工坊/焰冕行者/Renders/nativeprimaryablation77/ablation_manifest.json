@@ -1,0 +1,23 @@
+{
+  "source": "nativeentrynape68",
+  "source_sha256": "30a95a79f0b27d51d5e6ee00b2327f7735e57ae46bbf239a939d8fd7500191e6",
+  "source_unchanged": true,
+  "hidden_components": [
+    "Abhay flow derivative \u2022 real scalp sampled short support",
+    "Bystedt derivative \u2022 short scalp support",
+    "Original posterior coverage \u2022 surface-grown short fibers"
+  ],
+  "retained_primary_geometry_material_exact": true,
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 192,
+  "denoising": false,
+  "images_sha256": {
+    "02_ThreeQuarter.png": "80a0af97cd5b7dd5c6c53e1073f6ea6d3e586040451f4a210a9d6acd26585208",
+    "01_Front.png": "92109e572859cf123b4773d49f03ee66e20fd5fda9c23b419cb937c5e6ad829b",
+    "05_OppositeSide.png": "0371f37e3615eb898fefc74ff62fa55f1d377ed6da860db6a0f6a1762427f1ae"
+  },
+  "method": "Temporary hide_render of three support components after loading actual saved68. Existing primary/body/material/lights retained. Diagnostic beauty ablation, not adopted model."
+}

@@ -1,0 +1,25 @@
+{
+  "source": "nativetieredside82",
+  "source_sha256": "ad73f8f65ffed23704d0dd561cb2a395897a30a2732da0207a84cb8a8ab04b28",
+  "donor": "nativerelaxedside81",
+  "donor_sha256": "03c08a8d5cb3d646092d18d6148cbb36b997ad425ee638823e690df9f6f77e3a",
+  "eligible_shafts": 9140,
+  "changed_fibers": 9140,
+  "selection_attribute": "native_temporal_coverage_restore",
+  "layered_floor": true,
+  "long_lock_floor": false,
+  "front_foundation": true,
+  "roi": null,
+  "all_roots_exact": true,
+  "donor_paths_exact": true,
+  "unselected_primary_exact": true,
+  "method": "Keep exact longer authored donor81 paths on already edited front-facing rootsY<-20mm; leave tiered82 back-facing paths. This anatomically ordered front/back mixture avoids thinning the temple while preserving rear tier scatter. Original total strand density retained. No new source/geometry density/material/light changes; no continuous collision proof.",
+  "status": "Actually reviewed; incomplete reference target",
+  "model_sha256": "21822e86f58dfc45561ddaf3fe986513f68de6e2ff30032cc0d2335af892c4db",
+  "art_judgment": "9140 front-facing edited rootsY<-20mm use exact longer81 paths; remaining7308 retain tiered82. Three drafts, five neutral views and512-sample actual portrait inspected. Brushed pale side fan reduced and temple coverage improved versus82, explicit foreground/nape kept. Remaining broad flat crown/front sheet, repeated curls and light part support; reference target incomplete. New continuation WIP, not a finished or publishable character.",
+  "inspected_draft_sha256": {
+    "01_Front.png": "43177b464f0a13331e280cad50c893d7a8629f3ebfd6315e0333aee5f9fe8297",
+    "02_ThreeQuarter.png": "e90db4909988bd6bf1efb333dda14032b800d126a0dad2e4641a383b1edb5297",
+    "03_Side.png": "8086c440e5077b4784829043f5dd3fc6fd0330f0ff77dd07333fb066af1ab2ce"
+  }
+}
