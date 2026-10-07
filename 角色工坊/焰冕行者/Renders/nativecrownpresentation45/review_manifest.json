@@ -1,0 +1,12 @@
+{
+  "source": "nativecrownsection45",
+  "source_sha256": "330c02a34df639f660be08e1d58eff3b13a39ad200c89d7cfccbd66a2474f6ab",
+  "all_images_actually_reviewed": true,
+  "samples": 512,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "denoising": "OpenImageDenoise",
+  "art_judgment": "Upper hard arch modestly lower/divided; posterior flow retained. Part support exposure, rounded upper flow/bands and overall reference quality remain incomplete. Actual512-sample denoising is presentation only."
+}

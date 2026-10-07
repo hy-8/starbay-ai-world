@@ -1,0 +1,10 @@
+{
+  "source": "nativebacktransport37",
+  "source_sha256": "de187317c67ec871edc98bb99512385c8c33b16ca83b6d9805070b8b8d14739c",
+  "all_actual_images_reviewed": true,
+  "inspected_sha256": {
+    "01_Front.png": "a6726dd44202b5f330f84c2fae95a814d02e48b20b130f40a421183e3ba8f20a",
+    "02_ThreeQuarter.png": "b7a0bf37c336d5ff46104e8af3adfe39a1c5262142a8b0617897fc4c56bddf6d"
+  },
+  "judgment": "High z>1.875 primary shafts (blue) visibly occupy top arch; much frontal/side hair remains red and short part support green. Diagnostic confirms geometric peak ownership matters to actual camera, not all broad-band ownership."
+}

@@ -1,0 +1,362 @@
+{
+  "source": "nativebacktransport37",
+  "source_sha256": "de187317c67ec871edc98bb99512385c8c33b16ca83b6d9805070b8b8d14739c",
+  "source_unchanged": true,
+  "records": [
+    {
+      "selection": "frontal",
+      "shafts": 11092,
+      "peak_z_quantiles_m": [
+        1.823082447052002,
+        1.8391637921333313,
+        1.8526216745376587,
+        1.8641595840454102,
+        1.87751305103302
+      ],
+      "records": [
+        {
+          "threshold_z_m": 1.865,
+          "shafts": 823,
+          "peak_fraction_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.140625,
+            0.328125
+          ],
+          "root_y_quantiles_m": [
+            -0.10067183524370193,
+            -0.0942123681306839,
+            -0.08009018003940582,
+            -0.07003646045923233,
+            -0.06162462756037712
+          ],
+          "peak_in_first_four": 491
+        },
+        {
+          "threshold_z_m": 1.875,
+          "shafts": 67,
+          "peak_fraction_quantiles": [
+            0.125,
+            0.140625,
+            0.140625,
+            0.140625,
+            0.15625
+          ],
+          "root_y_quantiles_m": [
+            -0.07624617218971252,
+            -0.07522908300161361,
+            -0.07018508017063141,
+            -0.06595345884561539,
+            -0.06162462756037712
+          ],
+          "peak_in_first_four": 0
+        },
+        {
+          "threshold_z_m": 1.878,
+          "shafts": 0,
+          "peak_fraction_quantiles": [],
+          "root_y_quantiles_m": [],
+          "peak_in_first_four": 0
+        },
+        {
+          "threshold_z_m": 1.88,
+          "shafts": 0,
+          "peak_fraction_quantiles": [],
+          "root_y_quantiles_m": [],
+          "peak_in_first_four": 0
+        },
+        {
+          "threshold_z_m": 1.882,
+          "shafts": 0,
+          "peak_fraction_quantiles": [],
+          "root_y_quantiles_m": [],
+          "peak_in_first_four": 0
+        }
+      ]
+    },
+    {
+      "selection": "nonfrontal_posterior_edited",
+      "shafts": 16773,
+      "peak_z_quantiles_m": [
+        1.6919729709625244,
+        1.713172149658203,
+        1.7959603071212769,
+        1.8528687000274657,
+        1.8737643957138062
+      ],
+      "records": [
+        {
+          "threshold_z_m": 1.865,
+          "shafts": 118,
+          "peak_fraction_quantiles": [
+            0.125,
+            0.3125,
+            0.34375,
+            0.359375,
+            0.375
+          ],
+          "root_y_quantiles_m": [
+            -0.004260517191141844,
+            -0.002219179715029895,
+            0.0002376175907556899,
+            0.004570038802921772,
+            0.008595814928412437
+          ],
+          "peak_in_first_four": 0
+        },
+        {
+          "threshold_z_m": 1.875,
+          "shafts": 0,
+          "peak_fraction_quantiles": [],
+          "root_y_quantiles_m": [],
+          "peak_in_first_four": 0
+        },
+        {
+          "threshold_z_m": 1.878,
+          "shafts": 0,
+          "peak_fraction_quantiles": [],
+          "root_y_quantiles_m": [],
+          "peak_in_first_four": 0
+        },
+        {
+          "threshold_z_m": 1.88,
+          "shafts": 0,
+          "peak_fraction_quantiles": [],
+          "root_y_quantiles_m": [],
+          "peak_in_first_four": 0
+        },
+        {
+          "threshold_z_m": 1.882,
+          "shafts": 0,
+          "peak_fraction_quantiles": [],
+          "root_y_quantiles_m": [],
+          "peak_in_first_four": 0
+        }
+      ]
+    },
+    {
+      "selection": "nonfrontal_untouched",
+      "shafts": 21403,
+      "peak_z_quantiles_m": [
+        1.7025446891784668,
+        1.7779138565063477,
+        1.854345440864563,
+        1.877310299873352,
+        1.8840826749801636
+      ],
+      "records": [
+        {
+          "threshold_z_m": 1.865,
+          "shafts": 5069,
+          "peak_fraction_quantiles": [
+            0.0,
+            0.125,
+            0.265625,
+            0.53125,
+            0.890625
+          ],
+          "root_y_quantiles_m": [
+            -0.1040717214345932,
+            -0.06504313498735428,
+            -0.037641741335392,
+            -0.005216149054467678,
+            0.01756233349442482
+          ],
+          "peak_in_first_four": 230
+        },
+        {
+          "threshold_z_m": 1.875,
+          "shafts": 2431,
+          "peak_fraction_quantiles": [
+            0.1875,
+            0.21875,
+            0.515625,
+            0.5625,
+            0.828125
+          ],
+          "root_y_quantiles_m": [
+            -0.08070580661296844,
+            -0.06725993007421494,
+            -0.05367649719119072,
+            -0.03372202813625336,
+            -0.015612274408340454
+          ],
+          "peak_in_first_four": 0
+        },
+        {
+          "threshold_z_m": 1.878,
+          "shafts": 2038,
+          "peak_fraction_quantiles": [
+            0.1875,
+            0.25,
+            0.515625,
+            0.5625,
+            0.828125
+          ],
+          "root_y_quantiles_m": [
+            -0.08070580661296844,
+            -0.06769586205482483,
+            -0.056477880105376244,
+            -0.0398868665099144,
+            -0.01937325857579708
+          ],
+          "peak_in_first_four": 0
+        },
+        {
+          "threshold_z_m": 1.88,
+          "shafts": 1601,
+          "peak_fraction_quantiles": [
+            0.25,
+            0.453125,
+            0.53125,
+            0.5625,
+            0.828125
+          ],
+          "root_y_quantiles_m": [
+            -0.08059413731098175,
+            -0.06817372888326645,
+            -0.05836755782365799,
+            -0.04334026202559471,
+            -0.026796607300639153
+          ],
+          "peak_in_first_four": 0
+        },
+        {
+          "threshold_z_m": 1.882,
+          "shafts": 316,
+          "peak_fraction_quantiles": [
+            0.4375,
+            0.515625,
+            0.5625,
+            0.8125,
+            0.828125
+          ],
+          "root_y_quantiles_m": [
+            -0.08053003251552582,
+            -0.07366518676280975,
+            -0.0667034164071083,
+            -0.060280829668045044,
+            -0.037097375839948654
+          ],
+          "peak_in_first_four": 0
+        }
+      ]
+    }
+  ],
+  "high_nonfrontal_families": [
+    {
+      "group": 5,
+      "shafts": 1483,
+      "above_1875": 1483,
+      "previously_edited": 0,
+      "root_mean_m": [
+        0.03881114348769188,
+        -0.058143503963947296,
+        1.8639147281646729
+      ],
+      "tip_mean_m": [
+        -0.04959355294704437,
+        -0.03407864645123482,
+        1.8704978227615356
+      ],
+      "peak_mean_m": [
+        -0.008651039563119411,
+        -0.046143632382154465,
+        1.8812884092330933
+      ],
+      "peak_fraction_quantiles": [
+        0.328125,
+        0.5,
+        0.53125,
+        0.8125,
+        0.828125
+      ]
+    },
+    {
+      "group": 20,
+      "shafts": 1000,
+      "above_1875": 57,
+      "previously_edited": 0,
+      "root_mean_m": [
+        0.011518019251525402,
+        -0.006431198678910732,
+        1.8650391101837158
+      ],
+      "tip_mean_m": [
+        -0.07871938496828079,
+        0.01972249336540699,
+        1.8177913427352905
+      ],
+      "peak_mean_m": [
+        -0.00936425756663084,
+        0.005857363343238831,
+        1.8702495098114014
+      ],
+      "peak_fraction_quantiles": [
+        0.09375,
+        0.15625,
+        0.203125,
+        0.265625,
+        0.421875
+      ]
+    },
+    {
+      "group": 33,
+      "shafts": 223,
+      "above_1875": 223,
+      "previously_edited": 0,
+      "root_mean_m": [
+        0.024107854813337326,
+        -0.03163927048444748,
+        1.8681888580322266
+      ],
+      "tip_mean_m": [
+        -0.05832576006650925,
+        0.00458551524206996,
+        1.847910761833191
+      ],
+      "peak_mean_m": [
+        -0.010702820494771004,
+        -0.01758149079978466,
+        1.8791611194610596
+      ],
+      "peak_fraction_quantiles": [
+        0.21875,
+        0.265625,
+        0.390625,
+        0.4812500000000002,
+        0.53125
+      ]
+    },
+    {
+      "group": 62,
+      "shafts": 673,
+      "above_1875": 644,
+      "previously_edited": 0,
+      "root_mean_m": [
+        0.005639929324388504,
+        -0.04764894023537636,
+        1.8714940547943115
+      ],
+      "tip_mean_m": [
+        -0.0714515969157219,
+        -0.019565081223845482,
+        1.8421518802642822
+      ],
+      "peak_mean_m": [
+        -0.015290162526071072,
+        -0.04101989418268204,
+        1.8780628442764282
+      ],
+      "peak_fraction_quantiles": [
+        0.1875,
+        0.203125,
+        0.234375,
+        0.3125,
+        0.40625
+      ]
+    }
+  ],
+  "scope": "Geometric ownership and aggregate peaks, not visibility or art acceptance; no raw geometry/indices."
+}

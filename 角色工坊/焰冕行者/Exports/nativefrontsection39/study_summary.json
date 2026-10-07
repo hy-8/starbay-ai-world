@@ -1,0 +1,27 @@
+{
+  "source": "nativebacktransport37",
+  "source_sha256": "de187317c67ec871edc98bb99512385c8c33b16ca83b6d9805070b8b8d14739c",
+  "local_probe_sha256": "67e3d3b802e73a9ae1f60ec3a538472b16516a50e3fe93d52336af9ee01beb61",
+  "changed_fibers": 10996,
+  "frontal": true,
+  "selection_attribute": "native_frontal_resection",
+  "curl_family": false,
+  "relaxed_tips": false,
+  "transported_frames": true,
+  "all_first_four_points_exact": true,
+  "last_three_points_exact": true,
+  "unselected_primary_exact": true,
+  "other_hair_unchanged": true,
+  "discrete_body_repairs": 4,
+  "method": "Whole-path frontal families (32 kmeans across five shaft samples); target middle6.5-8mm width/2.5mm depth, root/tip shaft fade and elevated-point blend(z1.800-1.822), first4/last3points retained; parallel-transported cross sections",
+  "scope": "Static localized design and discrete body points, not full segment/eye/clothing/animation collision or art acceptance",
+  "model_sha256": "5403e731df6b397f8dda57192a762ad096d1cde9b39ee3f8b1c88b845b799396",
+  "art_judgment": "Only modest frontal change; highest crown arches not covered. Not adopted.",
+  "status": "All actual drafts reviewed; target incomplete",
+  "inspected_draft_sha256": {
+    "01_Front.png": "e7e53c09fe9f3a2086e31686f477eb10717b22d17ea4d49c8a05db0c6cdbc75c",
+    "02_ThreeQuarter.png": "2a133aed332c43663454197773f8404f74cab72cbc4df6f292c632d97f2ad514",
+    "05_OppositeSide.png": "d59a551e05c573373dc15909b5a052a5c29876b9b1524850f76cf00d28d3bb9b"
+  },
+  "family_count": 29
+}

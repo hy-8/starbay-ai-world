@@ -1,0 +1,23 @@
+{
+  "source": "nativebacktransport37",
+  "source_sha256": "de187317c67ec871edc98bb99512385c8c33b16ca83b6d9805070b8b8d14739c",
+  "partition_sha256": "732e1ff1e8f96e67c337f5f3b74213fc41989f40d9882d5c5f134fb747f26075",
+  "changed_fibers": 3379,
+  "selection_attribute": "native_crown_sculpture",
+  "first_four_last_three_exact": true,
+  "unselected_primary_exact": true,
+  "discrete_body_repairs": 173,
+  "method": "Measured four high families5/20/33/62",
+  "sculpture": "Whole-path sublocks (2-8 kmeans); parallel transported cross sections;32% width/30% depth contraction;3.5-5mm crown lowering;60mm wavelength1.8mm cross/1mm vertical bends;local elevation/root/tip fade",
+  "scope": "Static local sculpture; no continuous collision/animation or artistic acceptance",
+  "model_sha256": "330c02a34df639f660be08e1d58eff3b13a39ad200c89d7cfccbd66a2474f6ab",
+  "art_judgment": "All four measured high families sculpted; top hard arch less elevated, posterior37 waves/tips retained in three drafts and all five neutral checks. Crown remains rounded with common flow/bands; pale part and reference quality incomplete. New continuation WIP only.",
+  "status": "All actual drafts reviewed; target incomplete",
+  "inspected_draft_sha256": {
+    "01_Front.png": "656393c741f63277b299c17b6980629a37d78a7519bcc037ff8cf7acaf85c28c",
+    "02_ThreeQuarter.png": "9d0c7aac8d1b427dc81c975adfb2f1cfdd799098fb580ed7b2b56d19c352ce69",
+    "05_OppositeSide.png": "52022e6d87b1b6bd532a7f6e532634be801d4d2445bb5c9ceac5bf955157fac7"
+  },
+  "sublock_count": 18,
+  "max_displacement_m": 0.008986225806028947
+}

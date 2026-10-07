@@ -1,0 +1,38 @@
+{
+  "source": "nativecrownsection45",
+  "source_sha256": "330c02a34df639f660be08e1d58eff3b13a39ad200c89d7cfccbd66a2474f6ab",
+  "geometry_and_lighting_unchanged": true,
+  "components": [
+    "Abhay flow derivative \u2022 real scalp sampled short support",
+    "Bystedt derivative \u2022 short scalp support",
+    "Bystedt layercut derivative \u2022 native root reflow",
+    "Original posterior coverage \u2022 surface-grown short fibers"
+  ],
+  "model": "CHIANG",
+  "parametrization": "COLOR",
+  "colors_linear_rgba": [
+    [
+      0.28,
+      0.022,
+      0.04,
+      1
+    ],
+    [
+      0.45,
+      0.055,
+      0.07,
+      1
+    ]
+  ],
+  "roughness": 0.32,
+  "radial_roughness": 0.5,
+  "ior": 1.55,
+  "method": "Replace legacy25% directional mix with pure native Chiang; explicitly recalibrate pigment rather than assume model-switch absorption equivalence",
+  "model_sha256": "32775df61c75c95c17fb53d7c532634adee89319ab58b6c5d0adf6c0bfafea7f",
+  "art_judgment": "Pure Chiang with bright pigment becomes powdery pink/white. Rejected; geometry and lighting exactly preserved.",
+  "status": "All actual drafts reviewed; target incomplete",
+  "inspected_draft_sha256": {
+    "02_ThreeQuarter.png": "a85908b33456352c4f8b6d37f18fe0d90d44c610f756bf842e443aca69572aae",
+    "05_OppositeSide.png": "d22eefb0932ede05e5a75d7c753032c28af73d2518492040916c6a42fa584cf8"
+  }
+}

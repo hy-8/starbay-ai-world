@@ -1,0 +1,23 @@
+{
+  "version": "nativecrowncheck45",
+  "source": "nativecrownsection45",
+  "source_sha256": "330c02a34df639f660be08e1d58eff3b13a39ad200c89d7cfccbd66a2474f6ab",
+  "source_unchanged": true,
+  "method": "Existing four neutral cameras when requested, plus actual opposite camera mirrored in world space with local-X handedness correction; no pixel flip or geometry edit",
+  "samples": 192,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "denoising": false,
+  "image_sha256": "39013e9e4392f8b4cd9f5f28d61f47d1872a5863c5eb1b6c1c65dce936e68667",
+  "images_sha256": {
+    "01_Front.png": "a58b3d7a921ca49585a662d62587360fb412eb07289332ac1eca731c7b6dc73c",
+    "02_ThreeQuarter.png": "94e58017b41fe84ea6d3ecb799c47e13093287d72974c1f1aefcac82ab6f524d",
+    "03_Side.png": "aa338caa360db3cb8c10be0d01f9fd42213fbced96a6f3a63aabb3b16fa7bad5",
+    "04_Back.png": "86e165f9769063d6481f76fb318548bd9f52fbf5174c3fe4dce903967d02652a",
+    "05_OppositeSide.png": "39013e9e4392f8b4cd9f5f28d61f47d1872a5863c5eb1b6c1c65dce936e68667"
+  },
+  "status": "Unreviewed actual neutral/opposite profile diagnostic, not artistic approval",
+  "opposite_image_reused_from": null
+}

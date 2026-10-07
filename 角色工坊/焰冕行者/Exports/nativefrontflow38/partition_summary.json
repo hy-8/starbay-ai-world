@@ -1,0 +1,29 @@
+{
+  "source": "nativebacktransport37",
+  "source_sha256": "de187317c67ec871edc98bb99512385c8c33b16ca83b6d9805070b8b8d14739c",
+  "source_unchanged": true,
+  "selection": "frontal",
+  "method": "32 deterministic farthest-seeded whole-path kmeans,5 position samples/root weight.45,18 iterations on1/3 sample, all frontal curves assigned",
+  "fiber_count": 11092,
+  "groups": 32,
+  "count_quantiles": [
+    3.0,
+    259.0,
+    581.1,
+    1149.0
+  ],
+  "middle_90pct_width_quantiles_m": [
+    0.0026679810144477284,
+    0.007860446260917156,
+    0.010835075306958637,
+    0.012392301069616729
+  ],
+  "middle_90pct_depth_quantiles_m": [
+    0.002644612558174312,
+    0.0059061048632976,
+    0.008281057711071859,
+    0.010311918017049825
+  ],
+  "local_partition_sha256": "67e3d3b802e73a9ae1f60ec3a538472b16516a50e3fe93d52336af9ee01beb61",
+  "scope": "Geometric aggregate only. Indices remain local. No art, continuous occlusion or collision assurance."
+}

@@ -1,0 +1,15 @@
+{
+  "source": "nativecrownsection45",
+  "source_sha256": "330c02a34df639f660be08e1d58eff3b13a39ad200c89d7cfccbd66a2474f6ab",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "71d4813bd3a7d9a909a8872b6b29ec8b81933ed0c832d4e25f781b3261eef523",
+  "status": "Actual render pending art review; no generative image replacement"
+}

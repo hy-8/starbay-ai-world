@@ -1,0 +1,27 @@
+{
+  "source": "nativebacktransport37",
+  "source_sha256": "de187317c67ec871edc98bb99512385c8c33b16ca83b6d9805070b8b8d14739c",
+  "local_probe_sha256": "67e3d3b802e73a9ae1f60ec3a538472b16516a50e3fe93d52336af9ee01beb61",
+  "changed_fibers": 10996,
+  "frontal": true,
+  "selection_attribute": "native_frontal_resection",
+  "curl_family": true,
+  "relaxed_tips": true,
+  "transported_frames": true,
+  "all_first_four_points_exact": true,
+  "last_three_points_exact": true,
+  "unselected_primary_exact": true,
+  "other_hair_unchanged": true,
+  "discrete_body_repairs": 113,
+  "method": "Whole-path frontal families (32 kmeans across five shaft samples); target middle6.5-8mm width/2.5mm depth, root/tip shaft fade and elevated-point blend(z1.800-1.822), first4/last3points retained; actual center arc-length85mm wavelength,2.5mm lateral/1.2mm depth loose curl with independent family phase; relax added curl progressively over final32% of shaft; parallel-transported cross sections",
+  "scope": "Static localized design and discrete body points, not full segment/eye/clothing/animation collision or art acceptance",
+  "model_sha256": "dce613446d811ea2164e76dd18c3b0b74e0b6601f006a2eb2f01ad1e5b88b5ba",
+  "art_judgment": "Modest small-bend change; same crown issue remains. Not adopted. Independent source37, not chained from39.",
+  "status": "All actual drafts reviewed; target incomplete",
+  "inspected_draft_sha256": {
+    "01_Front.png": "f772ed1edc147a6765b756c45e20847774cd0e13a63598e79675171cf63be019",
+    "02_ThreeQuarter.png": "69430122ae6bb4e7dcb33ed0557fc52ef1b8070a7739cbcf3fa1920386ec6ca9",
+    "05_OppositeSide.png": "21db968270e1c5ce129184b4ca071a2432e03d643d54b703b9f463f6a999dbf2"
+  },
+  "family_count": 29
+}

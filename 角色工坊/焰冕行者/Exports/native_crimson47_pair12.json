@@ -1,0 +1,22 @@
+{
+  "source": "nativecrownsection45",
+  "source_sha256": "330c02a34df639f660be08e1d58eff3b13a39ad200c89d7cfccbd66a2474f6ab",
+  "candidate": "nativecrimson47",
+  "candidate_sha256": "e46f2e90e127f99a8dba0e9f935604a27e67b16b2196080c62e5791f708497db",
+  "mesh_count": 141,
+  "mesh_geometry_uv_shape_keys_transforms_exact": true,
+  "visible_native_objects": 4,
+  "curves_finite_radii_positive_textures_available": true,
+  "edited_object": "Bystedt layercut derivative \u2022 native root reflow",
+  "edited_fibers": 0,
+  "all_radii_topology_transforms_exact": true,
+  "all_roots_exact": true,
+  "unselected_fibers_exact": true,
+  "other_native_objects_exact": true,
+  "max_displacement_m": 0.0,
+  "scope": "Static localized file comparison. Not art, segment/body/eye/clothing/animation collision acceptance.",
+  "material_only": true,
+  "selection_fibers": 3379,
+  "all_visible_native_geometry_exact": true,
+  "light_world_camera_display_exact": true
+}

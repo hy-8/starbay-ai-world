@@ -1,0 +1,17 @@
+{
+  "source": "nativebacktransport37",
+  "source_sha256": "de187317c67ec871edc98bb99512385c8c33b16ca83b6d9805070b8b8d14739c",
+  "source_unchanged": true,
+  "selection_attribute": null,
+  "selection_rule": "Primary shaft maximum z>1.875m",
+  "legend": {
+    "blue": "High crown primary shafts",
+    "red": "Other primary shafts",
+    "green": "All short support components",
+    "gray": "Body/clothes"
+  },
+  "edited_fibers": 2498,
+  "unselected_fibers": 46770,
+  "method": "Exact temporary curve subsets with original radii/matrix, actual cameras, emission diagnostic only",
+  "status": "Unreviewed actual component diagnostic"
+}
