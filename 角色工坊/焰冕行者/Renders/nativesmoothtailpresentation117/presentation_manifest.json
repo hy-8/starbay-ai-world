@@ -1,0 +1,15 @@
+{
+  "source": "nativesmoothtail117",
+  "source_sha256": "86c3dab6bd24fcce86a429c900402f3909c067bb35fe1c5ea2c47dc6ad3981a5",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "008caeb066d38cae8b56ed6d997fc676f916668db2ec430321ae93dd1751dece",
+  "status": "Actual render pending art review; no generative image replacement"
+}

@@ -1,0 +1,24 @@
+{
+  "version": "nativefallcheck115",
+  "source": "nativefallfringe115",
+  "source_sha256": "d50cdb23c1b1929faef4ccf58b5da3797eb35f1a5c824500cf018ed0dcfb6876",
+  "source_unchanged": true,
+  "method": "Existing neutral cameras when requested, plus actual opposite camera mirrored in world space with local-X handedness correction; no pixel flip or geometry edit",
+  "samples": 192,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "denoising": false,
+  "image_sha256": "9b51531531b779db6b14bb92eec65460f7403bdffa952f3f24998dc6e8855153",
+  "images_sha256": {
+    "01_Front.png": "ef2653286bf164a038d812c5d97d82232be576210cbf99f8320acccbf823a8f0",
+    "02_ThreeQuarter.png": "6686d47c8eef5a074968a2e68254f4425dac112b27405be8ea834bcaa1fbf74d",
+    "03_Side.png": "fe27058e19f9e86a33bc7910b3b1edc421770f0c4bf17a56fb1de1e7ad3843bb",
+    "04_Back.png": "0486a2e9aba80f6e7f1fa22ab8cca1cac8ac82fe0c7e75cda2b6ea1bb3cf8c05",
+    "05_OppositeSide.png": "9b51531531b779db6b14bb92eec65460f7403bdffa952f3f24998dc6e8855153"
+  },
+  "status": "Unreviewed actual neutral/opposite profile diagnostic, not artistic approval",
+  "single_camera": null,
+  "opposite_image_reused_from": null
+}

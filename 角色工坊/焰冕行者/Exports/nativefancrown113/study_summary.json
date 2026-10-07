@@ -1,0 +1,24 @@
+{
+  "source": "nativecollarnape112",
+  "source_sha256": "2e7d2c44c86f36cc7b1ada5eec790a547b9ac123cded98ac704490b07721c14c",
+  "donor": "nativewholeside108",
+  "donor_sha256": "7a1b5049d569abd9356e58afcb00843a4f20dc2965f32df259c6a70b3f83aaea",
+  "volume_source": "nativevolumetric110",
+  "volume_source_sha256": "8e1c71c0552ce89f3853e6852c382810f9f8072c3fc5622f33ade823a770c5d8",
+  "selection_attribute": "native_transported_fan_crown",
+  "changed_fibers": 22817,
+  "discrete_body_repairs": 656,
+  "method": "140 actual donor108 whole-path groups excluding106 fringe, roots Z>1.820m. Minimal-rotation transported sections replace per-point nearest-triangle axes. Shallow3.5-9mm fan width,0.65-1.15mm central thickness,64% section adjustment retains source dispersion;20% loosely follow donor flow.112-110 displacement carries nape extension, existing112 lower paths blended back below1.710m and exact below1.655m. First6 points/fringe/source roots/radii/topology/materials/other components retained.",
+  "status": "Actually reviewed; reference unachieved",
+  "model_sha256": "d4e52b27582c276dc74c210c083286c101b80a8a173fb6ba0d2121ff9d3e3796",
+  "art_judgment": "All4 actual drafts and512-sample portrait inspected.22817 shafts in134 edited whole-path groups: transported shallow fan sections loosen the upper blue crown slightly, but red frontal crossing ropes remain. Intermediate source for115, not reference quality.",
+  "goal_complete": false,
+  "maximum_displacement_m": 0.026456426829099655,
+  "inspected_draft_sha256": {
+    "01_Front.png": "bba8de579f48d93f0cf6c9f07e11b0247b94d824372cef4be2574fda2c1bcd6a",
+    "02_ThreeQuarter.png": "7b5fe614b2cbf96a43071629033ac463df798ae34fde7e95d3837a95c404ab41",
+    "03_Side.png": "8e9c2ff0a1314beb0c78fb3024f09e458a729fc414dababd1e956ffaec266b26",
+    "05_OppositeSide.png": "6c01e3e0c993143c879a37dab7134b5a1983a68057df6a3b6d0d61e7dc50c883"
+  },
+  "edited_groups": 134
+}

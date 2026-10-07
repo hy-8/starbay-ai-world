@@ -1,0 +1,10 @@
+{
+  "source": "nativeterminalfringe116",
+  "source_sha256": "eaca433cabafcac7b7e2ede83882a6aad148e4981b5348788bbd786b3d85f8d4",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "02_ThreeQuarter.png": "37a911532eb6e8683f824cd8ab2bd0c196df89e029a8bee1c451ce4304ab94f1"
+  },
+  "art_judgment": "Actual1920x2240/512/OIDN portrait inspected.115 dark knots recede, but returned forehead loops look artificial. Rejected as continuation.",
+  "goal_complete": false
+}

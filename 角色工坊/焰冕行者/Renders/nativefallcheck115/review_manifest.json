@@ -1,0 +1,14 @@
+{
+  "source": "nativefallfringe115",
+  "source_sha256": "d50cdb23c1b1929faef4ccf58b5da3797eb35f1a5c824500cf018ed0dcfb6876",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "01_Front.png": "ef2653286bf164a038d812c5d97d82232be576210cbf99f8320acccbf823a8f0",
+    "02_ThreeQuarter.png": "6686d47c8eef5a074968a2e68254f4425dac112b27405be8ea834bcaa1fbf74d",
+    "03_Side.png": "fe27058e19f9e86a33bc7910b3b1edc421770f0c4bf17a56fb1de1e7ad3843bb",
+    "04_Back.png": "0486a2e9aba80f6e7f1fa22ab8cca1cac8ac82fe0c7e75cda2b6ea1bb3cf8c05",
+    "05_OppositeSide.png": "9b51531531b779db6b14bb92eec65460f7403bdffa952f3f24998dc6e8855153"
+  },
+  "art_judgment": "All5 actual neutral views inspected. Upper frontal crossing ropes reduce versus113, eyes/long nape retained. Ordered side bends, flat back panels, pale part and awkward small foreground ends remain. Reference incomplete.",
+  "goal_complete": false
+}

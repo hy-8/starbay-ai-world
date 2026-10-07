@@ -1,0 +1,22 @@
+{
+  "source": "nativefallfringe115",
+  "source_sha256": "d50cdb23c1b1929faef4ccf58b5da3797eb35f1a5c824500cf018ed0dcfb6876",
+  "donor": "nativefancrown113",
+  "donor_sha256": "d4e52b27582c276dc74c210c083286c101b80a8a173fb6ba0d2121ff9d3e3796",
+  "selection_attribute": "native_reconnected_fringe_terminals",
+  "changed_fibers": 8441,
+  "restored_suffix_first_point_index": 52,
+  "discrete_body_repairs": 135,
+  "method": "Selected8441 actual115 fringe shafts retain upper directional fall. Smooth blend frompoint36 into113 coherent terminal arcs, points52-64 exact to113. Intermediate discrete body guard; source prefix0-5/endpoints/radii/topology/unselected/other hair/materials unchanged.",
+  "status": "Actually reviewed; reference unachieved",
+  "model_sha256": "eaca433cabafcac7b7e2ede83882a6aad148e4981b5348788bbd786b3d85f8d4",
+  "art_judgment": "All4 actual drafts, all5 neutral views and512-sample actual portrait inspected. Same8441 foreground shafts retain115 upper fall and blend toward113 end arcs; saved points52-64 independently exact to113.115 blunt dark terminal knots recede, but restoration brings artificial forehead loops back. Rejected as continuation; superseded by117.",
+  "goal_complete": false,
+  "maximum_displacement_m": 0.04351812228560448,
+  "inspected_draft_sha256": {
+    "01_Front.png": "9c0667f4c0cb5fb9bd3b5e7beccb86d8bc68e2fb00cda0d1d87afdd85d997dba",
+    "02_ThreeQuarter.png": "f5dbea3539dacd42e771352649ee08a773ca4248306425ecc1021987279540dc",
+    "03_Side.png": "bb2a86fafb1742e55801690ef5b65c736c311cb0450b7a624cdfa2ce088c3eb4",
+    "05_OppositeSide.png": "94b1d0145fa50a10db2a7096584d44fe92264a8047559c3bde3b9802720a4ef6"
+  }
+}

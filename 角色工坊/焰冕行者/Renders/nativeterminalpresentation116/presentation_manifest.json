@@ -1,0 +1,15 @@
+{
+  "source": "nativeterminalfringe116",
+  "source_sha256": "eaca433cabafcac7b7e2ede83882a6aad148e4981b5348788bbd786b3d85f8d4",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "37a911532eb6e8683f824cd8ab2bd0c196df89e029a8bee1c451ce4304ab94f1",
+  "status": "Actual render pending art review; no generative image replacement"
+}

@@ -1,0 +1,20 @@
+{
+  "source": "nativefancrown113",
+  "source_sha256": "d4e52b27582c276dc74c210c083286c101b80a8a173fb6ba0d2121ff9d3e3796",
+  "selection_attribute": "native_directional_fringe_fall",
+  "changed_fibers": 8441,
+  "discrete_body_repairs": 44132,
+  "method": "68 actual whole-path fringe groups, native_resculpted_fringe_sweeps region. Root-to-terminal cubic controls fall to own side with11-17mm upper-side displacement/8mm upper lift and40% descent second control,92% mean-flow replacement. Existing intra-lock section, first6 points and every exact terminal preserved; non-fringe/materials/other objects unchanged.",
+  "status": "Actually reviewed; reference unachieved",
+  "model_sha256": "d50cdb23c1b1929faef4ccf58b5da3797eb35f1a5c824500cf018ed0dcfb6876",
+  "art_judgment": "All4 actual drafts, all5 neutral views and512-sample actual portrait inspected.8441 foreground shafts/63 edited groups replace forced crossing/reversal with broad directional cubic falls, keep exact first6 points and all terminal positions. Upper-front rope crossings reduce, but high portrait reveals obvious blunt dark knots near forehead. Not adopted; superseded by116. Static endpoint preservation does not ensure coherent end derivatives.",
+  "goal_complete": false,
+  "maximum_displacement_m": 0.04386812821030617,
+  "inspected_draft_sha256": {
+    "01_Front.png": "e3ef3e36b96ac7a74c1728f11060393d18a9f2202e67cde5d66501601f2a5995",
+    "02_ThreeQuarter.png": "86da3b35b3f84a3cc4785402a242a346add43cc0539a88aaacd36d624a861077",
+    "03_Side.png": "fb23e44accf47ccf731f7b2cec49c11c408ad617a726d07a88d1b0d2c48bfd00",
+    "05_OppositeSide.png": "dc8df62846975e589e3c0c9ee3fe032c5b50b7951ee454d05c28aa7a192c4d66"
+  },
+  "edited_groups": 63
+}

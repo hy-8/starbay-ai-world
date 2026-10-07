@@ -10,9 +10,14 @@ entry_profile='--entry-profile' in a
 tip_profile='--tip-profile' in a
 fringe_profile='--fringe-profile' in a
 scene_materials_exact='--scene-materials-exact' in a
+prefix_points=int(a[a.index('--prefix-points')+1]) if '--prefix-points' in a else 0
+terminals_exact='--terminals-exact' in a
+if prefix_points<0:raise ValueError('Nonnegative prefix count required')
 no_long_tails='--no-long-tails' in a
 material_scope='support' if '--material-scope-support' in a else 'primary' if '--material-scope-primary' in a else None
 donor_version=a[a.index('--donor')+1] if '--donor' in a else None
+donor_suffix_start=int(a[a.index('--donor-suffix-start')+1]) if '--donor-suffix-start' in a else None
+if donor_suffix_start is not None and (not donor_version or donor_suffix_start<0):raise ValueError('Suffix comparison requires donor and nonnegative index')
 if donor_version and not re.fullmatch('[A-Za-z0-9_-]+',donor_version):raise ValueError('Invalid donor version')
 if material_scope and not material_only:raise ValueError('Material scope requires material-only comparison')
 if '--material-scope-support' in a and '--material-scope-primary' in a:raise ValueError('Ambiguous material scope')
@@ -82,6 +87,9 @@ for name,(p,r,sizes,transform) in after.items():
   assert (sizes==sizes[0]).all();n=int(sizes[0]);bp=bp.reshape(-1,n,3);p=p.reshape(-1,n,3)
   assert np.array_equal(p[:,0],bp[:,0]) and np.array_equal(p[~mask],bp[~mask])
   changed=int(mask.sum());delta=np.linalg.norm(p-bp,axis=2);maximum=float(delta.max())
+  if prefix_points:
+   assert prefix_points<n and np.array_equal(p[:,:prefix_points],bp[:,:prefix_points])
+  if terminals_exact:assert np.array_equal(p[:,-1],bp[:,-1])
   if material_only:assert np.array_equal(p,bp)
   if nape_profile:
    assert np.array_equal(p[:,:4],bp[:,:4])
@@ -118,12 +126,20 @@ if nape_profile:report.update(nape_profile=nape_result)
 if entry_profile:report.update(entry_profile=entry_result)
 if tip_profile:report.update(tip_profile=tip_result)
 if fringe_profile:report.update(fringe_profile=fringe_result)
+if prefix_points:report.update(preserved_prefix_points=prefix_points,all_primary_prefix_points_exact=True)
+if terminals_exact:report.update(all_primary_terminal_points_exact=True)
 if scene_materials_exact:report.update(all_material_slots_graphs_exact=True,light_world_camera_display_exact=True)
 if material_scope:report.update(material_scope_comparison=scope_result)
 if donor_version:
  donorhash,donormesh,donorcurves,donorlight,donormaterials=state(donor_version)
  dp,dr,ds,dt=donorcurves[edited];ap,ar,ass,at=after[edited]
  assert np.array_equal(ar,dr) and np.array_equal(ass,ds) and np.array_equal(at,dt)
- assert np.array_equal(ap.reshape(-1,n,3)[mask],dp.reshape(-1,n,3)[mask])
- report.update(donor=donor_version,donor_sha256=donorhash,selected_saved_paths_exact_to_donor=True,all_radii_topology_transforms_exact_to_donor=True)
+ if donor_suffix_start is None:
+  assert np.array_equal(ap.reshape(-1,n,3)[mask],dp.reshape(-1,n,3)[mask])
+  report.update(selected_saved_paths_exact_to_donor=True)
+ else:
+  assert donor_suffix_start<n
+  assert np.array_equal(ap.reshape(-1,n,3)[mask,donor_suffix_start:],dp.reshape(-1,n,3)[mask,donor_suffix_start:])
+  report.update(selected_saved_suffix_exact_to_donor=True,donor_suffix_first_point_index=donor_suffix_start)
+ report.update(donor=donor_version,donor_sha256=donorhash,all_radii_topology_transforms_exact_to_donor=True)
 out.write_text(json.dumps(report,indent=2),encoding='utf-8');print('LOCAL_NATIVE_HAIR_EDIT_PASS',candidate,flush=True)

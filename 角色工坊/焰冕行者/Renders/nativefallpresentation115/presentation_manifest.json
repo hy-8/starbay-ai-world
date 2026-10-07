@@ -1,0 +1,15 @@
+{
+  "source": "nativefallfringe115",
+  "source_sha256": "d50cdb23c1b1929faef4ccf58b5da3797eb35f1a5c824500cf018ed0dcfb6876",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "1441bfea169cf89018ae016a640aec565c5b7da7ee565e34e6ced158ca3ca06a",
+  "status": "Actual render pending art review; no generative image replacement"
+}

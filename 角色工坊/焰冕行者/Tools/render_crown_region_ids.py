@@ -5,6 +5,8 @@ from mathutils import Matrix
 ROOT = Path(__file__).resolve().parents[1]
 a = sys.argv[sys.argv.index('--') + 1:]; version, base = a[:2]
 loft_states = '--loft-states' in a; support_ids = '--support-ids' in a
+fan_states = '--fan-states' in a
+assert not (fan_states and loft_states), 'Choose one region scheme'
 shots = a[a.index('--cameras')+1].split(',') if '--cameras' in a else ['02_ThreeQuarter', '01_Front']
 assert all(re.fullmatch('[A-Za-z0-9_-]+', v) for v in a[:2])
 assert shots and all(v in ['01_Front','02_ThreeQuarter','03_Side','04_Back','05_OppositeSide'] for v in shots)
@@ -40,6 +42,13 @@ if loft_states:
     assert not (front&loft).any() and not (relief&~loft).any()
     regions=[('foreground61',front,(1,.03,.06,1)),('retained_root_lofts90',loft&~relief,(.03,.3,1,1)),
              ('restored_root_locks86',relief,(.03,1,.06,1)),('other_primary',~(front|loft),(1,.55,.03,1))]
+if fan_states:
+    fringe=flag('native_resculpted_fringe_sweeps')
+    fan=flag('native_transported_fan_crown')
+    assert not (fringe&fan).any()
+    regions=[('actual_resculpted_fringe106',fringe,(1,.03,.06,1)),
+             ('actual_fan_crown113',fan,(.03,.3,1,1)),
+             ('other_primary',~(fringe|fan),(.03,1,.06,1))]
 for name, mask, color in regions:
     data = bpy.data.hair_curves.new(name); data.add_curves([65] * int(mask.sum()))
     data.attributes['position'].data.foreach_set('vector', p[mask].ravel())
@@ -65,6 +74,6 @@ for name in shots:
     bpy.ops.render.render(write_still=True); images[path.name] = hashlib.sha256(path.read_bytes()).hexdigest()
 assert hashlib.sha256(source.read_bytes()).hexdigest() == digest
 (out / 'region_id_manifest.json').write_text(json.dumps(dict(source=base, source_sha256=digest, source_unchanged=True,
-    legend=legend, images_sha256=images, loft_states=loft_states,support_ids=support_ids,
+    legend=legend, images_sha256=images, loft_states=loft_states,fan_states=fan_states,support_ids=support_ids,
     scope='Actual saved region emission IDs; '+('all3 original native support objects included with separate IDs' if support_ids else 'support hidden temporarily')+'. No source save or final-appearance acceptance.'), indent=2), encoding='utf-8')
 print('CROWN_REGION_IDS', version, flush=True)

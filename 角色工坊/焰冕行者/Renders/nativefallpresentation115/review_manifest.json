@@ -1,0 +1,10 @@
+{
+  "source": "nativefallfringe115",
+  "source_sha256": "d50cdb23c1b1929faef4ccf58b5da3797eb35f1a5c824500cf018ed0dcfb6876",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "02_ThreeQuarter.png": "1441bfea169cf89018ae016a640aec565c5b7da7ee565e34e6ced158ca3ca06a"
+  },
+  "art_judgment": "Actual1920x2240/512/OIDN portrait inspected. Frontal crossings reduced, but obvious dark terminal knots near forehead. Rejected as continuation; not art complete.",
+  "goal_complete": false
+}

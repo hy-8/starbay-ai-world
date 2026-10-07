@@ -1,0 +1,25 @@
+{
+  "source": "nativefallfringe115",
+  "source_sha256": "d50cdb23c1b1929faef4ccf58b5da3797eb35f1a5c824500cf018ed0dcfb6876",
+  "donor": "nativefancrown113",
+  "donor_sha256": "d4e52b27582c276dc74c210c083286c101b80a8a173fb6ba0d2121ff9d3e3796",
+  "selection_attribute": "native_reconnected_fringe_terminals",
+  "changed_fibers": 8441,
+  "restored_suffix_first_point_index": null,
+  "discrete_body_repairs": 25587,
+  "smooth_tail": true,
+  "designed_terminal_relocations": 1459,
+  "method": "Selected8441 actual115 fringe shafts retain exact points0-42. Individual cubic terminal arcs42-64 use averaged source tangent and monotone chord end direction, allow former endpoint to move to2.2mm signed body point clearance if previously near scalp.1.4/1.7mm intermediate point guard. Radii/topology/materials/non-fringe unchanged; endpoints intentionally free.",
+  "status": "Actually reviewed; reference unachieved",
+  "model_sha256": "86c3dab6bd24fcce86a429c900402f3909c067bb35fe1c5ea2c47dc6ad3981a5",
+  "art_judgment": "All4 actual drafts, all5 neutral views and512-sample actual portrait inspected.8441 actual115 foreground shafts keep exact points0-42 and individually refit43-64 into tangent-led cubic tails. Endpoints intentionally free:1459 designed near-scalp relocations, radii keep existing taper.115 dark tip knots and116 returned forehead loops recede; upper fall/eyes/long nape retained. Adopt incomplete WIP. Broad orderly crown/fringe, repeated side waves/flat back/pale part and reference quality gap remain; no final artwork acceptance.",
+  "goal_complete": false,
+  "maximum_displacement_m": 0.03165760636329651,
+  "inspected_draft_sha256": {
+    "01_Front.png": "7a2305a0c83d61b4c19732606ca4f675824fccfcff034027268b737abcaf92ab",
+    "02_ThreeQuarter.png": "a0482368a1afbb38e48b0607650f7ca948c8357034626516649bcb221b6e73a9",
+    "03_Side.png": "57355135e5166a9156c2313a31400c145d77719b5ef264a016aafedc57bb0be7",
+    "05_OppositeSide.png": "81a61a69d222754c29c4d92fba75d55f20e70214bdd3de7db31bcc83bf74ab68"
+  },
+  "donor_role": "113 read-only reference loaded/hashed; unused by117 smooth-tail geometry"
+}

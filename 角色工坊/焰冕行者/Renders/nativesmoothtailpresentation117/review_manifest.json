@@ -1,0 +1,10 @@
+{
+  "source": "nativesmoothtail117",
+  "source_sha256": "86c3dab6bd24fcce86a429c900402f3909c067bb35fe1c5ea2c47dc6ad3981a5",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "02_ThreeQuarter.png": "008caeb066d38cae8b56ed6d997fc676f916668db2ec430321ae93dd1751dece"
+  },
+  "art_judgment": "Actual1920x2240/512/OIDN portrait inspected. Foreground tails cleaner without115 abrupt knots or116 returned loops, upper directional fall retained. Broad orderly hair and overall reference quality gap remain; incomplete WIP only.",
+  "goal_complete": false
+}

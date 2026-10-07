@@ -1,0 +1,11 @@
+{
+  "source": "nativefancrown113",
+  "source_sha256": "d4e52b27582c276dc74c210c083286c101b80a8a173fb6ba0d2121ff9d3e3796",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "02_ThreeQuarter.png": "74db432b9db20b0d2083c7dd2b3a03dd47f42e7104709e54c052aa294531785c",
+    "03_Side.png": "09a4a3e18a0de1153eec9d3f88bc048b06eece2c418f17084c7cc9ee38f7b4b3"
+  },
+  "art_judgment": "Both actual emission-ID images inspected with all3 supports. Prominent3/4 upper-front crossings are red8539 actual106 fringe, not blue22817 actual113 crown. Side upper locks mainly blue; green other-primary and separate short supports also visible. This is camera-specific actual attribution, not final beauty acceptance or every-view visibility proof.",
+  "goal_complete": false
+}

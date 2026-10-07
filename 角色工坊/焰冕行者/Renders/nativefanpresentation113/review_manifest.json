@@ -1,0 +1,10 @@
+{
+  "source": "nativefancrown113",
+  "source_sha256": "d4e52b27582c276dc74c210c083286c101b80a8a173fb6ba0d2121ff9d3e3796",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "02_ThreeQuarter.png": "5e89b7c0d5842e6a0de00f97f3d4a2265d845f3b0860f5b97538bc398958955c"
+  },
+  "art_judgment": "Actual1920x2240/512/OIDN portrait inspected. Upper crown fan somewhat more coherent than112 but prominent forehead rope crossings persist. Not final.",
+  "goal_complete": false
+}

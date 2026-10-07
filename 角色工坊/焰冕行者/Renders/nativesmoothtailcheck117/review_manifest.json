@@ -1,0 +1,14 @@
+{
+  "source": "nativesmoothtail117",
+  "source_sha256": "86c3dab6bd24fcce86a429c900402f3909c067bb35fe1c5ea2c47dc6ad3981a5",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "01_Front.png": "5bf7c701ab4c5784a96e5598b4a092d35553b748fbaf938b5f1d33186ce24182",
+    "02_ThreeQuarter.png": "96f9fcce43d1c085a0b2c4ded706e2f6518f453a3c5aae2a46f0ba08217967c9",
+    "03_Side.png": "3fb137ee978dab73b42635310d81d3112b72a590a7f93ee93e9dcc0299a9af02",
+    "04_Back.png": "219187182b8d4fe6ed40b7d72a54cc0276b06e6d8b0f337bd4a8099962be9462",
+    "05_OppositeSide.png": "d19f7d228cff7aaaae94cb431e2b31d44fba15c3dc68f7bc0235e96c438e405c"
+  },
+  "art_judgment": "All5 actual neutral views inspected.115 dark terminal knots and116 restored curly loops recede with individual continuous tails. Eyes/long nape retained; broad orderly top, patterned side bends/flat back/pale part persist. Reference incomplete.",
+  "goal_complete": false
+}
