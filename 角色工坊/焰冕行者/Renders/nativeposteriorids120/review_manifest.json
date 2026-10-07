@@ -1,0 +1,11 @@
+{
+  "source": "nativeposteriorlayers118",
+  "source_sha256": "09b37f70780fb723ffdced663a49f79f7fa18399e4e1abd4c1aa02b12900ddd0",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "04_Back.png": "f1e4351915d2579978bdcd1874ba1706128b72adaa4940f9a61aba3c80ae961e",
+    "03_Side.png": "cd44224eddc86202cc79326eca382693a433c895cfaf6abdc89fb236ca647d67"
+  },
+  "art_judgment": "Both actual back/profile ID images inspected with all3 original supports. Broad middle-back contains blue actual118 posterior primary mixed with pink original short posterior support. Green other-primary is more visible on upper/side sections. Camera-specific attribution, not every-view visibility or final beauty.",
+  "goal_complete": false
+}

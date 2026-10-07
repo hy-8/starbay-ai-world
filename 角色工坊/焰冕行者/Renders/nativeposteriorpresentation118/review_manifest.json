@@ -1,0 +1,10 @@
+{
+  "source": "nativeposteriorlayers118",
+  "source_sha256": "09b37f70780fb723ffdced663a49f79f7fa18399e4e1abd4c1aa02b12900ddd0",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "02_ThreeQuarter.png": "79fb6851c99438bd985e2351c1cfca951b53e24afdc6378fb2c77345961a8ab7"
+  },
+  "art_judgment": "Actual1920x2240/512/OIDN portrait inspected. Side/nape tips more staggered; frontal tip hook/broad ordered crown remain. Intermediate118 geometry; not reference quality.",
+  "goal_complete": false
+}

@@ -1,0 +1,10 @@
+{
+  "source": "nativebackshader122",
+  "source_sha256": "66902fb2ffd50153baabfce09e506f492c46308492f3001b5210f1fae7125ab5",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "02_ThreeQuarter.png": "eb31cde6b81adfbfd38039ded14e5b5340ba6b6f462fce25511018d759eb4519"
+  },
+  "art_judgment": "Actual1920x2240/512/OIDN portrait inspected.118 staggered geometry retained,122 support color change limited mostly to back. Still broad ordered crown, repeated side bends, flat back and small forehead hook. Incomplete continuation only.",
+  "goal_complete": false
+}

@@ -1,0 +1,15 @@
+{
+  "source": "nativebackshader122",
+  "source_sha256": "66902fb2ffd50153baabfce09e506f492c46308492f3001b5210f1fae7125ab5",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "eb31cde6b81adfbfd38039ded14e5b5340ba6b6f462fce25511018d759eb4519",
+  "status": "Actual render pending art review; no generative image replacement"
+}

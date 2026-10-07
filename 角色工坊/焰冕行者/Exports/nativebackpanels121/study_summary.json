@@ -1,0 +1,27 @@
+{
+  "source": "nativeposteriorlayers118",
+  "source_sha256": "09b37f70780fb723ffdced663a49f79f7fa18399e4e1abd4c1aa02b12900ddd0",
+  "selection_attribute": "native_posterior_panel_locks",
+  "changed_fibers": 7175,
+  "eligible_fibers": 24171,
+  "target_groups": 180,
+  "edited_groups": 69,
+  "outer_locks": false,
+  "posterior_panels": true,
+  "discrete_body_repairs": 0,
+  "discrete_collar_ray_repairs": 0,
+  "fringe_exact": true,
+  "prefix_points": 6,
+  "method": "Actual posterior center-panel families, center point32 Y>=30mm/absX<=64mm,20% source fibers per family remain unselected as coverage. Full-path fractions64-93% with2.5% individual scatter, broad fitted93% mean,12-24mm radial middle relief and10mm independent lateral lock stagger;72% blend toward3-7mm fan halfwidth tapering70% at ends. Roots/first6/fringe/materials/radii/other components retained.",
+  "status": "Actually reviewed; reference unachieved",
+  "model_sha256": "8e339b6a12da46f39acd2cb43e3bcd80f77d7d5b0407bcf057b2718b4ca901e4",
+  "art_judgment": "All4 actual drafts inspected.69 actual posterior-center groups/7175 shafts shorten and narrow,20% source family fibers left as veil. Central back relief changes slightly but side profiles expose artificial suspended arches. Rejected, not mixed into122.",
+  "goal_complete": false,
+  "maximum_displacement_m": 0.0981067642569542,
+  "inspected_draft_sha256": {
+    "02_ThreeQuarter.png": "354d74dcd7b432b1ac40d951f18e369d90e52d30309aa29c32f68d630ccd2e60",
+    "03_Side.png": "730ce11ce2ca9926570e008e3ca9aae871e7846ec738ab99438b2533a582e81c",
+    "04_Back.png": "7dab15d10bcc9bb0b1e901eafd5331e3a1dc3bd859302790b2c1b02506c5a334",
+    "05_OppositeSide.png": "5301d6de4ea96c20175ed12906c13686ffc4aaa90bda67032751b8acb0c47d50"
+  }
+}

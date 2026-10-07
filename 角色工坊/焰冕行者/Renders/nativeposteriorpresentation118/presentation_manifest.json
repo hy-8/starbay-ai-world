@@ -1,0 +1,15 @@
+{
+  "source": "nativeposteriorlayers118",
+  "source_sha256": "09b37f70780fb723ffdced663a49f79f7fa18399e4e1abd4c1aa02b12900ddd0",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "79fb6851c99438bd985e2351c1cfca951b53e24afdc6378fb2c77345961a8ab7",
+  "status": "Actual render pending art review; no generative image replacement"
+}

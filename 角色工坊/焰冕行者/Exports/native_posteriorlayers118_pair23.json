@@ -1,0 +1,22 @@
+{
+  "source": "nativesmoothtail117",
+  "source_sha256": "86c3dab6bd24fcce86a429c900402f3909c067bb35fe1c5ea2c47dc6ad3981a5",
+  "candidate": "nativeposteriorlayers118",
+  "candidate_sha256": "09b37f70780fb723ffdced663a49f79f7fa18399e4e1abd4c1aa02b12900ddd0",
+  "mesh_count": 141,
+  "mesh_geometry_uv_shape_keys_transforms_exact": true,
+  "visible_native_objects": 4,
+  "curves_finite_radii_positive_textures_available": true,
+  "edited_object": "Bystedt layercut derivative \u2022 native root reflow",
+  "edited_fibers": 24059,
+  "all_radii_topology_transforms_exact": true,
+  "all_roots_exact": true,
+  "unselected_fibers_exact": true,
+  "other_native_objects_exact": true,
+  "max_displacement_m": 0.1001138985157013,
+  "scope": "Static localized file comparison. Not art, segment/body/eye/clothing/animation collision acceptance.",
+  "preserved_prefix_points": 6,
+  "all_primary_prefix_points_exact": true,
+  "all_material_slots_graphs_exact": true,
+  "light_world_camera_display_exact": true
+}

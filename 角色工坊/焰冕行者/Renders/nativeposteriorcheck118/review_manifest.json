@@ -1,0 +1,14 @@
+{
+  "source": "nativeposteriorlayers118",
+  "source_sha256": "09b37f70780fb723ffdced663a49f79f7fa18399e4e1abd4c1aa02b12900ddd0",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "01_Front.png": "2ada3800431877edad321bf0f59191b2cffc1438ceee87500551a7e4135d83fa",
+    "02_ThreeQuarter.png": "3023cfc66f81ea62f66d44b68b0809a3ec2f8428011269299eeff4cf447799ca",
+    "03_Side.png": "92986b86e0812770d0dfaadca17475d07d4567f9213297b628684b169d041327",
+    "04_Back.png": "8ca1106833116a5cdd846dde0dc944620f0392ff06f46130838b3beb49821484",
+    "05_OppositeSide.png": "d26091082d234ba2470ecb101e68676f75446c403edd353b1fa4cdc3007dfad6"
+  },
+  "art_judgment": "All5 actual neutral views inspected: staggered side/nape ends clearer than117, forehead preserved. Patterned side bends, broad back panel and pale part remain. Incomplete.",
+  "goal_complete": false
+}

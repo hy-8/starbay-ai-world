@@ -1,0 +1,25 @@
+{
+  "source": "nativesmoothtail117",
+  "source_sha256": "86c3dab6bd24fcce86a429c900402f3909c067bb35fe1c5ea2c47dc6ad3981a5",
+  "selection_attribute": "native_staggered_posterior_layers",
+  "changed_fibers": 24059,
+  "eligible_fibers": 24171,
+  "target_groups": 180,
+  "edited_groups": 171,
+  "discrete_body_repairs": 121,
+  "discrete_collar_ray_repairs": 0,
+  "fringe_exact": true,
+  "prefix_points": 6,
+  "method": "180 actual whole-path groups, non-fringe posterior/side follicles. High-root locks shorten by10-35% of source path parameter with individual2.5% scatter; low nape retained. Broad fitted cubic mean flow90%,4-17mm outward staggered terminal flare,2-10mm upper lift,20% lateral section reduction. Actual source follicles, first6 points, fringe, radii/topology, other components/materials/lighting retained.",
+  "status": "Actually reviewed; reference unachieved",
+  "model_sha256": "09b37f70780fb723ffdced663a49f79f7fa18399e4e1abd4c1aa02b12900ddd0",
+  "art_judgment": "All4 actual drafts, all5 neutral views and512-sample portrait inspected.171 edited whole-path groups/24059 shafts produce clearer staggered side/nape ends versus117, fringe retained. Posterior center remains broad/flat, side waves patterned and forehead tiny tip hook remains. Useful intermediate geometry, not reference complete.",
+  "goal_complete": false,
+  "maximum_displacement_m": 0.1001138985157013,
+  "inspected_draft_sha256": {
+    "02_ThreeQuarter.png": "3b9ff828bc5b71728d69cadc82a2a522c37158839044fbdc98564fd092dc0bcf",
+    "03_Side.png": "167ec94aa7cde11278cbd17abb4c6830512cbea25a883ba3df66f38b2413de1d",
+    "04_Back.png": "bef894086666f96e44d792240b14bf481875b345568cf135b9182c462cf4bbfd",
+    "05_OppositeSide.png": "db758fdf34468bb3bc7f3e6def1f574b714783e86bfd7e06165d78ef50e74326"
+  }
+}

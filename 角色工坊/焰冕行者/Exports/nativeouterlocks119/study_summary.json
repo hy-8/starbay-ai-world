@@ -1,0 +1,28 @@
+{
+  "source": "nativeposteriorlayers118",
+  "source_sha256": "09b37f70780fb723ffdced663a49f79f7fa18399e4e1abd4c1aa02b12900ddd0",
+  "selection_attribute": "native_staggered_posterior_layers.001",
+  "changed_fibers": 7834,
+  "eligible_fibers": 24171,
+  "target_groups": 180,
+  "edited_groups": 51,
+  "outer_locks": true,
+  "discrete_body_repairs": 32595,
+  "discrete_collar_ray_repairs": 0,
+  "fringe_exact": true,
+  "prefix_points": 6,
+  "method": "180 actual whole-path groups; high roots Z>=1.792m and independent family selection retain inner source coverage. Explicit authored crown/shoulder/end landmarks give backward-swept outer cubic locks, tips1.704-1.789m at92-117mm radial range. Original intra-lock scatter retained60%; source follicles, first6 points/fringe/radii/topology/materials/other components unchanged.",
+  "status": "Actually reviewed; reference unachieved",
+  "original_local_manifest_selection_attribute": "native_staggered_posterior_layers",
+  "provenance_correction": "Actual saved new mask has automatic.001 suffix. Raw historical local manifest unchanged. Independent saved-file comparison uses correct7834-fiber mask.",
+  "model_sha256": "c8c2322376b4408c5bbfeff34b552a181e8ab3562198587e9f84b66ee56641a5",
+  "art_judgment": "All4 actual drafts inspected.51 edited high-root groups/7834 shafts use authored backward-swept outer landmarks over118. Visual change small; narrow protruding top/back tails remain, central broad panel persists. Rejected as continuation. Original local manifest selection name lacked automatic.001 suffix; independent audit used actual saved native_staggered_posterior_layers.001. Generator now requires unique mode-specific attribute.",
+  "goal_complete": false,
+  "maximum_displacement_m": 0.11030572652816772,
+  "inspected_draft_sha256": {
+    "02_ThreeQuarter.png": "cb3b4e00b0e0c17599987824cae4320fee4ab189831cd79bdb891238be189fb4",
+    "03_Side.png": "c4f7780d0d1bf8d46490e4bfe0a8dd81238db5e49c06e24a97c34a8b930ef01b",
+    "04_Back.png": "4cf93aff16a65178931a0987372f4eeb70011df061c2980d5286487b154180d3",
+    "05_OppositeSide.png": "1a1bc67f6f9efd47206dc7f84ca88878071cc6efa48f1d344bfcc8efae2fc2aa"
+  }
+}

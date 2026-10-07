@@ -1,0 +1,22 @@
+{
+  "source": "nativeposteriorlayers118",
+  "source_sha256": "09b37f70780fb723ffdced663a49f79f7fa18399e4e1abd4c1aa02b12900ddd0",
+  "changed_component": "Original posterior coverage \u2022 surface-grown short fibers",
+  "source_materials": [
+    "Original red directional reflection-transmission control"
+  ],
+  "target_material": "Primary scarlet \u2022 pure Huang control",
+  "geometry_edit": false,
+  "method": "Only the original posterior support material slot is assigned the existing103 pure-Huang primary shader. No new shader parameters, geometry, color-grading or lights. Other supports/primary/mesh material slots retained.",
+  "status": "Actually reviewed; reference unachieved",
+  "model_sha256": "66902fb2ffd50153baabfce09e506f492c46308492f3001b5210f1fae7125ab5",
+  "art_judgment": "All4 actual drafts and512-sample portrait inspected.Only original posterior short-support material slot is assigned existing103 primary Huang shader; exact118 geometry retained. Visible back gray haze reduced and color more consistent, while flat geometry remains. Adopt incomplete WIP with118 staggered geometry, not final artwork.",
+  "goal_complete": false,
+  "maximum_displacement_m": 0.0,
+  "inspected_draft_sha256": {
+    "02_ThreeQuarter.png": "9b10715959ec08a3cbcbd4d05e7f81cb611c95ec25a7e750fa24d4e304e586a8",
+    "03_Side.png": "f9c832846afe4c8b5404b812baa86969ebd8558d091310c30f65fbb01f0bde9e",
+    "04_Back.png": "1dfd6839d1ff485c6e9d31de3e0f9952f36860300d63f6d70de8e71ca9536428",
+    "05_OppositeSide.png": "fb8ec0ea471cadb83254f02b6898e5ca72beb7d198c94036a0b4f4ab8535432e"
+  }
+}
