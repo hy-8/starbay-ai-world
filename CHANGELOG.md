@@ -360,3 +360,10 @@ sintelfit01/02/03的九张角色实渲均已查看：960×1120、Cycles/OptiX64 
 - Prototype44 sculpts1483 crown shafts;45 applies the method to four high families/3379 shafts. All five neutral views and512-sample actual portrait reviewed: modest crown improvement, posterior37 retained, reference quality incomplete. Continue from45.
 - Two explicit pure-Chiang pigment comparisons remain pink/white and are rejected. Four local geometry and two material-only comparisons preserve existing meshes/hair boundaries; material controls also preserve all hair geometry and scene lighting/cameras.
 - Source/derived geometry remains local; no new fee, candidate Release or UE integration.
+
+
+### 2026-10-07 · Camera-attributed front locks (WIP)
+
+- Part ROI probe57 locates the target ThreeQuarter support mainly at positive-X roots; point attribution has no body occlusion/continuous-ray guarantee. Earlier negative-X bridge and overlay studies fail or barely change the target.
+- Corrected additive studies58/59 remain insufficient. Explicit primary front design60 reshapes6103 shafts;61 divides the same region into30 follicle patches with varied curls/end lengths. All five neutral views and actual512-sample portrait inspected; fuller foreground, existing side/back retained, reference target still incomplete. Continue from61.
+- Support follow-up62 barely improves the view and is not adopted. Seven local/four additive static audits preserve existing mesh and intended hair boundaries. Original/derived geometry stays local; code, aggregate evidence and selected inspected renders synchronized. No new fee, candidate Release or UE integration.

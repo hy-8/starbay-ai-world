@@ -1,0 +1,22 @@
+{
+  "source": "nativecrownsection45",
+  "source_sha256": "330c02a34df639f660be08e1d58eff3b13a39ad200c89d7cfccbd66a2474f6ab",
+  "changed_fibers": 2687,
+  "all_wide": true,
+  "selection_attribute": "native_fringe_end_sculpture",
+  "all_first_sixteen_points_exact": true,
+  "unselected_primary_exact": true,
+  "other_hair_unchanged": true,
+  "discrete_body_repairs": 0,
+  "method": "Measured frontal whole-path families; parallel-transported section width3.5mm/depth2.5mm;shaft38%-78% gradual onset;free ends included regardless elevation;preserve longitudinal scatter with3mm lateral/3.5mm height end flick",
+  "scope": "Static local geometry and discrete body protection, not all hair/eye/segment/clothing/animation or art acceptance",
+  "model_sha256": "51a4f1fc35f15070bfe4d2a583b1cf72b4cd63b135ad00c5f311de2cb42027bb",
+  "art_judgment": "Six wide families narrowed; overall silhouette not materially improved. Not adopted.",
+  "status": "Actual drafts reviewed; reference target incomplete",
+  "inspected_draft_sha256": {
+    "01_Front.png": "f9f00c5a0f53aa0392d6259fb9dcaf1275466e0d41cb8099c509604262bd0cf4",
+    "02_ThreeQuarter.png": "f3cc6b3ee2e3afa0fde60677b8bdd9c884357da805c86d3fb96c8c88cfe4b1f4",
+    "03_Side.png": "9221e75f5f8e30395700ebdda052e3b40f36c303a6b8d1eda1199e536572e91d"
+  },
+  "groups_count": 6
+}

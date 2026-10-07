@@ -1,0 +1,16 @@
+{
+  "source": "nativecrownsection45",
+  "candidate": "nativeparttransition56",
+  "source_sha256": "330c02a34df639f660be08e1d58eff3b13a39ad200c89d7cfccbd66a2474f6ab",
+  "candidate_sha256": "3cde41a30c9fed854f1f8d081bbc85c8057ec7cd85a39badd0e1d052ae3e0586",
+  "mesh_count": 141,
+  "all_mesh_geometry_uv_shape_keys_transforms_exact": true,
+  "all_four_existing_visible_hair_exact": true,
+  "added_objects": [
+    "Abhay part transition \u2022 continuous overlay"
+  ],
+  "added_fibers": 545,
+  "added_roots_exact_source_subset": true,
+  "finite_positive_radii_textures_available": true,
+  "scope": "Static additive file comparison only; not artistic acceptance or segment/body/eye/clothing/animation collision assurance."
+}

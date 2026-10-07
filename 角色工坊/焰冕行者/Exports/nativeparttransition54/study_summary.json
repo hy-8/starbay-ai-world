@@ -1,0 +1,20 @@
+{
+  "source": "nativecrownsection45",
+  "source_sha256": "330c02a34df639f660be08e1d58eff3b13a39ad200c89d7cfccbd66a2474f6ab",
+  "added_object": "Abhay part transition \u2022 continuous overlay",
+  "added_fibers": 545,
+  "all_existing_hair_and_meshes_retained": true,
+  "discrete_body_repairs": 80,
+  "method": "Two of12 actual Abhay follicle patches nearest visible camera part ROI;20 smooth real-body controls/1-11mm loft, free lower28% fall;65-point continuous native shafts, physical25-32micron roots tapered ends;existing full coverage untouched",
+  "license": "Derivative uses Abhay existing licensed follicles; source and derived geometry remain local",
+  "scope": "Additive local prototype/discrete body points, not eye/continuous segment/clothing/animation or art acceptance",
+  "model_sha256": "96df3d17b86381162d7337abe98a7dd9982c3b6571d2ed651996877f2f2acfbc",
+  "art_judgment": "Two negative-X follicle patches chosen by projected root centers; actual roots away from intended ROI, overlay mostly hidden. Not adopted.",
+  "status": "Actual drafts reviewed; reference target incomplete",
+  "inspected_draft_sha256": {
+    "01_Front.png": "866aece3fc86adc700223c14743882977c2e2269a2964ced5be557041f2ed0cf",
+    "02_ThreeQuarter.png": "5be8b4bce3714bf89dd61dc765b22ba86c6c27eff4950ef453ec4c86f355f995",
+    "03_Side.png": "1af5f2862fce64f9a19b92b48f9ce96228b137c17efc3cdfa3b41a4eb70bb1de"
+  },
+  "patches_count": 2
+}

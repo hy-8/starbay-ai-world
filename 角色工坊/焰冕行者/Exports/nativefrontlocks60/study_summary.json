@@ -1,0 +1,21 @@
+{
+  "source": "nativecrownsection45",
+  "source_sha256": "330c02a34df639f660be08e1d58eff3b13a39ad200c89d7cfccbd66a2474f6ab",
+  "changed_fibers": 6103,
+  "selection_attribute": "native_front_frame_sculpture",
+  "all_roots_exact": true,
+  "unselected_primary_exact": true,
+  "other_hair_unchanged": true,
+  "discrete_body_repairs": 13822,
+  "method": "Camera-attributed positive-X/front root zone;10 exact source-follicle patches, explicitly authored cubic foreground locks with varied tapered tip positions. Existing hair topology/radii retained.",
+  "scope": "Discrete real-body point checks only, not full segment/eye/clothing/animation collision or art acceptance",
+  "model_sha256": "7edfd1a5e6d214dab5076c732fd59942f8d1010af4fdb33e56a8d0fa9a851147",
+  "art_judgment": "6103 existing primary fibers restyled into10 explicit front-facing locks. Actual foreground coverage improves, but locks are too regular/hard; prototype only.",
+  "status": "Actual drafts reviewed; reference target incomplete",
+  "inspected_draft_sha256": {
+    "01_Front.png": "b06c2424dca0303a541a8ec3c7d229a6a24507f28df06621698614eb1227ffcf",
+    "02_ThreeQuarter.png": "c52b8c14eb1ea31a3e48703ef0dc00624f579534a860a0bd50d5bf2bf456d963",
+    "03_Side.png": "ecc83b7d119a29385522fa6b63eacd77ac7ae92d67561c25f9d4a3ee6f575dd6"
+  },
+  "patches_count": 10
+}

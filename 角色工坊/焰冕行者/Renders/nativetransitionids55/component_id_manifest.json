@@ -1,0 +1,58 @@
+{
+  "source": "nativeparttransition54",
+  "source_sha256": "96df3d17b86381162d7337abe98a7dd9982c3b6571d2ed651996877f2f2acfbc",
+  "source_unchanged": true,
+  "legend": [
+    {
+      "object": "Abhay flow derivative \u2022 real scalp sampled short support",
+      "linear_color": [
+        0.04,
+        0.15,
+        1,
+        1
+      ],
+      "fibers": 14000
+    },
+    {
+      "object": "Abhay part transition \u2022 continuous overlay",
+      "linear_color": [
+        0,
+        1,
+        0.12,
+        1
+      ],
+      "fibers": 545
+    },
+    {
+      "object": "Bystedt derivative \u2022 short scalp support",
+      "linear_color": [
+        1,
+        0.03,
+        0.08,
+        1
+      ],
+      "fibers": 23657
+    },
+    {
+      "object": "Bystedt layercut derivative \u2022 native root reflow",
+      "linear_color": [
+        1,
+        0.5,
+        0.02,
+        1
+      ],
+      "fibers": 49268
+    },
+    {
+      "object": "Original posterior coverage \u2022 surface-grown short fibers",
+      "linear_color": [
+        0.65,
+        0.04,
+        1,
+        1
+      ],
+      "fibers": 36000
+    }
+  ],
+  "method": "Temporary real components emission IDs; diagnostic color only, not final beauty render"
+}

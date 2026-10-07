@@ -1,0 +1,21 @@
+{
+  "source": "nativecrownsection45",
+  "source_sha256": "330c02a34df639f660be08e1d58eff3b13a39ad200c89d7cfccbd66a2474f6ab",
+  "added_object": "Abhay part transition \u2022 continuous overlay",
+  "added_fibers": 545,
+  "follow_support": true,
+  "all_existing_hair_and_meshes_retained": true,
+  "discrete_body_repairs": 444,
+  "method": "Two of12 Abhay root patches selected by actual middle-shaft camera footprint (point approximation, not ray visibility);existing mean support path lifted3.5mm along smoothed real-body normals, free last35% extended down30mm;65-point continuous native shafts, physical25-32micron roots tapered ends;existing full coverage untouched",
+  "license": "Derivative uses Abhay existing licensed follicles; source and derived geometry remain local",
+  "scope": "Additive local prototype/discrete body points, not eye/continuous segment/clothing/animation or art acceptance",
+  "model_sha256": "3cde41a30c9fed854f1f8d081bbc85c8057ec7cd85a39badd0e1d052ae3e0586",
+  "art_judgment": "Independent source45, middle-shaft footprint selection still restricted to same negative-X area. Mostly hidden; no material improvement. Not adopted.",
+  "status": "Actual drafts reviewed; reference target incomplete",
+  "inspected_draft_sha256": {
+    "01_Front.png": "c57c0d3d7b80dec85e65d3dd08542fa9537183f409bb729ff483a1c4995c9aeb",
+    "02_ThreeQuarter.png": "5b37e61625f24659dd25a2c80d48beb8f3c8d12f0b18c7fbeff5d891a423792b",
+    "03_Side.png": "02f249c62eeacc90e9ab6260024b4f04add7128ba28aecf1beb06c1738f25e9a"
+  },
+  "patches_count": 2
+}

@@ -1,0 +1,37 @@
+{
+  "source": "nativecrownsection45",
+  "source_sha256": "330c02a34df639f660be08e1d58eff3b13a39ad200c89d7cfccbd66a2474f6ab",
+  "changed_object": "Abhay flow derivative \u2022 real scalp sampled short support",
+  "changed_fibers": 1209,
+  "eligible_fibers": 3877,
+  "layered": true,
+  "preserved_original_fraction": 0.6666666666666666,
+  "candidate_primary_shafts": 11466,
+  "selection_attribute": "native_part_bridge",
+  "entry_distance_quantiles_m": [
+    6.10233582847286e-05,
+    0.0009967278456315398,
+    0.012890184484422208,
+    0.029530126601457596
+  ],
+  "result_length_quantiles_m": [
+    0.0385881887123327,
+    0.05921365604168426,
+    0.0672781488378215,
+    0.09171787768612341
+  ],
+  "discrete_body_repairs": 1609,
+  "all_roots_exact": true,
+  "unselected_support_exact": true,
+  "other_native_objects_exact": true,
+  "method": "Abhay upper-negative-X part support; closest of32 existing continuous long-side trajectory entries with direction penalty;48-66mm travel capped at88% remaining donor arc;entry translation fades over24mm;only index%3==0 selected, remaining2/3 untouched coverage;no raw donor indices uploaded",
+  "scope": "Static local shape and discrete body point checks, not full segment/eye/clothing/motion or art acceptance",
+  "model_sha256": "2995e717609c282f9fff6868368d628a62dbcaf7b16a9fbdc7ed1d68f4c5749a",
+  "art_judgment": "Independent source45; only one third replacement retains coverage better but little styling improvement. Not adopted.",
+  "status": "Actual drafts reviewed; reference target incomplete",
+  "inspected_draft_sha256": {
+    "01_Front.png": "1211d6916ef788709cb5e3ad5a6c0d14233600557dcd430a73298434e00f2e93",
+    "02_ThreeQuarter.png": "7af3df27b8d567dc856fc4b6daa93f1fb1370de67a51fc0dd99f352665a7fc61",
+    "05_OppositeSide.png": "43847ddb690a8393451c89168d2af46b9d9fad4a88ec60c796dcaaa9e7ed5283"
+  }
+}

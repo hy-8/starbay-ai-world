@@ -1,0 +1,38 @@
+{
+  "source": "nativefinefront61",
+  "source_sha256": "823c60730def8d8e35ead0feab5df6455115af9c68663a330c1aff7d6ab02e48",
+  "changed_object": "Abhay flow derivative \u2022 real scalp sampled short support",
+  "changed_fibers": 1304,
+  "eligible_fibers": 1398,
+  "layered": false,
+  "front_roi": true,
+  "preserved_original_fraction": null,
+  "candidate_primary_shafts": 6103,
+  "selection_attribute": "native_part_bridge",
+  "entry_distance_quantiles_m": [
+    5.3892519645160064e-05,
+    0.0008696556615177542,
+    0.003949145879596472,
+    0.008978335186839104
+  ],
+  "result_length_quantiles_m": [
+    0.04974844883019039,
+    0.07454561326551207,
+    0.08359388143551903,
+    0.08925066668018444
+  ],
+  "discrete_body_repairs": 11759,
+  "all_roots_exact": true,
+  "unselected_support_exact": true,
+  "other_native_objects_exact": true,
+  "method": "Positive-X/front Abhay zone informed by camera probe57; nearest of32 actual authored primary root trajectories, at most9mm root distance;68-84mm travel capped at78% remaining donor arc;entry translation fades over24mm;no raw donor indices uploaded",
+  "scope": "Static local shape and discrete body point checks, not full segment/eye/clothing/motion or art acceptance",
+  "model_sha256": "dad92a1c1b113e5afbdbe4f722c65a6078fe36b5e5ad29e0830c0bb366bf071d",
+  "art_judgment": "1304 positive-X/front Abhay support fibers extended along nearest actual source61 primary root paths. Three actual views show little further benefit; retain61.",
+  "status": "Actual drafts reviewed; reference target incomplete",
+  "inspected_draft_sha256": {
+    "01_Front.png": "8aef1be44ed23f6955748188ad37393e5f683ccbb34fdb3bfec189dae87ed605",
+    "02_ThreeQuarter.png": "69cc611ba0e8b8478326dfd847b045b24ca7628c6718c4c9173be6985ad95b04",
+    "05_OppositeSide.png": "e45ac6f03d6487f37b050cf7767b1852d4882a6a4898efe8d721916a4c2a736e"
+  }
+}

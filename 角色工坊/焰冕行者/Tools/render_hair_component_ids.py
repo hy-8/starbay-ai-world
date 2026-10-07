@@ -9,7 +9,7 @@ out=ROOT/'Renders'/version
 if out.exists():raise RuntimeError('Fresh IDs required')
 source=ROOT/'Exports'/base/'Ember_Regent.blend';digest=hashlib.sha256(source.read_bytes()).hexdigest()
 bpy.ops.wm.open_mainfile(filepath=str(source),use_scripts=False)
-palette=[(.04,.15,1,1),(0,1,.12,1),(1,.03,.08,1),(1,.5,.02,1)]
+palette=[(.04,.15,1,1),(0,1,.12,1),(1,.03,.08,1),(1,.5,.02,1),(.65,.04,1,1)]
 legend=[]
 def emission(color,label):
  m=bpy.data.materials.new(label);m.use_nodes=True;m.node_tree.nodes.clear()
@@ -19,7 +19,9 @@ body=emission((.08,.08,.08,1),'ID body neutral')
 for ob in bpy.data.objects:
  if ob.type=='MESH' and not ob.hide_render:
   for slot in ob.material_slots:slot.material=body
-for ob,color in zip(sorted([o for o in bpy.data.objects if o.type=='CURVES' and not o.hide_render],key=lambda o:o.name),palette):
+visible=sorted([o for o in bpy.data.objects if o.type=='CURVES' and not o.hide_render],key=lambda o:o.name)
+if len(visible)>len(palette):raise RuntimeError('Every visible component requires an explicit ID color')
+for ob,color in zip(visible,palette):
  ob.data=ob.data.copy();ob.data.materials.clear();ob.data.materials.append(emission(color,'ID '+ob.name))
  legend.append(dict(object=ob.name,linear_color=color,fibers=len(ob.data.curves)))
 s=bpy.context.scene;cam=bpy.data.objects['03_Side'].copy();cam.data=cam.data.copy();s.collection.objects.link(cam);cam.name='05_OppositeSide'

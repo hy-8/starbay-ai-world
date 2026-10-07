@@ -1,0 +1,10 @@
+{
+  "source": "nativecrownsection45",
+  "source_sha256": "330c02a34df639f660be08e1d58eff3b13a39ad200c89d7cfccbd66a2474f6ab",
+  "actual_images_reviewed": true,
+  "inspected_sha256": {
+    "02_ThreeQuarter.png": "1438cc0cefdb61ee7d7e72127b78369931ee3d8cb6f6b8972f56abfc024c3641",
+    "05_OppositeSide.png": "2d0e23711ca4264f2ec63f582c2c708d871000fc324c514ac006d2e499392036"
+  },
+  "judgment": "Actual component IDs show visible Abhay/Bystedt short support in the ThreeQuarter part and distinct opposite region. Attribution differs with camera; broad primary bands also remain."
+}

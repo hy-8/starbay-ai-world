@@ -1,0 +1,18 @@
+{
+  "source": "nativefinefront61",
+  "source_sha256": "823c60730def8d8e35ead0feab5df6455115af9c68663a330c1aff7d6ab02e48",
+  "candidate": "nativefrontsupport62",
+  "candidate_sha256": "dad92a1c1b113e5afbdbe4f722c65a6078fe36b5e5ad29e0830c0bb366bf071d",
+  "mesh_count": 141,
+  "mesh_geometry_uv_shape_keys_transforms_exact": true,
+  "visible_native_objects": 4,
+  "curves_finite_radii_positive_textures_available": true,
+  "edited_object": "Abhay flow derivative \u2022 real scalp sampled short support",
+  "edited_fibers": 1304,
+  "all_radii_topology_transforms_exact": true,
+  "all_roots_exact": true,
+  "unselected_fibers_exact": true,
+  "other_native_objects_exact": true,
+  "max_displacement_m": 0.07534975558519363,
+  "scope": "Static localized file comparison. Not art, segment/body/eye/clothing/animation collision acceptance."
+}

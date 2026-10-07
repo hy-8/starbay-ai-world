@@ -1,0 +1,10 @@
+{
+  "source": "nativeparttransition54",
+  "source_sha256": "96df3d17b86381162d7337abe98a7dd9982c3b6571d2ed651996877f2f2acfbc",
+  "actual_images_reviewed": true,
+  "inspected_sha256": {
+    "02_ThreeQuarter.png": "6df7412f1b0c25ae5f31f585fe42ba41005695feb3f3ad3f6846491d4572969c",
+    "05_OppositeSide.png": "a0ebea6ed64e129dfd855b462b2781dea4d8555c91bcf49002fddba8802683c3"
+  },
+  "judgment": "New green overlay54 is mostly hidden in ThreeQuarter, visible only in a small opposite patch. Confirms inadequate target coverage; does not prove a collision result."
+}

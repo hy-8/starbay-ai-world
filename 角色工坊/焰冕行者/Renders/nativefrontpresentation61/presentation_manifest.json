@@ -1,0 +1,15 @@
+{
+  "source": "nativefinefront61",
+  "source_sha256": "823c60730def8d8e35ead0feab5df6455115af9c68663a330c1aff7d6ab02e48",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "f80222ce973c0a37fe807691e271f89943bc79df0579ae0e574bd1dfe06f52a0",
+  "status": "Actual render pending art review; no generative image replacement"
+}

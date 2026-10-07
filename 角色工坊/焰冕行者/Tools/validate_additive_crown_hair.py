@@ -3,6 +3,7 @@ import bpy,numpy as np,json,hashlib,sys,re
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 a=sys.argv[sys.argv.index('--')+1:];filename,base,candidate=a[:3]
+part_transition='--part-transition' in a
 if not all(re.fullmatch('[A-Za-z0-9_.-]+',v) for v in a[:3]):raise ValueError(a)
 out=ROOT/'Exports'/filename
 if out.exists():raise RuntimeError('Fresh check required')
@@ -10,7 +11,7 @@ def array(data,member,n):
  v=np.empty((len(data),n),np.float32);data.foreach_get(member,v.ravel());return v
 def state(version):
  path=ROOT/'Exports'/version/'Ember_Regent.blend';digest=hashlib.sha256(path.read_bytes()).hexdigest();bpy.ops.wm.open_mainfile(filepath=str(path),use_scripts=False)
- meshes={};curves={}
+ meshes={};curves={};roots={};counts={}
  for o in bpy.data.objects:
   if o.type=='MESH':
    m=o.data;h=hashlib.sha256(array(m.vertices,'co',3).tobytes()+np.array(o.matrix_world,np.float32).tobytes()+repr([tuple(f.vertices) for f in m.polygons]).encode())
@@ -21,11 +22,14 @@ def state(version):
   elif o.type=='CURVES' and not o.hide_render:
    c=o.data;p=array(c.attributes['position'].data,'vector',3);r=array(c.attributes['radius'].data,'value',1);assert np.isfinite(p).all() and np.isfinite(r).all() and (r>0).all()
    curves[o.name]=hashlib.sha256(p.tobytes()+r.tobytes()+np.array([x.points_length for x in c.curves]).tobytes()+np.array(o.matrix_world,np.float32).tobytes()).hexdigest()
+   roots[o.name]={row.tobytes() for row in p[np.array([x.first_point_index for x in c.curves])]};counts[o.name]=len(c.curves)
  assert not [im.name for im in bpy.data.images if im.source=='FILE' and not im.packed_file and not Path(bpy.path.abspath(im.filepath)).is_file()]
  assert hashlib.sha256(path.read_bytes()).hexdigest()==digest
- return digest,meshes,curves
-bh,bm,bc=state(base);ah,am,ac=state(candidate)
+ return digest,meshes,curves,roots,counts
+bh,bm,bc,br,bn=state(base);ah,am,ac,ar,an=state(candidate)
 assert bm==am and all(ac[n]==d for n,d in bc.items());added=set(ac)-set(bc)
-assert added=={'Original crown accent A','Original crown accent B','Original crown accent C'}
-report=dict(source=base,candidate=candidate,source_sha256=bh,candidate_sha256=ah,mesh_count=len(bm),all_mesh_geometry_uv_shape_keys_transforms_exact=True,all_four_existing_visible_hair_exact=True,added_objects=sorted(added),added_fibers=2100,finite_positive_radii_textures_available=True,scope='Static additive file comparison only; not artistic acceptance or segment/body/eye/clothing/animation collision assurance.')
+expected={'Abhay part transition • continuous overlay'} if part_transition else {'Original crown accent A','Original crown accent B','Original crown accent C'}
+assert added==expected
+if part_transition:assert ar['Abhay part transition • continuous overlay']<=br['Abhay flow derivative • real scalp sampled short support']
+report=dict(source=base,candidate=candidate,source_sha256=bh,candidate_sha256=ah,mesh_count=len(bm),all_mesh_geometry_uv_shape_keys_transforms_exact=True,all_four_existing_visible_hair_exact=True,added_objects=sorted(added),added_fibers=sum(an[n] for n in added),added_roots_exact_source_subset=True if part_transition else None,finite_positive_radii_textures_available=True,scope='Static additive file comparison only; not artistic acceptance or segment/body/eye/clothing/animation collision assurance.')
 out.write_text(json.dumps(report,indent=2),encoding='utf-8');print('ADDITIVE_PAIR_PASS',candidate,flush=True)

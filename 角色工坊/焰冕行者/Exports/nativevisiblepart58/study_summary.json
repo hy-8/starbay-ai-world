@@ -1,0 +1,33 @@
+{
+  "source": "nativecrownsection45",
+  "source_sha256": "330c02a34df639f660be08e1d58eff3b13a39ad200c89d7cfccbd66a2474f6ab",
+  "probe": "nativepartroiprobe57",
+  "added_object": "Abhay part transition \u2022 continuous overlay",
+  "added_fibers": 455,
+  "selected_visible_roots": 462,
+  "entry_distance_quantiles_m": [
+    5.746722308686003e-05,
+    0.0028648332227021456,
+    0.0099298257380724,
+    0.017732378095388412
+  ],
+  "final_length_quantiles_m": [
+    0.058241120010329675,
+    0.10234530216959925,
+    0.12006786481295388,
+    0.12838973754800753
+  ],
+  "discrete_body_repairs": 33,
+  "all_existing_hair_and_meshes_retained": true,
+  "method": "Actual ThreeQuarter ROI Abhay owners, positive-X/front roots; nearest of32 eligible saved continuous side paths, 85-120mm with tapered radii and 1.8mm lift. Each path entry translated to its exact source follicle, fading over30mm. Existing geometry retained.",
+  "scope": "Approximate point visibility and discrete body protection; not artistic, continuous hair/eye/clothing or animation collision acceptance",
+  "license": "Source follicles and derived geometry remain local; no new source or license",
+  "model_sha256": "5620f01c9b728cd11063c1495646235ae66ab2bcd92233721d429d93f127de7a",
+  "art_judgment": "Correct camera ROI owners;455 continuous donor-path overlay fibers. Existing silhouette barely changes; not adopted.",
+  "status": "Actual drafts reviewed; reference target incomplete",
+  "inspected_draft_sha256": {
+    "01_Front.png": "1db1983e384313233b07916e6568f6b85d6ae11a6030cd398297fed12d3e2b41",
+    "02_ThreeQuarter.png": "1dac863b558a756e1fcedff525c0775dbe45c5334a05cee94e655e5dfc8f1733",
+    "03_Side.png": "25406b3d06bf2dcc5db108c1e1d9deaed32cc057a83846c4f862e60b3b229764"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "source": "nativecrownsection45",
+  "source_sha256": "330c02a34df639f660be08e1d58eff3b13a39ad200c89d7cfccbd66a2474f6ab",
+  "changed_object": "Abhay flow derivative \u2022 real scalp sampled short support",
+  "changed_fibers": 3720,
+  "eligible_fibers": 3877,
+  "candidate_primary_shafts": 11466,
+  "selection_attribute": "native_part_bridge",
+  "entry_distance_quantiles_m": [
+    5.226899520494044e-05,
+    0.0010187480365857482,
+    0.012488938774913546,
+    0.029996253550052643
+  ],
+  "result_length_quantiles_m": [
+    0.0385881887123327,
+    0.0590709625643321,
+    0.06776390919050553,
+    0.09545783816253561
+  ],
+  "discrete_body_repairs": 5273,
+  "all_roots_exact": true,
+  "unselected_support_exact": true,
+  "other_native_objects_exact": true,
+  "method": "Abhay upper-negative-X part support; closest of32 existing continuous long-side trajectory entries with direction penalty;48-66mm travel capped at88% remaining donor arc;entry translation fades over24mm;no raw donor indices uploaded",
+  "scope": "Static local shape and discrete body point checks, not full segment/eye/clothing/motion or art acceptance",
+  "model_sha256": "bb070abf4673cf0660811770bc53ab5549ddf8a2264636b10460aa7abb6554b3",
+  "art_judgment": "Negative-X support replacement exposes an opposite scalp patch. Rejected.",
+  "status": "Actual drafts reviewed; reference target incomplete",
+  "inspected_draft_sha256": {
+    "01_Front.png": "891aea1b5ebd40f823a783722f807d9b40d7d07723d14ff5f8a4c52305ddada8",
+    "02_ThreeQuarter.png": "1939678fa0494541af4428838790a8ef888f1d53b0ac34fa40085de7d8176893",
+    "05_OppositeSide.png": "8633ec9296106d9eb046d9b2478255a37e14bd6d963cbdafb931a56207aad3c3"
+  }
+}
