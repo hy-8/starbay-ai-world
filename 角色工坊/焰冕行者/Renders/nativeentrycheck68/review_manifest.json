@@ -1,0 +1,12 @@
+{
+  "source": "nativeentrynape68",
+  "source_sha256": "30a95a79f0b27d51d5e6ee00b2327f7735e57ae46bbf239a939d8fd7500191e6",
+  "all_images_actually_reviewed": true,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "samples": 192,
+  "denoising": false,
+  "art_judgment": "Long hanging tails gone; more compact side/back nape, explicit foreground maintained. No new obvious large scalp hole observed in these views. Crown common broad flow and pale fluffy support still visible; reference artwork incomplete. Not a continuous-segment/clothing/animation collision audit."
+}

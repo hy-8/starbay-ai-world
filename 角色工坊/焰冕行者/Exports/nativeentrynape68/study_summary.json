@@ -1,0 +1,43 @@
+{
+  "source": "nativefinefront61",
+  "source_sha256": "823c60730def8d8e35ead0feab5df6455115af9c68663a330c1aff7d6ab02e48",
+  "probe": "nativeflowprobe30",
+  "changed_fibers": 17705,
+  "eligible_fibers": 21072,
+  "selection_attribute": "native_nape_layer_cut",
+  "first_four_points_exact": true,
+  "all_front_frame_exact": true,
+  "all_fringe_exact": false,
+  "all_low": true,
+  "repair_low_entries": true,
+  "unselected_primary_exact": true,
+  "other_hair_unchanged": true,
+  "tip_elevation_quantiles_m": [
+    1.6514988259592123,
+    1.6876444254099372,
+    1.7048516291264881,
+    1.7147452483741166
+  ],
+  "removed_arc_quantiles_m": [
+    5.7290244522334444e-05,
+    0.08341602109296825,
+    0.12239267159437134,
+    0.1521126592113617
+  ],
+  "retained_length_ratio_quantiles": [
+    0.11531993019157447,
+    0.5459643405823825,
+    0.9381279165418144,
+    0.9996583050977157
+  ],
+  "method": "All actual primary tips below1.710m excluding explicit front-frame61; actual old frontal guide families and96 posterior whole-path families,17mm coherent layer variation plus5mm per-fiber scatter; central longer nape and shorter sides. Cut at first existing-path intersection with target elevation, resample continuous remaining tail after retained first4points; no new curl or scalp cap. Low-entry fix: search begins at point4 instead of12; target capped12mm below retained point3, minimum remaining tail3mm. Source67 geometric aggregate plus66 actual ID images attribute missed low-root long tails to primary.",
+  "status": "Actual drafts reviewed; reference target incomplete",
+  "scope": "Local static cut, not continuous/body/eye/clothing/animation collision or art acceptance",
+  "model_sha256": "30a95a79f0b27d51d5e6ee00b2327f7735e57ae46bbf239a939d8fd7500191e6",
+  "art_judgment": "17705 primary shafts cut with corrected early intersections and root-relative height cap. Actual long dangling nape tails removed; foreground preserved, sides/back more compact. All five neutral views and high portrait inspected. Crown broad common flow/pale support and overall reference polish remain incomplete. New continuation WIP.",
+  "inspected_draft_sha256": {
+    "02_ThreeQuarter.png": "82dd15f3eabe41ab05f5f1868b0eef1de1c666b7e06fa2a8212bce4b107b39cc",
+    "04_Back.png": "fc1014bdce1716552126b42bc52c35718b810851650e317da8a5c09c3c8b5c22",
+    "05_OppositeSide.png": "2228caffe5c9399ba0494eb7a13cd9328c6e3bc5252eac29bb01d5215e2a16ab"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "source": "nativelayerednape65",
+  "source_sha256": "8bb42052c06295984c624dd7f87742ea8d77478de1f018a58a4ff2d018cb0ed2",
+  "all_actual_images_reviewed": true,
+  "inspected_sha256": {
+    "02_ThreeQuarter.png": "52e0acd46b328d74b8c5a449b3a92701084f6ee365b620131ecf246773c59322",
+    "04_Back.png": "801f58e0d8cc5ca761bc7fdfff24acad317322d334c2890a2970d680e58d1455",
+    "05_OppositeSide.png": "bfd20f30842085cb672ecc94b9f6e48d7afb8390d4f2cedcd3a834b62030613e"
+  },
+  "judgment": "Actual red primary component owns long dangling tails in back/opposite/ThreeQuarter views. Abhay/Bystedt short support has no tips below1.710m; posterior component has280 low tips. Aggregate tip minima are not visibility proof; image attribution establishes the shown tail ownership."
+}

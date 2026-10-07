@@ -8,15 +8,19 @@
   "unselected_primary_exact": true,
   "other_hair_unchanged": true,
   "discrete_body_repairs": 75116,
-  "method": "Camera-attributed positive-X/front root zone;30 exact source-follicle patches, explicitly authored cubic foreground locks with varied tapered tip positions;5mm lateral and2mm depth phase-staggered wave; broader length scatter. Existing hair topology/radii retained.",
+  "method": "Camera-attributed positive-X/front root zone;29 edited source-follicle patches from30 target patches; one29-fiber patch retained, explicitly authored cubic foreground locks with varied tapered tip positions;5mm lateral and2mm depth phase-staggered wave; broader length scatter. Existing hair topology/radii retained.",
   "scope": "Discrete real-body point checks only, not full segment/eye/clothing/animation collision or art acceptance",
   "model_sha256": "823c60730def8d8e35ead0feab5df6455115af9c68663a330c1aff7d6ab02e48",
-  "art_judgment": "Same6103 primary fibers divided into30 actual follicle patches with varied curls and end lengths. Foreground on previously swept side is clearer and less regular; all five neutral views and high portrait inspected. Existing side/back waves retained. Upper common flow/pale support and long nape remain. New continuation WIP; reference artwork incomplete.",
+  "art_judgment": "Of6103 eligible primary fibers,6074 in29 qualifying patches restyled; one29-fiber patch retained with varied curls and end lengths. Foreground on previously swept side is clearer and less regular; all five neutral views and high portrait inspected. Existing side/back waves retained. Upper common flow/pale support and long nape remain. New continuation WIP; reference artwork incomplete.",
   "status": "Actual drafts reviewed; reference target incomplete",
   "inspected_draft_sha256": {
     "01_Front.png": "aa86857aab46037cc11356ae584e92709195d2eb559b85cf9294de9df3b5e823",
     "02_ThreeQuarter.png": "568868c4d0eeb8c2062415b3d7abe418e1faae3ddc14ed30fb0573959a521434",
     "03_Side.png": "9a636b1b2b2e55f3d2fa03af9bc353223f820e64eab4391c3afd34ceb6374f93"
   },
-  "patches_count": 29
+  "patches_count": 29,
+  "eligible_fibers": 6103,
+  "target_patches": 30,
+  "edited_patches": 29,
+  "small_patch_fibers_retained": 29
 }

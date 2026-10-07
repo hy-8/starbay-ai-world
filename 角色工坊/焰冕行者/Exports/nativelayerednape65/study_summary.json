@@ -1,0 +1,42 @@
+{
+  "source": "nativefinefront61",
+  "source_sha256": "823c60730def8d8e35ead0feab5df6455115af9c68663a330c1aff7d6ab02e48",
+  "probe": "nativeflowprobe30",
+  "changed_fibers": 16398,
+  "eligible_fibers": 21072,
+  "selection_attribute": "native_nape_layer_cut",
+  "first_four_points_exact": true,
+  "all_front_frame_exact": true,
+  "all_fringe_exact": false,
+  "all_low": true,
+  "unselected_primary_exact": true,
+  "other_hair_unchanged": true,
+  "tip_elevation_quantiles_m": [
+    1.6514988259592123,
+    1.6878280043872906,
+    1.705073495666154,
+    1.7147452483741166
+  ],
+  "removed_arc_quantiles_m": [
+    5.7290244522334444e-05,
+    0.07770201278349184,
+    0.11934148988511942,
+    0.1438391552104643
+  ],
+  "retained_length_ratio_quantiles": [
+    0.16364249614557644,
+    0.577622108451086,
+    0.9429389462182473,
+    0.9996583050977157
+  ],
+  "method": "All actual primary tips below1.710m excluding explicit front-frame61; actual old frontal guide families and96 posterior whole-path families,17mm coherent layer variation plus5mm per-fiber scatter; central longer nape and shorter sides. Cut at first existing-path intersection with target elevation, resample continuous remaining tail after retained first4points; no new curl or scalp cap.",
+  "status": "Actual drafts reviewed; reference target incomplete",
+  "scope": "Local static cut, not continuous/body/eye/clothing/animation collision or art acceptance",
+  "model_sha256": "8bb42052c06295984c624dd7f87742ea8d77478de1f018a58a4ff2d018cb0ed2",
+  "art_judgment": "16398 shafts shortened with wider coherent layer scatter and actual low-tip selection. Better staggered bulk, but early-crossing low-root tails still remain. Not adopted.",
+  "inspected_draft_sha256": {
+    "02_ThreeQuarter.png": "25ef5c7e860b9a032999d90e9dd1c68887644924321bfc6e10c4d334a4250765",
+    "04_Back.png": "76150fc6170c6871df221d563ef287d682628dbe8c7cb6e65f5bf6b5517218ca",
+    "05_OppositeSide.png": "232855a451f4fd2b4cdfa5367fbfb788f93aa713d4f09db2347ac2a1917e705d"
+  }
+}

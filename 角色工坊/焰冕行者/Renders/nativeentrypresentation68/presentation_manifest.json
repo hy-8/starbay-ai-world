@@ -1,0 +1,15 @@
+{
+  "source": "nativeentrynape68",
+  "source_sha256": "30a95a79f0b27d51d5e6ee00b2327f7735e57ae46bbf239a939d8fd7500191e6",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "9375a4b705755deca5071617aadfc6fd8638dec0551b4dde0a5e0f3157cadfb8",
+  "status": "Actual render pending art review; no generative image replacement"
+}

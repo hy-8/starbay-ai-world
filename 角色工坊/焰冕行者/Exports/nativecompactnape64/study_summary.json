@@ -1,0 +1,40 @@
+{
+  "source": "nativefinefront61",
+  "source_sha256": "823c60730def8d8e35ead0feab5df6455115af9c68663a330c1aff7d6ab02e48",
+  "probe": "nativeflowprobe30",
+  "changed_fibers": 15621,
+  "eligible_fibers": 19164,
+  "selection_attribute": "native_nape_layer_cut",
+  "first_four_points_exact": true,
+  "all_fringe_and_front_frame_exact": true,
+  "unselected_primary_exact": true,
+  "other_hair_unchanged": true,
+  "tip_elevation_quantiles_m": [
+    1.6703336589431477,
+    1.6933160431247685,
+    1.7037595831521062,
+    1.7125571426347517
+  ],
+  "removed_arc_quantiles_m": [
+    9.230618644462396e-05,
+    0.08115752425587472,
+    0.12285513028615216,
+    0.14625448044435266
+  ],
+  "retained_length_ratio_quantiles": [
+    0.1582722082597867,
+    0.5730426167979578,
+    0.9263664754680031,
+    0.9994622195506734
+  ],
+  "method": "Posterior low-tip shafts only; coherent96 whole-path-family height variation, central longer nape and shorter sides. Cut at first existing-path intersection with target elevation, resample continuous remaining tail after retained first4points; no new curl or scalp cap.",
+  "status": "Actual drafts reviewed; reference target incomplete",
+  "scope": "Local static cut, not continuous/body/eye/clothing/animation collision or art acceptance",
+  "model_sha256": "4ceda35b78231e9f20c47acc1675104c4e92806e24ab5ad3c40bd9387bac3903",
+  "art_judgment": "15621 primary shafts shortened. Bulk nape shortens but long unselected tails remain and lower silhouette appears too blunt. Rejected; not the complete intended layered style.",
+  "inspected_draft_sha256": {
+    "02_ThreeQuarter.png": "c8cb74a7e64993ff6700c150f82936ad27f298ba689a4bdd1c8b20318a3e089c",
+    "04_Back.png": "c63b8925fff48f1c787661c899958bdc5f261c58087a7fc5a703991922c27e7d",
+    "05_OppositeSide.png": "86b0d11ac18711cf070f8b0bfa870a54fb890dbe5ea6a1cbf2816aff7e5321ed"
+  }
+}

@@ -365,5 +365,13 @@ sintelfit01/02/03的九张角色实渲均已查看：960×1120、Cycles/OptiX64 
 ### 2026-10-07 · Camera-attributed front locks (WIP)
 
 - Part ROI probe57 locates the target ThreeQuarter support mainly at positive-X roots; point attribution has no body occlusion/continuous-ray guarantee. Earlier negative-X bridge and overlay studies fail or barely change the target.
-- Corrected additive studies58/59 remain insufficient. Explicit primary front design60 reshapes6103 shafts;61 divides the same region into30 follicle patches with varied curls/end lengths. All five neutral views and actual512-sample portrait inspected; fuller foreground, existing side/back retained, reference target still incomplete. Continue from61.
+- Corrected additive studies58/59 remain insufficient. Explicit primary front design60 reshapes6103 shafts;61 targets30 patches;29 qualifying patches/6074 shafts receive varied curls/end lengths. All five neutral views and actual512-sample portrait inspected; fuller foreground, existing side/back retained, reference target still incomplete. Continue from61.
 - Support follow-up62 barely improves the view and is not adopted. Seven local/four additive static audits preserve existing mesh and intended hair boundaries. Original/derived geometry stays local; code, aggregate evidence and selected inspected renders synchronized. No new fee, candidate Release or UE integration.
+
+
+### 2026-10-07 · Layered nape cuts and missed low-entry repair (WIP)
+
+- Cuts64/65 shorten the bulk but leave long tails. Actual component ID views66 attribute them to primary hair; read-only probe67 locates low roots/early crossings skipped by the old point12 intersection search.
+- Cut68 starts after retained point3, caps target height below that point and accepts shorter remaining arcs.17705 shafts cut;6074 explicit foreground shafts retained exactly. Five neutral views and actual512-sample portrait inspected: cleaner, shorter nape with no long hanging tails; crown/common flow and pale support still incomplete. Continue from68.
+- Three localized file comparisons preserve141 meshes, hair roots/radii/topology, untouched shafts/components and first4points. Final primary tips below1.640m count0; artistic and continuous motion/collision acceptance remain unproven.
+- Correct prior61 narrative to6074 edited fibers in29 qualifying patches out of6103 eligible fibers/30 target patches. Historical model unchanged. Original/derived geometry local; no new fee, Release or UE integration.

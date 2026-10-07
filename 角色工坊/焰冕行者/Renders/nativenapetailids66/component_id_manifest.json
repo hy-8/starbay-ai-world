@@ -1,0 +1,81 @@
+{
+  "source": "nativelayerednape65",
+  "source_sha256": "8bb42052c06295984c624dd7f87742ea8d77478de1f018a58a4ff2d018cb0ed2",
+  "source_unchanged": true,
+  "legend": [
+    {
+      "object": "Abhay flow derivative \u2022 real scalp sampled short support",
+      "linear_color": [
+        0.04,
+        0.15,
+        1,
+        1
+      ],
+      "fibers": 14000,
+      "tip_elevation_quantiles_m": [
+        1.7384101152420044,
+        1.7529216754436492,
+        1.7712913155555725,
+        1.791167438030243,
+        1.8736953735351562
+      ],
+      "tips_below_1_710m": 0
+    },
+    {
+      "object": "Bystedt derivative \u2022 short scalp support",
+      "linear_color": [
+        0,
+        1,
+        0.12,
+        1
+      ],
+      "fibers": 23657,
+      "tip_elevation_quantiles_m": [
+        1.7883154153823853,
+        1.802201247215271,
+        1.8242756128311157,
+        1.848829984664917,
+        1.8732287883758545
+      ],
+      "tips_below_1_710m": 0
+    },
+    {
+      "object": "Bystedt layercut derivative \u2022 native root reflow",
+      "linear_color": [
+        1,
+        0.03,
+        0.08,
+        1
+      ],
+      "fibers": 49268,
+      "tip_elevation_quantiles_m": [
+        1.5961990356445312,
+        1.6002615404129028,
+        1.676252007484436,
+        1.731049656867981,
+        1.876889705657959
+      ],
+      "tips_below_1_710m": 20563
+    },
+    {
+      "object": "Original posterior coverage \u2022 surface-grown short fibers",
+      "linear_color": [
+        1,
+        0.5,
+        0.02,
+        1
+      ],
+      "fibers": 36000,
+      "tip_elevation_quantiles_m": [
+        1.7007657289505005,
+        1.71139515042305,
+        1.732212197780609,
+        1.7817304730415344,
+        1.872539758682251
+      ],
+      "tips_below_1_710m": 280
+    }
+  ],
+  "back_view": true,
+  "method": "Temporary real components emission IDs; diagnostic color only, not final beauty render. Full world-space tip aggregates when back requested are geometry statistics, not visibility proof."
+}

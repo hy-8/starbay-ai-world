@@ -1,0 +1,27 @@
+{
+  "source": "nativefinefront61",
+  "source_sha256": "823c60730def8d8e35ead0feab5df6455115af9c68663a330c1aff7d6ab02e48",
+  "candidate": "nativecompactnape64",
+  "candidate_sha256": "4ceda35b78231e9f20c47acc1675104c4e92806e24ab5ad3c40bd9387bac3903",
+  "mesh_count": 141,
+  "mesh_geometry_uv_shape_keys_transforms_exact": true,
+  "visible_native_objects": 4,
+  "curves_finite_radii_positive_textures_available": true,
+  "edited_object": "Bystedt layercut derivative \u2022 native root reflow",
+  "edited_fibers": 15621,
+  "all_radii_topology_transforms_exact": true,
+  "all_roots_exact": true,
+  "unselected_fibers_exact": true,
+  "other_native_objects_exact": true,
+  "max_displacement_m": 0.12446345388889313,
+  "scope": "Static localized file comparison. Not art, segment/body/eye/clothing/animation collision acceptance.",
+  "nape_profile": {
+    "first_four_points_exact": true,
+    "explicit_front_frame_exact": true,
+    "explicit_front_frame_fibers": 6074,
+    "source_min_primary_tip_z_m": 1.5870070457458496,
+    "candidate_min_primary_tip_z_m": 1.5909029245376587,
+    "primary_tips_below_1_640m": 2119,
+    "no_long_tail_gate": false
+  }
+}
