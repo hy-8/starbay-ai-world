@@ -1,0 +1,20 @@
+{
+  "source": "nativecoherentrelief94",
+  "source_sha256": "af2e6002d5883ee29dfc6c234f84f54feae7c825265ec05a07da4b68e51e219a",
+  "donor": "nativefrontfoundation86",
+  "donor_sha256": "21822e86f58dfc45561ddaf3fe986513f68de6e2ff30032cc0d2335af892c4db",
+  "selection_attribute": "native_retained_guide_relaxation",
+  "changed_fibers": 13569,
+  "changed_groups": 91,
+  "discrete_body_repairs": 0,
+  "method": "Reproduce90 original150 whole-path groups using86 donor; select all retained94 loft groups. Remove70% of positive transported-normal center-guide displacement relative86, leaving current within-lock cross sections and lateral sweep. Point0 and all44-64 retained. Materials/lights unchanged.",
+  "status": "Actually inspected; reference incomplete",
+  "model_sha256": "17fe75293873eb2c02999078512c481a7f7b9fcf1854b54f7eaa3db53e12f6db",
+  "art_judgment": "All3 actual drafts inspected. Small elevated side/crown crests disappear; smoother silhouette, width contraction and lateral flow retained. Thick front bands/repeated waves/pale part remain. Included in98.",
+  "goal_complete": false,
+  "inspected_draft_sha256": {
+    "02_ThreeQuarter.png": "8e792dc130185f03ebf7adb12ca87172a838cae5abc7a8b41d8320eb4b53af35",
+    "03_Side.png": "aa45ec131a6a42ac688848eb5429dd61fc727385ba7798304a60d38b4d47960c",
+    "05_OppositeSide.png": "37a40cf671a2f612dcb1fa5191f3ee656403a1dd21810c93a45cde89eca41b5a"
+  }
+}

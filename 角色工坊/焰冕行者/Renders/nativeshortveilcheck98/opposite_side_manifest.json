@@ -1,0 +1,24 @@
+{
+  "version": "nativeshortveilcheck98",
+  "source": "nativeshortveil98",
+  "source_sha256": "dec7c081f4dc0592ccc5c3868f0ea6987cc1aa94b6738f860681474988635cbb",
+  "source_unchanged": true,
+  "method": "Existing neutral cameras when requested, plus actual opposite camera mirrored in world space with local-X handedness correction; no pixel flip or geometry edit",
+  "samples": 192,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "denoising": false,
+  "image_sha256": "5f77685e0e8f6019de45a46646122f1727bad51656257ce589813b143cb42383",
+  "images_sha256": {
+    "01_Front.png": "752f62ee2e3ca10a21725a5975131cde5cbfd24faaa41a6a7cfdc3a147102cd2",
+    "02_ThreeQuarter.png": "4d7e89dfe20cab8791d6e18f759aab827a97a3a1e79f1119d4717a47d386c606",
+    "03_Side.png": "70d81b97456550bdcd0d9052965499b7cec088d9acb17366469c3e24f0f7cfff",
+    "04_Back.png": "52ab40fd188e16c4c68aa6d6254625cc284c51fc262d07baf9f485be38d9efb7",
+    "05_OppositeSide.png": "5f77685e0e8f6019de45a46646122f1727bad51656257ce589813b143cb42383"
+  },
+  "status": "Unreviewed actual neutral/opposite profile diagnostic, not artistic approval",
+  "single_camera": null,
+  "opposite_image_reused_from": null
+}

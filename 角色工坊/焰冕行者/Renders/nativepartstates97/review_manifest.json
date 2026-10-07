@@ -1,0 +1,11 @@
+{
+  "source": "nativeguiderelax96",
+  "source_sha256": "17fe75293873eb2c02999078512c481a7f7b9fcf1854b54f7eaa3db53e12f6db",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "02_ThreeQuarter.png": "59e7faf0a6c7a0239d00956ed01cfd8b613b6eb130d5aa38be6f08cbae5da2a8",
+    "04_Back.png": "46304bc626c29ef0d2489e5393e4102e5ef6f3f5f8f28611f66e2a38bdcae67e"
+  },
+  "art_judgment": "Both diagnostic images inspected. Posterior pale patch includes pink original posterior support; frontal part mixes primary/support and Bystedt. View-specific attribution, not all-view ray visibility.",
+  "goal_complete": false
+}

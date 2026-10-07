@@ -1,0 +1,42 @@
+{
+  "source": "nativeguiderelax96",
+  "source_sha256": "17fe75293873eb2c02999078512c481a7f7b9fcf1854b54f7eaa3db53e12f6db",
+  "component": "posterior",
+  "changed_object": "Original posterior coverage \u2022 surface-grown short fibers",
+  "selection_attribute": "native_part_short_veil",
+  "changed_fibers": 7881,
+  "nearest_actual_primary_root_quantiles_m": [
+    6.685486823698739e-06,
+    0.0006114602438174188,
+    0.0012702893000096083,
+    0.003945602104067802
+  ],
+  "before_length_quantiles_m": [
+    0.03772511984575738,
+    0.05074433429611143,
+    0.060559232471826874,
+    0.06435692510219207
+  ],
+  "result_length_quantiles_m": [
+    0.003414947470129629,
+    0.005208024723502985,
+    0.00618617744225337,
+    0.006574513230429987
+  ],
+  "donor_control_travel_quantiles_m": [
+    0.004500000135973229,
+    0.005488929856865832,
+    0.006453793157801512,
+    0.006499999962303463
+  ],
+  "method": "Observed upper/central part support rootsX(-26,+51)mm,Z>1.840m,Y(-115,+95)mm. True follicles retained; nearest current primary root supplies0-to-min(old length,4.5-6.5mm,65% donor arc) departure;16 actual scalp controls at0.25-0.65mm loft. Catmull interpolation retains original support point counts/radii. Control travel cap is not a strict final geometric length cap.",
+  "status": "Actually inspected; reference incomplete",
+  "model_sha256": "dec7c081f4dc0592ccc5c3868f0ea6987cc1aa94b6738f860681474988635cbb",
+  "art_judgment": "All3 actual drafts plus5 neutral views and512-sample actual portrait inspected. Posterior silver fur patch clearly reduced, narrow tan part remains. Front pale spot and bulky bands persist. Adopted as next WIP, reference not complete.",
+  "goal_complete": false,
+  "inspected_draft_sha256": {
+    "02_ThreeQuarter.png": "783bb909d9d73c2fd544533c9d00c69e53cb1ab4214f7ca73305cf54a1c12617",
+    "04_Back.png": "5f06e03f2a25e229af558664e2ea1023579e1c07c975871972be5f395248ced7",
+    "05_OppositeSide.png": "510a2960162cf375bfc03873e70c9dedba3895de9cda56e051623c1294c603d9"
+  }
+}

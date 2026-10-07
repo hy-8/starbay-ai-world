@@ -1,0 +1,42 @@
+{
+  "source": "nativeshortveil98",
+  "source_sha256": "dec7c081f4dc0592ccc5c3868f0ea6987cc1aa94b6738f860681474988635cbb",
+  "component": "bystedt",
+  "changed_object": "Bystedt derivative \u2022 short scalp support",
+  "selection_attribute": "native_part_short_veil",
+  "changed_fibers": 14782,
+  "nearest_actual_primary_root_quantiles_m": [
+    0.0,
+    9.046230479725637e-05,
+    0.0006073516851756718,
+    0.002170732244849205
+  ],
+  "before_length_quantiles_m": [
+    0.008270878669021865,
+    0.024399048747665374,
+    0.03032296942046616,
+    0.03467326131192375
+  ],
+  "result_length_quantiles_m": [
+    0.0031500789723038,
+    0.005109383183457427,
+    0.006174633410334338,
+    0.006572624302679421
+  ],
+  "donor_control_travel_quantiles_m": [
+    0.004500000108644473,
+    0.005500473593687099,
+    0.006450871845550645,
+    0.0064999999759678415
+  ],
+  "method": "Observed upper/central part support rootsX(-26,+51)mm,Z>1.840m,Y(-115,+95)mm. True follicles retained; nearest current primary root supplies0-to-min(old length,4.5-6.5mm,65% donor arc) departure;16 actual scalp controls at0.25-0.65mm loft. Catmull interpolation retains original support point counts/radii. Control travel cap is not a strict final geometric length cap.",
+  "status": "Actually inspected; reference incomplete",
+  "model_sha256": "81ddc67ae92d63b79806255905d36f13b224cd25c0444a576d453d64a8cfc308",
+  "art_judgment": "All3 actual drafts inspected. Further Bystedt support shortening has little clear benefit over98; front pale spot persists. Not adopted.",
+  "goal_complete": false,
+  "inspected_draft_sha256": {
+    "02_ThreeQuarter.png": "bd068d25fa14e8b1fa83015c6634da475fda2197271975f3726c61c61bab19c8",
+    "04_Back.png": "aab00aec601d8b290a4c58cb436acda89cceb94dbb45576575d1cbd3a7c8fb0c",
+    "05_OppositeSide.png": "108523b34ca8efebe7310119f8204e44fef6043b2a405679f464f424b63cd4ed"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "source": "nativeshortveil98",
+  "source_sha256": "dec7c081f4dc0592ccc5c3868f0ea6987cc1aa94b6738f860681474988635cbb",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "4a9367e200f418e34bd2a9d1bd06ec2e298c00d053b512c2f88ae75e32957345",
+  "status": "Actual render pending art review; no generative image replacement"
+}

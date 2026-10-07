@@ -1,0 +1,108 @@
+{
+  "source": "nativecoherentrelief94",
+  "source_sha256": "af2e6002d5883ee29dfc6c234f84f54feae7c825265ec05a07da4b68e51e219a",
+  "source_unchanged": true,
+  "legend": [
+    {
+      "region": "foreground61",
+      "fibers": 6074,
+      "color": [
+        1,
+        0.03,
+        0.06,
+        1
+      ],
+      "root_mean_m": [
+        0.043058544397354126,
+        -0.08977437764406204,
+        1.853425145149231
+      ]
+    },
+    {
+      "region": "retained_root_lofts90",
+      "fibers": 13569,
+      "color": [
+        0.03,
+        0.3,
+        1,
+        1
+      ],
+      "root_mean_m": [
+        0.004586715251207352,
+        -0.06440605223178864,
+        1.8513909578323364
+      ]
+    },
+    {
+      "region": "restored_root_locks86",
+      "fibers": 9816,
+      "color": [
+        0.03,
+        1,
+        0.06,
+        1
+      ],
+      "root_mean_m": [
+        0.01539927814155817,
+        -0.006316389422863722,
+        1.8585976362228394
+      ]
+    },
+    {
+      "region": "other_primary",
+      "fibers": 19809,
+      "color": [
+        1,
+        0.55,
+        0.03,
+        1
+      ],
+      "root_mean_m": [
+        0.0038862088695168495,
+        0.003234406467527151,
+        1.7741124629974365
+      ]
+    },
+    {
+      "region": "Abhay flow derivative \u2022 real scalp sampled short support",
+      "fibers": 14000,
+      "color": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "role": "support native curves"
+    },
+    {
+      "region": "Bystedt derivative \u2022 short scalp support",
+      "fibers": 23657,
+      "color": [
+        0.7,
+        0.05,
+        1,
+        1
+      ],
+      "role": "support native curves"
+    },
+    {
+      "region": "Original posterior coverage \u2022 surface-grown short fibers",
+      "fibers": 36000,
+      "color": [
+        1,
+        0.03,
+        0.65,
+        1
+      ],
+      "role": "support native curves"
+    }
+  ],
+  "images_sha256": {
+    "02_ThreeQuarter.png": "97bf1337b5dc33b31501d6e9e5e17fd544d4520e17905c07df1808eabd0b3d31",
+    "03_Side.png": "a9990fc03d2311a2abe35e9f1b563ba611dbd7776edf0a740cb2d4db2d8acaba",
+    "05_OppositeSide.png": "ad9daafc24b0d8c5b481a2b35ae645144b1229f181d92d2869d9dfe72b84be29"
+  },
+  "loft_states": true,
+  "support_ids": true,
+  "scope": "Actual saved region emission IDs; all3 original native support objects included with separate IDs. No source save or final-appearance acceptance."
+}

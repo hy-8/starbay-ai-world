@@ -1,0 +1,20 @@
+{
+  "source": "nativeshortveil98",
+  "source_sha256": "dec7c081f4dc0592ccc5c3868f0ea6987cc1aa94b6738f860681474988635cbb",
+  "donor": "nativefrontfoundation86",
+  "donor_sha256": "21822e86f58dfc45561ddaf3fe986513f68de6e2ff30032cc0d2335af892c4db",
+  "changed_fibers": 13766,
+  "sublocks": 207,
+  "selection_attribute": "native_upper_nested_locks",
+  "discrete_body_repairs": 0,
+  "method": "Reproduce donor86 150 whole-path groups. Upper-front groups with at least80 fibers split by transverse coordinate at29/68 percentiles;38% within-sublock width contraction, asymmetric1.8mm lateral separation and0.5-2.3mm broad normal loft. Roots/points44-64/foreground/materials/other objects preserved.",
+  "status": "Actually inspected; reference incomplete",
+  "model_sha256": "19fb570a186208a3f6b02ca3d9b203083259fdb0024c3e17f15c3624d365a2cf",
+  "art_judgment": "All3 actual drafts inspected. Upper-front nested subdivision makes only subtle change; broad sweep/front pale spot remain. Not adopted; source98 preserved.",
+  "goal_complete": false,
+  "inspected_draft_sha256": {
+    "01_Front.png": "8735a301cd3e0ee29c62f9d223edfc9c89d032698cc01bfe6ef4dd7b5a759f5a",
+    "02_ThreeQuarter.png": "b884548b02390e57214c80317f7e1ab2a215c7c17a053abfc4f38a596aae0e7e",
+    "05_OppositeSide.png": "9567d555e2bb78df8929a52df29406eb82594eb06034adefc8b9531a3595ae3c"
+  }
+}
