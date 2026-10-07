@@ -1,0 +1,14 @@
+{
+  "source": "nativelongfringe106",
+  "source_sha256": "b3b7b8504ccd0ae2e2a393d8820ec272096d2a8e415162bed37b310735c96bfa",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "01_Front.png": "092529d94eb37c3470203f5833524f553cbc87be5d576296f920fb73231cc52e",
+    "02_ThreeQuarter.png": "5cb32b9f82083d504b3be09e6434a69d9d117477c2a0e88f10200a65332bccf7",
+    "03_Side.png": "24b227f33d1e6a52063107145f885977f7fdac75b52a8a55de37bacc859e7410",
+    "04_Back.png": "1deeb7bd25c4d3a584f9bb3203a4442c9e111a753be545c9b5607ad8f3ee805e",
+    "05_OppositeSide.png": "918e8fe122263b56f397a2054414a56c3fb3dabe43b2b47a5d7fb13162c32cc5"
+  },
+  "art_judgment": "All5 actual views inspected. Fringe has more crosswise/curved separation than103 and keeps long tips versus105. Side/back coverage retained; thick upper bands/repeated side waves/pale part/flat thin locks persist.",
+  "goal_complete": false
+}

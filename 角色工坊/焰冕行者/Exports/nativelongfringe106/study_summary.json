@@ -1,0 +1,25 @@
+{
+  "source": "nativecrimsonflow103",
+  "source_sha256": "1f1d0e7065b0bbfc24e9cf17eb7103668a842588ccd03b783a76108512fc951f",
+  "selection_attribute": "native_resculpted_fringe_sweeps",
+  "eligible_fibers": 8625,
+  "changed_fibers": 8539,
+  "changed_old61_fibers": 6038,
+  "unchanged_old61_fibers": 36,
+  "discrete_body_repairs": 57685,
+  "minimum_primary_tip_z_m": 1.651498794555664,
+  "primary_tips_below_1_640m": 0,
+  "keep_terminal_heights": true,
+  "method": "Explicitly permit resculpting old61 foreground.54 current whole-path groups usingpoints0/8/24/40/64 weights.5/.6/.8/1/1; select old61 plus real negativeX/frontward-ended fringe, minimum30 fibers. Cross-face9-14mm broad bend with4mm phase-varied terminal reversal,zero terminal lift (discrete body correction may still move a tip) and40% transverse contraction. True roots/topology/radii/unselected hair/materials unchanged.",
+  "status": "Actually inspected; reference incomplete",
+  "model_sha256": "b3b7b8504ccd0ae2e2a393d8820ec272096d2a8e415162bed37b310735c96bfa",
+  "art_judgment": "All3 drafts,5 actual neutral views and512-sample saved-model portrait inspected. Independent from103, same8539 membership and broad crossing bends as105 but zero designed terminal lift. Long forehead fringe retained with clearer staggered crossing/curved separation; side/back coverage retained. Top/front thick bands, repeated side bends, some thin/flat forehead locks and pale part remain; face/clothes not reference quality. Adopt as next incomplete WIP, not final art acceptance.",
+  "goal_complete": false,
+  "edited_groups": 46,
+  "maximum_displacement_m": 0.016165103763341904,
+  "inspected_draft_sha256": {
+    "01_Front.png": "24086e5f64ac2eccd36a16cadc2f5bd45cc56de7f7ad800f20c1ac969d949b72",
+    "02_ThreeQuarter.png": "61dfef8124e830e173d3517acf4e00a40c7cfee9630023af4078482fcf1c855a",
+    "05_OppositeSide.png": "c92fb42e5cfa4b3faeeede20f51e47b5b22129b068c29bcbbdc2e688ce18f060"
+  }
+}

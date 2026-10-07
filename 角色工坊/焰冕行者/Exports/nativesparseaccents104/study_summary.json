@@ -1,0 +1,20 @@
+{
+  "source": "nativecrimsonflow103",
+  "source_sha256": "1f1d0e7065b0bbfc24e9cf17eb7103668a842588ccd03b783a76108512fc951f",
+  "selection_attribute": "native_sparse_crown_accents",
+  "changed_fibers": 572,
+  "designed_locks": 8,
+  "discrete_body_repairs": 0,
+  "method": "Ten manually placed scalp anchor targets choose existing nonforeground primary follicles within6mm of closest actual root and9mm RMS whole-path proximity. Retained source centerpaths with50% transverse contraction,4-9mm broad normal crest and3-5mm asymmetric sweep fading bypoint44. No added geometry, whole-canopy replacement or new scalp roots; all point0/44-64/foreground/other objects/materials retained.",
+  "status": "Actually inspected; reference incomplete",
+  "model_sha256": "2e5c5f88c513d5ddf73aa111ddc06e2eaa524f2278a75aea8fdabdfb0ff59ccf",
+  "art_judgment": "All3 actual drafts inspected. Ten anchor targets produce8 source-follicle groups/572 edited shafts. Surrounding geometry preserved but tiny elevated arches remain above crown; no meaningful whole-head improvement. Rejected.",
+  "goal_complete": false,
+  "edited_groups": 8,
+  "maximum_displacement_m": 0.010851306840777397,
+  "inspected_draft_sha256": {
+    "01_Front.png": "445aea70b6fb6110ca56d0f6b37287a42afa134148e06cde161423c42167341a",
+    "02_ThreeQuarter.png": "3ebb60577cfa8671c088f31b1008451ad785b8dc9be30be76e57144e27b26a47",
+    "05_OppositeSide.png": "ac71a43cefd7e89249320984377c3efae92f521fbac066bd462e5666bc94e762"
+  }
+}

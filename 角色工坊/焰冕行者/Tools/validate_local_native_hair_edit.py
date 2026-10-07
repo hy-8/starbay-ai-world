@@ -8,6 +8,7 @@ material_only='--material-only' in a
 nape_profile='--nape-profile' in a
 entry_profile='--entry-profile' in a
 tip_profile='--tip-profile' in a
+fringe_profile='--fringe-profile' in a
 scene_materials_exact='--scene-materials-exact' in a
 no_long_tails='--no-long-tails' in a
 material_scope='support' if '--material-scope-support' in a else 'primary' if '--material-scope-primary' in a else None
@@ -15,7 +16,7 @@ donor_version=a[a.index('--donor')+1] if '--donor' in a else None
 if donor_version and not re.fullmatch('[A-Za-z0-9_-]+',donor_version):raise ValueError('Invalid donor version')
 if material_scope and not material_only:raise ValueError('Material scope requires material-only comparison')
 if '--material-scope-support' in a and '--material-scope-primary' in a:raise ValueError('Ambiguous material scope')
-if no_long_tails and not (nape_profile or entry_profile or tip_profile):raise ValueError('No-long-tail gate requires nape/entry/tip profile comparison')
+if no_long_tails and not (nape_profile or entry_profile or tip_profile or fringe_profile):raise ValueError('No-long-tail gate requires nape/entry/tip/fringe profile comparison')
 if not all(re.fullmatch('[A-Za-z0-9_.-]+',x) for x in a[:3]):raise ValueError(a)
 out=ROOT/'Exports'/output
 if out.exists():raise RuntimeError('Fresh local audit required')
@@ -62,7 +63,7 @@ def state(version):
  assert hashlib.sha256(path.read_bytes()).hexdigest()==digest
  return digest,meshes,curves,lighting,materials
 beforehash,beforemesh,before,beforelight,beforematerials=state(base);afterhash,aftermesh,after,afterlight,aftermaterials=state(candidate)
-nape_result={};entry_result={};tip_result={}
+nape_result={};entry_result={};tip_result={};fringe_result={}
 assert beforemesh==aftermesh and set(before)==set(after)
 if material_only or scene_materials_exact:assert beforelight==afterlight
 if scene_materials_exact:assert beforematerials==aftermaterials
@@ -100,11 +101,23 @@ for name,(p,r,sizes,transform) in after.items():
    remaining=int((p[:,-1,2]<1.640).sum())
    if no_long_tails:assert remaining==0,remaining
    tip_result=dict(explicit_foreground_exact=True,explicit_foreground_fibers=int(frame.sum()),all_true_follicles_exact=True,first_four_intentionally_allowed_to_change=True,minimum_primary_tip_z_m=float(p[:,-1,2].min()),primary_tips_below_1_640m=remaining,no_long_tail_gate=no_long_tails)
+  if fringe_profile:
+   assert n==65
+   frame=np.empty(len(data.curves),bool);data.attributes['native_front_frame_sculpture'].data.foreach_get('value',frame)
+   actual_changed=np.any(p!=bp,axis=(1,2))
+   assert np.any(actual_changed&frame), 'Fringe profile requires an actual foreground edit'
+   remaining=int((p[:,-1,2]<1.640).sum())
+   if no_long_tails:assert remaining==0,remaining
+   fringe_result=dict(old61_foreground_fibers=int(frame.sum()),actually_changed_old61_foreground_fibers=int((actual_changed&frame).sum()),
+    actually_changed_other_primary_fibers=int((actual_changed&~frame).sum()),all_true_follicles_exact=True,
+    minimum_primary_tip_z_m=float(p[:,-1,2].min()),primary_tips_below_1_640m=remaining,no_long_tail_gate=no_long_tails,
+    scope='Foreground edit intentionally allowed; no assertion that old61 foreground geometry is unchanged. Static file counts, not art or continuous collision acceptance.')
 report=dict(source=base,source_sha256=beforehash,candidate=candidate,candidate_sha256=afterhash,mesh_count=len(beforemesh),mesh_geometry_uv_shape_keys_transforms_exact=True,visible_native_objects=len(after),curves_finite_radii_positive_textures_available=True,edited_object=edited,edited_fibers=changed,all_radii_topology_transforms_exact=True,all_roots_exact=True,unselected_fibers_exact=True,other_native_objects_exact=True,max_displacement_m=maximum,scope='Static localized file comparison. Not art, segment/body/eye/clothing/animation collision acceptance.')
 if material_only:report.update(material_only=True,selection_fibers=changed,edited_fibers=0,all_visible_native_geometry_exact=True,light_world_camera_display_exact=True)
 if nape_profile:report.update(nape_profile=nape_result)
 if entry_profile:report.update(entry_profile=entry_result)
 if tip_profile:report.update(tip_profile=tip_result)
+if fringe_profile:report.update(fringe_profile=fringe_result)
 if scene_materials_exact:report.update(all_material_slots_graphs_exact=True,light_world_camera_display_exact=True)
 if material_scope:report.update(material_scope_comparison=scope_result)
 if donor_version:

@@ -1,0 +1,15 @@
+{
+  "source": "nativelongfringe106",
+  "source_sha256": "b3b7b8504ccd0ae2e2a393d8820ec272096d2a8e415162bed37b310735c96bfa",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "31a12666a1d6920398e527ded821c8986557d4b85a6697bd57588b647d57d860",
+  "status": "Actual render pending art review; no generative image replacement"
+}

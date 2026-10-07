@@ -1,0 +1,10 @@
+{
+  "source": "nativelongfringe106",
+  "source_sha256": "b3b7b8504ccd0ae2e2a393d8820ec272096d2a8e415162bed37b310735c96bfa",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "02_ThreeQuarter.png": "31a12666a1d6920398e527ded821c8986557d4b85a6697bd57588b647d57d860"
+  },
+  "art_judgment": "Actual1920x2240/512/OIDN saved-model portrait inspected. Long frontal crossings more apparent than103; some flat/sheetlike forehead locks remain. Crown still broad, side bends repeat, pale part persists; no completed reference artwork acceptance.",
+  "goal_complete": false
+}

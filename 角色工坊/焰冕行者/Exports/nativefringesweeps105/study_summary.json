@@ -1,0 +1,24 @@
+{
+  "source": "nativecrimsonflow103",
+  "source_sha256": "1f1d0e7065b0bbfc24e9cf17eb7103668a842588ccd03b783a76108512fc951f",
+  "selection_attribute": "native_resculpted_fringe_sweeps",
+  "eligible_fibers": 8625,
+  "changed_fibers": 8539,
+  "changed_old61_fibers": 6038,
+  "unchanged_old61_fibers": 36,
+  "discrete_body_repairs": 34601,
+  "minimum_primary_tip_z_m": 1.651498794555664,
+  "primary_tips_below_1_640m": 0,
+  "method": "Explicitly permit resculpting old61 foreground.54 current whole-path groups usingpoints0/8/24/40/64 weights.5/.6/.8/1/1; select old61 plus real negativeX/frontward-ended fringe, minimum30 fibers. Cross-face9-14mm broad bend with4mm phase-varied terminal reversal,5-23mm terminal lift and40% transverse contraction. True roots/topology/radii/unselected hair/materials unchanged.",
+  "status": "Actually inspected; reference incomplete",
+  "model_sha256": "a0af415a5605f5de8a27fe293e6ada5417cfacbb0858806c43b0089a5d6bd01a",
+  "art_judgment": "All3 actual drafts inspected.8539 fringe shafts including6038 old61 foreground plus2501 negative/front strands get crossing bends and lifted ends. Crossing more apparent, but5-23mm terminal lift makes forehead fringe too short/sparse. Not adopted.",
+  "goal_complete": false,
+  "edited_groups": 46,
+  "maximum_displacement_m": 0.02745545282959938,
+  "inspected_draft_sha256": {
+    "01_Front.png": "62aaada64f12399b7b286ec5db92cf78d2b2e95e4fcd8b18011617cc80f71054",
+    "02_ThreeQuarter.png": "4129d0a8d507c75044f6ae2321650a8e36d12e76f7fc1418a0f74c95e3466ab5",
+    "05_OppositeSide.png": "ec199da2d4aba7956b0492f0935dcf70219000a55565ed940a758273e82d13bb"
+  }
+}
