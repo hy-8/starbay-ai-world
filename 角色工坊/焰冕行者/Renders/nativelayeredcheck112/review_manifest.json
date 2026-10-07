@@ -1,0 +1,14 @@
+{
+  "source": "nativecollarnape112",
+  "source_sha256": "2e7d2c44c86f36cc7b1ada5eec790a547b9ac123cded98ac704490b07721c14c",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "01_Front.png": "d997aa718b1234a45936b3daa48eaeffae5d2cca7c61cd80ebcb50b3fdd3c243",
+    "02_ThreeQuarter.png": "128a0f2f9699600b70c0494f6a3b60fd00fb7026db77e6af5e3fdc856a112e07",
+    "03_Side.png": "63657b4748b89e41bb3baac0deda04a40f86e2ccb456f1972d3983357ded7a80",
+    "04_Back.png": "c48075d2a53a8a6930179dc3bbe4f60dda8cbf656b97726c439f6a9752384417",
+    "05_OppositeSide.png": "a172db361cce8f6a086d2801ce649ad4dde0ed44052c16c8d54b46669cf81189"
+  },
+  "art_judgment": "All5 actual neutral views inspected. More separated finer fringe than106, longer staggered nape closer to reference. Crown/upper side still patterned and flat; back has large smooth panels, pale part and loose loops. Not completed reference quality.",
+  "goal_complete": false
+}

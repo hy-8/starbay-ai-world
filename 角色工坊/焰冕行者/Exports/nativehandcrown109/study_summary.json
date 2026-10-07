@@ -1,0 +1,21 @@
+{
+  "source": "nativewholeside108",
+  "source_sha256": "7a1b5049d569abd9356e58afcb00843a4f20dc2965f32df259c6a70b3f83aaea",
+  "selection_attribute": "native_hand_designed_crown",
+  "changed_fibers": 16301,
+  "designed_guides": 10,
+  "discrete_body_repairs": 27746,
+  "method": "Actual upper-crown follicles (Z>1.840m,Xabs<79mm,Y(-105,+55)mm), excluding all106 foreground. Ten hand-authored asymmetric5/6-knot Catmull guide paths with varied crests/side and front terminal positions.83% root scatter taper and7mm tip scatter, source follicles/radii/topology/other hair/materials retained.",
+  "status": "Actually inspected; reference incomplete",
+  "model_sha256": "a2b9d0f9547b1c206e842364b3e6f9e16886ceee3da3f5f3606c32ea6005addd",
+  "art_judgment": "All4 actual drafts inspected. Ten manually authored guides merge16301 real shafts into overly broad sheets, lifted loops and visible upper-side gap. Rejected; not continuation. Static preservation passing does not repair the artistic failure.",
+  "goal_complete": false,
+  "maximum_displacement_m": 0.20948028564453125,
+  "inspected_draft_sha256": {
+    "01_Front.png": "c7bebef0a964f32669c7c299eaeb84c0dc7209b03bfae56f59fddce3264f4b9c",
+    "02_ThreeQuarter.png": "ef2ea66ee90ec00851310d3fcd2e1c05fc0e6e880eccf5ddf18c6dc1fde9dd15",
+    "03_Side.png": "b09868ba271b1df18ed7547a811df61ddc20a2ad8eb38eda76b1861ee17364a8",
+    "05_OppositeSide.png": "afd694654bbc5395695afb90b10b5ae0f861ed9f6410d925f49875b20cd8a4e9"
+  },
+  "edited_groups": 10
+}

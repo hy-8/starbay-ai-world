@@ -1,0 +1,31 @@
+{
+  "source": "nativevolumetric110",
+  "source_sha256": "8e1c71c0552ce89f3853e6852c382810f9f8072c3fc5622f33ade823a770c5d8",
+  "selection_attribute": "native_layered_nape_extension",
+  "changed_fibers": 13449,
+  "designed_extension_quantiles_m": [
+    0.03000000000273737,
+    0.04466905486990683,
+    0.0699999955667409
+  ],
+  "final_tip_z_quantiles_m": [
+    1.581585614892135,
+    1.6497549015307267,
+    1.7252998786962372
+  ],
+  "discrete_body_repairs": 2707,
+  "collar_aware": true,
+  "garment_ray_clearance_points": 965,
+  "method": "Actual posterior roots Y>-18mm/Z>1.735m, tips1.640-1.760m excluding106 frontal sweeps. Root-space30-70mm downward layered extension, loose rearward/lateral terminal flow. First6 points/source follicle/radii/topology/materials and other components retained. Old short-nape1.640m gate is deliberately not an aesthetic requirement.",
+  "status": "Actually inspected; reference incomplete",
+  "model_sha256": "2e7d2c44c86f36cc7b1ada5eec790a547b9ac123cded98ac704490b07721c14c",
+  "art_judgment": "All4 drafts, all5 neutral views and512-sample saved-model portrait actually inspected. Same13449 posterior shafts as111, with discrete positiveY garment ray guard on965 points against evaluated collar/suit. Visual difference versus111 small; reference-like longer nape and110 finer fringe retained. Adopt as incomplete WIP. Crown/front broad orderly sheets, side loops/pale part, flat back layering and overall reference gap remain; face/clothes deferred. Not continuous/clothing/animation collision acceptance.",
+  "goal_complete": false,
+  "maximum_displacement_m": 0.07660011947154999,
+  "inspected_draft_sha256": {
+    "02_ThreeQuarter.png": "a053142c1c8285b3410c8be7e5b3c4be73cdae7504feeaa73a94db5cc7875123",
+    "03_Side.png": "89bfe5bd5e328a2033caf5b315e8dc2bac85ccd125c622171289c40288f801d3",
+    "04_Back.png": "15bcdb7ed32840d3e236b16441c58923d7fcd92612b898049854dc08082f2ec0",
+    "05_OppositeSide.png": "c5e1c52744986068651aef7711bc0eae7d99b47f7a51045171ade50963d541a2"
+  }
+}

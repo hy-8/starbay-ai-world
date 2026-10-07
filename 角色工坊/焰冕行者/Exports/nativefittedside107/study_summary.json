@@ -1,0 +1,20 @@
+{
+  "source": "nativelongfringe106",
+  "source_sha256": "b3b7b8504ccd0ae2e2a393d8820ec272096d2a8e415162bed37b310735c96bfa",
+  "selection_attribute": "native_fitted_side_flow",
+  "eligible_fibers": 3182,
+  "changed_fibers": 2940,
+  "edited_groups": 54,
+  "discrete_body_repairs": 598,
+  "method": "64 actual root-to-tip path groups in positiveX side, excluding all old61/new106 fringe and tips below1.700m. Arc-parameter least-squares broad cubic source center guides,6-13mm middle-control drop,4-13mm end drop/6mm depth scatter,80% center-flow relaxation with retained roots and within-lock source section. Materials/lights unchanged.",
+  "status": "Actually inspected; reference incomplete",
+  "model_sha256": "e51ff28bd9b29b7be6eed1ef9e09d1d3d9aed12368de08fdbe54199a6bc0d40e",
+  "art_judgment": "All3 actual drafts inspected. PositiveX narrow selection2940 shafts/54 groups; fitted cubic center flow yields only small outer-edge improvement. Not adopted as meaningful whole-head change.",
+  "goal_complete": false,
+  "maximum_displacement_m": 0.012364119291305542,
+  "inspected_draft_sha256": {
+    "02_ThreeQuarter.png": "e644f4985035e6cbfb0cc7d10c8e142554c14dc9249e401e9a520b5037ea51fc",
+    "03_Side.png": "aa17d4fe63fba7c6eb86da3489cf247853b030936a0ed90341e28a5265a0226a",
+    "05_OppositeSide.png": "4e9e9b5c5dd6683e9f39935cd585c1e84cce6e68c2f7ba826e0164e744fba6a8"
+  }
+}

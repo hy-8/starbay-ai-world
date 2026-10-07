@@ -1,0 +1,38 @@
+{
+  "source": "nativelongfringe106",
+  "source_sha256": "b3b7b8504ccd0ae2e2a393d8820ec272096d2a8e415162bed37b310735c96bfa",
+  "selection_attribute": "native_fitted_side_flow",
+  "eligible_fibers": 16448,
+  "changed_fibers": 16371,
+  "edited_groups": 96,
+  "discrete_body_repairs": 4709,
+  "whole_side": true,
+  "eligible_root_xyz_quantiles_m": [
+    [
+      0.0030099323485046625,
+      -0.14237169921398163,
+      1.8050025701522827
+    ],
+    [
+      0.04150095768272877,
+      -0.026055634021759033,
+      1.8562905192375183
+    ],
+    [
+      0.081087626516819,
+      0.05997682362794876,
+      1.8728439807891846
+    ]
+  ],
+  "method": "100 actual path groups over entire native_relaxed_side_locks source region, excluding all old61/new106 fringe and tips below1.700m. Arc-parameter least-squares broad cubic source center guides,6-13mm middle-control drop,4-13mm end drop/6mm depth scatter,80% center-flow relaxation with retained roots and within-lock source section. Materials/lights unchanged.",
+  "status": "Actually inspected; reference incomplete",
+  "model_sha256": "7a1b5049d569abd9356e58afcb00843a4f20dc2965f32df259c6a70b3f83aaea",
+  "art_judgment": "All3 actual drafts inspected. Independent from106:16371 side shafts/96 groups fitted to falling cubic center flow. Upper outer side smoother and ends less repetitive; broad crown/fringe unchanged. Intermediate basis for110, not final.",
+  "goal_complete": false,
+  "maximum_displacement_m": 0.01446127612143755,
+  "inspected_draft_sha256": {
+    "02_ThreeQuarter.png": "3493f89989495d6765cc43841214c8e7e3a18ee6b8e5e93810363ba0d0f9839f",
+    "03_Side.png": "f4ceb0906fc0973156a257f7adbcca2e367ee53f12f2aa45e516840d1da25462",
+    "05_OppositeSide.png": "41014d8c8bb548b0ac35d7433cc89a11427c446c8736d9ac2987a900c4b685ff"
+  }
+}

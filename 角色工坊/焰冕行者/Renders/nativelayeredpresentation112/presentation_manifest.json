@@ -1,0 +1,15 @@
+{
+  "source": "nativecollarnape112",
+  "source_sha256": "2e7d2c44c86f36cc7b1ada5eec790a547b9ac123cded98ac704490b07721c14c",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "d4c699e946da26b83436836ff9653c4637af1eac3dac4234a2f1ee60fc570740",
+  "status": "Actual render pending art review; no generative image replacement"
+}

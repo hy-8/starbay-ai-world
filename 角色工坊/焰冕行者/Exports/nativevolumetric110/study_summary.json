@@ -1,0 +1,20 @@
+{
+  "source": "nativewholeside108",
+  "source_sha256": "7a1b5049d569abd9356e58afcb00843a4f20dc2965f32df259c6a70b3f83aaea",
+  "selection_attribute": "native_volumetric_sections",
+  "changed_fibers": 35317,
+  "discrete_body_repairs": 9640,
+  "method": "180 whole-path groups, actual crown/fringe follicles Z>1.800m. Rounded elliptical cross sections, 2.3-6mm half width, 2-3mm depth, separate source-ranked shaft membership, 2-6mm central relief, varied tapered tails. First6 points, radii/topology/materials and other components retained.",
+  "status": "Actually inspected; reference incomplete",
+  "model_sha256": "8e1c71c0552ce89f3853e6852c382810f9f8072c3fc5622f33ade823a770c5d8",
+  "art_judgment": "All4 actual drafts inspected.35317 actual shafts/180 whole-path groups rounded into tapered volumetric sections with2-6mm central relief; first6 points kept. Frontal thin tips and separate upper locks clearer, but crown still too orderly and side/back flat panels remain. Intermediate incomplete basis, not reference quality.",
+  "goal_complete": false,
+  "maximum_displacement_m": 0.02786795049905777,
+  "inspected_draft_sha256": {
+    "01_Front.png": "8a6d43902ec922e695449b6914926d761eb240fd1473e5da5ec033d7ccb12960",
+    "02_ThreeQuarter.png": "c4e328115daa4a7110bee8ac4a17a2781ea9a1c864760b38a10d5dcd6df93ddd",
+    "03_Side.png": "f121e78ee27c1743243159c30fb788fd052c4d0050959c9959f44590e60ea554",
+    "05_OppositeSide.png": "59ea161a265322a5c0eac03436a3b94b014e6ad7d8fbf8ed5c9c0eb9d2b248e6"
+  },
+  "edited_groups": 180
+}

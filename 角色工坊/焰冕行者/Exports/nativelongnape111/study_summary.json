@@ -1,0 +1,29 @@
+{
+  "source": "nativevolumetric110",
+  "source_sha256": "8e1c71c0552ce89f3853e6852c382810f9f8072c3fc5622f33ade823a770c5d8",
+  "selection_attribute": "native_layered_nape_extension",
+  "changed_fibers": 13449,
+  "designed_extension_quantiles_m": [
+    0.03000000000273737,
+    0.04466905486990683,
+    0.0699999955667409
+  ],
+  "final_tip_z_quantiles_m": [
+    1.581585614892135,
+    1.6497549015307267,
+    1.7252998786962372
+  ],
+  "discrete_body_repairs": 2707,
+  "method": "Actual posterior roots Y>-18mm/Z>1.735m, tips1.640-1.760m excluding106 frontal sweeps. Root-space30-70mm downward layered extension, loose rearward/lateral terminal flow. First6 points/source follicle/radii/topology/materials and other components retained. Old short-nape1.640m gate is deliberately not an aesthetic requirement.",
+  "status": "Actually inspected; reference incomplete",
+  "model_sha256": "c8c7d373d48680c121dbb92e0e3889a23b2160076eef574c418cfd92f139b690",
+  "art_judgment": "All4 actual drafts inspected.13449 existing posterior shafts lengthened30-70mm, closer to reference medium layered silhouette; some low ends overlap collar in view, broad posterior panels persist. Superseded by112; not completed art.",
+  "goal_complete": false,
+  "maximum_displacement_m": 0.07073468714952469,
+  "inspected_draft_sha256": {
+    "02_ThreeQuarter.png": "ee7f507f3f4e8042eb44b08818b8546dbf63faad376e2cfb8c2202c5c0beafb9",
+    "03_Side.png": "29894b458318b4537ece921542878de8e53ce76621c1999104a2431aa2647dc7",
+    "04_Back.png": "3729cc3b65ea7df466e3eb074f0b8c7dceb47089f561e55038d1ff521124378f",
+    "05_OppositeSide.png": "ee4f6be54f03c3df4de2bbea8cbac51e6616e1b8a2b410a0d20b8596a37742da"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "source": "nativecollarnape112",
+  "source_sha256": "2e7d2c44c86f36cc7b1ada5eec790a547b9ac123cded98ac704490b07721c14c",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "02_ThreeQuarter.png": "d4c699e946da26b83436836ff9653c4637af1eac3dac4234a2f1ee60fc570740"
+  },
+  "art_judgment": "Actual1920x2240/512/OIDN saved-model portrait inspected. Finer foreground and medium nape clear; broad crown sheets, orderly side repeats, flat back and reference quality gap persist. Not release/social artwork acceptance.",
+  "goal_complete": false
+}
