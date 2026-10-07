@@ -1,0 +1,12 @@
+{
+  "source": "nativefeather21",
+  "source_sha256": "14bf28a0d21943292af2c131cd7fd9c784d41759f94bfd8983f569e8dfeea09f",
+  "resolution": [
+    1200,
+    1400
+  ],
+  "samples": 192,
+  "denoising": false,
+  "all_images_actually_reviewed": true,
+  "art_judgment": "More distinct longer fringe, but crown arches/wide bands, pale exposed support and back bands remain. Fine-fiber readability from high samples/denoising is not geometry repair. Reference quality not achieved."
+}

@@ -1,0 +1,17 @@
+{
+  "source": "nativelayerflow18",
+  "source_sha256": "dc02906ce699f9149f430db21b00c53ac396449cae1062ee2f75e428f3117edb",
+  "method": "Existing 231 frontal sections: tangent-frame lateral compression up to62%, depth compression up to15%, shallow \u00b13.5mm coherent section lift; smooth elevated-crown/shaft masks preserve roots and ends",
+  "scope": "Discrete body guard, not complete hair segments/eye/clothing/animation or art acceptance",
+  "model_sha256": "af6e4779c4a350ccc2648c4d765461cce31c188acfb2e74acd92e777d920f59e",
+  "changed_fibers": 11092,
+  "sections_count": 231,
+  "art_judgment": "Modest frontal cross-section improvement; wide crown remains. Intermediate source only.",
+  "all_draft_views_reviewed": true,
+  "inspected_image_sha256": {
+    "01_Front.png": "0c38bbcf0d78e291ad430c68c5f6ac655b82c414800e7673fd42315a30cc822f",
+    "02_ThreeQuarter.png": "33c3257f360a34afcc440ca5834b10ffe1fa36a116467ea5fdb202da932c325c",
+    "03_Side.png": "c880bd3728b89ab0dda93be7c65e21137fe050538b9011f1c71a97b2055009c2"
+  },
+  "status": "Target incomplete"
+}

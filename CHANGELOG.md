@@ -330,3 +330,10 @@ sintelfit01/02/03的九张角色实渲均已查看：960×1120、Cycles/OptiX64 
 - Preserve fringe and layer 38,176 existing side/back shafts using measured root/end-flow partitions. Five neutral views inspected; crown bands and part still require work. Rejected flat crown reflow.
 - Four localized file comparisons pass within their stated static scope. Actual 1920×2240/512-sample denoised Cycles presentation inspected; no geometry/lighting substitution or art acceptance.
 - Continue from nativelayerflow18; preserve old candidates/source geometry locally. No new fee, animation, UE migration, candidate Release or social posting.
+
+
+### 2026-10-07 · Staggered fringe and root-flow comparisons (WIP)
+
+- Continue from nativefeather21: longer staggered fringe inspected in five neutral views and a 512-sample actual Cycles portrait. Crown/part/back remain below reference quality.
+- Reject same-side curtain, overly dark Huang controls and sheet-like individual scalp-arc/wave routes. Clarify unchanged shader color inputs do not imply absorption equivalence.
+- Seven localized static comparisons pass within stated scope; source geometry and unrelated edits preserved locally. No new Release.

@@ -1,0 +1,17 @@
+{
+  "source": "nativecrownsection20",
+  "source_sha256": "af6e4779c4a350ccc2648c4d765461cce31c188acfb2e74acd92e777d920f59e",
+  "method": "Central/heavy-side existing native fringe: 6-21mm staggered end extension below z1.821, lower48%-100% shaft window, small coherent tip sway; crown and real follicles retained",
+  "scope": "No eye/face/clothing/segment/animation collision approval",
+  "model_sha256": "14bf28a0d21943292af2c131cd7fd9c784d41759f94bfd8983f569e8dfeea09f",
+  "changed_fibers": 8643,
+  "sections_count": 152,
+  "art_judgment": "Staggered longer fringe is closer to reference, eyes remain visible. New continuation WIP; crown/back bands and pale part still unresolved.",
+  "all_draft_views_reviewed": true,
+  "inspected_image_sha256": {
+    "01_Front.png": "afe7ba827f4632f5147e2542cb41e564024e5aeef0ad1d9d0f959c41518c2c3f",
+    "02_ThreeQuarter.png": "9550f9ea5d24914e537516b00ddba32e59618ef1ab9c28d4580c6787007afc4d",
+    "03_Side.png": "fd882e83d955fb0ff5b8b3a8b64af078d8988020f67b20cc7640cb07cb6be245"
+  },
+  "status": "Target incomplete"
+}

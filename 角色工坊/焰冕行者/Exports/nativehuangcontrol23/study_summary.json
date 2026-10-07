@@ -1,0 +1,15 @@
+{
+  "source": "nativefeather21",
+  "source_sha256": "14bf28a0d21943292af2c131cd7fd9c784d41759f94bfd8983f569e8dfeea09f",
+  "model_sha256": "1827d2c5fcb3ccb44331c6578f4f81ac11bf63e0318c3c498176f23c0a58f06c",
+  "changed_fibers": null,
+  "sections_count": 0,
+  "art_judgment": "Rejected: Huang 1/1/1 same color inputs still loses structure. Same inputs do not establish equivalent absorption across hair models.",
+  "all_draft_views_reviewed": true,
+  "inspected_image_sha256": {
+    "02_ThreeQuarter.png": "c9e1311fbf757f5b475c0d3c563054bab7f06a818df128c781137f3a3b731b1d",
+    "05_OppositeSide.png": "5fa33559417e814da57d69d524e4c41c4257101a98fad510bb242db4a9abf481"
+  },
+  "status": "Target incomplete",
+  "historical_manifest_clarification": "Historical geometry_lighting_pigment_unchanged field means unchanged color inputs. Effective absorption equivalence was not asserted or tested; geometry invariance verified separately."
+}

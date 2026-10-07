@@ -1,0 +1,17 @@
+{
+  "source": "nativefeather21",
+  "source_sha256": "14bf28a0d21943292af2c131cd7fd9c784d41759f94bfd8983f569e8dfeea09f",
+  "method": "Each of 11092 actual frontal follicles gets its own nearest-scalp lead arcs, small coherent same-flow wave and elevated-shaft blend; retain original root prefix/free tips and all side/back hair; spatially coherent 10mm tangent-cross wave and 3mm depth variation phased by actual root scalp angle/elevation",
+  "scope": "Discrete upper-body guard only; not complete segments/eye/clothing/animation or art approval",
+  "model_sha256": "bcb7c1ae1d57bb3c2f5ffc179917ae289f3f782b24bce9cc767f39bd9ed17988",
+  "changed_fibers": 11092,
+  "sections_count": 0,
+  "art_judgment": "Rejected: coherent scalp-angle wave still creates broad S sheets/lumpy contour. Do not repeat arbitrary wave amplitudes.",
+  "all_draft_views_reviewed": true,
+  "inspected_image_sha256": {
+    "01_Front.png": "33777e79cc79d92c2cc18218e5028bb9d0343228b11043270234f91b4041b442",
+    "02_ThreeQuarter.png": "59e7f15dd21bfc4cc1d4f24296a04c8ab2bb67cb31199ab194729487c39d0b4c",
+    "05_OppositeSide.png": "21494fc64a37227c9bdb778c8734f5eb0c75f0cc4d1436023a7d3a133f80bbac"
+  },
+  "status": "Target incomplete"
+}

@@ -1,0 +1,18 @@
+{
+  "source": "nativelayerflow18",
+  "source_sha256": "dc02906ce699f9149f430db21b00c53ac396449cae1062ee2f75e428f3117edb",
+  "method": "Positive-side frontal follicles x>.022 return to same-side scalp-fitted curtain arcs, outside-iris longer face frames and small coherent wave; previous side/back cut unchanged",
+  "scope": "Discrete upper-head body guard only, not full segments/eye/clothing/animation or art acceptance",
+  "model_sha256": "d49af66a53f4421c375c7006acc879e69854cd90a814cb376b09d7cc563bc341",
+  "changed_fibers": 5330,
+  "sections_count": 99,
+  "art_judgment": "Rejected: same-side curtain exposes too much forehead and hard arcs. Does not prove prior mean sweep the sole cause.",
+  "all_draft_views_reviewed": true,
+  "inspected_image_sha256": {
+    "01_Front.png": "27ef0c4607d5f4c79e70bc1b4e302762fdbdafca60807052a3a0a04e9474ab6a",
+    "02_ThreeQuarter.png": "2ae89a941ca0289757c070e7fe8befe5159869c7f0846b9ad18afe27d07ae2b6",
+    "03_Side.png": "6e6deac34f7b3d6ca8fd4cb3ba0672995272aa1e306c9c61b84875cafb846bcd",
+    "05_OppositeSide.png": "d56c57cd5fa97e182b982556ca8218ae05c816e6623e8644e8b09bec2c14c078"
+  },
+  "status": "Target incomplete"
+}

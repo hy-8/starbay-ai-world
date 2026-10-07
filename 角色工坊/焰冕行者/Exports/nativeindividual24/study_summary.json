@@ -1,0 +1,17 @@
+{
+  "source": "nativefeather21",
+  "source_sha256": "14bf28a0d21943292af2c131cd7fd9c784d41759f94bfd8983f569e8dfeea09f",
+  "method": "Each of 11092 actual frontal follicles gets its own nearest-scalp lead arcs, small coherent same-flow wave and elevated-shaft blend; retain original root prefix/free tips and all side/back hair",
+  "scope": "Discrete upper-body guard only; not complete segments/eye/clothing/animation or art approval",
+  "model_sha256": "6e287e41acf5336fa2c51aad99c789fd60271b438e465cfe42118bb3233b2dee",
+  "changed_fibers": 11092,
+  "sections_count": 0,
+  "art_judgment": "Rejected: per-follicle scalp arcs flatten the crown into a smooth sheet.",
+  "all_draft_views_reviewed": true,
+  "inspected_image_sha256": {
+    "01_Front.png": "ed10df7cef2185f8f1d6370cbd6586320136a708b0ba44e70dc3484ff5140168",
+    "02_ThreeQuarter.png": "58c6d81b42639c234e358c0519b1c4ee64fbcf564df481209e5006be330712c5",
+    "05_OppositeSide.png": "09597b611591c2bca2460448d5acf708e80de20b27f92ec394ec21641e692325"
+  },
+  "status": "Target incomplete"
+}

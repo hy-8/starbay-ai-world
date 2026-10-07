@@ -116,3 +116,6 @@ fabfit01—04均未通过目标艺术验收，稳定基础不变。原始头皮�
 
 
 2026-10-06：nativeunderflow14 延展本地已授权Abhay短底发；15/17/18修改Bystedt主发（CC BY-SA，来源版本未指定），来源/衍生几何留本地。原Fab Standard/NoAI文件哈希保持，未用作神经重建输入。组件ID/聚合点深度仅梳理诊断，512样本图为实际Cycles+OpenImageDenoise，无AI肖像替代或作品验收。
+
+
+2026-10-07：19—25加工已有本地毛发，不新增来源。Bystedt衍生曲线/所有blend仍留本地。Fab Standard/NoAI源未用作神经重建输入。Huang颜色输入相同不意味着跨模型物理吸收相同；原历史清单保留，另加解释。
