@@ -1,0 +1,41 @@
+{
+  "source": "nativepathlofts90",
+  "source_sha256": "c1e30bb4835a78194e2ead9fbd6dc453036c42e59fa6cd93629631c8c9ec6cf1",
+  "donor": "nativefrontfoundation86",
+  "donor_sha256": "21822e86f58dfc45561ddaf3fe986513f68de6e2ff30032cc0d2335af892c4db",
+  "selection_attribute": "native_visible_crest_relief",
+  "eligible_lofted_fibers": 23385,
+  "changed_fibers": 8138,
+  "roi": {
+    "camera": "05_OppositeSide",
+    "resolution": [
+      1200,
+      1400
+    ],
+    "ellipse_center_pixels": [
+      480,
+      395
+    ],
+    "ellipse_radii_pixels": [
+      140,
+      55
+    ],
+    "minimum_screen_lift_pixels": 10,
+    "minimum_points": 2,
+    "source": "Manually inspected actual90 opposite render; ellipse covers conspicuous raised crown loops"
+  },
+  "donor_full_paths_exact": true,
+  "all_roots_exact": true,
+  "all_points44_through64_exact": true,
+  "unselected_primary_exact": true,
+  "method": "Only already lofted shafts with at least2 saved first44 points in the observed opposite crest ellipse and>10px upward displacement versus86 are restored to exact86 full paths. All other lofts and complete tail geometry retained.",
+  "status": "Actually reviewed; incomplete reference target",
+  "model_sha256": "4cab4d4652f26cabdd987ae689f13eecf3da90774675ea01336ad45826500034",
+  "art_judgment": "8138 individual lofted90 shafts restore exact86 full paths based on manually observed opposite-view crown ellipse and>10px upward displacement. All3 drafts inspected; rear-side loops reduced, front part crest remains. Intermediate only; ROI does not imply ray visibility.",
+  "goal_complete": false,
+  "inspected_draft_sha256": {
+    "01_Front.png": "4cf6bd226289c5a5a86e40b0c97857dbb20b454925f3b920ea4c73cfe3090c97",
+    "02_ThreeQuarter.png": "5247063c977a20c4493d605dbc13b24094293966d8bce58aabfde4ad7bc20a48",
+    "05_OppositeSide.png": "49b349e74446458a846596f021545b8d40e07c09f6ed80333dcb8efef3f97e1f"
+  }
+}

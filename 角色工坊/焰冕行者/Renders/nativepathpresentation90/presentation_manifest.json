@@ -1,0 +1,15 @@
+{
+  "source": "nativepathlofts90",
+  "source_sha256": "c1e30bb4835a78194e2ead9fbd6dc453036c42e59fa6cd93629631c8c9ec6cf1",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "ff3b92cc19cc4dd3cc2a03741aafd150ab527654e43fecb87b8b166b6eada08a",
+  "status": "Actual render pending art review; no generative image replacement"
+}

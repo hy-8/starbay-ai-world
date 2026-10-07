@@ -1,0 +1,15 @@
+{
+  "source": "nativerootlofts88",
+  "source_sha256": "7c8b8c60ea7b618335cd2dc631385785669a55f13cf56e51f297ce9b672f3e62",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "dd31e152fa3e6bd963ecc329f723a901f0630fb78e817393e5f48b08f85b3ff3",
+  "status": "Actual render pending art review; no generative image replacement"
+}

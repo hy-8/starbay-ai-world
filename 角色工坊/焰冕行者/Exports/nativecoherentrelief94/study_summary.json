@@ -1,0 +1,62 @@
+{
+  "source": "nativepathlofts90",
+  "source_sha256": "c1e30bb4835a78194e2ead9fbd6dc453036c42e59fa6cd93629631c8c9ec6cf1",
+  "donor": "nativefrontfoundation86",
+  "donor_sha256": "21822e86f58dfc45561ddaf3fe986513f68de6e2ff30032cc0d2335af892c4db",
+  "selection_attribute": "native_visible_crest_relief",
+  "eligible_lofted_fibers": 23385,
+  "changed_fibers": 9816,
+  "both_views": true,
+  "coherent_groups": true,
+  "point_roi_selected_fibers": 8995,
+  "roi": {
+    "camera": "05_OppositeSide",
+    "resolution": [
+      1200,
+      1400
+    ],
+    "ellipse_center_pixels": [
+      480,
+      395
+    ],
+    "ellipse_radii_pixels": [
+      140,
+      55
+    ],
+    "minimum_screen_lift_pixels": 10,
+    "minimum_points": 2,
+    "source": "Manually inspected actual90 opposite render; ellipse covers conspicuous raised crown loops"
+  },
+  "donor_full_paths_exact": true,
+  "all_roots_exact": true,
+  "all_points44_through64_exact": true,
+  "unselected_primary_exact": true,
+  "method": "Only already lofted shafts with at least2 saved first44 points in the observed opposite+front ellipse and required upward displacement versus86 are candidates. Reproduce90 source whole-path150-group partition; restore entire minimum30-fiber groups with>=30% ROI membership, avoiding partial-lock leftovers. Restored full paths exactly match86; all other lofts and complete tails retained.",
+  "status": "Actually reviewed; incomplete reference target",
+  "model_sha256": "af2e6002d5883ee29dfc6c234f84f54feae7c825265ec05a07da4b68e51e219a",
+  "art_judgment": "From90,8995 initial opposite+front ROI candidates expand/contract through exact reproduced150 source-path groups:55 coherent groups/9816 shafts restore exact86 full paths;13569 lofted90 paths remain. All3 drafts,5 neutral views and512-sample portrait inspected. Upper flow more layered than86; conspicuous raised loops/part crest reduced versus90 while side coverage/nape/foreground retained. Remaining bulky upper front bands, repeated bends, small raised side peaks, pale part/back crown and unfinished face/clothes; reference target not complete. New continuation WIP.",
+  "goal_complete": false,
+  "inspected_draft_sha256": {
+    "01_Front.png": "efc2ff7c3c4cf2a7354d06a930842fb8862dcfe5cfe435bd2f30a12f33bfccf3",
+    "02_ThreeQuarter.png": "a750c267ad6feca7bb42965f3b9250ec91c4ed649dd806869dca6fa43245e34f",
+    "05_OppositeSide.png": "7728b9dec0a1939ef475d6e0750685d3f351659e3ddf8a97fa57cdd766a31cdb"
+  },
+  "secondary_roi": {
+    "camera": "01_Front",
+    "resolution": [
+      1200,
+      1400
+    ],
+    "ellipse_center_pixels": [
+      535,
+      348
+    ],
+    "ellipse_radii_pixels": [
+      70,
+      42
+    ],
+    "minimum_screen_lift_pixels": 12,
+    "minimum_points": 2
+  },
+  "restored_coherent_groups": 55
+}

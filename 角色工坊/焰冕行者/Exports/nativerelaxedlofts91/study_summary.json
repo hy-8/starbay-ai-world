@@ -1,0 +1,27 @@
+{
+  "source": "nativefrontfoundation86",
+  "source_sha256": "21822e86f58dfc45561ddaf3fe986513f68de6e2ff30032cc0d2335af892c4db",
+  "selection_attribute": "native_layered_root_lofts",
+  "eligible_fibers": 23410,
+  "changed_fibers": 23385,
+  "target_patches": 150,
+  "all_roots_exact": true,
+  "explicit_foreground_exact": true,
+  "all_points_44_through_64_exact": true,
+  "unselected_primary_exact": true,
+  "discrete_body_repairs": 12,
+  "path_groups": true,
+  "relax_curved_groups": true,
+  "method": "150 whole root-to-midshaft path groups (saved points0/8/16/24/40, weights.7/.9/1/1/.4), minimum30 shafts; continuously transported width/depth sections, broad5-14mm asymmetric root lofts fading by point44; source guide cumulative turning100-180deg smoothly reduces extra loft and sideways sweep to35%,58% width/35% depth contraction with internal1.3/.9mm variation; original tails retained.",
+  "status": "Actually reviewed; incomplete reference target",
+  "model_sha256": "fa8880dffc97a7bd2ad13ebc5f9b89e5a31245d4a0322d797e84f05125583da7",
+  "art_judgment": "Independent from86 using same path partition as90; original center-guide cumulative turn100-180deg reduces loft and sweep to35%.61 groups have strength<.9. All3 drafts inspected; only small visible change, conspicuous loops remain. Not adopted.",
+  "goal_complete": false,
+  "inspected_draft_sha256": {
+    "01_Front.png": "e104fcf2bb9fbf6fef3b4d87f81cd40814681e28f355c3d964646ccad4ae0b91",
+    "02_ThreeQuarter.png": "b76942fac95f8d01d6f6d97bfebf06619df0ad3046c8d8ed7be2cbf088de4fa4",
+    "05_OppositeSide.png": "f29a351709383a0011d6d78bbd5f25681ea30663ced7f1d2ae9f3be7b53e4d19"
+  },
+  "edited_groups": 146,
+  "maximum_displacement_m": 0.020422800739359204
+}

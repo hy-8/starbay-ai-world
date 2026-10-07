@@ -1,0 +1,25 @@
+{
+  "source": "nativefrontfoundation86",
+  "source_sha256": "21822e86f58dfc45561ddaf3fe986513f68de6e2ff30032cc0d2335af892c4db",
+  "selection_attribute": "native_layered_root_lofts",
+  "eligible_fibers": 23410,
+  "changed_fibers": 23410,
+  "target_patches": 150,
+  "all_roots_exact": true,
+  "explicit_foreground_exact": true,
+  "all_points_44_through_64_exact": true,
+  "unselected_primary_exact": true,
+  "discrete_body_repairs": 2440,
+  "method": "150 root-space patches, minimum30 shafts; continuously transported width/depth sections, broad5-14mm asymmetric root lofts fading by point44,58% width/35% depth contraction with internal1.3/.9mm variation; original tails retained.",
+  "status": "Actually reviewed; incomplete reference target",
+  "model_sha256": "7c8b8c60ea7b618335cd2dc631385785669a55f13cf56e51f297ce9b672f3e62",
+  "art_judgment": "150 root-space patches/23410 shafts. All3 drafts and actual512-sample portrait inspected. Crown sheet separates, but raised ridges, rectangular crest/stray peaks remain. Rejected as standalone continuation.",
+  "goal_complete": false,
+  "inspected_draft_sha256": {
+    "01_Front.png": "29009305803306b1734dd273c7e3b45ce4402c0ad31ce9cb956ca8d075a8f087",
+    "02_ThreeQuarter.png": "b833e9991fdebf62e286248513e4339b1e4a578a31aaf812f96865b1d9ace744",
+    "05_OppositeSide.png": "e42d6b8621bad6c1961da252960c356b086721ad5191e93f797e77ecc1ddeaee"
+  },
+  "edited_groups": 150,
+  "maximum_displacement_m": 0.04069042850531599
+}

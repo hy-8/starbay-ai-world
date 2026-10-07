@@ -389,3 +389,10 @@ sintelfit01/02/03的九张角色实渲均已查看：960×1120、Cycles/OptiX64 
 - Actual primary-only ablation77 retains pale fan; saved shaft-section IDs78 locate the0-7 entry region. Probe79 describes22522 positive-X shafts. Prior support attribution is view/component-specific, not an explanation for all pale hair.
 - Entry microtufts80 rejected. Full side locks81 reduce the brushed fan; tiered82 improves length scatter but shows a sparse Side03 temple. Restores83/84 and partial long/short mix85 insufficient.86 combines9140 exact front81 paths with7308 back82 tiers; five neutral views and actual512-sample portrait inspected. Better temple coverage and side flow; broad crown sheet/repeated curls/pale part remain incomplete. Continue from86, retain68 and stable backup.
 - Seven file comparisons preserve141 meshes, hair roots/radii/topology, untouched shafts/components, materials and scene presentation.85/86 selected saved donor paths independently exact. No long primary tails below1.640m. Static proof only; source/derived geometry local, no fee/Release/UE/animation integration.
+
+
+### 2026-10-07 — 上部发束分层与卷环收敛（未完成）
+
+- 从86按实际发丝流向设计上部层次，再按正面/侧面观察整束收回过度卷环；94保存为下一步WIP。
+- 三草稿、五视角与高清真实Cycles近景已检查；六个局部静态对照保留身体/脸/服装、根、刘海、后颈及材质灯光。
+- 仍有宽厚前束、小簇突起/浅色分缝及参考质量差距，未完成目标、未发布候选Release。代码/聚合记录/已看实渲同步，源与衍生几何本地保留。

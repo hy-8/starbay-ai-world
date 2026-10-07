@@ -1,0 +1,13 @@
+{
+  "source": "nativecoherentrelief94",
+  "source_sha256": "af2e6002d5883ee29dfc6c234f84f54feae7c825265ec05a07da4b68e51e219a",
+  "all_images_actually_reviewed": true,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "samples": 192,
+  "denoising": false,
+  "art_judgment": "All5 actual views inspected. Upper layered shape preserved with fewer raised loops/part crest than90; still small crown/side raised peaks, repeated bends and pale back/part patch (also visible in inspected86 Back04). No complete artwork acceptance.",
+  "goal_complete": false
+}

@@ -1,0 +1,46 @@
+{
+  "source": "nativefrontfoundation86",
+  "source_sha256": "21822e86f58dfc45561ddaf3fe986513f68de6e2ff30032cc0d2335af892c4db",
+  "candidate": "nativerootlofts88",
+  "candidate_sha256": "7c8b8c60ea7b618335cd2dc631385785669a55f13cf56e51f297ce9b672f3e62",
+  "selected_fibers": 23410,
+  "upper_new_sharp_turn_fibers": 27,
+  "selected_peaks_above_1_900m": 0,
+  "source_selected_peak_quantiles_m": [
+    1.8300013542175293,
+    1.8563973307609558,
+    1.8671210289001465,
+    1.8746247923374175,
+    1.8765264749526978
+  ],
+  "candidate_selected_peak_quantiles_m": [
+    1.8300018310546875,
+    1.860359013080597,
+    1.8746156215667724,
+    1.8831994104385377,
+    1.893119215965271
+  ],
+  "source_selected_max_turn_quantiles_deg": [
+    2.6586737525713477,
+    6.225583725251073,
+    24.13620108916894,
+    54.64641975103123,
+    132.5104632291689
+  ],
+  "candidate_selected_max_turn_quantiles_deg": [
+    4.690774523430445,
+    18.12928700656856,
+    27.051482958851572,
+    71.29824071617848,
+    152.06486537205882
+  ],
+  "candidate_max_turn_of_flagged_quantiles_deg": [
+    85.29307802294075,
+    109.76880905321977,
+    142.32765445440808,
+    151.11800140448136,
+    152.06486537205882
+  ],
+  "method": "Saved65-point shafts; flag new turns>85deg and increase>30deg, vertexZ>1.860m, vertex index1-43, within declared edited set. Separate geometric peak>1.900m flag. No visibility inference.",
+  "scope": "Discrete geometric diagnostic; local flags only. No continuous curve/segment/body/animation or art acceptance."
+}

@@ -1,0 +1,15 @@
+{
+  "source": "nativecoherentrelief94",
+  "source_sha256": "af2e6002d5883ee29dfc6c234f84f54feae7c825265ec05a07da4b68e51e219a",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "c299d9d7b37a945fbfae7c8c584928561c9b243389b30a3698e992aed544ebf1",
+  "status": "Actual render pending art review; no generative image replacement"
+}

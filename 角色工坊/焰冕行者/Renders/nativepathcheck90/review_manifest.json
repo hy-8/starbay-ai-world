@@ -1,0 +1,13 @@
+{
+  "source": "nativepathlofts90",
+  "source_sha256": "c1e30bb4835a78194e2ead9fbd6dc453036c42e59fa6cd93629631c8c9ec6cf1",
+  "all_images_actually_reviewed": true,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "samples": 192,
+  "denoising": false,
+  "art_judgment": "All5 actual views inspected. Upper bands separate and side/nape coverage retained; opposite/top raised loops and repeated bends remain.90 donor only.",
+  "goal_complete": false
+}

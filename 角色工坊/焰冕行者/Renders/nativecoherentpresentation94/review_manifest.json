@@ -1,0 +1,13 @@
+{
+  "source": "nativecoherentrelief94",
+  "source_sha256": "af2e6002d5883ee29dfc6c234f84f54feae7c825265ec05a07da4b68e51e219a",
+  "all_images_actually_reviewed": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "art_judgment": "Actual high portrait inspected. Upper/front layer separation improved relative86; large part crest reduced relative90. Still broad raised front locks, repeated waves/pale part and unfinished face/clothes. Continue WIP94; reference incomplete.",
+  "goal_complete": false
+}

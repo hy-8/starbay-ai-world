@@ -1,0 +1,41 @@
+{
+  "source": "nativecrestrelief92",
+  "source_sha256": "4cab4d4652f26cabdd987ae689f13eecf3da90774675ea01336ad45826500034",
+  "donor": "nativefrontfoundation86",
+  "donor_sha256": "21822e86f58dfc45561ddaf3fe986513f68de6e2ff30032cc0d2335af892c4db",
+  "selection_attribute": "native_visible_crest_relief",
+  "eligible_lofted_fibers": 23385,
+  "changed_fibers": 857,
+  "roi": {
+    "camera": "01_Front",
+    "resolution": [
+      1200,
+      1400
+    ],
+    "ellipse_center_pixels": [
+      535,
+      348
+    ],
+    "ellipse_radii_pixels": [
+      70,
+      42
+    ],
+    "minimum_screen_lift_pixels": 12,
+    "minimum_points": 2,
+    "source": "Manually inspected actual92 front render; ellipse covers left-of-part raised crest"
+  },
+  "donor_full_paths_exact": true,
+  "all_roots_exact": true,
+  "all_points44_through64_exact": true,
+  "unselected_primary_exact": true,
+  "method": "Only already lofted shafts with at least2 saved first44 points in the observed front part ellipse and>12px upward displacement versus86 are restored to exact86 full paths. All other lofts and complete tail geometry retained.",
+  "status": "Actually reviewed; incomplete reference target",
+  "model_sha256": "f90ae92b96d84b1eaa045e235422e88bcd0686f871f5f4280c91674d4e54939c",
+  "art_judgment": "857 individual shafts from92 restore exact86 full paths from actual front-part ellipse/>12px screen lift. All3 drafts inspected: raised front crest reduced; small clustered peaks remain in side silhouette. Intermediate only.",
+  "goal_complete": false,
+  "inspected_draft_sha256": {
+    "01_Front.png": "fad30a977d349e5fad0a80be480c333b3d3ebbd70d083f613aadd7f1d89d96a7",
+    "02_ThreeQuarter.png": "22ec261c08974102871beaa20ed1db2f2a062420777780034bd54ec33a902fc4",
+    "05_OppositeSide.png": "cdee5f1a60834bb4692589297caee657620147f65dcabdea3844e34e8db63b11"
+  }
+}

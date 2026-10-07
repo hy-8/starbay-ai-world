@@ -1,0 +1,24 @@
+{
+  "version": "nativepathcheck90",
+  "source": "nativepathlofts90",
+  "source_sha256": "c1e30bb4835a78194e2ead9fbd6dc453036c42e59fa6cd93629631c8c9ec6cf1",
+  "source_unchanged": true,
+  "method": "Existing neutral cameras when requested, plus actual opposite camera mirrored in world space with local-X handedness correction; no pixel flip or geometry edit",
+  "samples": 192,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "denoising": false,
+  "image_sha256": "f9677a6fcfc8761a911c5a28839de1f69c13a6f3c611fcd40f99b91ec5861ea9",
+  "images_sha256": {
+    "01_Front.png": "faf3f9d08f2e108c45227b0f1c76aac6c4b6836924f8df45abdfd6dee259a15f",
+    "02_ThreeQuarter.png": "7a65999f2664359c34ea7f42550bf5ccd6ffdf544a0b3a7dabcfa24bdc4a5dd7",
+    "03_Side.png": "0594541bffbd84309e46fd4e3636607bb35ca0e57d29f7d999312ad8c3392b9c",
+    "04_Back.png": "f14442f96ae5d32db077004e56deefc8ad0e73f5d6e016f99f60841095e439e4",
+    "05_OppositeSide.png": "f9677a6fcfc8761a911c5a28839de1f69c13a6f3c611fcd40f99b91ec5861ea9"
+  },
+  "status": "Unreviewed actual neutral/opposite profile diagnostic, not artistic approval",
+  "single_camera": null,
+  "opposite_image_reused_from": null
+}

@@ -1,0 +1,72 @@
+{
+  "source": "nativefrontfoundation86",
+  "source_sha256": "21822e86f58dfc45561ddaf3fe986513f68de6e2ff30032cc0d2335af892c4db",
+  "source_unchanged": true,
+  "legend": [
+    {
+      "region": "foreground61",
+      "fibers": 6074,
+      "color": [
+        1,
+        0.03,
+        0.06,
+        1
+      ],
+      "root_mean_m": [
+        0.043058544397354126,
+        -0.08977437764406204,
+        1.853425145149231
+      ]
+    },
+    {
+      "region": "side86",
+      "fibers": 16448,
+      "color": [
+        0.03,
+        0.3,
+        1,
+        1
+      ],
+      "root_mean_m": [
+        0.037225089967250824,
+        -0.030746981501579285,
+        1.8502538204193115
+      ]
+    },
+    {
+      "region": "remaining_upper_crown",
+      "fibers": 9306,
+      "color": [
+        0.03,
+        1,
+        0.06,
+        1
+      ],
+      "root_mean_m": [
+        -0.026858942583203316,
+        -0.04980634152889252,
+        1.852422833442688
+      ]
+    },
+    {
+      "region": "other_primary",
+      "fibers": 17440,
+      "color": [
+        1,
+        0.55,
+        0.03,
+        1
+      ],
+      "root_mean_m": [
+        -0.004125642590224743,
+        0.005582905374467373,
+        1.768190622329712
+      ]
+    }
+  ],
+  "images_sha256": {
+    "02_ThreeQuarter.png": "eb098a7ffae66ffb5c267c53699e00764a7cec7fa3646167522a9e9669a1a7e3",
+    "01_Front.png": "cd3f95106675f83f789356afbc806adbff737236b07d1986e257f43e265684f0"
+  },
+  "scope": "Actual saved primary region emission IDs; support hidden temporarily. No source save or final-appearance acceptance."
+}

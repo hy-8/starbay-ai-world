@@ -1,0 +1,13 @@
+{
+  "source": "nativerootlofts88",
+  "source_sha256": "7c8b8c60ea7b618335cd2dc631385785669a55f13cf56e51f297ce9b672f3e62",
+  "all_images_actually_reviewed": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "art_judgment": "Actual high portrait inspected: layered volume introduced but unnatural hard/rectangular crown ridge and isolated sharp wisps. Rejected88.",
+  "goal_complete": false
+}
