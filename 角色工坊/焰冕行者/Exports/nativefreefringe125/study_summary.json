@@ -1,0 +1,24 @@
+{
+  "source": "nativefreesections123",
+  "source_sha256": "d7c7b5503fd3dc45275bb10b6939ae1f5a21c7287efe38b75cae680d0decb6cc",
+  "donor": "nativecrimsonflow103",
+  "donor_sha256": "1f1d0e7065b0bbfc24e9cf17eb7103668a842588ccd03b783a76108512fc951f",
+  "selection_attribute": "native_unranked_fringe_fall",
+  "changed_fibers": 8501,
+  "target_groups": 48,
+  "edited_groups": 46,
+  "discrete_body_repairs": 80275,
+  "fringe_mode": true,
+  "method": "Actual8539 fringe region in48 whole-flow groups. Explicit6-13mm own-side/6-15mm upward first control; second control lies36% of root-terminal chord back from endpoint plus6mm outward/12mm up/4mm forward. Source endpoints free to stagger8mm vertically/2-6mm laterally/3mm forward. Full broad cubic mean replaces old crossings and tail suffix, native103 section projected into transported frame with60% terminal taper;75% donor plus25% current scatter, true roots/radii/non-fringe/materials retained.",
+  "status": "Actually reviewed; reference unachieved",
+  "model_sha256": "b44d6949f40cf60d6f96e3272ec8a76a93ff01f783bd660fac7fe50e9d0ca23c",
+  "art_judgment": "All4 drafts and actual512-sample portrait inspected.46 edited fringe groups allow full-path own-side falls and released tips. Prior tiny forehead hook recedes and fine tails clearer. Broad ordered upper fall, repeated side layers, flat back and pale part remain. Incomplete useful fringe inherited by129.",
+  "goal_complete": false,
+  "maximum_displacement_m": 0.03910735622048378,
+  "inspected_draft_sha256": {
+    "01_Front.png": "15a4b6844ff7861540bfc21bac21cae663f969f9df6b19eb393f7a77acee7e6d",
+    "02_ThreeQuarter.png": "bf733ba882737993e9173c3fadb11b0caea77c80e09d23ca7c4a97f981cf6ed7",
+    "03_Side.png": "8e7f74976442d03b523945472eb68e4b7561119a16bea76bf96e20ccb52d7f8a",
+    "05_OppositeSide.png": "e2a408d2e38c841bcedf3e65cb807f6481e96b530ee20f94612f7b36cc2cc933"
+  }
+}

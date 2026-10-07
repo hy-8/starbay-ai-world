@@ -1,0 +1,38 @@
+{
+  "source": "nativesweptupper126",
+  "source_sha256": "c39e361a9d6801e1fe320eb22b79187db44df9ea0bb317411148de2e786ee2b5",
+  "reference": "nativefreefringe125",
+  "reference_sha256": "b44d6949f40cf60d6f96e3272ec8a76a93ff01f783bd660fac7fe50e9d0ca23c",
+  "swept_fibers": 23540,
+  "new_high_terminal_turn_fibers": 23,
+  "terminal_turn_quantiles_deg": [
+    0.004233391147596442,
+    1.7908457038325734,
+    6.589441870799936,
+    31.35974775941233,
+    161.81560255026085
+  ],
+  "source_terminal_turn_quantiles_deg": [
+    0.002872070181660353,
+    2.3255400530902675,
+    5.225055382642343,
+    24.841428711029735,
+    176.98371822259568
+  ],
+  "definition": "New terminal turns above70deg and25deg above125, at vertexZ>1.845m afterpoint43. Geometry statistic only, no all-view visibility/continuous collision or art proof.",
+  "selection_attribute": "native_softened_swept_ends",
+  "changed_fibers": 14610,
+  "discrete_body_repairs": 2483,
+  "method": "Actual126 swept upper shafts withendZ>1.745m, individually reconstruct42-64 suffix into average-tangent/chord-directed cubic. First43 points/fringe/other shafts/materials/radii remain; original126 endpoint retained unless discrete body envelope changes it. Reference125 loaded for turn diagnosis, not geometry donor.",
+  "status": "Actually reviewed; reference unachieved",
+  "model_sha256": "d95ec9dc5ad588a95cd5dd2bc5aa0c8da0abdeccf07ed42aa6a1cae39103db7e",
+  "art_judgment": "All4 drafts inspected.Individual tangent/chord cubic ends retain points0-42 of126, release tips. Improvement small, excessive outward tails largely persist. Rejected.125 used only for turn statistics, not geometry donor.",
+  "goal_complete": false,
+  "maximum_displacement_m": 0.027049817144870758,
+  "inspected_draft_sha256": {
+    "01_Front.png": "f3997acd35d1e7140c0e7238d7535df4e551473c54f7b8e9eeeef9d7e90cf59d",
+    "02_ThreeQuarter.png": "7558a72e8ecaf63249e8f6e14bc50213b1511bd0199cc17c9981e52ad465674b",
+    "03_Side.png": "66024cfb358e12aeb118f75e5e6f5b3f95f949aa5925281acd8fa55c050dca93",
+    "05_OppositeSide.png": "f6d6145085da9f09d9781b1326a606368ea20bc8fd78c3ec4c96d6e0ce1d0b48"
+  }
+}

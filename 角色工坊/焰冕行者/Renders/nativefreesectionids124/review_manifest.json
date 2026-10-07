@@ -1,0 +1,11 @@
+{
+  "source": "nativefreesections123",
+  "source_sha256": "d7c7b5503fd3dc45275bb10b6939ae1f5a21c7287efe38b75cae680d0decb6cc",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "02_ThreeQuarter.png": "acb2db574430775d3a6cbaefff747527d6849b6fe3c5422a4615040779842556",
+    "03_Side.png": "8a31f14eb6d653b0580761d61dc86cd9bd3afeee0a28c5e869c75a19e359ed33"
+  },
+  "art_judgment": "Both actual ID images inspected. Remaining major upper/front beams belong to red current fringe and blue actual123 upper hair; three supports shown separately. Camera-specific attribution, not all-view visibility or final hair color.",
+  "goal_complete": false
+}

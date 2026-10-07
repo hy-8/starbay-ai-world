@@ -1,0 +1,25 @@
+{
+  "source": "nativefreefringe125",
+  "source_sha256": "b44d6949f40cf60d6f96e3272ec8a76a93ff01f783bd660fac7fe50e9d0ca23c",
+  "donor": "nativecrimsonflow103",
+  "donor_sha256": "1f1d0e7065b0bbfc24e9cf17eb7103668a842588ccd03b783a76108512fc951f",
+  "selection_attribute": "native_authored_swept_upper",
+  "changed_fibers": 23540,
+  "target_groups": 108,
+  "edited_groups": 105,
+  "discrete_body_repairs": 6361,
+  "fringe_mode": false,
+  "swept_upper": true,
+  "method": "Non-fringe upper108 whole-path groups use authored tangent-led lead28-75mm plus12-22mm scalp-normal first control,13-25mm radial shoulder relief/10mm lateral stagger,3-10mm radial/6mm lateral and20mm vertical end variation. Full cubic mean,75% transported native103 section plus25% current scatter, low paths blended back. True roots/fringe/radii/topology/other components/materials unchanged.",
+  "status": "Actually reviewed; reference unachieved",
+  "model_sha256": "c39e361a9d6801e1fe320eb22b79187db44df9ea0bb317411148de2e786ee2b5",
+  "art_judgment": "All4 drafts inspected.105 groups tangent-led upper relief produces stronger volume but excessive outward thin tails/loops. Raw126 rejected as standalone continuation; only proximal volume retained by129.",
+  "goal_complete": false,
+  "maximum_displacement_m": 0.04377586394548416,
+  "inspected_draft_sha256": {
+    "01_Front.png": "f7947d3b3cd19f13cc61960b2beabddea97d3033b480606963c44c359ca0c7b4",
+    "02_ThreeQuarter.png": "3b42fcc819766ed0f571a845bbf747b1d7af165b9a08434baa5a2bd8b94385d4",
+    "03_Side.png": "42ba4bb18ad953537160eb95a62cbee5c6d3fbcb59d270938e5c1d794faa7621",
+    "05_OppositeSide.png": "48e3dbcf6c47a9ac82793ba96684eca2225083fa5a76b6c9a5c709a19a0e4628"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "source": "nativeblendedupper129",
+  "source_sha256": "238efb3121ec162463531070acd82b85a1865fda1baf96b36ebaf88456d1e680",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "01_Front.png": "dd96600494c5bf79eece87a740396b62f79b39dc39545e28d73e9be48bf0e00e",
+    "02_ThreeQuarter.png": "578592d87ddd862f16db38ff69b2a130e4672ce640845a348ce5ed271427b8d1",
+    "03_Side.png": "5f8932be63f009efcabfc327f7b977ed78294c55c7501978fa194499dd4dfeac",
+    "04_Back.png": "eba77b8283e4292c5d6492eee1f1c19370eb10d1e34802a0b9e48fd5e747fdac",
+    "05_OppositeSide.png": "3b86e89b0a35ee2337c72ef77b954ccc439c2dc58c16fe1c6d8041111b8a2924"
+  },
+  "art_judgment": "All5 actual1200x1400/192/no-denoise neutral views inspected. Clear eyes, tails coherent; both profiles retain patterned bends/small lifted arcs, back still broad/flat. Incomplete.",
+  "goal_complete": false
+}

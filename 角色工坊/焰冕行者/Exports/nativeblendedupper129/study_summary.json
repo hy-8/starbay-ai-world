@@ -1,0 +1,28 @@
+{
+  "source": "nativesweptupper126",
+  "source_sha256": "c39e361a9d6801e1fe320eb22b79187db44df9ea0bb317411148de2e786ee2b5",
+  "donor": "nativefreefringe125",
+  "donor_sha256": "b44d6949f40cf60d6f96e3272ec8a76a93ff01f783bd660fac7fe50e9d0ca23c",
+  "donor_role": "terminal suffix geometry donor",
+  "selection_attribute": "native_blended_upper_suffix",
+  "changed_fibers": 23540,
+  "input_selection_attribute": "native_authored_swept_upper",
+  "custom_suffix": true,
+  "blend_start_point_index": 20,
+  "restored_suffix_first_point_index": 42,
+  "discrete_body_repairs": 0,
+  "smooth_tail": false,
+  "designed_terminal_relocations": 0,
+  "method": "Actual native_authored_swept_upper region, 23540 shafts, source points0-20 exact. Smooth source-to-donor blend overpoints21-41, selected suffix42-64 exact to donor. Intermediate discrete body guard; roots/radii/topology/unselected/materials unchanged. Custom localized suffix study, not final appearance acceptance.",
+  "status": "Actually reviewed; reference unachieved",
+  "model_sha256": "238efb3121ec162463531070acd82b85a1865fda1baf96b36ebaf88456d1e680",
+  "art_judgment": "All4 drafts, all5 neutral views and actual1920x2240/512/OIDN portrait inspected.126 points0-20 exact, transition21-41, selected42-64 exact125 donor. Excessive126/127 silhouette tails largely recede while upper volume retained. Eyes clear; broad ordered upper locks, repeated side bends, small lifted arcs, flatter back and pale part remain. Adopt as incomplete WIP, not reference complete or publishable artwork.",
+  "goal_complete": false,
+  "maximum_displacement_m": 0.04377586394548416,
+  "inspected_draft_sha256": {
+    "01_Front.png": "99228b8e169b55986ff033c71752c6f2e3e0fe75074e788eef9e828e604e0318",
+    "02_ThreeQuarter.png": "c71ded9191119b0b1acc638a5ca1a5cc739de102b48657973c257f154af014a2",
+    "03_Side.png": "54669a0c4f54ab9c3849cbd90fe6dfe10cf1ab1a99b966ef5f683db7b11d4560",
+    "05_OppositeSide.png": "ea63b8696b73c28de6e80a880aa1794c3c01171c23f07ece34767fb1a58ef636"
+  }
+}

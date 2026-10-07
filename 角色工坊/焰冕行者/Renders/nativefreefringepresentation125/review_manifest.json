@@ -1,0 +1,10 @@
+{
+  "source": "nativefreefringe125",
+  "source_sha256": "b44d6949f40cf60d6f96e3272ec8a76a93ff01f783bd660fac7fe50e9d0ca23c",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "02_ThreeQuarter.png": "354928019ded981dc9ead3486237fbcce0c6b88d8db5c261fb33c5fd551df4ec"
+  },
+  "art_judgment": "Actual512-sample portrait inspected: tiny forehead hook reduced, fine tails clearer. Broad ordered upper locks remain. No independent neutral125 set; all5 neutral129 views inspect inherited125 fringe.",
+  "goal_complete": false
+}

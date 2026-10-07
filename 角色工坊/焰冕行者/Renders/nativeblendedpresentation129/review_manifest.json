@@ -1,0 +1,10 @@
+{
+  "source": "nativeblendedupper129",
+  "source_sha256": "238efb3121ec162463531070acd82b85a1865fda1baf96b36ebaf88456d1e680",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "02_ThreeQuarter.png": "c0e4358f6d59053ad78f65d362f8a27813ec92d2a9bbb8203eed5aea88f05378"
+  },
+  "art_judgment": "Actual1920x2240/512/OIDN portrait inspected after successful render completion. Excessive outward tails recede; crown/front still ordered broad locks and overall reference gap persists. Incomplete continuation129 only.",
+  "goal_complete": false
+}

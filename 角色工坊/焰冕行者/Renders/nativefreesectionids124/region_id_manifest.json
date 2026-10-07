@@ -1,0 +1,95 @@
+{
+  "source": "nativefreesections123",
+  "source_sha256": "d7c7b5503fd3dc45275bb10b6939ae1f5a21c7287efe38b75cae680d0decb6cc",
+  "source_unchanged": true,
+  "legend": [
+    {
+      "region": "actual_fringe_region",
+      "fibers": 8539,
+      "color": [
+        1,
+        0.03,
+        0.06,
+        1
+      ],
+      "root_mean_m": [
+        0.023754294961690903,
+        -0.09584327787160873,
+        1.852721095085144
+      ]
+    },
+    {
+      "region": "actual_unranked123_region",
+      "fibers": 23526,
+      "color": [
+        0.03,
+        0.3,
+        1,
+        1
+      ],
+      "root_mean_m": [
+        0.016951724886894226,
+        -0.033865321427583694,
+        1.8494765758514404
+      ]
+    },
+    {
+      "region": "other_primary",
+      "fibers": 17203,
+      "color": [
+        0.03,
+        1,
+        0.06,
+        1
+      ],
+      "root_mean_m": [
+        -0.002890690229833126,
+        0.011508113704621792,
+        1.769209384918213
+      ]
+    },
+    {
+      "region": "Abhay flow derivative \u2022 real scalp sampled short support",
+      "fibers": 14000,
+      "color": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "role": "support native curves"
+    },
+    {
+      "region": "Bystedt derivative \u2022 short scalp support",
+      "fibers": 23657,
+      "color": [
+        0.7,
+        0.05,
+        1,
+        1
+      ],
+      "role": "support native curves"
+    },
+    {
+      "region": "Original posterior coverage \u2022 surface-grown short fibers",
+      "fibers": 36000,
+      "color": [
+        1,
+        0.03,
+        0.65,
+        1
+      ],
+      "role": "support native curves"
+    }
+  ],
+  "images_sha256": {
+    "02_ThreeQuarter.png": "acb2db574430775d3a6cbaefff747527d6849b6fe3c5422a4615040779842556",
+    "03_Side.png": "8a31f14eb6d653b0580761d61dc86cd9bd3afeee0a28c5e869c75a19e359ed33"
+  },
+  "loft_states": false,
+  "fan_states": false,
+  "posterior_states": false,
+  "free_states": true,
+  "support_ids": true,
+  "scope": "Actual saved region emission IDs; all3 original native support objects included with separate IDs. No source save or final-appearance acceptance."
+}

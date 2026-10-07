@@ -1,0 +1,23 @@
+{
+  "source": "nativesweptupper126",
+  "source_sha256": "c39e361a9d6801e1fe320eb22b79187db44df9ea0bb317411148de2e786ee2b5",
+  "reference": "nativefreefringe125",
+  "reference_sha256": "b44d6949f40cf60d6f96e3272ec8a76a93ff01f783bd660fac7fe50e9d0ca23c",
+  "swept_fibers": 23540,
+  "new_high_terminal_turn_fibers": 23,
+  "terminal_turn_quantiles_deg": [
+    0.004233391147596442,
+    1.7908457038325734,
+    6.589441870799936,
+    31.35974775941233,
+    161.81560255026085
+  ],
+  "source_terminal_turn_quantiles_deg": [
+    0.002872070181660353,
+    2.3255400530902675,
+    5.225055382642343,
+    24.841428711029735,
+    176.98371822259568
+  ],
+  "definition": "New terminal turns above70deg and25deg above125, at vertexZ>1.845m afterpoint43. Geometry statistic only, no all-view visibility/continuous collision or art proof."
+}

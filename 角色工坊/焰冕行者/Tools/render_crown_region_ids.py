@@ -7,7 +7,8 @@ a = sys.argv[sys.argv.index('--') + 1:]; version, base = a[:2]
 loft_states = '--loft-states' in a; support_ids = '--support-ids' in a
 fan_states = '--fan-states' in a
 posterior_states = '--posterior-states' in a
-assert sum([fan_states, loft_states, posterior_states]) <= 1, 'Choose one region scheme'
+free_states = '--free-states' in a
+assert sum([fan_states, loft_states, posterior_states, free_states]) <= 1, 'Choose one region scheme'
 shots = a[a.index('--cameras')+1].split(',') if '--cameras' in a else ['02_ThreeQuarter', '01_Front']
 assert all(re.fullmatch('[A-Za-z0-9_-]+', v) for v in a[:2])
 assert shots and all(v in ['01_Front','02_ThreeQuarter','03_Side','04_Back','05_OppositeSide'] for v in shots)
@@ -57,6 +58,13 @@ if posterior_states:
     regions=[('actual_fringe_region',fringe,(1,.03,.06,1)),
              ('actual_posterior118_region',posterior,(.03,.3,1,1)),
              ('other_primary',~(fringe|posterior),(.03,1,.06,1))]
+if free_states:
+    fringe=flag('native_resculpted_fringe_sweeps')
+    free=flag('native_unranked_free_sections')
+    assert not (fringe&free).any()
+    regions=[('actual_fringe_region',fringe,(1,.03,.06,1)),
+             ('actual_unranked123_region',free,(.03,.3,1,1)),
+             ('other_primary',~(fringe|free),(.03,1,.06,1))]
 for name, mask, color in regions:
     data = bpy.data.hair_curves.new(name); data.add_curves([65] * int(mask.sum()))
     data.attributes['position'].data.foreach_set('vector', p[mask].ravel())
@@ -82,6 +90,6 @@ for name in shots:
     bpy.ops.render.render(write_still=True); images[path.name] = hashlib.sha256(path.read_bytes()).hexdigest()
 assert hashlib.sha256(source.read_bytes()).hexdigest() == digest
 (out / 'region_id_manifest.json').write_text(json.dumps(dict(source=base, source_sha256=digest, source_unchanged=True,
-    legend=legend, images_sha256=images, loft_states=loft_states,fan_states=fan_states,posterior_states=posterior_states,support_ids=support_ids,
+    legend=legend, images_sha256=images, loft_states=loft_states,fan_states=fan_states,posterior_states=posterior_states,free_states=free_states,support_ids=support_ids,
     scope='Actual saved region emission IDs; '+('all3 original native support objects included with separate IDs' if support_ids else 'support hidden temporarily')+'. No source save or final-appearance acceptance.'), indent=2), encoding='utf-8')
 print('CROWN_REGION_IDS', version, flush=True)

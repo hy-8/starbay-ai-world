@@ -1,0 +1,23 @@
+{
+  "source": "nativebackshader122",
+  "source_sha256": "66902fb2ffd50153baabfce09e506f492c46308492f3001b5210f1fae7125ab5",
+  "donor": "nativecrimsonflow103",
+  "donor_sha256": "1f1d0e7065b0bbfc24e9cf17eb7103668a842588ccd03b783a76108512fc951f",
+  "selection_attribute": "native_unranked_free_sections",
+  "changed_fibers": 23526,
+  "target_groups": 108,
+  "edited_groups": 104,
+  "discrete_body_repairs": 2836,
+  "method": "Non-fringe upper folliclesZ>1.800m with tipsZ>1.690m,108 whole-flow groups. Arc-parameter broad cubic87% mean relaxation with independently staggered controls; minimal-rotation frame transfer restores75% unranked103 intra-lock dispersion plus25% current scatter, without forced fan/cylinder coordinates. First point/true follicle/fringe/radii/topology/materials retained; low current paths blended back below1.740m.",
+  "status": "Actually reviewed; reference unachieved",
+  "model_sha256": "d7c7b5503fd3dc45275bb10b6939ae1f5a21c7287efe38b75cae680d0decb6cc",
+  "art_judgment": "All4 drafts inspected.104 whole-path groups use broad cubic means and transported unranked103 sections; edges slightly freer, dominant upper/front beams persist. Intermediate, no independent high portrait or neutral set.",
+  "goal_complete": false,
+  "maximum_displacement_m": 0.047077078372240067,
+  "inspected_draft_sha256": {
+    "01_Front.png": "07eb47433d9b46d7c5c31ff6613885db66b09c85d24406dc9f6cdb1e71e71d5d",
+    "02_ThreeQuarter.png": "a17685393e8f56748817058be34445980f5e28ff42784542b76c792596474941",
+    "03_Side.png": "11a02bb37812697f34af6b95cd2daff8a49b1f5d3bc4a1bdf8074a6b05aac3a1",
+    "05_OppositeSide.png": "142617f8e7fdac776d7e77c04b8a705b59ea2e7dafb3bb55fb7195b385128e01"
+  }
+}

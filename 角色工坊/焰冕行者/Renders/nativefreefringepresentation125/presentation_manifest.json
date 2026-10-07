@@ -1,0 +1,15 @@
+{
+  "source": "nativefreefringe125",
+  "source_sha256": "b44d6949f40cf60d6f96e3272ec8a76a93ff01f783bd660fac7fe50e9d0ca23c",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "354928019ded981dc9ead3486237fbcce0c6b88d8db5c261fb33c5fd551df4ec",
+  "status": "Actual render pending art review; no generative image replacement"
+}

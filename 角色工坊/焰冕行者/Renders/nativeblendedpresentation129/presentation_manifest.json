@@ -1,0 +1,15 @@
+{
+  "source": "nativeblendedupper129",
+  "source_sha256": "238efb3121ec162463531070acd82b85a1865fda1baf96b36ebaf88456d1e680",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "c0e4358f6d59053ad78f65d362f8a27813ec92d2a9bbb8203eed5aea88f05378",
+  "status": "Actual render pending art review; no generative image replacement"
+}
