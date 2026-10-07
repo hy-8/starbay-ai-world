@@ -1,0 +1,34 @@
+{
+  "source": "nativeentrynape68",
+  "source_sha256": "30a95a79f0b27d51d5e6ee00b2327f7735e57ae46bbf239a939d8fd7500191e6",
+  "changed_object": "Original posterior coverage \u2022 surface-grown short fibers",
+  "component": "posterior",
+  "changed_fibers": 9067,
+  "selection_attribute": "native_medium_side_support",
+  "nearest_donor_root_distance_quantiles_m": [
+    6.685486823698739e-06,
+    0.0006573737482540309,
+    0.0013336144853383304,
+    0.003824719460681081
+  ],
+  "result_length_quantiles_m": [
+    0.04935974197916639,
+    0.09210041815686616,
+    0.10518352788939433,
+    0.10768636859927759
+  ],
+  "discrete_body_repairs": 22143,
+  "all_roots_exact": true,
+  "unselected_support_exact": true,
+  "main_and_other_hair_exact": true,
+  "method": "Positive-X upper side posterior support follows actual nearest primary donor over65% donor arc, donor travel capped105mm/88% donor; final geometric arc may be longer after root offset/body repairs. Root translation fades over25mm;0.35mm small variation, discrete0.7mm body guard. Existing main/support radii, topology, materials and lights unchanged. This changes support length/shape, not dynamics.",
+  "status": "Actually reviewed; not adopted; target incomplete",
+  "length_cap_scope": "105mm caps donor arc travel before root offsets/body corrections; final arc length is explicitly measured in result_length_quantiles_m.",
+  "model_sha256": "a1ba86b114299980b7d7582175bcfc8f3d990a5702e15273f64a1df64994651a",
+  "art_judgment": "Three actual drafts inspected.9067 positive-X original posterior shafts reshaped as medium donor followers. Very small side/root change, pale part remains. Not adopted; independent from73.",
+  "inspected_draft_sha256": {
+    "01_Front.png": "275b74f546c644c83716b0c8c5c63be7b47658e35decbbdfd83f96d765153467",
+    "02_ThreeQuarter.png": "a386c7f310ed0db247e0d3ca87e37db4fa52983868b2d3e16215567d5931d256",
+    "05_OppositeSide.png": "94cd3f7054218e0fe9165a445ec735f973fe19a1ee295d350df65353a9371e4c"
+  }
+}

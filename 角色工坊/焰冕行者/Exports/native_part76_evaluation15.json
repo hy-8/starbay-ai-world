@@ -1,0 +1,46 @@
+{
+  "source": "nativeparttransition76",
+  "source_sha256": "3beef30641529c79948a103d608baa47646953f138b5d72c93b4ff0cb722325f",
+  "source_unchanged": true,
+  "frame": 1,
+  "all_four_saved_evaluated_positions_exact": true,
+  "components": [
+    {
+      "object": "Abhay flow derivative \u2022 real scalp sampled short support",
+      "modifiers": [],
+      "saved_points": 560000,
+      "evaluated_points": 560000,
+      "saved_position_sha256": "4d3fe8a7b63011be587f5c5fa8c0390b2758cd10c3af3c76644de81fdba514bd",
+      "evaluated_position_sha256": "4d3fe8a7b63011be587f5c5fa8c0390b2758cd10c3af3c76644de81fdba514bd",
+      "positions_exact": true
+    },
+    {
+      "object": "Bystedt derivative \u2022 short scalp support",
+      "modifiers": [],
+      "saved_points": 1514048,
+      "evaluated_points": 1514048,
+      "saved_position_sha256": "1d6a41670f9656df40bb96a58e7ceaae51a4a9355f551a5ff5d1115a4f51b45d",
+      "evaluated_position_sha256": "1d6a41670f9656df40bb96a58e7ceaae51a4a9355f551a5ff5d1115a4f51b45d",
+      "positions_exact": true
+    },
+    {
+      "object": "Bystedt layercut derivative \u2022 native root reflow",
+      "modifiers": [],
+      "saved_points": 3202420,
+      "evaluated_points": 3202420,
+      "saved_position_sha256": "670a4ba5da26f8c4c044d5c624966d25675dcf20b0aba7f02b53220f4e905474",
+      "evaluated_position_sha256": "670a4ba5da26f8c4c044d5c624966d25675dcf20b0aba7f02b53220f4e905474",
+      "positions_exact": true
+    },
+    {
+      "object": "Original posterior coverage \u2022 surface-grown short fibers",
+      "modifiers": [],
+      "saved_points": 1296000,
+      "evaluated_points": 1296000,
+      "saved_position_sha256": "d1770255ac083955f2cd08859e35e66f6a5c54891846d12ba0991c7313072517",
+      "evaluated_position_sha256": "d1770255ac083955f2cd08859e35e66f6a5c54891846d12ba0991c7313072517",
+      "positions_exact": true
+    }
+  ],
+  "scope": "Saved frame1 evaluated position comparison; not proof of every shader/render backend, animation or artistic acceptance"
+}

@@ -1,0 +1,33 @@
+{
+  "source": "nativeentrynape68",
+  "source_sha256": "30a95a79f0b27d51d5e6ee00b2327f7735e57ae46bbf239a939d8fd7500191e6",
+  "changed_object": "Abhay flow derivative \u2022 real scalp sampled short support",
+  "changed_fibers": 4868,
+  "selection_attribute": "native_medium_side_support",
+  "nearest_donor_root_distance_quantiles_m": [
+    5.051862171967514e-05,
+    0.0006663823733106256,
+    0.0016212724149227153,
+    0.011937221512198448
+  ],
+  "result_length_quantiles_m": [
+    0.036465297957724005,
+    0.08847524504556248,
+    0.105135623153539,
+    0.11183836084340393
+  ],
+  "discrete_body_repairs": 12409,
+  "all_roots_exact": true,
+  "unselected_support_exact": true,
+  "main_and_other_hair_exact": true,
+  "method": "Positive-X upper side Abhay support follows actual nearest primary donor over65% donor arc, capped105mm/88% donor; root translation fades over25mm;0.35mm small variation, discrete0.7mm body guard. Existing main/support radii, topology, materials and lights unchanged. This changes support length/shape, not dynamics.",
+  "status": "Actually reviewed; not adopted; target incomplete",
+  "length_cap_scope": "105mm caps donor arc travel before root offsets/body corrections; final arc length is explicitly measured in result_length_quantiles_m.",
+  "model_sha256": "3b79a712b717ba38300750aa3b62d7293c98290cf1044825f56fad6b54082935",
+  "art_judgment": "Three actual drafts inspected.4868 positive-X Abhay shafts follow longer main donor arcs; little useful beauty improvement. Not adopted. Cap105mm is donor travel, final repaired/offset curve arcs reach111.84mm, not a strict geometric length cap.",
+  "inspected_draft_sha256": {
+    "01_Front.png": "09494869e311c7aa98e6da96913c11490ebfc63762ec00fb247fb83c92513b3b",
+    "02_ThreeQuarter.png": "0e347a98b38a67f4ce0452fbbd30bd7e4f2e0447ad317e5619ba84485ba1e3cd",
+    "05_OppositeSide.png": "ab3bb3e5f105615c743c091d4f9445608577b72c586d77e6e9ea4740cfa1425c"
+  }
+}

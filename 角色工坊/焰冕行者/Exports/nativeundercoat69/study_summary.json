@@ -1,0 +1,46 @@
+{
+  "source": "nativeentrynape68",
+  "source_sha256": "30a95a79f0b27d51d5e6ee00b2327f7735e57ae46bbf239a939d8fd7500191e6",
+  "changed_components": [
+    "Abhay flow derivative \u2022 real scalp sampled short support",
+    "Bystedt derivative \u2022 short scalp support",
+    "Original posterior coverage \u2022 surface-grown short fibers"
+  ],
+  "materials": [
+    {
+      "source_material": "Original red directional reflection-transmission control",
+      "cloned_material": "Original red directional reflection-transmission control \u2022 ma",
+      "changes": [
+        {
+          "node": "Principled Hair BSDF",
+          "input": "Roughness",
+          "old_default": 0.3199999928474426,
+          "removed_links": 0,
+          "new_default": 0.55
+        },
+        {
+          "node": "Principled Hair BSDF",
+          "input": "Radial Roughness",
+          "old_default": 0.4399999976158142,
+          "removed_links": 0,
+          "new_default": 0.6
+        }
+      ],
+      "pigment_inputs_and_ramps_exact": true
+    }
+  ],
+  "all_visible_hair_geometry_before_sha256": "1322bf243c9c8e53c974da30e7ca12eb83fc43f81b61f83bb8bbe1ca0db36ad4",
+  "all_visible_hair_geometry_after_sha256": "1322bf243c9c8e53c974da30e7ca12eb83fc43f81b61f83bb8bbe1ca0db36ad4",
+  "primary_material_graph_exact": true,
+  "pigment_inputs_and_ramps_exact": true,
+  "method": "Clone support materials; modify only Principled Hair Roughness.55 and Radial Roughness.60. Primary graph, pigments/mix and legacy lobe unchanged.",
+  "status": "Actually reviewed; not adopted; target incomplete",
+  "historical_method_correction": "Original raw manifest mentions standard Principled roughness/specular; records show only actual Principled Hair roughness/radial changed. Raw historical manifest remains local unchanged.",
+  "model_sha256": "f1b9abb98b909b5b3c8ff5fb7f3936b0288250ae64b83832929c966f938c2f7f",
+  "art_judgment": "Actual three drafts inspected. Roughness-only support control brings little useful improvement; not adopted. Only Principled HAIR roughness .32->.55/radial .44->.60 were applied. No standard surface Principled existed; legacy directional lobe remained unchanged.",
+  "inspected_draft_sha256": {
+    "01_Front.png": "18c93f8b9d2842d84128cc1369835debdb09efc3b6477c109c1c8d70b44d63b4",
+    "02_ThreeQuarter.png": "5fc04efa2b26e504983aef7e409f620c407c6158bf5c8a02da186d7418b913e2",
+    "05_OppositeSide.png": "8e8c0f685e4bb536b266d90ea8da6d1e4a823222e482f97570aa214896ac629c"
+  }
+}

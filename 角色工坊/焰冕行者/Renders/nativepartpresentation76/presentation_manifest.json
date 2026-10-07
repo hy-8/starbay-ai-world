@@ -1,0 +1,15 @@
+{
+  "source": "nativeparttransition76",
+  "source_sha256": "3beef30641529c79948a103d608baa47646953f138b5d72c93b4ff0cb722325f",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "fe11746df93158f4e5f79be4e500d97fce33f1039cebcdc1f01d39eb9eaab6d2",
+  "status": "Actual render pending art review; no generative image replacement"
+}

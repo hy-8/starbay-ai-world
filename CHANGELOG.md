@@ -375,3 +375,10 @@ sintelfit01/02/03的九张角色实渲均已查看：960×1120、Cycles/OptiX64 
 - Cut68 starts after retained point3, caps target height below that point and accepts shorter remaining arcs.17705 shafts cut;6074 explicit foreground shafts retained exactly. Five neutral views and actual512-sample portrait inspected: cleaner, shorter nape with no long hanging tails; crown/common flow and pale support still incomplete. Continue from68.
 - Three localized file comparisons preserve141 meshes, hair roots/radii/topology, untouched shafts/components and first4points. Final primary tips below1.640m count0; artistic and continuous motion/collision acceptance remain unproven.
 - Correct prior61 narrative to6074 edited fibers in29 qualifying patches out of6103 eligible fibers/30 target patches. Historical model unchanged. Original/derived geometry local; no new fee, Release or UE integration.
+
+
+### 2026-10-07 · Support shader isolation and medium transition controls (WIP)
+
+-69 support roughness,70 primary pure Huang,71 lifted crown locks and72 support legacy-lobe removal inspected; none adopted. Correct69 summary to actual Hair sockets only. Independent material scopes verify primary/support and mesh material boundaries.
+-73 Abhay medium followers bring little benefit. Actual IDs74 locate remaining Bystedt/posterior support.75 changes9067 posterior shafts;76 changes16082 Bystedt shafts on75. Actual drafts and reloaded512-sample portrait show unresolved pale part and small scalp exposure; retain68 as continuation.
+- Seven localized geometry/material comparisons pass; saved frame1 evaluation76 matches all four visible native position arrays. These do not prove artistic or continuous collision acceptance. Original/derived geometry local; no fee, Release, UE integration or generated portrait replacement.

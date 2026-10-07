@@ -7,6 +7,9 @@ a=sys.argv[sys.argv.index('--')+1:];output,base,candidate,edited,attr=a[:5]
 material_only='--material-only' in a
 nape_profile='--nape-profile' in a
 no_long_tails='--no-long-tails' in a
+material_scope='support' if '--material-scope-support' in a else 'primary' if '--material-scope-primary' in a else None
+if material_scope and not material_only:raise ValueError('Material scope requires material-only comparison')
+if '--material-scope-support' in a and '--material-scope-primary' in a:raise ValueError('Ambiguous material scope')
 if no_long_tails and not nape_profile:raise ValueError('No-long-tail gate requires nape-profile comparison')
 if not all(re.fullmatch('[A-Za-z0-9_.-]+',x) for x in a[:3]):raise ValueError(a)
 out=ROOT/'Exports'/output
@@ -17,9 +20,23 @@ def arr(data,key,member,n):
 def state(version):
  path=ROOT/'Exports'/version/'Ember_Regent.blend';digest=hashlib.sha256(path.read_bytes()).hexdigest()
  bpy.ops.wm.open_mainfile(filepath=str(path),use_scripts=False)
- meshes={};curves={};lighting={}
+ meshes={};curves={};lighting={};materials={}
  def sockets(nodes):return [(n.name,n.bl_idname,[(i.name,repr(i.default_value[:]) if hasattr(i.default_value,'__len__') else repr(i.default_value)) for i in n.inputs if hasattr(i,'default_value')]) for n in nodes]
+ def material_graph(mat):
+  if mat is None:return None
+  nodes=[]
+  if mat.use_nodes:
+   for node in mat.node_tree.nodes:
+    props={key:repr(getattr(node,key)) for key in ['model','parametrization','component','operation','blend_type','is_active_output'] if hasattr(node,key)}
+    if node.type=='VALTORGB':props['ramp']=repr((node.color_ramp.interpolation,[(e.position,tuple(e.color)) for e in node.color_ramp.elements]))
+    if node.type=='TEX_IMAGE':props['image']=repr((node.image.name,node.image.filepath)) if node.image else None
+    nodes.append((node.name,props))
+   links=sorted((l.from_node.name,l.from_socket.identifier,l.to_node.name,l.to_socket.identifier) for l in mat.node_tree.links)
+   return repr((sockets(sorted(mat.node_tree.nodes,key=lambda n:n.name)),sorted(nodes),links))
+  return repr((False,tuple(mat.diffuse_color),mat.roughness,mat.metallic))
  for ob in bpy.data.objects:
+  if material_scope and (ob.type=='MESH' or (ob.type=='CURVES' and not ob.hide_render)):
+   materials[ob.name]=tuple(material_graph(slot.material) for slot in ob.material_slots)
   if ob.type=='MESH':
    m=ob.data;h=hashlib.sha256(arr(m.vertices,'','co',3).tobytes()+np.array(ob.matrix_world,np.float32).tobytes()+repr([tuple(f.vertices) for f in m.polygons]).encode())
    for uv in m.uv_layers:h.update(np.array([v.uv[:] for v in uv.data],np.float32).tobytes())
@@ -38,11 +55,18 @@ def state(version):
  missing=[im.name for im in bpy.data.images if im.source=='FILE' and not im.packed_file and not Path(bpy.path.abspath(im.filepath)).is_file()]
  assert not missing,missing
  assert hashlib.sha256(path.read_bytes()).hexdigest()==digest
- return digest,meshes,curves,lighting
-beforehash,beforemesh,before,beforelight=state(base);afterhash,aftermesh,after,afterlight=state(candidate)
+ return digest,meshes,curves,lighting,materials
+beforehash,beforemesh,before,beforelight,beforematerials=state(base);afterhash,aftermesh,after,afterlight,aftermaterials=state(candidate)
 nape_result={}
 assert beforemesh==aftermesh and set(before)==set(after)
 if material_only:assert beforelight==afterlight
+scope_result={}
+if material_scope:
+ assert set(beforematerials)==set(aftermaterials)
+ allowed=set(before)-{edited} if material_scope=='support' else {edited}
+ changed_materials=[name for name in beforematerials if beforematerials[name]!=aftermaterials[name]]
+ assert changed_materials and set(changed_materials)<=allowed,(material_scope,changed_materials)
+ scope_result=dict(allowed_scope=material_scope,objects_with_changed_material_graphs=sorted(changed_materials),all_disallowed_material_slots_and_graphs_exact=True,mesh_material_slots_and_graphs_exact=True)
 for name,(p,r,sizes,transform) in after.items():
  bp,br,bs,bt=before[name];assert np.array_equal(r,br) and np.array_equal(sizes,bs) and np.array_equal(transform,bt),name
  if name!=edited:assert np.array_equal(p,bp),name
@@ -62,4 +86,5 @@ for name,(p,r,sizes,transform) in after.items():
 report=dict(source=base,source_sha256=beforehash,candidate=candidate,candidate_sha256=afterhash,mesh_count=len(beforemesh),mesh_geometry_uv_shape_keys_transforms_exact=True,visible_native_objects=len(after),curves_finite_radii_positive_textures_available=True,edited_object=edited,edited_fibers=changed,all_radii_topology_transforms_exact=True,all_roots_exact=True,unselected_fibers_exact=True,other_native_objects_exact=True,max_displacement_m=maximum,scope='Static localized file comparison. Not art, segment/body/eye/clothing/animation collision acceptance.')
 if material_only:report.update(material_only=True,selection_fibers=changed,edited_fibers=0,all_visible_native_geometry_exact=True,light_world_camera_display_exact=True)
 if nape_profile:report.update(nape_profile=nape_result)
+if material_scope:report.update(material_scope_comparison=scope_result)
 out.write_text(json.dumps(report,indent=2),encoding='utf-8');print('LOCAL_NATIVE_HAIR_EDIT_PASS',candidate,flush=True)

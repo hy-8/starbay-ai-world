@@ -1,0 +1,138 @@
+{
+  "source": "nativeentrynape68",
+  "source_sha256": "30a95a79f0b27d51d5e6ee00b2327f7735e57ae46bbf239a939d8fd7500191e6",
+  "eligible_fibers": 1647,
+  "target_locks": 18,
+  "edited_locks": 14,
+  "changed_fibers": 1588,
+  "selection_attribute": "native_lifted_crown_locks",
+  "locks": [
+    {
+      "lock": 0,
+      "fibers": 53,
+      "lift_m": 0.008,
+      "median_before_width_m": 0.013762083738946065,
+      "median_before_depth_m": 0.0022682330284546615,
+      "max_displacement_m": 0.0063546601621165535
+    },
+    {
+      "lock": 1,
+      "fibers": 61,
+      "lift_m": 0.00935098092731253,
+      "median_before_width_m": 0.01922806983692826,
+      "median_before_depth_m": 0.009564657694056128,
+      "max_displacement_m": 0.021064172855848863
+    },
+    {
+      "lock": 4,
+      "fibers": 182,
+      "lift_m": 0.007651637908976745,
+      "median_before_width_m": 0.007651368340198484,
+      "median_before_depth_m": 0.003150402959888379,
+      "max_displacement_m": 0.017719196647348216
+    },
+    {
+      "lock": 5,
+      "fibers": 96,
+      "lift_m": 0.006926541956400388,
+      "median_before_width_m": 0.005224034496695604,
+      "median_before_depth_m": 0.0019867298338876733,
+      "max_displacement_m": 0.008398859442113438
+    },
+    {
+      "lock": 7,
+      "fibers": 242,
+      "lift_m": 0.006225104623881486,
+      "median_before_width_m": 0.014763862418951411,
+      "median_before_depth_m": 0.005592071378265336,
+      "max_displacement_m": 0.010520074291121765
+    },
+    {
+      "lock": 8,
+      "fibers": 118,
+      "lift_m": 0.008686073809122789,
+      "median_before_width_m": 0.008124072504614532,
+      "median_before_depth_m": 0.002071927959466976,
+      "max_displacement_m": 0.009684788910848674
+    },
+    {
+      "lock": 10,
+      "fibers": 84,
+      "lift_m": 0.006188529507502161,
+      "median_before_width_m": 0.0022594398431627057,
+      "median_before_depth_m": 0.003683366749656862,
+      "max_displacement_m": 0.006432036549341193
+    },
+    {
+      "lock": 11,
+      "fibers": 130,
+      "lift_m": 0.009908326728019962,
+      "median_before_width_m": 0.009240279092321817,
+      "median_before_depth_m": 0.006422481402373425,
+      "max_displacement_m": 0.012429836004280742
+    },
+    {
+      "lock": 12,
+      "fibers": 109,
+      "lift_m": 0.00699718960787029,
+      "median_before_width_m": 0.008204377238404848,
+      "median_before_depth_m": 0.0035889031090117723,
+      "max_displacement_m": 0.011448223263321785
+    },
+    {
+      "lock": 13,
+      "fibers": 145,
+      "lift_m": 0.007570555308288745,
+      "median_before_width_m": 0.015214710942018986,
+      "median_before_depth_m": 0.00424859898591977,
+      "max_displacement_m": 0.01910053861088285
+    },
+    {
+      "lock": 14,
+      "fibers": 72,
+      "lift_m": 0.009636128559895327,
+      "median_before_width_m": 0.007848147193449588,
+      "median_before_depth_m": 0.0023582931474514374,
+      "max_displacement_m": 0.012815896717160718
+    },
+    {
+      "lock": 15,
+      "fibers": 115,
+      "lift_m": 0.006016584638294636,
+      "median_before_width_m": 0.00883240040042483,
+      "median_before_depth_m": 0.008731468586059738,
+      "max_displacement_m": 0.012391372583756725
+    },
+    {
+      "lock": 16,
+      "fibers": 59,
+      "lift_m": 0.009288888344581862,
+      "median_before_width_m": 0.0064861608243460475,
+      "median_before_depth_m": 0.002106145400802662,
+      "max_displacement_m": 0.011106434378693322
+    },
+    {
+      "lock": 17,
+      "fibers": 122,
+      "lift_m": 0.008082643456498348,
+      "median_before_width_m": 0.010215376196798569,
+      "median_before_depth_m": 0.0026190788923643685,
+      "max_displacement_m": 0.01170509782487036
+    }
+  ],
+  "first_four_last_three_exact": true,
+  "explicit_front_frame_exact": true,
+  "unselected_primary_exact": true,
+  "other_hair_unchanged": true,
+  "discrete_body_repairs": 1,
+  "method": "Negative-X upper crown root region; whole-path small clusters, continuous transported sections target3.8mm width/2.6mm depth; 6-10mm actual smoothed scalp-normal lift with70mm wavelength/3mm lateral phase-staggered bends. Root/low-tip fade; existing foreground and nape endpoints retained.",
+  "status": "Actually reviewed; not adopted; target incomplete",
+  "scope": "Local actual geometry/discrete body checks, not continuous collision or artistic acceptance",
+  "model_sha256": "818bf8271c58e3c26d94108c07843d95b025c85b1c944bad438f2359825e704a",
+  "art_judgment": "Actual three drafts inspected. Small negative-X lifted locks slightly vary the contour. Central/positive part stays broad and fluffy. Modest change, not adopted.18 target clusters;14 edited,1588 shafts;59 small-cluster shafts retained.",
+  "inspected_draft_sha256": {
+    "01_Front.png": "632c0ac62bb90ea9eee55b18bad3638b4252a6970f20ab18f493e3d2c54f3bed",
+    "02_ThreeQuarter.png": "8fa9fdd2cf38fe8e180960a20ec65c241d0a28249e6b91c0527b44141a62fbd8",
+    "05_OppositeSide.png": "0cf23c2aef2b8791750d055c436e8c453fb6ac57920ccc2cb763ec74161103f9"
+  }
+}

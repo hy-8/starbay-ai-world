@@ -1,0 +1,12 @@
+{
+  "source": "nativeparttransition76",
+  "source_sha256": "3beef30641529c79948a103d608baa47646953f138b5d72c93b4ff0cb722325f",
+  "all_images_actually_reviewed": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "art_judgment": "Pale comb-like part unresolved; small newly exposed tan scalp near upper part. Not adopted. Actual saved geometry after reload, not generated portrait."
+}

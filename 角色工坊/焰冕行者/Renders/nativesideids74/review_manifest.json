@@ -1,0 +1,10 @@
+{
+  "source": "nativesidetransition73",
+  "source_sha256": "3b79a712b717ba38300750aa3b62d7293c98290cf1044825f56fad6b54082935",
+  "all_actual_images_reviewed": true,
+  "inspected_sha256": {
+    "02_ThreeQuarter.png": "d02537db840664ee715e7334865f503df54b8d14692bd439a142155fb1c0f880",
+    "05_OppositeSide.png": "eb54a04262ee9a87697bd95be0f343161f6bf76d022d2e7c413cb266c837edc3"
+  },
+  "judgment": "Actual ThreeQuarter ID image shows remaining exposed short Bystedt green and original posterior orange near the part; opposite view shows exposed Abhay blue. These are view-specific visual attributions, not continuous visibility or collision proof."
+}

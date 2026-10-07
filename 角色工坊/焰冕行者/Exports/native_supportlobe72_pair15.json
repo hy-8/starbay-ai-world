@@ -1,0 +1,32 @@
+{
+  "source": "nativeentrynape68",
+  "source_sha256": "30a95a79f0b27d51d5e6ee00b2327f7735e57ae46bbf239a939d8fd7500191e6",
+  "candidate": "nativesupportlobe72",
+  "candidate_sha256": "f7ab9a2bbc5d84cc9766209100a9e2a2c3cb6022d61d653fa0d1c153c7775d5e",
+  "mesh_count": 141,
+  "mesh_geometry_uv_shape_keys_transforms_exact": true,
+  "visible_native_objects": 4,
+  "curves_finite_radii_positive_textures_available": true,
+  "edited_object": "Bystedt layercut derivative \u2022 native root reflow",
+  "edited_fibers": 0,
+  "all_radii_topology_transforms_exact": true,
+  "all_roots_exact": true,
+  "unselected_fibers_exact": true,
+  "other_native_objects_exact": true,
+  "max_displacement_m": 0.0,
+  "scope": "Static localized file comparison. Not art, segment/body/eye/clothing/animation collision acceptance.",
+  "material_only": true,
+  "selection_fibers": 17705,
+  "all_visible_native_geometry_exact": true,
+  "light_world_camera_display_exact": true,
+  "material_scope_comparison": {
+    "allowed_scope": "support",
+    "objects_with_changed_material_graphs": [
+      "Abhay flow derivative \u2022 real scalp sampled short support",
+      "Bystedt derivative \u2022 short scalp support",
+      "Original posterior coverage \u2022 surface-grown short fibers"
+    ],
+    "all_disallowed_material_slots_and_graphs_exact": true,
+    "mesh_material_slots_and_graphs_exact": true
+  }
+}

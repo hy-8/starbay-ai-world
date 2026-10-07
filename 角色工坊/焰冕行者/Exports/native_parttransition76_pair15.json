@@ -1,0 +1,18 @@
+{
+  "source": "nativeposteriortransition75",
+  "source_sha256": "a1ba86b114299980b7d7582175bcfc8f3d990a5702e15273f64a1df64994651a",
+  "candidate": "nativeparttransition76",
+  "candidate_sha256": "3beef30641529c79948a103d608baa47646953f138b5d72c93b4ff0cb722325f",
+  "mesh_count": 141,
+  "mesh_geometry_uv_shape_keys_transforms_exact": true,
+  "visible_native_objects": 4,
+  "curves_finite_radii_positive_textures_available": true,
+  "edited_object": "Bystedt derivative \u2022 short scalp support",
+  "edited_fibers": 16082,
+  "all_radii_topology_transforms_exact": true,
+  "all_roots_exact": true,
+  "unselected_fibers_exact": true,
+  "other_native_objects_exact": true,
+  "max_displacement_m": 0.11797112971544266,
+  "scope": "Static localized file comparison. Not art, segment/body/eye/clothing/animation collision acceptance."
+}

@@ -1,0 +1,34 @@
+{
+  "source": "nativeposteriortransition75",
+  "source_sha256": "a1ba86b114299980b7d7582175bcfc8f3d990a5702e15273f64a1df64994651a",
+  "changed_object": "Bystedt derivative \u2022 short scalp support",
+  "component": "bystedt",
+  "changed_fibers": 16082,
+  "selection_attribute": "native_medium_side_support",
+  "nearest_donor_root_distance_quantiles_m": [
+    0.0,
+    9.316600699094124e-05,
+    0.0005618592782411723,
+    0.0024485699832439423
+  ],
+  "result_length_quantiles_m": [
+    0.04711204908908263,
+    0.08657065035467582,
+    0.10362696831109187,
+    0.10667302669759858
+  ],
+  "discrete_body_repairs": 95238,
+  "all_roots_exact": true,
+  "unselected_support_exact": true,
+  "main_and_other_hair_exact": true,
+  "method": "Positive-X upper side bystedt support follows actual nearest primary donor over65% donor arc, donor travel capped105mm/88% donor; final geometric arc may be longer after root offset/body repairs. Root translation fades over25mm;0.35mm small variation, discrete0.7mm body guard. Existing main/support radii, topology, materials and lights unchanged. This changes support length/shape, not dynamics.",
+  "status": "Actually reviewed; not adopted; target incomplete",
+  "length_cap_scope": "105mm caps donor arc travel before root offsets/body corrections; final arc length is explicitly measured in result_length_quantiles_m.",
+  "model_sha256": "3beef30641529c79948a103d608baa47646953f138b5d72c93b4ff0cb722325f",
+  "art_judgment": "Three drafts and independent reloaded1920x2240/512/OIDN actual portrait inspected.16082 Bystedt support shafts reshaped on75. Pale comb-like part remains and new small tan scalp openings appear near upper part. Not adopted; no five-view adoption gate attempted. Main hair untouched.",
+  "inspected_draft_sha256": {
+    "01_Front.png": "04e400ef8943c7a4a1185e02f306a392466d5322d5ec958a2cb832e1617945eb",
+    "02_ThreeQuarter.png": "1f9c85cd88daa69eb78db385ac6d184354fc3ef6292f3dd285a0a5e17c0e0c21",
+    "05_OppositeSide.png": "33baaa0fe89f2013cdf8cbe3874b75e43d80e39dda639d8eb89ad852ff35a6c4"
+  }
+}

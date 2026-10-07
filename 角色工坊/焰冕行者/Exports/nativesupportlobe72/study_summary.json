@@ -1,0 +1,26 @@
+{
+  "source": "nativeentrynape68",
+  "source_sha256": "30a95a79f0b27d51d5e6ee00b2327f7735e57ae46bbf239a939d8fd7500191e6",
+  "materials": [
+    {
+      "source_material": "Original red directional reflection-transmission control",
+      "new_material": "Support only \u2022 existing Chiang pigment, no legacy lobe",
+      "previous_surface_links": [
+        [
+          "Mix Shader.001",
+          "Shader"
+        ]
+      ],
+      "new_surface_node": "Principled Hair BSDF",
+      "model": "CHIANG"
+    }
+  ],
+  "method": "Support materials only: connect the existing Chiang node directly to Surface instead of75%Chiang/25%legacy directional mixture. All original nodes/input values/pigment ramps retained; primary slots, geometry and lights unmodified. Changes the effective mixed shader; no absorption-equivalence assumption.",
+  "status": "Actually reviewed; not adopted; target incomplete",
+  "model_sha256": "f7ab9a2bbc5d84cc9766209100a9e2a2c3cb6022d61d653fa0d1c153c7775d5e",
+  "art_judgment": "Both actual views inspected. Support-only pure existing Chiang without legacy lobe still has the pale fluffy part. This isolates that lobe control, not all shader explanations. Not adopted.",
+  "inspected_draft_sha256": {
+    "02_ThreeQuarter.png": "3404062064b46f444bbc5c94524474b7913da3711c119ca7beae2c582b07bc35",
+    "05_OppositeSide.png": "3d216ac17b93ac619380b07c76380ec620bfef8512485d9ecde8005da5286d06"
+  }
+}

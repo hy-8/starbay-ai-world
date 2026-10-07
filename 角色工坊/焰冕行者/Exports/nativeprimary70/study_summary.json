@@ -1,0 +1,43 @@
+{
+  "source": "nativeentrynape68",
+  "source_sha256": "30a95a79f0b27d51d5e6ee00b2327f7735e57ae46bbf239a939d8fd7500191e6",
+  "changed_object": "Bystedt layercut derivative \u2022 native root reflow",
+  "source_material": "Original red directional reflection-transmission control",
+  "new_material": "Primary scarlet \u2022 pure Huang control",
+  "colors_linear_rgba": [
+    [
+      0.11,
+      0.005,
+      0.007,
+      1
+    ],
+    [
+      0.25,
+      0.013,
+      0.015,
+      1
+    ]
+  ],
+  "model": "HUANG",
+  "parametrization": "COLOR",
+  "inputs": {
+    "Roughness": 0.32,
+    "Random Roughness": 0.12,
+    "IOR": 1.55,
+    "Reflection": 0.55,
+    "Transmission": 1.0,
+    "Secondary Reflection": 0.85
+  },
+  "geometry_before_sha256": "1322bf243c9c8e53c974da30e7ca12eb83fc43f81b61f83bb8bbe1ca0db36ad4",
+  "geometry_after_sha256": "1322bf243c9c8e53c974da30e7ca12eb83fc43f81b61f83bb8bbe1ca0db36ad4",
+  "support_material_slots_exact": true,
+  "method": "Primary only: pure Huang replaces legacy75%Chiang/25%directional mix; explicitly new red pigment and controlled reflection weights. No assumption of model-switch absorption equivalence. Existing geometry, support materials and lighting retained.",
+  "status": "Actually reviewed; not adopted; target incomplete",
+  "model_sha256": "20d80a50a5ee7f59a27e988c4643e60d03a2d6eb3f60c8e8d372b0d694b7dc16",
+  "art_judgment": "Actual three drafts inspected. Pure recalibrated Huang primary is brighter/richer scarlet; silhouette and pale/fluffy support unresolved. Material study only, not adopted or combined with71.",
+  "inspected_draft_sha256": {
+    "01_Front.png": "04854ec2d75a23fa18f43b963665cdf8deab0d26f8214c829126f769e6597f6f",
+    "02_ThreeQuarter.png": "4365ad502a3c1de5b53fb0537ad660f9723fe2be2ccae32a31baa2a53a3d819e",
+    "05_OppositeSide.png": "56a80c6eb27a88d9fcc56ce814ecb18efd3deadd8a64f97d4e1a622efd52b6ed"
+  }
+}
