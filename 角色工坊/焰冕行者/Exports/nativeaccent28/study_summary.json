@@ -1,0 +1,13 @@
+{
+  "source": "nativepartunder26",
+  "source_sha256": "4b516196f43ef9c415ffc9add93c43b88d2c5cc83151a8d91b62644178d8d859",
+  "method": "Three separate authored Catmull crown/side paths, 2100 thin original native fibers, elliptical transported sections and staggered ends, retained full source coverage/materials/lighting",
+  "scope": "Discrete body-point guard only, not full segment/eye/clothing/animation collision or art approval",
+  "model_sha256": "d9d3f8baa0075a140a167ea1bd44c980540a25e51dae7a41c41cf2459052302c",
+  "art_judgment": "Rejected: three additive thin locks create detached rope-like arches. Measured primary maxz1.88408m versus new crests1.898-1.904m. Body identity transform confirmed and point guards did not repair any points; excessive free lift, not a coordinate transform bug.",
+  "status": "Inspected actual renders; target incomplete",
+  "inspected_draft_sha256": {
+    "01_Front.png": "87473a3d1e3c460370d1f8e8953352e862ede9b0320763cd457427070f3aa1f2",
+    "02_ThreeQuarter.png": "77baa241d3f0fe584d6a3701d9ebb2b3aabed46b4ee50fa1636ba1d99b49dc71"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "source": "nativepartunder26",
+  "source_sha256": "4b516196f43ef9c415ffc9add93c43b88d2c5cc83151a8d91b62644178d8d859",
+  "samples": 512,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "denoising": "OpenImageDenoise",
+  "all_images_actually_reviewed": true,
+  "art_judgment": "Part-support bristles reduced; longer uneven fringe retained. Crown arches/bands and back still below target; no art acceptance."
+}

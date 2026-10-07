@@ -1,0 +1,17 @@
+{
+  "source": "nativepartunder26",
+  "candidate": "nativeaccentdrape29",
+  "source_sha256": "4b516196f43ef9c415ffc9add93c43b88d2c5cc83151a8d91b62644178d8d859",
+  "candidate_sha256": "d3a14a7f8f2ad2e7b3a9c767b5eb27484f275fc9f7b9c6131a9c49a3ccc46caa",
+  "mesh_count": 141,
+  "all_mesh_geometry_uv_shape_keys_transforms_exact": true,
+  "all_four_existing_visible_hair_exact": true,
+  "added_objects": [
+    "Original crown accent A",
+    "Original crown accent B",
+    "Original crown accent C"
+  ],
+  "added_fibers": 2100,
+  "finite_positive_radii_textures_available": true,
+  "scope": "Static additive file comparison only; not artistic acceptance or segment/body/eye/clothing/animation collision assurance."
+}

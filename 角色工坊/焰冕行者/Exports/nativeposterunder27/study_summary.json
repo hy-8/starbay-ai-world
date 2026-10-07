@@ -1,0 +1,27 @@
+{
+  "source": "nativepartunder26",
+  "source_sha256": "4b516196f43ef9c415ffc9add93c43b88d2c5cc83151a8d91b62644178d8d859",
+  "method": "Upper posterior original short coverage follows nearest actual primary trajectory, original support length controls travel, 16 real scalp controls with 0.8-2mm loft; main hairstyle/materials/lights unchanged",
+  "scope": "Discrete short support placement, not complete segments/eyes/clothing/animation collision or art acceptance",
+  "changed_fibers": 8846,
+  "changed_object": "Original posterior coverage \u2022 surface-grown short fibers",
+  "nearest_long_root_distance_quantiles_m": [
+    6.407636192307109e-06,
+    0.0006495207198895514,
+    0.001256545481737703,
+    0.003945602104067802
+  ],
+  "result_length_quantiles_m": [
+    0.03024153006723574,
+    0.04678111436273854,
+    0.055930326036669656,
+    0.06173274889350335
+  ],
+  "model_sha256": "b6d1f9f1ea5d9c552927c8131c6fe83da80b34007d8bbd13097ba4d56e47705c",
+  "art_judgment": "Same method on8846 original posterior upper support shafts. Two drafts and separate back render inspected. Little visible crown/back improvement; do not advance over26.",
+  "status": "Inspected actual renders; target incomplete",
+  "inspected_draft_sha256": {
+    "02_ThreeQuarter.png": "eae7989c0939563221e5133ccc63b08cf1353f1187952407043a3e3066416ded",
+    "05_OppositeSide.png": "813ae028e0cf95623aaa3f4044773a550869c2eef33152439ede2ed015716c97"
+  }
+}

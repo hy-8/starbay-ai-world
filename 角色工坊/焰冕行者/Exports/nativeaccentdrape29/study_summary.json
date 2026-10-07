@@ -1,0 +1,14 @@
+{
+  "source": "nativepartunder26",
+  "source_sha256": "4b516196f43ef9c415ffc9add93c43b88d2c5cc83151a8d91b62644178d8d859",
+  "method": "Three separate authored Catmull crown/side paths, fitted against sampled actual primary shafts with 1.2mm outward offset and three smooth passes, 2100 thin original native fibers, elliptical transported sections and staggered ends, retained full source coverage/materials/lighting",
+  "scope": "Discrete body-point guard only, not full segment/eye/clothing/animation collision or art approval",
+  "surface_drape": true,
+  "model_sha256": "d3a14a7f8f2ad2e7b3a9c767b5eb27484f275fc9f7b9c6131a9c49a3ccc46caa",
+  "art_judgment": "Rejected: fit proposed accent paths to sampled real primary shaft field,1.2mm outward offset and smoothing. Arches reduced but new strips show jagged bends/bright knots; not plausible loose locks. No whole-head promotion.",
+  "status": "Inspected actual renders; target incomplete",
+  "inspected_draft_sha256": {
+    "01_Front.png": "e751b0dde140f59473b3b32db23368273397ded78d404f0b29b242efd29714ac",
+    "02_ThreeQuarter.png": "c5b7274e4a24aef586bb7fa4dc2415b6e7ff263addb517f0c32cbc72c26e2acf"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "source": "nativepartunder26",
+  "source_sha256": "4b516196f43ef9c415ffc9add93c43b88d2c5cc83151a8d91b62644178d8d859",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "72d7e5e0db5ccdaaddc3f3c0646b847b36dcff84922ecc0df76bd1feedf4284b",
+  "status": "Actual render pending art review; no generative image replacement"
+}

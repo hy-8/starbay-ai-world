@@ -337,3 +337,10 @@ sintelfit01/02/03的九张角色实渲均已查看：960×1120、Cycles/OptiX64 
 - Continue from nativefeather21: longer staggered fringe inspected in five neutral views and a 512-sample actual Cycles portrait. Crown/part/back remain below reference quality.
 - Reject same-side curtain, overly dark Huang controls and sheet-like individual scalp-arc/wave routes. Clarify unchanged shader color inputs do not imply absorption equivalence.
 - Seven localized static comparisons pass within stated scope; source geometry and unrelated edits preserved locally. No new Release.
+
+
+### 2026-10-07 · Local part support alignment (WIP)
+
+- Align14025 central Bystedt undercoat shafts beneath nearest real long-hair flow; preserve primary hair. Five neutral views and512-sample actual portrait inspected: part bristles reduced, reference quality still incomplete. Continue from nativepartunder26.
+- Reject posterior support as a significant crown remedy, detached three-lock accents and jagged sampled-field drape. Preserve all local studies.
+- Four paired static comparisons preserve existing mesh/hair within stated scope. No candidate Release or UE migration.

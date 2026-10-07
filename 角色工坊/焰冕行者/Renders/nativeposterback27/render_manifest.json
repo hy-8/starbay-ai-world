@@ -1,0 +1,14 @@
+{
+  "source": "nativeposterunder27",
+  "source_sha256": "b6d1f9f1ea5d9c552927c8131c6fe83da80b34007d8bbd13097ba4d56e47705c",
+  "source_unchanged": true,
+  "camera": "04_Back",
+  "resolution": [
+    960,
+    1120
+  ],
+  "samples": 96,
+  "denoising": false,
+  "image_sha256": "f905a08e3c29fa716cc1f0b98d9ef35b6c0727e2c3d4cb89357c171f94943443",
+  "status": "Actual back render pending review"
+}

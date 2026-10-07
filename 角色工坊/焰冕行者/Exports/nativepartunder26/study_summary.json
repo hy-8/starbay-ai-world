@@ -1,0 +1,27 @@
+{
+  "source": "nativefeather21",
+  "source_sha256": "14bf28a0d21943292af2c131cd7fd9c784d41759f94bfd8983f569e8dfeea09f",
+  "method": "Central upper-part Bystedt short support follows nearest actual primary trajectory, original support length controls travel, 16 real scalp controls with 0.8-2mm loft; main hairstyle/materials/lights unchanged",
+  "scope": "Discrete short support placement, not complete segments/eyes/clothing/animation collision or art acceptance",
+  "changed_fibers": 14025,
+  "changed_object": "Bystedt derivative \u2022 short scalp support",
+  "nearest_long_root_distance_quantiles_m": [
+    0.0,
+    8.85293775354512e-05,
+    0.00057075044605881,
+    0.002170732244849205
+  ],
+  "result_length_quantiles_m": [
+    0.008270858987572884,
+    0.024333702177512823,
+    0.030235041288150476,
+    0.03467326273999486
+  ],
+  "model_sha256": "4b516196f43ef9c415ffc9add93c43b88d2c5cc83151a8d91b62644178d8d859",
+  "art_judgment": "Measured nearest-primary-root distances median0.089mm/max2.171mm. Lie 14025 short Bystedt support shafts close to real scalp in central upper part, while retaining roots and all long hair. Pale fuzzy part reduced in actual drafts, five neutral views and high portrait. New continuation WIP only; crown/back bands and opposite pale part remain.",
+  "status": "Inspected actual renders; target incomplete",
+  "inspected_draft_sha256": {
+    "02_ThreeQuarter.png": "02683d41303edf13870979e768f2241de8fed5850cd4c138862add413173fd9d",
+    "05_OppositeSide.png": "c31207a7997427607497b5c546e82077ac3b650e9a8a82361239a0cae5f7e6a5"
+  }
+}
