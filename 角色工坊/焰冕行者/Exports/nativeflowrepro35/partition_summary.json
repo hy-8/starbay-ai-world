@@ -1,0 +1,28 @@
+{
+  "source": "nativepartunder26",
+  "source_sha256": "4b516196f43ef9c415ffc9add93c43b88d2c5cc83151a8d91b62644178d8d859",
+  "source_unchanged": true,
+  "method": "96 deterministic farthest-seeded whole-path kmeans,5 position samples/root weight.45,18 iterations on1/3 sample, all non-frontal curves assigned",
+  "fiber_count": 38176,
+  "groups": 96,
+  "count_quantiles": [
+    5.0,
+    350.5,
+    767.5,
+    1832.0
+  ],
+  "middle_90pct_width_quantiles_m": [
+    0.0014721286368971163,
+    0.01815609818746293,
+    0.027877117402533017,
+    0.042990528590552565
+  ],
+  "middle_90pct_depth_quantiles_m": [
+    0.0005952033132837617,
+    0.008863113128401037,
+    0.017647972175705143,
+    0.02969954517202439
+  ],
+  "local_partition_sha256": "732e1ff1e8f96e67c337f5f3b74213fc41989f40d9882d5c5f134fb747f26075",
+  "scope": "Geometric aggregate only. Indices remain local. No art, continuous occlusion or collision assurance."
+}

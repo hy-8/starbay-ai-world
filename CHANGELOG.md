@@ -344,3 +344,11 @@ sintelfit01/02/03的九张角色实渲均已查看：960×1120、Cycles/OptiX64 
 - Align14025 central Bystedt undercoat shafts beneath nearest real long-hair flow; preserve primary hair. Five neutral views and512-sample actual portrait inspected: part bristles reduced, reference quality still incomplete. Continue from nativepartunder26.
 - Reject posterior support as a significant crown remedy, detached three-lock accents and jagged sampled-field drape. Preserve all local studies.
 - Four paired static comparisons preserve existing mesh/hair within stated scope. No candidate Release or UE migration.
+
+
+### 2026-10-07 · Whole-path posterior locks and continuous frames (WIP)
+
+- Reproduce96 whole-path families for38176 nonfrontal shafts. Narrow posterior sections, then stagger loose85mm bends and relax tips.
+- Diagnose11 radial-frame flips; parallel-transport frame study removes those numerical flips. Current nativebacktransport37 edits40families/16773shafts; selection differs by one141-shaft family from earlier controls.
+- All five neutral views and512-sample actual portrait inspected: posterior waves/tips improved, crown/part/reference quality incomplete. Four localized static comparisons preserve existing meshes/roots/other hair.
+- Continue from37, preserve prior geometry locally. No new fee, candidate Release or UE integration.

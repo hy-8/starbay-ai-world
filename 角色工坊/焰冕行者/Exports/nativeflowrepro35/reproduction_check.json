@@ -1,0 +1,7 @@
+{
+  "source": "nativepartunder26",
+  "original_probe": "nativeflowprobe30",
+  "reproduced_probe": "nativeflowrepro35",
+  "all_ids_and_labels_exact": true,
+  "scope": "Partition arrays reproduced only, not art acceptance"
+}

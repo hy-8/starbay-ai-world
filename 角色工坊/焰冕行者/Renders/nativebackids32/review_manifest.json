@@ -1,0 +1,10 @@
+{
+  "source": "nativebacklocks31",
+  "source_sha256": "3e4edb0f6d7ad80c98a34413c48bc5bf33aa3e539e1adb035bfab002f1ee8d21",
+  "all_actual_images_reviewed": true,
+  "inspected_images_sha256": {
+    "03_Side.png": "0592fa696a146ac9398707fdbcae612dd1a02f2b0eecb138f75bb1da4ee05713",
+    "04_Back.png": "4d7bb25e4fbf6fc163c10cc173d11a04b8db6549d63583a7a964deee7958eace"
+  },
+  "judgment": "Back middle coverage/highlight ribbons still belong largely to edited blue primary shafts; narrow sections alone do not break common bend directions. Red upper/side primary and green short support also remain visible. IDs are diagnostic, not beauty renders."
+}

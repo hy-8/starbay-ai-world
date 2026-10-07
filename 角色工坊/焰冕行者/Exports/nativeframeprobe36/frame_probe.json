@@ -1,0 +1,339 @@
+{
+  "source": "nativepartunder26",
+  "source_sha256": "4b516196f43ef9c415ffc9add93c43b88d2c5cc83151a8d91b62644178d8d859",
+  "families": 41,
+  "source_frame_flips": 11,
+  "source_turns_over60deg": 28,
+  "transport_frame_flips": 0,
+  "records": [
+    {
+      "group": 1,
+      "source_flips": 2,
+      "source_turns_over60deg": 3,
+      "source_max_angle_deg": 179.06960461808978,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 13.647070108649027
+    },
+    {
+      "group": 3,
+      "source_flips": 0,
+      "source_turns_over60deg": 0,
+      "source_max_angle_deg": 34.02354837404905,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 12.769580576069348
+    },
+    {
+      "group": 6,
+      "source_flips": 0,
+      "source_turns_over60deg": 0,
+      "source_max_angle_deg": 4.91083826867466,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 2.9853977225998545
+    },
+    {
+      "group": 11,
+      "source_flips": 1,
+      "source_turns_over60deg": 1,
+      "source_max_angle_deg": 99.50884949188071,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 8.15904635281014
+    },
+    {
+      "group": 12,
+      "source_flips": 0,
+      "source_turns_over60deg": 0,
+      "source_max_angle_deg": 10.117782838483398,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 4.66523202344893
+    },
+    {
+      "group": 16,
+      "source_flips": 0,
+      "source_turns_over60deg": 0,
+      "source_max_angle_deg": 3.8294013882534035,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 3.5248734215658715
+    },
+    {
+      "group": 18,
+      "source_flips": 0,
+      "source_turns_over60deg": 0,
+      "source_max_angle_deg": 4.187731503891767,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 4.154167538686878
+    },
+    {
+      "group": 19,
+      "source_flips": 0,
+      "source_turns_over60deg": 0,
+      "source_max_angle_deg": 22.99425050155506,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 6.166856257909198
+    },
+    {
+      "group": 22,
+      "source_flips": 0,
+      "source_turns_over60deg": 0,
+      "source_max_angle_deg": 51.81140926268168,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 3.899506420747441
+    },
+    {
+      "group": 28,
+      "source_flips": 0,
+      "source_turns_over60deg": 0,
+      "source_max_angle_deg": 5.869346339190017,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 3.8961158671879907
+    },
+    {
+      "group": 29,
+      "source_flips": 0,
+      "source_turns_over60deg": 0,
+      "source_max_angle_deg": 3.9757312901689454,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 3.2227840886835035
+    },
+    {
+      "group": 30,
+      "source_flips": 0,
+      "source_turns_over60deg": 0,
+      "source_max_angle_deg": 3.7327623631779474,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 3.592536303006432
+    },
+    {
+      "group": 34,
+      "source_flips": 1,
+      "source_turns_over60deg": 2,
+      "source_max_angle_deg": 112.17387862080334,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 15.174346779338569
+    },
+    {
+      "group": 35,
+      "source_flips": 0,
+      "source_turns_over60deg": 0,
+      "source_max_angle_deg": 5.579942297843956,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 5.5104625094899555
+    },
+    {
+      "group": 36,
+      "source_flips": 0,
+      "source_turns_over60deg": 0,
+      "source_max_angle_deg": 18.850824089035072,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 11.358884338396601
+    },
+    {
+      "group": 38,
+      "source_flips": 1,
+      "source_turns_over60deg": 5,
+      "source_max_angle_deg": 131.31833959571992,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 9.982040231633675
+    },
+    {
+      "group": 39,
+      "source_flips": 3,
+      "source_turns_over60deg": 4,
+      "source_max_angle_deg": 166.10916483346588,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 6.915821770418205
+    },
+    {
+      "group": 42,
+      "source_flips": 0,
+      "source_turns_over60deg": 1,
+      "source_max_angle_deg": 87.23607261587378,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 7.702575736840229
+    },
+    {
+      "group": 46,
+      "source_flips": 0,
+      "source_turns_over60deg": 0,
+      "source_max_angle_deg": 2.121781344736984,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 2.1280125489603625
+    },
+    {
+      "group": 48,
+      "source_flips": 0,
+      "source_turns_over60deg": 0,
+      "source_max_angle_deg": 4.562929542219111,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 3.198891514554037
+    },
+    {
+      "group": 53,
+      "source_flips": 0,
+      "source_turns_over60deg": 0,
+      "source_max_angle_deg": 9.901099740267416,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 5.28433957248784
+    },
+    {
+      "group": 54,
+      "source_flips": 0,
+      "source_turns_over60deg": 0,
+      "source_max_angle_deg": 32.361259287515004,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 13.875229650150896
+    },
+    {
+      "group": 55,
+      "source_flips": 0,
+      "source_turns_over60deg": 0,
+      "source_max_angle_deg": 2.5810401024610283,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 2.5123839514865836
+    },
+    {
+      "group": 56,
+      "source_flips": 1,
+      "source_turns_over60deg": 2,
+      "source_max_angle_deg": 163.2944145766837,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 12.554125639519876
+    },
+    {
+      "group": 60,
+      "source_flips": 0,
+      "source_turns_over60deg": 3,
+      "source_max_angle_deg": 88.2627416717434,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 9.984433044087883
+    },
+    {
+      "group": 61,
+      "source_flips": 0,
+      "source_turns_over60deg": 0,
+      "source_max_angle_deg": 18.504716383886574,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 6.936620929179894
+    },
+    {
+      "group": 66,
+      "source_flips": 0,
+      "source_turns_over60deg": 0,
+      "source_max_angle_deg": 49.512998967487526,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 23.454511961405302
+    },
+    {
+      "group": 68,
+      "source_flips": 1,
+      "source_turns_over60deg": 1,
+      "source_max_angle_deg": 92.51161827319605,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 12.752043214005065
+    },
+    {
+      "group": 69,
+      "source_flips": 0,
+      "source_turns_over60deg": 0,
+      "source_max_angle_deg": 3.8572478892235673,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 3.4753783372448113
+    },
+    {
+      "group": 74,
+      "source_flips": 0,
+      "source_turns_over60deg": 0,
+      "source_max_angle_deg": 3.423137895778436,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 2.3527615041052656
+    },
+    {
+      "group": 78,
+      "source_flips": 0,
+      "source_turns_over60deg": 0,
+      "source_max_angle_deg": 22.184141750700867,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 3.9213869803141934
+    },
+    {
+      "group": 79,
+      "source_flips": 0,
+      "source_turns_over60deg": 0,
+      "source_max_angle_deg": 10.308702992451199,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 3.8826727526037175
+    },
+    {
+      "group": 81,
+      "source_flips": 0,
+      "source_turns_over60deg": 0,
+      "source_max_angle_deg": 36.80680427811314,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 8.214559677122224
+    },
+    {
+      "group": 82,
+      "source_flips": 0,
+      "source_turns_over60deg": 0,
+      "source_max_angle_deg": 18.27513485393003,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 10.137892586728304
+    },
+    {
+      "group": 83,
+      "source_flips": 0,
+      "source_turns_over60deg": 1,
+      "source_max_angle_deg": 61.96826077239484,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 3.737159138078544
+    },
+    {
+      "group": 86,
+      "source_flips": 0,
+      "source_turns_over60deg": 0,
+      "source_max_angle_deg": 3.139336298851115,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 3.123436534951651
+    },
+    {
+      "group": 87,
+      "source_flips": 0,
+      "source_turns_over60deg": 0,
+      "source_max_angle_deg": 4.177367528744236,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 3.7303774805808447
+    },
+    {
+      "group": 92,
+      "source_flips": 0,
+      "source_turns_over60deg": 2,
+      "source_max_angle_deg": 79.82293288111114,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 9.063118357229035
+    },
+    {
+      "group": 93,
+      "source_flips": 1,
+      "source_turns_over60deg": 2,
+      "source_max_angle_deg": 109.57333689441525,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 8.469653889925647
+    },
+    {
+      "group": 94,
+      "source_flips": 0,
+      "source_turns_over60deg": 0,
+      "source_max_angle_deg": 16.25819570138574,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 7.55964555249837
+    },
+    {
+      "group": 95,
+      "source_flips": 0,
+      "source_turns_over60deg": 1,
+      "source_max_angle_deg": 72.68883667889666,
+      "transport_flips": 0,
+      "transport_max_angle_deg": 10.278039339243508
+    }
+  ],
+  "scope": "Frame smoothness probe only; not art or segment collision acceptance"
+}

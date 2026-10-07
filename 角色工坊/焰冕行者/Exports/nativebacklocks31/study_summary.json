@@ -1,0 +1,21 @@
+{
+  "source": "nativepartunder26",
+  "source_sha256": "4b516196f43ef9c415ffc9add93c43b88d2c5cc83151a8d91b62644178d8d859",
+  "local_probe_sha256": "732e1ff1e8f96e67c337f5f3b74213fc41989f40d9882d5c5f134fb747f26075",
+  "changed_fibers": 16914,
+  "method": "Whole-path posterior families (96 kmeans across five shaft samples, not root voxels); tangent-frame target middle7-9mm width/2.8mm depth, tapered end55%, small2.5mm depth/1.5mm cross separation, original trajectories/longitudinal scatter retained",
+  "scope": "Static localized design and discrete body points, not full segment/eye/clothing/animation collision or art acceptance",
+  "all_first_four_points_exact": true,
+  "unselected_primary_exact": true,
+  "other_hair_unchanged": true,
+  "discrete_body_repairs": 0,
+  "families_count": 41,
+  "model_sha256": "3e4edb0f6d7ad80c98a34413c48bc5bf33aa3e539e1adb035bfab002f1ee8d21",
+  "art_judgment": "Whole-path sectional narrowing separates nape ends but mid-back broad highlights persist. Intermediate study, not target acceptance.",
+  "status": "All actual drafts reviewed, target incomplete",
+  "inspected_draft_sha256": {
+    "02_ThreeQuarter.png": "c70e18955726754e9b7e3f9a18c6c12ba56c819a5383cccdd90295b36ff12b61",
+    "04_Back.png": "c99b4b2dcdfa9d16140ead8a359ca06c0e140b3c82bf084aaf73ed617f877489",
+    "05_OppositeSide.png": "027c82489f87037f1eaebf4737ea5230f796f3380a7d3cc4ec207a30738495f0"
+  }
+}

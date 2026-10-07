@@ -1,0 +1,12 @@
+{
+  "source": "nativebacktransport37",
+  "source_sha256": "de187317c67ec871edc98bb99512385c8c33b16ca83b6d9805070b8b8d14739c",
+  "samples": 512,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "denoising": "OpenImageDenoise",
+  "all_images_actually_reviewed": true,
+  "art_judgment": "Posterior waves and free tips more distinct, designed fringe preserved. Upper crown arches/bands and pale part still visible; reference quality incomplete.512-sample denoising is presentation, not geometry repair or art acceptance."
+}

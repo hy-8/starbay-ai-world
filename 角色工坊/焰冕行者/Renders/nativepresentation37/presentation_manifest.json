@@ -1,0 +1,15 @@
+{
+  "source": "nativebacktransport37",
+  "source_sha256": "de187317c67ec871edc98bb99512385c8c33b16ca83b6d9805070b8b8d14739c",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "8c84367cb9b84037cb1f43f566b9f3a2cd2705e0c7b7ade3a60d29d9a59f582c",
+  "status": "Actual render pending art review; no generative image replacement"
+}

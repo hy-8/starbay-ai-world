@@ -1,0 +1,16 @@
+{
+  "source": "nativebacklocks31",
+  "source_sha256": "3e4edb0f6d7ad80c98a34413c48bc5bf33aa3e539e1adb035bfab002f1ee8d21",
+  "source_unchanged": true,
+  "selection_attribute": "native_back_resection",
+  "legend": {
+    "blue": "Edited primary curves",
+    "red": "Untouched primary curves",
+    "green": "All short support components",
+    "gray": "Body/clothes"
+  },
+  "edited_fibers": 16914,
+  "unselected_fibers": 32354,
+  "method": "Exact temporary curve subsets with original radii/matrix, actual cameras, emission diagnostic only",
+  "status": "Unreviewed actual component diagnostic"
+}

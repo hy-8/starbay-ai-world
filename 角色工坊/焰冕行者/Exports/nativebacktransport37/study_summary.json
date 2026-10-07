@@ -1,0 +1,22 @@
+{
+  "source": "nativepartunder26",
+  "source_sha256": "4b516196f43ef9c415ffc9add93c43b88d2c5cc83151a8d91b62644178d8d859",
+  "local_probe_sha256": "732e1ff1e8f96e67c337f5f3b74213fc41989f40d9882d5c5f134fb747f26075",
+  "changed_fibers": 16773,
+  "method": "Whole-path posterior families (96 kmeans across five shaft samples, not root voxels); tangent-frame target middle7-9mm width/2.8mm depth, tapered end55%, small2.5mm depth/1.5mm cross separation, original trajectories/longitudinal scatter retained; actual center arc-length85mm wavelength,6mm lateral/3mm depth loose curl with independent family phase; relax added curl progressively over final32% of shaft, retaining existing free ends; parallel-transported cross sections avoid radial-frame flips",
+  "scope": "Static localized design and discrete body points, not full segment/eye/clothing/animation collision or art acceptance",
+  "all_first_four_points_exact": true,
+  "unselected_primary_exact": true,
+  "other_hair_unchanged": true,
+  "discrete_body_repairs": 648,
+  "families_count": 40,
+  "model_sha256": "de187317c67ec871edc98bb99512385c8c33b16ca83b6d9805070b8b8d14739c",
+  "art_judgment": "Parallel-transport sections with loose-family bends and relaxed ends give clearer posterior waves/separated tips in three drafts, five neutral views and actual512-sample portrait. New continuation WIP only: crown arches, broad upper bands, part support and overall reference quality remain incomplete.",
+  "status": "All actual drafts reviewed, target incomplete",
+  "inspected_draft_sha256": {
+    "02_ThreeQuarter.png": "eaca48ae954f44dacb610287210032e913fb012f614641f88868a6b1083bbb35",
+    "04_Back.png": "efd2c64dfc21d3546fe26e8d19e5a90bd1b130d20d40a1353ced052b45a8e367",
+    "05_OppositeSide.png": "12fc3c1b5197f491e6843e66706dd68219b2b7699ac839fb561ca1c8255e28b4"
+  },
+  "comparison_clarification": "Transported-frame width gating excludes prior family36/141shafts;40families/16773shafts versus41/16914. Whole-image change is not a perfectly isolated frame-only control."
+}
