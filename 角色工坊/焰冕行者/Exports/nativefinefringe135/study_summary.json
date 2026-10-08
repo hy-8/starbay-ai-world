@@ -1,0 +1,28 @@
+{
+  "source": "nativedescendinglocks133",
+  "source_sha256": "81ae3a347bdc1081f062037b1d2d762b1c12e24a6be4b2ef7d9a5dd6c62cfc78",
+  "selection_attribute": "native_authored_fine_fringe",
+  "pilot": false,
+  "authored": true,
+  "fall_tips": false,
+  "fringe_mode": true,
+  "target_groups": 160,
+  "edited_groups": 94,
+  "changed_fibers": 7625,
+  "discrete_body_repairs": 65223,
+  "method": "Actual current fringe only,160 root/flow-compatible target groups,94 edited groups/7625 shafts. No length resampling, endpoint of group guide equals original mean endpoint. Root-tangent lead28-65mm with4-8mm relief, transported original unranked scatter at50% normal/65% lateral and terminal taper. Only true roots frozen; non-fringe/materials/lighting exact. Individual endpoints may change with transported scatter.",
+  "descending_tip_method": null,
+  "fringe_method": "Actual current fringe only; no length resampling, guide endpoint equals current group endpoint mean. Transported/scaled individual dispersion may change actual shaft endpoints; true roots and non-fringe exact.",
+  "status": "Actually reviewed; reference unachieved",
+  "metadata_correction": "Historical local common method string incorrectly says non-fringe and resampling; operative fringe_mode/fringe_method/group rate1 and saved-file audit prove fringe-only with no length resampling. Future helper common metadata corrected without regenerating135.",
+  "model_sha256": "42aac584d3e551080e81b787ce1b07a254755207733ee49b26ba3e7498f3cebe",
+  "art_judgment": "All4 actual drafts, all5 neutral views and actual1920x2240/512/OIDN portrait inspected.94 fringe groups/7625 shafts use full-path tangent-led own-end falls; common part peak recedes, eyes remain clear.133 non-fringe geometry retained. High portrait exposes upper-front crossing thin rods and a tiny dark end hook; side silhouette smoother but lower back flat, broad top, pale part and some lifted arcs remain. Adopt incomplete WIP, not attractive reference complete or publishable artwork.",
+  "goal_complete": false,
+  "maximum_displacement_m": 0.05297679454088211,
+  "inspected_draft_sha256": {
+    "02_ThreeQuarter.png": "1d770c1113de6b37c38b9313262d9715f5d4a618e131f77aee0615a83cd332d2",
+    "03_Side.png": "33f208e013f5846335d1254fabb7031120fa7f9fd522027f2e46772312037e1f",
+    "04_Back.png": "f6a2f9d11888095afaf0fd900a5e79be1888ea2437d42ba6804424977212db1a",
+    "05_OppositeSide.png": "11927e57e89fb1328e136266fecbf95758ba9d8f5753f568c616486552219fc9"
+  }
+}

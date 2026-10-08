@@ -1,0 +1,20 @@
+{
+  "source": "nativeblendedupper129",
+  "source_sha256": "238efb3121ec162463531070acd82b85a1865fda1baf96b36ebaf88456d1e680",
+  "selection_attribute": "native_authored_fine_lock_pilot",
+  "pilot": true,
+  "authored": true,
+  "target_groups": 160,
+  "edited_groups": 152,
+  "changed_fibers": 13193,
+  "discrete_body_repairs": 7463,
+  "method": "Authored single-fall guide from scalp-tangent first control28-65mm plus4-8mm root-normal relief; second control28% backward from end with1-6mm radial variation. Source-to-guide transition full bynormalized .080, only true roots frozen. Non-fringe direction-compatible root-weighted smaller families, individually resampled lengths, transported native unranked scatter. 50% normal/65% lateral dispersion, staggered controls and roots exact. Original low paths blended back below1.705m. Parameter shortening is not exact arc-length shortening. No new fibers/materials/lighting.",
+  "status": "Actually reviewed; reference unachieved",
+  "model_sha256": "98563dbfdbdb835a7d70af8a383c579b37a91a77bb74c78a8f38655d32d24f3d",
+  "art_judgment": "Actual representative3/4 draft inspected.152 groups use root-tangent authored controls. Straight protruding upper-side tail fan appears. Rejected; do not expand this raw authored-end design.",
+  "goal_complete": false,
+  "maximum_displacement_m": 0.05290009453892708,
+  "inspected_draft_sha256": {
+    "02_ThreeQuarter.png": "c341aca9d8a2ac6ebed0f6960022239974e11240ae2480f09b20a128ef49fd52"
+  }
+}

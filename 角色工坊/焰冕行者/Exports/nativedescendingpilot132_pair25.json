@@ -1,0 +1,20 @@
+{
+  "source": "nativeblendedupper129",
+  "source_sha256": "238efb3121ec162463531070acd82b85a1865fda1baf96b36ebaf88456d1e680",
+  "candidate": "nativedescendingpilot132",
+  "candidate_sha256": "769ebab28a0530d5b34c50806a9789b84c14050b213b921fad66d3ca7939cfec",
+  "mesh_count": 141,
+  "mesh_geometry_uv_shape_keys_transforms_exact": true,
+  "visible_native_objects": 4,
+  "curves_finite_radii_positive_textures_available": true,
+  "edited_object": "Bystedt layercut derivative \u2022 native root reflow",
+  "edited_fibers": 13193,
+  "all_radii_topology_transforms_exact": true,
+  "all_roots_exact": true,
+  "unselected_fibers_exact": true,
+  "other_native_objects_exact": true,
+  "max_displacement_m": 0.052320875227451324,
+  "scope": "Static localized file comparison. Not art, segment/body/eye/clothing/animation collision acceptance.",
+  "all_material_slots_graphs_exact": true,
+  "light_world_camera_display_exact": true
+}

@@ -1,0 +1,15 @@
+{
+  "source": "nativefinefringe135",
+  "source_sha256": "42aac584d3e551080e81b787ce1b07a254755207733ee49b26ba3e7498f3cebe",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "77b9526ed758d5e8e09c05a8d971d75ad1bacaddd173839b2a54f9a218adec78",
+  "status": "Actual render pending art review; no generative image replacement"
+}

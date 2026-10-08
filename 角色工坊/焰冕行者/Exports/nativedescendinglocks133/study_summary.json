@@ -1,0 +1,27 @@
+{
+  "source": "nativeblendedupper129",
+  "source_sha256": "238efb3121ec162463531070acd82b85a1865fda1baf96b36ebaf88456d1e680",
+  "selection_attribute": "native_descending_fine_locks",
+  "pilot": false,
+  "authored": true,
+  "fall_tips": true,
+  "target_groups": 440,
+  "edited_groups": 391,
+  "changed_fibers": 24634,
+  "discrete_body_repairs": 37563,
+  "method": "Authored single-fall guide from scalp-tangent first control28-65mm plus4-8mm root-normal relief; second control28% backward from end with1-6mm radial variation. Source-to-guide transition full bynormalized .080, only true roots frozen. Non-fringe direction-compatible root-weighted smaller families, individually resampled lengths, transported native unranked scatter. 50% normal/65% lateral dispersion, staggered controls and roots exact. Original low paths blended back below1.705m. Parameter shortening is not exact arc-length shortening. No new fibers/materials/lighting.",
+  "descending_tip_method": "Guide XY radius clamped90-128mm around[0,-35mm]; tipZ clipped1.730-1.808m and at least50mm belowroot; end control23-37mm aboveend and4mm inward. This is guide design, not strict all-fiber terminal bounds.",
+  "status": "Actually reviewed; reference unachieved",
+  "method_control_override": "Guide XY radius clamped90-128mm around[0,-35mm]; tipZ clipped1.730-1.808m and at least50mm belowroot; end control23-37mm aboveend and4mm inward. This is guide design, not strict all-fiber terminal bounds.",
+  "method_note": "Descending mode overrides shared second-control description. Guide constraints are not strict per-shaft bounds.",
+  "model_sha256": "81ae3a347bdc1081f062037b1d2d762b1c12e24a6be4b2ef7d9a5dd6c62cfc78",
+  "art_judgment": "All4 actual drafts inspected.391 edited non-fringe groups/24634 shafts fall more smoothly and repeated side bends reduce. Fringe retained; a narrow upright part clump becomes conspicuous. Back remains flat/broad and long lower nape is retained. Useful intermediate, not complete.",
+  "goal_complete": false,
+  "maximum_displacement_m": 0.05548134073615074,
+  "inspected_draft_sha256": {
+    "02_ThreeQuarter.png": "f99942c27b4f8d5e79aacb3572474b975fca8f54d189c8617193fd6faa1a46b6",
+    "03_Side.png": "2a14125e243883099283b12ee2ed54a5c5425ea94d752a26b99ed48d160a6dc5",
+    "04_Back.png": "a5124c143c14df65a56a67b8e4a3ba12c32d1401febb35dc4e44a779bc998d9d",
+    "05_OppositeSide.png": "72eb1426cee2358eb25b7c9eec3c4ee59079d570ac49df8574488fcec6816502"
+  }
+}

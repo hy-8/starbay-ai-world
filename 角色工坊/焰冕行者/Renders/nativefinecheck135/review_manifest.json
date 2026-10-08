@@ -1,0 +1,14 @@
+{
+  "source": "nativefinefringe135",
+  "source_sha256": "42aac584d3e551080e81b787ce1b07a254755207733ee49b26ba3e7498f3cebe",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "01_Front.png": "715931027d0d8a9188924008004941b284aac7118c7e374fb760e1c2d6dd5956",
+    "02_ThreeQuarter.png": "26ee6f689e8e91ed89869eba8bfed25efa76316484ea12d25d9aaa0ccba708e0",
+    "03_Side.png": "233bcfa09cdacc20f98a29ddacaa9c9c90d91767630f9e671087916b9b8f239a",
+    "04_Back.png": "3bb2048894fe6f758f145422b3e3cf4817245c2f9496a4d353ca4939ba3c56e9",
+    "05_OppositeSide.png": "97b50fff6cb8cf2a4cd2cd883f8b194df2638d6b10396e890556813387448fe2"
+  },
+  "art_judgment": "All5 actual1200x1400/192/no-denoise neutral views inspected. Eyes clear and part spike reduced; side bends less repetitive. Lower back broad/flat, pale part, lifted arcs and ordered upper layers remain. Incomplete.",
+  "goal_complete": false
+}

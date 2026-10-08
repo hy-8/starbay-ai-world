@@ -1,0 +1,19 @@
+{
+  "source": "nativeblendedupper129",
+  "source_sha256": "238efb3121ec162463531070acd82b85a1865fda1baf96b36ebaf88456d1e680",
+  "selection_attribute": "native_feathered_fine_lock_pilot",
+  "pilot": true,
+  "target_groups": 160,
+  "edited_groups": 152,
+  "changed_fibers": 13193,
+  "discrete_body_repairs": 849,
+  "method": "Non-fringe direction-compatible root-weighted smaller families, individually resampled lengths, broad cubic mean plus transported native unranked scatter. 50% normal/65% lateral dispersion, staggered controls and roots exact. Original low paths blended back below1.705m. Parameter shortening is not exact arc-length shortening. No new fibers/materials/lighting.",
+  "status": "Actually reviewed; reference unachieved",
+  "model_sha256": "d9ef123433365285923f34adf71985fa20f35e7ecd58c23616eb32ec68173107",
+  "art_judgment": "Actual representative3/4 draft inspected.152 fine groups/13193 positive-X upper non-fringe shafts with fitted cubic means, shortened parameter paths and thinner transported scatter. Fine tails change but repeated upper humps remain. Not adopted or expanded with same fitted mode.",
+  "goal_complete": false,
+  "maximum_displacement_m": 0.04848451167345047,
+  "inspected_draft_sha256": {
+    "02_ThreeQuarter.png": "ba71b4eee86f8023490414e0e15583e67d1f94155bd28a019c4402323f5ce9dc"
+  }
+}

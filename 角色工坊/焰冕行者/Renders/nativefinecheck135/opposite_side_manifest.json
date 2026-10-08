@@ -1,0 +1,24 @@
+{
+  "version": "nativefinecheck135",
+  "source": "nativefinefringe135",
+  "source_sha256": "42aac584d3e551080e81b787ce1b07a254755207733ee49b26ba3e7498f3cebe",
+  "source_unchanged": true,
+  "method": "Existing neutral cameras when requested, plus actual opposite camera mirrored in world space with local-X handedness correction; no pixel flip or geometry edit",
+  "samples": 192,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "denoising": false,
+  "image_sha256": "97b50fff6cb8cf2a4cd2cd883f8b194df2638d6b10396e890556813387448fe2",
+  "images_sha256": {
+    "01_Front.png": "715931027d0d8a9188924008004941b284aac7118c7e374fb760e1c2d6dd5956",
+    "02_ThreeQuarter.png": "26ee6f689e8e91ed89869eba8bfed25efa76316484ea12d25d9aaa0ccba708e0",
+    "03_Side.png": "233bcfa09cdacc20f98a29ddacaa9c9c90d91767630f9e671087916b9b8f239a",
+    "04_Back.png": "3bb2048894fe6f758f145422b3e3cf4817245c2f9496a4d353ca4939ba3c56e9",
+    "05_OppositeSide.png": "97b50fff6cb8cf2a4cd2cd883f8b194df2638d6b10396e890556813387448fe2"
+  },
+  "status": "Unreviewed actual neutral/opposite profile diagnostic, not artistic approval",
+  "single_camera": null,
+  "opposite_image_reused_from": null
+}

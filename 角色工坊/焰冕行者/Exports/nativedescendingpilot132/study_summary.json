@@ -1,0 +1,24 @@
+{
+  "source": "nativeblendedupper129",
+  "source_sha256": "238efb3121ec162463531070acd82b85a1865fda1baf96b36ebaf88456d1e680",
+  "selection_attribute": "native_descending_fine_lock_pilot",
+  "pilot": true,
+  "authored": true,
+  "fall_tips": true,
+  "target_groups": 160,
+  "edited_groups": 152,
+  "changed_fibers": 13193,
+  "discrete_body_repairs": 2547,
+  "method": "Authored single-fall guide from scalp-tangent first control28-65mm plus4-8mm root-normal relief; second control28% backward from end with1-6mm radial variation. Source-to-guide transition full bynormalized .080, only true roots frozen. Non-fringe direction-compatible root-weighted smaller families, individually resampled lengths, transported native unranked scatter. 50% normal/65% lateral dispersion, staggered controls and roots exact. Original low paths blended back below1.705m. Parameter shortening is not exact arc-length shortening. No new fibers/materials/lighting.",
+  "descending_tip_method": "Guide XY radius clamped90-128mm around[0,-35mm]; tipZ clipped1.730-1.808m and at least50mm belowroot; end control23-37mm aboveend and4mm inward. This is guide design, not strict all-fiber terminal bounds.",
+  "status": "Actually reviewed; reference unachieved",
+  "method_control_override": "Guide XY radius clamped90-128mm around[0,-35mm]; tipZ clipped1.730-1.808m and at least50mm belowroot; end control23-37mm aboveend and4mm inward. This is guide design, not strict all-fiber terminal bounds.",
+  "method_note": "Descending mode overrides shared second-control description. Guide constraints are not strict per-shaft bounds.",
+  "model_sha256": "769ebab28a0530d5b34c50806a9789b84c14050b213b921fad66d3ca7939cfec",
+  "art_judgment": "Actual representative3/4 draft inspected.152 groups use authored root fall with lower guide endpoints and downward terminal controls.131 excessive straight outward fan recedes. Promising localized pilot, expanded in133 with independently recomputed440 target groups; not identical pilot geometry reused.",
+  "goal_complete": false,
+  "maximum_displacement_m": 0.052320875227451324,
+  "inspected_draft_sha256": {
+    "02_ThreeQuarter.png": "6a9ebe85f69fbaa7ff331ff1c858645e969fde91ccfe5d08a07cffe073b4657c"
+  }
+}

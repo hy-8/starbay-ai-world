@@ -1,0 +1,11 @@
+{
+  "source": "nativedescendinglocks133",
+  "source_sha256": "81ae3a347bdc1081f062037b1d2d762b1c12e24a6be4b2ef7d9a5dd6c62cfc78",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "02_ThreeQuarter.png": "947415990a0290633ec6e635d74525dc29172e1a9ff172fabbd515d1774f21b9",
+    "01_Front.png": "f9c65e7c3a87ba94836c1c28f962eb3992f9120215da7355a4065a63ff1327b0"
+  },
+  "art_judgment": "Both actual3/4/front ID images inspected. Conspicuous upright part clump belongs to red retained fringe, blue actual133 fine non-fringe lies behind it. Three supports separately colored. Camera-specific attribution; source unchanged.",
+  "goal_complete": false
+}

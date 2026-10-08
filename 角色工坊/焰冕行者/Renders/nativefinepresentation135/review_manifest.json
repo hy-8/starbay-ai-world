@@ -1,0 +1,10 @@
+{
+  "source": "nativefinefringe135",
+  "source_sha256": "42aac584d3e551080e81b787ce1b07a254755207733ee49b26ba3e7498f3cebe",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "02_ThreeQuarter.png": "77b9526ed758d5e8e09c05a8d971d75ad1bacaddd173839b2a54f9a218adec78"
+  },
+  "art_judgment": "Actual1920x2240/512/OIDN portrait inspected after successful completion. Side fall smoother and upper part peak reduced versus133. Several thin upper-front crossing rods/tiny dark tail hook remain; insufficient natural reference quality. Incomplete continuation only.",
+  "goal_complete": false
+}
