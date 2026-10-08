@@ -1,0 +1,11 @@
+{
+  "source": "nativeouterpilot152",
+  "source_sha256": "9b1b74d449e44e7dea43e32a2cd709abee05c90e02e83107404e69e902449b2f",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "03_Side.png": "39c93c9251aeea852d044ff8c58eb4812ecb0efb01c4dd3e1f79cdc4c1162e65",
+    "04_Back.png": "f0b1d0ce3dc6a2932859a19a945d3c241d1c27b661d3132a624599247e08b59e"
+  },
+  "art_judgment": "Both actual back/profile edited-support IDs inspected. Blue3704 actual152 edited support genuinely appears in back middle; red other original support and green all other visible hairs remain. Does not prove every curve visible or all-view occlusion causation.",
+  "goal_complete": false
+}

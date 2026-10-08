@@ -1,0 +1,11 @@
+{
+  "source": "nativelongtailtrim147",
+  "source_sha256": "f6a29be784806f19c366e04883421c996362ddc265ee80f7eb06fe944243ddaf",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "04_Back.png": "055c5d69307b12f00197f2ad6da9b1d81cc7e10760b8ca816474c113d2d991fb",
+    "03_Side.png": "4ced9758339e374475541fb84475da4f0a708856289f13bf5a96d8894b986a23"
+  },
+  "art_judgment": "Both actual back/profile IDs inspected. Broad middle field includes green other-primary and pink original posterior support, blue retained133 selection above. These are current147 paths, not unchanged historic133/138 geometry. Attribution limited to viewed cameras.",
+  "goal_complete": false
+}

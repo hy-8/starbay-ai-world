@@ -1,0 +1,46 @@
+{
+  "records": [
+    {
+      "model": "nativelongtailtrim147",
+      "source_sha256": "f6a29be784806f19c366e04883421c996362ddc265ee80f7eb06fe944243ddaf",
+      "source_unchanged": true,
+      "image": "source_04_Back.png",
+      "image_sha256": "6447e0bc5612c82d35c9f3c702b37584133d5683e97bca511ded0d628f2e3a63"
+    },
+    {
+      "model": "nativeouterpilot152",
+      "source_sha256": "9b1b74d449e44e7dea43e32a2cd709abee05c90e02e83107404e69e902449b2f",
+      "source_unchanged": true,
+      "image": "candidate_04_Back.png",
+      "image_sha256": "44ffc9a05276e01bda3685428e081a5e3f8c25b1741e15df8618cba8af8401ea"
+    }
+  ],
+  "original_geometry_materials_lights_retained": true,
+  "added_temporary_key": {
+    "energy_w": 100,
+    "disk_size_m": 0.45,
+    "color": [
+      1.0,
+      0.93,
+      0.9
+    ],
+    "location_m": [
+      -0.4,
+      0.6,
+      2.15
+    ],
+    "target_m": [
+      0.0,
+      0.03,
+      1.8
+    ]
+  },
+  "samples": 256,
+  "denoising": "OpenImageDenoise",
+  "resolution": [
+    1200,
+    1400
+  ],
+  "scope": "Equal temporary additional rear key on both source/candidate actual Blender geometry. No source saves, image substitution or lighting-only aesthetic completion claim.",
+  "status": "Actual pair pending visual review"
+}

@@ -1,0 +1,40 @@
+{
+  "source": "nativelongtailtrim147",
+  "source_sha256": "f6a29be784806f19c366e04883421c996362ddc265ee80f7eb06fe944243ddaf",
+  "changed_object": "Original posterior coverage \u2022 surface-grown short fibers",
+  "pilot": false,
+  "outer_layer": true,
+  "selection_attribute": "native_posterior_outer_layers",
+  "changed_fibers": 7939,
+  "points_per_curve": 36,
+  "relocated_designed_endpoints": 6434,
+  "intermediate_discrete_body_repairs": 1540,
+  "actual_length_quantiles_m": [
+    0.07979960818598737,
+    0.10898348874613259,
+    0.1385021958465177,
+    0.16024361581385554
+  ],
+  "method": "Existing original support rootsY>15mm, Z(1.800,1.855)m, absoluteX<70mm; pilot limits rootsX<-5mm. Each own true-root cubic has spatially correlated sideways/downward heading,75-110mm plus+-9mm design chord before endpoint body relocation and26-38mm tangent lead. First4 points exact;20% transition blend. Same fiber count/radii/materials and all other objects retained. Interior1/1.4mm sampled body guard; not continuous collision or artistic approval.",
+  "design_controls": {
+    "lead_lift_range_m": [
+      0.016,
+      0.026
+    ],
+    "terminal_control_normal_lift_m": 0.014,
+    "added_lateral_wave_m": 0.01,
+    "endpoint_threshold_m": 0.018,
+    "endpoint_clearance_m": 0.022
+  },
+  "status": "Inspected incomplete study; adopted WIP",
+  "model_sha256": "ea931260824d2c738aa6e5bc7828e5ab88ea17ad19ce77095a7539ec9077ab1c",
+  "maximum_displacement_m": 0.13687607645988464,
+  "inspected_draft_sha256": {
+    "02_ThreeQuarter.png": "70a946fbda8abcfc95444ec361cb26af03b8a83f629a7bc7f5f145941696713f",
+    "03_Side.png": "99654809e8256c564b89cfaf89ecd103268d16b786dc21ba21ca7c229df08196",
+    "04_Back.png": "bf03b532faf8b1daac722fc24ed8250c1bbfd1bf4d5d2a631240204ef829fb19",
+    "05_OppositeSide.png": "fe7ed7dcd187dd11b16f477c4641d4951edde3fb95f6dda8e62f4e5a0a4b03b6"
+  },
+  "art_judgment": "All4 drafts, all5 neutral views,512/OIDN portrait and156 equal25W rear-key pair inspected. Middle fine-fuzz field slightly reduced and loose coverage more continuous under matched illumination. Ordinary side/front silhouette changes little; upper side rods, small lifted arcs/pale part remain, not reference complete. Adopt modest incomplete WIP; no new lamps saved in model.",
+  "goal_complete": false
+}

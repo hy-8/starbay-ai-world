@@ -1,0 +1,10 @@
+{
+  "source": "nativeouterlayers155",
+  "source_sha256": "ea931260824d2c738aa6e5bc7828e5ab88ea17ad19ce77095a7539ec9077ab1c",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "02_ThreeQuarter.png": "f53c69ae1994df0727717610edc7f46ee3ad530d1ce2de97608f268365cfc6a3"
+  },
+  "art_judgment": "Actual1920x2240/512/OIDN portrait inspected. Current147 frontal/upper design preserved and posterior coverage modestly fuller; no major front/profile improvement claim. Hair still not reference-quality finished.",
+  "goal_complete": false
+}

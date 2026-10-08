@@ -1,0 +1,27 @@
+{
+  "source": "nativelongtailtrim147",
+  "source_sha256": "f6a29be784806f19c366e04883421c996362ddc265ee80f7eb06fe944243ddaf",
+  "changed_object": "Original posterior coverage \u2022 surface-grown short fibers",
+  "pilot": true,
+  "selection_attribute": "native_posterior_support_pilot",
+  "changed_fibers": 3704,
+  "points_per_curve": 36,
+  "relocated_designed_endpoints": 1803,
+  "intermediate_discrete_body_repairs": 23779,
+  "actual_length_quantiles_m": [
+    0.06669422840153416,
+    0.09637286435754086,
+    0.12752876379861064,
+    0.14714846417856556
+  ],
+  "method": "Existing original support rootsY>15mm, Z(1.800,1.855)m, absoluteX<70mm; pilot limits rootsX<-5mm. Each own true-root cubic has spatially correlated sideways/downward heading,75-110mm plus+-9mm design chord before endpoint body relocation,26-38mm tangent lead and6-10mm lift. First4 points exact;20% transition blend. Same fiber count/radii/materials and all other objects retained. Endpoint6/8mm and interior1/1.4mm sampled body guards do not prove continuous collision or artistic approval.",
+  "status": "Inspected study; not formal continuation",
+  "model_sha256": "2d2afe64b961884811aa258e953c74948e10ceb89f3b0b1d0fc33eda4c1826c2",
+  "maximum_displacement_m": 0.12725265324115753,
+  "inspected_draft_sha256": {
+    "04_Back.png": "d6f1d60a2f757feec8263400d3cb4d52bb3fd25a7dc165cdf9bd959482a467d5",
+    "05_OppositeSide.png": "e294e5af79ee0ad4c0870689bf9a642fe8a94e2451b08c7814fbfcba0d27c776"
+  },
+  "art_judgment": "Both actual back/opposite drafts inspected. Existing support lengthened into own-root cubic, but appearance change small. Not expanded or adopted; not a completed posterior layer.",
+  "goal_complete": false
+}

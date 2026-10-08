@@ -1,0 +1,9 @@
+{
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "source_04_Back.png": "7be26b6199c4a6416ab91f6d10b484d072cebf48150fe0612dd5fd3c270e0d0a",
+    "candidate_04_Back.png": "c4ce8d61b27abfa400ee1ee0d3530d398db6419f51fdd82b77127e73894356f7"
+  },
+  "art_judgment": "Both actual equal25W additional rear-key views inspected. Full155 middle fuzz reduces slightly and coverage bends more continuously than147, but silhouette benefit limited. Less wash than100W, still a temporary inspection light; not final hair color/shape completion.",
+  "goal_complete": false
+}

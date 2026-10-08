@@ -1,0 +1,19 @@
+{
+  "source": "nativeouterpilot152",
+  "source_sha256": "9b1b74d449e44e7dea43e32a2cd709abee05c90e02e83107404e69e902449b2f",
+  "source_unchanged": true,
+  "edited_object": "Original posterior coverage \u2022 surface-grown short fibers",
+  "points_per_curve": 36,
+  "selection_attribute": "native_posterior_outer_pilot",
+  "selection_rule": "native_posterior_outer_pilot",
+  "legend": {
+    "blue": "Edited selected-object curves",
+    "red": "Untouched selected-object curves",
+    "green": "All other visible native hair components",
+    "gray": "Body/clothes"
+  },
+  "edited_fibers": 3704,
+  "unselected_fibers": 32296,
+  "method": "Exact temporary curve subsets with original radii/matrix, actual cameras, emission diagnostic only",
+  "status": "Unreviewed actual component diagnostic"
+}

@@ -1,0 +1,19 @@
+{
+  "source": "nativelongtailtrim147",
+  "source_sha256": "f6a29be784806f19c366e04883421c996362ddc265ee80f7eb06fe944243ddaf",
+  "pilot": true,
+  "selection_attribute": "native_individual_back_pilot",
+  "changed_fibers": 5377,
+  "designed_endpoint_relocations": 0,
+  "intermediate_discrete_body_repairs": 220,
+  "method": "Nonfringe/non133-upper primary rootsY>-8mm andmidpointY>25mm; pilot restricts rootsX<-5mm. Each own-root/end cubic:18-45mm projected tangent lead,9-15mm normal lead lift,8mm endpoint control normal/lateral phase. Midpath5-9mm normal bow and9mm root-correlated loose lateral wave. Endpoints only2.2mm body relocation allowed; current roots/radii/topology/fringe/upper/otherhair/materials/lighting retained. Discrete1/1.4mm sampled body guard with4-point envelope, not continuous collision or art acceptance.",
+  "status": "Inspected study; not formal continuation",
+  "model_sha256": "a77b790cb788b6f567266e0fd7df18a687def9cd25f0cb25fae9b1f8c0cf87e1",
+  "maximum_displacement_m": 0.031631894409656525,
+  "inspected_draft_sha256": {
+    "04_Back.png": "4970eca2210900b90133b08089faae4123243263e5ce074ed66d4e1594c4fbf9",
+    "05_OppositeSide.png": "57a5bf8531486238736cdd8d6684f0cc96de5d74b782407a4cd8be48215bf6f3"
+  },
+  "art_judgment": "Both actual back/opposite drafts inspected. Own-root/end posterior primary fall slightly smoother/looser, central appearance remains broad. Not expanded or adopted; not mixed into155.",
+  "goal_complete": false
+}

@@ -1,0 +1,38 @@
+{
+  "source": "nativelongtailtrim147",
+  "source_sha256": "f6a29be784806f19c366e04883421c996362ddc265ee80f7eb06fe944243ddaf",
+  "changed_object": "Original posterior coverage \u2022 surface-grown short fibers",
+  "pilot": true,
+  "outer_layer": true,
+  "selection_attribute": "native_posterior_outer_pilot",
+  "changed_fibers": 3704,
+  "points_per_curve": 36,
+  "relocated_designed_endpoints": 3510,
+  "intermediate_discrete_body_repairs": 481,
+  "actual_length_quantiles_m": [
+    0.07979960818598737,
+    0.11335920214032572,
+    0.14381157452772098,
+    0.16024361581385554
+  ],
+  "method": "Existing original support rootsY>15mm, Z(1.800,1.855)m, absoluteX<70mm; pilot limits rootsX<-5mm. Each own true-root cubic has spatially correlated sideways/downward heading,75-110mm plus+-9mm design chord before endpoint body relocation and26-38mm tangent lead. First4 points exact;20% transition blend. Same fiber count/radii/materials and all other objects retained. Interior1/1.4mm sampled body guard; not continuous collision or artistic approval.",
+  "design_controls": {
+    "lead_lift_range_m": [
+      0.016,
+      0.026
+    ],
+    "terminal_control_normal_lift_m": 0.014,
+    "added_lateral_wave_m": 0.01,
+    "endpoint_threshold_m": 0.018,
+    "endpoint_clearance_m": 0.022
+  },
+  "status": "Inspected study; not formal continuation",
+  "model_sha256": "9b1b74d449e44e7dea43e32a2cd709abee05c90e02e83107404e69e902449b2f",
+  "maximum_displacement_m": 0.13687607645988464,
+  "inspected_draft_sha256": {
+    "04_Back.png": "ea9a8fb17ab050346ca96fc0a421657401a81445289f9e96e2192a628a5f8b75",
+    "05_OppositeSide.png": "683a13b81160dd5154d55719ad519252da79ac2dcceb70cb36cb5f9e95151fe3"
+  },
+  "art_judgment": "Both actual drafts,153 edited-subset IDs and154 equal100W rear-key pair inspected. New covering curves genuinely visible in back middle, modest curl change;100W renders washed pale. Promising local covering improvement only; full155 generated independently from147.",
+  "goal_complete": false
+}

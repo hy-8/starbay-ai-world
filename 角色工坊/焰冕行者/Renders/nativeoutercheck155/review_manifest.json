@@ -1,0 +1,14 @@
+{
+  "source": "nativeouterlayers155",
+  "source_sha256": "ea931260824d2c738aa6e5bc7828e5ab88ea17ad19ce77095a7539ec9077ab1c",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "01_Front.png": "feaf003ad84614ead9920bfcace9610533af9aa12cc20b9aa8b33b15684825ec",
+    "02_ThreeQuarter.png": "d962f2ea5e24897e6c3485594b1b762eb47799f2828d1160879e8f90ff476303",
+    "03_Side.png": "cb57d01a3f69dfebe64b299e1a495541649a376f8fdee5e0b66f17d3ff4c1b29",
+    "04_Back.png": "2cf6cf30ba6b98df9c5e83958d70f52f06defc6cc9e006b6519c6913198f6b09",
+    "05_OppositeSide.png": "44dccde5c922478b81f79c9f346ae8de1eb7cfcc2e36a3c97d2f3d69f949cbb2"
+  },
+  "art_judgment": "All5 actual1200x1400/192/no-denoise neutral views inspected. Eyes, ear/nape coverage and compact tips remain; rear still appears broad under original front-oriented light. Side upper ordered flows and small arcs/pale part remain. Keep incomplete155 only.",
+  "goal_complete": false
+}
