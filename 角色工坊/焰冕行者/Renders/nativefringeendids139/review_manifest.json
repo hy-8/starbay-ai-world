@@ -1,0 +1,11 @@
+{
+  "source": "nativelowerlayers138",
+  "source_sha256": "8421220dee7e337e1f03c48147f88b65a7f27a86b82b37a50f1f35823f26964f",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "02_ThreeQuarter.png": "0896c2e31b14a42966e4825f3ec6ea7e26f3cb87324b2622474d5af03157b08c",
+    "01_Front.png": "10c2260fcc5d7e2b31ca931745c9f2c996a54b4c2de8858023cb64fc7f161689"
+  },
+  "art_judgment": "Both actual3/4/front ID images inspected. Tiny hooked foreground tail is in red actual current136 fringe; prominent horizontal upper-front beams include blue inherited133 upper. Green other-primary here includes newly edited138 lower9215 shafts, not all unchanged source geometry. Attribution limited to viewed cameras.",
+  "goal_complete": false
+}

@@ -1,0 +1,10 @@
+{
+  "source": "nativeindividualfringe136",
+  "source_sha256": "17fcd7065da830bc0e015304c6700f9d2b7bab560d6517f3d67cd0773d946de5",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "02_ThreeQuarter.png": "77cde042115292753143c9fc3e3aea000cb0705d9f34a6de3d3cdea8d46ca889"
+  },
+  "art_judgment": "Actual1920x2240/512/OIDN portrait inspected.Individual fringe fall more coherent; upper ordered beams/crossing rods remain above it, and tiny dark tail hook near right eyebrow remains. Incomplete intermediate.",
+  "goal_complete": false
+}

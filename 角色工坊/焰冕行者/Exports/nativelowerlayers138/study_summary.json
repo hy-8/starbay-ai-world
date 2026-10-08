@@ -1,0 +1,21 @@
+{
+  "source": "nativeindividualfringe136",
+  "source_sha256": "17fcd7065da830bc0e015304c6700f9d2b7bab560d6517f3d67cd0773d946de5",
+  "selection_attribute": "native_staggered_lower_posterior",
+  "target_groups": 100,
+  "edited_groups": 94,
+  "changed_fibers": 9215,
+  "discrete_body_repairs": 42,
+  "method": "Actual other-primary shafts exclude current fringe and133 upper. MidpointY>35mm/endY>20mm/endZ<1.770m,100 whole-flow target families. Per-family source-path parameter shortening .80-.98 minusup-to.14 forupper roots, independent .012 scatter, first12 points exact. Terminal4-10mm radial/+-4mm lateral stagger increases smoothly frompoint11. Existing source shapes reused rather than raised arches. Parameter rates are not strict arc-length cuts. Radii/topology/fringe/upper/othercomponents/materials/lighting exact; discrete body1/1.4mm point guard, no continuous clothing/motion proof.",
+  "status": "Actually reviewed; reference unachieved",
+  "model_sha256": "8421220dee7e337e1f03c48147f88b65a7f27a86b82b37a50f1f35823f26964f",
+  "art_judgment": "All4 actual drafts, all5 neutral views and1920x2240/512/OIDN portrait inspected.94 lower posterior families/9215 shafts use staggered source parameter cuts and modest terminal shifts, exact first12 points;136 fringe and133 upper retained. Nape tips more compact/tapered and side cleaner. Back center still broad/flat, upper rods remain ordered, pale part, small lifted arcs, a thin long side strand and forehead tiny hook persist. Adopt as incomplete WIP, not publishable reference-quality artwork.",
+  "goal_complete": false,
+  "maximum_displacement_m": 0.09687507152557373,
+  "inspected_draft_sha256": {
+    "02_ThreeQuarter.png": "30bcc01afacc2c3345a3a332d8f301a5b429d6e5993aa22d1bbf94e3ac04f6fe",
+    "03_Side.png": "4cb2e351a041b7be43e352d6e9609390bc205ddc802b7a047fecf0cde8e5890e",
+    "04_Back.png": "dc0376a66638ba1e21004334f8aefb3331b9fdd7c7038f7123c8601a885581e1",
+    "05_OppositeSide.png": "81abc0e0b42b21d4a8746c72aa289f3ac2b5fe9ea38e5d8e35d9c8244c6691d4"
+  }
+}

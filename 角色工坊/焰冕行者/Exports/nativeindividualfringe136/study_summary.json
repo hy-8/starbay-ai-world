@@ -1,0 +1,25 @@
+{
+  "source": "nativefinefringe135",
+  "source_sha256": "42aac584d3e551080e81b787ce1b07a254755207733ee49b26ba3e7498f3cebe",
+  "selection_attribute": "native_individual_fringe_fall",
+  "changed_fibers": 8539,
+  "lowered_high_endpoints": 0,
+  "designed_body_endpoint_relocations": 889,
+  "intermediate_discrete_body_repairs": 93919,
+  "lead_length_range_m": [
+    0.02558396028061055,
+    0.062
+  ],
+  "method": "Every actual current fringe shaft gets individual cubic guide from its own true root to own current end, high endpoints allowed to descend35mm belowroot and near-body endpoints allowed2.2mm clearance. Initial scalp-projected chord tangent23-62mm with4-6mm normal relief, second control28% backward alongown chord. No group mean or transported scatter. Radii/topology/non-fringe/materials/lighting retained. Discrete intermediate0.8/1.1mm body guard with4-point envelope, not continuous collision acceptance.",
+  "status": "Actually reviewed; reference unachieved",
+  "model_sha256": "17fcd7065da830bc0e015304c6700f9d2b7bab560d6517f3d67cd0773d946de5",
+  "art_judgment": "All4 actual drafts and1920x2240/512/OIDN portrait inspected.Each8539 fringe shaft receives own root/end cubic, no group mean or transported cross-section. Forehead crossings soften and eyes clear. Still a visible tiny dark end hook near right eyebrow and broad ordered upper beams; not reference complete. Useful fringe inherited by138.",
+  "goal_complete": false,
+  "maximum_displacement_m": 0.0586119070649147,
+  "inspected_draft_sha256": {
+    "01_Front.png": "49b22e77c91c337a738ebfa29b19770cad264898f2525e90d4aa7e8bf61480ad",
+    "02_ThreeQuarter.png": "4bcbca538e9c8ae36d3f57db8079494553af9f44f7532a5a577fab75e4a79b77",
+    "03_Side.png": "9beaa3ebdf64023ddfd070da7697db450eb3151691e63e98025112d303c71ab7",
+    "05_OppositeSide.png": "3887c94b23f12ea17c9180b6ee37796ab2bf613bbe9f5d5bf214a9d51d146a1c"
+  }
+}

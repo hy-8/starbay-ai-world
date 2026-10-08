@@ -1,0 +1,15 @@
+{
+  "source": "nativelowerlayers138",
+  "source_sha256": "8421220dee7e337e1f03c48147f88b65a7f27a86b82b37a50f1f35823f26964f",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "42d2e4fc545d03717286f75c07acafcadc95a60810767daaf64556f0eeccfb92",
+  "status": "Actual render pending art review; no generative image replacement"
+}
