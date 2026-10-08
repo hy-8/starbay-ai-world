@@ -1,0 +1,24 @@
+{
+  "source": "nativeindividualupper143",
+  "source_sha256": "095769cb228df1c6c338b9e83ab33547d98b0a05ce594aadf66bb97eaf21feec",
+  "pilot": false,
+  "selection_attribute": "native_posterior_soft_wave",
+  "changed_fibers": 9468,
+  "parameter_rate_range": [
+    0.65,
+    0.9449999572168228
+  ],
+  "discrete_body_repairs": 0,
+  "maximum_displacement_m": 0.06707596033811569,
+  "method": "Nonfringe primary rootsY>15mm, midpointY>35mm, arc length>45mm; pilot restricts rootsX<-10mm. Each own source path resampled with root-correlated .65-.97 parameter cut, first12 points exact. Smooth lateral up to8mm/normal4-8mm midlength wave, up to5mm endpoint lateral/outward/vertical offsets. Roots/radii/topology/current fringe/other components/materials/lighting retained. 1/1.4mm discrete body guard expanded3points, not continuous collision proof. Path parameter cut is not an arc-length guarantee.",
+  "status": "Inspected incomplete shape study",
+  "model_sha256": "e540510a958bb9d48f5488c6350b6bb308021a7a7da36ffb53fd702f1a6e882b",
+  "art_judgment": "All4 drafts inspected. Posterior side tips shorter/compact with own-path wave field, middle back remains broadly flat. Useful modest intermediate; not natural-layer completion. Body guard made zero point repairs, no continuous collision claim.",
+  "goal_complete": false,
+  "inspected_draft_sha256": {
+    "02_ThreeQuarter.png": "8c21f2b457186a547056eda2d3d4b9eac07e7f0ab36442ad9b85ab9093b5501e",
+    "03_Side.png": "ee2bd654d3e877efba1ed9b564f3eae7c7fc522c01f5b3f88d484bb54287e258",
+    "04_Back.png": "2bf7126267c7cd069f04ed489604f6d0ea01a7081b03ca0c98a62f191ee05e11",
+    "05_OppositeSide.png": "a1d1b887751c84a5c936a33fa088455745e7b54631b58d52d3523f8a8369d3b5"
+  }
+}

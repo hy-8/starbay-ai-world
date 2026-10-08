@@ -1,0 +1,22 @@
+{
+  "source": "nativeposteriorwave145",
+  "source_sha256": "e540510a958bb9d48f5488c6350b6bb308021a7a7da36ffb53fd702f1a6e882b",
+  "candidate": "nativelongtailtrim147",
+  "candidate_sha256": "f6a29be784806f19c366e04883421c996362ddc265ee80f7eb06fe944243ddaf",
+  "mesh_count": 141,
+  "mesh_geometry_uv_shape_keys_transforms_exact": true,
+  "visible_native_objects": 4,
+  "curves_finite_radii_positive_textures_available": true,
+  "edited_object": "Bystedt layercut derivative \u2022 native root reflow",
+  "edited_fibers": 1343,
+  "all_radii_topology_transforms_exact": true,
+  "all_roots_exact": true,
+  "unselected_fibers_exact": true,
+  "other_native_objects_exact": true,
+  "max_displacement_m": 0.05832317844033241,
+  "scope": "Static localized file comparison. Not art, segment/body/eye/clothing/animation collision acceptance.",
+  "preserved_prefix_points": 12,
+  "all_primary_prefix_points_exact": true,
+  "all_material_slots_graphs_exact": true,
+  "light_world_camera_display_exact": true
+}

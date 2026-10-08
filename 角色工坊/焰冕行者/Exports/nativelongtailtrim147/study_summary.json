@@ -1,0 +1,31 @@
+{
+  "source": "nativeposteriorwave145",
+  "source_sha256": "e540510a958bb9d48f5488c6350b6bb308021a7a7da36ffb53fd702f1a6e882b",
+  "selection_attribute": "native_lateral_longest_trim",
+  "gentle": true,
+  "changed_fibers": 1343,
+  "cut_parameter_range": [
+    0.688897177252973,
+    0.9747068407416901
+  ],
+  "selected_old_tip_z_range_m": [
+    1.6047757863998413,
+    1.639983892440796
+  ],
+  "selected_new_tip_z_range_m": [
+    1.6440000030610042,
+    1.6599999522428484
+  ],
+  "method": "Nonfringe primary tipsZ<1.640m, absolute tipX>35mm andpoint11Z>1.700m. Terminate each own source trajectory at first crossing of root-correlated1.652m+-8mm plane; reparameterize point11 through64, all first12 points exact. No replacement guide, new fibers, offsets or body correction. Radii/topology/current fringe/unselected/othercomponents/materials/lighting retained. Source trajectory interpolation is not continuous collision acceptance or guaranteed reference shape.",
+  "status": "Inspected incomplete shape study",
+  "model_sha256": "f6a29be784806f19c366e04883421c996362ddc265ee80f7eb06fe944243ddaf",
+  "art_judgment": "All4 drafts, all5 neutral views and512/OIDN portrait inspected. Independently from145, only longest lateral tipsZ<1.640m clipped along own source paths to1.644-1.660m. Thin neck/collar outlier removed and better length transition than146. Back remains broad/flat, side upper bend orderly, small raised arcs and part still need work. Adopt as incomplete WIP only.",
+  "goal_complete": false,
+  "maximum_displacement_m": 0.05832317844033241,
+  "inspected_draft_sha256": {
+    "02_ThreeQuarter.png": "ba5ae184973147ebc64799c7fabbaec267d79b0a886b252f1f047f8d1850eeba",
+    "03_Side.png": "48a1f07ad6523dfac461689573ace9d75f2595616ad19367d53d78b773739379",
+    "04_Back.png": "7c3fcbd10d3f4b87fb6d549896ce24f646a2e811619acf7c9558461797f12551",
+    "05_OppositeSide.png": "bd7f027537cdddb052d7e2ca0f5edd0aa18e02a857123a0fbd1aee4f69b1d8f1"
+  }
+}

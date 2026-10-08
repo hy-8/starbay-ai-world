@@ -1,0 +1,25 @@
+{
+  "source": "nativeendspacing141",
+  "source_sha256": "0972aac99499f4b8ab22d4e1dbba9c1a1c515991dce40794af5d027fddb3f17d",
+  "upper_mode": true,
+  "pilot": true,
+  "input_selection_attribute": "native_descending_fine_locks",
+  "selection_attribute": "native_individual_upper_pilot",
+  "changed_fibers": 13142,
+  "lowered_high_endpoints": 0,
+  "designed_body_endpoint_relocations": 94,
+  "intermediate_discrete_body_repairs": 7698,
+  "lead_length_range_m": [
+    0.028,
+    0.06372205591353886
+  ],
+  "method": "Actual133 upper mask, restricted to positive-X roots>18mm/rootZ>1.800m in pilot. Initial scalp-projected chord tangent28-82mm with6-12mm normal relief varied byroot XY field. Each selected shaft gets individual cubic guide from its own true root to own current end, high endpoints allowed to descend35mm belowroot and near-body endpoints allowed2.2mm clearance. Second control28% backward alongown chord. No group mean or transported scatter. Radii/topology/unselected/materials/lighting retained. Discrete intermediate0.8/1.1mm body guard with4-point envelope, not continuous collision acceptance.",
+  "status": "Inspected incomplete shape study",
+  "model_sha256": "cf55f088ee1b3c7147187eb00a106c673fdd6809984762c82758ef11cae483f2",
+  "art_judgment": "Actual3/4 pilot inspected: coarse upper rods reduce, loose fall and fine edge increases. Expanded independently from141 to143. No saved-file pilot/full equivalence assertion.",
+  "goal_complete": false,
+  "maximum_displacement_m": 0.02445681020617485,
+  "inspected_draft_sha256": {
+    "02_ThreeQuarter.png": "4ecb611cdf2150be2715662a58ff3dc9f1be702b99a3c59f0dece6a2d139144e"
+  }
+}

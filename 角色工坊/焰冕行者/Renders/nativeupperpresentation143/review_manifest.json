@@ -1,0 +1,10 @@
+{
+  "source": "nativeindividualupper143",
+  "source_sha256": "095769cb228df1c6c338b9e83ab33547d98b0a05ce594aadf66bb97eaf21feec",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "02_ThreeQuarter.png": "c15744d3a9bbb0360add7d7a35f6cc1028202ce447795f913f81191105816985"
+  },
+  "art_judgment": "Actual512/OIDN portrait inspected. Upper rods soften without material/light edits. Dark forehead hook less prominent in combined143 than138, not isolated141 cause proof. Fine upper edge, broad part/back and long side tail persist. Incomplete.",
+  "goal_complete": false
+}

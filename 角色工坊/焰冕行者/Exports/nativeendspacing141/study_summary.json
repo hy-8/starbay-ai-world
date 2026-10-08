@@ -1,0 +1,54 @@
+{
+  "source": "nativelowerlayers138",
+  "source_sha256": "8421220dee7e337e1f03c48147f88b65a7f27a86b82b37a50f1f35823f26964f",
+  "roi_definition": [
+    [
+      "02_ThreeQuarter",
+      [
+        0.572,
+        0.479
+      ],
+      [
+        0.02,
+        0.018
+      ]
+    ],
+    [
+      "01_Front",
+      [
+        0.645,
+        0.477
+      ],
+      [
+        0.018,
+        0.019
+      ]
+    ]
+  ],
+  "terminal_roi_fibers": 171,
+  "selected_turn_fibers": 171,
+  "roi_terminal_turn_quantiles_deg": [
+    0.341312569261589,
+    0.6398100249764909,
+    0.7469061162010727,
+    0.7786848026736443,
+    0.8053089657315183
+  ],
+  "criterion": "Current fringe terminal points56-64 in either inspected camera ellipse, without turn gate. A local endpoint-spacing counterexample after140 found zero high-turn shafts. Projection is not an occlusion or crowding cause proof.",
+  "selection_attribute": "native_local_fringe_end_release",
+  "changed_fibers": 171,
+  "intermediate_body_repairs": 0,
+  "method": "Only actual ROI/turn-selected fringe tails refit frompoint52 into individual tangent/chord cubic. Endpoint allowed4mm forward/3mm down and3mm signed body point clearance. Exact points0-52/radii/topology/unselected/materials/lighting preserved. Intermediate point guard is not continuous collision proof.",
+  "status": "Inspected incomplete shape study",
+  "endpoint_spacing_method": "Actual ROI-hit shafts only, additional deterministic+-2mm lateral/vertical endpoint stagger. No claim that140 showed sharp turns or proved all dark-tip visibility causes.",
+  "model_sha256": "0972aac99499f4b8ab22d4e1dbba9c1a1c515991dce40794af5d027fddb3f17d",
+  "art_judgment": "All4 actual drafts inspected. Local ROI-hit endpoint spacing is subtle, no obvious eye/profile regression. No standalone high141; subsequent143/147 inherited it.140 disproved acute terminal-turn hypothesis for this ROI; do not claim projection proves occlusion or crowding. Exact first53 points retained.",
+  "goal_complete": false,
+  "maximum_displacement_m": 0.006403051316738129,
+  "inspected_draft_sha256": {
+    "01_Front.png": "613babfe441a8adb9cd0edaef52e82dc262759cdf26d4d81d486ccfdc61b3f4d",
+    "02_ThreeQuarter.png": "bdab0642d799313fa287015c8e452c68a69b4ab797f80e492371e6637155391f",
+    "03_Side.png": "e9416d4beba7a766dcb46a7e8d1b9629807666d85301211c60440eee777d7789",
+    "05_OppositeSide.png": "de8a0a95b9d4d231b199725a52d1cfe2a4065202ab8f363d73751b5dbcbe173b"
+  }
+}

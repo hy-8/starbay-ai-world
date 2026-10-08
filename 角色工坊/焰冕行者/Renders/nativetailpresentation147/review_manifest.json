@@ -1,0 +1,10 @@
+{
+  "source": "nativelongtailtrim147",
+  "source_sha256": "f6a29be784806f19c366e04883421c996362ddc265ee80f7eb06fe944243ddaf",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "02_ThreeQuarter.png": "ab2dc1b4b60529a1a98e3edaa5bd7120da422eff2ceb5c4c4b360fdc1510f703"
+  },
+  "art_judgment": "Actual512/OIDN portrait inspected. Combined143 upper,145 modest posterior layers and147 selective longest-tail trim: thin neck/collar outlier removed, side coverage remains. Still lacks reference sculpted natural layering, particularly flat rear/part and some orderly upper side flow. Adopt incomplete147, not publishable final character.",
+  "goal_complete": false
+}

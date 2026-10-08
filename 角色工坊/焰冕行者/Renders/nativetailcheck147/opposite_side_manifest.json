@@ -1,0 +1,24 @@
+{
+  "version": "nativetailcheck147",
+  "source": "nativelongtailtrim147",
+  "source_sha256": "f6a29be784806f19c366e04883421c996362ddc265ee80f7eb06fe944243ddaf",
+  "source_unchanged": true,
+  "method": "Existing neutral cameras when requested, plus actual opposite camera mirrored in world space with local-X handedness correction; no pixel flip or geometry edit",
+  "samples": 192,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "denoising": false,
+  "image_sha256": "538c1edfb6f209fe6d01f4e1cd8861fc5a35ad34d5cf29f2b8f4eda6e4f7d147",
+  "images_sha256": {
+    "01_Front.png": "a7ae468ff89e0a33021c1632f88ca25b40e7e18bc915544c0e91491046556998",
+    "02_ThreeQuarter.png": "f7638d635366f4e81d6056112a31372733c7e2c8d3f06492e62d47060bed1af9",
+    "03_Side.png": "ba8607934c702f862f830d8b5184bf8965564a2e03b507b1ad14f5e7599e0ffe",
+    "04_Back.png": "043e4859d3329e013399f75ff41fb38bae55f9c2174a8d9401e34aee2b633384",
+    "05_OppositeSide.png": "538c1edfb6f209fe6d01f4e1cd8861fc5a35ad34d5cf29f2b8f4eda6e4f7d147"
+  },
+  "status": "Unreviewed actual neutral/opposite profile diagnostic, not artistic approval",
+  "single_camera": null,
+  "opposite_image_reused_from": null
+}

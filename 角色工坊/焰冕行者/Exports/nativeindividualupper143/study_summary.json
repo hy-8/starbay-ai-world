@@ -1,0 +1,28 @@
+{
+  "source": "nativeendspacing141",
+  "source_sha256": "0972aac99499f4b8ab22d4e1dbba9c1a1c515991dce40794af5d027fddb3f17d",
+  "upper_mode": true,
+  "pilot": false,
+  "input_selection_attribute": "native_descending_fine_locks",
+  "selection_attribute": "native_individual_upper_fall",
+  "changed_fibers": 24634,
+  "lowered_high_endpoints": 0,
+  "designed_body_endpoint_relocations": 761,
+  "intermediate_discrete_body_repairs": 78030,
+  "lead_length_range_m": [
+    0.028,
+    0.07280371761365996
+  ],
+  "method": "Actual133 upper mask, restricted to positive-X roots>18mm/rootZ>1.800m in pilot. Initial scalp-projected chord tangent28-82mm with6-12mm normal relief varied byroot XY field. Each selected shaft gets individual cubic guide from its own true root to own current end, high endpoints allowed to descend35mm belowroot and near-body endpoints allowed2.2mm clearance. Second control28% backward alongown chord. No group mean or transported scatter. Radii/topology/unselected/materials/lighting retained. Discrete intermediate0.8/1.1mm body guard with4-point envelope, not continuous collision acceptance.",
+  "status": "Inspected incomplete shape study",
+  "model_sha256": "095769cb228df1c6c338b9e83ab33547d98b0a05ce594aadf66bb97eaf21feec",
+  "art_judgment": "All4 drafts, all5 neutral views and512/OIDN portrait inspected. Coarse upper rods soften, side fall looser. Fine/frizzy edge persists but high view is more coherent than noisy draft. Broad back/part, small arcs and long lateral tail remain; incomplete intermediate inherited by145/147.",
+  "goal_complete": false,
+  "maximum_displacement_m": 0.028188221156597137,
+  "inspected_draft_sha256": {
+    "01_Front.png": "7cab6290051c46ae4a4dc7d553c1deca93533d1898bbf07c7faf93a15517b955",
+    "02_ThreeQuarter.png": "82bcaaa76db5c6ef91a917764e5e396e635909ef26d77ed1d524a05fc0db8c01",
+    "03_Side.png": "c96beaa06ddddfbaef2d2339dda7955c53cca05ebecaff1777bf426fc47caa22",
+    "05_OppositeSide.png": "4337ac6272f01f77de5682ebf6fdd2614d642c1f8ab931d202a9fe2f8b54b1b8"
+  }
+}

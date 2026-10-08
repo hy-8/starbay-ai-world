@@ -1,0 +1,15 @@
+{
+  "source": "nativelongtailtrim147",
+  "source_sha256": "f6a29be784806f19c366e04883421c996362ddc265ee80f7eb06fe944243ddaf",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "ab2dc1b4b60529a1a98e3edaa5bd7120da422eff2ceb5c4c4b360fdc1510f703",
+  "status": "Actual render pending art review; no generative image replacement"
+}

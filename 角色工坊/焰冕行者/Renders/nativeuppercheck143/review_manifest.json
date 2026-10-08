@@ -1,0 +1,14 @@
+{
+  "source": "nativeindividualupper143",
+  "source_sha256": "095769cb228df1c6c338b9e83ab33547d98b0a05ce594aadf66bb97eaf21feec",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "01_Front.png": "81e69f34d07237289889c67529fe91209a28152af23f0dd2a75c4348e1d2589c",
+    "02_ThreeQuarter.png": "88100522bf69d0a7e39c26e8ef73f4fbb6d8a0655fe8822411351ed731821305",
+    "03_Side.png": "eed702fb19c022275b39ebbf55dbb6c5478c8cf8cf26ac4691e4cf082451f3cf",
+    "04_Back.png": "73071bae742996f5ee628102b520e9bf9dc46aba967d2bc0d71d21c28bf20134",
+    "05_OppositeSide.png": "95991230bdfaab3ce476be8243d57d5a4d211e0e7848493fb524a9fabdca6233"
+  },
+  "art_judgment": "All5 actual192/no-denoise neutral views inspected. Eyes clear, softer upper. Back middle broad/flat with long lateral curtain; side upper vertical flow remains orderly, part pale and small lifted arcs remain. Incomplete intermediate.",
+  "goal_complete": false
+}

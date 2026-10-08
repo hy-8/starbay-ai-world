@@ -1,0 +1,22 @@
+{
+  "source": "nativeindividualupper143",
+  "source_sha256": "095769cb228df1c6c338b9e83ab33547d98b0a05ce594aadf66bb97eaf21feec",
+  "pilot": true,
+  "selection_attribute": "native_posterior_wave_pilot",
+  "changed_fibers": 3797,
+  "parameter_rate_range": [
+    0.65,
+    0.944997785931709
+  ],
+  "discrete_body_repairs": 0,
+  "maximum_displacement_m": 0.05679149180650711,
+  "method": "Nonfringe primary rootsY>15mm, midpointY>35mm, arc length>45mm; pilot restricts rootsX<-10mm. Each own source path resampled with root-correlated .65-.97 parameter cut, first12 points exact. Smooth lateral up to8mm/normal4-8mm midlength wave, up to5mm endpoint lateral/outward/vertical offsets. Roots/radii/topology/current fringe/other components/materials/lighting retained. 1/1.4mm discrete body guard expanded3points, not continuous collision proof. Path parameter cut is not an arc-length guarantee.",
+  "status": "Inspected incomplete shape study",
+  "model_sha256": "0b773ecb6c05c1e332fc30b3f849ad0b6dc74927b31a037b761d46a4dca7dec6",
+  "art_judgment": "Both actual back/3/4 pilot drafts inspected. Small local posterior shortening, back flat field persists. Expand once to145 to check both sides, no claim pilot solved main back shape.",
+  "goal_complete": false,
+  "inspected_draft_sha256": {
+    "02_ThreeQuarter.png": "c3f76c176ba38e0a38473886b26e5c7d59bd305bce4bbae91f3c67be6ce00e94",
+    "04_Back.png": "02a0f9b9e4bff40196ca7d57b8c8d184b02bad597e92d609c08da100f9e2afda"
+  }
+}
