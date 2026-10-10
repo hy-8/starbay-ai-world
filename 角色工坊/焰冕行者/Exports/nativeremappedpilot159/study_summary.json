@@ -1,0 +1,23 @@
+{
+  "source": "nativeouterlayers155",
+  "source_sha256": "ea931260824d2c738aa6e5bc7828e5ab88ea17ad19ce77095a7539ec9077ab1c",
+  "pilot": true,
+  "descending": true,
+  "layer_map": true,
+  "selection_attribute": "native_remapped_upper_pilot",
+  "changed_fibers": 13142,
+  "preserved_prefix_points": 6,
+  "intermediate_discrete_body_repairs": 19338,
+  "maximum_displacement_m": 0.16292185414307686,
+  "method": "Actual133 upper selection; pilot positive-X roots>18mm/Z>1.800m. Own-root cubic, free layer endpoints from root field:height=clamp((rootZ-1.800)/.100), X=side*(78+16height+6sinphase)mm,Y=.55rootY+22mm+8cosphase,Z=rootZ-(50+120height)mm+8sinphase. 35-75mm projected root tangent with10-16mm normal lift; terminal control32mm above tip plus4mm local body normal for downward fall. Smooth onset preserves first6 points; no new mean-guide or cross-section transport. Original radii/topology/otherhair/materials/lights unchanged. Discrete1/1.4mm body-point protection with4-point envelope is not continuous collision acceptance.",
+  "status": "Unreviewed actual geometry study; no aesthetic completion claim",
+  "model_sha256": "2e1dde60c8dcee5fc57afb25e4144deaeca386b5473a0b555e48c3216a007871",
+  "inspected_draft_sha256": {
+    "02_ThreeQuarter.png": "54c1f21df3131db0c4f25729c590a59ad339e8fa8cf5dfc58bf1f0a945673c9f",
+    "03_Side.png": "2ce1cecce27d13932c50b773bd7df227d48a0c988291ed87577cbce922474a26"
+  },
+  "all_drafts_actually_inspected": true,
+  "art_judgment": "Both actual drafts inspected. Root-field free endpoint mapping breaks inherited rods but compresses side appearance into broad smooth canopy; rejected.",
+  "goal_complete": false,
+  "verification_scope": "Generator internal root/prefix/unselected assertions; independent saved-file audit only for161/162"
+}

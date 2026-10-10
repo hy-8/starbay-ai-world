@@ -1,0 +1,10 @@
+{
+  "source": "nativeremappedsides162",
+  "source_sha256": "29de4bf38489e6c6f8aa479bbffeedf5c3275a4ffe04e0fcd52d14e04a27edd3",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "02_ThreeQuarter.png": "1cfef6339aed8492f5e2a6d4bd1a62de5f108642ffa8faad24bc134f2b9d326f"
+  },
+  "art_judgment": "Actual1920x2240/512/OIDN portrait inspected.161 added knot absent after retaining frontal region; side shape modestly softer. Existing upper rods/arcs/part still unfinished. No lighting/geometry substitution.",
+  "goal_complete": false
+}

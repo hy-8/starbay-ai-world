@@ -1,0 +1,22 @@
+{
+  "source": "nativeouterlayers155",
+  "source_sha256": "ea931260824d2c738aa6e5bc7828e5ab88ea17ad19ce77095a7539ec9077ab1c",
+  "pilot": true,
+  "descending": true,
+  "selection_attribute": "native_settled_upper_pilot",
+  "changed_fibers": 13142,
+  "preserved_prefix_points": 6,
+  "intermediate_discrete_body_repairs": 45,
+  "maximum_displacement_m": 0.01920901768094095,
+  "method": "Actual133 upper selection; pilot positive-X roots>18mm/Z>1.800m. Own-root cubic, old endpoints staggered7mm laterally/9mm vertically by smooth root field;35-75mm projected root tangent with10-16mm normal lift; terminal control32mm above tip plus4mm local body normal for downward fall. Smooth onset preserves first6 points; no new mean-guide or cross-section transport. Original radii/topology/otherhair/materials/lights unchanged. Discrete1/1.4mm body-point protection with4-point envelope is not continuous collision acceptance.",
+  "status": "Unreviewed actual geometry study; no aesthetic completion claim",
+  "model_sha256": "cd0345c9b2669511fdd0d062ebab584cfc181fbdbe06239fdbe047bc88b893b2",
+  "inspected_draft_sha256": {
+    "02_ThreeQuarter.png": "da51cfb444540abbb83680f8be56a3fac699b2a890c4f8b11953c2b919ea8591",
+    "03_Side.png": "835b27e1a6bbb4d1d275bb3b538117c0516a76d4d0b86133a15cda7870993024"
+  },
+  "all_drafts_actually_inspected": true,
+  "art_judgment": "Both actual drafts inspected. Downward cubic terminal controls remain visually ordered/straight; limited benefit, not expanded or adopted.",
+  "goal_complete": false,
+  "verification_scope": "Generator internal root/prefix/unselected assertions; independent saved-file audit only for161/162"
+}

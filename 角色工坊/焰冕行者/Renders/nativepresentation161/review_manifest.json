@@ -1,0 +1,10 @@
+{
+  "source": "nativeremappedlayers161",
+  "source_sha256": "76dc35e2942add6edf0cffa1314d65d7d7c3cd15de2c877ee0656439f411250d",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "02_ThreeQuarter.png": "cfbb13f97625652d8a8d4277c551ffeac6ff8cef7011645a7af0f7de89c9d8a3"
+  },
+  "art_judgment": "Actual1920x2240/512/OIDN portrait inspected. New dark frontal tip knot visibly appears; rejected161, not adopted.",
+  "goal_complete": false
+}

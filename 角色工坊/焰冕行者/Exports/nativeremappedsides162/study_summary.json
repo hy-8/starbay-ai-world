@@ -1,0 +1,27 @@
+{
+  "source": "nativeouterlayers155",
+  "source_sha256": "ea931260824d2c738aa6e5bc7828e5ab88ea17ad19ce77095a7539ec9077ab1c",
+  "pilot": false,
+  "sides_only": true,
+  "descending": true,
+  "layer_map": true,
+  "design_blend": 0.45,
+  "selection_attribute": "native_remapped_upper_layers",
+  "changed_fibers": 6066,
+  "preserved_prefix_points": 6,
+  "intermediate_discrete_body_repairs": 0,
+  "maximum_displacement_m": 0.0393342284245632,
+  "method": "Actual133 upper selection. Both sides. Side/rear region limited torootY>-35mm/endY>-15mm/|rootX|>25mm; frontal region retained. Own-root cubic, free layer endpoints from root field:height=clamp((rootZ-1.800)/.100), X=side*(78+16height+6sinphase)mm,Y=.55rootY+22mm+8cosphase,Z=rootZ-(50+120height)mm+8sinphase. 35-75mm projected root tangent with10-16mm normal lift; terminal control32mm above tip plus4mm local body normal for downward fall. Design delta blended0.450 toward source before sampled body guards. Smooth onset preserves first6 points; no new mean-guide or cross-section transport. Original radii/topology/otherhair/materials/lights unchanged. Discrete1/1.4mm body-point protection with4-point envelope is not continuous collision acceptance.",
+  "status": "Unreviewed actual geometry study; no aesthetic completion claim",
+  "model_sha256": "29de4bf38489e6c6f8aa479bbffeedf5c3275a4ffe04e0fcd52d14e04a27edd3",
+  "inspected_draft_sha256": {
+    "01_Front.png": "d4e5cc43d5ee09a9bb800b3398b2360e2933b718673a4eba93a439a0bd8767bf",
+    "02_ThreeQuarter.png": "fc1d65750b608aef199c6a5a4ebd1287d6a09867e90893b7ca742053111d341f",
+    "03_Side.png": "fb3127b4a5674a1271616ab1e670da1d43d02d7b1c525ecb20dc8fd62d060ee2",
+    "05_OppositeSide.png": "7d2fcbed5f751d87247e0445c8ba584f6d8f72dc6ff149b80c0bb751a9b8a9cd"
+  },
+  "all_drafts_actually_inspected": true,
+  "art_judgment": "All4 drafts, all5 neutral views,512/OIDN portrait and163 equal25W temporary rear-light pair inspected. Source155 frontal design retained;161 new visible knot absent. Side/posterior fall modestly softer/tighter; original-light front changes little. Existing upper thin rods, small lifted arcs and pale part remain. Adopt incomplete WIP only, not finished reference-quality character.",
+  "goal_complete": false,
+  "verification_scope": "Generator internal root/prefix/unselected assertions; independent saved-file audit only for161/162"
+}

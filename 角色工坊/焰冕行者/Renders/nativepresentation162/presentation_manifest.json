@@ -1,0 +1,15 @@
+{
+  "source": "nativeremappedsides162",
+  "source_sha256": "29de4bf38489e6c6f8aa479bbffeedf5c3275a4ffe04e0fcd52d14e04a27edd3",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "1cfef6339aed8492f5e2a6d4bd1a62de5f108642ffa8faad24bc134f2b9d326f",
+  "status": "Actual render pending art review; no generative image replacement"
+}

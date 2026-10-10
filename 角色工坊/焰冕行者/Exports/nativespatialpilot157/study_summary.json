@@ -1,0 +1,21 @@
+{
+  "source": "nativeouterlayers155",
+  "source_sha256": "ea931260824d2c738aa6e5bc7828e5ab88ea17ad19ce77095a7539ec9077ab1c",
+  "pilot": true,
+  "selection_attribute": "native_spatial_upper_pilot",
+  "changed_fibers": 13142,
+  "preserved_prefix_points": 6,
+  "intermediate_discrete_body_repairs": 181,
+  "maximum_displacement_m": 0.018580961153242925,
+  "method": "Actual133 upper selection; pilot positive-X roots>18mm/Z>1.800m. Existing per-fiber paths receive smooth root-correlated broad S field:10-16mm lateral middle amplitude,6-13mm normal lift,8mm lateral end stagger. Smooth onset preserves first6 points; no new mean-guide or cross-section transport. Original radii/topology/otherhair/materials/lights unchanged. Discrete1/1.4mm body-point protection with4-point envelope is not continuous collision acceptance.",
+  "status": "Unreviewed actual geometry study; no aesthetic completion claim",
+  "model_sha256": "4d8f72d06e2faa536fc5074a50ea07d28461ebc48185e238cfbada62e5af07b8",
+  "inspected_draft_sha256": {
+    "02_ThreeQuarter.png": "7314398ac8c0b3f6af39408c9eb45b0ab6edb6bae438f6d66bce3fa2b3b539c6",
+    "03_Side.png": "99cfdccfecbe9f8dc48cf3aa5582def01104b53b7c6ac10d22b38e4b75758803"
+  },
+  "all_drafts_actually_inspected": true,
+  "art_judgment": "Both actual drafts inspected. Broad S field visibly bends the ordered shafts but creates deliberate curled side flows. Rejected; not expanded.",
+  "goal_complete": false,
+  "verification_scope": "Generator internal root/prefix/unselected assertions; independent saved-file audit only for161/162"
+}

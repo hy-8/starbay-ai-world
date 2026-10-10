@@ -1,0 +1,9 @@
+{
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "source_04_Back.png": "373190f135bcfe3348ce02c0cc7840b08d9c8435cdf82bb293dbab6a5ac7e02e",
+    "candidate_04_Back.png": "24562814f78f8225868fc48fcd131f0f5c74865fd465383766c017edf4409def"
+  },
+  "goal_complete": false,
+  "art_judgment": "Both actual matched25W auxiliary rear-light images inspected. Compare source155/candidate162 under equal temporary light, neither lamp saved. Slight upper-side coverage/fall change, no broad makeover or final color claim."
+}

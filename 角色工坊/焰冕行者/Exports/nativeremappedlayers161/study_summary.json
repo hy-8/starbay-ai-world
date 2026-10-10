@@ -1,0 +1,26 @@
+{
+  "source": "nativeouterlayers155",
+  "source_sha256": "ea931260824d2c738aa6e5bc7828e5ab88ea17ad19ce77095a7539ec9077ab1c",
+  "pilot": false,
+  "descending": true,
+  "layer_map": true,
+  "design_blend": 0.45,
+  "selection_attribute": "native_remapped_upper_layers",
+  "changed_fibers": 24634,
+  "preserved_prefix_points": 6,
+  "intermediate_discrete_body_repairs": 90954,
+  "maximum_displacement_m": 0.08983508181921586,
+  "method": "Actual133 upper selection; pilot positive-X roots>18mm/Z>1.800m. Own-root cubic, free layer endpoints from root field:height=clamp((rootZ-1.800)/.100), X=side*(78+16height+6sinphase)mm,Y=.55rootY+22mm+8cosphase,Z=rootZ-(50+120height)mm+8sinphase. 35-75mm projected root tangent with10-16mm normal lift; terminal control32mm above tip plus4mm local body normal for downward fall. Design delta blended0.450 toward source before sampled body guards. Smooth onset preserves first6 points; no new mean-guide or cross-section transport. Original radii/topology/otherhair/materials/lights unchanged. Discrete1/1.4mm body-point protection with4-point envelope is not continuous collision acceptance.",
+  "status": "Unreviewed actual geometry study; no aesthetic completion claim",
+  "model_sha256": "76dc35e2942add6edf0cffa1314d65d7d7c3cd15de2c877ee0656439f411250d",
+  "inspected_draft_sha256": {
+    "01_Front.png": "32efcf6a8805d2f0920a9279bc9dbc2e474bea44fe9ab5face7576249cc08832",
+    "02_ThreeQuarter.png": "3f97af3f03dce6dcd1135a8e0016257e2bb991dcc43bfa0b8bad473e8df8195b",
+    "03_Side.png": "11d3cd1f62f151fdcf406a5c9f969744af05136ea55e08f5fad144968df49f06",
+    "05_OppositeSide.png": "e5c60d598e273020eea19d1b3452734d7e0274cab9a5d99226238d5a13948454"
+  },
+  "all_drafts_actually_inspected": true,
+  "art_judgment": "All4 actual drafts and512/OIDN portrait inspected. Looser side fall, but high portrait exposes a new dark frontal tip knot and enlarged frontal opening. Rejected despite static range audit passing; not formal continuation.",
+  "goal_complete": false,
+  "verification_scope": "Generator internal root/prefix/unselected assertions; independent saved-file audit only for161/162"
+}

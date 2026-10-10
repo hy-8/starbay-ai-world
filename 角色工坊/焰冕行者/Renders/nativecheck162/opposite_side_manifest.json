@@ -1,0 +1,24 @@
+{
+  "version": "nativecheck162",
+  "source": "nativeremappedsides162",
+  "source_sha256": "29de4bf38489e6c6f8aa479bbffeedf5c3275a4ffe04e0fcd52d14e04a27edd3",
+  "source_unchanged": true,
+  "method": "Existing neutral cameras when requested, plus actual opposite camera mirrored in world space with local-X handedness correction; no pixel flip or geometry edit",
+  "samples": 192,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "denoising": false,
+  "image_sha256": "44d547679f5a59588c53928356afcd85db5bebfbb2894e886420d8729d7f8d2b",
+  "images_sha256": {
+    "01_Front.png": "7ec5cc648d5006fac209b18cad986f3b5cda96a3260771d9d0bc1507d04bf93c",
+    "02_ThreeQuarter.png": "d462bf629229825bfbba3e1ac7ab337c1215a3fdaf0ae1e2e745777c65ae1653",
+    "03_Side.png": "72f833758085887a1756a60867347dca349aa05d4cb9a8e26cc59e0dbda64847",
+    "04_Back.png": "c17270decafeb9a19d60af16d554f0975565400870c021e255364012dd455bc7",
+    "05_OppositeSide.png": "44d547679f5a59588c53928356afcd85db5bebfbb2894e886420d8729d7f8d2b"
+  },
+  "status": "Unreviewed actual neutral/opposite profile diagnostic, not artistic approval",
+  "single_camera": null,
+  "opposite_image_reused_from": null
+}

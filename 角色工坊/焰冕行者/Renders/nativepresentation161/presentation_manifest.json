@@ -1,0 +1,15 @@
+{
+  "source": "nativeremappedlayers161",
+  "source_sha256": "76dc35e2942add6edf0cffa1314d65d7d7c3cd15de2c877ee0656439f411250d",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "cfbb13f97625652d8a8d4277c551ffeac6ff8cef7011645a7af0f7de89c9d8a3",
+  "status": "Actual render pending art review; no generative image replacement"
+}
