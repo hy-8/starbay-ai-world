@@ -1,0 +1,19 @@
+{
+  "source": "nativegraduatedpilot215",
+  "source_sha256": "f88812aa1fdfb9c477aa6114258c780e05f7a8e1fb24ca6a1b61a4c18ddbd199",
+  "source_unchanged": true,
+  "edited_object": "Bystedt layercut derivative \u2022 native root reflow",
+  "points_per_curve": 65,
+  "selection_attribute": "native_graduated_restored_back",
+  "selection_rule": "native_graduated_restored_back",
+  "legend": {
+    "blue": "Edited selected-object curves",
+    "red": "Untouched selected-object curves",
+    "green": "All other visible native hair components",
+    "gray": "Body/clothes"
+  },
+  "edited_fibers": 5688,
+  "unselected_fibers": 40355,
+  "method": "Exact temporary curve subsets with original radii/matrix, actual cameras, emission diagnostic only",
+  "status": "Unreviewed actual component diagnostic"
+}

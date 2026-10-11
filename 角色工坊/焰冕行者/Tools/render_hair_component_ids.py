@@ -5,6 +5,11 @@ from mathutils import Matrix
 ROOT=Path(__file__).resolve().parents[1]
 a=sys.argv[sys.argv.index('--')+1:];version,base=a[:2]
 back_view='--back' in a
+side_view='--side' in a
+assert not (back_view and side_view)
+single_camera=a[a.index('--camera')+1] if '--camera' in a else None
+if single_camera:
+ assert single_camera in ['01_Front','02_ThreeQuarter','03_Side','04_Back','05_OppositeSide'] and not (back_view or side_view)
 if not all(re.fullmatch('[A-Za-z0-9_-]+',x) for x in a[:2]):raise ValueError(a)
 out=ROOT/'Renders'/version
 if out.exists():raise RuntimeError('Fresh IDs required')
@@ -38,8 +43,8 @@ for d in p.devices:d.use=d.type=='OPTIX'
 s.cycles.device='GPU';s.cycles.samples=32;s.cycles.use_denoising=False
 s.render.resolution_x,s.render.resolution_y=1200,1400;s.render.resolution_percentage=80
 s.view_settings.view_transform='Standard';out.mkdir(parents=True)
-for name in (['05_OppositeSide','02_ThreeQuarter','04_Back'] if back_view else ['05_OppositeSide','02_ThreeQuarter']):
+for name in ([single_camera] if single_camera else ['03_Side'] if side_view else ['05_OppositeSide','02_ThreeQuarter','04_Back'] if back_view else ['05_OppositeSide','02_ThreeQuarter']):
  s.camera=bpy.data.objects[name];s.render.filepath=str(out/(name+'.png'));bpy.ops.render.render(write_still=True)
 assert digest==hashlib.sha256(source.read_bytes()).hexdigest()
-(out/'component_id_manifest.json').write_text(json.dumps(dict(source=base,source_sha256=digest,source_unchanged=True,legend=legend,back_view=back_view,method='Temporary real components emission IDs; diagnostic color only, not final beauty render. Full world-space tip aggregates when back requested are geometry statistics, not visibility proof.'),indent=2),encoding='utf-8')
+(out/'component_id_manifest.json').write_text(json.dumps(dict(source=base,source_sha256=digest,source_unchanged=True,legend=legend,back_view=back_view,side_view=side_view,single_camera=single_camera,method='Temporary real components emission IDs; diagnostic color only, not final beauty render. Full world-space tip aggregates when back requested are geometry statistics, not visibility proof.'),indent=2),encoding='utf-8')
 print('HAIR_COMPONENT_IDS_RENDERED',version,flush=True)

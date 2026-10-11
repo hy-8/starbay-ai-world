@@ -1,0 +1,633 @@
+{
+  "continuation": "nativegraduatedback216",
+  "goal_complete": false,
+  "user_preference": "保留偏分，继续做自然碎发层次",
+  "studies": [
+    {
+      "version": "nativetemplepilot213",
+      "manifest": {
+        "source": "nativesettledflow211",
+        "source_sha256": "b9dad58546efd18712fb66542e6a937baeaa20cb2f3a5661ddf7f7e6515049a1",
+        "added_object": "Original feathered temple transition • scalp-grown fibers",
+        "additional_fibers": 1800,
+        "points_per_curve": 36,
+        "pilot": true,
+        "length_quantiles_m": [
+          0.023947983980178833,
+          0.03506417013704777,
+          0.04756962135434151
+        ],
+        "method": "Area sample actual body scalp; feathered density ellipse in YZ centered(-.083,1.826)m with radii(.025,.034)m. Original backward/downward surface-transport flow,23-45mm step budget,1.8-4.5mm lift,24-35um base radius taper. Existing objects unchanged; not a solid cap or image edit. Root offset0.5mm; sampled surface guard is not continuous collision proof."
+      },
+      "model_sha256": "ba03ecce18a8ffe9a54ebf0ac78b08d7581036bb996f6876c33bbe04f636e5cc",
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "25d4b7c75b50d8e4742dc494fe10c843879faf69898844ca98bc479d8d8fcbdb",
+        "03_Side.png": "9c6c58aa591fd451cdf0476c120d4b7337bfa719f6c77d710fe5627cc46c384b"
+      },
+      "art_judgment": "Two beauty drafts and actual component ID side render inspected.1800 new short scalp-grown transition fibers hit intended temporal region but beauty improvement small. Not adopted. No independent saved-file audit.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativetemplelayerpilot214",
+      "manifest": {
+        "source": "nativesettledflow211",
+        "source_sha256": "b9dad58546efd18712fb66542e6a937baeaa20cb2f3a5661ddf7f7e6515049a1",
+        "added_object": "Original feathered temple transition • scalp-grown fibers",
+        "additional_fibers": 2600,
+        "points_per_curve": 36,
+        "pilot": true,
+        "layered": true,
+        "length_quantiles_m": [
+          0.044800806790590286,
+          0.060374218970537186,
+          0.07682492583990097
+        ],
+        "method": "Area sample actual body scalp; feathered density ellipse in YZ centered(-.083,1.826)m with radii(.025,.034)m. Original backward/downward surface-transport flow,43-71mm step budget,3.5-8mm lift,24-35um base radius taper. Existing objects unchanged; not a solid cap or image edit. Root offset0.5mm; sampled surface guard is not continuous collision proof."
+      },
+      "model_sha256": "896288334e3feb7277fc48db96fda983ae7c4cebcd9136f2063be7a77802a68f",
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "f7650ebff7e12e2a902c277024c4dd4a647d5c88653ffed9671cb4de56e6c921",
+        "03_Side.png": "4acb76ff6c9f8f4a59d161235b8928d4047ccc4769453ab8753a1e904541532a"
+      },
+      "art_judgment": "Two beauty drafts inspected.2600 longer/higher fibers still offer insufficient visual benefit. Not adopted. No independent saved-file audit.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativegraduatedpilot215",
+      "manifest": {
+        "source": "nativesettledflow211",
+        "source_sha256": "b9dad58546efd18712fb66542e6a937baeaa20cb2f3a5661ddf7f7e6515049a1",
+        "selected_fibers": 5688,
+        "selection_attribute": "native_graduated_restored_back",
+        "pilot": true,
+        "preserved_prefix_points": 12,
+        "removed_polyline_length_quantiles_m": [
+          0.003896254012628747,
+          0.026514950282595123,
+          0.07088697360512924
+        ],
+        "method": "Exclude accepted fringe/curtain. rootY>-5mm,midY>15mm,tipZ<1.790m,polyline length>65mm;pilot negativeX. Shorten own source polyline by7%+up-to19% root-height term+0-10% coherent root field+/-1.4% per-fiber variation. Keep first12 points, resample remaining suffix to shorter arc. No new curls or shared cutting plane; source polyline arc is not exact rendered arc or continuous collision proof."
+      },
+      "model_sha256": "f88812aa1fdfb9c477aa6114258c780e05f7a8e1fb24ca6a1b61a4c18ddbd199",
+      "inspected_images_sha256": {
+        "04_Back.png": "78341959b1cc64c07366256b69e92e593cf81b53382324cbd845a1825f3a9d61",
+        "05_OppositeSide.png": "cda31bd3e476cb4c2c658ee163bb48472e388b744a044551ea9fa0c8f4bcfae0"
+      },
+      "art_judgment": "Two beauty drafts and two actual selected/untouched ID views inspected.5688 negativeX posterior-root strands shortened along their source paths. Remaining outer silhouette limited benefit; led to216 actual back-reaching selection.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativegraduatedback216",
+      "manifest": {
+        "source": "nativesettledflow211",
+        "source_sha256": "b9dad58546efd18712fb66542e6a937baeaa20cb2f3a5661ddf7f7e6515049a1",
+        "selected_fibers": 23906,
+        "selection_attribute": "native_graduated_restored_back",
+        "pilot": false,
+        "all_back": true,
+        "preserved_prefix_points": 12,
+        "removed_polyline_length_quantiles_m": [
+          0.003896254012628747,
+          0.02981208285950246,
+          0.07088697360512924
+        ],
+        "method": "Exclude accepted fringe/curtain. tipY>5mm regardless of rootY,tipZ<1.790m,polyline length>65mm;pilot negativeX. Shorten own source polyline by7%+up-to19% root-height term+0-10% coherent root field+/-1.4% per-fiber variation. Keep first12 points, resample remaining suffix to shorter arc. No new curls or shared cutting plane; source polyline arc is not exact rendered arc or continuous collision proof."
+      },
+      "model_sha256": "f2f56085414e6a1ebdc0f9864dd8609c06f013ac3b42298cfd14f0d597020678",
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "8e5c5ec447df00024b8019510cbbbb296f9a02796b6d73219e7db6ed2efc018e",
+        "03_Side.png": "37d20d8078c3e4ddd288a06cc013bd869d3f5e381aad33d8b874634970a7f835",
+        "04_Back.png": "c115de9be8707d3bfa4708fb2c0ddceda73bccc42c5455a5d264c41aef64318a",
+        "05_OppositeSide.png": "531599025ea117a96842f9f7ba50fdbf6905121ec4a92ba5366b1243d5e142e5"
+      },
+      "art_judgment": "Four beauty drafts and512/OIDN high back inspected.23906 non-fringe strands reaching behind head shortened along own paths,first12 points retained. Ear/nape trailing silhouette reduced; accepted part retained. Central back blanket,broad upper locks and temporal transition remain imperfect. Incomplete continuation,independently audited.",
+      "goal_complete": false
+    }
+  ],
+  "reviewed_presentations": [
+    {
+      "directory": "nativetempleids213",
+      "manifest": {
+        "source": "nativetemplepilot213",
+        "source_sha256": "ba03ecce18a8ffe9a54ebf0ac78b08d7581036bb996f6876c33bbe04f636e5cc",
+        "source_unchanged": true,
+        "legend": [
+          {
+            "object": "Abhay flow derivative • real scalp sampled short support",
+            "linear_color": [
+              0.04,
+              0.15,
+              1,
+              1
+            ],
+            "fibers": 14000
+          },
+          {
+            "object": "Bystedt derivative • short scalp support",
+            "linear_color": [
+              0,
+              1,
+              0.12,
+              1
+            ],
+            "fibers": 23657
+          },
+          {
+            "object": "Bystedt layercut derivative • native root reflow",
+            "linear_color": [
+              1,
+              0.03,
+              0.08,
+              1
+            ],
+            "fibers": 46043
+          },
+          {
+            "object": "Original feathered temple transition • scalp-grown fibers",
+            "linear_color": [
+              1,
+              0.5,
+              0.02,
+              1
+            ],
+            "fibers": 1800
+          },
+          {
+            "object": "Original posterior coverage • surface-grown short fibers",
+            "linear_color": [
+              0.65,
+              0.04,
+              1,
+              1
+            ],
+            "fibers": 36000
+          }
+        ],
+        "back_view": false,
+        "side_view": true,
+        "method": "Temporary real components emission IDs; diagnostic color only, not final beauty render. Full world-space tip aggregates when back requested are geometry statistics, not visibility proof."
+      },
+      "images_sha256": {
+        "03_Side.png": "fbfe477dcc42a450d31d91b010018f16023241344f92fd5ff311cd485b2cb443"
+      },
+      "all_images_actually_inspected": true
+    },
+    {
+      "directory": "nativebackids215",
+      "manifest": {
+        "source": "nativegraduatedpilot215",
+        "source_sha256": "f88812aa1fdfb9c477aa6114258c780e05f7a8e1fb24ca6a1b61a4c18ddbd199",
+        "source_unchanged": true,
+        "edited_object": "Bystedt layercut derivative • native root reflow",
+        "points_per_curve": 65,
+        "selection_attribute": "native_graduated_restored_back",
+        "selection_rule": "native_graduated_restored_back",
+        "legend": {
+          "blue": "Edited selected-object curves",
+          "red": "Untouched selected-object curves",
+          "green": "All other visible native hair components",
+          "gray": "Body/clothes"
+        },
+        "edited_fibers": 5688,
+        "unselected_fibers": 40355,
+        "method": "Exact temporary curve subsets with original radii/matrix, actual cameras, emission diagnostic only",
+        "status": "Unreviewed actual component diagnostic"
+      },
+      "images_sha256": {
+        "03_Side.png": "02e6a08a81fb61e47ec981eac645ccdac0791dcd68dad77d15ff349dc0ab8900",
+        "04_Back.png": "28771069fa80b6a231e11faaa9b6b148258dbfff24078a26e16168b6253f04c7"
+      },
+      "all_images_actually_inspected": true
+    },
+    {
+      "directory": "nativebackhigh216",
+      "manifest": {
+        "source": "nativegraduatedback216",
+        "source_sha256": "f2f56085414e6a1ebdc0f9864dd8609c06f013ac3b42298cfd14f0d597020678",
+        "source_unchanged": true,
+        "camera": "04_Back",
+        "geometry_lighting_unchanged": true,
+        "resolution": [
+          1920,
+          2240
+        ],
+        "samples": 512,
+        "denoising": "OpenImageDenoise",
+        "image_sha256": "9e5d7c76dd16eb7bcb9b004adc119b2d49e10faf03f747aae3df57730b72be76",
+        "status": "Actual render pending art review; no generative image replacement"
+      },
+      "images_sha256": {
+        "04_Back.png": "9e5d7c76dd16eb7bcb9b004adc119b2d49e10faf03f747aae3df57730b72be76"
+      },
+      "all_images_actually_inspected": true
+    },
+    {
+      "directory": "nativebackcomponents216",
+      "manifest": {
+        "source": "nativegraduatedback216",
+        "source_sha256": "f2f56085414e6a1ebdc0f9864dd8609c06f013ac3b42298cfd14f0d597020678",
+        "source_unchanged": true,
+        "legend": [
+          {
+            "object": "Abhay flow derivative • real scalp sampled short support",
+            "linear_color": [
+              0.04,
+              0.15,
+              1,
+              1
+            ],
+            "fibers": 14000
+          },
+          {
+            "object": "Bystedt derivative • short scalp support",
+            "linear_color": [
+              0,
+              1,
+              0.12,
+              1
+            ],
+            "fibers": 23657
+          },
+          {
+            "object": "Bystedt layercut derivative • native root reflow",
+            "linear_color": [
+              1,
+              0.03,
+              0.08,
+              1
+            ],
+            "fibers": 46043
+          },
+          {
+            "object": "Original posterior coverage • surface-grown short fibers",
+            "linear_color": [
+              1,
+              0.5,
+              0.02,
+              1
+            ],
+            "fibers": 36000
+          }
+        ],
+        "back_view": false,
+        "side_view": false,
+        "single_camera": "04_Back",
+        "method": "Temporary real components emission IDs; diagnostic color only, not final beauty render. Full world-space tip aggregates when back requested are geometry statistics, not visibility proof."
+      },
+      "images_sha256": {
+        "04_Back.png": "131f4306d29095c4e3eee34aece09f1a583dc2947783a5796e1d0c115ef8fa0b"
+      },
+      "all_images_actually_inspected": true
+    }
+  ],
+  "independent_audit": {
+    "source": "nativesettledflow211",
+    "source_sha256": "b9dad58546efd18712fb66542e6a937baeaa20cb2f3a5661ddf7f7e6515049a1",
+    "candidate": "nativegraduatedback216",
+    "candidate_sha256": "f2f56085414e6a1ebdc0f9864dd8609c06f013ac3b42298cfd14f0d597020678",
+    "mesh_count": 141,
+    "mesh_geometry_uv_shape_keys_transforms_exact": true,
+    "visible_native_objects": 4,
+    "curves_finite_radii_positive_textures_available": true,
+    "edited_object": "Bystedt layercut derivative • native root reflow",
+    "edited_fibers": 23906,
+    "all_radii_topology_transforms_exact": true,
+    "all_roots_exact": true,
+    "unselected_fibers_exact": true,
+    "other_native_objects_exact": true,
+    "max_displacement_m": 0.06792077422142029,
+    "scope": "Static localized file comparison. Not art, segment/body/eye/clothing/animation collision acceptance.",
+    "preserved_prefix_points": 12,
+    "all_primary_prefix_points_exact": true,
+    "all_material_slots_graphs_exact": true,
+    "light_world_camera_display_exact": true
+  },
+  "temporal_probe": [
+    {
+      "pixel": [
+        430,
+        440
+      ],
+      "hit": [
+        0.05134177207946777,
+        -0.09178589284420013,
+        1.8473364114761353
+      ],
+      "normal": [
+        0.6475078463554382,
+        -0.3178051710128784,
+        0.6926278471946716
+      ],
+      "nearby_roots": {
+        "Abhay flow derivative • real scalp sampled short support": {
+          "within_5mm": 18,
+          "within_10mm": 100
+        },
+        "Bystedt derivative • short scalp support": {
+          "within_5mm": 22,
+          "within_10mm": 203
+        },
+        "Bystedt layercut derivative • native root reflow": {
+          "within_5mm": 17,
+          "within_10mm": 78
+        },
+        "Original posterior coverage • surface-grown short fibers": {
+          "within_5mm": 0,
+          "within_10mm": 0
+        }
+      }
+    },
+    {
+      "pixel": [
+        450,
+        480
+      ],
+      "hit": [
+        0.06701397895812988,
+        -0.08392874896526337,
+        1.8316806554794312
+      ],
+      "normal": [
+        0.8092312812805176,
+        -0.23938293755054474,
+        0.536507785320282
+      ],
+      "nearby_roots": {
+        "Abhay flow derivative • real scalp sampled short support": {
+          "within_5mm": 34,
+          "within_10mm": 94
+        },
+        "Bystedt derivative • short scalp support": {
+          "within_5mm": 33,
+          "within_10mm": 134
+        },
+        "Bystedt layercut derivative • native root reflow": {
+          "within_5mm": 21,
+          "within_10mm": 91
+        },
+        "Original posterior coverage • surface-grown short fibers": {
+          "within_5mm": 0,
+          "within_10mm": 1
+        }
+      }
+    },
+    {
+      "pixel": [
+        460,
+        520
+      ],
+      "hit": [
+        0.07558250427246094,
+        -0.08000017702579498,
+        1.8159984350204468
+      ],
+      "normal": [
+        0.9297430515289307,
+        -0.18906593322753906,
+        0.3159619867801666
+      ],
+      "nearby_roots": {
+        "Abhay flow derivative • real scalp sampled short support": {
+          "within_5mm": 0,
+          "within_10mm": 3
+        },
+        "Bystedt derivative • short scalp support": {
+          "within_5mm": 36,
+          "within_10mm": 109
+        },
+        "Bystedt layercut derivative • native root reflow": {
+          "within_5mm": 40,
+          "within_10mm": 164
+        },
+        "Original posterior coverage • surface-grown short fibers": {
+          "within_5mm": 0,
+          "within_10mm": 40
+        }
+      }
+    },
+    {
+      "pixel": [
+        470,
+        560
+      ],
+      "hit": [
+        0.07960748672485352,
+        -0.0760716050863266,
+        1.8002991676330566
+      ],
+      "normal": [
+        0.9793059825897217,
+        -0.13063731789588928,
+        0.15457561612129211
+      ],
+      "nearby_roots": {
+        "Abhay flow derivative • real scalp sampled short support": {
+          "within_5mm": 3,
+          "within_10mm": 26
+        },
+        "Bystedt derivative • short scalp support": {
+          "within_5mm": 0,
+          "within_10mm": 0
+        },
+        "Bystedt layercut derivative • native root reflow": {
+          "within_5mm": 136,
+          "within_10mm": 462
+        },
+        "Original posterior coverage • surface-grown short fibers": {
+          "within_5mm": 17,
+          "within_10mm": 105
+        }
+      }
+    },
+    {
+      "pixel": [
+        450,
+        600
+      ],
+      "hit": [
+        0.08010005950927734,
+        -0.08392874151468277,
+        1.7845865488052368
+      ],
+      "normal": [
+        0.982121467590332,
+        -0.1750040054321289,
+        0.06936205923557281
+      ],
+      "nearby_roots": {
+        "Abhay flow derivative • real scalp sampled short support": {
+          "within_5mm": 0,
+          "within_10mm": 0
+        },
+        "Bystedt derivative • short scalp support": {
+          "within_5mm": 0,
+          "within_10mm": 0
+        },
+        "Bystedt layercut derivative • native root reflow": {
+          "within_5mm": 61,
+          "within_10mm": 229
+        },
+        "Original posterior coverage • surface-grown short fibers": {
+          "within_5mm": 0,
+          "within_10mm": 0
+        }
+      }
+    },
+    {
+      "pixel": [
+        520,
+        550
+      ],
+      "hit": [
+        0.08022046089172363,
+        -0.05642874911427498,
+        1.804229974746704
+      ],
+      "normal": [
+        0.9877578020095825,
+        0.019421426579356194,
+        0.15478147566318512
+      ],
+      "nearby_roots": {
+        "Abhay flow derivative • real scalp sampled short support": {
+          "within_5mm": 18,
+          "within_10mm": 107
+        },
+        "Bystedt derivative • short scalp support": {
+          "within_5mm": 0,
+          "within_10mm": 5
+        },
+        "Bystedt layercut derivative • native root reflow": {
+          "within_5mm": 34,
+          "within_10mm": 157
+        },
+        "Original posterior coverage • surface-grown short fibers": {
+          "within_5mm": 50,
+          "within_10mm": 222
+        }
+      }
+    },
+    {
+      "pixel": [
+        540,
+        600
+      ],
+      "hit": [
+        0.08239912986755371,
+        -0.04857160151004791,
+        1.7845951318740845
+      ],
+      "normal": [
+        0.9909359216690063,
+        0.06287648528814316,
+        0.11871247738599777
+      ],
+      "nearby_roots": {
+        "Abhay flow derivative • real scalp sampled short support": {
+          "within_5mm": 0,
+          "within_10mm": 12
+        },
+        "Bystedt derivative • short scalp support": {
+          "within_5mm": 0,
+          "within_10mm": 0
+        },
+        "Bystedt layercut derivative • native root reflow": {
+          "within_5mm": 39,
+          "within_10mm": 184
+        },
+        "Original posterior coverage • surface-grown short fibers": {
+          "within_5mm": 70,
+          "within_10mm": 226
+        }
+      }
+    },
+    {
+      "pixel": [
+        580,
+        560
+      ],
+      "hit": [
+        0.07811260223388672,
+        -0.032857317477464676,
+        1.8002935647964478
+      ],
+      "normal": [
+        0.974337100982666,
+        0.1545543372631073,
+        0.16364657878875732
+      ],
+      "nearby_roots": {
+        "Abhay flow derivative • real scalp sampled short support": {
+          "within_5mm": 27,
+          "within_10mm": 86
+        },
+        "Bystedt derivative • short scalp support": {
+          "within_5mm": 0,
+          "within_10mm": 0
+        },
+        "Bystedt layercut derivative • native root reflow": {
+          "within_5mm": 39,
+          "within_10mm": 166
+        },
+        "Original posterior coverage • surface-grown short fibers": {
+          "within_5mm": 72,
+          "within_10mm": 267
+        }
+      }
+    },
+    {
+      "pixel": [
+        600,
+        620
+      ],
+      "hit": [
+        0.08040165901184082,
+        -0.02500017173588276,
+        1.7767305374145508
+      ],
+      "normal": [
+        0.9724658727645874,
+        0.18543370068073273,
+        0.14115437865257263
+      ],
+      "nearby_roots": {
+        "Abhay flow derivative • real scalp sampled short support": {
+          "within_5mm": 0,
+          "within_10mm": 0
+        },
+        "Bystedt derivative • short scalp support": {
+          "within_5mm": 0,
+          "within_10mm": 0
+        },
+        "Bystedt layercut derivative • native root reflow": {
+          "within_5mm": 39,
+          "within_10mm": 153
+        },
+        "Original posterior coverage • surface-grown short fibers": {
+          "within_5mm": 62,
+          "within_10mm": 188
+        }
+      }
+    }
+  ],
+  "probe_scope": "Body-only camera rays locate observed temporal region; counts within5/10mm do not measure rendered fiber occlusion. Actual213 ID confirms added coverage region.",
+  "local_storage_archive": [
+    {
+      "version": "nativeanteriorpilot206",
+      "original_path": "E:\\星湾世界\\starbay-ai-world\\角色工坊\\焰冕行者\\Exports\\nativeanteriorpilot206",
+      "archive_path": "D:\\星湾世界_模型归档\\starbay-ai-world\\角色工坊\\焰冕行者\\Exports\\nativeanteriorpilot206",
+      "sha256": "6aeed2c75a9f5b11780a9c55a31301fa2168b82a13b4cd7af03841e38bbf0fb2",
+      "bytes": 488319217.0,
+      "original_path_retained_as_junction": true
+    },
+    {
+      "version": "nativenonfringeflow209",
+      "original_path": "E:\\星湾世界\\starbay-ai-world\\角色工坊\\焰冕行者\\Exports\\nativenonfringeflow209",
+      "archive_path": "D:\\星湾世界_模型归档\\starbay-ai-world\\角色工坊\\焰冕行者\\Exports\\nativenonfringeflow209",
+      "sha256": "bbef257839cb25e3dd6b921c5df4eb4a93d64eabc21ed9ddca8863dd4cac6948",
+      "bytes": 488265458.0,
+      "original_path_retained_as_junction": true
+    }
+  ],
+  "scope": "Real Blender geometry.213/214 added fibers not adopted.215 pilot and216 trim existing original paths; only216 independently audited. Polyline shortening and saved scope checks are not art or continuous collision acceptance. Geometry/indexes/logs local."
+}

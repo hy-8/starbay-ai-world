@@ -1,0 +1,15 @@
+{
+  "source": "nativegraduatedback216",
+  "source_sha256": "f2f56085414e6a1ebdc0f9864dd8609c06f013ac3b42298cfd14f0d597020678",
+  "source_unchanged": true,
+  "camera": "04_Back",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "9e5d7c76dd16eb7bcb9b004adc119b2d49e10faf03f747aae3df57730b72be76",
+  "status": "Actual render pending art review; no generative image replacement"
+}

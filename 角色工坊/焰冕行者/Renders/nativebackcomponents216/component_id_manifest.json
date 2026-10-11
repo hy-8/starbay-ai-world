@@ -1,0 +1,51 @@
+{
+  "source": "nativegraduatedback216",
+  "source_sha256": "f2f56085414e6a1ebdc0f9864dd8609c06f013ac3b42298cfd14f0d597020678",
+  "source_unchanged": true,
+  "legend": [
+    {
+      "object": "Abhay flow derivative \u2022 real scalp sampled short support",
+      "linear_color": [
+        0.04,
+        0.15,
+        1,
+        1
+      ],
+      "fibers": 14000
+    },
+    {
+      "object": "Bystedt derivative \u2022 short scalp support",
+      "linear_color": [
+        0,
+        1,
+        0.12,
+        1
+      ],
+      "fibers": 23657
+    },
+    {
+      "object": "Bystedt layercut derivative \u2022 native root reflow",
+      "linear_color": [
+        1,
+        0.03,
+        0.08,
+        1
+      ],
+      "fibers": 46043
+    },
+    {
+      "object": "Original posterior coverage \u2022 surface-grown short fibers",
+      "linear_color": [
+        1,
+        0.5,
+        0.02,
+        1
+      ],
+      "fibers": 36000
+    }
+  ],
+  "back_view": false,
+  "side_view": false,
+  "single_camera": "04_Back",
+  "method": "Temporary real components emission IDs; diagnostic color only, not final beauty render. Full world-space tip aggregates when back requested are geometry statistics, not visibility proof."
+}
