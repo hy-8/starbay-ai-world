@@ -57,6 +57,41 @@ if retained is not None:
  result=dict(source=base,source_sha256=before[0],candidate=candidate,candidate_sha256=after[0],mesh_count=len(before[1]),meshes_uv_shape_keys_transforms_exact=True,other_native_geometry_exact=True,material_light_world_camera_display_exact=True,image_paths_compared_as_resolved_absolute='--resolve-image-paths' in a,retained_curve_history_exact=True,retained_positions_radii_counts_transforms_exact=True,accepted_inner_curtain_retained=True,removed_fibers=len(selected),retained_fibers=len(retained),scope='Independent saved-file mixed-count deletion comparison to exact local inspected selection. Count/topology intentionally reduced;all retained fibers exact. Not artistic or collision acceptance.')
  out.write_text(json.dumps(result,indent=2),encoding='utf-8');print('STRAY_REMOVAL_AUDIT_PASS',candidate,flush=True);sys.exit(0)
 assert len(bs)==len(asz)
+if '--released-tips' in a:
+ from mathutils import Vector
+ from mathutils.bvhtree import BVHTree
+ assert np.array_equal(bs,asz) and np.array_equal(br,ar)
+ manifest=json.loads((ROOT/'Exports'/candidate/'tip_release_manifest.json').read_text())
+ assert manifest['model_sha256']==after[0] and manifest['source_sha256']==before[0]
+ archive=Path(r'D:\星湾世界_模型归档\starbay-ai-world\角色工坊\焰冕行者')
+ sel=archive/'Renders'/manifest['selection']
+ assert json.loads((sel/'edit_id_manifest.json').read_text())['source_sha256']==before[0]
+ selected=np.load(sel/'local_projected_indices.npz')['selected']
+ offsets=np.r_[0,np.cumsum(bs)];tips=bp[offsets[selected+1]-1]
+ _,labels,counts=np.unique(np.round(tips/.000010).astype(np.int64),axis=0,return_inverse=True,return_counts=True)
+ expected=selected[counts[labels]>=40];mask=np.zeros(len(bs),bool);mask[expected]=True
+ assert np.array_equal(mask,afterattrs['native_released_tip_clusters'][1])
+ assert np.array_equal(np.sort(expected),np.sort(np.load(archive/'Renders'/candidate/'local_released_indices.npz')['selected']))
+ assert np.array_equal(bp[~np.repeat(mask,bs)],ap[~np.repeat(mask,bs)])
+ assert np.array_equal(bp[offsets[:-1]],ap[offsets[:-1]])
+ for key in ['native_inner_curtain_shift','native_resculpted_fringe_sweeps','native_curved_projected_tips']:assert not beforeattrs[key][1][mask].any()
+ bv=BVHTree.FromObject(bpy.data.objects['CC0 male body • retained topology'],bpy.context.evaluated_depsgraph_get())
+ def gap(v):
+  h,n,_,_=bv.find_nearest(Vector(v));return float((Vector(v)-h).dot(n))
+ checked=0;length_changes=[];protected=0
+ for i in expected:
+  q=bp[offsets[i]:offsets[i+1]];v=ap[offsets[i]:offsets[i+1]]
+  arc=np.r_[0,np.cumsum(np.linalg.norm(np.diff(q.astype(float),axis=0),axis=1))]
+  prefix=(arc<=.60*arc[-1])|(arc<=.008);assert np.array_equal(q[prefix],v[prefix]);protected+=int(prefix.sum())
+  length_changes.append(float(np.linalg.norm(np.diff(v.astype(float),axis=0),axis=1).sum()-arc[-1]))
+  qs=np.vstack([q,(q[:-1]+q[1:])*.5]);vs=np.vstack([v,(v[:-1]+v[1:])*.5]);moving=np.linalg.norm(vs-qs,axis=1)>1e-7
+  for x,y in zip(qs[moving],vs[moving]):assert gap(y)>=min(.0003,gap(x))-3e-6
+  checked+=int(moving.sum())
+ maximum=float(np.linalg.norm(ap-bp,axis=1).max())
+ assert np.isfinite(ap).all() and 0<maximum<=(.024001 if manifest.get('stagger_tips') else .008001)
+ assert abs(maximum-manifest['max_same_index_displacement_m'])<1e-6 and len(expected)==manifest['selected_fibers']
+ result=dict(source=base,source_sha256=before[0],candidate=candidate,candidate_sha256=after[0],mesh_count=len(before[1]),meshes_uv_shape_keys_transforms_exact=True,other_native_geometry_exact=True,material_light_world_camera_display_exact=True,image_paths_compared_as_resolved_absolute='--resolve-image-paths' in a,historical_curve_attributes_exact=True,counts_radii_transforms_roots_exact=True,unselected_fibers_exact=int((~mask).sum()),selected_fibers=len(expected),prefix60percent_or8mm_controls_exact=protected,accepted_fringe_groups_unchanged=True,max_same_index_displacement_m=maximum,changed_control_midpoint_body_checks=checked,actual_selected_arc_length_change_quantiles_m=np.quantile(length_changes,[0,.5,1]).tolist(),scope='Independent saved-file audit; selection recomputed from inspected tip groups, not trusted new mask. Count/radius/root/unselected path/prefix invariants and sampled body gaps checked. Selected short-layer tips intentionally repositioned/staggered. Not continuous collision or art acceptance.')
+ out.write_text(json.dumps(result,indent=2),encoding='utf-8');print('RELEASED_TIPS_AUDIT_PASS',candidate,flush=True);sys.exit(0)
 if '--projected-bends' in a:
  from mathutils import Vector
  from mathutils.bvhtree import BVHTree

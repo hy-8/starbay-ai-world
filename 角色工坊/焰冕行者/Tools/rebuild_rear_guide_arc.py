@@ -10,6 +10,7 @@ a=sys.argv[sys.argv.index('--')+1:];version,base,selection=a[:3]
 wisps='--surface-wisps' in a
 cross='--cross-wisps' in a;assert not cross or wisps
 all_rear='--all-rear' in a
+exact_projected='--exact-projected' in a;assert not (exact_projected and all_rear)
 assert all(re.fullmatch('[A-Za-z0-9_-]+',x) for x in [version,base,selection])
 out=ARCHIVE/'Renders'/version;assert not out.exists()
 source=ROOT/'Exports'/base/'Ember_Regent.blend'
@@ -25,7 +26,7 @@ sel=ARCHIVE/'Renders'/selection;meta=json.loads((sel/'edit_id_manifest.json').re
 mask=np.zeros(len(sizes),bool);mask[np.load(sel/'local_projected_indices.npz')['selected']]=True
 if all_rear:mask[:]=True
 raw=np.empty(len(sizes),bool);cu.attributes['native_restored_raw_controls'].data.foreach_get('value',raw)
-mask&=raw&(old[off[1:]-1,1]>.015)&(old[off[1:]-1,2]<1.800)&(old[off[:-1],1]>-.030)
+if not exact_projected:mask&=raw&(old[off[1:]-1,1]>.015)&(old[off[1:]-1,2]<1.800)&(old[off[:-1],1]>-.030)
 for key in ['native_inner_curtain_shift','native_resculpted_fringe_sweeps','native_curved_projected_tips']:
  protected=np.empty(len(mask),bool);cu.attributes[key].data.foreach_get('value',protected);mask&=~protected
 bv=BVHTree.FromObject(bpy.data.objects['CC0 male body • retained topology'],bpy.context.evaluated_depsgraph_get())
@@ -89,6 +90,7 @@ assert digest(source)==before
 st=np.array(stats)
 report=dict(source=base,source_sha256=before,selection=selection,source_unchanged=True,selected_fibers=int(mask.sum()),processed_fibers=len(stats),model_saved=False,roots_and_tips_exact=True,root8mm_exact=True,counts_radii_unchanged=True,max_displacement_m=float(np.linalg.norm(p-old,axis=1).max()),clearance_scale_quantiles=np.quantile(st[:,2],[0,.5,1]).tolist(),path_length_change_m_quantiles=np.quantile(st[:,4]-st[:,3],[0,.5,1]).tolist(),images_sha256=images,method='Per original selected posterior fiber: fit quadratic Bezier single handle by least squares after8mm root prefix,25mm onset. Keep original tip position; whole-fiber24mm displacement cap and body clearance backtracking at controls/midpoints. No scalp projection, pruning, noise, shader edits or full-model save. Arc length can change; original hairstyle endpoint lengths are retained. Not continuous collision or art acceptance.')
 report.update(all_rear=all_rear,selection_scope='All restored raw fibers with tipY>15mm,tipZ<1.800m,rootY>-30mm excluding accepted fringe/accent; projected region not applied.' if all_rear else 'Intersect local projected IDs with raw rear-reaching fibers;exclude accepted fringe/accent.')
+if exact_projected:report.update(exact_projected=True,selection_scope='Exact inspected projected fibers,without the former tipZ<1.800/rootY rear gate;accepted fringe groups remain excluded.')
 if wisps:
  report.update(surface_wisps=True,wisp_fibers=len(wisp_ids),counts_radii_unchanged=False,counts_unchanged=True,wisp_rule='Deterministic hash14percent of selected fibers. Add6mm outward radial arch with25mm onset after8mm,zero at tip;before whole-curve cap/body guard. Cap selected wisp radii35microns with20mm ramp after8mm;all other radii unchanged.')
  if cross:report.update(cross_wisps=True,wisp_rule='Same sparse14percent and35micron radii. Instead of6mm radial lift,use3mm radial plus deterministic signed0..8mm transverse arch;25mm onset after8mm,zero at tips,before whole-fiber24mm cap/body guard. All unselected fibers unchanged.')

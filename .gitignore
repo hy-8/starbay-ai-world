@@ -3096,3 +3096,20 @@
 !/角色工坊/焰冕行者/Exports/native_guide_shape_studies47.json
 !/角色工坊/焰冕行者/Renders/nativeguidearc317/04_Back.png
 !/角色工坊/焰冕行者/Renders/nativeroundvolume321/05_OppositeSide.png
+
+# 2026-10-11 tip convergence study48; licensed geometry remains local
+!/角色工坊/焰冕行者/Renders/nativefeatherfront333/
+!/角色工坊/焰冕行者/Renders/nativefeatherhigh333/
+!/角色工坊/焰冕行者/Renders/nativewholehook328/
+!/角色工坊/焰冕行者/Tools/bridge_rear_hair_gaps.py
+!/角色工坊/焰冕行者/Tools/rebuild_rear_guide_arc.py
+!/角色工坊/焰冕行者/Tools/remove_projected_stray_curves.py
+!/角色工坊/焰冕行者/Tools/render_native_edit_ids.py
+!/角色工坊/焰冕行者/Tools/release_converged_hair_tips.py
+!/角色工坊/焰冕行者/Tools/inspect_converged_hair_tips.py
+!/角色工坊/焰冕行者/Tools/validate_raw_control_flow.py
+!/角色工坊/焰冕行者/Exports/native_tip_convergence_studies48.json
+!/角色工坊/焰冕行者/Exports/native_feathercrown333_pair48.json
+!/角色工坊/焰冕行者/Renders/nativewholehook328/04_Back.png
+!/角色工坊/焰冕行者/Renders/nativefeatherhigh333/04_Back.png
+!/角色工坊/焰冕行者/Renders/nativefeatherfront333/02_ThreeQuarter.png
