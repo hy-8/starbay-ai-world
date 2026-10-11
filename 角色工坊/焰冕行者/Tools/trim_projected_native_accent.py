@@ -5,6 +5,8 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 a=sys.argv[sys.argv.index('--')+1:];version,base,idsversion=a[:3]
 save='--save-archive' in a;save_only='--save-only' in a;assert not save_only or save
+attribute=a[a.index('--attribute')+1] if '--attribute' in a else 'native_trimmed_outer_accent'
+assert re.fullmatch('[A-Za-z0-9_]+',attribute)
 assert all(re.fullmatch('[A-Za-z0-9_-]+',v) for v in a[:3])
 source=ROOT/'Exports'/base/'Ember_Regent.blend';digest=hashlib.sha256(source.read_bytes()).hexdigest()
 idroot=ROOT/'Renders'/idsversion;idmanifest=json.loads((idroot/'edit_id_manifest.json').read_text());assert idmanifest['source_sha256']==digest
@@ -14,6 +16,7 @@ md=Path(r'D:\星湾世界_模型归档\starbay-ai-world\角色工坊\焰冕行�
 if save:assert not md.exists() and not (ROOT/'Exports'/version).exists()
 bpy.ops.wm.open_mainfile(filepath=str(source),use_scripts=False)
 ob=bpy.data.objects['Bystedt layercut derivative • native root reflow'];cu=ob.data
+assert attribute not in cu.attributes,'Use a fresh operation attribute to preserve historical selections'
 p=np.empty((len(cu.points),3),np.float32);cu.attributes['position'].data.foreach_get('vector',p.ravel());r=np.empty(len(p),np.float32);cu.attributes['radius'].data.foreach_get('value',r)
 sizes=np.array([c.points_length for c in cu.curves]);off=np.r_[0,np.cumsum(sizes)]
 cam=bpy.data.objects['02_ThreeQuarter'];view=np.array(cam.matrix_world.inverted());proj=np.array(cam.calc_matrix_camera(bpy.context.evaluated_depsgraph_get(),x=1200,y=1400,scale_x=1,scale_y=1))
@@ -36,7 +39,7 @@ for attr in cu.attributes:
  if attr.domain!='CURVE':continue
  field,width,dtype={'BOOLEAN':('value',1,bool),'INT':('value',1,np.int32),'FLOAT':('value',1,np.float32),'FLOAT_VECTOR':('vector',3,np.float32),'FLOAT2':('vector',2,np.float32),'FLOAT_COLOR':('color',4,np.float32)}[attr.data_type]
  values=np.empty(len(attr.data)*width,dtype);attr.data.foreach_get(field,values);target=new.attributes.get(attr.name) or new.attributes.new(attr.name,attr.data_type,'CURVE');target.data.foreach_set(field,values)
-new.attributes.new('native_trimmed_outer_accent','BOOLEAN','CURVE').data.foreach_set('value',mask);ob.data=new
+new.attributes.new(attribute,'BOOLEAN','CURVE').data.foreach_set('value',mask);ob.data=new
 modelhash=None
 if save:
  md.mkdir(parents=True);bpy.ops.wm.save_as_mainfile(filepath=str(md/'Ember_Regent.blend'),compress=True);modelhash=hashlib.sha256((md/'Ember_Regent.blend').read_bytes()).hexdigest()
@@ -47,7 +50,7 @@ out.mkdir(parents=True);images={}
 for shot in ([] if save_only else ['02_ThreeQuarter','03_Side']):
  s.camera=bpy.data.objects[shot];dest=out/(shot+'.png');s.render.filepath=str(dest);bpy.ops.render.render(write_still=True);images[dest.name]=hashlib.sha256(dest.read_bytes()).hexdigest()
 assert hashlib.sha256(source.read_bytes()).hexdigest()==digest
-manifest=dict(source=base,source_sha256=digest,source_unchanged=True,model_saved=save,model_sha256=modelhash,archive_model_path=str(md/'Ember_Regent.blend') if save else None,source_id_version=idsversion,selection_ellipse=ellipse,selected_fibers=len(selected),trimmed_fibers=int(mask.sum()),too_early_to_trim=len(skipped),accepted_fringe_selected=int(accepted[selected].sum()),polyline_cut_quantiles_m=np.quantile(cuts,[0,.5,1]).tolist(),images_sha256=images,method='Trim inspected projected outer accent to last original control before first ellipse entry, only if at least3 controls remain. Retain complete source control prefix/root, taper last<=4 radii without altering first radius. All other geometry/materials retained. Screen projection is a selection device, not continuous visibility or collision proof.')
+manifest=dict(source=base,source_sha256=digest,source_unchanged=True,model_saved=save,model_sha256=modelhash,archive_model_path=str(md/'Ember_Regent.blend') if save else None,operation_attribute=attribute,source_id_version=idsversion,selection_ellipse=ellipse,selected_fibers=len(selected),trimmed_fibers=int(mask.sum()),too_early_to_trim=len(skipped),accepted_fringe_selected=int(accepted[selected].sum()),polyline_cut_quantiles_m=np.quantile(cuts,[0,.5,1]).tolist() if cuts else [],images_sha256=images,method='Trim inspected projected outer accent to last original control before first ellipse entry, only if at least3 controls remain. Retain complete source control prefix/root, taper last<=4 radii without altering first radius. All other geometry/materials retained. Screen projection is a selection device, not continuous visibility or collision proof.')
 (out/'outer_accent_manifest.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8')
 if save:(md/'outer_accent_manifest.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8')
 print('OUTER_ACCENT_TRIM',version,int(mask.sum()),flush=True)

@@ -1,0 +1,16 @@
+{
+  "source": "nativereargraduated264",
+  "source_sha256": "d8cc2dc623a27aa55e8016d503d20dd2349074d3b6286401270f36268f70d58c",
+  "source_unchanged": true,
+  "camera": "05_OppositeSide",
+  "diagnostic_opposite_camera": true,
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "samples": 192,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "cf7ff972e0ec5a1d4e9fe41333c726897a0c087219e3c260a32fc5363c28fe6d",
+  "status": "Actual render pending art review; no generative image replacement"
+}

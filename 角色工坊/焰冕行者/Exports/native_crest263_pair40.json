@@ -1,0 +1,17 @@
+{
+  "source": "nativeprojectedlayers251",
+  "source_sha256": "4011f51a072d43d898646ce2b3426f8cad550240fff2541b57ba95197e5fb3ef",
+  "candidate": "nativecleancrest263",
+  "candidate_sha256": "1e24bc4002119385478a5392d2903fe9036780331af4da490ff6ca89a0dbfdf0",
+  "mesh_count": 141,
+  "meshes_uv_shape_keys_transforms_exact": true,
+  "other_native_geometry_exact": true,
+  "material_light_world_camera_display_exact": true,
+  "image_paths_compared_as_resolved_absolute": true,
+  "retained_curve_history_exact": true,
+  "retained_positions_radii_counts_transforms_exact": true,
+  "accepted_inner_curtain_retained": true,
+  "removed_fibers": 34,
+  "retained_fibers": 46009,
+  "scope": "Independent saved-file mixed-count deletion comparison to exact local inspected selection. Count/topology intentionally reduced;all retained fibers exact. Not artistic or collision acceptance."
+}

@@ -38,10 +38,24 @@ for name,v in beforevisibility.items():assert aftervisibility[name]==(True if na
 for name,data in before[2].items():
  if name!=primary:
   assert all(np.array_equal(x,y) for x,y in zip(data,after[2][name])),name
+retained=None
+if '--remove' in a:
+ retained=np.load(ROOT/'Exports'/candidate/'local_retained_indices.npz')['retained'];assert retained.ndim==1 and len(retained)>0 and np.all(np.diff(retained)>0)
+ assert retained.min()>=0 and retained.max()<len(before[2][primary][2])
 for name,(kind,values) in beforeattrs.items():
+ if retained is not None:values=values.reshape(len(before[2][primary][2]),-1)[retained].ravel()
  assert kind==afterattrs[name][0] and np.array_equal(values,afterattrs[name][1]),name
 bp,br,bs,bt=before[2][primary];ap,ar,asz,at=after[2][primary]
-assert np.array_equal(bt,at) and len(bs)==len(asz)==46043
+assert np.array_equal(bt,at)
+if retained is not None:
+ keep=np.zeros(len(bs),bool);keep[retained]=True;pointkeep=np.repeat(keep,bs)
+ assert np.array_equal(bp[pointkeep],ap) and np.array_equal(br[pointkeep],ar) and np.array_equal(bs[keep],asz)
+ assert not beforeattrs['native_inner_curtain_shift'][1][~keep].any()
+ manifest=json.loads((ROOT/'Exports'/candidate/'stray_removal_manifest.json').read_text());assert manifest['model_sha256']==after[0] and manifest['source_sha256']==before[0] and manifest['removed_fibers']==int((~keep).sum())
+ selected=np.load(ROOT/'Renders'/manifest['selection']/'local_projected_indices.npz')['selected'];assert np.array_equal(np.flatnonzero(~keep),selected)
+ result=dict(source=base,source_sha256=before[0],candidate=candidate,candidate_sha256=after[0],mesh_count=len(before[1]),meshes_uv_shape_keys_transforms_exact=True,other_native_geometry_exact=True,material_light_world_camera_display_exact=True,image_paths_compared_as_resolved_absolute='--resolve-image-paths' in a,retained_curve_history_exact=True,retained_positions_radii_counts_transforms_exact=True,accepted_inner_curtain_retained=True,removed_fibers=len(selected),retained_fibers=len(retained),scope='Independent saved-file mixed-count deletion comparison to exact local inspected selection. Count/topology intentionally reduced;all retained fibers exact. Not artistic or collision acceptance.')
+ out.write_text(json.dumps(result,indent=2),encoding='utf-8');print('STRAY_REMOVAL_AUDIT_PASS',candidate,flush=True);sys.exit(0)
+assert len(bs)==len(asz)
 if '--channels' in a:
  mask=afterattrs['native_sweep_channels'][1];assert np.array_equal(bs,asz) and np.array_equal(br,ar)
  assert not np.any(beforeattrs['native_inner_curtain_shift'][1][mask])
@@ -57,9 +71,10 @@ if '--channels' in a:
  assert manifest['model_sha256']==after[0] and manifest['source_sha256']==before[0] and manifest['selected_fibers']==len(selected)
  result=dict(source=base,source_sha256=before[0],candidate=candidate,candidate_sha256=after[0],mesh_count=len(before[1]),meshes_uv_shape_keys_transforms_exact=True,other_native_geometry_exact=True,material_light_world_camera_display_exact=True,image_paths_compared_as_resolved_absolute='--resolve-image-paths' in a,historical_curve_attributes_exact=True,all_radii_point_counts_transforms_exact=True,all_roots_exact=True,unselected_fibers_exact=int((~mask).sum()),selected_fibers=len(selected),first8_last9_controls_exact=True,max_same_index_displacement_m=delta,scope='Independent saved mixed-control localized deformation audit. Material image paths resolved to original absolute files after drive change. Static comparison only;not artistic or continuous collision acceptance.')
  out.write_text(json.dumps(result,indent=2),encoding='utf-8');print('CHANNELS_AUDIT_PASS',candidate,flush=True);sys.exit(0)
-if '--trim' in a or '--accent' in a:
+if '--trim' in a or '--accent' in a or '--layer-trim' in a:
  accent='--accent' in a
- mask=afterattrs['native_trimmed_outer_accent' if accent else 'native_rounded_nape'][1]
+ layered='--layer-trim' in a
+ mask=afterattrs['native_raw_rear_layers' if layered else 'native_trimmed_outer_accent' if accent else 'native_rounded_nape'][1]
  if accent:assert not np.any(beforeattrs['native_inner_curtain_shift'][1][mask])
  else:assert np.all(beforeattrs['native_restored_raw_controls'][1][mask])
  bo=np.r_[0,np.cumsum(bs)];ao=np.r_[0,np.cumsum(asz)];cuts=[]
@@ -74,7 +89,8 @@ if '--trim' in a or '--accent' in a:
   assert np.array_equal(r,expected)
   oldlength=float(np.linalg.norm(np.diff(old,axis=0),axis=1).sum());newlength=float(np.linalg.norm(np.diff(p,axis=0),axis=1).sum())
   cuts.append(oldlength-newlength)
-  if not accent:assert .00099<cuts[-1]<.03201 and cuts[-1]<=oldlength*.22001
+  if layered:assert .00099<cuts[-1]<.03501 and cuts[-1]<=oldlength*.26001
+  elif not accent:assert .00099<cuts[-1]<.03201 and cuts[-1]<=oldlength*.22001
  manifest=json.loads((ROOT/'Exports'/candidate/('outer_accent_manifest.json' if accent else 'rounded_nape_manifest.json')).read_text())
  assert manifest['model_sha256']==after[0] and manifest['source_sha256']==before[0] and manifest['trimmed_fibers' if accent else 'selected_fibers']==int(mask.sum())
  result=dict(source=base,source_sha256=before[0],candidate=candidate,candidate_sha256=after[0],mesh_count=len(before[1]),meshes_uv_shape_keys_transforms_exact=True,other_native_geometry_exact=True,material_light_world_camera_display_exact=True,historical_curve_attributes_exact=True,unchanged_fibers_paths_radii_counts_exact=int((~mask).sum()),trimmed_fibers=int(mask.sum()),all_current_roots_exact=True,trimmed_control_prefixes_exact=True,terminal_points_on_source_segments=True,intentional_terminal_taper_verified=True,polyline_shortening_quantiles_m=np.quantile(cuts,[0,.5,1]).tolist(),scope='Independent saved mixed-control trim comparison. Selected point counts and terminal radii intentionally change. Not art or continuous collision proof.')

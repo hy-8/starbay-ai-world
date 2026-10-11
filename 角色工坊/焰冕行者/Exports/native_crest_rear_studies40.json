@@ -1,0 +1,521 @@
+{
+  "continuation": "nativereargraduated264",
+  "goal_complete": false,
+  "studies": [
+    {
+      "version": "nativecrestids253",
+      "manifest": {
+        "source": "nativeprojectedlayers251",
+        "source_sha256": "4011f51a072d43d898646ce2b3426f8cad550240fff2541b57ba95197e5fb3ef",
+        "source_unchanged": true,
+        "edited_object": "Bystedt layercut derivative • native root reflow",
+        "points_per_curve": null,
+        "selection_attribute": null,
+        "selection_rule": {
+          "ThreeQuarter_normalized_ellipse": [
+            0.577,
+            0.262,
+            0.026,
+            0.023
+          ],
+          "minimum_projected_controls": 2
+        },
+        "legend": {
+          "blue": "Edited selected-object curves",
+          "red": "Untouched selected-object curves",
+          "green": "All other visible native hair components",
+          "gray": "Body/clothes"
+        },
+        "edited_fibers": 1585,
+        "unselected_fibers": 44458,
+        "method": "Exact temporary curve subsets with original radii/matrix, actual cameras, emission diagnostic only. Ellipse is projected controls, not continuous visibility proof.",
+        "status": "Unreviewed actual component diagnostic"
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "01_Front.png": "393f85c2f15330eebb9666402a2ec6b2d48065e2438d4a6b22c624c1fa1ede46",
+        "02_ThreeQuarter.png": "d841a6ad31e78b988608840796c7dc078a70d7357f7aef865fadeefc1a54fb7a"
+      },
+      "art_judgment": "Both inspected;1585 shafts selected,includes many roots and does not isolate only visible loop.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativecresttrim254",
+      "manifest": {
+        "source": "nativeprojectedlayers251",
+        "source_sha256": "4011f51a072d43d898646ce2b3426f8cad550240fff2541b57ba95197e5fb3ef",
+        "source_unchanged": true,
+        "model_saved": false,
+        "model_sha256": null,
+        "archive_model_path": null,
+        "operation_attribute": "native_trimmed_crest",
+        "source_id_version": "nativecrestids253",
+        "selection_ellipse": [
+          0.577,
+          0.262,
+          0.026,
+          0.023
+        ],
+        "selected_fibers": 1585,
+        "trimmed_fibers": 68,
+        "too_early_to_trim": 1517,
+        "accepted_fringe_selected": 0,
+        "polyline_cut_quantiles_m": [
+          0.08723720163106918,
+          0.1133093312382698,
+          0.18219929933547974
+        ],
+        "images_sha256": {
+          "02_ThreeQuarter.png": "a3a6468568ed509bf80d694578b2e0835cd2bcd552a8b7585d5a3eab5fb5b694",
+          "03_Side.png": "6eeb6e5d08d23a06c36c0b7466d78f885ceac42071ac4b6042d821ff3aec61ce"
+        },
+        "method": "Trim inspected projected outer accent to last original control before first ellipse entry, only if at least3 controls remain. Retain complete source control prefix/root, taper last<=4 radii without altering first radius. All other geometry/materials retained. Screen projection is a selection device, not continuous visibility or collision proof."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "a3a6468568ed509bf80d694578b2e0835cd2bcd552a8b7585d5a3eab5fb5b694",
+        "03_Side.png": "6eeb6e5d08d23a06c36c0b7466d78f885ceac42071ac4b6042d821ff3aec61ce"
+      },
+      "art_judgment": "Both inspected;only68 trimmed,1517 skipped because entry near root. Long cuts87-182mm give little visible benefit;not adopted.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativesettlecrest256",
+      "manifest": {
+        "source": "nativeprojectedlayers251",
+        "source_sha256": "4011f51a072d43d898646ce2b3426f8cad550240fff2541b57ba95197e5fb3ef",
+        "source_unchanged": true,
+        "model_saved": false,
+        "selection": "nativecrestids253",
+        "selected_fibers": 320,
+        "max_displacement_m": 0.0029753446578979492,
+        "discrete_reverted_points": 10,
+        "images_sha256": {
+          "02_ThreeQuarter.png": "e1c443af7d762f931bd091a57d5443f7de72843ebb1dd557b98f1aca9600882b",
+          "01_Front.png": "e50962a4281be7037748cfd2ace64edd79f3131c0f8c3ead53541e6e4f596b87"
+        },
+        "method": "Selected65control crest strands only,exclude accepted inner curtain.3mm maximum downward spatial Gaussian with highZ gate and smooth middle envelope. First8,last9,all radii/counts/materials retained. Revert points that would worsen original signed body gap or cross0.5mm positive gap. Discrete guard,not continuous collision proof."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "01_Front.png": "e50962a4281be7037748cfd2ace64edd79f3131c0f8c3ead53541e6e4f596b87",
+        "02_ThreeQuarter.png": "e1c443af7d762f931bd091a57d5443f7de72843ebb1dd557b98f1aca9600882b"
+      },
+      "art_judgment": "Both inspected;320 uniform65point curves lowered at most2.975mm;visible loop remains,not adopted.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativemixedcrest257",
+      "manifest": {
+        "source": "nativeprojectedlayers251",
+        "source_sha256": "4011f51a072d43d898646ce2b3426f8cad550240fff2541b57ba95197e5fb3ef",
+        "source_unchanged": true,
+        "model_saved": false,
+        "selection": "nativecrestids253",
+        "mixed_projected": true,
+        "selected_fibers": 1585,
+        "max_displacement_m": 0.003899216651916504,
+        "discrete_reverted_points": 44,
+        "images_sha256": {
+          "02_ThreeQuarter.png": "09bb51fc35da8b287a1f63f0c8771184fde8ba9f6d1506b976938fb6d044a57d",
+          "01_Front.png": "d104ad0b67eee43c0379d6cfba75cd69e752f7ba223f812dd3a0951b5579a5ce"
+        },
+        "method": "Mixed-count selected crest strands,exclude accepted inner curtain.4mm maximum downward projected Gaussian,18mm root arc-length fade and last25percent fade to exact tip. All roots,tips,radii/counts/materials retained;near-root intermediate controls intentionally change. Revert points worsening original signed body gap or crossing0.5mm positive gap. Discrete guard,not continuous collision proof."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "01_Front.png": "d104ad0b67eee43c0379d6cfba75cd69e752f7ba223f812dd3a0951b5579a5ce",
+        "02_ThreeQuarter.png": "09bb51fc35da8b287a1f63f0c8771184fde8ba9f6d1506b976938fb6d044a57d"
+      },
+      "art_judgment": "Both inspected;1585 mixed curves locally lowered at most3.899mm;loop persists,not adopted.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativerearlayerpilot259",
+      "manifest": {
+        "source": "nativeprojectedlayers251",
+        "source_sha256": "4011f51a072d43d898646ce2b3426f8cad550240fff2541b57ba95197e5fb3ef",
+        "model_saved": false,
+        "model_sha256": null,
+        "selected_fibers": 7154,
+        "polyline_shortening_quantiles_m": [
+          0.001000656124231346,
+          0.007630444692640863,
+          0.035
+        ],
+        "source_unchanged": true,
+        "image_sha256": "faca318fd3c1f69f5b5e4bafd81ccde6c59cbfadffe75061fd783925864fdcba",
+        "method": "Restored raw rear fibers only;tipY>15mm,tipZ<1.800m,rootY>-30mm,pilot rootX<-5mm. Shorten own control polyline by6percent+up to20percent smooth root-height term,times coherent root spatial field0.45-1,capped35mm. Exact prefix and terminal interpolation,root unchanged,last4 radii tapered. No resampling of full curve,no common cutting plane;not art or collision proof.",
+        "operation_attribute": "native_raw_rear_layers",
+        "pilot": true
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "04_Back.png": "faca318fd3c1f69f5b5e4bafd81ccde6c59cbfadffe75061fd783925864fdcba"
+      },
+      "art_judgment": "Back inspected;negativeX7154 raw rear fibers graduated,more staggered tips;pilot basis261.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativesmallarchids260",
+      "manifest": {
+        "source": "nativeprojectedlayers251",
+        "source_sha256": "4011f51a072d43d898646ce2b3426f8cad550240fff2541b57ba95197e5fb3ef",
+        "source_unchanged": true,
+        "edited_object": "Bystedt layercut derivative • native root reflow",
+        "points_per_curve": null,
+        "selection_attribute": null,
+        "selection_rule": {
+          "ThreeQuarter_normalized_ellipse": [
+            0.585,
+            0.261,
+            0.011,
+            0.013
+          ],
+          "minimum_projected_controls": 2
+        },
+        "legend": {
+          "blue": "Edited selected-object curves",
+          "red": "Untouched selected-object curves",
+          "green": "All other visible native hair components",
+          "gray": "Body/clothes"
+        },
+        "edited_fibers": 34,
+        "unselected_fibers": 46009,
+        "method": "Exact temporary curve subsets with original radii/matrix, actual cameras, emission diagnostic only. Ellipse is projected controls, not continuous visibility proof.",
+        "status": "Unreviewed actual component diagnostic"
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "01_Front.png": "aab1e00326282dd4e2289cd74c24148fad31fdd9125dc81c084a186cff41747b",
+        "02_ThreeQuarter.png": "2d4cb82dc2cab039e98049303920c020e8a67b4f6642f16cc908360c63343cac"
+      },
+      "art_judgment": "Both inspected;tighter projected region isolates34 visible arch fibers.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativerearlayers261",
+      "manifest": {
+        "source": "nativeprojectedlayers251",
+        "source_sha256": "4011f51a072d43d898646ce2b3426f8cad550240fff2541b57ba95197e5fb3ef",
+        "model_saved": false,
+        "model_sha256": null,
+        "selected_fibers": 20399,
+        "polyline_shortening_quantiles_m": [
+          0.0010004849765946613,
+          0.013817303664926317,
+          0.035
+        ],
+        "source_unchanged": true,
+        "image_sha256": "b7e2581a9bd768ea783a3bb8abfb5fb22ac798bffab678761320b16847461912",
+        "method": "Restored raw rear fibers only;tipY>15mm,tipZ<1.800m,rootY>-30mm,pilot rootX<-5mm. Shorten own control polyline by6percent+up to20percent smooth root-height term,times coherent root spatial field0.45-1,capped35mm. Exact prefix and terminal interpolation,root unchanged,last4 radii tapered. No resampling of full curve,no common cutting plane;not art or collision proof.",
+        "operation_attribute": "native_raw_rear_layers",
+        "pilot": false,
+        "images_sha256": {
+          "04_Back.png": "b7e2581a9bd768ea783a3bb8abfb5fb22ac798bffab678761320b16847461912",
+          "03_Side.png": "857457f5d81613a32ca1dfbaa5477c7926bfb0a6928055df417f4efc47c6132e",
+          "02_ThreeQuarter.png": "51ce9c4efd78e40a8a0690e0f55736977944da2fa538ba71896b18da0709fc69"
+        }
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "51ce9c4efd78e40a8a0690e0f55736977944da2fa538ba71896b18da0709fc69",
+        "03_Side.png": "857457f5d81613a32ca1dfbaa5477c7926bfb0a6928055df417f4efc47c6132e",
+        "04_Back.png": "b7e2581a9bd768ea783a3bb8abfb5fb22ac798bffab678761320b16847461912"
+      },
+      "art_judgment": "Back/side/quarter inspected;20399 rear raw fibers graduated,less even nape edge,front preserved. Broad rear groups remain;basis264.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativestrayarch262",
+      "manifest": {
+        "source": "nativeprojectedlayers251",
+        "source_sha256": "4011f51a072d43d898646ce2b3426f8cad550240fff2541b57ba95197e5fb3ef",
+        "source_unchanged": true,
+        "model_saved": false,
+        "model_sha256": null,
+        "archive_model_path": null,
+        "selection": "nativesmallarchids260",
+        "removed_fibers": 34,
+        "retained_fibers": 46009,
+        "images_sha256": {
+          "02_ThreeQuarter.png": "cdf00e34a8d516d5b15ed7b697c324459ffe468bb592c3d06b28855f4016ead8",
+          "01_Front.png": "52e7e783c312026605ea0559e6ba3eccee1a5dd9502f168a803675e49ad1033a"
+        },
+        "method": "Remove only small actual inspected projected stray set;all retained mixed-count positions,radii and historical CURVE attributes copied exactly. No accepted inner-curtain fibers removed. Source remains unchanged;topology count intentionally reduced. Requires art review,not continuous collision proof."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "01_Front.png": "52e7e783c312026605ea0559e6ba3eccee1a5dd9502f168a803675e49ad1033a",
+        "02_ThreeQuarter.png": "cdf00e34a8d516d5b15ed7b697c324459ffe468bb592c3d06b28855f4016ead8"
+      },
+      "art_judgment": "Both inspected;removing only34 selected fibers removes visible small loop without observed new scalp gap;basis263.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativecleancrest263",
+      "manifest": {
+        "source": "nativeprojectedlayers251",
+        "source_sha256": "4011f51a072d43d898646ce2b3426f8cad550240fff2541b57ba95197e5fb3ef",
+        "source_unchanged": true,
+        "model_saved": true,
+        "model_sha256": "1e24bc4002119385478a5392d2903fe9036780331af4da490ff6ca89a0dbfdf0",
+        "archive_model_path": "D:\\星湾世界_模型归档\\starbay-ai-world\\角色工坊\\焰冕行者\\Exports\\nativecleancrest263\\Ember_Regent.blend",
+        "selection": "nativesmallarchids260",
+        "removed_fibers": 34,
+        "retained_fibers": 46009,
+        "images_sha256": {},
+        "method": "Remove only small actual inspected projected stray set;all retained mixed-count positions,radii and historical CURVE attributes copied exactly. No accepted inner-curtain fibers removed. Source remains unchanged;topology count intentionally reduced. Requires art review,not continuous collision proof."
+      },
+      "model_sha256": "1e24bc4002119385478a5392d2903fe9036780331af4da490ff6ca89a0dbfdf0",
+      "inspected_images_sha256": {},
+      "art_judgment": "Saved262 geometry;independent retained mixed-control and historical attribute audit passed.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativereargraduated264",
+      "manifest": {
+        "source": "nativecleancrest263",
+        "source_sha256": "1e24bc4002119385478a5392d2903fe9036780331af4da490ff6ca89a0dbfdf0",
+        "model_saved": true,
+        "model_sha256": "d8cc2dc623a27aa55e8016d503d20dd2349074d3b6286401270f36268f70d58c",
+        "selected_fibers": 20398,
+        "polyline_shortening_quantiles_m": [
+          0.0010004849765946613,
+          0.013817084351640897,
+          0.035
+        ],
+        "source_unchanged": true,
+        "image_sha256": "d7f5256471d03ae6f404efccbb23ef6971c98ed47a3d88a9e32275c2375c3a97",
+        "method": "Restored raw rear fibers only;tipY>15mm,tipZ<1.800m,rootY>-30mm,pilot rootX<-5mm. Shorten own control polyline by6percent+up to20percent smooth root-height term,times coherent root spatial field0.45-1,capped35mm. Exact prefix and terminal interpolation,root unchanged,last4 radii tapered. No resampling of full curve,no common cutting plane;not art or collision proof.",
+        "operation_attribute": "native_raw_rear_layers",
+        "pilot": false,
+        "archive_model_path": "D:\\星湾世界_模型归档\\starbay-ai-world\\角色工坊\\焰冕行者\\Exports\\nativereargraduated264\\Ember_Regent.blend",
+        "images_sha256": {
+          "04_Back.png": "d7f5256471d03ae6f404efccbb23ef6971c98ed47a3d88a9e32275c2375c3a97",
+          "03_Side.png": "b12e6bef6cf38a72232d8445836ad118a4f86862ab32153825ae8e79707f4982",
+          "02_ThreeQuarter.png": "3219a7f9c210c3ee55c73026abc087ab93098a8e529fadea3c776ad96b0b3f01"
+        }
+      },
+      "model_sha256": "d8cc2dc623a27aa55e8016d503d20dd2349074d3b6286401270f36268f70d58c",
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "3219a7f9c210c3ee55c73026abc087ab93098a8e529fadea3c776ad96b0b3f01",
+        "03_Side.png": "b12e6bef6cf38a72232d8445836ad118a4f86862ab32153825ae8e79707f4982",
+        "04_Back.png": "d7f5256471d03ae6f404efccbb23ef6971c98ed47a3d88a9e32275c2375c3a97"
+      },
+      "art_judgment": "Saved rear graduation on263;20398 selected after one of former rear fibers removed. Three actual previews,high back/quarter/opposite checked;independent trim audit passed. Incomplete continuation.",
+      "goal_complete": false
+    }
+  ],
+  "inspected_presentations": [
+    {
+      "version": "nativelayersopposite252",
+      "manifest": {
+        "source": "nativeprojectedlayers251",
+        "source_sha256": "4011f51a072d43d898646ce2b3426f8cad550240fff2541b57ba95197e5fb3ef",
+        "source_unchanged": true,
+        "camera": "05_OppositeSide",
+        "diagnostic_opposite_camera": true,
+        "geometry_lighting_unchanged": true,
+        "resolution": [
+          1200,
+          1400
+        ],
+        "samples": 192,
+        "denoising": "OpenImageDenoise",
+        "image_sha256": "0dadbaf060332eeffc470f31c8bbe16a918aeda5b3894e81d767ebc2e5166d9d",
+        "status": "Actual render pending art review; no generative image replacement"
+      },
+      "actually_inspected": true
+    },
+    {
+      "version": "nativelayersback258",
+      "manifest": {
+        "source": "nativeprojectedlayers251",
+        "source_sha256": "4011f51a072d43d898646ce2b3426f8cad550240fff2541b57ba95197e5fb3ef",
+        "source_unchanged": true,
+        "camera": "04_Back",
+        "diagnostic_opposite_camera": false,
+        "geometry_lighting_unchanged": true,
+        "resolution": [
+          1200,
+          1400
+        ],
+        "samples": 192,
+        "denoising": "OpenImageDenoise",
+        "image_sha256": "0b74915afd7888321e9ce24bd44f52bf9f2e425ff45401b2eb154090c434c024",
+        "status": "Actual render pending art review; no generative image replacement"
+      },
+      "actually_inspected": true
+    },
+    {
+      "version": "nativerearhigh264",
+      "manifest": {
+        "source": "nativereargraduated264",
+        "source_sha256": "d8cc2dc623a27aa55e8016d503d20dd2349074d3b6286401270f36268f70d58c",
+        "source_unchanged": true,
+        "camera": "04_Back",
+        "diagnostic_opposite_camera": false,
+        "geometry_lighting_unchanged": true,
+        "resolution": [
+          1920,
+          2240
+        ],
+        "samples": 512,
+        "denoising": "OpenImageDenoise",
+        "image_sha256": "87908d9818411fd285b0b048213cb25189754e25d1cb8bf774417fc2d99fb00c",
+        "status": "Actual render pending art review; no generative image replacement"
+      },
+      "actually_inspected": true
+    },
+    {
+      "version": "nativecrestfronthigh264",
+      "manifest": {
+        "source": "nativereargraduated264",
+        "source_sha256": "d8cc2dc623a27aa55e8016d503d20dd2349074d3b6286401270f36268f70d58c",
+        "source_unchanged": true,
+        "camera": "02_ThreeQuarter",
+        "diagnostic_opposite_camera": false,
+        "geometry_lighting_unchanged": true,
+        "resolution": [
+          1920,
+          2240
+        ],
+        "samples": 512,
+        "denoising": "OpenImageDenoise",
+        "image_sha256": "d51633ab794d7f889fd8defc43eacde90b9d814cb03e6620275f6e459a443b77",
+        "status": "Actual render pending art review; no generative image replacement"
+      },
+      "actually_inspected": true
+    },
+    {
+      "version": "nativegraduatedopposite265",
+      "manifest": {
+        "source": "nativereargraduated264",
+        "source_sha256": "d8cc2dc623a27aa55e8016d503d20dd2349074d3b6286401270f36268f70d58c",
+        "source_unchanged": true,
+        "camera": "05_OppositeSide",
+        "diagnostic_opposite_camera": true,
+        "geometry_lighting_unchanged": true,
+        "resolution": [
+          1200,
+          1400
+        ],
+        "samples": 192,
+        "denoising": "OpenImageDenoise",
+        "image_sha256": "cf7ff972e0ec5a1d4e9fe41333c726897a0c087219e3c260a32fc5363c28fe6d",
+        "status": "Actual render pending art review; no generative image replacement"
+      },
+      "actually_inspected": true
+    }
+  ],
+  "independent_audits": [
+    {
+      "source": "nativeprojectedlayers251",
+      "source_sha256": "4011f51a072d43d898646ce2b3426f8cad550240fff2541b57ba95197e5fb3ef",
+      "candidate": "nativecleancrest263",
+      "candidate_sha256": "1e24bc4002119385478a5392d2903fe9036780331af4da490ff6ca89a0dbfdf0",
+      "mesh_count": 141,
+      "meshes_uv_shape_keys_transforms_exact": true,
+      "other_native_geometry_exact": true,
+      "material_light_world_camera_display_exact": true,
+      "image_paths_compared_as_resolved_absolute": true,
+      "retained_curve_history_exact": true,
+      "retained_positions_radii_counts_transforms_exact": true,
+      "accepted_inner_curtain_retained": true,
+      "removed_fibers": 34,
+      "retained_fibers": 46009,
+      "scope": "Independent saved-file mixed-count deletion comparison to exact local inspected selection. Count/topology intentionally reduced;all retained fibers exact. Not artistic or collision acceptance."
+    },
+    {
+      "source": "nativecleancrest263",
+      "source_sha256": "1e24bc4002119385478a5392d2903fe9036780331af4da490ff6ca89a0dbfdf0",
+      "candidate": "nativereargraduated264",
+      "candidate_sha256": "d8cc2dc623a27aa55e8016d503d20dd2349074d3b6286401270f36268f70d58c",
+      "mesh_count": 141,
+      "meshes_uv_shape_keys_transforms_exact": true,
+      "other_native_geometry_exact": true,
+      "material_light_world_camera_display_exact": true,
+      "historical_curve_attributes_exact": true,
+      "unchanged_fibers_paths_radii_counts_exact": 25611,
+      "trimmed_fibers": 20398,
+      "all_current_roots_exact": true,
+      "trimmed_control_prefixes_exact": true,
+      "terminal_points_on_source_segments": true,
+      "intentional_terminal_taper_verified": true,
+      "polyline_shortening_quantiles_m": [
+        0.0010005123913288116,
+        0.013817086815834045,
+        0.03500008583068848
+      ],
+      "scope": "Independent saved mixed-control trim comparison. Selected point counts and terminal radii intentionally change. Not art or continuous collision proof."
+    }
+  ],
+  "crest_probe_quantiles": {
+    "columns": [
+      "index",
+      "count",
+      "rootX",
+      "rootY",
+      "rootZ",
+      "peakX",
+      "peakY",
+      "peakZ",
+      "peakIndex"
+    ],
+    "quantiles": [
+      [
+        15.0,
+        0.025832144543528557,
+        -0.058831412345170975,
+        1.8546050786972046,
+        -0.017041996121406555,
+        -0.047088976949453354,
+        1.864337682723999,
+        2.0
+      ],
+      [
+        15.0,
+        0.03657911792397499,
+        -0.04493992328643799,
+        1.859465980529785,
+        -0.0007403761846944689,
+        -0.03862302899360657,
+        1.8683441638946534,
+        3.0
+      ],
+      [
+        17.0,
+        0.04099380597472191,
+        -0.027381213381886482,
+        1.8626258373260498,
+        0.025248758494853973,
+        -0.0037900020834058523,
+        1.8721544742584229,
+        3.0
+      ],
+      [
+        65.0,
+        0.04197731539607048,
+        -0.00620077513158321,
+        1.8638758420944215,
+        0.03236477747559548,
+        0.013840646855533125,
+        1.880111861228943,
+        26.0
+      ],
+      [
+        65.0,
+        0.04293264448642731,
+        0.005367186851799488,
+        1.8666754961013794,
+        0.040393367409706116,
+        0.027679331600666046,
+        1.8822219371795654,
+        31.0
+      ]
+    ]
+  },
+  "storage": "Only fresh263/264 models written directly toD with newE junctions. No history migration or deletion. Detailed indices/probes/logs and licensed geometry local.",
+  "scope": "Real Blender/Cycles. Visible targeted loop removed;rear tips graduated. Broad posterior bundles and rigid side strands remain. Not final artwork,not UE validation,no paid assets or Release."
+}

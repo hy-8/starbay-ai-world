@@ -1,0 +1,23 @@
+{
+  "source": "nativecleancrest263",
+  "source_sha256": "1e24bc4002119385478a5392d2903fe9036780331af4da490ff6ca89a0dbfdf0",
+  "candidate": "nativereargraduated264",
+  "candidate_sha256": "d8cc2dc623a27aa55e8016d503d20dd2349074d3b6286401270f36268f70d58c",
+  "mesh_count": 141,
+  "meshes_uv_shape_keys_transforms_exact": true,
+  "other_native_geometry_exact": true,
+  "material_light_world_camera_display_exact": true,
+  "historical_curve_attributes_exact": true,
+  "unchanged_fibers_paths_radii_counts_exact": 25611,
+  "trimmed_fibers": 20398,
+  "all_current_roots_exact": true,
+  "trimmed_control_prefixes_exact": true,
+  "terminal_points_on_source_segments": true,
+  "intentional_terminal_taper_verified": true,
+  "polyline_shortening_quantiles_m": [
+    0.0010005123913288116,
+    0.013817086815834045,
+    0.03500008583068848
+  ],
+  "scope": "Independent saved mixed-control trim comparison. Selected point counts and terminal radii intentionally change. Not art or continuous collision proof."
+}

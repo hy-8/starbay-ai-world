@@ -1,0 +1,16 @@
+{
+  "source": "nativeprojectedlayers251",
+  "source_sha256": "4011f51a072d43d898646ce2b3426f8cad550240fff2541b57ba95197e5fb3ef",
+  "source_unchanged": true,
+  "camera": "04_Back",
+  "diagnostic_opposite_camera": false,
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "samples": 192,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "0b74915afd7888321e9ce24bd44f52bf9f2e425ff45401b2eb154090c434c024",
+  "status": "Actual render pending art review; no generative image replacement"
+}

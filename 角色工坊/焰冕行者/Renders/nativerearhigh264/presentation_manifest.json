@@ -1,0 +1,16 @@
+{
+  "source": "nativereargraduated264",
+  "source_sha256": "d8cc2dc623a27aa55e8016d503d20dd2349074d3b6286401270f36268f70d58c",
+  "source_unchanged": true,
+  "camera": "04_Back",
+  "diagnostic_opposite_camera": false,
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "87908d9818411fd285b0b048213cb25189754e25d1cb8bf774417fc2d99fb00c",
+  "status": "Actual render pending art review; no generative image replacement"
+}
