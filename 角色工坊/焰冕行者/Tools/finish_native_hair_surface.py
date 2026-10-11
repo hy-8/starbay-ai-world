@@ -11,6 +11,7 @@ if not all(re.fullmatch('[A-Za-z0-9_-]+',v) for v in args[:2]):raise ValueError(
 roughness=float(args[args.index('--roughness')+1]) if '--roughness' in args else .30
 random_roughness=float(args[args.index('--random-roughness')+1]) if '--random-roughness' in args else None
 archive='--archive' in args;preview='--preview-only' in args;rear_study='--rear-study' in args
+main_only='--main-only' in args
 assert random_roughness is None or 0<=random_roughness<=1
 radial=float(args[args.index('--radial')+1]) if '--radial' in args else .36
 if not (.2<=roughness<=.5 and .2<=radial<=.6):raise ValueError('Restrained valid hair roughness required')
@@ -21,6 +22,7 @@ if out.exists() or render.exists():raise RuntimeError('Fresh output required')
 source=ROOT/'Exports'/source_version/'Ember_Regent.blend'
 bpy.ops.wm.open_mainfile(filepath=str(source),use_scripts=False)
 visible=[o for o in bpy.data.objects if o.type=='CURVES' and not o.hide_render]
+if main_only:visible=[bpy.data.objects['Bystedt layercut derivative • native root reflow']]
 def geometry_hash():
  h=hashlib.sha256()
  for ob in sorted(visible,key=lambda o:o.name):
@@ -57,6 +59,7 @@ out.mkdir(parents=True);render.mkdir(parents=True)
 report=dict(version=version,source=source_version,source_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),method='Fresh cloned hair materials, explicit Roughness/Radial Roughness, preserve color and actual geometry',visible_strands=sum(len(o.data.curves) for o in visible),geometry_before_sha256=before,geometry_after_sha256=geometry_hash(),all_positions_and_radii_unchanged=True,materials=records,samples=scene.cycles.samples,draft='--draft' in args,status='unreviewed true Blender surface study',license='Retained project original frontal / Ddr Rcs Royalty Free rear / Bystedt CC BY-SA support / Abhay Pratap Royalty Free source-flow support')
 (out/'surface_manifest.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
 report.update(model_saved=not preview,archive_outputs=archive,rear_study=rear_study,random_roughness=random_roughness)
+report.update(main_only=main_only,material_scope_objects=[o.name for o in visible])
 if not preview:
  bpy.ops.wm.save_as_mainfile(filepath=str(out/'Ember_Regent.blend'),compress=True)
  report['model_sha256']=hashlib.sha256((out/'Ember_Regent.blend').read_bytes()).hexdigest()

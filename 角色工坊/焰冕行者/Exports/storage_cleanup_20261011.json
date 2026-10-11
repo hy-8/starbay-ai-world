@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-11",
+  "compression": {
+    "files": 393,
+    "batch_files": 392,
+    "pilot_files": 1,
+    "batch_saved_bytes": 54332910337,
+    "pilot_saved_bytes": 150307348,
+    "all_sha256_before_after_identical": true,
+    "errors": 0,
+    "method": "Windows transparent LZX storage compression; original paths and content retained"
+  },
+  "deleted_verified_cache": [
+    {
+      "path": "E:\\星湾世界\\starbay-ai-world\\星湾UE5\\Saved\\StagedBuilds\\Windows",
+      "bytes": 983016727.0,
+      "files": 47,
+      "reason": "47 files byte-identical to preserved final Windows release"
+    },
+    {
+      "path": "E:\\星湾世界\\starbay-ai-world\\星湾UE5\\Saved\\Cooked",
+      "bytes": 763469274.0,
+      "files": 1427,
+      "reason": "Generated Unreal cook/shader/asset-registry cache; source Content, project, Config, release and rebuild tools preserved"
+    },
+    {
+      "path": "E:\\星湾世界\\starbay-ai-world\\星湾UE5\\Saved\\Shaders",
+      "bytes": 146069727.0,
+      "files": 16,
+      "reason": "Generated Unreal cook/shader/asset-registry cache; source Content, project, Config, release and rebuild tools preserved"
+    },
+    {
+      "path": "E:\\星湾世界\\starbay-ai-world\\星湾UE5\\Intermediate\\CachedAssetRegistry_0.bin",
+      "bytes": 75134414.0,
+      "files": 1,
+      "reason": "Generated Unreal cook/shader/asset-registry cache; source Content, project, Config, release and rebuild tools preserved"
+    }
+  ],
+  "deleted_cache_bytes": 1967690142,
+  "total_reclaimed_bytes": 56450907827,
+  "total_reclaimed_GiB": 52.57400481682271,
+  "current_E_free_bytes": 107512406016,
+  "measurement": "Sum of per-file stored-size reduction and verified deleted cache bytes. Global free-space changes from other activity excluded; small filesystem allocation overhead not included.",
+  "preserved": [
+    "Original source assets",
+    "All historical models",
+    "Current 298 and prior 283",
+    "Recovery archives",
+    "Released games",
+    "Other Saved files including backups/autosaves",
+    "Six unrelated edits"
+  ],
+  "protected_sha256": {
+    "Source/FabMediumLayered/hairstyle.blend": "0adca6484a4d6c51c3dfd33e5d13ed42f3bf44cae3fcea8f4aa10c710077ecd4",
+    "Exports/layercut04/Ember_Regent.blend": "3eb679fc7a14c6cd1082d5b595535f41caac949586553441f60447b5537a8dd9",
+    "Exports/nativecurvedaccent283/Ember_Regent.blend": "559d01f198bfc7b1b4a2839846a72cbc2e5e2f315c2fbaf4b216cb188d0cac6b",
+    "Exports/nativerearlift298/Ember_Regent.blend": "59feae1b9f6c9ee7652a9ad0331b1ac3851c9bf9b4ebdf16f0a8b42e899cd787"
+  },
+  "ue_rebuild_note": "Next cook/package rebuilds deleted generated caches.",
+  "local_detailed_records": "D:\\星湾世界_模型归档\\compression_batch_20261011_01"
+}

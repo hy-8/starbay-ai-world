@@ -7,6 +7,7 @@ from mathutils.bvhtree import BVHTree
 ROOT=Path(__file__).resolve().parents[1]
 a=sys.argv[sys.argv.index('--')+1:];version,base=a[:2];pilot='--pilot' in a
 fine='--fine' in a
+micro='--micro' in a;archive='--archive' in a
 save='--save-archive' in a
 save_only='--save-only' in a
 assert not save_only or save
@@ -14,6 +15,7 @@ modeldir=Path(r'D:\星湾世界_模型归档\starbay-ai-world\角色工坊\焰�
 assert not save or not modeldir.exists()
 assert all(re.fullmatch('[A-Za-z0-9_-]+',x) for x in a[:2])
 source=ROOT/'Exports'/base/'Ember_Regent.blend';digest=hashlib.sha256(source.read_bytes()).hexdigest();out=ROOT/'Renders'/version;assert not out.exists()
+if archive:out=Path(r'D:\星湾世界_模型归档\starbay-ai-world\角色工坊\焰冕行者\Renders')/version;assert not out.exists()
 bpy.ops.wm.open_mainfile(filepath=str(source),use_scripts=False)
 ob=bpy.data.objects['Bystedt layercut derivative • native root reflow'];cu=ob.data
 p=np.empty((len(cu.points),3),np.float32);cu.attributes['position'].data.foreach_get('vector',p.ravel());original=p.copy()
@@ -27,7 +29,9 @@ for i in ids:
  path=p[off[i]:off[i+1]];arc=np.r_[0,np.cumsum(np.linalg.norm(np.diff(path,axis=0),axis=1))];arcs.append(arc)
  sampled.append(np.column_stack([np.interp(ts*arc[-1],arc,path[:,j]) for j in range(3)]))
 sampled=np.array(sampled);features=sampled[:,[0,9,18,27],:].reshape(len(ids),-1)
+if micro:features=sampled[:,[10,17,24],:].reshape(len(ids),-1)
 K=(48 if pilot else 96) if fine else (18 if pilot else 32);centers=[features[len(ids)//2]];distance=np.full(len(ids),np.inf)
+if micro:K=160 if pilot else 400
 for k in range(1,K):
  distance=np.minimum(distance,((features-centers[-1])**2).sum(1));centers.append(features[np.argmax(distance)])
 centers=np.array(centers)
@@ -47,12 +51,25 @@ for k in range(K):
   c=np.column_stack([np.interp(t,ts,center[:,j]) for j in range(3)]);ac=np.column_stack([np.interp(t,ts,across[:,j]) for j in range(3)]);ac/=np.maximum(np.linalg.norm(ac,axis=1)[:,None],1e-10)
   width=np.sum((path-c)*ac,axis=1);envelope=smooth((arc-.008)/.017)*(1-smooth((t-(.86 if fine else .72))/(.12 if fine else .23)))
   cap=.0045 if fine else .0024;strength=.78 if fine else .48
+  if micro:cap=.002;strength=.85;envelope=smooth((arc-.008)/.017)*(1-smooth((t-.88)/.10))
   shift=cap*np.tanh(width*strength/cap)*envelope;vals=path-ac*shift[:,None];vals[0]=path[0];vals[-1]=path[-1]
-  for j in range(1,len(path)-1):
-   if abs(shift[j])<.000001:continue
-   h,n,_,d=bv.find_nearest(Vector(vals[j]));oh,on,_,od=bv.find_nearest(Vector(path[j]))
-   if (Vector(vals[j])-h).dot(n)<min(.0003,(Vector(path[j])-oh).dot(on)):
-    vals[j]=path[j];reverted+=1
+  if micro:
+   delta=vals-path;samples=np.vstack([path,(path[:-1]+path[1:])*.5]);steps=np.vstack([delta,(delta[:-1]+delta[1:])*.5]);moving=np.linalg.norm(steps,axis=1)>1e-7;samples=samples[moving];steps=steps[moving]
+   def gap(v):
+    h,n,_,_=bv.find_nearest(Vector(v));return float((Vector(v)-h).dot(n))
+   limits=[min(.0003,gap(v))-1e-6 for v in samples];scale=1.
+   for trial in range(7):
+    if all(gap(v+d*scale)>=limit for v,d,limit in zip(samples,steps,limits)):break
+    scale*=.5
+   else:scale=0.
+   if scale<1:reverted+=1
+   vals=path+delta*scale
+  else:
+   for j in range(1,len(path)-1):
+    if abs(shift[j])<.000001:continue
+    h,n,_,d=bv.find_nearest(Vector(vals[j]));oh,on,_,od=bv.find_nearest(Vector(path[j]))
+    if (Vector(vals[j])-h).dot(n)<min(.0003,(Vector(path[j])-oh).dot(on)):
+     vals[j]=path[j];reverted+=1
   p[off[i]:off[i+1]]=vals.astype(np.float32)
  groups.append(dict(group=k,fibers=len(rows)))
 cu.attributes['position'].data.foreach_set('vector',p.ravel());cu.update_tag()
@@ -75,5 +92,6 @@ assert hashlib.sha256(source.read_bytes()).hexdigest()==digest
 print('RAW_REAR_SECTIONS',version,len(ids),flush=True)
 manifest=json.loads((out/'rear_sections_manifest.json').read_text(encoding='utf-8'))
 manifest.update(model_saved=save,model_sha256=modelhash,archive_model_path=str(modeldir/'Ember_Regent.blend') if save else None,fine_sections=fine,section_count=K,contraction_fraction=.78 if fine else .48,displacement_limit_m=.0045 if fine else .0024,root_retained_arc_m=.008,terminal_retained_fraction=.02 if fine else .05,method='Mixed raw rear curves grouped by whole-path features, parameters recorded separately. Transverse contraction without outward loft.32 arc samples used only for clustering/frames,original control counts and all radii retained. First8mm retained,17mm smooth root onset;terminal fade. Revert any moved control worsening original signed body gap or crossing0.3mm positive gap. Discrete guard only;not continuous collision or art proof.')
+if micro:manifest.update(micro_sections=True,contraction_fraction=.85,displacement_limit_m=.002,terminal_retained_fraction=.02,reverted_curves=reverted,method='160pilot/400full microsections on already lifted rear flow;features at10/17/24 of32 arc samples.85percent transverse contraction bounded2mm,root8mm retained with17mm onset,fade88-98percent arc,tip exact. Original mixed controls/radii retained. Whole-curve scale backtracking checks moving controls/midpoints against min(original signed gap,0.3mm) minus1micron. No added loft,no continuous collision or art approval.')
 (out/'rear_sections_manifest.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8')
 if save:(modeldir/'rear_sections_manifest.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8')

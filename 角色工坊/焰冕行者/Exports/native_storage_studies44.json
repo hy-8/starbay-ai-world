@@ -1,0 +1,774 @@
+{
+  "continuation": "nativerearlift298",
+  "goal_complete": false,
+  "studies": [
+    {
+      "version": "nativemicropilot299",
+      "manifest": {
+        "source": "nativerearlift298",
+        "source_sha256": "59feae1b9f6c9ee7652a9ad0331b1ac3851c9bf9b4ebdf16f0a8b42e899cd787",
+        "source_unchanged": true,
+        "model_saved": false,
+        "pilot": true,
+        "selected_fibers": 7333,
+        "groups": [
+          {
+            "group": 0,
+            "fibers": 60
+          },
+          {
+            "group": 1,
+            "fibers": 19
+          },
+          {
+            "group": 2,
+            "fibers": 33
+          },
+          {
+            "group": 3,
+            "fibers": 38
+          },
+          {
+            "group": 4,
+            "fibers": 34
+          },
+          {
+            "group": 5,
+            "fibers": 40
+          },
+          {
+            "group": 6,
+            "fibers": 48
+          },
+          {
+            "group": 7,
+            "fibers": 39
+          },
+          {
+            "group": 8,
+            "fibers": 44
+          },
+          {
+            "group": 9,
+            "fibers": 30
+          },
+          {
+            "group": 10,
+            "fibers": 30
+          },
+          {
+            "group": 11,
+            "fibers": 6
+          },
+          {
+            "group": 12,
+            "fibers": 62
+          },
+          {
+            "group": 13,
+            "fibers": 17
+          },
+          {
+            "group": 14,
+            "fibers": 51
+          },
+          {
+            "group": 15,
+            "fibers": 44
+          },
+          {
+            "group": 16,
+            "fibers": 87
+          },
+          {
+            "group": 17,
+            "fibers": 86
+          },
+          {
+            "group": 18,
+            "fibers": 47
+          },
+          {
+            "group": 19,
+            "fibers": 48
+          },
+          {
+            "group": 20,
+            "fibers": 58
+          },
+          {
+            "group": 21,
+            "fibers": 60
+          },
+          {
+            "group": 22,
+            "fibers": 6
+          },
+          {
+            "group": 23,
+            "fibers": 37
+          },
+          {
+            "group": 24,
+            "fibers": 49
+          },
+          {
+            "group": 25,
+            "fibers": 21
+          },
+          {
+            "group": 26,
+            "fibers": 46
+          },
+          {
+            "group": 27,
+            "fibers": 63
+          },
+          {
+            "group": 28,
+            "fibers": 36
+          },
+          {
+            "group": 29,
+            "fibers": 51
+          },
+          {
+            "group": 30,
+            "fibers": 17
+          },
+          {
+            "group": 31,
+            "fibers": 54
+          },
+          {
+            "group": 32,
+            "fibers": 41
+          },
+          {
+            "group": 33,
+            "fibers": 82
+          },
+          {
+            "group": 34,
+            "fibers": 64
+          },
+          {
+            "group": 35,
+            "fibers": 12
+          },
+          {
+            "group": 36,
+            "fibers": 46
+          },
+          {
+            "group": 37,
+            "fibers": 42
+          },
+          {
+            "group": 38,
+            "fibers": 69
+          },
+          {
+            "group": 39,
+            "fibers": 38
+          },
+          {
+            "group": 40,
+            "fibers": 27
+          },
+          {
+            "group": 41,
+            "fibers": 56
+          },
+          {
+            "group": 42,
+            "fibers": 54
+          },
+          {
+            "group": 43,
+            "fibers": 61
+          },
+          {
+            "group": 44,
+            "fibers": 34
+          },
+          {
+            "group": 45,
+            "fibers": 70
+          },
+          {
+            "group": 46,
+            "fibers": 72
+          },
+          {
+            "group": 47,
+            "fibers": 62
+          },
+          {
+            "group": 48,
+            "fibers": 65
+          },
+          {
+            "group": 49,
+            "fibers": 79
+          },
+          {
+            "group": 50,
+            "fibers": 29
+          },
+          {
+            "group": 51,
+            "fibers": 29
+          },
+          {
+            "group": 52,
+            "fibers": 63
+          },
+          {
+            "group": 53,
+            "fibers": 72
+          },
+          {
+            "group": 54,
+            "fibers": 41
+          },
+          {
+            "group": 55,
+            "fibers": 34
+          },
+          {
+            "group": 56,
+            "fibers": 63
+          },
+          {
+            "group": 57,
+            "fibers": 36
+          },
+          {
+            "group": 58,
+            "fibers": 26
+          },
+          {
+            "group": 59,
+            "fibers": 63
+          },
+          {
+            "group": 60,
+            "fibers": 67
+          },
+          {
+            "group": 61,
+            "fibers": 41
+          },
+          {
+            "group": 62,
+            "fibers": 72
+          },
+          {
+            "group": 63,
+            "fibers": 38
+          },
+          {
+            "group": 64,
+            "fibers": 21
+          },
+          {
+            "group": 65,
+            "fibers": 77
+          },
+          {
+            "group": 66,
+            "fibers": 42
+          },
+          {
+            "group": 67,
+            "fibers": 68
+          },
+          {
+            "group": 68,
+            "fibers": 27
+          },
+          {
+            "group": 69,
+            "fibers": 65
+          },
+          {
+            "group": 70,
+            "fibers": 21
+          },
+          {
+            "group": 71,
+            "fibers": 64
+          },
+          {
+            "group": 72,
+            "fibers": 44
+          },
+          {
+            "group": 73,
+            "fibers": 51
+          },
+          {
+            "group": 74,
+            "fibers": 56
+          },
+          {
+            "group": 75,
+            "fibers": 74
+          },
+          {
+            "group": 76,
+            "fibers": 22
+          },
+          {
+            "group": 77,
+            "fibers": 35
+          },
+          {
+            "group": 78,
+            "fibers": 73
+          },
+          {
+            "group": 79,
+            "fibers": 63
+          },
+          {
+            "group": 80,
+            "fibers": 49
+          },
+          {
+            "group": 81,
+            "fibers": 51
+          },
+          {
+            "group": 82,
+            "fibers": 50
+          },
+          {
+            "group": 83,
+            "fibers": 4
+          },
+          {
+            "group": 84,
+            "fibers": 57
+          },
+          {
+            "group": 85,
+            "fibers": 44
+          },
+          {
+            "group": 86,
+            "fibers": 34
+          },
+          {
+            "group": 87,
+            "fibers": 31
+          },
+          {
+            "group": 88,
+            "fibers": 62
+          },
+          {
+            "group": 89,
+            "fibers": 81
+          },
+          {
+            "group": 90,
+            "fibers": 31
+          },
+          {
+            "group": 91,
+            "fibers": 55
+          },
+          {
+            "group": 92,
+            "fibers": 61
+          },
+          {
+            "group": 93,
+            "fibers": 40
+          },
+          {
+            "group": 94,
+            "fibers": 50
+          },
+          {
+            "group": 95,
+            "fibers": 52
+          },
+          {
+            "group": 96,
+            "fibers": 22
+          },
+          {
+            "group": 97,
+            "fibers": 23
+          },
+          {
+            "group": 98,
+            "fibers": 58
+          },
+          {
+            "group": 99,
+            "fibers": 30
+          },
+          {
+            "group": 100,
+            "fibers": 22
+          },
+          {
+            "group": 101,
+            "fibers": 42
+          },
+          {
+            "group": 102,
+            "fibers": 24
+          },
+          {
+            "group": 103,
+            "fibers": 67
+          },
+          {
+            "group": 104,
+            "fibers": 69
+          },
+          {
+            "group": 105,
+            "fibers": 67
+          },
+          {
+            "group": 106,
+            "fibers": 72
+          },
+          {
+            "group": 107,
+            "fibers": 47
+          },
+          {
+            "group": 108,
+            "fibers": 22
+          },
+          {
+            "group": 109,
+            "fibers": 52
+          },
+          {
+            "group": 110,
+            "fibers": 56
+          },
+          {
+            "group": 111,
+            "fibers": 70
+          },
+          {
+            "group": 112,
+            "fibers": 28
+          },
+          {
+            "group": 113,
+            "fibers": 63
+          },
+          {
+            "group": 114,
+            "fibers": 61
+          },
+          {
+            "group": 115,
+            "fibers": 32
+          },
+          {
+            "group": 116,
+            "fibers": 65
+          },
+          {
+            "group": 117,
+            "fibers": 61
+          },
+          {
+            "group": 118,
+            "fibers": 29
+          },
+          {
+            "group": 119,
+            "fibers": 43
+          },
+          {
+            "group": 120,
+            "fibers": 40
+          },
+          {
+            "group": 121,
+            "fibers": 61
+          },
+          {
+            "group": 122,
+            "fibers": 37
+          },
+          {
+            "group": 123,
+            "fibers": 32
+          },
+          {
+            "group": 124,
+            "fibers": 45
+          },
+          {
+            "group": 125,
+            "fibers": 48
+          },
+          {
+            "group": 126,
+            "fibers": 36
+          },
+          {
+            "group": 127,
+            "fibers": 59
+          },
+          {
+            "group": 128,
+            "fibers": 34
+          },
+          {
+            "group": 129,
+            "fibers": 18
+          },
+          {
+            "group": 130,
+            "fibers": 76
+          },
+          {
+            "group": 131,
+            "fibers": 26
+          },
+          {
+            "group": 132,
+            "fibers": 53
+          },
+          {
+            "group": 133,
+            "fibers": 32
+          },
+          {
+            "group": 134,
+            "fibers": 9
+          },
+          {
+            "group": 135,
+            "fibers": 50
+          },
+          {
+            "group": 136,
+            "fibers": 38
+          },
+          {
+            "group": 137,
+            "fibers": 34
+          },
+          {
+            "group": 138,
+            "fibers": 48
+          },
+          {
+            "group": 139,
+            "fibers": 31
+          },
+          {
+            "group": 140,
+            "fibers": 57
+          },
+          {
+            "group": 141,
+            "fibers": 53
+          },
+          {
+            "group": 142,
+            "fibers": 47
+          },
+          {
+            "group": 143,
+            "fibers": 40
+          },
+          {
+            "group": 144,
+            "fibers": 42
+          },
+          {
+            "group": 145,
+            "fibers": 41
+          },
+          {
+            "group": 146,
+            "fibers": 56
+          },
+          {
+            "group": 147,
+            "fibers": 29
+          },
+          {
+            "group": 148,
+            "fibers": 50
+          },
+          {
+            "group": 149,
+            "fibers": 17
+          },
+          {
+            "group": 150,
+            "fibers": 19
+          },
+          {
+            "group": 151,
+            "fibers": 47
+          },
+          {
+            "group": 152,
+            "fibers": 49
+          },
+          {
+            "group": 153,
+            "fibers": 15
+          },
+          {
+            "group": 154,
+            "fibers": 32
+          },
+          {
+            "group": 155,
+            "fibers": 30
+          },
+          {
+            "group": 156,
+            "fibers": 29
+          },
+          {
+            "group": 157,
+            "fibers": 48
+          },
+          {
+            "group": 158,
+            "fibers": 84
+          },
+          {
+            "group": 159,
+            "fibers": 52
+          }
+        ],
+        "max_same_index_displacement_m": 0.001999899046495557,
+        "reverted_points": 61,
+        "images_sha256": {
+          "04_Back.png": "a93d7b90ed2d481fe890306042699bf7e9e08636614a8b5464f62ed28f35e97b",
+          "05_OppositeSide.png": "54e392f97e61793a1ba1dc4788a8470dd388ba81ce62e90575199f85e613aada"
+        },
+        "method": "160pilot/400full microsections on already lifted rear flow;features at10/17/24 of32 arc samples.85percent transverse contraction bounded2mm,root8mm retained with17mm onset,fade88-98percent arc,tip exact. Original mixed controls/radii retained. Whole-curve scale backtracking checks moving controls/midpoints against min(original signed gap,0.3mm) minus1micron. No added loft,no continuous collision or art approval.",
+        "model_sha256": null,
+        "archive_model_path": null,
+        "fine_sections": false,
+        "section_count": 160,
+        "contraction_fraction": 0.85,
+        "displacement_limit_m": 0.002,
+        "root_retained_arc_m": 0.008,
+        "terminal_retained_fraction": 0.02,
+        "micro_sections": true,
+        "reverted_curves": 61
+      },
+      "decision": "160 microsections: limited convincing silhouette improvement; not adopted.",
+      "actual_images_inspected": true
+    },
+    {
+      "version": "nativemaindry300",
+      "manifest": {
+        "version": "nativemaindry300",
+        "source": "nativerearlift298",
+        "source_sha256": "59feae1b9f6c9ee7652a9ad0331b1ac3851c9bf9b4ebdf16f0a8b42e899cd787",
+        "method": "Fresh cloned hair materials, explicit Roughness/Radial Roughness, preserve color and actual geometry",
+        "visible_strands": 46009,
+        "geometry_before_sha256": "39fe6f70de8e723051ccb4d7578bced9f4e0ac4a5b30d08b89b529fcb7d3c6db",
+        "geometry_after_sha256": "39fe6f70de8e723051ccb4d7578bced9f4e0ac4a5b30d08b89b529fcb7d3c6db",
+        "all_positions_and_radii_unchanged": true,
+        "materials": [
+          {
+            "source": "Deep cherry • coherent native groom pigment",
+            "new_material": "Deep cherry • coherent native groom pigment • restrained sh",
+            "changes": {
+              "Roughness": {
+                "old_default": 0.30000001192092896,
+                "removed_input_links": 0,
+                "new_default": 0.45
+              },
+              "Radial Roughness": {
+                "not_applied": "Huang shader has no radial roughness input"
+              },
+              "Random Roughness": {
+                "old_default": 0.1599999964237213,
+                "removed_input_links": 0,
+                "new_default": 0.24
+              }
+            }
+          }
+        ],
+        "samples": 256,
+        "draft": false,
+        "status": "unreviewed true Blender surface study",
+        "license": "Retained project original frontal / Ddr Rcs Royalty Free rear / Bystedt CC BY-SA support / Abhay Pratap Royalty Free source-flow support",
+        "model_saved": false,
+        "archive_outputs": true,
+        "rear_study": true,
+        "random_roughness": 0.24,
+        "main_only": true,
+        "material_scope_objects": [
+          "Bystedt layercut derivative • native root reflow"
+        ],
+        "source_unchanged": true,
+        "images_sha256": {
+          "02_ThreeQuarter.png": "44aff6fbfe9de52c95cda87de9fb7d3e7e02eaaa6315c96bcadf0d827a66b176",
+          "04_Back.png": "798c576fe9df13f530e9609d569045b571ed676e86c37eb1063bfe8d64d71ea9",
+          "05_OppositeSide.png": "a9d6565230722853665cbee49d3932d1a8b53ad0a63a24decb5e9d31e5f15ef3"
+        },
+        "denoising": "OpenImageDenoise"
+      },
+      "decision": "Primary hair only roughness 0.45/random 0.24; broader bundles persist; not adopted.",
+      "actual_images_inspected": true
+    },
+    {
+      "version": "nativeairylift301",
+      "manifest": {
+        "source": "nativerearlift298",
+        "source_sha256": "59feae1b9f6c9ee7652a9ad0331b1ac3851c9bf9b4ebdf16f0a8b42e899cd787",
+        "source_unchanged": true,
+        "selection": null,
+        "model_saved": false,
+        "model_sha256": null,
+        "render_archive": "D:\\星湾世界_模型归档\\starbay-ai-world\\角色工坊\\焰冕行者\\Renders\\nativeairylift301",
+        "selected_fibers": 20575,
+        "scale_quantiles": [
+          0.0,
+          1.0,
+          1.0
+        ],
+        "zero_scale_fibers": 2,
+        "max_same_index_displacement_m": 0.0030414799693971872,
+        "images_sha256": {
+          "04_Back.png": "3d10ecda9a5efe864e700aba3e5ebddf0662a4e45c99e02ba30ed56daf870604",
+          "03_Side.png": "7d384a7e007c9e44fab416893190a000a6b4d1a4af47f549c04fb0a6c6a2932a",
+          "05_OppositeSide.png": "b6cbb264b213dfab95f12311f3cc76e7d4274d6d566c0a2b6760b2318b428c2f",
+          "02_ThreeQuarter.png": "57359066881cf89f8202892b66f56664aa419b22285485fb9d01da1ac2d8be8c"
+        },
+        "method": "Restored raw rear paths only;optional exact inspected projection intersection. Keep original mixed control counts,radii,root8mm and terminal5percent. Smooth individual transverse/positive-normal directional variation1.2-2.5mm amplitude,1-2 waves over full path,seed731992. One scalar backtracking per curve preserves sampled original body clearance at controls/midpoints. No full-path resampling or material changes. Not continuous collision or art acceptance.",
+        "loose": true,
+        "pilot": false,
+        "amplitude_range_m": [
+          0.0012,
+          0.0025
+        ],
+        "wave_range": [
+          1,
+          2
+        ],
+        "posterior_only": true,
+        "posterior_gate": "Multiply displacement by smoothstep((1.850-oldZ)/25mm)*smoothstep((oldY-15mm)/25mm). Controls at/above1.850m or at/beforeY15mm exact."
+      },
+      "decision": "Added posterior individual variation on 298: four actual views inspected, broad bands remain and no sufficiently convincing improvement; not adopted.",
+      "actual_images_inspected": true
+    }
+  ]
+}

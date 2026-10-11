@@ -9,7 +9,6 @@ ARCHIVE=Path(r'D:\星湾世界_模型归档\starbay-ai-world\角色工坊\焰冕
 a=sys.argv[sys.argv.index('--')+1:];version,base=a[:2]
 selection=a[a.index('--selection')+1] if '--selection' in a else None
 loose='--loose' in a;pilot='--pilot' in a;relief='--coherent-relief' in a;posterior_only='--posterior-only' in a
-assert not posterior_only or relief
 assert all(re.fullmatch('[A-Za-z0-9_-]+',v) for v in a[:2]+([selection] if selection else []))
 save='--save-archive' in a;save_only='--save-only' in a;assert not save_only or save
 source=ROOT/'Exports'/base/'Ember_Regent.blend';digest=hashlib.sha256(source.read_bytes()).hexdigest()
@@ -49,7 +48,7 @@ for i in ids:
   height=.001+.007*(.5+.5*np.sin(field))**2
   arch=smooth((arc-.008)/.025)*np.sin(np.pi*np.clip(t,0,1))**1.1
   shift=arch[:,None]*(normal*height+across*(.002*np.sin(field+.7)))
-  if posterior_only:shift*=(smooth((1.850-path[:,2])/.025)*smooth((path[:,1]-.015)/.025))[:,None]
+ if posterior_only:shift*=(smooth((1.850-path[:,2])/.025)*smooth((path[:,1]-.015)/.025))[:,None]
  samples=np.vstack([path,(path[:-1]+path[1:])*.5]);steps=np.vstack([shift,(shift[:-1]+shift[1:])*.5]);moving=np.linalg.norm(steps,axis=1)>1e-7
  samples=samples[moving];steps=steps[moving];thresholds=[min(.0003,gap(v))-1e-6 for v in samples];scale=1.
  for trial in range(7):
@@ -77,8 +76,8 @@ m.update(loose=loose,pilot=pilot,amplitude_range_m=[.0012,.0025] if loose else [
 if loose:m['method']=m['method'].replace('0.35-0.75mm amplitude,1-3 waves','1.2-2.5mm amplitude,1-2 waves')
 if relief:
  m.update(coherent_relief=True,method='Restored raw rear paths only. Preserve mixed counts,radii,root8mm,endpoints,original materials. At55percent arc,field=510*x+250*y+140*z;normal relief1..8mm by squared sine field,transverse2mm sine. Smooth25mm onset after8mm times sin(pi*t)^1.1 arch;no terminal5percent preservation claim. Whole-curve backtracking preserves original sampled body gap at controls/midpoints. Not continuous collision or art acceptance.')
- m.update(posterior_only=posterior_only,posterior_gate='Multiply displacement by smoothstep((1.850-oldZ)/25mm)*smoothstep((oldY-15mm)/25mm). Controls at/above1.850m or at/beforeY15mm exact.' if posterior_only else None)
  m.update(amplitude_range_m=[.001,.008],wave_range=None,amplitude_meaning='Normal relief before arch/spatial gate/backtracking;transverse component at most2mm')
+m.update(posterior_only=posterior_only,posterior_gate='Multiply displacement by smoothstep((1.850-oldZ)/25mm)*smoothstep((oldY-15mm)/25mm). Controls at/above1.850m or at/beforeY15mm exact.' if posterior_only else None)
 (out/'strand_variation_manifest.json').write_text(json.dumps(m,indent=2),encoding='utf-8')
 if save:(md/'strand_variation_manifest.json').write_text(json.dumps(m,indent=2),encoding='utf-8')
 print('STRAND_VARIATION_RENDERED',version,len(ids),flush=True)
