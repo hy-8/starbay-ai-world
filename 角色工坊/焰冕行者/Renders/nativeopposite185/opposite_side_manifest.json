@@ -1,0 +1,20 @@
+{
+  "version": "nativeopposite185",
+  "source": "nativetailaccent185",
+  "source_sha256": "48eb77fcb9e195bfa519c8789dbcfd6797118684c9c102479ef3f1ae3e7f1c1d",
+  "source_unchanged": true,
+  "method": "Existing neutral cameras when requested, plus actual opposite camera mirrored in world space with local-X handedness correction; no pixel flip or geometry edit",
+  "samples": 192,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "denoising": false,
+  "image_sha256": "6607dfd553d7e56079c85cc70ad462b8a8d60f96407d3f5454a3affd3207d418",
+  "images_sha256": {
+    "05_OppositeSide.png": "6607dfd553d7e56079c85cc70ad462b8a8d60f96407d3f5454a3affd3207d418"
+  },
+  "status": "Unreviewed actual neutral/opposite profile diagnostic, not artistic approval",
+  "single_camera": null,
+  "opposite_image_reused_from": null
+}

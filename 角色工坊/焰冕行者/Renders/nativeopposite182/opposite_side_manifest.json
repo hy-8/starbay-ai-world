@@ -1,0 +1,20 @@
+{
+  "version": "nativeopposite182",
+  "source": "nativesoftarc182",
+  "source_sha256": "04507c464e3e91f083a9b9ffff9b3090c61982311dbd36c021ca6b2c799d098b",
+  "source_unchanged": true,
+  "method": "Existing neutral camera 05_OppositeSide; no pixel flip or geometry edit",
+  "samples": 192,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "denoising": false,
+  "image_sha256": "6129b905f4216ee02d7ab50734a9295290539986b8507ca8d543bd9066b1fe65",
+  "images_sha256": {
+    "05_OppositeSide.png": "6129b905f4216ee02d7ab50734a9295290539986b8507ca8d543bd9066b1fe65"
+  },
+  "status": "Unreviewed actual neutral/opposite profile diagnostic, not artistic approval",
+  "single_camera": "05_OppositeSide",
+  "opposite_image_reused_from": null
+}

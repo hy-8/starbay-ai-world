@@ -1,0 +1,461 @@
+{
+  "user_preference": "保留偏分，继续做自然碎发层次",
+  "studies": [
+    {
+      "version": "nativeinnerpilot178",
+      "manifest": {
+        "source": "nativefocusedpart177",
+        "source_sha256": "7ec541cd173d0ffbfbf20a2c6fe16f1a6371b1e11d398035942e48b0b16c20f8",
+        "side": "negative",
+        "amount_m": 0.018,
+        "selection_attribute": "native_inner_curtain_shift",
+        "changed_fibers": 2397,
+        "preserved_prefix_points": 16,
+        "endpoint_delta_quantiles_m": [
+          [
+            0.009025203373465462,
+            -0.0040000000000000036,
+            0.0
+          ],
+          [
+            0.016575266027441984,
+            -0.0040000000000000036,
+            0.0
+          ],
+          [
+            0.01792696455781756,
+            -0.0040000000000000036,
+            0.016585929083103856
+          ]
+        ],
+        "sampled_body_repairs": 5002,
+        "method": "Surviving fringe endpointY<-80mm/Z>1.70m/absX15-105mm; retain own flow, smooth endpoint displacement afterpoint15. Inward75-100% of amount by rootX,forward4mm. Inner absX<65mm tipZ floor1.750m+10mm*(1-absX/65mm),before sampled body guard. Other geometry/radii/materials/lights retained. Not continuous collision proof.",
+        "status": "Actual two-view geometry study awaiting art review"
+      },
+      "model_sha256": "dac8a44e67b35bb4f2864a642f4022a198b961e068ff3c87d8a551951f58fed8",
+      "inspected_draft_sha256": {
+        "01_Front.png": "113c9b067f0c04387433044572133ffbe2ed9d12f5b2795998d496b84a000c1d",
+        "02_ThreeQuarter.png": "59c0dc057e9300abef58adb26db90c74d6418ef0c2632a55e61fdea1c63d5f1a"
+      },
+      "art_judgment": "Inward tips gather too bluntly; opening remains. Not adopted.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativeinnerframe179",
+      "manifest": {
+        "source": "nativefocusedpart177",
+        "source_sha256": "7ec541cd173d0ffbfbf20a2c6fe16f1a6371b1e11d398035942e48b0b16c20f8",
+        "side": "negative",
+        "amount_m": 0.018,
+        "include_front_frame": true,
+        "additional_front_frame_fibers": 1230,
+        "selection_attribute": "native_inner_curtain_shift",
+        "changed_fibers": 3627,
+        "preserved_prefix_points": 6,
+        "endpoint_delta_quantiles_m": [
+          [
+            0.003003876760601997,
+            -0.0040000000000000036,
+            0.0
+          ],
+          [
+            0.014635338894947503,
+            -0.0040000000000000036,
+            0.0
+          ],
+          [
+            0.01792696455781756,
+            -0.0040000000000000036,
+            0.0285773447026767
+          ]
+        ],
+        "sampled_body_repairs": 14214,
+        "method": "Surviving fringe plus upper attribute/rootY<-15mm; endpointY<-80mm/Z>1.70m/absX15-105mm; retain own flow, smooth endpoint displacement afterpoint5. Inward75-100% of amount by rootX,forward4mm. Inner absX<65mm tipZ floor1.750m+10mm*(1-absX/65mm),before sampled body guard. Other geometry/radii/materials/lights retained. Not continuous collision proof.",
+        "status": "Actual two-view geometry study awaiting art review"
+      },
+      "model_sha256": "95ddb1609ebe7798633610e4ad753456bf03fbbecd7445d2b66c9b46c07c94a5",
+      "inspected_draft_sha256": {
+        "01_Front.png": "d3a514794cdfcc46f22cb2947bd8236cb9043bf9978bcf5ba5553c4514ccae20",
+        "02_ThreeQuarter.png": "47d502de7411f8707c48265207dc57726ec5c9baa78187502721bf0efaf579be"
+      },
+      "art_judgment": "Includes upper front frame; hard endpointZ floor makes blunt straight boundary. Not adopted.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativeflowingpart180",
+      "manifest": {
+        "source": "nativefocusedpart177",
+        "source_sha256": "7ec541cd173d0ffbfbf20a2c6fe16f1a6371b1e11d398035942e48b0b16c20f8",
+        "side": "negative",
+        "amount_m": 0.032,
+        "natural_length": true,
+        "include_front_frame": true,
+        "additional_front_frame_fibers": 1230,
+        "selection_attribute": "native_inner_curtain_shift",
+        "changed_fibers": 3627,
+        "preserved_prefix_points": 6,
+        "endpoint_delta_quantiles_m": [
+          [
+            0.00738585571395194,
+            -0.0040000000000000036,
+            0.0
+          ],
+          [
+            0.012932642529925327,
+            -0.0040000000000000036,
+            0.0
+          ],
+          [
+            0.018543270497105566,
+            -0.0040000000000000036,
+            0.0
+          ]
+        ],
+        "sampled_body_repairs": 16169,
+        "method": "Surviving fringe plus upper attribute/rootY<-15mm; endpointY<-80mm/Z>1.70m/absX15-105mm; retain own flow, smooth endpoint displacement afterpoint5. Inward75-100% of amount by rootX,forward4mm. Inward also multiplied byabsX/(50mm+absX),no hardX cap or Z floor,old endpointZ before bodyguard; this is not exact arclength preservation. Other geometry/radii/materials/lights retained. Not continuous collision proof.",
+        "status": "Actual two-view geometry study awaiting art review"
+      },
+      "model_sha256": "8042e79435462ff2c6c491b989bec292b04d3ff20c117a4d50824c8ee7bf3b52",
+      "inspected_draft_sha256": {
+        "01_Front.png": "68d958a249e357172ef9405ca31842e4b4f91c0d6e56ea92f10fdbf1c7a483b2",
+        "02_ThreeQuarter.png": "fe936261f4abb5206b202e94808ad92c5bef49ccb566f86640203ecdae3a15ab"
+      },
+      "art_judgment": "Natural endpoint heights, but inward shift obstructs left eye. Rejected.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativecurtainarc181",
+      "manifest": {
+        "source": "nativefocusedpart177",
+        "source_sha256": "7ec541cd173d0ffbfbf20a2c6fe16f1a6371b1e11d398035942e48b0b16c20f8",
+        "side": "negative",
+        "amount_m": 0.024,
+        "natural_length": true,
+        "curtain_arc": true,
+        "include_front_frame": true,
+        "additional_front_frame_fibers": 1230,
+        "selection_attribute": "native_inner_curtain_shift",
+        "changed_fibers": 3627,
+        "preserved_prefix_points": 6,
+        "endpoint_delta_quantiles_m": [
+          [
+            0.0011078783570927907,
+            -0.0040000000000000036,
+            0.0
+          ],
+          [
+            0.001939896379488798,
+            -0.0040000000000000036,
+            0.0
+          ],
+          [
+            0.002781490574565837,
+            -0.0040000000000000036,
+            0.0
+          ]
+        ],
+        "sampled_body_repairs": 36778,
+        "method": "Surviving fringe plus upper attribute/rootY<-15mm; endpointY<-80mm/Z>1.70m/absX15-105mm; retain own flow, smooth endpoint displacement afterpoint5. Inward75-100% of amount by rootX,forward4mm. Inward also multiplied byabsX/(50mm+absX),no hardX cap or Z floor,old endpointZ before bodyguard; this is not exact arclength preservation. Curtain arc reduces endpointX movement to20%, adds full-amount inward and9mm forward sin(pi*u)^1.5 middle bow. Other geometry/radii/materials/lights retained. Not continuous collision proof.",
+        "status": "Actual two-view geometry study awaiting art review"
+      },
+      "model_sha256": "4887eb9f83e4abbf48a43e56838b34c48a41503ffe6ee6892ca37c7e1175ba61",
+      "inspected_draft_sha256": {
+        "01_Front.png": "7c580ab40bcf89c4a729dc0fd46699e0f250c3bce3837a03a56972e4459fb472",
+        "02_ThreeQuarter.png": "0f3edeee192fceb6936dd68bcb7c99d7f4e6f5c0e504a79e867462ce5cb7a4df"
+      },
+      "art_judgment": "Stronger curtain bow gives repeated S bends/crossing. Not adopted.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativesoftarc182",
+      "manifest": {
+        "source": "nativefocusedpart177",
+        "source_sha256": "7ec541cd173d0ffbfbf20a2c6fe16f1a6371b1e11d398035942e48b0b16c20f8",
+        "side": "negative",
+        "amount_m": 0.014,
+        "natural_length": true,
+        "curtain_arc": true,
+        "include_front_frame": true,
+        "additional_front_frame_fibers": 1230,
+        "selection_attribute": "native_inner_curtain_shift",
+        "changed_fibers": 3627,
+        "preserved_prefix_points": 6,
+        "endpoint_delta_quantiles_m": [
+          [
+            0.0006462623749707956,
+            -0.0040000000000000036,
+            0.0
+          ],
+          [
+            0.0011316062213684655,
+            -0.0040000000000000036,
+            0.0
+          ],
+          [
+            0.0016225361684967382,
+            -0.0040000000000000036,
+            0.0
+          ]
+        ],
+        "sampled_body_repairs": 18483,
+        "method": "Surviving fringe plus upper attribute/rootY<-15mm; endpointY<-80mm/Z>1.70m/absX15-105mm; retain own flow, smooth endpoint displacement afterpoint5. Inward75-100% of amount by rootX,forward4mm. Inward also multiplied byabsX/(50mm+absX),no hardX cap or Z floor,old endpointZ before bodyguard; this is not exact arclength preservation. Curtain arc reduces endpointX movement to20%, adds full-amount inward and9mm forward sin(pi*u)^1.5 middle bow. Other geometry/radii/materials/lights retained. Not continuous collision proof.",
+        "status": "Actual two-view geometry study awaiting art review"
+      },
+      "model_sha256": "04507c464e3e91f083a9b9ffff9b3090c61982311dbd36c021ca6b2c799d098b",
+      "inspected_draft_sha256": {
+        "01_Front.png": "cd80a93c6ca26f113a2e4860e000ae23aca143fd3567ddcdca34c95fa61eb0d1",
+        "02_ThreeQuarter.png": "89eaaf4c712147513a2b8708e9314003282a0992289175d874edd4b689e3b672"
+      },
+      "art_judgment": "Reduced curtain bow, inspected high/opposite profile. Softer side part and clear eyes; user chose to retain this direction. WIP only.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativeouterwisps183",
+      "manifest": {
+        "source": "nativesoftarc182",
+        "source_sha256": "04507c464e3e91f083a9b9ffff9b3090c61982311dbd36c021ca6b2c799d098b",
+        "selected_fibers": 45,
+        "selection": "Non-fringe, excluding accepted inner curtain; at least3 points12:64 in camera ellipse center(.231,.407),radii(.026,.029). Projection is not visibility proof.",
+        "root_quantiles": [
+          [
+            -0.07747280597686768,
+            -0.1142437607049942,
+            1.8012030124664307
+          ],
+          [
+            -0.07568133622407913,
+            -0.09215758740901947,
+            1.8101251125335693
+          ],
+          [
+            -0.040632523596286774,
+            -0.07133130729198456,
+            1.8519542217254639
+          ]
+        ],
+        "tip_quantiles": [
+          [
+            -0.10326538234949112,
+            -0.1681428700685501,
+            1.7098647356033325
+          ],
+          [
+            -0.09775083512067795,
+            -0.06279762089252472,
+            1.7117196321487427
+          ],
+          [
+            -0.08139362931251526,
+            -0.062006670981645584,
+            1.728293776512146
+          ]
+        ],
+        "selection_attribute": "native_outer_wisp_relaxation",
+        "preserved_prefix_points": 12,
+        "accepted_fringe_exact": true,
+        "max_displacement_m": 0.012345536846589938,
+        "method": "Smooth Gaussian camera-local12mm inward/3mm downward field; first12 points and accepted fringe exactly preserved. Other geometry/material/light unchanged. No continuous collision claim.",
+        "status": "Actual two-view study, pending visual review"
+      },
+      "model_sha256": "fd73d98cde0418937978501d08abe3b649abdae9378245cbf898903c4cd1b704",
+      "inspected_draft_sha256": {
+        "01_Front.png": "a2b0be4c5729c18d06984b0bb110e6c990365a6bc817c8db335beb0ef2ea0889",
+        "02_ThreeQuarter.png": "cc5d8260979f60e22ec4f2427aa5a1da1ace31b66ccb384194eb11e0e805e104"
+      },
+      "art_judgment": "Both drafts inspected.45 other primary strands moved inward; outer loops smaller, not eliminated. Accepted fringe geometry exactly retained by generator assertions.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativefeathered184",
+      "manifest": {
+        "source": "nativeouterwisps183",
+        "source_sha256": "fd73d98cde0418937978501d08abe3b649abdae9378245cbf898903c4cd1b704",
+        "selected_fibers": 3061,
+        "candidate_curtain_fibers": 3627,
+        "selection_attribute": "native_accepted_fringe_tip_feathering",
+        "preserved_prefix_points": 33,
+        "polyline_trim_quantiles_m": [
+          0.001169837984003711,
+          0.003233023415180729,
+          0.005998310030272111
+        ],
+        "max_displacement_m": 0.005992270138796491,
+        "method": "Measured source-polyline arclength remapping after point32. Seed184,15 percent untouched accents,0.8-6mm source-path trim limited to18 percent of remaining path. No shared endpoint plane. Own flow and first33 points retained; original radii/topology unchanged. Not continuous collision or exact spline-arclength proof.",
+        "status": "Actual two-view study awaiting review"
+      },
+      "model_sha256": "c76e4e88d66e1f29fe2e791183879e295afae5eb4c7e0ce7230daca5e6e14192",
+      "inspected_draft_sha256": {
+        "01_Front.png": "09501ba2a6a47fd989d9795eef72f0555b0d26849229c9e84db6cee6581d4a2f",
+        "02_ThreeQuarter.png": "ee530726799edbeeb4db3097247381cf7a58480bcec35f677bc589a3d23d216a"
+      },
+      "art_judgment": "Both drafts/high/opposite profile inspected.3061 tips staggered along their own paths; benefit subtle, no gross new frontal knot or altered part observed.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativetailaccent185",
+      "manifest": {
+        "source": "nativefeathered184",
+        "source_sha256": "c76e4e88d66e1f29fe2e791183879e295afae5eb4c7e0ce7230daca5e6e14192",
+        "selected_fibers": 196,
+        "candidate_curtain_fibers": null,
+        "selection_attribute": "native_projected_outer_tip_trim",
+        "preserved_prefix_points": 33,
+        "polyline_trim_quantiles_m": [
+          0.009024770169615318,
+          0.013694571558078884,
+          0.017927120700661183
+        ],
+        "max_displacement_m": 0.017921285440194657,
+        "method": "Camera02_ThreeQuarter projected terminalU<.225,V(.45,.57),all primary families eligible. Not visibility proof. Seed184 individual9-18mm source-polyline trimming,limited45 percent afterpoint32,first33 points/radii/topology retained. Same smooth own-path remap; no new geometry. No collision acceptance.",
+        "status": "Actual two-view study awaiting review"
+      },
+      "model_sha256": "48eb77fcb9e195bfa519c8789dbcfd6797118684c9c102479ef3f1ae3e7f1c1d",
+      "inspected_draft_sha256": {
+        "01_Front.png": "428a6bd78599ccdb91ec1e28e221babfdcacdd3f2ac1378c8a29b09d3aa260a0",
+        "02_ThreeQuarter.png": "5dda3951e5b14b1c62fe38a7c7bfebaddc1e483195ce768488b23bb7fbe9fc7f"
+      },
+      "art_judgment": "Both drafts/high/opposite profile inspected.196 projected outer terminals shortened individually9-18mm; long spear-like accents less protruding, surrounding side-part fall retained. Modest WIP refinement, crown still ordered.",
+      "goal_complete": false
+    }
+  ],
+  "reviewed_presentations": [
+    {
+      "directory": "nativepresentation182",
+      "manifest": {
+        "source": "nativesoftarc182",
+        "source_sha256": "04507c464e3e91f083a9b9ffff9b3090c61982311dbd36c021ca6b2c799d098b",
+        "source_unchanged": true,
+        "camera": "02_ThreeQuarter",
+        "geometry_lighting_unchanged": true,
+        "resolution": [
+          1920,
+          2240
+        ],
+        "samples": 512,
+        "denoising": "OpenImageDenoise",
+        "image_sha256": "31dab390d5a59a3c775f7be0ea3ac11c2c1fbcdae3cc0d1c4d44bd661615f58d",
+        "status": "Actual render pending art review; no generative image replacement"
+      },
+      "all_images_actually_reviewed": true,
+      "goal_complete": false
+    },
+    {
+      "directory": "nativeopposite182",
+      "manifest": {
+        "version": "nativeopposite182",
+        "source": "nativesoftarc182",
+        "source_sha256": "04507c464e3e91f083a9b9ffff9b3090c61982311dbd36c021ca6b2c799d098b",
+        "source_unchanged": true,
+        "method": "Existing neutral camera 05_OppositeSide; no pixel flip or geometry edit",
+        "samples": 192,
+        "resolution": [
+          1200,
+          1400
+        ],
+        "denoising": false,
+        "image_sha256": "6129b905f4216ee02d7ab50734a9295290539986b8507ca8d543bd9066b1fe65",
+        "images_sha256": {
+          "05_OppositeSide.png": "6129b905f4216ee02d7ab50734a9295290539986b8507ca8d543bd9066b1fe65"
+        },
+        "status": "Unreviewed actual neutral/opposite profile diagnostic, not artistic approval",
+        "single_camera": "05_OppositeSide",
+        "opposite_image_reused_from": null
+      },
+      "all_images_actually_reviewed": true,
+      "goal_complete": false
+    },
+    {
+      "directory": "nativepresentation184",
+      "manifest": {
+        "source": "nativefeathered184",
+        "source_sha256": "c76e4e88d66e1f29fe2e791183879e295afae5eb4c7e0ce7230daca5e6e14192",
+        "source_unchanged": true,
+        "camera": "02_ThreeQuarter",
+        "geometry_lighting_unchanged": true,
+        "resolution": [
+          1920,
+          2240
+        ],
+        "samples": 512,
+        "denoising": "OpenImageDenoise",
+        "image_sha256": "2c9917e4fe99e7b0361545db5472ec955b0c52701ea8fa71e54ee03c902cbd57",
+        "status": "Actual render pending art review; no generative image replacement"
+      },
+      "all_images_actually_reviewed": true,
+      "goal_complete": false
+    },
+    {
+      "directory": "nativeopposite184",
+      "manifest": {
+        "version": "nativeopposite184",
+        "source": "nativefeathered184",
+        "source_sha256": "c76e4e88d66e1f29fe2e791183879e295afae5eb4c7e0ce7230daca5e6e14192",
+        "source_unchanged": true,
+        "method": "Existing neutral cameras when requested, plus actual opposite camera mirrored in world space with local-X handedness correction; no pixel flip or geometry edit",
+        "samples": 192,
+        "resolution": [
+          1200,
+          1400
+        ],
+        "denoising": false,
+        "image_sha256": "5372d3ef9732d436636c1fc290b46df6b1f15dc7a01437681d81f3e507958b0e",
+        "images_sha256": {
+          "05_OppositeSide.png": "5372d3ef9732d436636c1fc290b46df6b1f15dc7a01437681d81f3e507958b0e"
+        },
+        "status": "Unreviewed actual neutral/opposite profile diagnostic, not artistic approval",
+        "single_camera": null,
+        "opposite_image_reused_from": null
+      },
+      "all_images_actually_reviewed": true,
+      "goal_complete": false
+    },
+    {
+      "directory": "nativepresentation185",
+      "manifest": {
+        "source": "nativetailaccent185",
+        "source_sha256": "48eb77fcb9e195bfa519c8789dbcfd6797118684c9c102479ef3f1ae3e7f1c1d",
+        "source_unchanged": true,
+        "camera": "02_ThreeQuarter",
+        "geometry_lighting_unchanged": true,
+        "resolution": [
+          1920,
+          2240
+        ],
+        "samples": 512,
+        "denoising": "OpenImageDenoise",
+        "image_sha256": "87afc6b0cc617dcd83276901ada752049a23ed7b89904f35efa6e91c15e8124f",
+        "status": "Actual render pending art review; no generative image replacement"
+      },
+      "all_images_actually_reviewed": true,
+      "goal_complete": false
+    },
+    {
+      "directory": "nativeopposite185",
+      "manifest": {
+        "version": "nativeopposite185",
+        "source": "nativetailaccent185",
+        "source_sha256": "48eb77fcb9e195bfa519c8789dbcfd6797118684c9c102479ef3f1ae3e7f1c1d",
+        "source_unchanged": true,
+        "method": "Existing neutral cameras when requested, plus actual opposite camera mirrored in world space with local-X handedness correction; no pixel flip or geometry edit",
+        "samples": 192,
+        "resolution": [
+          1200,
+          1400
+        ],
+        "denoising": false,
+        "image_sha256": "6607dfd553d7e56079c85cc70ad462b8a8d60f96407d3f5454a3affd3207d418",
+        "images_sha256": {
+          "05_OppositeSide.png": "6607dfd553d7e56079c85cc70ad462b8a8d60f96407d3f5454a3affd3207d418"
+        },
+        "status": "Unreviewed actual neutral/opposite profile diagnostic, not artistic approval",
+        "single_camera": null,
+        "opposite_image_reused_from": null
+      },
+      "all_images_actually_reviewed": true,
+      "goal_complete": false
+    }
+  ],
+  "continuation": "nativetailaccent185",
+  "goal_complete": false,
+  "scope": "Static true Blender modeling/render review. No AI portrait replacement; no animation/UE acceptance. Licensed geometry/indices/logs remain local."
+}

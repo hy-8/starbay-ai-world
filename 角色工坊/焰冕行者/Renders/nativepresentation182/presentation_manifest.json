@@ -1,0 +1,15 @@
+{
+  "source": "nativesoftarc182",
+  "source_sha256": "04507c464e3e91f083a9b9ffff9b3090c61982311dbd36c021ca6b2c799d098b",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "31dab390d5a59a3c775f7be0ea3ac11c2c1fbcdae3cc0d1c4d44bd661615f58d",
+  "status": "Actual render pending art review; no generative image replacement"
+}

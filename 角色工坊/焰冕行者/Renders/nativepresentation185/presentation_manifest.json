@@ -1,0 +1,15 @@
+{
+  "source": "nativetailaccent185",
+  "source_sha256": "48eb77fcb9e195bfa519c8789dbcfd6797118684c9c102479ef3f1ae3e7f1c1d",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "87afc6b0cc617dcd83276901ada752049a23ed7b89904f35efa6e91c15e8124f",
+  "status": "Actual render pending art review; no generative image replacement"
+}

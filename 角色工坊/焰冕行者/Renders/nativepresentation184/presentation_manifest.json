@@ -1,0 +1,15 @@
+{
+  "source": "nativefeathered184",
+  "source_sha256": "c76e4e88d66e1f29fe2e791183879e295afae5eb4c7e0ce7230daca5e6e14192",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "2c9917e4fe99e7b0361545db5472ec955b0c52701ea8fa71e54ee03c902cbd57",
+  "status": "Actual render pending art review; no generative image replacement"
+}
