@@ -1,0 +1,196 @@
+{
+  "user_preference": "保留偏分，继续做自然碎发层次",
+  "studies": [
+    {
+      "version": "nativecrownpilot186",
+      "manifest": {
+        "source": "nativetailaccent185",
+        "source_sha256": "48eb77fcb9e195bfa519c8789dbcfd6797118684c9c102479ef3f1ae3e7f1c1d",
+        "full": false,
+        "selected_fibers": 2836,
+        "selection_attribute": "native_spatial_crown_release",
+        "preserved_prefix_points": 12,
+        "source_polyline_trim_quantiles_m": [
+          0.0044796508786112375,
+          0.01099712403138494,
+          0.018232242809865955
+        ],
+        "sampled_body_repairs": 22,
+        "max_displacement_m": 0.018227344032607663,
+        "method": "Source upper crown excluding current fringe and accepted curtain. RootZ>1.800,Y>-55mm,absX>18mm; pilot additionallyX>45mm. Continuous root field controls1-6.5mm mid relief/2.5mm lateral spread; own source polyline trims4-20mm afterpoint28,limited35 percent remaining path. Root12 points exact. Sampled guard,not continuous collision proof. No common group guides or shader changes.",
+        "status": "True geometry pilot pending artistic review"
+      },
+      "model_sha256": "1d8396c66923f18133d1b624120710ca304f6af4b869dd37a228d67b2834b076",
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "ca880fc6c70e82fbc0007bccfd8c932be8c11d305b10525ca393d55135dfaa07",
+        "03_Side.png": "16f27d0d3abfaf6a19b16698920b9ab8eaaee790c14c074a8d901ed77144e877"
+      },
+      "art_judgment": "Both actual drafts reviewed.2836 side/back upper fibers; limited visible front effect. Actual ID renders confirm primarily ear-side coverage, not the main front upper mass. Not adopted or expanded.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativefrontrelease187",
+      "manifest": {
+        "source": "nativetailaccent185",
+        "source_sha256": "48eb77fcb9e195bfa519c8789dbcfd6797118684c9c102479ef3f1ae3e7f1c1d",
+        "full": false,
+        "selected_fibers": 6072,
+        "selection_attribute": "native_spatial_crown_release",
+        "preserved_prefix_points": 12,
+        "source_polyline_trim_quantiles_m": [
+          0.004635495887174288,
+          0.011686311426083423,
+          0.019372550005141743
+        ],
+        "sampled_body_repairs": 150,
+        "max_displacement_m": 0.01932875314582683,
+        "method": "Source upper crown excluding current fringe and accepted curtain. Front study:RootZ>1.800,Y<-30mm,X>18mm. Continuous root field controls1-6.5mm mid relief/2.5mm lateral spread; own source polyline trims4-20mm afterpoint28,limited35 percent remaining path. Root12 points exact. Sampled guard,not continuous collision proof. No common group guides or shader changes.",
+        "status": "True geometry pilot pending artistic review",
+        "front": true
+      },
+      "model_sha256": "30a7bd0e704a3b70e5503ba113ceb86fc09d221fcd119adf2e967477804b031e",
+      "inspected_images_sha256": {
+        "01_Front.png": "031a94d440cea62f0d97dd39c657dc9b0cfab5ea08512b53c42be2fda544b082",
+        "02_ThreeQuarter.png": "5f3baadb2b436f79466436d13054f3edf76094f1a3246e92681517da78831b59"
+      },
+      "art_judgment": "Both drafts and512/OIDN high reviewed.6072 front upper non-fringe fibers from185; layers more separated, approved fringe/part/eyes retained. Not whole-crown completion; wide sweep and small lifted arcs remain.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativerootdepth188",
+      "manifest": {
+        "source": "nativefrontrelease187",
+        "source_sha256": "30a7bd0e704a3b70e5503ba113ceb86fc09d221fcd119adf2e967477804b031e",
+        "edited_object": "Bystedt layercut derivative • native root reflow",
+        "geometry_edit": false,
+        "old_material": "Primary scarlet • pure Huang control",
+        "new_material": "Garnet hair • gradual natural root depth",
+        "method": "Existing strand-random COLOR and Huang scattering preserved; multiply pigment by per-fiber Intercept EASE ramp0:.42,.23:.65,.62:1. Other visible hair, lights and geometry unchanged. Not a geometry fix.",
+        "status": "True material-only two-view study awaiting visual review"
+      },
+      "model_sha256": "c9314807c6945202c9dca7fb99ffe506a99295ba7bf2cfbd7c1e3b0ab60a77ce",
+      "inspected_images_sha256": {
+        "01_Front.png": "ff5a9374644fce4ee0599ec8183e546ae43c06a1bd6571534d3784127bbca949",
+        "02_ThreeQuarter.png": "1d8e4ccb03f157596c60b5a3f68183ca07edf059c161603afdb1a2a38db56210"
+      },
+      "art_judgment": "Both128/OIDN previews, five192/no-denoise neutral views and512/OIDN high reviewed. Primary-fiber root pigment slightly deeper; no gross new hard color band observed. Rear broad/ordered flow and small arcs remain. Adopt incomplete WIP.",
+      "goal_complete": false
+    }
+  ],
+  "reviewed_presentations": [
+    {
+      "directory": "nativecrownids186",
+      "manifest": {
+        "source": "nativecrownpilot186",
+        "source_sha256": "1d8396c66923f18133d1b624120710ca304f6af4b869dd37a228d67b2834b076",
+        "source_unchanged": true,
+        "edited_object": "Bystedt layercut derivative • native root reflow",
+        "points_per_curve": 65,
+        "selection_attribute": "native_spatial_crown_release",
+        "selection_rule": "native_spatial_crown_release",
+        "legend": {
+          "blue": "Edited selected-object curves",
+          "red": "Untouched selected-object curves",
+          "green": "All other visible native hair components",
+          "gray": "Body/clothes"
+        },
+        "edited_fibers": 2836,
+        "unselected_fibers": 43207,
+        "method": "Exact temporary curve subsets with original radii/matrix, actual cameras, emission diagnostic only",
+        "status": "Unreviewed actual component diagnostic"
+      },
+      "all_images_actually_inspected": true,
+      "images_sha256": {
+        "01_Front.png": "99e7b0e894656c14de790e7f4dc9718b433576dea7afd35116067029fa33e0fa",
+        "02_ThreeQuarter.png": "06e6f535f420f927541fe7a335e6b7366886a743826f919395b0369e3dabeb33"
+      },
+      "goal_complete": false
+    },
+    {
+      "directory": "nativepresentation187",
+      "manifest": {
+        "source": "nativefrontrelease187",
+        "source_sha256": "30a7bd0e704a3b70e5503ba113ceb86fc09d221fcd119adf2e967477804b031e",
+        "source_unchanged": true,
+        "camera": "02_ThreeQuarter",
+        "geometry_lighting_unchanged": true,
+        "resolution": [
+          1920,
+          2240
+        ],
+        "samples": 512,
+        "denoising": "OpenImageDenoise",
+        "image_sha256": "5333f527d7e9b91b44cf3424a870de0b3aa132d843aa9ae021efb7de32e36e1c",
+        "status": "Actual render pending art review; no generative image replacement"
+      },
+      "all_images_actually_inspected": true,
+      "images_sha256": {
+        "02_ThreeQuarter.png": "5333f527d7e9b91b44cf3424a870de0b3aa132d843aa9ae021efb7de32e36e1c"
+      },
+      "goal_complete": false
+    },
+    {
+      "directory": "nativeneutral188",
+      "manifest": {
+        "version": "nativeneutral188",
+        "source": "nativerootdepth188",
+        "source_sha256": "c9314807c6945202c9dca7fb99ffe506a99295ba7bf2cfbd7c1e3b0ab60a77ce",
+        "source_unchanged": true,
+        "method": "Existing neutral cameras when requested, plus actual opposite camera mirrored in world space with local-X handedness correction; no pixel flip or geometry edit",
+        "samples": 192,
+        "resolution": [
+          1200,
+          1400
+        ],
+        "denoising": false,
+        "image_sha256": "0209e5b8eb3328c96ab0ca4cb27a415c10e855baf08b3d6955f66f20d520f628",
+        "images_sha256": {
+          "01_Front.png": "37352419875d9a79c0c2bc5bbc4bffe8687d6817e03046acc44238033e310c56",
+          "02_ThreeQuarter.png": "1ac8735cfc17bb179d9d61ab5ab3b9bf82665f98e8f40ec3fb91861f45ecc2c2",
+          "03_Side.png": "b9c6b79313d38f5761c14e73d4db943e3e5c61e9044efaed6cbd7e5f604aa996",
+          "04_Back.png": "ff34227096f20b1a1f1b88ac732152efd20c7032fc6392913186aaef439a5533",
+          "05_OppositeSide.png": "0209e5b8eb3328c96ab0ca4cb27a415c10e855baf08b3d6955f66f20d520f628"
+        },
+        "status": "Unreviewed actual neutral/opposite profile diagnostic, not artistic approval",
+        "single_camera": null,
+        "opposite_image_reused_from": null
+      },
+      "all_images_actually_inspected": true,
+      "images_sha256": {
+        "01_Front.png": "37352419875d9a79c0c2bc5bbc4bffe8687d6817e03046acc44238033e310c56",
+        "02_ThreeQuarter.png": "1ac8735cfc17bb179d9d61ab5ab3b9bf82665f98e8f40ec3fb91861f45ecc2c2",
+        "03_Side.png": "b9c6b79313d38f5761c14e73d4db943e3e5c61e9044efaed6cbd7e5f604aa996",
+        "04_Back.png": "ff34227096f20b1a1f1b88ac732152efd20c7032fc6392913186aaef439a5533",
+        "05_OppositeSide.png": "0209e5b8eb3328c96ab0ca4cb27a415c10e855baf08b3d6955f66f20d520f628"
+      },
+      "goal_complete": false
+    },
+    {
+      "directory": "nativepresentation188",
+      "manifest": {
+        "source": "nativerootdepth188",
+        "source_sha256": "c9314807c6945202c9dca7fb99ffe506a99295ba7bf2cfbd7c1e3b0ab60a77ce",
+        "source_unchanged": true,
+        "camera": "02_ThreeQuarter",
+        "geometry_lighting_unchanged": true,
+        "resolution": [
+          1920,
+          2240
+        ],
+        "samples": 512,
+        "denoising": "OpenImageDenoise",
+        "image_sha256": "389e51d13e2695825a08b5107fb2065af096bf35bd48cfa820946cfae60db026",
+        "status": "Actual render pending art review; no generative image replacement"
+      },
+      "all_images_actually_inspected": true,
+      "images_sha256": {
+        "02_ThreeQuarter.png": "389e51d13e2695825a08b5107fb2065af096bf35bd48cfa820946cfae60db026"
+      },
+      "goal_complete": false
+    }
+  ],
+  "continuation": "nativerootdepth188",
+  "geometry_base": "nativefrontrelease187",
+  "goal_complete": false,
+  "scope": "Real Blender geometry and isolated pigment study. No neural portrait substitution, no animation/UE acceptance. Licensed geometry local."
+}

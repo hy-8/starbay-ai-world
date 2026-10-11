@@ -1,0 +1,19 @@
+{
+  "source": "nativecrownpilot186",
+  "source_sha256": "1d8396c66923f18133d1b624120710ca304f6af4b869dd37a228d67b2834b076",
+  "source_unchanged": true,
+  "edited_object": "Bystedt layercut derivative \u2022 native root reflow",
+  "points_per_curve": 65,
+  "selection_attribute": "native_spatial_crown_release",
+  "selection_rule": "native_spatial_crown_release",
+  "legend": {
+    "blue": "Edited selected-object curves",
+    "red": "Untouched selected-object curves",
+    "green": "All other visible native hair components",
+    "gray": "Body/clothes"
+  },
+  "edited_fibers": 2836,
+  "unselected_fibers": 43207,
+  "method": "Exact temporary curve subsets with original radii/matrix, actual cameras, emission diagnostic only",
+  "status": "Unreviewed actual component diagnostic"
+}
