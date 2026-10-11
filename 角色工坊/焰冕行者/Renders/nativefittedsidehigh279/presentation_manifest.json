@@ -1,0 +1,16 @@
+{
+  "source": "nativefittedfoundation279",
+  "source_sha256": "b071b05c2e6d0cf1452aac71c88d5cc22ac361e9abc9586ff7ef6e35b440fab6",
+  "source_unchanged": true,
+  "camera": "05_OppositeSide",
+  "diagnostic_opposite_camera": true,
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "42cb219043696774780c66628c2bbd0285f0b077f5f9574e13e9212438460932",
+  "status": "Actual render pending art review; no generative image replacement"
+}

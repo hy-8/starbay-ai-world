@@ -15,6 +15,7 @@ if '--resolve-image-paths' in a:
 material_scope=None;scene_materials_exact=True;material_only=False
 exec(compile(code,'shared_snapshot','exec'))
 primary='Bystedt layercut derivative • native root reflow'
+if '--support-reflow' in a:primary='Abhay flow derivative • real scalp sampled short support'
 support='Original posterior coverage • surface-grown short fibers'
 def attrs(cu):
  result={}
@@ -56,6 +57,46 @@ if retained is not None:
  result=dict(source=base,source_sha256=before[0],candidate=candidate,candidate_sha256=after[0],mesh_count=len(before[1]),meshes_uv_shape_keys_transforms_exact=True,other_native_geometry_exact=True,material_light_world_camera_display_exact=True,image_paths_compared_as_resolved_absolute='--resolve-image-paths' in a,retained_curve_history_exact=True,retained_positions_radii_counts_transforms_exact=True,accepted_inner_curtain_retained=True,removed_fibers=len(selected),retained_fibers=len(retained),scope='Independent saved-file mixed-count deletion comparison to exact local inspected selection. Count/topology intentionally reduced;all retained fibers exact. Not artistic or collision acceptance.')
  out.write_text(json.dumps(result,indent=2),encoding='utf-8');print('STRAY_REMOVAL_AUDIT_PASS',candidate,flush=True);sys.exit(0)
 assert len(bs)==len(asz)
+if '--support-reflow' in a:
+ mask=afterattrs['native_recombed_rear_support'][1]
+ assert np.array_equal(bs,asz) and np.array_equal(br,ar)
+ offsets=np.r_[0,np.cumsum(bs)];roots=bp[offsets[:-1]]
+ manifest=json.loads((ROOT/'Exports'/candidate/'support_reflow_manifest.json').read_text())
+ selected=np.load(ROOT/'Renders'/manifest['selection']/'local_projected_indices.npz')['selected']
+ expected=np.zeros(len(bs),bool);expected[selected]=True;expected&=(roots[:,0]<-.015)&(roots[:,1]>-.025)
+ assert np.array_equal(mask,expected)
+ retained_root_controls=0
+ for i in range(len(bs)):
+  old=bp[offsets[i]:offsets[i+1]];p=ap[offsets[i]:offsets[i+1]]
+  assert np.array_equal(old[0],p[0])
+  if not mask[i]:assert np.array_equal(old,p)
+  else:
+   arc=np.r_[0,np.cumsum(np.linalg.norm(np.diff(old,axis=0),axis=1))];protected=arc<=.008
+   assert np.array_equal(old[protected],p[protected]);retained_root_controls+=int(protected.sum())
+ delta=float(np.linalg.norm(ap-bp,axis=1).max());assert np.isfinite(ap).all() and delta>0
+ from mathutils import Vector
+ from mathutils.bvhtree import BVHTree
+ bv=BVHTree.FromObject(bpy.data.objects['CC0 male body • retained topology'],bpy.context.evaluated_depsgraph_get())
+ changed=np.linalg.norm(ap-bp,axis=1)>1e-8;gaps=[]
+ for point in ap[changed]:
+  h,n,_,_=bv.find_nearest(Vector(point));gaps.append(float((Vector(point)-h).dot(n)))
+ assert min(gaps)>.00045 and float(ap[changed,2].min())>=float(bp[:,2].min())-1e-6
+ assert abs(delta-manifest['max_same_index_displacement_m'])<1e-6
+ assert manifest['model_sha256']==after[0] and manifest['source_sha256']==before[0] and manifest['selected_fibers']==int(mask.sum())
+ result=dict(source=base,source_sha256=before[0],candidate=candidate,candidate_sha256=after[0],mesh_count=len(before[1]),meshes_uv_shape_keys_transforms_exact=True,all_other_native_geometry_exact=True,material_light_world_camera_display_exact=True,image_paths_compared_as_resolved_absolute='--resolve-image-paths' in a,historical_curve_attributes_exact=True,all_radii_point_counts_transforms_exact=True,all_roots_exact=True,unselected_fibers_exact=int((~mask).sum()),selected_fibers=int(mask.sum()),root_arc8mm_controls_exact=retained_root_controls,max_same_index_displacement_m=delta,scope='Independent saved-file support-only deformation and exact projected selection/filter verification. Main hair including accepted part,other supports and meshes unchanged. Static audit,not artistic or continuous collision acceptance.')
+ result.update(changed_controls_signed_body_gap_quantiles_m=np.quantile(gaps,[0,.5,1]).tolist(),changed_controls_min_z_m=float(ap[changed,2].min()),short_arc_budget=manifest.get('short_arc_budget'),scalp_fit=manifest.get('scalp_fit',False))
+ if manifest.get('scalp_fit'):
+  tail_gaps=[]
+  for i in np.flatnonzero(mask):
+   old=bp[offsets[i]:offsets[i+1]];p=ap[offsets[i]:offsets[i+1]]
+   arc=np.r_[0,np.cumsum(np.linalg.norm(np.diff(old,axis=0),axis=1))]
+   target=min(float(arc[-1]),.045,max(.014,float(old[0,2]-1.790)))
+   mapped=np.minimum(arc,.008)+np.maximum(arc-.008,0)*(target-.008)/max(float(arc[-1])-.008,1e-9)
+   for point in p[mapped>=.022]:
+    h,n,_,_=bv.find_nearest(Vector(point));tail_gaps.append(float((Vector(point)-h).dot(n)))
+  assert tail_gaps and max(tail_gaps)<=.0033
+  result.update(fully_transitioned_controls=len(tail_gaps),fully_transitioned_signed_gap_quantiles_m=np.quantile(tail_gaps,[0,.5,1]).tolist())
+ out.write_text(json.dumps(result,indent=2),encoding='utf-8');print('SUPPORT_REFLOW_AUDIT_PASS',candidate,flush=True);sys.exit(0)
 if '--channels' in a:
  mask=afterattrs['native_sweep_channels'][1];assert np.array_equal(bs,asz) and np.array_equal(br,ar)
  assert not np.any(beforeattrs['native_inner_curtain_shift'][1][mask])

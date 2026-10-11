@@ -1,0 +1,1028 @@
+{
+  "continuation": "nativefittedfoundation279",
+  "goal_complete": false,
+  "studies": [
+    {
+      "version": "nativereargauge266",
+      "manifest": {
+        "source": "nativereargraduated264",
+        "source_sha256": "d8cc2dc623a27aa55e8016d503d20dd2349074d3b6286401270f36268f70d58c",
+        "model_saved": false,
+        "source_unchanged": true,
+        "all_restored": false,
+        "rear_midshaft": true,
+        "selected_fibers": 20575,
+        "root_radius_before_m": [
+          0.00010999997903127223,
+          0.00011000000085914508,
+          0.00011000002268701792
+        ],
+        "root_radius_after_m": [
+          0.00010999997903127223,
+          0.00011000000085914508,
+          0.00011000002268701792
+        ],
+        "images_sha256": {
+          "04_Back.png": "12a9de78d0ea7c9ddd9ad0615194a3f687ae501d3d52fb748d2b68f1b6d181e0",
+          "03_Side.png": "2b12d610bf6c35dc77a5918293be141f655420ab9898cbff03ddf46ebdf99278"
+        },
+        "method": "Restored raw rear fibers with rootY>-30mm,tipY>15mm,tipZ<1.800m. Keep first8mm radius exact,then smooth transition over27mm to62percent original radius. Positions/counts/materials/lights and nonselected fibers unchanged;intended to retain root coverage. Actual art review required."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "03_Side.png": "2b12d610bf6c35dc77a5918293be141f655420ab9898cbff03ddf46ebdf99278",
+        "04_Back.png": "12a9de78d0ea7c9ddd9ad0615194a3f687ae501d3d52fb748d2b68f1b6d181e0"
+      },
+      "art_judgment": "Two actual views inspected. Root-preserving62percent shaft gauge reduces thickness slightly;wide groups remain,not adopted.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativerearsections267",
+      "manifest": {
+        "source": "nativereargraduated264",
+        "source_sha256": "d8cc2dc623a27aa55e8016d503d20dd2349074d3b6286401270f36268f70d58c",
+        "source_unchanged": true,
+        "model_saved": false,
+        "pilot": true,
+        "selected_fibers": 7333,
+        "groups": [
+          {
+            "group": 0,
+            "fibers": 495
+          },
+          {
+            "group": 1,
+            "fibers": 46
+          },
+          {
+            "group": 2,
+            "fibers": 179
+          },
+          {
+            "group": 3,
+            "fibers": 565
+          },
+          {
+            "group": 4,
+            "fibers": 365
+          },
+          {
+            "group": 5,
+            "fibers": 334
+          },
+          {
+            "group": 6,
+            "fibers": 523
+          },
+          {
+            "group": 7,
+            "fibers": 437
+          },
+          {
+            "group": 8,
+            "fibers": 560
+          },
+          {
+            "group": 9,
+            "fibers": 202
+          },
+          {
+            "group": 10,
+            "fibers": 522
+          },
+          {
+            "group": 11,
+            "fibers": 526
+          },
+          {
+            "group": 12,
+            "fibers": 468
+          },
+          {
+            "group": 13,
+            "fibers": 483
+          },
+          {
+            "group": 14,
+            "fibers": 529
+          },
+          {
+            "group": 15,
+            "fibers": 636
+          },
+          {
+            "group": 16,
+            "fibers": 446
+          },
+          {
+            "group": 17,
+            "fibers": 17
+          }
+        ],
+        "max_same_index_displacement_m": 0.0023997363168746233,
+        "reverted_points": 88,
+        "images_sha256": {
+          "04_Back.png": "cd37e86d88a7860d1f20cac7d4c4f36a0f4a6252029daa89b0f99ec118df22aa",
+          "03_Side.png": "a90b94250808cefcbdd858cbeafb2850a855d4eb4782f82350b783ba25c6e05c"
+        },
+        "method": "Mixed raw rear curves grouped by whole-path features.18pilot/32full deterministic families;48percent transverse contraction smoothly bounded2.4mm,no outward loft. Positions sampled32points only to compute families/frames;original control counts retained. Root8mm and last5percent retained,transition near ends;all radii/materials unchanged. Revert points worsening original signed gap or crossing0.3mm positive gap. Discrete guard,not continuous collision proof."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "03_Side.png": "a90b94250808cefcbdd858cbeafb2850a855d4eb4782f82350b783ba25c6e05c",
+        "04_Back.png": "cd37e86d88a7860d1f20cac7d4c4f36a0f4a6252029daa89b0f99ec118df22aa"
+      },
+      "art_judgment": "Back and03_Side inspected. NegativeX pilot7333 fibers,18 groups.03_Side is not the edited-side view;small improvement only,not adopted.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativefullrearsections268",
+      "manifest": {
+        "source": "nativereargraduated264",
+        "source_sha256": "d8cc2dc623a27aa55e8016d503d20dd2349074d3b6286401270f36268f70d58c",
+        "source_unchanged": true,
+        "model_saved": false,
+        "pilot": false,
+        "selected_fibers": 20575,
+        "groups": [
+          {
+            "group": 0,
+            "fibers": 697
+          },
+          {
+            "group": 1,
+            "fibers": 150
+          },
+          {
+            "group": 2,
+            "fibers": 278
+          },
+          {
+            "group": 3,
+            "fibers": 738
+          },
+          {
+            "group": 4,
+            "fibers": 930
+          },
+          {
+            "group": 5,
+            "fibers": 853
+          },
+          {
+            "group": 6,
+            "fibers": 1166
+          },
+          {
+            "group": 7,
+            "fibers": 786
+          },
+          {
+            "group": 8,
+            "fibers": 630
+          },
+          {
+            "group": 9,
+            "fibers": 496
+          },
+          {
+            "group": 10,
+            "fibers": 546
+          },
+          {
+            "group": 11,
+            "fibers": 656
+          },
+          {
+            "group": 12,
+            "fibers": 630
+          },
+          {
+            "group": 13,
+            "fibers": 554
+          },
+          {
+            "group": 14,
+            "fibers": 591
+          },
+          {
+            "group": 15,
+            "fibers": 555
+          },
+          {
+            "group": 16,
+            "fibers": 1041
+          },
+          {
+            "group": 17,
+            "fibers": 612
+          },
+          {
+            "group": 18,
+            "fibers": 1041
+          },
+          {
+            "group": 19,
+            "fibers": 775
+          },
+          {
+            "group": 20,
+            "fibers": 226
+          },
+          {
+            "group": 21,
+            "fibers": 555
+          },
+          {
+            "group": 22,
+            "fibers": 505
+          },
+          {
+            "group": 23,
+            "fibers": 497
+          },
+          {
+            "group": 24,
+            "fibers": 724
+          },
+          {
+            "group": 25,
+            "fibers": 589
+          },
+          {
+            "group": 26,
+            "fibers": 584
+          },
+          {
+            "group": 27,
+            "fibers": 580
+          },
+          {
+            "group": 28,
+            "fibers": 874
+          },
+          {
+            "group": 29,
+            "fibers": 705
+          },
+          {
+            "group": 30,
+            "fibers": 650
+          },
+          {
+            "group": 31,
+            "fibers": 361
+          }
+        ],
+        "max_same_index_displacement_m": 0.002399986842647195,
+        "reverted_points": 478,
+        "images_sha256": {
+          "04_Back.png": "261550bcd8a1f1be222f7d92a7fa1054cfca79fd0f510edfe829d747e54cb18c",
+          "03_Side.png": "1fa6726306f4bc829fe1522dff75c4e91fb207a17607591380cbe215a1610507",
+          "05_OppositeSide.png": "9e06d3410da0ac379306c112ba383b3e69070984315c0f3b072ec232f4c9ef5c",
+          "02_ThreeQuarter.png": "cbc1d7db55ee959d6eae593a2b95b236474f681246a8cd0eaf9786e6697c2bcc"
+        },
+        "method": "Mixed raw rear curves grouped by whole-path features.18pilot/32full deterministic families;48percent transverse contraction smoothly bounded2.4mm,no outward loft. Positions sampled32points only to compute families/frames;original control counts retained. Root8mm and last5percent retained,transition near ends;all radii/materials unchanged. Revert points worsening original signed gap or crossing0.3mm positive gap. Discrete guard,not continuous collision proof."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "cbc1d7db55ee959d6eae593a2b95b236474f681246a8cd0eaf9786e6697c2bcc",
+        "03_Side.png": "1fa6726306f4bc829fe1522dff75c4e91fb207a17607591380cbe215a1610507",
+        "04_Back.png": "261550bcd8a1f1be222f7d92a7fa1054cfca79fd0f510edfe829d747e54cb18c",
+        "05_OppositeSide.png": "9e06d3410da0ac379306c112ba383b3e69070984315c0f3b072ec232f4c9ef5c"
+      },
+      "art_judgment": "Four actual views inspected.32 groups,2.4mm bounded contraction;wide posterior groups remain,not adopted.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativerawrearids269",
+      "manifest": {
+        "source": "nativereargraduated264",
+        "source_sha256": "d8cc2dc623a27aa55e8016d503d20dd2349074d3b6286401270f36268f70d58c",
+        "source_unchanged": true,
+        "edited_object": "Bystedt layercut derivative • native root reflow",
+        "points_per_curve": null,
+        "selection_attribute": "native_restored_raw_controls",
+        "selection_rule": "native_restored_raw_controls",
+        "legend": {
+          "blue": "Edited selected-object curves",
+          "red": "Untouched selected-object curves",
+          "green": "All other visible native hair components",
+          "gray": "Body/clothes"
+        },
+        "edited_fibers": 35133,
+        "unselected_fibers": 10876,
+        "method": "Exact temporary curve subsets with original radii/matrix, actual cameras, emission diagnostic only. Ellipse is projected controls, not continuous visibility proof.",
+        "status": "Unreviewed actual component diagnostic"
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "03_Side.png": "bc09f7b1a90b5a67583d9a61b781d986fdeb0bb4b10bf15d512a23340e9a2eae",
+        "04_Back.png": "8f73e50f001330be1e050c985a062b8915d0d351d7d9c3925653e4fc1f1dd508"
+      },
+      "art_judgment": "Back/side inspected;most posterior visible shafts belong to restored raw set.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativerearsubsetids270",
+      "manifest": {
+        "source": "nativereargraduated264",
+        "source_sha256": "d8cc2dc623a27aa55e8016d503d20dd2349074d3b6286401270f36268f70d58c",
+        "source_unchanged": true,
+        "edited_object": "Bystedt layercut derivative • native root reflow",
+        "points_per_curve": null,
+        "selection_attribute": "native_restored_raw_controls",
+        "selection_rule": "native_restored_raw_controls",
+        "legend": {
+          "blue": "Edited selected-object curves",
+          "red": "Untouched selected-object curves",
+          "green": "All other visible native hair components",
+          "gray": "Body/clothes"
+        },
+        "edited_fibers": 20575,
+        "unselected_fibers": 25434,
+        "method": "Exact temporary curve subsets with original radii/matrix, actual cameras, emission diagnostic only. Ellipse is projected controls, not continuous visibility proof.",
+        "status": "Unreviewed actual component diagnostic"
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "03_Side.png": "58ad114c66bdb527278ae09064df8d13ce1175ff287c61822151a6c867c1d7bd",
+        "04_Back.png": "b7a85f612d2e8378fb979bafed9b25e185b22bd8ff72609f354ede8206b918a0"
+      },
+      "art_judgment": "Back/side inspected. Actual mask also intersects rootY>-30mm,tipY>15mm,tipZ<1.800m;old manifest attribute-only label omits filter. Main central groups selected,outer/top groups excluded.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativefinerearpilot271",
+      "manifest": {
+        "source": "nativereargraduated264",
+        "source_sha256": "d8cc2dc623a27aa55e8016d503d20dd2349074d3b6286401270f36268f70d58c",
+        "source_unchanged": true,
+        "model_saved": false,
+        "pilot": true,
+        "selected_fibers": 7333,
+        "groups": [
+          {
+            "group": 0,
+            "fibers": 191
+          },
+          {
+            "group": 1,
+            "fibers": 19
+          },
+          {
+            "group": 2,
+            "fibers": 100
+          },
+          {
+            "group": 3,
+            "fibers": 112
+          },
+          {
+            "group": 4,
+            "fibers": 174
+          },
+          {
+            "group": 5,
+            "fibers": 172
+          },
+          {
+            "group": 6,
+            "fibers": 164
+          },
+          {
+            "group": 7,
+            "fibers": 206
+          },
+          {
+            "group": 8,
+            "fibers": 169
+          },
+          {
+            "group": 9,
+            "fibers": 126
+          },
+          {
+            "group": 10,
+            "fibers": 182
+          },
+          {
+            "group": 11,
+            "fibers": 196
+          },
+          {
+            "group": 12,
+            "fibers": 201
+          },
+          {
+            "group": 13,
+            "fibers": 206
+          },
+          {
+            "group": 14,
+            "fibers": 180
+          },
+          {
+            "group": 15,
+            "fibers": 154
+          },
+          {
+            "group": 16,
+            "fibers": 185
+          },
+          {
+            "group": 17,
+            "fibers": 17
+          },
+          {
+            "group": 18,
+            "fibers": 216
+          },
+          {
+            "group": 19,
+            "fibers": 260
+          },
+          {
+            "group": 20,
+            "fibers": 79
+          },
+          {
+            "group": 21,
+            "fibers": 174
+          },
+          {
+            "group": 22,
+            "fibers": 144
+          },
+          {
+            "group": 23,
+            "fibers": 112
+          },
+          {
+            "group": 24,
+            "fibers": 72
+          },
+          {
+            "group": 25,
+            "fibers": 94
+          },
+          {
+            "group": 26,
+            "fibers": 68
+          },
+          {
+            "group": 27,
+            "fibers": 6
+          },
+          {
+            "group": 28,
+            "fibers": 76
+          },
+          {
+            "group": 29,
+            "fibers": 187
+          },
+          {
+            "group": 30,
+            "fibers": 288
+          },
+          {
+            "group": 31,
+            "fibers": 155
+          },
+          {
+            "group": 32,
+            "fibers": 147
+          },
+          {
+            "group": 33,
+            "fibers": 27
+          },
+          {
+            "group": 34,
+            "fibers": 154
+          },
+          {
+            "group": 35,
+            "fibers": 180
+          },
+          {
+            "group": 36,
+            "fibers": 173
+          },
+          {
+            "group": 37,
+            "fibers": 161
+          },
+          {
+            "group": 38,
+            "fibers": 176
+          },
+          {
+            "group": 39,
+            "fibers": 166
+          },
+          {
+            "group": 40,
+            "fibers": 178
+          },
+          {
+            "group": 41,
+            "fibers": 156
+          },
+          {
+            "group": 42,
+            "fibers": 151
+          },
+          {
+            "group": 43,
+            "fibers": 213
+          },
+          {
+            "group": 44,
+            "fibers": 223
+          },
+          {
+            "group": 45,
+            "fibers": 217
+          },
+          {
+            "group": 46,
+            "fibers": 195
+          },
+          {
+            "group": 47,
+            "fibers": 131
+          }
+        ],
+        "max_same_index_displacement_m": 0.004493715241551399,
+        "reverted_points": 140,
+        "images_sha256": {
+          "04_Back.png": "ad26f00fd1a1df58130eb7f8a794e8f9abe36159f3b9f5fb7b7d01e7a469cb8d",
+          "05_OppositeSide.png": "306c4701b74c59290f36d054774da140bf25ed0b26598dcd28203bf6eefd92c3"
+        },
+        "method": "Mixed raw rear curves grouped by whole-path features.18pilot/32full deterministic families;48percent transverse contraction smoothly bounded2.4mm,no outward loft. Positions sampled32points only to compute families/frames;original control counts retained. Root8mm and last5percent retained,transition near ends;all radii/materials unchanged. Revert points worsening original signed gap or crossing0.3mm positive gap. Discrete guard,not continuous collision proof."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "04_Back.png": "ad26f00fd1a1df58130eb7f8a794e8f9abe36159f3b9f5fb7b7d01e7a469cb8d",
+        "05_OppositeSide.png": "306c4701b74c59290f36d054774da140bf25ed0b26598dcd28203bf6eefd92c3"
+      },
+      "art_judgment": "Back and correct05_OppositeSide inspected. Actual fine pilot48 groups,78percent contraction,4.5mm cap,last2percent unchanged;old manifest method string incorrectly retained18/48percent/2.4mm defaults. Small separation,dominant wide groups persist;not adopted.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativesupportids272",
+      "manifest": {
+        "source": "nativereargraduated264",
+        "source_sha256": "d8cc2dc623a27aa55e8016d503d20dd2349074d3b6286401270f36268f70d58c",
+        "source_unchanged": true,
+        "legend": [
+          {
+            "object": "Abhay flow derivative • real scalp sampled short support",
+            "linear_color": [
+              0.04,
+              0.15,
+              1,
+              1
+            ],
+            "fibers": 14000,
+            "tip_elevation_quantiles_m": [
+              1.7384101152420044,
+              1.7529216754436492,
+              1.7712913155555725,
+              1.791167438030243,
+              1.8736953735351562
+            ],
+            "tips_below_1_710m": 0
+          },
+          {
+            "object": "Bystedt derivative • short scalp support",
+            "linear_color": [
+              0,
+              1,
+              0.12,
+              1
+            ],
+            "fibers": 23657,
+            "tip_elevation_quantiles_m": [
+              1.7883154153823853,
+              1.802201247215271,
+              1.8242756128311157,
+              1.848829984664917,
+              1.8732287883758545
+            ],
+            "tips_below_1_710m": 0
+          },
+          {
+            "object": "Bystedt layercut derivative • native root reflow",
+            "linear_color": [
+              1,
+              0.03,
+              0.08,
+              1
+            ],
+            "fibers": 46009,
+            "tip_elevation_quantiles_m": [
+              1.674789309501648,
+              1.6760665464401245,
+              1.690016222000122,
+              1.7289983034133911,
+              1.8728443384170532
+            ],
+            "tips_below_1_710m": 14909
+          }
+        ],
+        "back_view": true,
+        "side_view": false,
+        "single_camera": null,
+        "method": "Temporary real components emission IDs; diagnostic color only, not final beauty render. Full world-space tip aggregates when back requested are geometry statistics, not visibility proof."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "2052abadb85b9f61723d948dc3aeb26f20a31b99d9c013cc55839c02323874d1",
+        "04_Back.png": "3ee46cbc1687a8a4aee7b0f56f38b4fffc477cda0118cf17a16ed835ea5e4773",
+        "05_OppositeSide.png": "6c49ad0feec0634a776b45ff0d52f6a003c89393a9e7b890c2bb6d61c74b192e"
+      },
+      "art_judgment": "All three inspected. Blue Abhay support forms unnatural horizontal posterior-side stripe,not the green Bystedt support.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativesupportstripeids273",
+      "manifest": {
+        "source": "nativereargraduated264",
+        "source_sha256": "d8cc2dc623a27aa55e8016d503d20dd2349074d3b6286401270f36268f70d58c",
+        "source_unchanged": true,
+        "edited_object": "Abhay flow derivative • real scalp sampled short support",
+        "points_per_curve": 40,
+        "selection_attribute": null,
+        "selection_rule": {
+          "ThreeQuarter_normalized_ellipse": [
+            0.657,
+            0.429,
+            0.046,
+            0.024
+          ],
+          "minimum_projected_controls": 2
+        },
+        "legend": {
+          "blue": "Edited selected-object curves",
+          "red": "Untouched selected-object curves",
+          "green": "All other visible native hair components",
+          "gray": "Body/clothes"
+        },
+        "edited_fibers": 5003,
+        "unselected_fibers": 8997,
+        "method": "Exact temporary curve subsets with original radii/matrix, actual cameras, emission diagnostic only. Ellipse is projected controls, not continuous visibility proof.",
+        "status": "Unreviewed actual component diagnostic"
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "03_Side.png": "380369d469330b5c50d5c20a5524747c61894e13dd288b2cab2dab20b910c89c",
+        "04_Back.png": "48174afbf67f2de0f9404c3c6a3f92261a137ae918ba95217789553bef6047ed"
+      },
+      "art_judgment": "Back and03_Side inspected. Actual ellipse in04_Back,NOT quarter;selection_parameters.json records camera,old manifest key incorrectly says ThreeQuarter.5003 projection hits include hidden/front curves;not visibility proof.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativesupportreflow274",
+      "manifest": {
+        "source": "nativereargraduated264",
+        "source_sha256": "d8cc2dc623a27aa55e8016d503d20dd2349074d3b6286401270f36268f70d58c",
+        "source_unchanged": true,
+        "selection": "nativesupportstripeids273",
+        "object": "Abhay flow derivative • real scalp sampled short support",
+        "model_saved": false,
+        "model_sha256": null,
+        "archive_model_path": null,
+        "selected_fibers": 2296,
+        "max_same_index_displacement_m": 0.12158394604921341,
+        "length_before_after_quantiles_m": [
+          [
+            0.02824655920267105,
+            0.02846510335803032
+          ],
+          [
+            0.08896471932530403,
+            0.10724291205406189
+          ],
+          [
+            0.14279241859912872,
+            0.16199837625026703
+          ]
+        ],
+        "generated_normal_gap_min_m": 0.00055,
+        "images_sha256": {
+          "04_Back.png": "74d6c3e29239ec90e8df14fd6faf44358778cd7259c47920e448f8ae47a929df",
+          "05_OppositeSide.png": "1895700a13d641c2ce285bcc03794da908af08f4334b9b3db1b30fbfd0ca7da3",
+          "02_ThreeQuarter.png": "1516979a91a2c24ee28aa9ef1ec0dc259ad719ff9debf29493a16262a4a11679"
+        },
+        "method": "Inspected back-projected Abhay subset intersect rootX<-15mm and rootY>-25mm. Exact root and original first8mm controls. Subsequent original segment steps smoothly turn over14mm toward projected downward/backward tangent;project each generated point on actual body and retain its original positive normal offset,min0.55mm. Point counts,radii,all other objects unchanged. Discrete scalp projection,not continuous collision or artistic acceptance."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "1516979a91a2c24ee28aa9ef1ec0dc259ad719ff9debf29493a16262a4a11679",
+        "04_Back.png": "74d6c3e29239ec90e8df14fd6faf44358778cd7259c47920e448f8ae47a929df",
+        "05_OppositeSide.png": "1895700a13d641c2ce285bcc03794da908af08f4334b9b3db1b30fbfd0ca7da3"
+      },
+      "art_judgment": "Three views inspected;local2296 Abhay support recombed,visible stripe reduced. Original full arc caused up to121.58mm displacement;not adopted.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativecombedfoundation275",
+      "manifest": {
+        "source": "nativereargraduated264",
+        "source_sha256": "d8cc2dc623a27aa55e8016d503d20dd2349074d3b6286401270f36268f70d58c",
+        "source_unchanged": true,
+        "selection": "nativesupportstripeids273",
+        "object": "Abhay flow derivative • real scalp sampled short support",
+        "model_saved": true,
+        "model_sha256": "0a42ec1a75567c6ac3d76c7074aa554f3bac8e57727f10fd30483a4035c833d6",
+        "archive_model_path": "D:\\星湾世界_模型归档\\starbay-ai-world\\角色工坊\\焰冕行者\\Exports\\nativecombedfoundation275\\Ember_Regent.blend",
+        "selected_fibers": 2296,
+        "max_same_index_displacement_m": 0.12158394604921341,
+        "length_before_after_quantiles_m": [
+          [
+            0.02824655920267105,
+            0.02846510335803032
+          ],
+          [
+            0.08896471932530403,
+            0.10724291205406189
+          ],
+          [
+            0.14279241859912872,
+            0.16199837625026703
+          ]
+        ],
+        "generated_normal_gap_min_m": 0.00055,
+        "images_sha256": {},
+        "method": "Inspected back-projected Abhay subset intersect rootX<-15mm and rootY>-25mm. Exact root and original first8mm controls. Subsequent original segment steps smoothly turn over14mm toward projected downward/backward tangent;project each generated point on actual body and retain its original positive normal offset,min0.55mm. Point counts,radii,all other objects unchanged. Discrete scalp projection,not continuous collision or artistic acceptance."
+      },
+      "model_sha256": "0a42ec1a75567c6ac3d76c7074aa554f3bac8e57727f10fd30483a4035c833d6",
+      "inspected_images_sha256": {},
+      "art_judgment": "Saved274 geometry but not independently audited/rendered. Superseded after original long support paths discovered;not adopted.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativeshortreflow276",
+      "manifest": {
+        "source": "nativereargraduated264",
+        "source_sha256": "d8cc2dc623a27aa55e8016d503d20dd2349074d3b6286401270f36268f70d58c",
+        "source_unchanged": true,
+        "selection": "nativesupportstripeids273",
+        "object": "Abhay flow derivative • real scalp sampled short support",
+        "model_saved": false,
+        "model_sha256": null,
+        "archive_model_path": null,
+        "selected_fibers": 2296,
+        "max_same_index_displacement_m": 0.09333828091621399,
+        "length_before_after_quantiles_m": [
+          [
+            0.02824655920267105,
+            0.014213630929589272
+          ],
+          [
+            0.08896471932530403,
+            0.06346477568149567
+          ],
+          [
+            0.14279241859912872,
+            0.08598004281520844
+          ]
+        ],
+        "generated_normal_gap_min_m": 0.00055,
+        "images_sha256": {
+          "04_Back.png": "bb830d6f599a52e41ca50d68ab9531d865d7ae27d9435ad998147ad4c5cda8e1",
+          "05_OppositeSide.png": "60869b8d9c57ae1f27e17d62101b8b786d3b7987c824e668aa39c5c316d138b2",
+          "02_ThreeQuarter.png": "3a8ee4ad467ac248f1e948b113d7c60a41aa4cb5d023b24786f48599e9386ab8"
+        },
+        "method": "Inspected back-projected Abhay subset intersect rootX<-15mm and rootY>-25mm. Exact root and original first8mm controls. Subsequent original segment steps smoothly turn over14mm toward projected downward/backward tangent;project each generated point on actual body and retain its original positive normal offset,min0.55mm. Point counts,radii,all other objects unchanged. Discrete scalp projection,not continuous collision or artistic acceptance.",
+        "short_arc_budget": true,
+        "minimum_generated_z_m": 1.7733066082000732,
+        "maximum_generated_z_m": 1.8723249435424805,
+        "short_arc_method": "Integration budget min(original arc,45mm,max(14mm,rootZ-1.790m)),first8mm unchanged. Original radius samples and normal offset retained;actual resulting arc may differ from step budget."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "3a8ee4ad467ac248f1e948b113d7c60a41aa4cb5d023b24786f48599e9386ab8",
+        "04_Back.png": "bb830d6f599a52e41ca50d68ab9531d865d7ae27d9435ad998147ad4c5cda8e1",
+        "05_OppositeSide.png": "60869b8d9c57ae1f27e17d62101b8b786d3b7987c824e668aa39c5c316d138b2"
+      },
+      "art_judgment": "Three views inspected. Bounded integration budget;actual polyline length still14.21-85.98mm because original normal offsets retained. Stripe improved but source high offsets remain.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativeboundedfoundation277",
+      "manifest": {
+        "source": "nativereargraduated264",
+        "source_sha256": "d8cc2dc623a27aa55e8016d503d20dd2349074d3b6286401270f36268f70d58c",
+        "source_unchanged": true,
+        "selection": "nativesupportstripeids273",
+        "object": "Abhay flow derivative • real scalp sampled short support",
+        "model_saved": true,
+        "model_sha256": "907c1d1c2ef6505bcc99a79bd8d317fe630cff222b8eb59a8072f35e76dffebd",
+        "archive_model_path": "D:\\星湾世界_模型归档\\starbay-ai-world\\角色工坊\\焰冕行者\\Exports\\nativeboundedfoundation277\\Ember_Regent.blend",
+        "selected_fibers": 2296,
+        "max_same_index_displacement_m": 0.09333828091621399,
+        "length_before_after_quantiles_m": [
+          [
+            0.02824655920267105,
+            0.014213630929589272
+          ],
+          [
+            0.08896471932530403,
+            0.06346477568149567
+          ],
+          [
+            0.14279241859912872,
+            0.08598004281520844
+          ]
+        ],
+        "generated_normal_gap_min_m": 0.00055,
+        "images_sha256": {},
+        "method": "Inspected back-projected Abhay subset intersect rootX<-15mm and rootY>-25mm. Exact root and original first8mm controls. Subsequent original segment steps smoothly turn over14mm toward projected downward/backward tangent;project each generated point on actual body and retain its original positive normal offset,min0.55mm. Point counts,radii,all other objects unchanged. Discrete scalp projection,not continuous collision or artistic acceptance.",
+        "short_arc_budget": true,
+        "minimum_generated_z_m": 1.7733066082000732,
+        "maximum_generated_z_m": 1.8723249435424805,
+        "short_arc_method": "Integration budget min(original arc,45mm,max(14mm,rootZ-1.790m)),first8mm unchanged. Original radius samples and normal offset retained;actual resulting arc may differ from step budget."
+      },
+      "model_sha256": "907c1d1c2ef6505bcc99a79bd8d317fe630cff222b8eb59a8072f35e76dffebd",
+      "inspected_images_sha256": {},
+      "art_judgment": "Saved276 geometry,independent audit passed. Max changed normal gap49.23mm revealed misplaced old support;superseded,not continuation.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativescalpfit278",
+      "manifest": {
+        "source": "nativereargraduated264",
+        "source_sha256": "d8cc2dc623a27aa55e8016d503d20dd2349074d3b6286401270f36268f70d58c",
+        "source_unchanged": true,
+        "selection": "nativesupportstripeids273",
+        "object": "Abhay flow derivative • real scalp sampled short support",
+        "model_saved": false,
+        "model_sha256": null,
+        "archive_model_path": null,
+        "selected_fibers": 2296,
+        "max_same_index_displacement_m": 0.08724657446146011,
+        "length_before_after_quantiles_m": [
+          [
+            0.02824655920267105,
+            0.014213630929589272
+          ],
+          [
+            0.08896471932530403,
+            0.047564975917339325
+          ],
+          [
+            0.14279241859912872,
+            0.050387777388095856
+          ]
+        ],
+        "generated_normal_gap_min_m": 0.00055,
+        "images_sha256": {
+          "04_Back.png": "6268cf501cc10207ee20b6656ef112cb54562eb94184b73da012e8d533106cb6",
+          "05_OppositeSide.png": "4a507ce794074ef59ec4b04bebf409e63bebac0232f89dc80b1706930c7ab679",
+          "02_ThreeQuarter.png": "1470ec0c3acb0009cd80fc3d694412d2bb3a6d84ec93e421dadf8855e6b1e777"
+        },
+        "method": "Inspected back-projected Abhay subset intersect rootX<-15mm and rootY>-25mm. Exact root and original first8mm controls. Subsequent original segment steps smoothly turn over14mm toward projected downward/backward tangent;project each generated point on actual body and retain its original positive normal offset,min0.55mm. Point counts,radii,all other objects unchanged. Discrete scalp projection,not continuous collision or artistic acceptance.",
+        "short_arc_budget": true,
+        "minimum_generated_z_m": 1.7733066082000732,
+        "maximum_generated_z_m": 1.8714584112167358,
+        "short_arc_method": "Integration budget min(original arc,45mm,max(14mm,rootZ-1.790m)),first8mm unchanged. Original radius samples and normal offset retained;actual resulting arc may differ from step budget.",
+        "scalp_fit": true,
+        "scalp_fit_method": "Over same14mm smooth arc transition,blend original positive normal offset toward max3mm. Exact first8mm retained;transition points can exceed3mm. Not an all-points3mm clamp."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "1470ec0c3acb0009cd80fc3d694412d2bb3a6d84ec93e421dadf8855e6b1e777",
+        "04_Back.png": "6268cf501cc10207ee20b6656ef112cb54562eb94184b73da012e8d533106cb6",
+        "05_OppositeSide.png": "4a507ce794074ef59ec4b04bebf409e63bebac0232f89dc80b1706930c7ab679"
+      },
+      "art_judgment": "Three actual views inspected. Same local support reflow plus smoothly reduce normal offset toward<=3mm;stripe visibly removed without observed new scalp gap. Basis279.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativefittedfoundation279",
+      "manifest": {
+        "source": "nativereargraduated264",
+        "source_sha256": "d8cc2dc623a27aa55e8016d503d20dd2349074d3b6286401270f36268f70d58c",
+        "source_unchanged": true,
+        "selection": "nativesupportstripeids273",
+        "object": "Abhay flow derivative • real scalp sampled short support",
+        "model_saved": true,
+        "model_sha256": "b071b05c2e6d0cf1452aac71c88d5cc22ac361e9abc9586ff7ef6e35b440fab6",
+        "archive_model_path": "D:\\星湾世界_模型归档\\starbay-ai-world\\角色工坊\\焰冕行者\\Exports\\nativefittedfoundation279\\Ember_Regent.blend",
+        "selected_fibers": 2296,
+        "max_same_index_displacement_m": 0.08724657446146011,
+        "length_before_after_quantiles_m": [
+          [
+            0.02824655920267105,
+            0.014213630929589272
+          ],
+          [
+            0.08896471932530403,
+            0.047564975917339325
+          ],
+          [
+            0.14279241859912872,
+            0.050387777388095856
+          ]
+        ],
+        "generated_normal_gap_min_m": 0.00055,
+        "images_sha256": {},
+        "method": "Inspected back-projected Abhay subset intersect rootX<-15mm and rootY>-25mm. Exact root and original first8mm controls. Subsequent original segment steps smoothly turn over14mm toward projected downward/backward tangent;project each generated point on actual body and retain its original positive normal offset,min0.55mm. Point counts,radii,all other objects unchanged. Discrete scalp projection,not continuous collision or artistic acceptance.",
+        "short_arc_budget": true,
+        "minimum_generated_z_m": 1.7733066082000732,
+        "maximum_generated_z_m": 1.8714584112167358,
+        "short_arc_method": "Integration budget min(original arc,45mm,max(14mm,rootZ-1.790m)),first8mm unchanged. Original radius samples and normal offset retained;actual resulting arc may differ from step budget.",
+        "scalp_fit": true,
+        "scalp_fit_method": "Over same14mm smooth arc transition,blend original positive normal offset toward max3mm. Exact first8mm retained;transition points can exceed3mm. Not an all-points3mm clamp."
+      },
+      "model_sha256": "b071b05c2e6d0cf1452aac71c88d5cc22ac361e9abc9586ff7ef6e35b440fab6",
+      "inspected_images_sha256": {},
+      "art_judgment": "Saved278 geometry,independent audit passed and high opposite-side inspected. Accepted incremental foundation correction;dominant rear main groups remain too broad,goal incomplete.",
+      "goal_complete": false
+    }
+  ],
+  "independent_audits": [
+    {
+      "source": "nativereargraduated264",
+      "source_sha256": "d8cc2dc623a27aa55e8016d503d20dd2349074d3b6286401270f36268f70d58c",
+      "candidate": "nativeboundedfoundation277",
+      "candidate_sha256": "907c1d1c2ef6505bcc99a79bd8d317fe630cff222b8eb59a8072f35e76dffebd",
+      "mesh_count": 141,
+      "meshes_uv_shape_keys_transforms_exact": true,
+      "all_other_native_geometry_exact": true,
+      "material_light_world_camera_display_exact": true,
+      "image_paths_compared_as_resolved_absolute": true,
+      "historical_curve_attributes_exact": true,
+      "all_radii_point_counts_transforms_exact": true,
+      "all_roots_exact": true,
+      "unselected_fibers_exact": 11704,
+      "selected_fibers": 2296,
+      "root_arc8mm_controls_exact": 12008,
+      "max_same_index_displacement_m": 0.09333828091621399,
+      "scope": "Independent saved-file support-only deformation and exact projected selection/filter verification. Main hair including accepted part,other supports and meshes unchanged. Static audit,not artistic or continuous collision acceptance.",
+      "changed_controls_signed_body_gap_quantiles_m": [
+        0.0005498970713233575,
+        0.007373398577328771,
+        0.049233426223509014
+      ],
+      "changed_controls_min_z_m": 1.7733066082000732,
+      "short_arc_budget": true
+    },
+    {
+      "source": "nativereargraduated264",
+      "source_sha256": "d8cc2dc623a27aa55e8016d503d20dd2349074d3b6286401270f36268f70d58c",
+      "candidate": "nativefittedfoundation279",
+      "candidate_sha256": "b071b05c2e6d0cf1452aac71c88d5cc22ac361e9abc9586ff7ef6e35b440fab6",
+      "mesh_count": 141,
+      "meshes_uv_shape_keys_transforms_exact": true,
+      "all_other_native_geometry_exact": true,
+      "material_light_world_camera_display_exact": true,
+      "image_paths_compared_as_resolved_absolute": true,
+      "historical_curve_attributes_exact": true,
+      "all_radii_point_counts_transforms_exact": true,
+      "all_roots_exact": true,
+      "unselected_fibers_exact": 11704,
+      "selected_fibers": 2296,
+      "root_arc8mm_controls_exact": 12008,
+      "max_same_index_displacement_m": 0.08724657446146011,
+      "scope": "Independent saved-file support-only deformation and exact projected selection/filter verification. Main hair including accepted part,other supports and meshes unchanged. Static audit,not artistic or continuous collision acceptance.",
+      "changed_controls_signed_body_gap_quantiles_m": [
+        0.0005499079416040331,
+        0.003000021981279133,
+        0.009694696520455182
+      ],
+      "changed_controls_min_z_m": 1.7733066082000732,
+      "short_arc_budget": true,
+      "scalp_fit": true,
+      "fully_transitioned_controls": 31246,
+      "fully_transitioned_signed_gap_quantiles_m": [
+        0.0005499079416040331,
+        0.002999994860147126,
+        0.0030001840932527557
+      ]
+    }
+  ],
+  "high_presentation": {
+    "source": "nativefittedfoundation279",
+    "source_sha256": "b071b05c2e6d0cf1452aac71c88d5cc22ac361e9abc9586ff7ef6e35b440fab6",
+    "source_unchanged": true,
+    "camera": "05_OppositeSide",
+    "diagnostic_opposite_camera": true,
+    "geometry_lighting_unchanged": true,
+    "resolution": [
+      1920,
+      2240
+    ],
+    "samples": 512,
+    "denoising": "OpenImageDenoise",
+    "image_sha256": "42cb219043696774780c66628c2bbd0285f0b077f5f9574e13e9212438460932",
+    "status": "Actual render pending art review; no generative image replacement"
+  },
+  "high_presentation_actually_inspected": true,
+  "scope": "Real Blender/Cycles. Retained soft side part and all main hair. Local posterior support stripe corrected. Broad rear main groups and rigid frontal strands remain. No AI portrait substitution,paid services,UE/animation changes,Release or social publication. Licensed geometry,per-curve selections and logs remain local.",
+  "storage": "Fresh275/277/279 models directly onD with newE junctions;no migration,deletion or freed-space claim."
+}
