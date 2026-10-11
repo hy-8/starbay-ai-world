@@ -1,0 +1,16 @@
+{
+  "source": "nativeprojectedlayers251",
+  "source_sha256": "4011f51a072d43d898646ce2b3426f8cad550240fff2541b57ba95197e5fb3ef",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "diagnostic_opposite_camera": false,
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "f78d2c58a276bef2f39be237dcfa303ab8be32dd2d5c7ecbbeaa727342418468",
+  "status": "Actual render pending art review; no generative image replacement"
+}

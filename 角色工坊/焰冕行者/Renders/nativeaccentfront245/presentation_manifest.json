@@ -1,0 +1,16 @@
+{
+  "source": "nativeouteraccent245",
+  "source_sha256": "40624b4067dca0f97004c34ecc6d3262f74973a471f10a3b57867d36bc586e98",
+  "source_unchanged": true,
+  "camera": "01_Front",
+  "diagnostic_opposite_camera": false,
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "samples": 192,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "6206a77831b2ceee460b4df206c4334d2b598e592c2c78ff2cc969654fd97f29",
+  "status": "Actual render pending art review; no generative image replacement"
+}

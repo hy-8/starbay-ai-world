@@ -10,6 +10,8 @@ source=(ROOT/'Tools/validate_local_native_hair_edit.py').read_text(encoding='utf
 tree=ast.parse(source)
 functions=[n for n in tree.body if isinstance(n,ast.FunctionDef) and n.name in ['arr','state']]
 code='\n'.join(ast.unparse(n) for n in functions).replace("ob.type == 'CURVES' and (not ob.hide_render)","ob.type == 'CURVES'")
+if '--resolve-image-paths' in a:
+ code=code.replace('node.image.filepath)', 'str(Path(bpy.path.abspath(node.image.filepath)).resolve()))')
 material_scope=None;scene_materials_exact=True;material_only=False
 exec(compile(code,'shared_snapshot','exec'))
 primary='Bystedt layercut derivative • native root reflow'
@@ -26,7 +28,11 @@ before=state(base);beforeattrs=attrs(bpy.data.objects[primary].data)
 beforevisibility={o.name:o.hide_render for o in bpy.data.objects}
 after=state(candidate);afterattrs=attrs(bpy.data.objects[primary].data)
 aftervisibility={o.name:o.hide_render for o in bpy.data.objects}
-assert before[1]==after[1] and before[3]==after[3] and before[4]==after[4]
+for index,label in [(1,'meshes'),(3,'lighting'),(4,'materials')]:
+ if before[index]!=after[index]:
+  changed={k:dict(before=before[index].get(k),after=after[index].get(k)) for k in set(before[index])|set(after[index]) if before[index].get(k)!=after[index].get(k)}
+  (ROOT/'Exports'/(reportname+'.mismatch.json')).write_text(json.dumps({label:changed},indent=2),encoding='utf-8')
+  raise AssertionError((label,list(changed)))
 assert set(before[2])==set(after[2]) and set(beforevisibility)==set(aftervisibility)
 for name,v in beforevisibility.items():assert aftervisibility[name]==(True if name==support else v)
 for name,data in before[2].items():
@@ -36,23 +42,41 @@ for name,(kind,values) in beforeattrs.items():
  assert kind==afterattrs[name][0] and np.array_equal(values,afterattrs[name][1]),name
 bp,br,bs,bt=before[2][primary];ap,ar,asz,at=after[2][primary]
 assert np.array_equal(bt,at) and len(bs)==len(asz)==46043
-if '--trim' in a:
- mask=afterattrs['native_rounded_nape'][1];allowed=beforeattrs['native_restored_raw_controls'][1]
- assert np.all(allowed[mask])
+if '--channels' in a:
+ mask=afterattrs['native_sweep_channels'][1];assert np.array_equal(bs,asz) and np.array_equal(br,ar)
+ assert not np.any(beforeattrs['native_inner_curtain_shift'][1][mask])
+ offsets=np.r_[0,np.cumsum(bs)];selected=[]
+ for i in range(len(bs)):
+  old=bp[offsets[i]:offsets[i+1]];p=ap[offsets[i]:offsets[i+1]]
+  assert np.array_equal(old[0],p[0])
+  if not mask[i]:assert np.array_equal(old,p)
+  else:
+   assert bs[i]==65 and np.array_equal(old[:8],p[:8]) and np.array_equal(old[56:],p[56:]);selected.append(i)
+ delta=float(np.linalg.norm(ap-bp,axis=1).max());assert 0<delta<=.004001
+ manifest=json.loads((ROOT/'Exports'/candidate/'sweep_channels_manifest.json').read_text())
+ assert manifest['model_sha256']==after[0] and manifest['source_sha256']==before[0] and manifest['selected_fibers']==len(selected)
+ result=dict(source=base,source_sha256=before[0],candidate=candidate,candidate_sha256=after[0],mesh_count=len(before[1]),meshes_uv_shape_keys_transforms_exact=True,other_native_geometry_exact=True,material_light_world_camera_display_exact=True,image_paths_compared_as_resolved_absolute='--resolve-image-paths' in a,historical_curve_attributes_exact=True,all_radii_point_counts_transforms_exact=True,all_roots_exact=True,unselected_fibers_exact=int((~mask).sum()),selected_fibers=len(selected),first8_last9_controls_exact=True,max_same_index_displacement_m=delta,scope='Independent saved mixed-control localized deformation audit. Material image paths resolved to original absolute files after drive change. Static comparison only;not artistic or continuous collision acceptance.')
+ out.write_text(json.dumps(result,indent=2),encoding='utf-8');print('CHANNELS_AUDIT_PASS',candidate,flush=True);sys.exit(0)
+if '--trim' in a or '--accent' in a:
+ accent='--accent' in a
+ mask=afterattrs['native_trimmed_outer_accent' if accent else 'native_rounded_nape'][1]
+ if accent:assert not np.any(beforeattrs['native_inner_curtain_shift'][1][mask])
+ else:assert np.all(beforeattrs['native_restored_raw_controls'][1][mask])
  bo=np.r_[0,np.cumsum(bs)];ao=np.r_[0,np.cumsum(asz)];cuts=[]
  for i in range(len(bs)):
   p=ap[ao[i]:ao[i+1]];r=ar[ao[i]:ao[i+1]];old=bp[bo[i]:bo[i+1]];rad=br[bo[i]:bo[i+1]]
   if not mask[i]:assert np.array_equal(p,old) and np.array_equal(r,rad);continue
   assert np.array_equal(p[0],old[0]) and np.array_equal(p[:-1],old[:len(p)-1])
+  if accent:assert len(p)<len(old) and np.array_equal(p,old[:len(p)])
   j=len(p)-1;v=old[j]-old[j-1];t=float(np.dot(p[-1]-old[j-1],v)/np.dot(v,v))
   assert -1e-5<=t<=1.00001 and np.linalg.norm(p[-1]-(old[j-1]+t*v))<2e-7
   expected=rad[:len(p)].copy();k=min(4,len(expected)-1);f=np.linspace(0,1,k);expected[-k:]*=1-.99*f**1.4
   assert np.array_equal(r,expected)
   oldlength=float(np.linalg.norm(np.diff(old,axis=0),axis=1).sum());newlength=float(np.linalg.norm(np.diff(p,axis=0),axis=1).sum())
   cuts.append(oldlength-newlength)
-  assert .00099<cuts[-1]<.03201 and cuts[-1]<=oldlength*.22001
- manifest=json.loads((ROOT/'Exports'/candidate/'rounded_nape_manifest.json').read_text())
- assert manifest['model_sha256']==after[0] and manifest['source_sha256']==before[0] and manifest['selected_fibers']==int(mask.sum())
+  if not accent:assert .00099<cuts[-1]<.03201 and cuts[-1]<=oldlength*.22001
+ manifest=json.loads((ROOT/'Exports'/candidate/('outer_accent_manifest.json' if accent else 'rounded_nape_manifest.json')).read_text())
+ assert manifest['model_sha256']==after[0] and manifest['source_sha256']==before[0] and manifest['trimmed_fibers' if accent else 'selected_fibers']==int(mask.sum())
  result=dict(source=base,source_sha256=before[0],candidate=candidate,candidate_sha256=after[0],mesh_count=len(before[1]),meshes_uv_shape_keys_transforms_exact=True,other_native_geometry_exact=True,material_light_world_camera_display_exact=True,historical_curve_attributes_exact=True,unchanged_fibers_paths_radii_counts_exact=int((~mask).sum()),trimmed_fibers=int(mask.sum()),all_current_roots_exact=True,trimmed_control_prefixes_exact=True,terminal_points_on_source_segments=True,intentional_terminal_taper_verified=True,polyline_shortening_quantiles_m=np.quantile(cuts,[0,.5,1]).tolist(),scope='Independent saved mixed-control trim comparison. Selected point counts and terminal radii intentionally change. Not art or continuous collision proof.')
  out.write_text(json.dumps(result,indent=2),encoding='utf-8');print('RAW_TRIM_AUDIT_PASS',candidate,flush=True);sys.exit(0)
 assert (bs==65).all()

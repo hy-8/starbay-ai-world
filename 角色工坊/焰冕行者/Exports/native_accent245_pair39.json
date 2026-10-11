@@ -1,0 +1,23 @@
+{
+  "source": "nativelocalfollicles234",
+  "source_sha256": "5b0efda316ebc74e95a7941331cd18453449fb2df81fd1dd5d54f133976b2801",
+  "candidate": "nativeouteraccent245",
+  "candidate_sha256": "40624b4067dca0f97004c34ecc6d3262f74973a471f10a3b57867d36bc586e98",
+  "mesh_count": 141,
+  "meshes_uv_shape_keys_transforms_exact": true,
+  "other_native_geometry_exact": true,
+  "material_light_world_camera_display_exact": true,
+  "historical_curve_attributes_exact": true,
+  "unchanged_fibers_paths_radii_counts_exact": 45698,
+  "trimmed_fibers": 345,
+  "all_current_roots_exact": true,
+  "trimmed_control_prefixes_exact": true,
+  "terminal_points_on_source_segments": true,
+  "intentional_terminal_taper_verified": true,
+  "polyline_shortening_quantiles_m": [
+    0.03319397568702698,
+    0.03952249139547348,
+    0.04716067761182785
+  ],
+  "scope": "Independent saved mixed-control trim comparison. Selected point counts and terminal radii intentionally change. Not art or continuous collision proof."
+}

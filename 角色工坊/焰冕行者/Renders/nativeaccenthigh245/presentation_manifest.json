@@ -1,0 +1,16 @@
+{
+  "source": "nativeouteraccent245",
+  "source_sha256": "40624b4067dca0f97004c34ecc6d3262f74973a471f10a3b57867d36bc586e98",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "diagnostic_opposite_camera": false,
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "c8fdb7e588c786eedf14b8066f48295c1c5a5dd5654dd4a96653d37758d5ad58",
+  "status": "Actual render pending art review; no generative image replacement"
+}

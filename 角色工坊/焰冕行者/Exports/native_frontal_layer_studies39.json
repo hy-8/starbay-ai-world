@@ -1,0 +1,2071 @@
+{
+  "continuation": "nativeprojectedlayers251",
+  "goal_complete": false,
+  "studies": [
+    {
+      "version": "nativepartids235",
+      "manifest": {
+        "source": "nativelocalfollicles234",
+        "source_sha256": "5b0efda316ebc74e95a7941331cd18453449fb2df81fd1dd5d54f133976b2801",
+        "source_unchanged": true,
+        "edited_object": "Bystedt layercut derivative • native root reflow",
+        "points_per_curve": null,
+        "selection_attribute": "native_inner_curtain_shift",
+        "selection_rule": "native_inner_curtain_shift",
+        "legend": {
+          "blue": "Edited selected-object curves",
+          "red": "Untouched selected-object curves",
+          "green": "All other visible native hair components",
+          "gray": "Body/clothes"
+        },
+        "edited_fibers": 3627,
+        "unselected_fibers": 42416,
+        "method": "Exact temporary curve subsets with original radii/matrix, actual cameras, emission diagnostic only",
+        "status": "Unreviewed actual component diagnostic"
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "01_Front.png": "c583384d19f0a4a34ad6e951b122f3527a55053c6ce17d84d2f1e1aa44f400b5",
+        "02_ThreeQuarter.png": "96fd75ac1af0262adc7e0f36e1cd70e73388b1986226f0b2035b224ce5a448b7"
+      },
+      "art_judgment": "Both actual ID images inspected;3627 inner-curtain fibers mainly long foreground.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativesweepids237",
+      "manifest": {
+        "source": "nativelocalfollicles234",
+        "source_sha256": "5b0efda316ebc74e95a7941331cd18453449fb2df81fd1dd5d54f133976b2801",
+        "source_unchanged": true,
+        "edited_object": "Bystedt layercut derivative • native root reflow",
+        "points_per_curve": null,
+        "selection_attribute": "native_resculpted_fringe_sweeps",
+        "selection_rule": "native_resculpted_fringe_sweeps",
+        "legend": {
+          "blue": "Edited selected-object curves",
+          "red": "Untouched selected-object curves",
+          "green": "All other visible native hair components",
+          "gray": "Body/clothes"
+        },
+        "edited_fibers": 5314,
+        "unselected_fibers": 40729,
+        "method": "Exact temporary curve subsets with original radii/matrix, actual cameras, emission diagnostic only",
+        "status": "Unreviewed actual component diagnostic"
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "01_Front.png": "b486f3600bbb916686d6a130921a6b098cc2bca8f313954a03d64097f3d94ca2",
+        "02_ThreeQuarter.png": "3051dcf50d685a969fb2490bbf9364a45e2908263c76a100a636d6a04e53f071"
+      },
+      "art_judgment": "Both actual ID images inspected;historical frontal selection is not the whole broad sweep.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativeupperids238",
+      "manifest": {
+        "source": "nativelocalfollicles234",
+        "source_sha256": "5b0efda316ebc74e95a7941331cd18453449fb2df81fd1dd5d54f133976b2801",
+        "source_unchanged": true,
+        "edited_object": "Bystedt layercut derivative • native root reflow",
+        "points_per_curve": null,
+        "selection_attribute": "native_spatial_crown_release",
+        "selection_rule": "native_spatial_crown_release",
+        "legend": {
+          "blue": "Edited selected-object curves",
+          "red": "Untouched selected-object curves",
+          "green": "All other visible native hair components",
+          "gray": "Body/clothes"
+        },
+        "edited_fibers": 6072,
+        "unselected_fibers": 39971,
+        "method": "Exact temporary curve subsets with original radii/matrix, actual cameras, emission diagnostic only",
+        "status": "Unreviewed actual component diagnostic"
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "01_Front.png": "26123e83d16e90c18acb48875c8ac7a84e56e9c146aa59639a7147dec941935b",
+        "02_ThreeQuarter.png": "4dc93c9784af77b83c39f611bb28dc3c69015d20869994fc09c41aec7b9b327a"
+      },
+      "art_judgment": "Both actual ID images inspected;historical upper selection covers outer sweep and upper arches.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativeuppergauge239",
+      "manifest": {
+        "source": "nativelocalfollicles234",
+        "source_sha256": "5b0efda316ebc74e95a7941331cd18453449fb2df81fd1dd5d54f133976b2801",
+        "model_saved": false,
+        "source_unchanged": true,
+        "all_restored": false,
+        "selected_fibers": 3839,
+        "root_radius_before_m": [
+          0.00010999997903127223,
+          0.00011000000085914508,
+          0.00011000002268701792
+        ],
+        "root_radius_after_m": [
+          5.4999989515636116e-05,
+          5.500000042957254e-05,
+          5.500001134350896e-05
+        ],
+        "images_sha256": {
+          "02_ThreeQuarter.png": "93d508e317cd4a10351c78c734aaced1412ee36dc701f095679ab1da34e329aa",
+          "03_Side.png": "18dc9b844ede55ba7a835e0865a8b980a19427f72896e53663c23a3884a8993e"
+        },
+        "method": "Read-only actual geometry study. Multiply selected restored raw donor radii by0.50, retaining existing taper, control positions, counts, materials, lights, and accepted frontal paths/radii. Upper-only mode intersects historical spatial_crown_release selection; all-restored uses full donor-restoration set. No final acceptance."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "93d508e317cd4a10351c78c734aaced1412ee36dc701f095679ab1da34e329aa",
+        "03_Side.png": "18dc9b844ede55ba7a835e0865a8b980a19427f72896e53663c23a3884a8993e"
+      },
+      "art_judgment": "Both inspected;halving3839 restored upper radii offers little shape improvement;not adopted.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativerestoredgauge240",
+      "manifest": {
+        "source": "nativelocalfollicles234",
+        "source_sha256": "5b0efda316ebc74e95a7941331cd18453449fb2df81fd1dd5d54f133976b2801",
+        "model_saved": false,
+        "source_unchanged": true,
+        "all_restored": true,
+        "selected_fibers": 35162,
+        "root_radius_before_m": [
+          0.00010999997903127223,
+          0.00011000000085914508,
+          0.00011000002268701792
+        ],
+        "root_radius_after_m": [
+          5.4999989515636116e-05,
+          5.500000042957254e-05,
+          5.500001134350896e-05
+        ],
+        "images_sha256": {
+          "02_ThreeQuarter.png": "de49aba3872a8712f694948a310fdb0fa77b62946278a59dfc3b0dcf068be31f",
+          "03_Side.png": "57d767bb3580225634838db77b5ed2df217e99ac4fab9282103660f509bb7ce5",
+          "04_Back.png": "bf62a93321ac366f513e9907654029c6f86b05439310f93602eccb54163b10d9"
+        },
+        "method": "Read-only actual geometry study. Multiply selected restored raw donor radii by0.50, retaining existing taper, control positions, counts, materials, lights, and accepted frontal paths/radii. Upper-only mode intersects historical spatial_crown_release selection; all-restored uses full donor-restoration set. No final acceptance."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "de49aba3872a8712f694948a310fdb0fa77b62946278a59dfc3b0dcf068be31f",
+        "03_Side.png": "57d767bb3580225634838db77b5ed2df217e99ac4fab9282103660f509bb7ce5",
+        "04_Back.png": "bf62a93321ac366f513e9907654029c6f86b05439310f93602eccb54163b10d9"
+      },
+      "art_judgment": "Three inspected;halving all35162 restored radii exposes new rear scalp dot;not adopted.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativesweepchannels241",
+      "manifest": {
+        "source": "nativelocalfollicles234",
+        "source_sha256": "5b0efda316ebc74e95a7941331cd18453449fb2df81fd1dd5d54f133976b2801",
+        "model_saved": false,
+        "source_unchanged": true,
+        "selected_fibers": 6743,
+        "groups": [
+          {
+            "group": 0,
+            "fibers": 1898,
+            "width_contraction": 0.34,
+            "lift_m": 0.00115
+          },
+          {
+            "group": 1,
+            "fibers": 387,
+            "width_contraction": 0.3809681933158384,
+            "lift_m": 0.0018905153797755374
+          },
+          {
+            "group": 2,
+            "fibers": 1129,
+            "width_contraction": 0.28013708526634645,
+            "lift_m": 0.0009152092306727723
+          },
+          {
+            "group": 3,
+            "fibers": 186,
+            "width_contraction": 0.38650377628706006,
+            "lift_m": 0.000483928321012934
+          },
+          {
+            "group": 4,
+            "fibers": 423,
+            "width_contraction": 0.33191138040058027,
+            "lift_m": 0.0015959781210117465
+          },
+          {
+            "group": 5,
+            "fibers": 1087,
+            "width_contraction": 0.3053153523149774,
+            "lift_m": 0.001674668071452001
+          },
+          {
+            "group": 6,
+            "fibers": 1633,
+            "width_contraction": 0.3987699882145355,
+            "lift_m": 0.0005376685209054166
+          }
+        ],
+        "max_same_index_displacement_m": 0.025729862973093987,
+        "discrete_body_repairs": 2523,
+        "images_sha256": {
+          "02_ThreeQuarter.png": "21e7981ddbb6cfcaa263b51817ddabe179f470dc97e9f08b9ceccfeaf6df1ed2",
+          "03_Side.png": "2d6801e1c7c0e0b942d1452c70fd3fa01994e54ee52f7327e795b46066f7d321"
+        },
+        "method": "Read-only geometry pilot. Non-restored primary curves,rootX>3mm,rootZ>1.820m,exclude accepted inner curtain. Seven deterministic whole-path families;28-40percent middle transverse width contraction and0.4-1.9mm outward loft. First8 and last9 controls preserved, radii unchanged. Discrete body guard not continuous collision proof. Preserve side-part direction; right-sweep geometry intentionally changes."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "21e7981ddbb6cfcaa263b51817ddabe179f470dc97e9f08b9ceccfeaf6df1ed2",
+        "03_Side.png": "2d6801e1c7c0e0b942d1452c70fd3fa01994e54ee52f7327e795b46066f7d321"
+      },
+      "art_judgment": "Both inspected;excessive body correction causes lifted crossing locks and gap;rejected.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativeboundedsweep242",
+      "manifest": {
+        "source": "nativelocalfollicles234",
+        "source_sha256": "5b0efda316ebc74e95a7941331cd18453449fb2df81fd1dd5d54f133976b2801",
+        "model_saved": false,
+        "source_unchanged": true,
+        "bounded": true,
+        "selected_fibers": 6743,
+        "groups": [
+          {
+            "group": 0,
+            "fibers": 1898,
+            "width_contraction": 0.34,
+            "lift_m": 0.00023
+          },
+          {
+            "group": 1,
+            "fibers": 387,
+            "width_contraction": 0.3809681933158384,
+            "lift_m": 0.0003781030759551075
+          },
+          {
+            "group": 2,
+            "fibers": 1129,
+            "width_contraction": 0.28013708526634645,
+            "lift_m": 0.00018304184613455446
+          },
+          {
+            "group": 3,
+            "fibers": 186,
+            "width_contraction": 0.38650377628706006,
+            "lift_m": 9.678566420258681e-05
+          },
+          {
+            "group": 4,
+            "fibers": 423,
+            "width_contraction": 0.33191138040058027,
+            "lift_m": 0.0003191956242023493
+          },
+          {
+            "group": 5,
+            "fibers": 1087,
+            "width_contraction": 0.3053153523149774,
+            "lift_m": 0.0003349336142904002
+          },
+          {
+            "group": 6,
+            "fibers": 1633,
+            "width_contraction": 0.3987699882145355,
+            "lift_m": 0.00010753370418108333
+          }
+        ],
+        "max_same_index_displacement_m": 0.0018392890924587846,
+        "discrete_body_repairs": 85,
+        "images_sha256": {
+          "02_ThreeQuarter.png": "b18520ccc2f7d30adb9b8fe6c4016f7038b57ad7c8bd1d9ed62e83fd2e232cab",
+          "03_Side.png": "238940bdaf8380850ff15fe4a4505c7f3286e5112314386638ee4e79c6261284"
+        },
+        "method": "Read-only geometry pilot. Non-restored primary curves,rootX>3mm,rootZ>1.820m,exclude accepted inner curtain. Seven deterministic whole-path families;28-40percent middle transverse width contraction and0.4-1.9mm outward loft. First8 and last9 controls preserved, radii unchanged. Discrete body guard not continuous collision proof. Preserve side-part direction; right-sweep geometry intentionally changes. Bounded mode: transverse contraction smoothly saturates at1.8mm; loft reduced to20percent. If a new point falls below min(original signed nearest gap,0.3mm), revert that point to its original source instead of projecting buried controls outward."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "b18520ccc2f7d30adb9b8fe6c4016f7038b57ad7c8bd1d9ed62e83fd2e232cab",
+        "03_Side.png": "238940bdaf8380850ff15fe4a4505c7f3286e5112314386638ee4e79c6261284"
+      },
+      "art_judgment": "Both inspected;bounded1.8mm avoids excessive deformation but broad sheet persists;not adopted.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativeouterarcids243",
+      "manifest": {
+        "source": "nativelocalfollicles234",
+        "source_sha256": "5b0efda316ebc74e95a7941331cd18453449fb2df81fd1dd5d54f133976b2801",
+        "source_unchanged": true,
+        "edited_object": "Bystedt layercut derivative • native root reflow",
+        "points_per_curve": null,
+        "selection_attribute": null,
+        "selection_rule": {
+          "ThreeQuarter_normalized_ellipse": [
+            0.722,
+            0.358,
+            0.022,
+            0.05
+          ],
+          "minimum_projected_controls": 2
+        },
+        "legend": {
+          "blue": "Edited selected-object curves",
+          "red": "Untouched selected-object curves",
+          "green": "All other visible native hair components",
+          "gray": "Body/clothes"
+        },
+        "edited_fibers": 345,
+        "unselected_fibers": 45698,
+        "method": "Exact temporary curve subsets with original radii/matrix, actual cameras, emission diagnostic only. Ellipse is projected controls, not continuous visibility proof.",
+        "status": "Unreviewed actual component diagnostic"
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "01_Front.png": "36bfb7677a3739b5273cd9687dc115fc48b22b4803b2761b1c0619b8c6c108af",
+        "02_ThreeQuarter.png": "d3e59d304b5133f55c1fbdc024ff68c10eba834bd12c915363f29c6be649323c"
+      },
+      "art_judgment": "Both inspected;345 projected shafts isolate protruding outer-right accent.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativeouteraccent244",
+      "manifest": {
+        "source": "nativelocalfollicles234",
+        "source_sha256": "5b0efda316ebc74e95a7941331cd18453449fb2df81fd1dd5d54f133976b2801",
+        "source_unchanged": true,
+        "model_saved": false,
+        "model_sha256": null,
+        "archive_model_path": null,
+        "source_id_version": "nativeouterarcids243",
+        "selection_ellipse": [
+          0.722,
+          0.358,
+          0.022,
+          0.05
+        ],
+        "selected_fibers": 345,
+        "trimmed_fibers": 345,
+        "too_early_to_trim": 0,
+        "accepted_fringe_selected": 0,
+        "polyline_cut_quantiles_m": [
+          0.03319397568702698,
+          0.03952249139547348,
+          0.04716067761182785
+        ],
+        "images_sha256": {
+          "02_ThreeQuarter.png": "3284a063e24b0cb483a7fa90776413190c2f62596465968e2bc7770753c7384d",
+          "03_Side.png": "98f2136d407bb7dc0456a9850320d0cb2e73d6a25bca5abe6f692b915879626d"
+        },
+        "method": "Trim inspected projected outer accent to last original control before first ellipse entry, only if at least3 controls remain. Retain complete source control prefix/root, taper last<=4 radii without altering first radius. All other geometry/materials retained. Screen projection is a selection device, not continuous visibility or collision proof."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "3284a063e24b0cb483a7fa90776413190c2f62596465968e2bc7770753c7384d",
+        "03_Side.png": "98f2136d407bb7dc0456a9850320d0cb2e73d6a25bca5abe6f692b915879626d"
+      },
+      "art_judgment": "Both inspected;345 strict-prefix trims remove protruding wing without observed new large gap;basis245.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativeouteraccent245",
+      "manifest": {
+        "source": "nativelocalfollicles234",
+        "source_sha256": "5b0efda316ebc74e95a7941331cd18453449fb2df81fd1dd5d54f133976b2801",
+        "source_unchanged": true,
+        "model_saved": true,
+        "model_sha256": "40624b4067dca0f97004c34ecc6d3262f74973a471f10a3b57867d36bc586e98",
+        "archive_model_path": "D:\\星湾世界_模型归档\\starbay-ai-world\\角色工坊\\焰冕行者\\Exports\\nativeouteraccent245\\Ember_Regent.blend",
+        "source_id_version": "nativeouterarcids243",
+        "selection_ellipse": [
+          0.722,
+          0.358,
+          0.022,
+          0.05
+        ],
+        "selected_fibers": 345,
+        "trimmed_fibers": 345,
+        "too_early_to_trim": 0,
+        "accepted_fringe_selected": 0,
+        "polyline_cut_quantiles_m": [
+          0.03319397568702698,
+          0.03952249139547348,
+          0.04716067761182785
+        ],
+        "images_sha256": {},
+        "method": "Trim inspected projected outer accent to last original control before first ellipse entry, only if at least3 controls remain. Retain complete source control prefix/root, taper last<=4 radii without altering first radius. All other geometry/materials retained. Screen projection is a selection device, not continuous visibility or collision proof."
+      },
+      "model_sha256": "40624b4067dca0f97004c34ecc6d3262f74973a471f10a3b57867d36bc586e98",
+      "inspected_images_sha256": {},
+      "art_judgment": "Saved244 geometry directly to freshD directory;high quarter and front inspected,independent audit passed.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativepointcut246",
+      "manifest": {
+        "source": "nativeouteraccent245",
+        "source_sha256": "40624b4067dca0f97004c34ecc6d3262f74973a471f10a3b57867d36bc586e98",
+        "source_unchanged": true,
+        "model_saved": false,
+        "selected_fibers": 4049,
+        "cut_quantiles_m": [
+          0.0032855086028575897,
+          0.014761388301849365,
+          0.05315672606229782
+        ],
+        "images_sha256": {
+          "02_ThreeQuarter.png": "7b0e5207afe6ef8979af246051c03f7977e656af56c057beadbc98773ab9279a",
+          "03_Side.png": "d45743d53f3d34cb5e792ae731f9e89a552b41db95f0f2c84efec5177b9de64a"
+        },
+        "method": "Deterministic60percent sample of positiveX nonrestored non-inner-curtain high-root fibers. Retain own exact control prefixes up to80-95percent arc length, minimum12controls. Last6radiuses tapered. No roots moved, no transverse bend, no material changes; preview needs actual art review."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "7b0e5207afe6ef8979af246051c03f7977e656af56c057beadbc98773ab9279a",
+        "03_Side.png": "d45743d53f3d34cb5e792ae731f9e89a552b41db95f0f2c84efec5177b9de64a"
+      },
+      "art_judgment": "Both inspected;4049 staggered tip cuts offer little broad-sweep benefit;not adopted.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativefrontcomponents247",
+      "manifest": {
+        "source": "nativeouteraccent245",
+        "source_sha256": "40624b4067dca0f97004c34ecc6d3262f74973a471f10a3b57867d36bc586e98",
+        "source_unchanged": true,
+        "legend": [
+          {
+            "object": "Abhay flow derivative • real scalp sampled short support",
+            "linear_color": [
+              0.04,
+              0.15,
+              1,
+              1
+            ],
+            "fibers": 14000
+          },
+          {
+            "object": "Bystedt derivative • short scalp support",
+            "linear_color": [
+              0,
+              1,
+              0.12,
+              1
+            ],
+            "fibers": 23657
+          },
+          {
+            "object": "Bystedt layercut derivative • native root reflow",
+            "linear_color": [
+              1,
+              0.03,
+              0.08,
+              1
+            ],
+            "fibers": 46043
+          }
+        ],
+        "back_view": false,
+        "side_view": false,
+        "single_camera": "02_ThreeQuarter",
+        "method": "Temporary real components emission IDs; diagnostic color only, not final beauty render. Full world-space tip aggregates when back requested are geometry statistics, not visibility proof."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "0b806d0350d04522e3c2fce03a7363dff00c17b04b61231818e50d1704c944b7"
+      },
+      "art_judgment": "Quarter ID inspected;both short support components visible at front roots.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativefronthide248",
+      "manifest": {
+        "source": "nativeouteraccent245",
+        "source_sha256": "40624b4067dca0f97004c34ecc6d3262f74973a471f10a3b57867d36bc586e98",
+        "source_unchanged": true,
+        "mode": "hide-support",
+        "model_saved": false,
+        "records": [
+          {
+            "object": "Abhay flow derivative • real scalp sampled short support",
+            "temporarily_hidden": true
+          },
+          {
+            "object": "Bystedt derivative • short scalp support",
+            "temporarily_hidden": true
+          }
+        ],
+        "image_sha256": "37c48e08e70ff8c0e7dedf1d5d1c62504ec3da8285d90526ff280699eae581fc",
+        "scope": "Read-only diagnostic. Radius mode changes support radii only with continuous positiveX temporal field; pigment mode changes two support materials only; skin-control replaces body material to identify skin contribution, never a candidate."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "37c48e08e70ff8c0e7dedf1d5d1c62504ec3da8285d90526ff280699eae581fc"
+      },
+      "art_judgment": "Quarter inspected;hiding both supports exposes obvious scalp while broad sweep remains. Diagnostic only;not adopted.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativefrontpatchids249",
+      "manifest": {
+        "source": "nativeouteraccent245",
+        "source_sha256": "40624b4067dca0f97004c34ecc6d3262f74973a471f10a3b57867d36bc586e98",
+        "source_unchanged": true,
+        "edited_object": "Bystedt layercut derivative • native root reflow",
+        "points_per_curve": null,
+        "selection_attribute": null,
+        "selection_rule": {
+          "ThreeQuarter_normalized_ellipse": [
+            0.55,
+            0.344,
+            0.064,
+            0.049
+          ],
+          "minimum_projected_controls": 2
+        },
+        "legend": {
+          "blue": "Edited selected-object curves",
+          "red": "Untouched selected-object curves",
+          "green": "All other visible native hair components",
+          "gray": "Body/clothes"
+        },
+        "edited_fibers": 8795,
+        "unselected_fibers": 37248,
+        "method": "Exact temporary curve subsets with original radii/matrix, actual cameras, emission diagnostic only. Ellipse is projected controls, not continuous visibility proof.",
+        "status": "Unreviewed actual component diagnostic"
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "01_Front.png": "1a372ecbad58bb9e4fbe9d79423a42736bb84c98b07693e5e4101342092e0bac",
+        "02_ThreeQuarter.png": "9ca1c3de5ba3d138d24b89216c400888a47061a847dee80d69d96d7b7a69ede0"
+      },
+      "art_judgment": "Both inspected;8795 projected primary shafts overlap broad front patch;selection also contains hidden/rear paths.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativeprojectedchannels250",
+      "manifest": {
+        "source": "nativeouteraccent245",
+        "source_sha256": "40624b4067dca0f97004c34ecc6d3262f74973a471f10a3b57867d36bc586e98",
+        "model_saved": false,
+        "source_unchanged": true,
+        "bounded": true,
+        "selected_fibers": 5188,
+        "groups": [
+          {
+            "group": 0,
+            "fibers": 770,
+            "width_contraction": 0.65,
+            "lift_m": 0.0
+          },
+          {
+            "group": 1,
+            "fibers": 33,
+            "width_contraction": 0.65,
+            "lift_m": 0.0
+          },
+          {
+            "group": 2,
+            "fibers": 13,
+            "width_contraction": 0.65,
+            "lift_m": 0.0
+          },
+          {
+            "group": 3,
+            "fibers": 100,
+            "width_contraction": 0.65,
+            "lift_m": 0.0
+          },
+          {
+            "group": 4,
+            "fibers": 608,
+            "width_contraction": 0.65,
+            "lift_m": 0.0
+          },
+          {
+            "group": 5,
+            "fibers": 516,
+            "width_contraction": 0.65,
+            "lift_m": 0.0
+          },
+          {
+            "group": 6,
+            "fibers": 43,
+            "width_contraction": 0.65,
+            "lift_m": 0.0
+          },
+          {
+            "group": 7,
+            "fibers": 135,
+            "width_contraction": 0.65,
+            "lift_m": 0.0
+          },
+          {
+            "group": 8,
+            "fibers": 394,
+            "width_contraction": 0.65,
+            "lift_m": 0.0
+          },
+          {
+            "group": 9,
+            "fibers": 223,
+            "width_contraction": 0.65,
+            "lift_m": 0.0
+          },
+          {
+            "group": 10,
+            "fibers": 591,
+            "width_contraction": 0.65,
+            "lift_m": 0.0
+          },
+          {
+            "group": 11,
+            "fibers": 1048,
+            "width_contraction": 0.65,
+            "lift_m": 0.0
+          },
+          {
+            "group": 12,
+            "fibers": 114,
+            "width_contraction": 0.65,
+            "lift_m": 0.0
+          },
+          {
+            "group": 13,
+            "fibers": 600,
+            "width_contraction": 0.65,
+            "lift_m": 0.0
+          }
+        ],
+        "max_same_index_displacement_m": 0.003992140293121338,
+        "discrete_body_repairs": 2504,
+        "images_sha256": {
+          "02_ThreeQuarter.png": "2c89b608627fbac081ba5571f96398410a59c3387cd26500569fa1e8d1788c87",
+          "03_Side.png": "c3f0e49c83f3d6a05dcf62562b2ef435fc7f7a2185a5f637dc745e6d723ff09c"
+        },
+        "method": "Read-only geometry pilot. Non-restored primary curves,rootX>3mm,rootZ>1.820m,exclude accepted inner curtain. Seven deterministic whole-path families;28-40percent middle transverse width contraction and0.4-1.9mm outward loft. First8 and last9 controls preserved, radii unchanged. Discrete body guard not continuous collision proof. Preserve side-part direction; right-sweep geometry intentionally changes. Bounded mode: transverse contraction smoothly saturates at1.8mm; loft reduced to20percent. If a new point falls below min(original signed nearest gap,0.3mm), revert that point to its original source instead of projecting buried controls outward. Projected override: actual inspected ellipse selection excluding restored/accepted/mixed-short curves;14 whole-path families;65percent contraction bounded4mm,zero loft. Overrides positiveX/high-root selection and seven-family parameters above."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "2c89b608627fbac081ba5571f96398410a59c3387cd26500569fa1e8d1788c87",
+        "03_Side.png": "c3f0e49c83f3d6a05dcf62562b2ef435fc7f7a2185a5f637dc745e6d723ff09c"
+      },
+      "art_judgment": "Both inspected;5188 filtered frontal shafts,14 families,zero loft and4mm bound create visibly separated front layers. Some side strands remain stiff;basis251.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativeprojectedlayers251",
+      "manifest": {
+        "source": "nativeouteraccent245",
+        "source_sha256": "40624b4067dca0f97004c34ecc6d3262f74973a471f10a3b57867d36bc586e98",
+        "model_saved": true,
+        "model_sha256": "4011f51a072d43d898646ce2b3426f8cad550240fff2541b57ba95197e5fb3ef",
+        "archive_model_path": "D:\\星湾世界_模型归档\\starbay-ai-world\\角色工坊\\焰冕行者\\Exports\\nativeprojectedlayers251\\Ember_Regent.blend",
+        "source_unchanged": true,
+        "bounded": true,
+        "projected_selection": "nativefrontpatchids249",
+        "selected_fibers": 5188,
+        "groups": [
+          {
+            "group": 0,
+            "fibers": 770,
+            "width_contraction": 0.65,
+            "lift_m": 0.0
+          },
+          {
+            "group": 1,
+            "fibers": 33,
+            "width_contraction": 0.65,
+            "lift_m": 0.0
+          },
+          {
+            "group": 2,
+            "fibers": 13,
+            "width_contraction": 0.65,
+            "lift_m": 0.0
+          },
+          {
+            "group": 3,
+            "fibers": 100,
+            "width_contraction": 0.65,
+            "lift_m": 0.0
+          },
+          {
+            "group": 4,
+            "fibers": 608,
+            "width_contraction": 0.65,
+            "lift_m": 0.0
+          },
+          {
+            "group": 5,
+            "fibers": 516,
+            "width_contraction": 0.65,
+            "lift_m": 0.0
+          },
+          {
+            "group": 6,
+            "fibers": 43,
+            "width_contraction": 0.65,
+            "lift_m": 0.0
+          },
+          {
+            "group": 7,
+            "fibers": 135,
+            "width_contraction": 0.65,
+            "lift_m": 0.0
+          },
+          {
+            "group": 8,
+            "fibers": 394,
+            "width_contraction": 0.65,
+            "lift_m": 0.0
+          },
+          {
+            "group": 9,
+            "fibers": 223,
+            "width_contraction": 0.65,
+            "lift_m": 0.0
+          },
+          {
+            "group": 10,
+            "fibers": 591,
+            "width_contraction": 0.65,
+            "lift_m": 0.0
+          },
+          {
+            "group": 11,
+            "fibers": 1048,
+            "width_contraction": 0.65,
+            "lift_m": 0.0
+          },
+          {
+            "group": 12,
+            "fibers": 114,
+            "width_contraction": 0.65,
+            "lift_m": 0.0
+          },
+          {
+            "group": 13,
+            "fibers": 600,
+            "width_contraction": 0.65,
+            "lift_m": 0.0
+          }
+        ],
+        "max_same_index_displacement_m": 0.003992140293121338,
+        "discrete_body_repairs": 2504,
+        "images_sha256": {},
+        "method": "Read-only geometry pilot. Non-restored primary curves,rootX>3mm,rootZ>1.820m,exclude accepted inner curtain. Seven deterministic whole-path families;28-40percent middle transverse width contraction and0.4-1.9mm outward loft. First8 and last9 controls preserved, radii unchanged. Discrete body guard not continuous collision proof. Preserve side-part direction; right-sweep geometry intentionally changes. Bounded mode: transverse contraction smoothly saturates at1.8mm; loft reduced to20percent. If a new point falls below min(original signed nearest gap,0.3mm), revert that point to its original source instead of projecting buried controls outward. Projected override: actual inspected ellipse selection excluding restored/accepted/mixed-short curves;14 whole-path families;65percent contraction bounded4mm,zero loft. Overrides positiveX/high-root selection and seven-family parameters above."
+      },
+      "model_sha256": "4011f51a072d43d898646ce2b3426f8cad550240fff2541b57ba95197e5fb3ef",
+      "inspected_images_sha256": {},
+      "art_judgment": "Saved250 geometry. Independent mixed-control audit and high quarter/front inspection;incomplete continuation,not final artwork.",
+      "goal_complete": false
+    }
+  ],
+  "inspected_presentations": [
+    {
+      "version": "nativeaccenthigh245",
+      "manifest": {
+        "source": "nativeouteraccent245",
+        "source_sha256": "40624b4067dca0f97004c34ecc6d3262f74973a471f10a3b57867d36bc586e98",
+        "source_unchanged": true,
+        "camera": "02_ThreeQuarter",
+        "diagnostic_opposite_camera": false,
+        "geometry_lighting_unchanged": true,
+        "resolution": [
+          1920,
+          2240
+        ],
+        "samples": 512,
+        "denoising": "OpenImageDenoise",
+        "image_sha256": "c8fdb7e588c786eedf14b8066f48295c1c5a5dd5654dd4a96653d37758d5ad58",
+        "status": "Actual render pending art review; no generative image replacement"
+      },
+      "actually_inspected": true
+    },
+    {
+      "version": "nativeaccentfront245",
+      "manifest": {
+        "source": "nativeouteraccent245",
+        "source_sha256": "40624b4067dca0f97004c34ecc6d3262f74973a471f10a3b57867d36bc586e98",
+        "source_unchanged": true,
+        "camera": "01_Front",
+        "diagnostic_opposite_camera": false,
+        "geometry_lighting_unchanged": true,
+        "resolution": [
+          1200,
+          1400
+        ],
+        "samples": 192,
+        "denoising": "OpenImageDenoise",
+        "image_sha256": "6206a77831b2ceee460b4df206c4334d2b598e592c2c78ff2cc969654fd97f29",
+        "status": "Actual render pending art review; no generative image replacement"
+      },
+      "actually_inspected": true
+    },
+    {
+      "version": "nativelayershigh251",
+      "manifest": {
+        "source": "nativeprojectedlayers251",
+        "source_sha256": "4011f51a072d43d898646ce2b3426f8cad550240fff2541b57ba95197e5fb3ef",
+        "source_unchanged": true,
+        "camera": "02_ThreeQuarter",
+        "diagnostic_opposite_camera": false,
+        "geometry_lighting_unchanged": true,
+        "resolution": [
+          1920,
+          2240
+        ],
+        "samples": 512,
+        "denoising": "OpenImageDenoise",
+        "image_sha256": "f78d2c58a276bef2f39be237dcfa303ab8be32dd2d5c7ecbbeaa727342418468",
+        "status": "Actual render pending art review; no generative image replacement"
+      },
+      "actually_inspected": true
+    },
+    {
+      "version": "nativelayersfront251",
+      "manifest": {
+        "source": "nativeprojectedlayers251",
+        "source_sha256": "4011f51a072d43d898646ce2b3426f8cad550240fff2541b57ba95197e5fb3ef",
+        "source_unchanged": true,
+        "camera": "01_Front",
+        "diagnostic_opposite_camera": false,
+        "geometry_lighting_unchanged": true,
+        "resolution": [
+          1200,
+          1400
+        ],
+        "samples": 192,
+        "denoising": "OpenImageDenoise",
+        "image_sha256": "7a79abb3b58950dfad39ab30adbf9f730ab4d871351b3ae091eb522adc346a49",
+        "status": "Actual render pending art review; no generative image replacement"
+      },
+      "actually_inspected": true
+    }
+  ],
+  "independent_audits": [
+    {
+      "source": "nativelocalfollicles234",
+      "source_sha256": "5b0efda316ebc74e95a7941331cd18453449fb2df81fd1dd5d54f133976b2801",
+      "candidate": "nativeouteraccent245",
+      "candidate_sha256": "40624b4067dca0f97004c34ecc6d3262f74973a471f10a3b57867d36bc586e98",
+      "mesh_count": 141,
+      "meshes_uv_shape_keys_transforms_exact": true,
+      "other_native_geometry_exact": true,
+      "material_light_world_camera_display_exact": true,
+      "historical_curve_attributes_exact": true,
+      "unchanged_fibers_paths_radii_counts_exact": 45698,
+      "trimmed_fibers": 345,
+      "all_current_roots_exact": true,
+      "trimmed_control_prefixes_exact": true,
+      "terminal_points_on_source_segments": true,
+      "intentional_terminal_taper_verified": true,
+      "polyline_shortening_quantiles_m": [
+        0.03319397568702698,
+        0.03952249139547348,
+        0.04716067761182785
+      ],
+      "scope": "Independent saved mixed-control trim comparison. Selected point counts and terminal radii intentionally change. Not art or continuous collision proof."
+    },
+    {
+      "source": "nativeouteraccent245",
+      "source_sha256": "40624b4067dca0f97004c34ecc6d3262f74973a471f10a3b57867d36bc586e98",
+      "candidate": "nativeprojectedlayers251",
+      "candidate_sha256": "4011f51a072d43d898646ce2b3426f8cad550240fff2541b57ba95197e5fb3ef",
+      "mesh_count": 141,
+      "meshes_uv_shape_keys_transforms_exact": true,
+      "other_native_geometry_exact": true,
+      "material_light_world_camera_display_exact": true,
+      "image_paths_compared_as_resolved_absolute": true,
+      "historical_curve_attributes_exact": true,
+      "all_radii_point_counts_transforms_exact": true,
+      "all_roots_exact": true,
+      "unselected_fibers_exact": 40855,
+      "selected_fibers": 5188,
+      "first8_last9_controls_exact": true,
+      "max_same_index_displacement_m": 0.003992140293121338,
+      "scope": "Independent saved mixed-control localized deformation audit. Material image paths resolved to original absolute files after drive change. Static comparison only;not artistic or continuous collision acceptance."
+    }
+  ],
+  "root_radius_probe": {
+    "source_sha256": "5b0efda316ebc74e95a7941331cd18453449fb2df81fd1dd5d54f133976b2801",
+    "groups": [
+      {
+        "attribute": "native_crown_cut",
+        "fibers": 37303,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          0.00011000000085914508,
+          0.00011000002268701792
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.09586241841316223,
+            -0.1330651044845581,
+            1.6919729709625244
+          ],
+          [
+            0.02244640700519085,
+            -0.00368260289542377,
+            1.8243638277053833
+          ],
+          [
+            0.09567677229642868,
+            0.0700535699725151,
+            1.8734129667282104
+          ]
+        ]
+      },
+      {
+        "attribute": "native_crown_sections",
+        "fibers": 8740,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          3.7000001611886546e-05,
+          3.7000001611886546e-05
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.07432849705219269,
+            -0.14254973828792572,
+            1.823082447052002
+          ],
+          [
+            0.008049135562032461,
+            -0.10983980447053909,
+            1.8508535027503967
+          ],
+          [
+            0.0526757538318634,
+            -0.06058677285909653,
+            1.8722550868988037
+          ]
+        ]
+      },
+      {
+        "attribute": "native_fringe_feather",
+        "fibers": 6463,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          3.7000001611886546e-05,
+          3.7000001611886546e-05
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.04941155016422272,
+            -0.14254973828792572,
+            1.8331884145736694
+          ],
+          [
+            0.012269850820302963,
+            -0.11174974590539932,
+            1.8526841402053833
+          ],
+          [
+            0.05153911933302879,
+            -0.06162462756037712,
+            1.8722550868988037
+          ]
+        ]
+      },
+      {
+        "attribute": "native_back_resection",
+        "fibers": 16773,
+        "root_radius_quantiles_m": [
+          0.00010999997903127223,
+          0.00011000000085914508,
+          0.00011000002268701792
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.07981478422880173,
+            -0.026259565725922585,
+            1.6919729709625244
+          ],
+          [
+            0.0029829370323568583,
+            0.03317650035023689,
+            1.7959603071212769
+          ],
+          [
+            0.07553480565547943,
+            0.0700535699725151,
+            1.864943504333496
+          ]
+        ]
+      },
+      {
+        "attribute": "native_crown_sculpture",
+        "fibers": 3090,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          3.7000001611886546e-05,
+          0.00011000002268701792
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.02126019261777401,
+            -0.08053003251552582,
+            1.85735285282135
+          ],
+          [
+            0.02275053597986698,
+            -0.043438998982310295,
+            1.8656986355781555
+          ],
+          [
+            0.042414918541908264,
+            0.011327547021210194,
+            1.8734129667282104
+          ]
+        ]
+      },
+      {
+        "attribute": "native_front_frame_sculpture",
+        "fibers": 2849,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          3.7000001611886546e-05,
+          3.7000001611886546e-05
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            0.025010084733366966,
+            -0.1249551847577095,
+            1.8300483226776123
+          ],
+          [
+            0.04210205003619194,
+            -0.0865965262055397,
+            1.8565365076065063
+          ],
+          [
+            0.07227369397878647,
+            -0.06504345685243607,
+            1.8688217401504517
+          ]
+        ]
+      },
+      {
+        "attribute": "native_nape_layer_cut",
+        "fibers": 17705,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          0.00011000000085914508,
+          0.00011000002268701792
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.09586241841316223,
+            -0.095428466796875,
+            1.6919729709625244
+          ],
+          [
+            -0.004829958081245422,
+            0.029851121827960014,
+            1.7777421474456787
+          ],
+          [
+            0.09567677229642868,
+            0.0700535699725151,
+            1.8617929220199585
+          ]
+        ]
+      },
+      {
+        "attribute": "native_relaxed_side_locks",
+        "fibers": 16448,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          0.00011000000085914508,
+          0.00011000002268701792
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            0.0030099323485046625,
+            -0.14237169921398163,
+            1.8050025701522827
+          ],
+          [
+            0.041654154658317566,
+            -0.026007416658103466,
+            1.8566210269927979
+          ],
+          [
+            0.081087626516819,
+            0.05997682362794876,
+            1.8732943534851074
+          ]
+        ]
+      },
+      {
+        "attribute": "native_temporal_coverage_restore",
+        "fibers": 9140,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          0.00010999998630722985,
+          0.00011000002268701792
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            0.0030099323485046625,
+            -0.14237169921398163,
+            1.8050025701522827
+          ],
+          [
+            0.04197029955685139,
+            -0.05303512141108513,
+            1.8613189458847046
+          ],
+          [
+            0.081087626516819,
+            -0.019929703325033188,
+            1.8732943534851074
+          ]
+        ]
+      },
+      {
+        "attribute": "native_layered_root_lofts",
+        "fibers": 23385,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          0.00011000000085914508,
+          0.00011000002268701792
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.0734732523560524,
+            -0.14254973828792572,
+            1.8300338983535767
+          ],
+          [
+            0.013792946003377438,
+            -0.03359011933207512,
+            1.8566265106201172
+          ],
+          [
+            0.0733986422419548,
+            0.053481798619031906,
+            1.8734129667282104
+          ]
+        ]
+      },
+      {
+        "attribute": "native_visible_crest_relief",
+        "fibers": 9816,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          0.00011000000085914508,
+          0.00011000002268701792
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.05820952728390694,
+            -0.11071028560400009,
+            1.8353917598724365
+          ],
+          [
+            0.01924188621342182,
+            -0.004932696698233485,
+            1.8592042922973633
+          ],
+          [
+            0.0611884780228138,
+            0.04247011989355087,
+            1.8734129667282104
+          ]
+        ]
+      },
+      {
+        "attribute": "native_retained_guide_relaxation",
+        "fibers": 13569,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          3.7000001611886546e-05,
+          0.00011000002268701792
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.0734732523560524,
+            -0.14254973828792572,
+            1.8300338983535767
+          ],
+          [
+            0.00952039286494255,
+            -0.05863414332270622,
+            1.851179599761963
+          ],
+          [
+            0.0733986422419548,
+            0.053481798619031906,
+            1.8732943534851074
+          ]
+        ]
+      },
+      {
+        "attribute": "native_resculpted_fringe_sweeps",
+        "fibers": 5314,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          3.7000001611886546e-05,
+          3.7000001611886546e-05
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.06896384805440903,
+            -0.14186528325080872,
+            1.8300483226776123
+          ],
+          [
+            0.02976828720420599,
+            -0.09789393097162247,
+            1.8539105653762817
+          ],
+          [
+            0.07227369397878647,
+            -0.06504345685243607,
+            1.8713322877883911
+          ]
+        ]
+      },
+      {
+        "attribute": "native_fitted_side_flow",
+        "fibers": 16371,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          0.00011000000085914508,
+          0.00011000002268701792
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            0.0030099323485046625,
+            -0.14237169921398163,
+            1.8050025701522827
+          ],
+          [
+            0.04163767397403717,
+            -0.026315631344914436,
+            1.8566731214523315
+          ],
+          [
+            0.081087626516819,
+            0.05997682362794876,
+            1.8732943534851074
+          ]
+        ]
+      },
+      {
+        "attribute": "native_volumetric_sections",
+        "fibers": 32092,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          0.00011000000085914508,
+          0.00011000002268701792
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.08189265429973602,
+            -0.14254973828792572,
+            1.800001621246338
+          ],
+          [
+            0.019240989349782467,
+            -0.036315254867076874,
+            1.8527960777282715
+          ],
+          [
+            0.08185072243213654,
+            0.06688284873962402,
+            1.8734129667282104
+          ]
+        ]
+      },
+      {
+        "attribute": "native_layered_nape_extension",
+        "fibers": 13449,
+        "root_radius_quantiles_m": [
+          0.00010999997903127223,
+          0.00011000000085914508,
+          0.00011000002268701792
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.08087638020515442,
+            -0.017988096922636032,
+            1.735011339187622
+          ],
+          [
+            -0.0062986756674945354,
+            0.031218787655234337,
+            1.8018721342086792
+          ],
+          [
+            0.08093303442001343,
+            0.0700535699725151,
+            1.8652926683425903
+          ]
+        ]
+      },
+      {
+        "attribute": "native_transported_fan_crown",
+        "fibers": 22817,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          0.00011000000085914508,
+          0.00011000002268701792
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.07774411141872406,
+            -0.14254973828792572,
+            1.820013403892517
+          ],
+          [
+            0.018821341916918755,
+            -0.024959567934274673,
+            1.8559491634368896
+          ],
+          [
+            0.07761210948228836,
+            0.05926217883825302,
+            1.8734129667282104
+          ]
+        ]
+      },
+      {
+        "attribute": "native_directional_fringe_fall",
+        "fibers": 5222,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          3.7000001611886546e-05,
+          3.7000001611886546e-05
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.06896384805440903,
+            -0.14186528325080872,
+            1.8300483226776123
+          ],
+          [
+            0.02952435053884983,
+            -0.09777851030230522,
+            1.8539947271347046
+          ],
+          [
+            0.07227369397878647,
+            -0.06504345685243607,
+            1.8713322877883911
+          ]
+        ]
+      },
+      {
+        "attribute": "native_reconnected_fringe_terminals",
+        "fibers": 5222,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          3.7000001611886546e-05,
+          3.7000001611886546e-05
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.06896384805440903,
+            -0.14186528325080872,
+            1.8300483226776123
+          ],
+          [
+            0.02952435053884983,
+            -0.09777851030230522,
+            1.8539947271347046
+          ],
+          [
+            0.07227369397878647,
+            -0.06504345685243607,
+            1.8713322877883911
+          ]
+        ]
+      },
+      {
+        "attribute": "native_staggered_posterior_layers",
+        "fibers": 24059,
+        "root_radius_quantiles_m": [
+          0.00010999997903127223,
+          0.00011000000085914508,
+          0.00011000002268701792
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.08401013165712357,
+            -0.03199189901351929,
+            1.6919729709625244
+          ],
+          [
+            0.015227550640702248,
+            0.021439334377646446,
+            1.811498761177063
+          ],
+          [
+            0.08404823392629623,
+            0.0700535699725151,
+            1.864349603652954
+          ]
+        ]
+      },
+      {
+        "attribute": "native_unranked_free_sections",
+        "fibers": 23526,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          0.00011000000085914508,
+          0.00011000002268701792
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.08189265429973602,
+            -0.14254973828792572,
+            1.800001621246338
+          ],
+          [
+            0.024712842889130116,
+            -0.03053495939821005,
+            1.8552325367927551
+          ],
+          [
+            0.08185072243213654,
+            0.05997682362794876,
+            1.8734129667282104
+          ]
+        ]
+      },
+      {
+        "attribute": "native_unranked_fringe_fall",
+        "fibers": 5276,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          3.7000001611886546e-05,
+          3.7000001611886546e-05
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.06896384805440903,
+            -0.14186528325080872,
+            1.8300483226776123
+          ],
+          [
+            0.030729017220437527,
+            -0.09738236293196678,
+            1.853814423084259
+          ],
+          [
+            0.07227369397878647,
+            -0.06504345685243607,
+            1.8713322877883911
+          ]
+        ]
+      },
+      {
+        "attribute": "native_authored_swept_upper",
+        "fibers": 23540,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          0.00011000000085914508,
+          0.00011000002268701792
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.08189265429973602,
+            -0.14254973828792572,
+            1.800001621246338
+          ],
+          [
+            0.02469577081501484,
+            -0.030566101893782616,
+            1.855250358581543
+          ],
+          [
+            0.08185072243213654,
+            0.05997682362794876,
+            1.8734129667282104
+          ]
+        ]
+      },
+      {
+        "attribute": "native_blended_upper_suffix",
+        "fibers": 23540,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          0.00011000000085914508,
+          0.00011000002268701792
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.08189265429973602,
+            -0.14254973828792572,
+            1.800001621246338
+          ],
+          [
+            0.02469577081501484,
+            -0.030566101893782616,
+            1.855250358581543
+          ],
+          [
+            0.08185072243213654,
+            0.05997682362794876,
+            1.8734129667282104
+          ]
+        ]
+      },
+      {
+        "attribute": "native_descending_fine_locks",
+        "fibers": 24634,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          0.00011000000085914508,
+          0.00011000002268701792
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.08436836302280426,
+            -0.14254973828792572,
+            1.7700189352035522
+          ],
+          [
+            0.028173720464110374,
+            -0.034687355160713196,
+            1.8538751006126404
+          ],
+          [
+            0.08396679908037186,
+            0.05997682362794876,
+            1.8734129667282104
+          ]
+        ]
+      },
+      {
+        "attribute": "native_authored_fine_fringe",
+        "fibers": 4577,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          3.7000001611886546e-05,
+          3.7000001611886546e-05
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.06689025461673737,
+            -0.14186528325080872,
+            1.8334100246429443
+          ],
+          [
+            0.039607781916856766,
+            -0.103121817111969,
+            1.8531007766723633
+          ],
+          [
+            0.06869732588529587,
+            -0.06507319957017899,
+            1.8709181547164917
+          ]
+        ]
+      },
+      {
+        "attribute": "native_individual_fringe_fall",
+        "fibers": 5314,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          3.7000001611886546e-05,
+          3.7000001611886546e-05
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.06896384805440903,
+            -0.14186528325080872,
+            1.8300483226776123
+          ],
+          [
+            0.02976828720420599,
+            -0.09789393097162247,
+            1.8539105653762817
+          ],
+          [
+            0.07227369397878647,
+            -0.06504345685243607,
+            1.8713322877883911
+          ]
+        ]
+      },
+      {
+        "attribute": "native_staggered_lower_posterior",
+        "fibers": 9215,
+        "root_radius_quantiles_m": [
+          0.00010999997903127223,
+          0.00011000000085914508,
+          0.00011000002268701792
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.07222844660282135,
+            -0.03167818486690521,
+            1.6919729709625244
+          ],
+          [
+            -0.003173094941303134,
+            0.04514399543404579,
+            1.7755475044250488
+          ],
+          [
+            0.08210154622793198,
+            0.0700535699725151,
+            1.8639241456985474
+          ]
+        ]
+      },
+      {
+        "attribute": "native_local_fringe_end_release",
+        "fibers": 48,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          3.7000001611886546e-05,
+          3.7000001611886546e-05
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            0.06430379301309586,
+            -0.08666681498289108,
+            1.8300483226776123
+          ],
+          [
+            0.06760141626000404,
+            -0.07907117530703545,
+            1.8335129022598267
+          ],
+          [
+            0.07069139927625656,
+            -0.07493821531534195,
+            1.8383665084838867
+          ]
+        ]
+      },
+      {
+        "attribute": "native_individual_upper_fall",
+        "fibers": 24634,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          0.00011000000085914508,
+          0.00011000002268701792
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.08436836302280426,
+            -0.14254973828792572,
+            1.7700189352035522
+          ],
+          [
+            0.028173720464110374,
+            -0.034687355160713196,
+            1.8538751006126404
+          ],
+          [
+            0.08396679908037186,
+            0.05997682362794876,
+            1.8734129667282104
+          ]
+        ]
+      },
+      {
+        "attribute": "native_posterior_soft_wave",
+        "fibers": 9468,
+        "root_radius_quantiles_m": [
+          0.00010999997903127223,
+          0.00011000000085914508,
+          0.00011000002268701792
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.0704704076051712,
+            0.015063506551086903,
+            1.7025446891784668
+          ],
+          [
+            -0.0002448747763992287,
+            0.04500449262559414,
+            1.8005110621452332
+          ],
+          [
+            0.07178261876106262,
+            0.0700535699725151,
+            1.8605953454971313
+          ]
+        ]
+      },
+      {
+        "attribute": "native_lateral_longest_trim",
+        "fibers": 1343,
+        "root_radius_quantiles_m": [
+          0.00010999997903127223,
+          0.00011000000085914508,
+          0.00011000002268701792
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.08087638020515442,
+            -0.017983095720410347,
+            1.7351717948913574
+          ],
+          [
+            -0.07392021268606186,
+            -0.0008546093013137579,
+            1.7858576774597168
+          ],
+          [
+            -0.05992592126131058,
+            0.028951851651072502,
+            1.8363343477249146
+          ]
+        ]
+      },
+      {
+        "attribute": "native_remapped_upper_layers",
+        "fibers": 6066,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          0.00011000000085914508,
+          0.00011000002268701792
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.08282549679279327,
+            -0.034997306764125824,
+            1.770970344543457
+          ],
+          [
+            0.04207197576761246,
+            -0.0012334127677604556,
+            1.852040708065033
+          ],
+          [
+            0.08096860349178314,
+            0.05997682362794876,
+            1.8688241243362427
+          ]
+        ]
+      },
+      {
+        "attribute": "native_inner_curtain_shift",
+        "fibers": 3627,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          3.7000001611886546e-05,
+          3.7000001611886546e-05
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.07432849705219269,
+            -0.14254973828792572,
+            1.823082447052002
+          ],
+          [
+            -0.017395921051502228,
+            -0.11764982342720032,
+            1.8491348028182983
+          ],
+          [
+            0.002999864984303713,
+            -0.06058677285909653,
+            1.8713929653167725
+          ]
+        ]
+      },
+      {
+        "attribute": "native_outer_wisp_relaxation",
+        "fibers": 45,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          3.7000001611886546e-05,
+          0.0001100000154110603
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.07747280597686768,
+            -0.1142437607049942,
+            1.8012030124664307
+          ],
+          [
+            -0.07576202601194382,
+            -0.09215758740901947,
+            1.8101251125335693
+          ],
+          [
+            -0.040632523596286774,
+            -0.07133130729198456,
+            1.8519542217254639
+          ]
+        ]
+      },
+      {
+        "attribute": "native_accepted_fringe_tip_feathering",
+        "fibers": 3061,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          3.7000001611886546e-05,
+          3.7000001611886546e-05
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.07423266023397446,
+            -0.1425144076347351,
+            1.823082447052002
+          ],
+          [
+            -0.017395921051502228,
+            -0.11772357672452927,
+            1.8490369319915771
+          ],
+          [
+            0.002999864984303713,
+            -0.06058677285909653,
+            1.8713929653167725
+          ]
+        ]
+      },
+      {
+        "attribute": "native_projected_outer_tip_trim",
+        "fibers": 196,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          3.7000001611886546e-05,
+          3.7000001611886546e-05
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.06896384805440903,
+            -0.09805174916982651,
+            1.8302289247512817
+          ],
+          [
+            -0.06275645643472672,
+            -0.07730066403746605,
+            1.8395838141441345
+          ],
+          [
+            -0.03311047703027725,
+            -0.06505464017391205,
+            1.8618115186691284
+          ]
+        ]
+      },
+      {
+        "attribute": "native_spatial_crown_release",
+        "fibers": 6072,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          0.00011000000085914508,
+          0.00011000002268701792
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            0.018010782077908516,
+            -0.13854658603668213,
+            1.800001621246338
+          ],
+          [
+            0.042692385613918304,
+            -0.05391400866210461,
+            1.8622063994407654
+          ],
+          [
+            0.08185072243213654,
+            -0.02994842454791069,
+            1.871107816696167
+          ]
+        ]
+      },
+      {
+        "attribute": "native_recovered_donor_back",
+        "fibers": 12637,
+        "root_radius_quantiles_m": [
+          0.00010999997903127223,
+          0.00011000000085914508,
+          0.00011000002268701792
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.07498583942651749,
+            0.005027727223932743,
+            1.7300063371658325
+          ],
+          [
+            0.00557449646294117,
+            0.03687115013599396,
+            1.8154659271240234
+          ],
+          [
+            0.07463838905096054,
+            0.0700535699725151,
+            1.864349603652954
+          ]
+        ]
+      },
+      {
+        "attribute": "native_recovered_donor_side",
+        "fibers": 13251,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          0.00011000000085914508,
+          0.00011000002268701792
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.08387486636638641,
+            -0.0799868181347847,
+            1.7700188159942627
+          ],
+          [
+            0.04278748109936714,
+            -0.023058367893099785,
+            1.855872392654419
+          ],
+          [
+            0.08436758071184158,
+            0.02898414433002472,
+            1.8718494176864624
+          ]
+        ]
+      },
+      {
+        "attribute": "native_restored_nonfringe_flow",
+        "fibers": 21145,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          0.00011000000085914508,
+          0.00011000002268701792
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.09586241841316223,
+            -0.1071079820394516,
+            1.730003833770752
+          ],
+          [
+            0.041680723428726196,
+            -0.034302257001399994,
+            1.8499064445495605
+          ],
+          [
+            0.09567677229642868,
+            0.030686797574162483,
+            1.8734129667282104
+          ]
+        ]
+      },
+      {
+        "attribute": "native_settled_restored_crown",
+        "fibers": 1977,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          3.7000001611886546e-05,
+          0.00011000002268701792
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.013021781109273434,
+            -0.07494603842496872,
+            1.8620630502700806
+          ],
+          [
+            0.037991151213645935,
+            -0.05084501579403877,
+            1.864919900894165
+          ],
+          [
+            0.0428616888821125,
+            -0.008927671238780022,
+            1.8734129667282104
+          ]
+        ]
+      },
+      {
+        "attribute": "native_graduated_restored_back",
+        "fibers": 23906,
+        "root_radius_quantiles_m": [
+          3.7000001611886546e-05,
+          0.00011000000085914508,
+          0.00011000002268701792
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.09346922487020493,
+            -0.09447930753231049,
+            1.7128264904022217
+          ],
+          [
+            0.028736415319144726,
+            0.009745077695697546,
+            1.8185351490974426
+          ],
+          [
+            0.09567677229642868,
+            0.0700535699725151,
+            1.8721517324447632
+          ]
+        ]
+      },
+      {
+        "attribute": "native_restored_raw_controls",
+        "fibers": 35162,
+        "root_radius_quantiles_m": [
+          0.00010999997903127223,
+          0.00011000000085914508,
+          0.00011000002268701792
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.09586241841316223,
+            -0.08998987823724747,
+            1.6919729709625244
+          ],
+          [
+            0.01892597507685423,
+            0.00021294729958754033,
+            1.8195340633392334
+          ],
+          [
+            0.09567677229642868,
+            0.0700535699725151,
+            1.8734129667282104
+          ]
+        ]
+      },
+      {
+        "attribute": "native_rounded_nape",
+        "fibers": 18375,
+        "root_radius_quantiles_m": [
+          0.00010999997903127223,
+          0.00011000000085914508,
+          0.00011000002268701792
+        ],
+        "root_xyz_quantiles_m": [
+          [
+            -0.09346922487020493,
+            -0.08998987823724747,
+            1.6946322917938232
+          ],
+          [
+            0.04354698956012726,
+            0.0020073114428669214,
+            1.804865837097168
+          ],
+          [
+            0.09567677229642868,
+            0.06331870704889297,
+            1.8652926683425903
+          ]
+        ]
+      }
+    ]
+  },
+  "storage": "Only fresh245/251 models saved directly toD,with newE junctions. No historical directories moved or deleted. No space-release claim. Image paths became absolute during drive change and were independently resolved to original files.",
+  "scope": "Real Cycles renders and geometry. Not generated portrait,not final artwork,not UE validation. No paid assets or Release. Detailed per-curve mapping remains local."
+}
