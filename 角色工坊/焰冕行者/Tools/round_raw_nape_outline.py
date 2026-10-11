@@ -16,6 +16,8 @@ assert not save_only or save_model
 assert all(re.fullmatch('[A-Za-z0-9_-]+',v) for v in a[:2])
 source=ROOT/'Exports'/base/'Ember_Regent.blend';digest=hashlib.sha256(source.read_bytes()).hexdigest()
 out=ROOT/'Renders'/version;assert not out.exists()
+archive_root=Path(r'D:\星湾世界_模型归档\starbay-ai-world\角色工坊\焰冕行者')
+if '--archive-preview' in a:out=archive_root/'Renders'/version;assert not out.exists()
 modeldir=(Path(r'D:\星湾世界_模型归档\starbay-ai-world\角色工坊\焰冕行者\Exports') if save_archive else ROOT/'Exports')/version
 if save_archive:assert not (ROOT/'Exports'/version).exists()
 if save_model:assert not modeldir.exists()
@@ -28,7 +30,9 @@ sizes=np.array([c.points_length for c in cu.curves]);offsets=np.r_[0,np.cumsum(s
 allowed=np.empty(len(sizes),bool);cu.attributes['native_restored_raw_controls'].data.foreach_get('value',allowed)
 projected=None
 if projected_tier:
- sel=ROOT/'Renders'/projected_tier;selection_manifest=json.loads((sel/'edit_id_manifest.json').read_text());assert selection_manifest['source_sha256']==digest
+ sel=ROOT/'Renders'/projected_tier
+ if not (sel/'edit_id_manifest.json').exists():sel=archive_root/'Renders'/projected_tier
+ selection_manifest=json.loads((sel/'edit_id_manifest.json').read_text());assert selection_manifest['source_sha256']==digest
  projected=np.zeros(len(sizes),bool);projected[np.load(sel/'local_projected_indices.npz')['selected']]=True
 paths=[];radii=[];selected=[];shortened=[]
 for i in range(len(sizes)):

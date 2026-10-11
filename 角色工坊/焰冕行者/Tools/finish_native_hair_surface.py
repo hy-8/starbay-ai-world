@@ -12,6 +12,9 @@ roughness=float(args[args.index('--roughness')+1]) if '--roughness' in args else
 random_roughness=float(args[args.index('--random-roughness')+1]) if '--random-roughness' in args else None
 archive='--archive' in args;preview='--preview-only' in args;rear_study='--rear-study' in args
 main_only='--main-only' in args
+reflection=float(args[args.index('--reflection')+1]) if '--reflection' in args else None
+secondary=float(args[args.index('--secondary-reflection')+1]) if '--secondary-reflection' in args else None
+assert all(v is None or 0<=v<=1 for v in [reflection,secondary])
 assert random_roughness is None or 0<=random_roughness<=1
 radial=float(args[args.index('--radial')+1]) if '--radial' in args else .36
 if not (.2<=roughness<=.5 and .2<=radial<=.6):raise ValueError('Restrained valid hair roughness required')
@@ -41,6 +44,9 @@ for ob in visible:
    if len(nodes)!=1:raise RuntimeError('Expected inspected single Principled Hair shader')
    shader=nodes[0];changed={}
    values=[('Roughness',roughness),('Radial Roughness',radial)]+([('Random Roughness',random_roughness)] if random_roughness is not None else [])
+   if reflection is not None or secondary is not None:
+    assert shader.model=='HUANG','Lobe weights require inspected Huang shader'
+    values+=([('Reflection',reflection)] if reflection is not None else [])+([('Secondary Reflection',secondary)] if secondary is not None else [])
    for key,value in values:
     if key=='Radial Roughness' and shader.model=='HUANG':
      changed[key]={'not_applied':'Huang shader has no radial roughness input'};continue
@@ -60,6 +66,7 @@ report=dict(version=version,source=source_version,source_sha256=hashlib.sha256(s
 (out/'surface_manifest.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
 report.update(model_saved=not preview,archive_outputs=archive,rear_study=rear_study,random_roughness=random_roughness)
 report.update(main_only=main_only,material_scope_objects=[o.name for o in visible])
+report.update(reflection=reflection,secondary_reflection=secondary)
 if not preview:
  bpy.ops.wm.save_as_mainfile(filepath=str(out/'Ember_Regent.blend'),compress=True)
  report['model_sha256']=hashlib.sha256((out/'Ember_Regent.blend').read_bytes()).hexdigest()

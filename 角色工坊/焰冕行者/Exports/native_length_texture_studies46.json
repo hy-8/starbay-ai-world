@@ -1,0 +1,301 @@
+{
+  "continuation": "nativegentlefan309",
+  "goal_complete": false,
+  "user_preference": "保留目前长度和柔和偏分；重点改善干爽蓬松度与细碎自然发束质感。",
+  "studies": [
+    {
+      "version": "nativedrylobes310",
+      "manifest": {
+        "version": "nativedrylobes310",
+        "source": "nativegentlefan309",
+        "source_sha256": "f2b86f324fbbcfe1f41c32aa9d7953899150c80b9644b24df9cab5f84b1225be",
+        "method": "Fresh cloned hair materials, explicit Roughness/Radial Roughness, preserve color and actual geometry",
+        "visible_strands": 46009,
+        "geometry_before_sha256": "cacfaa63bbfcb2593329fbe031f9ac329f2e50c1b364d8586a4ad79f88dc90bc",
+        "geometry_after_sha256": "cacfaa63bbfcb2593329fbe031f9ac329f2e50c1b364d8586a4ad79f88dc90bc",
+        "all_positions_and_radii_unchanged": true,
+        "materials": [
+          {
+            "source": "Deep cherry • coherent native groom pigment",
+            "new_material": "Deep cherry • coherent native groom pigment • restrained sh",
+            "changes": {
+              "Roughness": {
+                "old_default": 0.30000001192092896,
+                "removed_input_links": 0,
+                "new_default": 0.37
+              },
+              "Radial Roughness": {
+                "not_applied": "Huang shader has no radial roughness input"
+              },
+              "Random Roughness": {
+                "old_default": 0.1599999964237213,
+                "removed_input_links": 0,
+                "new_default": 0.24
+              },
+              "Reflection": {
+                "old_default": 0.550000011920929,
+                "removed_input_links": 0,
+                "new_default": 0.28
+              },
+              "Secondary Reflection": {
+                "old_default": 0.8500000238418579,
+                "removed_input_links": 0,
+                "new_default": 0.7
+              }
+            }
+          }
+        ],
+        "samples": 256,
+        "draft": false,
+        "status": "unreviewed true Blender surface study",
+        "license": "Retained project original frontal / Ddr Rcs Royalty Free rear / Bystedt CC BY-SA support / Abhay Pratap Royalty Free source-flow support",
+        "model_saved": false,
+        "archive_outputs": true,
+        "rear_study": true,
+        "random_roughness": 0.24,
+        "main_only": true,
+        "material_scope_objects": [
+          "Bystedt layercut derivative • native root reflow"
+        ],
+        "reflection": 0.28,
+        "secondary_reflection": 0.7,
+        "source_unchanged": true,
+        "images_sha256": {
+          "02_ThreeQuarter.png": "054a94210abc820fc7194d22a98659bdbe60cb1d0ec3cd65c1380bdc84f16178",
+          "04_Back.png": "7e09275a003e100036885f4abcea3a1d778689450d9eff0827c5100d8801d1de",
+          "05_OppositeSide.png": "ef8d8c86846fcd4ea73ebd22c496f07746f191079cd73be6b20218dc954bfb93"
+        },
+        "denoising": "OpenImageDenoise"
+      },
+      "actual_images_inspected": true,
+      "decision": "Not adopted: matte lobe reduction darkened side/rear and reduced fine-strand readability; broad masses unresolved."
+    },
+    {
+      "version": "nativeoutersurface311",
+      "manifest": {
+        "source": "nativegentlefan309",
+        "source_sha256": "f2b86f324fbbcfe1f41c32aa9d7953899150c80b9644b24df9cab5f84b1225be",
+        "source_unchanged": true,
+        "edited_object": "Bystedt layercut derivative • native root reflow",
+        "points_per_curve": null,
+        "selection_attribute": null,
+        "selection_rule": {
+          "camera": "04_Back",
+          "normalized_ellipse": [
+            0.51,
+            0.43,
+            0.145,
+            0.17
+          ],
+          "minimum_projected_controls": 2
+        },
+        "legend": {
+          "blue": "Edited selected-object curves",
+          "red": "Untouched selected-object curves",
+          "green": "All other visible native hair components",
+          "gray": "Body/clothes"
+        },
+        "edited_fibers": 6679,
+        "unselected_fibers": 39330,
+        "method": "Exact temporary curve subsets with original radii/matrix, actual cameras, emission diagnostic only. Ellipse is projected controls, not continuous visibility proof.",
+        "status": "Unreviewed actual component diagnostic"
+      },
+      "actual_images_inspected": true,
+      "decision": "Diagnostic only: approximate control-point depth selection includes6679 fibers; not all are posterior or continuously visible."
+    },
+    {
+      "version": "nativeoutertier312",
+      "manifest": {
+        "source": "nativegentlefan309",
+        "source_sha256": "f2b86f324fbbcfe1f41c32aa9d7953899150c80b9644b24df9cab5f84b1225be",
+        "model_saved": false,
+        "model_sha256": null,
+        "selected_fibers": 5786,
+        "polyline_shortening_quantiles_m": [
+          0.0052285467088222515,
+          0.05137571271269454,
+          0.055
+        ],
+        "source_unchanged": true,
+        "image_sha256": "9b2dd2851bdfe38df46ffde76935b19e4d2f5882ece65b7aa85fefba74b579f9",
+        "method": "Inspected projected set intersect restored raw and rear-reaching tipY>15mm,tipZ<1.800m. Shorten own original polyline45percent times coherent root field0.65-1,capped55mm,retain minimum30mm arc. Exact source prefix and interpolated endpoint,terminal taper. All other hair unchanged;not continuous collision or artistic acceptance.",
+        "projected_tier": "nativeoutersurface311",
+        "operation_attribute": "native_projected_rear_tier",
+        "images_sha256": {
+          "04_Back.png": "9b2dd2851bdfe38df46ffde76935b19e4d2f5882ece65b7aa85fefba74b579f9",
+          "05_OppositeSide.png": "de5ea102b22af20a17c25e78b2b0cdb8307641c36ed2f4945af8ea6e0a79a61e"
+        },
+        "selected_roots_xyz_quantiles_m": [
+          [
+            -0.06375952064990997,
+            -0.01966419816017151,
+            1.713733196258545
+          ],
+          [
+            0.005184642970561981,
+            0.036066917702555656,
+            1.8436779379844666
+          ],
+          [
+            0.06979148089885712,
+            0.0700535699725151,
+            1.8685978651046753
+          ]
+        ]
+      },
+      "actual_images_inspected": true,
+      "decision": "Not adopted: outer-tier shortening did not sufficiently resolve masses; latest user preference now explicitly retains current length."
+    },
+    {
+      "version": "nativecoherentsweep313",
+      "manifest": {
+        "source": "nativegentlefan309",
+        "source_sha256": "f2b86f324fbbcfe1f41c32aa9d7953899150c80b9644b24df9cab5f84b1225be",
+        "source_unchanged": true,
+        "pilot": false,
+        "model_saved": false,
+        "selected_fibers": 20575,
+        "scale_quantiles": [
+          0.0,
+          1.0,
+          1.0
+        ],
+        "zero_scale_fibers": 58,
+        "max_same_index_displacement_m": 0.024000005796551704,
+        "images_sha256": {
+          "04_Back.png": "e9eef368e6c6fd9b5dca7ecf5087a7ecec1927ffb3b95bd5bf5353080322144f",
+          "05_OppositeSide.png": "2a984d72f3f8269efd4b342caa6e9066bc000d1059532a8e57ecb8aa57c60913",
+          "03_Side.png": "a7926159ee25dd215ec6da42cd0984063b274db22560903fd4a1ae9f46cc225a",
+          "02_ThreeQuarter.png": "bd0591372eb0d8245b354018277cfc628f75ce6e2fd51a896f415fa3e4324200"
+        },
+        "method": "Original restored rear-reaching raw paths; rotate midshaft XY about(0,-35mm) by at most0.22rad times sin(pi*t)^1.1,root8mm/25mm onset,posteriorZ<1.855/Y>15mm smooth25mm gate. Preserve radial distance before24mm displacement cap and whole-curve body-gap backtracking. Roots/tips/counts/radii/materials unchanged. Changes coherent flow direction without new scalp projection/noise/cut. Preview only;not continuous collision/art acceptance.",
+        "rear_sweep": true,
+        "model_sha256": null,
+        "positions_sha256": "59859df6d8165cebd291cef8fc2bf71f082808f26d54f4c353be1120e66dbcb4"
+      },
+      "actual_images_inspected": true,
+      "decision": "Not adopted: diagonal rotation introduced pronounced S-curves and gaps."
+    },
+    {
+      "version": "nativeprogressivesweep314",
+      "manifest": {
+        "source": "nativegentlefan309",
+        "source_sha256": "f2b86f324fbbcfe1f41c32aa9d7953899150c80b9644b24df9cab5f84b1225be",
+        "source_unchanged": true,
+        "pilot": false,
+        "model_saved": false,
+        "selected_fibers": 20575,
+        "scale_quantiles": [
+          0.0,
+          1.0,
+          1.0
+        ],
+        "zero_scale_fibers": 77,
+        "max_same_index_displacement_m": 0.019312191754579544,
+        "images_sha256": {
+          "04_Back.png": "c7c52d6e7fbc6e3a0e23a3057e23e847ef2ade6e3ca698fe8ae756274e15f678",
+          "05_OppositeSide.png": "1db18daacf34beb7b681304444ffbd08b55557e411dea61de9c6ae2732d6541e",
+          "03_Side.png": "24c0bd364aef96733942d426d25e8dfb2a9e282539359fca567131266381c5b9",
+          "02_ThreeQuarter.png": "186693fe740bdf81d917b2f821bbbfbe861ed1d034546652cfd57394503ece5f"
+        },
+        "method": "Original restored rear-reaching raw paths; progressive XY rotation about(0,-35mm),0.14rad times smoothstep((arc-8mm)/60mm)*smoothstep((oldY-15mm)/25mm). No upperZ gate or end reversal.24mm displacement cap then whole-curve body-gap backtracking. Original root8mm/counts/radii/Z values retained;terminal XY intentionally moves. Preview only;not continuous collision/art acceptance.",
+        "rear_sweep": true,
+        "terminal_sweep": true,
+        "model_sha256": null,
+        "positions_sha256": "ab2f6b5fba22c487fb065095fac1b6eb45d702c7dcdf17dc2e0abad5411a5d06"
+      },
+      "actual_images_inspected": true,
+      "decision": "Not adopted: progressive rotation reduced reversals versus313 but retained lumpy posterior waves and changed side flow without clear overall gain."
+    },
+    {
+      "version": "nativedetail315",
+      "manifest": {
+        "source_sha256": "f2b86f324fbbcfe1f41c32aa9d7953899150c80b9644b24df9cab5f84b1225be",
+        "source_unchanged": true,
+        "samples": 1024,
+        "adaptive_sampling": false,
+        "geometry_changed": false,
+        "model_saved": false,
+        "method": "One Cycles render; same samples feed raw Image and compositor OIDN with normal/albedo; crop coordinates recorded, not a full-view quality claim.",
+        "border": [
+          0.42,
+          0.64,
+          0.4,
+          0.68
+        ],
+        "radii": [
+          {
+            "object": "Abhay flow derivative • real scalp sampled short support",
+            "curves": 14000,
+            "radius_quantiles_m": [
+              6.187599979057268e-07,
+              1.3010766997467726e-05,
+              2.8242541702638846e-05,
+              3.50953090674011e-05,
+              3.799874320975505e-05
+            ]
+          },
+          {
+            "object": "Bystedt derivative • short scalp support",
+            "curves": 23657,
+            "radius_quantiles_m": [
+              6.416628366423538e-07,
+              1.372868246107828e-05,
+              2.918160771514522e-05,
+              3.604207122407388e-05,
+              3.899990042555146e-05
+            ]
+          },
+          {
+            "object": "Bystedt layercut derivative • native root reflow",
+            "curves": 46009,
+            "radius_quantiles_m": [
+              9.569735281989011e-11,
+              1.6757947378209792e-05,
+              3.669059879030101e-05,
+              0.00010972004383802414,
+              0.00011000002268701792
+            ]
+          }
+        ],
+        "images_sha256": {
+          "denoised_0001.png": "92fd24a21ed085c588fc7a872ffe0ce7a7e4652078ae86bf9fe38d5d00fbba4b",
+          "noisy_0001.png": "8994d8200b1609a7fde398cc9c85e2e0224945e681c8f71bdd23ffc746f0f657"
+        }
+      },
+      "actual_images_inspected": true,
+      "decision": "Same-sample raw/OIDN crop inspected: denoising softens fine fibers, but wide bundles are also present in raw1024 sample image. Neither quality completion nor a new model."
+    },
+    {
+      "version": "nativesurfacegauge316",
+      "manifest": {
+        "source": "nativegentlefan309",
+        "source_sha256": "f2b86f324fbbcfe1f41c32aa9d7953899150c80b9644b24df9cab5f84b1225be",
+        "model_saved": false,
+        "source_unchanged": true,
+        "all_restored": false,
+        "rear_midshaft": true,
+        "selected_fibers": 5787,
+        "root_radius_before_m": [
+          0.00010999997903127223,
+          0.00011000000085914508,
+          0.00011000002268701792
+        ],
+        "root_radius_after_m": [
+          0.00010999997903127223,
+          0.00011000000085914508,
+          0.00011000002268701792
+        ],
+        "images_sha256": {
+          "04_Back.png": "11c3defd4c12c6c9181d48ab7c1d9fefacaa18a00eec6027c685bfa08fb4720f",
+          "02_ThreeQuarter.png": "23f949796ccc52dae45e4e142698911505c510d3cf25092e6e0f8f3cb060e62f"
+        },
+        "method": "Intersect inspected approximate visible-control selection with restored rear-reaching fibers and max radius>60microns; exclude accepted inner curtain/frontal sweeps/curved accent. Preserve first12mm radii, smooth20mm ramp toward capped45micron radius. Existing thinner shafts unaffected. Positions/counts/materials/lights unchanged. Approximate point-depth selection is not ray visibility; preview only, no art acceptance."
+      },
+      "actual_images_inspected": true,
+      "decision": "Not adopted:5787 projected restored rear fibers capped45micron beyond root protection. Some lighter appearance, broad posterior bundles remain; insufficient improvement to replace309."
+    }
+  ],
+  "new_complete_models": 0,
+  "geometry_local_only": true
+}
