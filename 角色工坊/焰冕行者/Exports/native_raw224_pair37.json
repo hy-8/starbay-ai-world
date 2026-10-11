@@ -1,0 +1,25 @@
+{
+  "source": "nativegraduatedback216",
+  "source_sha256": "f2f56085414e6a1ebdc0f9864dd8609c06f013ac3b42298cfd14f0d597020678",
+  "candidate": "nativerawflow224",
+  "candidate_sha256": "622a1670d893b24850415109f746e6ce4fa6e52e3159d4716bd5321c828aeb4e",
+  "donor_sha256": "3eb679fc7a14c6cd1082d5b595535f41caac949586553441f60447b5537a8dd9",
+  "mesh_count": 141,
+  "meshes_uv_shape_keys_transforms_exact": true,
+  "other_native_geometry_exact": true,
+  "material_light_world_camera_display_exact": true,
+  "historical_curve_attributes_exact": true,
+  "protected_current_paths_radii_counts_exact": 10881,
+  "restored_original_control_paths": 35162,
+  "clipped_paths": 19604,
+  "restored_roots_exact_to_donor": true,
+  "source_root_delta_quantiles_m": [
+    0.0,
+    0.0,
+    0.0005052047781646252
+  ],
+  "raw_prefixes_exact_terminal_on_original_segment": true,
+  "intentional_terminal_taper_verified": true,
+  "original_posterior_support_render_hidden_only": true,
+  "scope": "Independent saved-file structural comparison. Topology and some roots intentionally differ from current source. Does not prove art quality or continuous body/eye/clothing/animation collision safety."
+}

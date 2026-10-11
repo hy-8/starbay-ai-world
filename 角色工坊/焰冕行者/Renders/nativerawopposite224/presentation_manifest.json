@@ -1,0 +1,16 @@
+{
+  "source": "nativerawflow224",
+  "source_sha256": "622a1670d893b24850415109f746e6ce4fa6e52e3159d4716bd5321c828aeb4e",
+  "source_unchanged": true,
+  "camera": "05_OppositeSide",
+  "diagnostic_opposite_camera": true,
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "samples": 192,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "2a2b0412f53e21fc7a7677d2eba7dcc7a40169a5d06d2e4b959431aec708cdc5",
+  "status": "Actual render pending art review; no generative image replacement"
+}

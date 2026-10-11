@@ -1,0 +1,16 @@
+{
+  "source": "nativeroundednape226",
+  "source_sha256": "50b6280cfca39ca9e9020c2a2a62983941cba1b2cd8727df0ebf8c803de8889a",
+  "source_unchanged": true,
+  "camera": "03_Side",
+  "diagnostic_opposite_camera": false,
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "samples": 192,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "5f56e711ea621c6766bac4f15f23faaeba549387a5e0bbf346a3f22df97129b7",
+  "status": "Actual render pending art review; no generative image replacement"
+}

@@ -1,0 +1,15 @@
+{
+  "source": "nativerawflow224",
+  "source_sha256": "622a1670d893b24850415109f746e6ce4fa6e52e3159d4716bd5321c828aeb4e",
+  "source_unchanged": true,
+  "camera": "04_Back",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "903418e7020a608f59ae2df03724656633a3123bf71f72a020890014a37f6e11",
+  "status": "Actual render pending art review; no generative image replacement"
+}

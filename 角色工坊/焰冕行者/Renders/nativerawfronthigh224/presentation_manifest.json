@@ -1,0 +1,16 @@
+{
+  "source": "nativerawflow224",
+  "source_sha256": "622a1670d893b24850415109f746e6ce4fa6e52e3159d4716bd5321c828aeb4e",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "diagnostic_opposite_camera": false,
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "86a0607810278edf6b678d2259fc75b349da30b82cf29d3a7b26b0d24b13b6e7",
+  "status": "Actual render pending art review; no generative image replacement"
+}

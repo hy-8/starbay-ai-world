@@ -1,0 +1,709 @@
+{
+  "continuation": "nativeroundednape226",
+  "goal_complete": false,
+  "user_preference": "保留偏分，继续做自然碎发层次",
+  "studies": [
+    {
+      "version": "nativeinnerpilot217",
+      "manifest": {
+        "source": "nativegraduatedback216",
+        "source_sha256": "f2f56085414e6a1ebdc0f9864dd8609c06f013ac3b42298cfd14f0d597020678",
+        "changed_object": "Original posterior coverage • surface-grown short fibers",
+        "selection_attribute": "native_inset_posterior_foundation",
+        "selected_fibers": 7143,
+        "pilot": true,
+        "inner_layer": true,
+        "old_length_quantiles_m": [
+          0.021992706628144707,
+          0.05011934677170373,
+          0.16024361484083804
+        ],
+        "result_length_quantiles_m": [
+          0.009999121221398885,
+          0.01726741462465035,
+          0.1298003824143465
+        ],
+        "method": "Existing support rootsY>5mm,Z>1.765m,old arc>15mm. Blend shortening by rootY5-40mm; target10-18mm spatial field. Resample each own source polyline; true roots, radii, topology and all other objects retained. Not exact rendered arc or continuous collision proof."
+      },
+      "model_sha256": "7a91f27bfce9379d572490b7a065b2371f667c26c9b5b11464c195354477f884",
+      "inspected_images_sha256": {
+        "03_Side.png": "35289d939d573f4cf4afac1db9c0e9637510c4ebe7606e7717f33da1fae50fa5",
+        "04_Back.png": "187b5f5047554e4ccc8385fdc620001a6f6a8457abadabcd78d5c995518625e9",
+        "05_OppositeSide.png": "a192da5df9495b00f9157c9cc2ff17531740018f87165de9fbd3d536610eefbf"
+      },
+      "art_judgment": "Half-side deeper retraction pilot; three actual drafts inspected. No independent saved audit, not adopted.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativeinnerfoundation218",
+      "manifest": {
+        "source": "nativegraduatedback216",
+        "source_sha256": "f2f56085414e6a1ebdc0f9864dd8609c06f013ac3b42298cfd14f0d597020678",
+        "changed_object": "Original posterior coverage • surface-grown short fibers",
+        "selection_attribute": "native_inset_posterior_foundation",
+        "selected_fibers": 14744,
+        "pilot": false,
+        "inner_layer": true,
+        "old_length_quantiles_m": [
+          0.021992706628144707,
+          0.049740065885638604,
+          0.16024361484083804
+        ],
+        "result_length_quantiles_m": [
+          0.009991567335520276,
+          0.017635265731491306,
+          0.1298003824143465
+        ],
+        "method": "Existing support rootsY>5mm,Z>1.765m,old arc>15mm. Blend shortening by rootY5-40mm; target10-18mm spatial field. Resample each own source polyline; true roots, radii, topology and all other objects retained. Not exact rendered arc or continuous collision proof."
+      },
+      "model_sha256": "cc59f13ba0dd341a34f5f6a4a9bb0720429a24e1be001c0f81494cace2cfcd12",
+      "inspected_images_sha256": {
+        "03_Side.png": "e28925e01cf26b44ec1a3b337d65802e634ff57718bffe7249dfdf1e2553be8d",
+        "04_Back.png": "08d7486d998e9b954dedbcffa34e3760d4e733bacdd853fa47340c02802931dd",
+        "05_OppositeSide.png": "a9564027ebd0ebf7a80f5e0cd914fbf41cf20d6113c847d55eb0440f04950878"
+      },
+      "art_judgment": "Three drafts and high back inspected; retraction exposes warm scalp. Independent saved audit passed; not adopted.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativeblendedfoundation219",
+      "manifest": {
+        "source": "nativegraduatedback216",
+        "source_sha256": "f2f56085414e6a1ebdc0f9864dd8609c06f013ac3b42298cfd14f0d597020678",
+        "changed_object": "Original posterior coverage • surface-grown short fibers",
+        "selection_attribute": "native_inset_posterior_foundation",
+        "selected_fibers": 14744,
+        "pilot": false,
+        "inner_layer": true,
+        "old_length_quantiles_m": [
+          0.021992706628144707,
+          0.049740065885638604,
+          0.16024361484083804
+        ],
+        "result_length_quantiles_m": [
+          0.01539493616512415,
+          0.033531978974074686,
+          0.14343496890692253
+        ],
+        "method": "Existing support rootsY>5mm,Z>1.765m,old arc>15mm. Blend shortening by rootY5-40mm; target10-18mm spatial field. Resample each own source polyline; true roots, radii, topology and all other objects retained. Not exact rendered arc or continuous collision proof. Retraction strength multiplier=0.55."
+      },
+      "model_sha256": "fe2f81dbc11eb431be6d2e573aa14071f1d8cbc642d4bacf83e5583ef723f137",
+      "inspected_images_sha256": {
+        "03_Side.png": "efd93027e76dadee74c1b89ab42879164f39b344e2d10e44ee1d96eb6196a26f",
+        "04_Back.png": "92d789f69ef723e2c19d25f1d1ff2f3c26b56867612e934e457289f2bfa7b518",
+        "05_OppositeSide.png": "47f676c607485f7e2f441da3c22a344e2d880d39b8985faa64ef32d5f462aaa0"
+      },
+      "art_judgment": "Three drafts and high back inspected; 55 percent strength keeps better coverage but limited benefit. Independent audit passed; not adopted.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativeunderpigment220",
+      "manifest": {
+        "source": "nativegraduatedback216",
+        "source_sha256": "f2f56085414e6a1ebdc0f9864dd8609c06f013ac3b42298cfd14f0d597020678",
+        "changed_object": "Original posterior coverage • surface-grown short fibers",
+        "geometry_edit": false,
+        "preview_only": true,
+        "before_random_colors": [
+          [
+            0.03500000014901161,
+            0.0020000000949949026,
+            0.003000000026077032,
+            1.0
+          ],
+          [
+            0.10999999940395355,
+            0.006000000052154064,
+            0.008999999612569809,
+            1.0
+          ]
+        ],
+        "after_random_colors": [
+          [
+            0.01924999989569187,
+            0.0010999999940395355,
+            0.0016499999910593033,
+            1.0
+          ],
+          [
+            0.060499999672174454,
+            0.0032999999821186066,
+            0.00494999997317791,
+            1.0
+          ]
+        ],
+        "method": "Only original posterior undercoat material copied;random strand RGB multiplied0.55. Existing root gradient,roughness,scattering and all other materials/lighting/geometry retained. Simulates darker inner hair under dyed outer layers;not a geometry fix."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "b717784aaa9a109e7bdcb44cb6a3e456814f5742d69c035f530212dab021b4c0",
+        "03_Side.png": "3c83e36b8426cf4481a350470b5845913356f5281ffac365b5c365702a679155",
+        "04_Back.png": "2960f69f6955c6501c6b33ae12f65b8089891a1e7d7adb6efb7778885145016a"
+      },
+      "art_judgment": "Three actual drafts inspected; darker posterior undercoat offers minor separation only. Preview only, no model saved, not adopted.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativerawcontrol221",
+      "manifest": {
+        "source": "nativegraduatedback216",
+        "source_sha256": "f2f56085414e6a1ebdc0f9864dd8609c06f013ac3b42298cfd14f0d597020678",
+        "donor": "layercut04",
+        "donor_sha256": "3eb679fc7a14c6cd1082d5b595535f41caac949586553441f60447b5537a8dd9",
+        "source_unchanged": true,
+        "model_saved": false,
+        "accepted_fringe_fibers": 6544,
+        "raw_donor_fibers": 39499,
+        "trimmed_fibers": 19622,
+        "point_count": 1056068,
+        "source_root_delta_quantiles_m": [
+          0.0,
+          0.0,
+          0.0005052047781646252
+        ],
+        "temporarily_hidden_support_objects": [
+          "Abhay flow derivative • real scalp sampled short support",
+          "Bystedt derivative • short scalp support",
+          "Original posterior coverage • surface-grown short fibers"
+        ],
+        "images_sha256": {
+          "03_Side.png": "0ace66bf2555df60dc0d87d2cc40666d6cd3e5ef3274994fc69e7c4722385eed",
+          "02_ThreeQuarter.png": "68978f70afc2da5ec36806ab36b777b0ebf82fedb8e9707b28fb63338c896689",
+          "04_Back.png": "9d18a6fa2ce5941d5afef46ef3b6cdf9a7f112338a2641f3b6946c547d7e2ba8"
+        },
+        "method": "Read-only diagnostic. Current accepted fringe exact; other mapped strands retain original donor control positions/root/radius, cut at first raw-control segment crossing a varied nape floor and taper last4 controls. No Catmull-Rom dense resampling,root movement or body contact correction; support objects hidden temporarily. Current primary material and lights. This deliberately changes non-fringe root attachment and topology; NOT contact-validated or saved delivery."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "68978f70afc2da5ec36806ab36b777b0ebf82fedb8e9707b28fb63338c896689",
+        "03_Side.png": "0ace66bf2555df60dc0d87d2cc40666d6cd3e5ef3274994fc69e7c4722385eed",
+        "04_Back.png": "9d18a6fa2ce5941d5afef46ef3b6cdf9a7f112338a2641f3b6946c547d7e2ba8"
+      },
+      "art_judgment": "Three actual drafts inspected; natural side/back flow but frontal gaps/crossings and long low-root tails. Preview only; rejected.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativeguardedraw222",
+      "manifest": {
+        "source": "nativegraduatedback216",
+        "source_sha256": "f2f56085414e6a1ebdc0f9864dd8609c06f013ac3b42298cfd14f0d597020678",
+        "donor": "layercut04",
+        "donor_sha256": "3eb679fc7a14c6cd1082d5b595535f41caac949586553441f60447b5537a8dd9",
+        "source_unchanged": true,
+        "model_saved": false,
+        "guard_front": true,
+        "accepted_fringe_fibers": 6544,
+        "current_paths_preserved": 9335,
+        "raw_donor_fibers": 36708,
+        "trimmed_fibers": 19604,
+        "point_count": 1185921,
+        "source_root_delta_quantiles_m": [
+          0.0,
+          0.0,
+          0.0005052047781646252
+        ],
+        "temporarily_hidden_support_objects": [
+          "Original posterior coverage • surface-grown short fibers"
+        ],
+        "images_sha256": {
+          "03_Side.png": "5791e0eea03ed18222030919e2e851b0b067497ee45bbdb5a1ccbef0d5d179de",
+          "02_ThreeQuarter.png": "d6d032f8893265f1e70e3594f07a60ee0c55c8d311806b1618f8b1621e493520",
+          "04_Back.png": "013cb54ffdd1c0c1c531f738c3cb6d56c0fb7d6c42a8955ce6c43b735a39a2b0"
+        },
+        "method": "Read-only diagnostic. Current accepted fringe exact; other mapped strands retain original donor control positions/root/radius, cut at first raw-control segment crossing a varied nape floor and taper last4 controls. No Catmull-Rom dense resampling,root movement or body contact correction; support objects hidden temporarily. Current primary material and lights. This deliberately changes non-fringe root attachment and topology; NOT contact-validated or saved delivery. Preserve current paths wherever donor has any controlY<-90mm;retain Abhay/Bystedt support,hide only original posterior support. Low-root donor controls beginning below floor cut to at most4mm first segment; first-segment floor crossings handled."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "d6d032f8893265f1e70e3594f07a60ee0c55c8d311806b1618f8b1621e493520",
+        "03_Side.png": "5791e0eea03ed18222030919e2e851b0b067497ee45bbdb5a1ccbef0d5d179de",
+        "04_Back.png": "013cb54ffdd1c0c1c531f738c3cb6d56c0fb7d6c42a8955ce6c43b735a39a2b0"
+      },
+      "art_judgment": "Three actual drafts inspected; frontal protection improves result but raised frontal crown tufts remain. Preview only.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativecrownraw223",
+      "manifest": {
+        "source": "nativegraduatedback216",
+        "source_sha256": "f2f56085414e6a1ebdc0f9864dd8609c06f013ac3b42298cfd14f0d597020678",
+        "donor": "layercut04",
+        "donor_sha256": "3eb679fc7a14c6cd1082d5b595535f41caac949586553441f60447b5537a8dd9",
+        "source_unchanged": true,
+        "model_saved": false,
+        "guard_front": true,
+        "guard_crown": true,
+        "accepted_fringe_fibers": 6544,
+        "current_paths_preserved": 10881,
+        "raw_donor_fibers": 35162,
+        "trimmed_fibers": 19604,
+        "point_count": 1257395,
+        "source_root_delta_quantiles_m": [
+          0.0,
+          0.0,
+          0.0005052047781646252
+        ],
+        "temporarily_hidden_support_objects": [
+          "Original posterior coverage • surface-grown short fibers"
+        ],
+        "images_sha256": {
+          "03_Side.png": "c20313b7cd1ca49811aa1deb3d49ebcb08cc988f9123fe42534b351ea92051a4",
+          "02_ThreeQuarter.png": "c9e8219060b859e8962ae15b8d01299ab831a9af7121289b0030e90315d72dd0",
+          "04_Back.png": "590ee6f483e7f9ef6f23c227552784ca5885f09962f76ae74b025226c6b5b9cf"
+        },
+        "method": "Read-only diagnostic. Current accepted fringe exact; other mapped strands retain original donor control positions/root/radius, cut at first raw-control segment crossing a varied nape floor and taper last4 controls. No Catmull-Rom dense resampling,root movement or body contact correction; support objects hidden temporarily. Current primary material and lights. This deliberately changes non-fringe root attachment and topology; NOT contact-validated or saved delivery. Preserve current paths wherever donor has any controlY<-90mm;retain Abhay/Bystedt support,hide only original posterior support. Low-root donor controls beginning below floor cut to at most4mm first segment; first-segment floor crossings handled. Also preserve current paths for donorrootY<15mm with anycontrolZ>1.880m to retain the settled frontal crown."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "c9e8219060b859e8962ae15b8d01299ab831a9af7121289b0030e90315d72dd0",
+        "03_Side.png": "c20313b7cd1ca49811aa1deb3d49ebcb08cc988f9123fe42534b351ea92051a4",
+        "04_Back.png": "590ee6f483e7f9ef6f23c227552784ca5885f09962f76ae74b025226c6b5b9cf"
+      },
+      "art_judgment": "Three actual drafts inspected; crown protection lowers forward tufts while preserving clearer side/back flow. Basis of saved224.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativerawflow224",
+      "manifest": {
+        "source": "nativegraduatedback216",
+        "source_sha256": "f2f56085414e6a1ebdc0f9864dd8609c06f013ac3b42298cfd14f0d597020678",
+        "donor": "layercut04",
+        "donor_sha256": "3eb679fc7a14c6cd1082d5b595535f41caac949586553441f60447b5537a8dd9",
+        "source_unchanged": true,
+        "model_saved": true,
+        "model_sha256": "622a1670d893b24850415109f746e6ce4fa6e52e3159d4716bd5321c828aeb4e",
+        "guard_front": true,
+        "guard_crown": true,
+        "accepted_fringe_fibers": 6544,
+        "current_paths_preserved": 10881,
+        "raw_donor_fibers": 35162,
+        "trimmed_fibers": 19604,
+        "point_count": 1257395,
+        "source_root_delta_quantiles_m": [
+          0.0,
+          0.0,
+          0.0005052047781646252
+        ],
+        "hidden_support_objects": [
+          "Original posterior coverage • surface-grown short fibers"
+        ],
+        "copied_curve_attributes": [
+          "native_front_guide_index",
+          "native_crown_cut",
+          "native_crown_sections",
+          "native_fringe_feather",
+          "native_back_resection",
+          "native_crown_sculpture",
+          "native_front_frame_sculpture",
+          "native_nape_layer_cut",
+          "native_relaxed_side_locks",
+          "native_temporal_coverage_restore",
+          "native_layered_root_lofts",
+          "native_visible_crest_relief",
+          "native_retained_guide_relaxation",
+          "native_resculpted_fringe_sweeps",
+          "native_fitted_side_flow",
+          "native_volumetric_sections",
+          "native_layered_nape_extension",
+          "native_transported_fan_crown",
+          "native_directional_fringe_fall",
+          "native_reconnected_fringe_terminals",
+          "native_staggered_posterior_layers",
+          "native_unranked_free_sections",
+          "native_unranked_fringe_fall",
+          "native_authored_swept_upper",
+          "native_blended_upper_suffix",
+          "native_descending_fine_locks",
+          "native_authored_fine_fringe",
+          "native_individual_fringe_fall",
+          "native_staggered_lower_posterior",
+          "native_local_fringe_end_release",
+          "native_individual_upper_fall",
+          "native_posterior_soft_wave",
+          "native_lateral_longest_trim",
+          "native_remapped_upper_layers",
+          "native_inner_curtain_shift",
+          "native_outer_wisp_relaxation",
+          "native_accepted_fringe_tip_feathering",
+          "native_projected_outer_tip_trim",
+          "native_spatial_crown_release",
+          "native_recovered_donor_back",
+          "native_recovered_donor_side",
+          "native_restored_nonfringe_flow",
+          "native_settled_restored_crown",
+          "native_graduated_restored_back"
+        ],
+        "images_sha256": {},
+        "method": "Saved candidate. Current accepted fringe exact; other mapped strands retain original donor control positions/root/radius, cut at first raw-control segment crossing a varied nape floor and taper last4 controls. No Catmull-Rom dense resampling,root movement or body contact correction; original posterior support hidden in render. Current primary material and lights. This deliberately changes non-fringe root attachment and topology; NOT contact-validated or final delivery. Preserve current paths wherever donor has any controlY<-90mm;retain Abhay/Bystedt support,hide only original posterior support. Low-root donor controls beginning below floor cut to at most4mm first segment; first-segment floor crossings handled. Also preserve current paths for donorrootY<15mm with anycontrolZ>1.880m to retain the settled frontal crown."
+      },
+      "model_sha256": "622a1670d893b24850415109f746e6ce4fa6e52e3159d4716bd5321c828aeb4e",
+      "inspected_images_sha256": {},
+      "art_judgment": "Saved223 geometry plus preserved historical curve attributes and explicit donor mapping. Independent mixed-topology saved-file audit passed. High back/front and opposite render inspected; basis of226. Existing opposite upper root exposure remains.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativeroundedpilot225",
+      "manifest": {
+        "source": "nativerawflow224",
+        "source_sha256": "622a1670d893b24850415109f746e6ce4fa6e52e3159d4716bd5321c828aeb4e",
+        "model_saved": false,
+        "selected_fibers": 18375,
+        "polyline_shortening_quantiles_m": [
+          0.0010000392559491285,
+          0.014976510650980029,
+          0.03196045267427285
+        ],
+        "source_unchanged": true,
+        "image_sha256": "13bc1b289d3edbfdca9e961d1dd80c6d2d4e7560c68050cfe9418e87d1f5811b",
+        "method": "Read-only pilot: restored raw fibers only, endpoints behindY5mm and belowZ1.745m,absX>30mm. Shorten along own control polyline by continuous lateral endpoint field up to32mm and at most22percent length; original control prefix retained, terminal tapered. Accepted frontal paths and central nape retained. No saved candidate or collision acceptance."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "04_Back.png": "13bc1b289d3edbfdca9e961d1dd80c6d2d4e7560c68050cfe9418e87d1f5811b"
+      },
+      "art_judgment": "Actual back draft inspected: side nape edges shorter, central length retained. Preview only; used for226.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativeroundednape226",
+      "manifest": {
+        "source": "nativerawflow224",
+        "source_sha256": "622a1670d893b24850415109f746e6ce4fa6e52e3159d4716bd5321c828aeb4e",
+        "model_saved": true,
+        "model_sha256": "50b6280cfca39ca9e9020c2a2a62983941cba1b2cd8727df0ebf8c803de8889a",
+        "selected_fibers": 18375,
+        "polyline_shortening_quantiles_m": [
+          0.0010000392559491285,
+          0.014976510650980029,
+          0.03196045267427285
+        ],
+        "source_unchanged": true,
+        "image_sha256": null,
+        "method": "Restored raw fibers only, endpoints behindY5mm and belowZ1.745m,absX>30mm. Shorten along own control polyline by continuous lateral endpoint field up to32mm and at most22percent length; original control prefix retained, terminal tapered. Accepted frontal paths and central nape retained. Not continuous collision or final art acceptance."
+      },
+      "model_sha256": "50b6280cfca39ca9e9020c2a2a62983941cba1b2cd8727df0ebf8c803de8889a",
+      "inspected_images_sha256": {},
+      "art_judgment": "Saved225 geometry with preserved CURVE attributes and explicit selection. Independent saved trim audit passed. High back and front/both sides inspected; incomplete continuation.",
+      "goal_complete": false
+    }
+  ],
+  "reviewed_presentations": [
+    {
+      "directory": "nativebackhigh218",
+      "manifest": {
+        "source": "nativeinnerfoundation218",
+        "source_sha256": "cc59f13ba0dd341a34f5f6a4a9bb0720429a24e1be001c0f81494cace2cfcd12",
+        "source_unchanged": true,
+        "camera": "04_Back",
+        "geometry_lighting_unchanged": true,
+        "resolution": [
+          1920,
+          2240
+        ],
+        "samples": 512,
+        "denoising": "OpenImageDenoise",
+        "image_sha256": "c7e0595bec31120ecaf917fda314de49d3aad5e21e607afdd5c7dd3a3ad69f0a",
+        "status": "Actual render pending art review; no generative image replacement"
+      },
+      "actually_inspected": true
+    },
+    {
+      "directory": "nativebackhigh219",
+      "manifest": {
+        "source": "nativeblendedfoundation219",
+        "source_sha256": "fe2f81dbc11eb431be6d2e573aa14071f1d8cbc642d4bacf83e5583ef723f137",
+        "source_unchanged": true,
+        "camera": "04_Back",
+        "geometry_lighting_unchanged": true,
+        "resolution": [
+          1920,
+          2240
+        ],
+        "samples": 512,
+        "denoising": "OpenImageDenoise",
+        "image_sha256": "5043ea6a76995ea94b8b57188e837655835f3287dde9dc57033bf7938ababffe",
+        "status": "Actual render pending art review; no generative image replacement"
+      },
+      "actually_inspected": true
+    },
+    {
+      "directory": "nativerawhigh224",
+      "manifest": {
+        "source": "nativerawflow224",
+        "source_sha256": "622a1670d893b24850415109f746e6ce4fa6e52e3159d4716bd5321c828aeb4e",
+        "source_unchanged": true,
+        "camera": "04_Back",
+        "geometry_lighting_unchanged": true,
+        "resolution": [
+          1920,
+          2240
+        ],
+        "samples": 512,
+        "denoising": "OpenImageDenoise",
+        "image_sha256": "903418e7020a608f59ae2df03724656633a3123bf71f72a020890014a37f6e11",
+        "status": "Actual render pending art review; no generative image replacement"
+      },
+      "actually_inspected": true
+    },
+    {
+      "directory": "nativerawfronthigh224",
+      "manifest": {
+        "source": "nativerawflow224",
+        "source_sha256": "622a1670d893b24850415109f746e6ce4fa6e52e3159d4716bd5321c828aeb4e",
+        "source_unchanged": true,
+        "camera": "02_ThreeQuarter",
+        "diagnostic_opposite_camera": false,
+        "geometry_lighting_unchanged": true,
+        "resolution": [
+          1920,
+          2240
+        ],
+        "samples": 512,
+        "denoising": "OpenImageDenoise",
+        "image_sha256": "86a0607810278edf6b678d2259fc75b349da30b82cf29d3a7b26b0d24b13b6e7",
+        "status": "Actual render pending art review; no generative image replacement"
+      },
+      "actually_inspected": true
+    },
+    {
+      "directory": "nativerawopposite224",
+      "manifest": {
+        "source": "nativerawflow224",
+        "source_sha256": "622a1670d893b24850415109f746e6ce4fa6e52e3159d4716bd5321c828aeb4e",
+        "source_unchanged": true,
+        "camera": "05_OppositeSide",
+        "diagnostic_opposite_camera": true,
+        "geometry_lighting_unchanged": true,
+        "resolution": [
+          1200,
+          1400
+        ],
+        "samples": 192,
+        "denoising": "OpenImageDenoise",
+        "image_sha256": "2a2b0412f53e21fc7a7677d2eba7dcc7a40169a5d06d2e4b959431aec708cdc5",
+        "status": "Actual render pending art review; no generative image replacement"
+      },
+      "actually_inspected": true
+    },
+    {
+      "directory": "nativeroundedhigh226",
+      "manifest": {
+        "source": "nativeroundednape226",
+        "source_sha256": "50b6280cfca39ca9e9020c2a2a62983941cba1b2cd8727df0ebf8c803de8889a",
+        "source_unchanged": true,
+        "camera": "04_Back",
+        "diagnostic_opposite_camera": false,
+        "geometry_lighting_unchanged": true,
+        "resolution": [
+          1920,
+          2240
+        ],
+        "samples": 512,
+        "denoising": "OpenImageDenoise",
+        "image_sha256": "61217593099c9871fde1125c2e3cd8fa0a3b86863c40a4b60a0bc32beb83f636",
+        "status": "Actual render pending art review; no generative image replacement"
+      },
+      "actually_inspected": true
+    },
+    {
+      "directory": "nativeroundedfront226",
+      "manifest": {
+        "source": "nativeroundednape226",
+        "source_sha256": "50b6280cfca39ca9e9020c2a2a62983941cba1b2cd8727df0ebf8c803de8889a",
+        "source_unchanged": true,
+        "camera": "02_ThreeQuarter",
+        "diagnostic_opposite_camera": false,
+        "geometry_lighting_unchanged": true,
+        "resolution": [
+          1200,
+          1400
+        ],
+        "samples": 192,
+        "denoising": "OpenImageDenoise",
+        "image_sha256": "ba93f1324500dd32590e668233b6875529bb659e76a4e22af3c6f4f04591c6c7",
+        "status": "Actual render pending art review; no generative image replacement"
+      },
+      "actually_inspected": true
+    },
+    {
+      "directory": "nativeroundedside226",
+      "manifest": {
+        "source": "nativeroundednape226",
+        "source_sha256": "50b6280cfca39ca9e9020c2a2a62983941cba1b2cd8727df0ebf8c803de8889a",
+        "source_unchanged": true,
+        "camera": "03_Side",
+        "diagnostic_opposite_camera": false,
+        "geometry_lighting_unchanged": true,
+        "resolution": [
+          1200,
+          1400
+        ],
+        "samples": 192,
+        "denoising": "OpenImageDenoise",
+        "image_sha256": "5f56e711ea621c6766bac4f15f23faaeba549387a5e0bbf346a3f22df97129b7",
+        "status": "Actual render pending art review; no generative image replacement"
+      },
+      "actually_inspected": true
+    },
+    {
+      "directory": "nativeroundedopposite226",
+      "manifest": {
+        "source": "nativeroundednape226",
+        "source_sha256": "50b6280cfca39ca9e9020c2a2a62983941cba1b2cd8727df0ebf8c803de8889a",
+        "source_unchanged": true,
+        "camera": "05_OppositeSide",
+        "diagnostic_opposite_camera": true,
+        "geometry_lighting_unchanged": true,
+        "resolution": [
+          1200,
+          1400
+        ],
+        "samples": 192,
+        "denoising": "OpenImageDenoise",
+        "image_sha256": "cafda7b75b122c0f86eec31d7996199ca4116258ba8190a830fec9c0fc41495e",
+        "status": "Actual render pending art review; no generative image replacement"
+      },
+      "actually_inspected": true
+    }
+  ],
+  "independent_audits": [
+    {
+      "source": "nativegraduatedback216",
+      "source_sha256": "f2f56085414e6a1ebdc0f9864dd8609c06f013ac3b42298cfd14f0d597020678",
+      "candidate": "nativeinnerfoundation218",
+      "candidate_sha256": "cc59f13ba0dd341a34f5f6a4a9bb0720429a24e1be001c0f81494cace2cfcd12",
+      "mesh_count": 141,
+      "mesh_geometry_uv_shape_keys_transforms_exact": true,
+      "visible_native_objects": 4,
+      "curves_finite_radii_positive_textures_available": true,
+      "edited_object": "Original posterior coverage • surface-grown short fibers",
+      "edited_fibers": 14744,
+      "all_radii_topology_transforms_exact": true,
+      "all_roots_exact": true,
+      "unselected_fibers_exact": true,
+      "other_native_objects_exact": true,
+      "max_displacement_m": 0.09205376356840134,
+      "scope": "Static localized file comparison. Not art, segment/body/eye/clothing/animation collision acceptance.",
+      "all_material_slots_graphs_exact": true,
+      "light_world_camera_display_exact": true
+    },
+    {
+      "source": "nativegraduatedback216",
+      "source_sha256": "f2f56085414e6a1ebdc0f9864dd8609c06f013ac3b42298cfd14f0d597020678",
+      "candidate": "nativeblendedfoundation219",
+      "candidate_sha256": "fe2f81dbc11eb431be6d2e573aa14071f1d8cbc642d4bacf83e5583ef723f137",
+      "mesh_count": 141,
+      "mesh_geometry_uv_shape_keys_transforms_exact": true,
+      "visible_native_objects": 4,
+      "curves_finite_radii_positive_textures_available": true,
+      "edited_object": "Original posterior coverage • surface-grown short fibers",
+      "edited_fibers": 14744,
+      "all_radii_topology_transforms_exact": true,
+      "all_roots_exact": true,
+      "unselected_fibers_exact": true,
+      "other_native_objects_exact": true,
+      "max_displacement_m": 0.052082546055316925,
+      "scope": "Static localized file comparison. Not art, segment/body/eye/clothing/animation collision acceptance.",
+      "all_material_slots_graphs_exact": true,
+      "light_world_camera_display_exact": true
+    },
+    {
+      "source": "nativegraduatedback216",
+      "source_sha256": "f2f56085414e6a1ebdc0f9864dd8609c06f013ac3b42298cfd14f0d597020678",
+      "candidate": "nativerawflow224",
+      "candidate_sha256": "622a1670d893b24850415109f746e6ce4fa6e52e3159d4716bd5321c828aeb4e",
+      "donor_sha256": "3eb679fc7a14c6cd1082d5b595535f41caac949586553441f60447b5537a8dd9",
+      "mesh_count": 141,
+      "meshes_uv_shape_keys_transforms_exact": true,
+      "other_native_geometry_exact": true,
+      "material_light_world_camera_display_exact": true,
+      "historical_curve_attributes_exact": true,
+      "protected_current_paths_radii_counts_exact": 10881,
+      "restored_original_control_paths": 35162,
+      "clipped_paths": 19604,
+      "restored_roots_exact_to_donor": true,
+      "source_root_delta_quantiles_m": [
+        0.0,
+        0.0,
+        0.0005052047781646252
+      ],
+      "raw_prefixes_exact_terminal_on_original_segment": true,
+      "intentional_terminal_taper_verified": true,
+      "original_posterior_support_render_hidden_only": true,
+      "scope": "Independent saved-file structural comparison. Topology and some roots intentionally differ from current source. Does not prove art quality or continuous body/eye/clothing/animation collision safety."
+    },
+    {
+      "source": "nativerawflow224",
+      "source_sha256": "622a1670d893b24850415109f746e6ce4fa6e52e3159d4716bd5321c828aeb4e",
+      "candidate": "nativeroundednape226",
+      "candidate_sha256": "50b6280cfca39ca9e9020c2a2a62983941cba1b2cd8727df0ebf8c803de8889a",
+      "mesh_count": 141,
+      "meshes_uv_shape_keys_transforms_exact": true,
+      "other_native_geometry_exact": true,
+      "material_light_world_camera_display_exact": true,
+      "historical_curve_attributes_exact": true,
+      "unchanged_fibers_paths_radii_counts_exact": 27668,
+      "trimmed_fibers": 18375,
+      "all_current_roots_exact": true,
+      "trimmed_control_prefixes_exact": true,
+      "terminal_points_on_source_segments": true,
+      "intentional_terminal_taper_verified": true,
+      "polyline_shortening_quantiles_m": [
+        0.001000046730041504,
+        0.014976531267166138,
+        0.03196047246456146
+      ],
+      "scope": "Independent saved mixed-control trim comparison. Selected point counts and terminal radii intentionally change. Not art or continuous collision proof."
+    }
+  ],
+  "local_storage_archive": [
+    {
+      "version": "nativetemplepilot213",
+      "original_path": "E:\\星湾世界\\starbay-ai-world\\角色工坊\\焰冕行者\\Exports\\nativetemplepilot213",
+      "archive_path": "D:\\星湾世界_模型归档\\starbay-ai-world\\角色工坊\\焰冕行者\\Exports\\nativetemplepilot213",
+      "sha256": "ba03ecce18a8ffe9a54ebf0ac78b08d7581036bb996f6876c33bbe04f636e5cc",
+      "bytes": 489206628.0,
+      "original_path_retained_as_junction": true
+    },
+    {
+      "version": "nativetemplelayerpilot214",
+      "original_path": "E:\\星湾世界\\starbay-ai-world\\角色工坊\\焰冕行者\\Exports\\nativetemplelayerpilot214",
+      "archive_path": "D:\\星湾世界_模型归档\\starbay-ai-world\\角色工坊\\焰冕行者\\Exports\\nativetemplelayerpilot214",
+      "sha256": "896288334e3feb7277fc48db96fda983ae7c4cebcd9136f2063be7a77802a68f",
+      "bytes": 489623921.0,
+      "original_path_retained_as_junction": true
+    },
+    {
+      "version": "nativegraduatedpilot215",
+      "original_path": "E:\\星湾世界\\starbay-ai-world\\角色工坊\\焰冕行者\\Exports\\nativegraduatedpilot215",
+      "archive_path": "D:\\星湾世界_模型归档\\starbay-ai-world\\角色工坊\\焰冕行者\\Exports\\nativegraduatedpilot215",
+      "sha256": "f88812aa1fdfb9c477aa6114258c780e05f7a8e1fb24ca6a1b61a4c18ddbd199",
+      "bytes": 488285593.0,
+      "original_path_retained_as_junction": true
+    },
+    {
+      "version": "nativeinnerpilot217",
+      "original_path": "E:\\星湾世界\\starbay-ai-world\\角色工坊\\焰冕行者\\Exports\\nativeinnerpilot217",
+      "archive_path": "D:\\星湾世界_模型归档\\starbay-ai-world\\角色工坊\\焰冕行者\\Exports\\nativeinnerpilot217",
+      "sha256": "7a91f27bfce9379d572490b7a065b2371f667c26c9b5b11464c195354477f884",
+      "bytes": 488309184.0,
+      "original_path_retained_as_junction": true
+    },
+    {
+      "version": "nativeinnerfoundation218",
+      "original_path": "E:\\星湾世界\\starbay-ai-world\\角色工坊\\焰冕行者\\Exports\\nativeinnerfoundation218",
+      "archive_path": "D:\\星湾世界_模型归档\\starbay-ai-world\\角色工坊\\焰冕行者\\Exports\\nativeinnerfoundation218",
+      "sha256": "cc59f13ba0dd341a34f5f6a4a9bb0720429a24e1be001c0f81494cace2cfcd12",
+      "bytes": 488308427.0,
+      "original_path_retained_as_junction": true
+    },
+    {
+      "version": "nativeblendedfoundation219",
+      "original_path": "E:\\星湾世界\\starbay-ai-world\\角色工坊\\焰冕行者\\Exports\\nativeblendedfoundation219",
+      "archive_path": "D:\\星湾世界_模型归档\\starbay-ai-world\\角色工坊\\焰冕行者\\Exports\\nativeblendedfoundation219",
+      "sha256": "fe2f81dbc11eb431be6d2e573aa14071f1d8cbc642d4bacf83e5583ef723f137",
+      "bytes": 488303715.0,
+      "original_path_retained_as_junction": true
+    }
+  ],
+  "scope": "Real Blender models and inspected Cycles renders. Original donor controls restored outside protected front. Mixed curve point counts; some roots restored by up to0.5052mm; do not run old uniform65-point modifiers on224/226.226 retains224 roots and trims side-nape source control prefixes. Geometry and local index data remain local. Structural validation does not prove art quality or continuous collision."
+}
