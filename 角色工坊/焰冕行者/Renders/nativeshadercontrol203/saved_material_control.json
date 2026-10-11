@@ -1,0 +1,22 @@
+{
+  "source": "nativesoftsideflow202",
+  "source_sha256": "97013e9d4f77486d4d5c378cd09f63c4c2094872e5afbf1d47fa4cbb8a28ff89",
+  "source_unchanged": true,
+  "donor": "layercut04",
+  "donor_sha256": "3eb679fc7a14c6cd1082d5b595535f41caac949586553441f60447b5537a8dd9",
+  "changed_objects": [
+    "Bystedt layercut derivative \u2022 native root reflow"
+  ],
+  "all_hair": false,
+  "images_sha256": {
+    "02_ThreeQuarter.png": "2ea9a48c5f61adf05f44a4a178ca93814dc31996f5e91ff04e532f99924551b1",
+    "03_Side.png": "effa9cbb281365c5ea02683cfc49598d05d8839cd7d4d8d499f72aea83937c9c"
+  },
+  "samples": 256,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "denoising": "OpenImageDenoise",
+  "method": "Temporarily assign exact saved Deep cherry layer cut donor material to current groom. No geometry/light edits or model save."
+}

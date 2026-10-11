@@ -19,7 +19,10 @@ if retained_profile:
  assert retained.ndim==1 and len(retained)>0 and np.all(np.diff(retained)>0)
 if prefix_points<0:raise ValueError('Nonnegative prefix count required')
 no_long_tails='--no-long-tails' in a
-material_scope='support' if '--material-scope-support' in a else 'primary' if '--material-scope-primary' in a else None
+scope_flags={'--material-scope-support':'support','--material-scope-primary':'primary','--material-scope-hair':'all_visible_native_hair'}
+selected_scopes=[v for k,v in scope_flags.items() if k in a]
+assert len(selected_scopes)<=1,'Choose only one material scope'
+material_scope=selected_scopes[0] if selected_scopes else None
 donor_version=a[a.index('--donor')+1] if '--donor' in a else None
 donor_suffix_start=int(a[a.index('--donor-suffix-start')+1]) if '--donor-suffix-start' in a else None
 if donor_suffix_start is not None and (not donor_version or donor_suffix_start<0):raise ValueError('Suffix comparison requires donor and nonnegative index')
@@ -81,7 +84,7 @@ scope_result={}
 retained_result={}
 if material_scope:
  assert set(beforematerials)==set(aftermaterials)
- allowed=set(before)-{edited} if material_scope=='support' else {edited}
+ allowed=set(before) if material_scope=='all_visible_native_hair' else set(before)-{edited} if material_scope=='support' else {edited}
  changed_materials=[name for name in beforematerials if beforematerials[name]!=aftermaterials[name]]
  assert changed_materials and set(changed_materials)<=allowed,(material_scope,changed_materials)
  scope_result=dict(allowed_scope=material_scope,objects_with_changed_material_graphs=sorted(changed_materials),all_disallowed_material_slots_and_graphs_exact=True,mesh_material_slots_and_graphs_exact=True)

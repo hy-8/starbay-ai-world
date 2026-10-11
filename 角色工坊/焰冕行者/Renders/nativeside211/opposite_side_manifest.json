@@ -1,0 +1,20 @@
+{
+  "version": "nativeside211",
+  "source": "nativesettledflow211",
+  "source_sha256": "b9dad58546efd18712fb66542e6a937baeaa20cb2f3a5661ddf7f7e6515049a1",
+  "source_unchanged": true,
+  "method": "Existing neutral camera 03_Side; no pixel flip or geometry edit",
+  "samples": 192,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "denoising": false,
+  "image_sha256": "673838d97d7f6dab9799ebdcdb75aa78e5e3ac07306270d0795253596e3c585b",
+  "images_sha256": {
+    "03_Side.png": "673838d97d7f6dab9799ebdcdb75aa78e5e3ac07306270d0795253596e3c585b"
+  },
+  "status": "Unreviewed actual neutral/opposite profile diagnostic, not artistic approval",
+  "single_camera": "03_Side",
+  "opposite_image_reused_from": null
+}

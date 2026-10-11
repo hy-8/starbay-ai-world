@@ -1,0 +1,15 @@
+{
+  "source": "nativesettledflow211",
+  "source_sha256": "b9dad58546efd18712fb66542e6a937baeaa20cb2f3a5661ddf7f7e6515049a1",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "d25be39acbbc28afe66d66354c08ad94734ad8a2acc5178333b5189ce88907d9",
+  "status": "Actual render pending art review; no generative image replacement"
+}

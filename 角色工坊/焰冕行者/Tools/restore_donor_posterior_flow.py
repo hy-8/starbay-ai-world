@@ -7,6 +7,10 @@ from mathutils.bvhtree import BVHTree
 ROOT=Path(__file__).resolve().parents[1]
 a=sys.argv[sys.argv.index('--')+1:];version,base=a[:2];pilot='--pilot' in a;blend_boundary='--blend-boundary' in a;side_transition='--side-transition' in a;upper_side='--upper-side' in a
 assert not upper_side or side_transition
+nonfringe_restore='--nonfringe-restore' in a
+assert not nonfringe_restore or not any([side_transition,blend_boundary,pilot])
+forehead_guard='--forehead-guard' in a
+assert not forehead_guard or nonfringe_restore
 side_strength=float(a[a.index('--side-strength')+1]) if '--side-strength' in a else 1.
 assert 0<side_strength<=1 and (side_transition or side_strength==1)
 assert all(re.fullmatch('[A-Za-z0-9_-]+',v) for v in a[:2])
@@ -32,6 +36,13 @@ if side_transition:
     recovered=np.empty(len(raw),bool);cu.attributes['native_recovered_donor_back'].data.foreach_get('value',recovered)
     mask=(~protected)&(~recovered)&(dr[:,1]>-.080)&(r[:,1]>-.080)&(dm[:,1]>-.010)&(np.abs(r[:,0])>(.005 if upper_side else .040))&(r[:,2]>1.770)
 if pilot:mask&=(r[:,0]>.005) if side_transition else (r[:,0]<-.005)
+if nonfringe_restore:
+    donor_lengths=np.array([np.linalg.norm(np.diff(path,axis=0),axis=1).sum() for path in paths])
+    mask=(~protected)&(r[:,2]>1.730)&(donor_lengths>.020)
+    if forehead_guard:
+        prior_back=np.empty(len(raw),bool);cu.attributes['native_recovered_donor_back'].data.foreach_get('value',prior_back)
+        donor_min_y=np.array([path[:,1].min() for path in paths])
+        mask&=(~prior_back)&(donor_min_y>-.110)
 ids=np.flatnonzero(mask);assert len(ids)>500
 root_delta=r[ids]-dr[ids];assert np.linalg.norm(root_delta,axis=1).max()<.030
 def smooth_donor(points):
@@ -64,10 +75,13 @@ for i in ids:
     if side_transition:
         b=float(np.clip((r[i,1]+.080)/.065,0,1));b=side_strength*b*b*(3-2*b)
         values=raw[i]+b*(values-raw[i])
+    if forehead_guard:
+        b=float(np.clip((donor_min_y[i]+.110)/.050,0,1));b=b*b*(3-2*b)
+        values=raw[i]+b*(values-raw[i])
     values[0]=r[i];q[i]=values;lengths.append(float(np.linalg.norm(np.diff(values,axis=0),axis=1).sum()))
 assert np.array_equal(q[~mask],raw[~mask]) and np.array_equal(q[:,0],raw[:,0]) and np.isfinite(q).all()
 ob.data=cu.copy();ob.data.attributes['position'].data.foreach_set('vector',q.astype(np.float32).ravel())
-attr='native_recovered_donor_side' if side_transition else 'native_recovered_donor_back';assert not ob.data.attributes.get(attr)
+attr='native_restored_nonfringe_flow' if nonfringe_restore else 'native_recovered_donor_side' if side_transition else 'native_recovered_donor_back';assert not ob.data.attributes.get(attr)
 ob.data.attributes.new(attr,'BOOLEAN','CURVE').data.foreach_set('value',mask);ob.data.update_tag()
 out.mkdir(parents=True);rd.mkdir(parents=True)
 s=bpy.context.scene;pref=bpy.context.preferences.addons['cycles'].preferences;pref.compute_device_type='OPTIX';pref.get_devices()
@@ -80,9 +94,11 @@ if blend_boundary:method+=' After sampled contact correction, source/candidate p
 if side_transition:method='Side variant: exclude accepted fringe/curtain and194 recovered posterior fibers. Original/currentrootY>-80mm,donormidY>-10mm,absrootX>40mm,rootZ>1.770m;pilot positiveX. Same explicit donor sampling/root retention/trim/contact pipeline. Final position blend smoothstep0-100% from rootY-80 to-15mm. Not exact donor tessellation or continuous collision proof.'
 if upper_side:method=method.replace('absrootX>40mm','absrootX>5mm (include upper-side roots)')
 if side_transition:method+=' Final recovery strength multiplier='+str(side_strength)+'.'
+if nonfringe_restore:method='Broad non-fringe control: current fibers except accepted fringe/curtain,rootZ>1.730m,donor polyline length>20mm mapped to original layercut04 donor; short and low-root fibers retained. Exact current roots retained. Explicit Catmull-Rom donor sampling,root delta fading,first root-field floor crossing trimmed,65-point arc resampling and smoothed sampled body correction. No partial source/candidate blending. Current radii/topology/materials preserved. Not exact donor tessellation or continuous collision proof.'
+if forehead_guard:method=method.replace('No partial source/candidate blending.','Also exclude194 recovered posterior and donor curves with any controlY<=-110mm. Final source/candidate blend smoothstep0-100% by minimum donor controlY from-110 to-60mm, guarding forehead-directed donors.')
 (out/'donor_back_manifest.json').write_text(json.dumps(dict(source=base,source_sha256=digest,donor='layercut04',donor_sha256=donorhash,pilot=pilot,blend_boundary=blend_boundary,side_transition=side_transition,selected_fibers=len(ids),selection_attribute=attr,root_shift_quantiles_m=np.quantile(np.linalg.norm(root_delta,axis=1),[0,.5,1]).tolist(),trimmed_fibers=trimmed,sampled_body_repairs=repairs,length_quantiles_m=np.quantile(lengths,[0,.5,1]).tolist(),method=method,status='Actual recovered-flow study awaiting visual review'),indent=2),encoding='utf-8')
 cam=bpy.data.objects['03_Side'].copy();cam.data=cam.data.copy();s.collection.objects.link(cam);cam.name='05_OppositeSide';ref=Matrix.Diagonal((-1.,1.,1.,1.));cam.matrix_world=ref@cam.matrix_world@ref
-for shot in (['03_Side','02_ThreeQuarter'] if pilot and side_transition else ['03_Side','05_OppositeSide','02_ThreeQuarter'] if side_transition else ['04_Back','05_OppositeSide','02_ThreeQuarter']):
+for shot in (['03_Side','05_OppositeSide','02_ThreeQuarter','04_Back'] if nonfringe_restore else ['03_Side','02_ThreeQuarter'] if pilot and side_transition else ['03_Side','05_OppositeSide','02_ThreeQuarter'] if side_transition else ['04_Back','05_OppositeSide','02_ThreeQuarter']):
     s.camera=bpy.data.objects[shot];s.render.filepath=str(rd/(shot+'.png'));bpy.ops.render.render(write_still=True)
 assert hashlib.sha256(source.read_bytes()).hexdigest()==digest and hashlib.sha256(donorfile.read_bytes()).hexdigest()==donorhash
 print('DONOR_BACK_RENDERED',version,len(ids),flush=True)

@@ -1,0 +1,650 @@
+{
+  "continuation": "nativesettledflow211",
+  "goal_complete": false,
+  "user_preference": "保留偏分，继续做自然碎发层次",
+  "studies": [
+    {
+      "version": "nativecoherentcherry205",
+      "manifest": {
+        "source": "nativesoftsideflow202",
+        "source_sha256": "97013e9d4f77486d4d5c378cd09f63c4c2094872e5afbf1d47fa4cbb8a28ff89",
+        "changed_objects": [
+          "Abhay flow derivative • real scalp sampled short support",
+          "Bystedt derivative • short scalp support",
+          "Bystedt layercut derivative • native root reflow",
+          "Original posterior coverage • surface-grown short fibers"
+        ],
+        "geometry_edit": false,
+        "method": "Copy current primary Huang material with its root gradient. Strand color range(.035,.002,.003)-(.110,.006,.009),roughness.30,random roughness.16. Assign to all four visible native hair components. Other scattering settings retained. No geometry,mesh material or lighting edits."
+      },
+      "model_sha256": "82f38ccd60c47d52bb0c5ad905aa55f30be188f232c9e7bd6a91a333f15c77fc",
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "c8fbc6b25990b14c65ce352c47aa3686b4633505871ccc264b4e31b30ea417c6",
+        "03_Side.png": "fc173655a20fbdff53c56c61865ddf669715069f592d9e4131a849a2e9db63f0",
+        "04_Back.png": "a546cbddfd23a6d0731bb593f163485f580685fce8c9cce98f914d08f725adc2"
+      },
+      "art_judgment": "Three actual drafts inspected. Unified deeper cherry Huang material on four native hair components. No geometry change. Independently audited. Retained in210/211.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativeanteriorpilot206",
+      "manifest": {
+        "source": "nativesoftsideflow202",
+        "source_sha256": "97013e9d4f77486d4d5c378cd09f63c4c2094872e5afbf1d47fa4cbb8a28ff89",
+        "pilot": true,
+        "selected_fibers": 1558,
+        "selection_attribute": "native_anterior_side_back_sweep",
+        "preserved_prefix_points": 10,
+        "sampled_body_repairs": 1641,
+        "max_displacement_m": 0.030149626573772795,
+        "method": "Exclude accepted fringe/curtain. >=10 points in absX>65mm,Y(-85,-25)mm,Z(1.805,1.860)m;rootY<-35mm,tipY<10mm,tipZ>1.775m. Pilot positiveX. Smooth20-30mm backwardY field and3mm endZ rise after first10 points. Sampled body correction smoothed,not continuous collision proof."
+      },
+      "model_sha256": "6aeed2c75a9f5b11780a9c55a31301fa2168b82a13b4cd7af03841e38bbf0fb2",
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "ed61a81b33a699b19c2f6a86c6effd24b4dab90bde83def7eeef95cb767def73",
+        "03_Side.png": "d391ac5285b844d160eeed7dfb7b69a9101b220ce6ac796de61dd4840882aeac"
+      },
+      "art_judgment": "Two actual drafts inspected. Backward sweep exposes scalp and weakens anterior coverage. Rejected; no independent saved-file audit.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativenonfringeflow209",
+      "manifest": {
+        "source": "nativecoherentcherry205",
+        "source_sha256": "82f38ccd60c47d52bb0c5ad905aa55f30be188f232c9e7bd6a91a333f15c77fc",
+        "donor": "layercut04",
+        "donor_sha256": "3eb679fc7a14c6cd1082d5b595535f41caac949586553441f60447b5537a8dd9",
+        "pilot": false,
+        "blend_boundary": false,
+        "side_transition": false,
+        "selected_fibers": 36280,
+        "selection_attribute": "native_restored_nonfringe_flow",
+        "root_shift_quantiles_m": [
+          0.0,
+          0.0004999048535466496,
+          0.0005052047508012256
+        ],
+        "trimmed_fibers": 14059,
+        "sampled_body_repairs": 149327,
+        "length_quantiles_m": [
+          0.04995546101373806,
+          0.14779723565486796,
+          0.2505668184475554
+        ],
+        "method": "Broad non-fringe control: current fibers except accepted fringe/curtain,rootZ>1.730m,donor polyline length>20mm mapped to original layercut04 donor; short and low-root fibers retained. Exact current roots retained. Explicit Catmull-Rom donor sampling,root delta fading,first root-field floor crossing trimmed,65-point arc resampling and smoothed sampled body correction. No partial source/candidate blending. Current radii/topology/materials preserved. Not exact donor tessellation or continuous collision proof.",
+        "status": "Actual recovered-flow study awaiting visual review"
+      },
+      "model_sha256": "bbef257839cb25e3dd6b921c5df4eb4a93d64eabc21ed9ddca8863dd4cac6948",
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "821eff4f469d4be654848c81091eda7ddb9d7120166b5f44285eedf4a51d7e0d",
+        "03_Side.png": "70d14457687935d203f9c46e2376892a01543e58cc8a1bddf3951e14d7b323ba",
+        "04_Back.png": "148ce2039bc7e2b58685c22c1e25236215fbb7082e62b6cb2cde8cfa852a77a8",
+        "05_OppositeSide.png": "21e56945ebaca9504a76cf55b90afc483a415cd5eb6f8b83d4c448692f1ce1d1"
+      },
+      "art_judgment": "Four actual drafts inspected. Broad restoration improves side flow but raises crown and introduces frontal intersections. Rejected as-is; no independent saved-file audit.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativeguardedflow210",
+      "manifest": {
+        "source": "nativecoherentcherry205",
+        "source_sha256": "82f38ccd60c47d52bb0c5ad905aa55f30be188f232c9e7bd6a91a333f15c77fc",
+        "donor": "layercut04",
+        "donor_sha256": "3eb679fc7a14c6cd1082d5b595535f41caac949586553441f60447b5537a8dd9",
+        "pilot": false,
+        "blend_boundary": false,
+        "side_transition": false,
+        "selected_fibers": 21145,
+        "selection_attribute": "native_restored_nonfringe_flow",
+        "root_shift_quantiles_m": [
+          0.0,
+          0.0004999721056388782,
+          0.0005052047508012256
+        ],
+        "trimmed_fibers": 4194,
+        "sampled_body_repairs": 128013,
+        "length_quantiles_m": [
+          0.04995546101373806,
+          0.14099330675957558,
+          0.22255444653212988
+        ],
+        "method": "Broad non-fringe control: current fibers except accepted fringe/curtain,rootZ>1.730m,donor polyline length>20mm mapped to original layercut04 donor; short and low-root fibers retained. Exact current roots retained. Explicit Catmull-Rom donor sampling,root delta fading,first root-field floor crossing trimmed,65-point arc resampling and smoothed sampled body correction. Also exclude194 recovered posterior and donor curves with any controlY<=-110mm. Final source/candidate blend smoothstep0-100% by minimum donor controlY from-110 to-60mm, guarding forehead-directed donors. Current radii/topology/materials preserved. Not exact donor tessellation or continuous collision proof.",
+        "status": "Actual recovered-flow study awaiting visual review"
+      },
+      "model_sha256": "5bc6be3d3015c9d8d21c29284d63527b36df22ba6c362747327da268717785f6",
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "fa93c99bd99dbc754d45361d32a616a8aebe9443bba36a9ed4d4e6df516626e2",
+        "03_Side.png": "08c0fb027e6702ae922950bc1dc9d3cbb622258130b54ebf75c202601f81af2e",
+        "04_Back.png": "2cb0d9dc3c932502ff6a88386a84877caa547777779587c26285533ca1d693ea",
+        "05_OppositeSide.png": "43146d292b11fd7b3e6c2c7c68ef5aec4b1f0d898167a358a95aeb0e1329f6eb"
+      },
+      "art_judgment": "Four actual drafts inspected. Exclude accepted fringe,194 posterior and forward donor paths; blend by minimum donor controlY.21145 fibers. Side flow more natural; upper silhouette remains high and temple coverage imperfect. Independently audited.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativesettledflow211",
+      "manifest": {
+        "source": "nativeguardedflow210",
+        "source_sha256": "5bc6be3d3015c9d8d21c29284d63527b36df22ba6c362747327da268717785f6",
+        "selected_fibers": 1977,
+        "selection_attribute": "native_settled_restored_crown",
+        "preserved_prefix_points": 10,
+        "sampled_body_repairs": 0,
+        "max_displacement_m": 0.004884147010761453,
+        "method": "Only210 restored non-fringe strands with maxZ>1.877m. For each point excess e=max(z-1.877,0),subtract.70*e^2/(e+.005);fade in over15% parameter after first10 points. True roots/prefix retained.2mm sampled body guard,not continuous collision proof."
+      },
+      "model_sha256": "b9dad58546efd18712fb66542e6a937baeaa20cb2f3a5661ddf7f7e6515049a1",
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "cc4bbc27a8ecee0d230c87b2cdf031126c0ead3400a5c40cc22a85836c43da45",
+        "03_Side.png": "114a89072cc25bc1f511ab7576db8997cd3a246a11fd854715bad13d5a613d0d",
+        "04_Back.png": "992950b4ece1d3f97d26eaedfe142a94ba636bb9dbe73f6be27357f506bc51e8",
+        "05_OppositeSide.png": "53df0d22fd0fd1a7a2c95fc88f6d276a708f1ec61c761a608af874d309ba7b43"
+      },
+      "art_judgment": "Four actual drafts,512/OIDN high and front/side192 without denoising inspected.1977 restored crown fibers lowered smoothly while retaining first10 points. Side flow remains improved; crown tuft slightly reduced. Incomplete continuation: broad upper/front locks, temple scalp transition and small lifted arcs remain. Independently audited.",
+      "goal_complete": false
+    }
+  ],
+  "reviewed_presentations": [
+    {
+      "directory": "nativeshadercontrol203",
+      "manifest": {
+        "source": "nativesoftsideflow202",
+        "source_sha256": "97013e9d4f77486d4d5c378cd09f63c4c2094872e5afbf1d47fa4cbb8a28ff89",
+        "source_unchanged": true,
+        "donor": "layercut04",
+        "donor_sha256": "3eb679fc7a14c6cd1082d5b595535f41caac949586553441f60447b5537a8dd9",
+        "changed_objects": [
+          "Bystedt layercut derivative • native root reflow"
+        ],
+        "all_hair": false,
+        "images_sha256": {
+          "02_ThreeQuarter.png": "2ea9a48c5f61adf05f44a4a178ca93814dc31996f5e91ff04e532f99924551b1",
+          "03_Side.png": "effa9cbb281365c5ea02683cfc49598d05d8839cd7d4d8d499f72aea83937c9c"
+        },
+        "samples": 256,
+        "resolution": [
+          1200,
+          1400
+        ],
+        "denoising": "OpenImageDenoise",
+        "method": "Temporarily assign exact saved Deep cherry layer cut donor material to current groom. No geometry/light edits or model save."
+      },
+      "images_sha256": {
+        "02_ThreeQuarter.png": "2ea9a48c5f61adf05f44a4a178ca93814dc31996f5e91ff04e532f99924551b1",
+        "03_Side.png": "effa9cbb281365c5ea02683cfc49598d05d8839cd7d4d8d499f72aea83937c9c"
+      },
+      "all_images_actually_inspected": true,
+      "judgment": "Exact old donor shader darkens hair but pale highlights remain; not adopted."
+    },
+    {
+      "directory": "nativeunifiedcontrol204",
+      "manifest": {
+        "source": "nativesoftsideflow202",
+        "source_sha256": "97013e9d4f77486d4d5c378cd09f63c4c2094872e5afbf1d47fa4cbb8a28ff89",
+        "source_unchanged": true,
+        "donor": "layercut04",
+        "donor_sha256": "3eb679fc7a14c6cd1082d5b595535f41caac949586553441f60447b5537a8dd9",
+        "changed_objects": [
+          "Abhay flow derivative • real scalp sampled short support",
+          "Bystedt derivative • short scalp support",
+          "Bystedt layercut derivative • native root reflow",
+          "Original posterior coverage • surface-grown short fibers"
+        ],
+        "all_hair": true,
+        "images_sha256": {
+          "02_ThreeQuarter.png": "4d3c0ca86f149fa2a784507bbe4b3ee01fa62a8dd9fd01d763cc7091c9c3b6a9",
+          "03_Side.png": "5e0e2e7b4aa90df23f6c925a7db0bc71ebe0297eb8ff318d37d7982a5984e58b"
+        },
+        "samples": 256,
+        "resolution": [
+          1200,
+          1400
+        ],
+        "denoising": "OpenImageDenoise",
+        "method": "Temporarily assign exact saved Deep cherry layer cut donor material to current groom. No geometry/light edits or model save."
+      },
+      "images_sha256": {
+        "02_ThreeQuarter.png": "4d3c0ca86f149fa2a784507bbe4b3ee01fa62a8dd9fd01d763cc7091c9c3b6a9",
+        "03_Side.png": "5e0e2e7b4aa90df23f6c925a7db0bc71ebe0297eb8ff318d37d7982a5984e58b"
+      },
+      "all_images_actually_inspected": true,
+      "judgment": "Exact old donor shader darkens hair but pale highlights remain; not adopted."
+    },
+    {
+      "directory": "nativepresentation211",
+      "manifest": {
+        "source": "nativesettledflow211",
+        "source_sha256": "b9dad58546efd18712fb66542e6a937baeaa20cb2f3a5661ddf7f7e6515049a1",
+        "source_unchanged": true,
+        "camera": "02_ThreeQuarter",
+        "geometry_lighting_unchanged": true,
+        "resolution": [
+          1920,
+          2240
+        ],
+        "samples": 512,
+        "denoising": "OpenImageDenoise",
+        "image_sha256": "d25be39acbbc28afe66d66354c08ad94734ad8a2acc5178333b5189ce88907d9",
+        "status": "Actual render pending art review; no generative image replacement"
+      },
+      "images_sha256": {
+        "02_ThreeQuarter.png": "d25be39acbbc28afe66d66354c08ad94734ad8a2acc5178333b5189ce88907d9"
+      },
+      "all_images_actually_inspected": true,
+      "judgment": "Actual211 validation, not final artistic acceptance."
+    },
+    {
+      "directory": "nativefront211",
+      "manifest": {
+        "version": "nativefront211",
+        "source": "nativesettledflow211",
+        "source_sha256": "b9dad58546efd18712fb66542e6a937baeaa20cb2f3a5661ddf7f7e6515049a1",
+        "source_unchanged": true,
+        "method": "Existing neutral camera 01_Front; no pixel flip or geometry edit",
+        "samples": 192,
+        "resolution": [
+          1200,
+          1400
+        ],
+        "denoising": false,
+        "image_sha256": "b4eb89adfa7fddc77244d91aa1566ab18469ae5d441a9177abda37fc9718b1d1",
+        "images_sha256": {
+          "01_Front.png": "b4eb89adfa7fddc77244d91aa1566ab18469ae5d441a9177abda37fc9718b1d1"
+        },
+        "status": "Unreviewed actual neutral/opposite profile diagnostic, not artistic approval",
+        "single_camera": "01_Front",
+        "opposite_image_reused_from": null
+      },
+      "images_sha256": {
+        "01_Front.png": "b4eb89adfa7fddc77244d91aa1566ab18469ae5d441a9177abda37fc9718b1d1"
+      },
+      "all_images_actually_inspected": true,
+      "judgment": "Actual211 validation, not final artistic acceptance."
+    },
+    {
+      "directory": "nativeside211",
+      "manifest": {
+        "version": "nativeside211",
+        "source": "nativesettledflow211",
+        "source_sha256": "b9dad58546efd18712fb66542e6a937baeaa20cb2f3a5661ddf7f7e6515049a1",
+        "source_unchanged": true,
+        "method": "Existing neutral camera 03_Side; no pixel flip or geometry edit",
+        "samples": 192,
+        "resolution": [
+          1200,
+          1400
+        ],
+        "denoising": false,
+        "image_sha256": "673838d97d7f6dab9799ebdcdb75aa78e5e3ac07306270d0795253596e3c585b",
+        "images_sha256": {
+          "03_Side.png": "673838d97d7f6dab9799ebdcdb75aa78e5e3ac07306270d0795253596e3c585b"
+        },
+        "status": "Unreviewed actual neutral/opposite profile diagnostic, not artistic approval",
+        "single_camera": "03_Side",
+        "opposite_image_reused_from": null
+      },
+      "images_sha256": {
+        "03_Side.png": "673838d97d7f6dab9799ebdcdb75aa78e5e3ac07306270d0795253596e3c585b"
+      },
+      "all_images_actually_inspected": true,
+      "judgment": "Actual211 validation, not final artistic acceptance."
+    }
+  ],
+  "independent_audits": [
+    {
+      "source": "nativesoftsideflow202",
+      "source_sha256": "97013e9d4f77486d4d5c378cd09f63c4c2094872e5afbf1d47fa4cbb8a28ff89",
+      "candidate": "nativecoherentcherry205",
+      "candidate_sha256": "82f38ccd60c47d52bb0c5ad905aa55f30be188f232c9e7bd6a91a333f15c77fc",
+      "mesh_count": 141,
+      "mesh_geometry_uv_shape_keys_transforms_exact": true,
+      "visible_native_objects": 4,
+      "curves_finite_radii_positive_textures_available": true,
+      "edited_object": "Bystedt layercut derivative • native root reflow",
+      "edited_fibers": 0,
+      "all_radii_topology_transforms_exact": true,
+      "all_roots_exact": true,
+      "unselected_fibers_exact": true,
+      "other_native_objects_exact": true,
+      "max_displacement_m": 0.0,
+      "scope": "Static localized file comparison. Not art, segment/body/eye/clothing/animation collision acceptance.",
+      "material_only": true,
+      "selection_fibers": 13251,
+      "all_visible_native_geometry_exact": true,
+      "light_world_camera_display_exact": true,
+      "material_scope_comparison": {
+        "allowed_scope": "all_visible_native_hair",
+        "objects_with_changed_material_graphs": [
+          "Abhay flow derivative • real scalp sampled short support",
+          "Bystedt derivative • short scalp support",
+          "Bystedt layercut derivative • native root reflow",
+          "Original posterior coverage • surface-grown short fibers"
+        ],
+        "all_disallowed_material_slots_and_graphs_exact": true,
+        "mesh_material_slots_and_graphs_exact": true
+      }
+    },
+    {
+      "source": "nativecoherentcherry205",
+      "source_sha256": "82f38ccd60c47d52bb0c5ad905aa55f30be188f232c9e7bd6a91a333f15c77fc",
+      "candidate": "nativeguardedflow210",
+      "candidate_sha256": "5bc6be3d3015c9d8d21c29284d63527b36df22ba6c362747327da268717785f6",
+      "mesh_count": 141,
+      "mesh_geometry_uv_shape_keys_transforms_exact": true,
+      "visible_native_objects": 4,
+      "curves_finite_radii_positive_textures_available": true,
+      "edited_object": "Bystedt layercut derivative • native root reflow",
+      "edited_fibers": 21145,
+      "all_radii_topology_transforms_exact": true,
+      "all_roots_exact": true,
+      "unselected_fibers_exact": true,
+      "other_native_objects_exact": true,
+      "max_displacement_m": 0.21673285961151123,
+      "scope": "Static localized file comparison. Not art, segment/body/eye/clothing/animation collision acceptance.",
+      "all_material_slots_graphs_exact": true,
+      "light_world_camera_display_exact": true
+    },
+    {
+      "source": "nativeguardedflow210",
+      "source_sha256": "5bc6be3d3015c9d8d21c29284d63527b36df22ba6c362747327da268717785f6",
+      "candidate": "nativesettledflow211",
+      "candidate_sha256": "b9dad58546efd18712fb66542e6a937baeaa20cb2f3a5661ddf7f7e6515049a1",
+      "mesh_count": 141,
+      "mesh_geometry_uv_shape_keys_transforms_exact": true,
+      "visible_native_objects": 4,
+      "curves_finite_radii_positive_textures_available": true,
+      "edited_object": "Bystedt layercut derivative • native root reflow",
+      "edited_fibers": 1977,
+      "all_radii_topology_transforms_exact": true,
+      "all_roots_exact": true,
+      "unselected_fibers_exact": true,
+      "other_native_objects_exact": true,
+      "max_displacement_m": 0.004884123802185059,
+      "scope": "Static localized file comparison. Not art, segment/body/eye/clothing/animation collision acceptance.",
+      "preserved_prefix_points": 10,
+      "all_primary_prefix_points_exact": true,
+      "all_material_slots_graphs_exact": true,
+      "light_world_camera_display_exact": true
+    }
+  ],
+  "failed_trial": {
+    "version": "nativenonfringeflow208",
+    "reason": "Selection included short/low-root strands; arc length assertion failed before saving.209 excluded those strands. No208 model/render delivered."
+  },
+  "donor_evaluation": [
+    {
+      "version": "layercut04",
+      "modifiers": [],
+      "curve_types": {},
+      "raw_curves": 49268,
+      "raw_points": 936800,
+      "evaluated_curves": 49268,
+      "evaluated_points": 936800,
+      "attributes": [
+        [
+          "radius",
+          "POINT",
+          "FLOAT"
+        ],
+        [
+          "position",
+          "POINT",
+          "FLOAT_VECTOR"
+        ]
+      ]
+    },
+    {
+      "version": "nativesoftsideflow202",
+      "modifiers": [],
+      "curve_types": {},
+      "raw_curves": 46043,
+      "raw_points": 2992795,
+      "evaluated_curves": 46043,
+      "evaluated_points": 2992795,
+      "attributes": [
+        [
+          "radius",
+          "POINT",
+          "FLOAT"
+        ],
+        [
+          "position",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "native_front_guide_index",
+          "CURVE",
+          "INT"
+        ],
+        [
+          "native_crown_cut",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_crown_sections",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_fringe_feather",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_back_resection",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_crown_sculpture",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_front_frame_sculpture",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_nape_layer_cut",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_relaxed_side_locks",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_temporal_coverage_restore",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_layered_root_lofts",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_visible_crest_relief",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_retained_guide_relaxation",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_resculpted_fringe_sweeps",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_fitted_side_flow",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_volumetric_sections",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_layered_nape_extension",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_transported_fan_crown",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_directional_fringe_fall",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_reconnected_fringe_terminals",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_staggered_posterior_layers",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_unranked_free_sections",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_unranked_fringe_fall",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_authored_swept_upper",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_blended_upper_suffix",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_descending_fine_locks",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_authored_fine_fringe",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_individual_fringe_fall",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_staggered_lower_posterior",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_local_fringe_end_release",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_individual_upper_fall",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_posterior_soft_wave",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_lateral_longest_trim",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_remapped_upper_layers",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_inner_curtain_shift",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_outer_wisp_relaxation",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_accepted_fringe_tip_feathering",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_projected_outer_tip_trim",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_spatial_crown_release",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_recovered_donor_back",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          "native_recovered_donor_side",
+          "CURVE",
+          "BOOLEAN"
+        ]
+      ]
+    }
+  ],
+  "local_storage_archive": [
+    {
+      "version": "nativedonorsidepilot199",
+      "original_path": "E:\\星湾世界\\starbay-ai-world\\角色工坊\\焰冕行者\\Exports\\nativedonorsidepilot199",
+      "archive_path": "D:\\星湾世界_模型归档\\starbay-ai-world\\角色工坊\\焰冕行者\\Exports\\nativedonorsidepilot199",
+      "sha256": "833677b3746bb456df255a6560e27099510f5021899aef5d5f41a64f729970ca",
+      "bytes": 488291708.0,
+      "original_path_retained_as_junction": true
+    },
+    {
+      "version": "nativeuppersidepilot200",
+      "original_path": "E:\\星湾世界\\starbay-ai-world\\角色工坊\\焰冕行者\\Exports\\nativeuppersidepilot200",
+      "archive_path": "D:\\星湾世界_模型归档\\starbay-ai-world\\角色工坊\\焰冕行者\\Exports\\nativeuppersidepilot200",
+      "sha256": "08131a21d14470cb4980f8417d5b238ae16dad8334c1a835248e098e1337e9e7",
+      "bytes": 488298271.0,
+      "original_path_retained_as_junction": true
+    },
+    {
+      "version": "nativesoftsidepilot201",
+      "original_path": "E:\\星湾世界\\starbay-ai-world\\角色工坊\\焰冕行者\\Exports\\nativesoftsidepilot201",
+      "archive_path": "D:\\星湾世界_模型归档\\starbay-ai-world\\角色工坊\\焰冕行者\\Exports\\nativesoftsidepilot201",
+      "sha256": "e294e09fd532829391b72ac6219692b3d377f599a3ed515775596759faa6030c",
+      "bytes": 488313261.0,
+      "original_path_retained_as_junction": true
+    }
+  ],
+  "scope": "Actual saved Blender geometry/material edits. Only205/210/211 independently audited. Sampled guards do not prove continuous collisions. Missing donor modifiers were ruled out, not exact render interpolation equivalence. Geometry/indexes/logs local."
+}

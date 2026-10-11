@@ -1,0 +1,25 @@
+{
+  "source": "nativesoftsideflow202",
+  "source_sha256": "97013e9d4f77486d4d5c378cd09f63c4c2094872e5afbf1d47fa4cbb8a28ff89",
+  "source_unchanged": true,
+  "donor": "layercut04",
+  "donor_sha256": "3eb679fc7a14c6cd1082d5b595535f41caac949586553441f60447b5537a8dd9",
+  "changed_objects": [
+    "Abhay flow derivative \u2022 real scalp sampled short support",
+    "Bystedt derivative \u2022 short scalp support",
+    "Bystedt layercut derivative \u2022 native root reflow",
+    "Original posterior coverage \u2022 surface-grown short fibers"
+  ],
+  "all_hair": true,
+  "images_sha256": {
+    "02_ThreeQuarter.png": "4d3c0ca86f149fa2a784507bbe4b3ee01fa62a8dd9fd01d763cc7091c9c3b6a9",
+    "03_Side.png": "5e0e2e7b4aa90df23f6c925a7db0bc71ebe0297eb8ff318d37d7982a5984e58b"
+  },
+  "samples": 256,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "denoising": "OpenImageDenoise",
+  "method": "Temporarily assign exact saved Deep cherry layer cut donor material to current groom. No geometry/light edits or model save."
+}
