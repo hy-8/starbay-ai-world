@@ -1,0 +1,19 @@
+{
+  "source": "nativedonorsidepilot199",
+  "source_sha256": "833677b3746bb456df255a6560e27099510f5021899aef5d5f41a64f729970ca",
+  "source_unchanged": true,
+  "edited_object": "Bystedt layercut derivative \u2022 native root reflow",
+  "points_per_curve": 65,
+  "selection_attribute": "native_recovered_donor_side",
+  "selection_rule": "native_recovered_donor_side",
+  "legend": {
+    "blue": "Edited selected-object curves",
+    "red": "Untouched selected-object curves",
+    "green": "All other visible native hair components",
+    "gray": "Body/clothes"
+  },
+  "edited_fibers": 9132,
+  "unselected_fibers": 36911,
+  "method": "Exact temporary curve subsets with original radii/matrix, actual cameras, emission diagnostic only",
+  "status": "Unreviewed actual component diagnostic"
+}

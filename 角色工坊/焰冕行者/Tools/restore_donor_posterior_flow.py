@@ -5,7 +5,10 @@ from pathlib import Path
 from mathutils import Vector,Matrix
 from mathutils.bvhtree import BVHTree
 ROOT=Path(__file__).resolve().parents[1]
-a=sys.argv[sys.argv.index('--')+1:];version,base=a[:2];pilot='--pilot' in a;blend_boundary='--blend-boundary' in a
+a=sys.argv[sys.argv.index('--')+1:];version,base=a[:2];pilot='--pilot' in a;blend_boundary='--blend-boundary' in a;side_transition='--side-transition' in a;upper_side='--upper-side' in a
+assert not upper_side or side_transition
+side_strength=float(a[a.index('--side-strength')+1]) if '--side-strength' in a else 1.
+assert 0<side_strength<=1 and (side_transition or side_strength==1)
 assert all(re.fullmatch('[A-Za-z0-9_-]+',v) for v in a[:2])
 source=ROOT/'Exports'/base/'Ember_Regent.blend';donorfile=ROOT/'Exports/layercut04/Ember_Regent.blend'
 digest=hashlib.sha256(source.read_bytes()).hexdigest();donorhash=hashlib.sha256(donorfile.read_bytes()).hexdigest()
@@ -25,7 +28,10 @@ protected=np.zeros(len(raw),bool)
 for n in ['native_resculpted_fringe_sweeps','native_inner_curtain_shift']:
     v=np.empty(len(raw),bool);cu.attributes[n].data.foreach_get('value',v);protected|=v
 mask=(~protected)&(dr[:,1]>.002)&(r[:,1]>.005)&(dm[:,1]>.025)&(r[:,2]>1.730)
-if pilot:mask&=r[:,0]<-.005
+if side_transition:
+    recovered=np.empty(len(raw),bool);cu.attributes['native_recovered_donor_back'].data.foreach_get('value',recovered)
+    mask=(~protected)&(~recovered)&(dr[:,1]>-.080)&(r[:,1]>-.080)&(dm[:,1]>-.010)&(np.abs(r[:,0])>(.005 if upper_side else .040))&(r[:,2]>1.770)
+if pilot:mask&=(r[:,0]>.005) if side_transition else (r[:,0]<-.005)
 ids=np.flatnonzero(mask);assert len(ids)>500
 root_delta=r[ids]-dr[ids];assert np.linalg.norm(root_delta,axis=1).max()<.030
 def smooth_donor(points):
@@ -55,22 +61,28 @@ for i in ids:
     if blend_boundary:
         b=float(np.clip((r[i,1]-.005)/.045,0,1));b=.25+.75*b*b*(3-2*b)
         values=raw[i]+b*(values-raw[i])
+    if side_transition:
+        b=float(np.clip((r[i,1]+.080)/.065,0,1));b=side_strength*b*b*(3-2*b)
+        values=raw[i]+b*(values-raw[i])
     values[0]=r[i];q[i]=values;lengths.append(float(np.linalg.norm(np.diff(values,axis=0),axis=1).sum()))
 assert np.array_equal(q[~mask],raw[~mask]) and np.array_equal(q[:,0],raw[:,0]) and np.isfinite(q).all()
 ob.data=cu.copy();ob.data.attributes['position'].data.foreach_set('vector',q.astype(np.float32).ravel())
-attr='native_recovered_donor_back';assert not ob.data.attributes.get(attr)
+attr='native_recovered_donor_side' if side_transition else 'native_recovered_donor_back';assert not ob.data.attributes.get(attr)
 ob.data.attributes.new(attr,'BOOLEAN','CURVE').data.foreach_set('value',mask);ob.data.update_tag()
 out.mkdir(parents=True);rd.mkdir(parents=True)
 s=bpy.context.scene;pref=bpy.context.preferences.addons['cycles'].preferences;pref.compute_device_type='OPTIX';pref.get_devices()
 for d in pref.devices:d.use=d.type=='OPTIX'
 s.cycles.device='GPU';s.cycles.samples=192;s.cycles.use_denoising=True;s.cycles.denoiser='OPENIMAGEDENOISE'
 s.render.resolution_x,s.render.resolution_y=1200,1400;s.render.resolution_percentage=100
-bpy.ops.wm.save_as_mainfile(filepath=str(out/'Ember_Regent.blend'))
+bpy.ops.wm.save_as_mainfile(filepath=str(out/'Ember_Regent.blend'),compress=True)
 method='Match49268 original donor curves through177 retained mapping. Exclude accepted curtain/fringe; originalrootY>2mm,currentrootY>5mm,donormidY>25mm,currentrootZ>1.730m;pilotcurrentrootX<-5mm. Explicit Catmull-Rom dense sampling,root delta decays along source parameter; cut first crossing root-field1.673m+-14mm plane then65 arc samples. Current true roots/radii/topology/materials retained. Not exact original tessellation,not continuous collision proof.'
 if blend_boundary:method+=' After sampled contact correction, source/candidate position blend by rootY:25% at5mm smoothly rising to100% at50mm. This blend does not prove collision clearance.'
-(out/'donor_back_manifest.json').write_text(json.dumps(dict(source=base,source_sha256=digest,donor='layercut04',donor_sha256=donorhash,pilot=pilot,blend_boundary=blend_boundary,selected_fibers=len(ids),selection_attribute=attr,root_shift_quantiles_m=np.quantile(np.linalg.norm(root_delta,axis=1),[0,.5,1]).tolist(),trimmed_fibers=trimmed,sampled_body_repairs=repairs,length_quantiles_m=np.quantile(lengths,[0,.5,1]).tolist(),method=method,status='Actual recovered-flow study awaiting visual review'),indent=2),encoding='utf-8')
+if side_transition:method='Side variant: exclude accepted fringe/curtain and194 recovered posterior fibers. Original/currentrootY>-80mm,donormidY>-10mm,absrootX>40mm,rootZ>1.770m;pilot positiveX. Same explicit donor sampling/root retention/trim/contact pipeline. Final position blend smoothstep0-100% from rootY-80 to-15mm. Not exact donor tessellation or continuous collision proof.'
+if upper_side:method=method.replace('absrootX>40mm','absrootX>5mm (include upper-side roots)')
+if side_transition:method+=' Final recovery strength multiplier='+str(side_strength)+'.'
+(out/'donor_back_manifest.json').write_text(json.dumps(dict(source=base,source_sha256=digest,donor='layercut04',donor_sha256=donorhash,pilot=pilot,blend_boundary=blend_boundary,side_transition=side_transition,selected_fibers=len(ids),selection_attribute=attr,root_shift_quantiles_m=np.quantile(np.linalg.norm(root_delta,axis=1),[0,.5,1]).tolist(),trimmed_fibers=trimmed,sampled_body_repairs=repairs,length_quantiles_m=np.quantile(lengths,[0,.5,1]).tolist(),method=method,status='Actual recovered-flow study awaiting visual review'),indent=2),encoding='utf-8')
 cam=bpy.data.objects['03_Side'].copy();cam.data=cam.data.copy();s.collection.objects.link(cam);cam.name='05_OppositeSide';ref=Matrix.Diagonal((-1.,1.,1.,1.));cam.matrix_world=ref@cam.matrix_world@ref
-for shot in ['04_Back','05_OppositeSide','02_ThreeQuarter']:
+for shot in (['03_Side','02_ThreeQuarter'] if pilot and side_transition else ['03_Side','05_OppositeSide','02_ThreeQuarter'] if side_transition else ['04_Back','05_OppositeSide','02_ThreeQuarter']):
     s.camera=bpy.data.objects[shot];s.render.filepath=str(rd/(shot+'.png'));bpy.ops.render.render(write_still=True)
 assert hashlib.sha256(source.read_bytes()).hexdigest()==digest and hashlib.sha256(donorfile.read_bytes()).hexdigest()==donorhash
 print('DONOR_BACK_RENDERED',version,len(ids),flush=True)

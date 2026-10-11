@@ -1,0 +1,15 @@
+{
+  "source": "nativesoftsideflow202",
+  "source_sha256": "97013e9d4f77486d4d5c378cd09f63c4c2094872e5afbf1d47fa4cbb8a28ff89",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "9e8d4b2a2ab4f286ac72595493a24709af172cf23581aca0996b62da4132b905",
+  "status": "Actual render pending art review; no generative image replacement"
+}

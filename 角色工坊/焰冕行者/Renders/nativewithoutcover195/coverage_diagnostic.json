@@ -1,0 +1,13 @@
+{
+  "source": "nativeblendedback194",
+  "source_sha256": "27de6cfe5533aa4cd69d3e5d0fdb0d266755bb73356a41efdfef48fe701f5e2f",
+  "source_unchanged": true,
+  "hidden_object": "Original posterior coverage \u2022 surface-grown short fibers",
+  "images_sha256": {
+    "04_Back.png": "414a218aa477afcf750cc4cd630ff83e7df03cee1387dc7f1135ab2e77c94281",
+    "03_Side.png": "1ff85eff41a70be177c720d75f2b3b863a901466aa4c7b1f1c4a0d27eabaab07"
+  },
+  "samples": 128,
+  "denoising": "OpenImageDenoise",
+  "scope": "Read-only diagnostic; existing posterior support hidden temporarily. Not adopted geometry."
+}

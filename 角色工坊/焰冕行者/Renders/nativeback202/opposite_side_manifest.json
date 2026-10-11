@@ -1,0 +1,20 @@
+{
+  "version": "nativeback202",
+  "source": "nativesoftsideflow202",
+  "source_sha256": "97013e9d4f77486d4d5c378cd09f63c4c2094872e5afbf1d47fa4cbb8a28ff89",
+  "source_unchanged": true,
+  "method": "Existing neutral camera 04_Back; no pixel flip or geometry edit",
+  "samples": 192,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "denoising": false,
+  "image_sha256": "b2f5ad214edd90307342d68c1e4dcb13c293792204de681042fcc32856d165e0",
+  "images_sha256": {
+    "04_Back.png": "b2f5ad214edd90307342d68c1e4dcb13c293792204de681042fcc32856d165e0"
+  },
+  "status": "Unreviewed actual neutral/opposite profile diagnostic, not artistic approval",
+  "single_camera": "04_Back",
+  "opposite_image_reused_from": null
+}
