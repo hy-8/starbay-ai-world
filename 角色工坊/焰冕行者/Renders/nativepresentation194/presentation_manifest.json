@@ -1,0 +1,15 @@
+{
+  "source": "nativeblendedback194",
+  "source_sha256": "27de6cfe5533aa4cd69d3e5d0fdb0d266755bb73356a41efdfef48fe701f5e2f",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "0071cd1fb25cf090526e87490212b40353c841716ab2e998a5a885967cedac93",
+  "status": "Actual render pending art review; no generative image replacement"
+}

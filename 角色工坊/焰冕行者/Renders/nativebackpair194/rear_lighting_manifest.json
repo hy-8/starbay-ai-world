@@ -1,0 +1,47 @@
+{
+  "records": [
+    {
+      "model": "nativerootdepth188",
+      "source_sha256": "c9314807c6945202c9dca7fb99ffe506a99295ba7bf2cfbd7c1e3b0ab60a77ce",
+      "source_unchanged": true,
+      "image": "source_04_Back.png",
+      "image_sha256": "f89a091d14da0c5d6aa927680ef75909353e4ef08a08bad8638762373c8a54f6"
+    },
+    {
+      "model": "nativeblendedback194",
+      "source_sha256": "27de6cfe5533aa4cd69d3e5d0fdb0d266755bb73356a41efdfef48fe701f5e2f",
+      "source_unchanged": true,
+      "image": "candidate_04_Back.png",
+      "image_sha256": "31ef0d649819199b9fc8114e11912f10f7245b9963627bae396afa6433baf16f"
+    }
+  ],
+  "reused_source_from": "nativebackpair190",
+  "original_geometry_materials_lights_retained": true,
+  "added_temporary_key": {
+    "energy_w": 25.0,
+    "disk_size_m": 0.45,
+    "color": [
+      1.0,
+      0.93,
+      0.9
+    ],
+    "location_m": [
+      -0.4,
+      0.6,
+      2.15
+    ],
+    "target_m": [
+      0.0,
+      0.03,
+      1.8
+    ]
+  },
+  "samples": 256,
+  "denoising": "OpenImageDenoise",
+  "resolution": [
+    1200,
+    1400
+  ],
+  "scope": "Equal temporary additional rear key on both source/candidate actual Blender geometry. No source saves, image substitution or lighting-only aesthetic completion claim.",
+  "status": "Actual pair pending visual review"
+}

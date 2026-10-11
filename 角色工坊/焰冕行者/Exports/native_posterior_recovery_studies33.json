@@ -1,0 +1,1085 @@
+{
+  "user_preference": "保留偏分，继续做自然碎发层次",
+  "studies": [
+    {
+      "version": "nativebackclumppilot190",
+      "manifest": {
+        "source": "nativerootdepth188",
+        "source_sha256": "c9314807c6945202c9dca7fb99ffe506a99295ba7bf2cfbd7c1e3b0ab60a77ce",
+        "changed_object": "Original posterior coverage • surface-grown short fibers",
+        "pilot": true,
+        "eligible_fibers": 7939,
+        "selected_fibers": 3704,
+        "selection_attribute": "native_posterior_fine_clumps",
+        "preserved_prefix_points": 4,
+        "target_groups": 120,
+        "edited_groups": 62,
+        "groups": [
+          {
+            "group": 1,
+            "source_fibers": 41,
+            "edited_fibers": 41
+          },
+          {
+            "group": 2,
+            "source_fibers": 66,
+            "edited_fibers": 66
+          },
+          {
+            "group": 3,
+            "source_fibers": 66,
+            "edited_fibers": 66
+          },
+          {
+            "group": 6,
+            "source_fibers": 69,
+            "edited_fibers": 69
+          },
+          {
+            "group": 7,
+            "source_fibers": 67,
+            "edited_fibers": 31
+          },
+          {
+            "group": 10,
+            "source_fibers": 76,
+            "edited_fibers": 42
+          },
+          {
+            "group": 12,
+            "source_fibers": 79,
+            "edited_fibers": 79
+          },
+          {
+            "group": 13,
+            "source_fibers": 38,
+            "edited_fibers": 38
+          },
+          {
+            "group": 14,
+            "source_fibers": 51,
+            "edited_fibers": 51
+          },
+          {
+            "group": 16,
+            "source_fibers": 51,
+            "edited_fibers": 51
+          },
+          {
+            "group": 18,
+            "source_fibers": 76,
+            "edited_fibers": 48
+          },
+          {
+            "group": 21,
+            "source_fibers": 70,
+            "edited_fibers": 70
+          },
+          {
+            "group": 22,
+            "source_fibers": 65,
+            "edited_fibers": 65
+          },
+          {
+            "group": 24,
+            "source_fibers": 74,
+            "edited_fibers": 74
+          },
+          {
+            "group": 26,
+            "source_fibers": 56,
+            "edited_fibers": 56
+          },
+          {
+            "group": 29,
+            "source_fibers": 59,
+            "edited_fibers": 59
+          },
+          {
+            "group": 32,
+            "source_fibers": 33,
+            "edited_fibers": 33
+          },
+          {
+            "group": 35,
+            "source_fibers": 47,
+            "edited_fibers": 47
+          },
+          {
+            "group": 36,
+            "source_fibers": 52,
+            "edited_fibers": 52
+          },
+          {
+            "group": 37,
+            "source_fibers": 37,
+            "edited_fibers": 37
+          },
+          {
+            "group": 38,
+            "source_fibers": 87,
+            "edited_fibers": 87
+          },
+          {
+            "group": 40,
+            "source_fibers": 71,
+            "edited_fibers": 18
+          },
+          {
+            "group": 41,
+            "source_fibers": 76,
+            "edited_fibers": 76
+          },
+          {
+            "group": 43,
+            "source_fibers": 47,
+            "edited_fibers": 47
+          },
+          {
+            "group": 44,
+            "source_fibers": 71,
+            "edited_fibers": 71
+          },
+          {
+            "group": 45,
+            "source_fibers": 89,
+            "edited_fibers": 89
+          },
+          {
+            "group": 46,
+            "source_fibers": 65,
+            "edited_fibers": 65
+          },
+          {
+            "group": 51,
+            "source_fibers": 60,
+            "edited_fibers": 60
+          },
+          {
+            "group": 52,
+            "source_fibers": 43,
+            "edited_fibers": 43
+          },
+          {
+            "group": 56,
+            "source_fibers": 50,
+            "edited_fibers": 50
+          },
+          {
+            "group": 60,
+            "source_fibers": 56,
+            "edited_fibers": 56
+          },
+          {
+            "group": 61,
+            "source_fibers": 86,
+            "edited_fibers": 86
+          },
+          {
+            "group": 66,
+            "source_fibers": 63,
+            "edited_fibers": 63
+          },
+          {
+            "group": 68,
+            "source_fibers": 59,
+            "edited_fibers": 59
+          },
+          {
+            "group": 69,
+            "source_fibers": 91,
+            "edited_fibers": 91
+          },
+          {
+            "group": 72,
+            "source_fibers": 55,
+            "edited_fibers": 55
+          },
+          {
+            "group": 73,
+            "source_fibers": 82,
+            "edited_fibers": 73
+          },
+          {
+            "group": 74,
+            "source_fibers": 49,
+            "edited_fibers": 49
+          },
+          {
+            "group": 75,
+            "source_fibers": 54,
+            "edited_fibers": 54
+          },
+          {
+            "group": 76,
+            "source_fibers": 65,
+            "edited_fibers": 65
+          },
+          {
+            "group": 77,
+            "source_fibers": 87,
+            "edited_fibers": 87
+          },
+          {
+            "group": 78,
+            "source_fibers": 60,
+            "edited_fibers": 60
+          },
+          {
+            "group": 82,
+            "source_fibers": 38,
+            "edited_fibers": 38
+          },
+          {
+            "group": 83,
+            "source_fibers": 67,
+            "edited_fibers": 67
+          },
+          {
+            "group": 84,
+            "source_fibers": 65,
+            "edited_fibers": 65
+          },
+          {
+            "group": 85,
+            "source_fibers": 77,
+            "edited_fibers": 77
+          },
+          {
+            "group": 87,
+            "source_fibers": 74,
+            "edited_fibers": 74
+          },
+          {
+            "group": 88,
+            "source_fibers": 55,
+            "edited_fibers": 55
+          },
+          {
+            "group": 89,
+            "source_fibers": 65,
+            "edited_fibers": 65
+          },
+          {
+            "group": 92,
+            "source_fibers": 53,
+            "edited_fibers": 53
+          },
+          {
+            "group": 94,
+            "source_fibers": 57,
+            "edited_fibers": 57
+          },
+          {
+            "group": 95,
+            "source_fibers": 42,
+            "edited_fibers": 42
+          },
+          {
+            "group": 97,
+            "source_fibers": 72,
+            "edited_fibers": 56
+          },
+          {
+            "group": 101,
+            "source_fibers": 86,
+            "edited_fibers": 86
+          },
+          {
+            "group": 102,
+            "source_fibers": 58,
+            "edited_fibers": 58
+          },
+          {
+            "group": 104,
+            "source_fibers": 60,
+            "edited_fibers": 60
+          },
+          {
+            "group": 107,
+            "source_fibers": 69,
+            "edited_fibers": 69
+          },
+          {
+            "group": 110,
+            "source_fibers": 54,
+            "edited_fibers": 54
+          },
+          {
+            "group": 113,
+            "source_fibers": 63,
+            "edited_fibers": 63
+          },
+          {
+            "group": 115,
+            "source_fibers": 65,
+            "edited_fibers": 49
+          },
+          {
+            "group": 118,
+            "source_fibers": 88,
+            "edited_fibers": 88
+          },
+          {
+            "group": 119,
+            "source_fibers": 49,
+            "edited_fibers": 49
+          }
+        ],
+        "sampled_body_repairs": 0,
+        "max_displacement_m": 0.01436513734745097,
+        "method": "Existing support rootY>15mm,Z1.800-1.855m,absX<70mm.120 global root/path clusters shared by pilot/full; pilot edits onlyX<-5mm. Existing mean flow retained; along spread exact before contact, cross width contracts gradually to38%,depth to70%,1-4mm mid normal relief. First4 points and unselected geometry exact; no material edits. Sampled contact is not continuous collision proof.",
+        "status": "True back cover grooming study pending review"
+      },
+      "model_sha256": "40ef26c82f87ccdc3826155fa7417456a93f69fc39595f526788d47646a87fab",
+      "inspected_images_sha256": {
+        "04_Back.png": "b2fdd7588d15fc4705ee83a076f24eb9cdf6553d2fd91d85c4d6655007a9cd3b",
+        "05_OppositeSide.png": "203f387b1d480179225b109b469bfd92b6ad302c4f66442f4d71e5611a5d85d6"
+      },
+      "art_judgment": "Rejected: repetitive braid/fishbone folds. Two actual drafts and equal25W pair inspected; no independent saved-file audit.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativebacksmooth191",
+      "manifest": {
+        "source": "nativerootdepth188",
+        "source_sha256": "c9314807c6945202c9dca7fb99ffe506a99295ba7bf2cfbd7c1e3b0ab60a77ce",
+        "changed_object": "Original posterior coverage • surface-grown short fibers",
+        "pilot": true,
+        "smooth_flow": true,
+        "eligible_fibers": 7939,
+        "selected_fibers": 3704,
+        "selection_attribute": "native_posterior_fine_clumps",
+        "preserved_prefix_points": 4,
+        "target_groups": 120,
+        "edited_groups": 62,
+        "groups": [
+          {
+            "group": 1,
+            "source_fibers": 41,
+            "edited_fibers": 41
+          },
+          {
+            "group": 2,
+            "source_fibers": 66,
+            "edited_fibers": 66
+          },
+          {
+            "group": 3,
+            "source_fibers": 66,
+            "edited_fibers": 66
+          },
+          {
+            "group": 6,
+            "source_fibers": 69,
+            "edited_fibers": 69
+          },
+          {
+            "group": 7,
+            "source_fibers": 67,
+            "edited_fibers": 31
+          },
+          {
+            "group": 10,
+            "source_fibers": 76,
+            "edited_fibers": 42
+          },
+          {
+            "group": 12,
+            "source_fibers": 79,
+            "edited_fibers": 79
+          },
+          {
+            "group": 13,
+            "source_fibers": 38,
+            "edited_fibers": 38
+          },
+          {
+            "group": 14,
+            "source_fibers": 51,
+            "edited_fibers": 51
+          },
+          {
+            "group": 16,
+            "source_fibers": 51,
+            "edited_fibers": 51
+          },
+          {
+            "group": 18,
+            "source_fibers": 76,
+            "edited_fibers": 48
+          },
+          {
+            "group": 21,
+            "source_fibers": 70,
+            "edited_fibers": 70
+          },
+          {
+            "group": 22,
+            "source_fibers": 65,
+            "edited_fibers": 65
+          },
+          {
+            "group": 24,
+            "source_fibers": 74,
+            "edited_fibers": 74
+          },
+          {
+            "group": 26,
+            "source_fibers": 56,
+            "edited_fibers": 56
+          },
+          {
+            "group": 29,
+            "source_fibers": 59,
+            "edited_fibers": 59
+          },
+          {
+            "group": 32,
+            "source_fibers": 33,
+            "edited_fibers": 33
+          },
+          {
+            "group": 35,
+            "source_fibers": 47,
+            "edited_fibers": 47
+          },
+          {
+            "group": 36,
+            "source_fibers": 52,
+            "edited_fibers": 52
+          },
+          {
+            "group": 37,
+            "source_fibers": 37,
+            "edited_fibers": 37
+          },
+          {
+            "group": 38,
+            "source_fibers": 87,
+            "edited_fibers": 87
+          },
+          {
+            "group": 40,
+            "source_fibers": 71,
+            "edited_fibers": 18
+          },
+          {
+            "group": 41,
+            "source_fibers": 76,
+            "edited_fibers": 76
+          },
+          {
+            "group": 43,
+            "source_fibers": 47,
+            "edited_fibers": 47
+          },
+          {
+            "group": 44,
+            "source_fibers": 71,
+            "edited_fibers": 71
+          },
+          {
+            "group": 45,
+            "source_fibers": 89,
+            "edited_fibers": 89
+          },
+          {
+            "group": 46,
+            "source_fibers": 65,
+            "edited_fibers": 65
+          },
+          {
+            "group": 51,
+            "source_fibers": 60,
+            "edited_fibers": 60
+          },
+          {
+            "group": 52,
+            "source_fibers": 43,
+            "edited_fibers": 43
+          },
+          {
+            "group": 56,
+            "source_fibers": 50,
+            "edited_fibers": 50
+          },
+          {
+            "group": 60,
+            "source_fibers": 56,
+            "edited_fibers": 56
+          },
+          {
+            "group": 61,
+            "source_fibers": 86,
+            "edited_fibers": 86
+          },
+          {
+            "group": 66,
+            "source_fibers": 63,
+            "edited_fibers": 63
+          },
+          {
+            "group": 68,
+            "source_fibers": 59,
+            "edited_fibers": 59
+          },
+          {
+            "group": 69,
+            "source_fibers": 91,
+            "edited_fibers": 91
+          },
+          {
+            "group": 72,
+            "source_fibers": 55,
+            "edited_fibers": 55
+          },
+          {
+            "group": 73,
+            "source_fibers": 82,
+            "edited_fibers": 73
+          },
+          {
+            "group": 74,
+            "source_fibers": 49,
+            "edited_fibers": 49
+          },
+          {
+            "group": 75,
+            "source_fibers": 54,
+            "edited_fibers": 54
+          },
+          {
+            "group": 76,
+            "source_fibers": 65,
+            "edited_fibers": 65
+          },
+          {
+            "group": 77,
+            "source_fibers": 87,
+            "edited_fibers": 87
+          },
+          {
+            "group": 78,
+            "source_fibers": 60,
+            "edited_fibers": 60
+          },
+          {
+            "group": 82,
+            "source_fibers": 38,
+            "edited_fibers": 38
+          },
+          {
+            "group": 83,
+            "source_fibers": 67,
+            "edited_fibers": 67
+          },
+          {
+            "group": 84,
+            "source_fibers": 65,
+            "edited_fibers": 65
+          },
+          {
+            "group": 85,
+            "source_fibers": 77,
+            "edited_fibers": 77
+          },
+          {
+            "group": 87,
+            "source_fibers": 74,
+            "edited_fibers": 74
+          },
+          {
+            "group": 88,
+            "source_fibers": 55,
+            "edited_fibers": 55
+          },
+          {
+            "group": 89,
+            "source_fibers": 65,
+            "edited_fibers": 65
+          },
+          {
+            "group": 92,
+            "source_fibers": 53,
+            "edited_fibers": 53
+          },
+          {
+            "group": 94,
+            "source_fibers": 57,
+            "edited_fibers": 57
+          },
+          {
+            "group": 95,
+            "source_fibers": 42,
+            "edited_fibers": 42
+          },
+          {
+            "group": 97,
+            "source_fibers": 72,
+            "edited_fibers": 56
+          },
+          {
+            "group": 101,
+            "source_fibers": 86,
+            "edited_fibers": 86
+          },
+          {
+            "group": 102,
+            "source_fibers": 58,
+            "edited_fibers": 58
+          },
+          {
+            "group": 104,
+            "source_fibers": 60,
+            "edited_fibers": 60
+          },
+          {
+            "group": 107,
+            "source_fibers": 69,
+            "edited_fibers": 69
+          },
+          {
+            "group": 110,
+            "source_fibers": 54,
+            "edited_fibers": 54
+          },
+          {
+            "group": 113,
+            "source_fibers": 63,
+            "edited_fibers": 63
+          },
+          {
+            "group": 115,
+            "source_fibers": 65,
+            "edited_fibers": 49
+          },
+          {
+            "group": 118,
+            "source_fibers": 88,
+            "edited_fibers": 88
+          },
+          {
+            "group": 119,
+            "source_fibers": 49,
+            "edited_fibers": 49
+          }
+        ],
+        "sampled_body_repairs": 0,
+        "max_displacement_m": 0.011759501591776755,
+        "method": "Existing support rootY>15mm,Z1.800-1.855m,absX<70mm.120 global root/path clusters shared by pilot/full; pilot edits onlyX<-5mm. Fit mean to single cubic with descending controlZ, retain mean root/end; transition over first30 percent of remaining path. along spread exact before contact, cross width contracts gradually to70%,depth to85%,1-4mm mid normal relief. First4 points and unselected geometry exact; no material edits. Sampled contact is not continuous collision proof.",
+        "status": "True back cover grooming study pending review"
+      },
+      "model_sha256": "dfd2901c4fbcc38b5fcaf2af69da603d92f7b2086aa23ca533353e09446eff27",
+      "inspected_images_sha256": {
+        "04_Back.png": "1412440208551e4de4488ca1780d12136f5df31c55cd4fca15c90bf031b77f42",
+        "05_OppositeSide.png": "aebb6378a44696448686744ea329f707cae9fb6bbdae9bdd07975d758099c8da"
+      },
+      "art_judgment": "Not adopted: smoother but limited benefit. Two actual drafts inspected; no independent saved-file audit or lighting pair.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativedonorbackpilot192",
+      "manifest": {
+        "source": "nativerootdepth188",
+        "source_sha256": "c9314807c6945202c9dca7fb99ffe506a99295ba7bf2cfbd7c1e3b0ab60a77ce",
+        "donor": "layercut04",
+        "donor_sha256": "3eb679fc7a14c6cd1082d5b595535f41caac949586553441f60447b5537a8dd9",
+        "pilot": true,
+        "selected_fibers": 5179,
+        "selection_attribute": "native_recovered_donor_back",
+        "root_shift_quantiles_m": [
+          0.0,
+          0.0,
+          0.0005042641158666104
+        ],
+        "trimmed_fibers": 4642,
+        "sampled_body_repairs": 7444,
+        "length_quantiles_m": [
+          0.05134272541641387,
+          0.13479674740560593,
+          0.22701167717454337
+        ],
+        "method": "Match49268 original donor curves through177 retained mapping. Exclude accepted curtain/fringe; originalrootY>2mm,currentrootY>5mm,donormidY>25mm,currentrootZ>1.730m;pilotcurrentrootX<-5mm. Explicit Catmull-Rom dense sampling,root delta decays along source parameter; cut first crossing root-field1.673m+-14mm plane then65 arc samples. Current true roots/radii/topology/materials retained. Not exact original tessellation,not continuous collision proof.",
+        "status": "Actual recovered-flow study awaiting visual review"
+      },
+      "model_sha256": "9187111a98dd6936a80f1b6d6b3dbfdbdacd14d62e0c2960fc599f5a576435f0",
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "b6c4739d6da11463a8dcf269062418a5e3f1475ae0c03c2e3e36f31fa3709fa6",
+        "04_Back.png": "dbb242c9e79d73a243113f1dcd03d737e7fde4ee068af63d18477414ec5c1dae",
+        "05_OppositeSide.png": "2f7e536a72124efb8823e09a03528b761d3a98646062c1f30452d5631a26d758"
+      },
+      "art_judgment": "Promising: natural posterior flow on pilot half. Three actual drafts inspected; no independent audit.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativedonorback193",
+      "manifest": {
+        "source": "nativerootdepth188",
+        "source_sha256": "c9314807c6945202c9dca7fb99ffe506a99295ba7bf2cfbd7c1e3b0ab60a77ce",
+        "donor": "layercut04",
+        "donor_sha256": "3eb679fc7a14c6cd1082d5b595535f41caac949586553441f60447b5537a8dd9",
+        "pilot": false,
+        "selected_fibers": 12637,
+        "selection_attribute": "native_recovered_donor_back",
+        "root_shift_quantiles_m": [
+          0.0,
+          0.0,
+          0.0005042641158666104
+        ],
+        "trimmed_fibers": 9865,
+        "sampled_body_repairs": 14827,
+        "length_quantiles_m": [
+          0.049989840580266294,
+          0.1522950173969524,
+          0.23518002519271014
+        ],
+        "method": "Match49268 original donor curves through177 retained mapping. Exclude accepted curtain/fringe; originalrootY>2mm,currentrootY>5mm,donormidY>25mm,currentrootZ>1.730m;pilotcurrentrootX<-5mm. Explicit Catmull-Rom dense sampling,root delta decays along source parameter; cut first crossing root-field1.673m+-14mm plane then65 arc samples. Current true roots/radii/topology/materials retained. Not exact original tessellation,not continuous collision proof.",
+        "status": "Actual recovered-flow study awaiting visual review"
+      },
+      "model_sha256": "ed0aaccb86ebfe5b7dc83056250250d19cb9780a72387dda4c33de7c6de26f4c",
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "8eb516e78b3c63e9c6703d73bfb7100b5dfd8b4c0c6904c05f562a1bec24811c",
+        "04_Back.png": "dfc505492cbe10d31fa272e8a046b9c545b34a9358ccfd4e8d99a7f12b5aeb82",
+        "05_OppositeSide.png": "b68a4b634f4b49142611460d7d926dd424226badaaca0cb9d046c7583eb78d62"
+      },
+      "art_judgment": "Not adopted as-is: full recovery creates raised crown/back boundary. Three actual drafts inspected.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativeblendedback194",
+      "manifest": {
+        "source": "nativerootdepth188",
+        "source_sha256": "c9314807c6945202c9dca7fb99ffe506a99295ba7bf2cfbd7c1e3b0ab60a77ce",
+        "donor": "layercut04",
+        "donor_sha256": "3eb679fc7a14c6cd1082d5b595535f41caac949586553441f60447b5537a8dd9",
+        "pilot": false,
+        "blend_boundary": true,
+        "selected_fibers": 12637,
+        "selection_attribute": "native_recovered_donor_back",
+        "root_shift_quantiles_m": [
+          0.0,
+          0.0,
+          0.0005042641158666104
+        ],
+        "trimmed_fibers": 9865,
+        "sampled_body_repairs": 14827,
+        "length_quantiles_m": [
+          0.035570327120508345,
+          0.12682267505109082,
+          0.2021064142349962
+        ],
+        "method": "Match49268 original donor curves through177 retained mapping. Exclude accepted curtain/fringe; originalrootY>2mm,currentrootY>5mm,donormidY>25mm,currentrootZ>1.730m;pilotcurrentrootX<-5mm. Explicit Catmull-Rom dense sampling,root delta decays along source parameter; cut first crossing root-field1.673m+-14mm plane then65 arc samples. Current true roots/radii/topology/materials retained. Not exact original tessellation,not continuous collision proof. After sampled contact correction, source/candidate position blend by rootY:25% at5mm smoothly rising to100% at50mm. This blend does not prove collision clearance.",
+        "status": "Actual recovered-flow study awaiting visual review"
+      },
+      "model_sha256": "27de6cfe5533aa4cd69d3e5d0fdb0d266755bb73356a41efdfef48fe701f5e2f",
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "4f1f17739a1618fc8c13e2dd37ee0fe47f61bdea860ad23651c04c6d1f7fb4b3",
+        "04_Back.png": "3899d5d219ac5ecce06e8fa43254e1c9f43e2a03c665a6218b2e9a701155b35f",
+        "05_OppositeSide.png": "cdb2902471afb37a4845cb07ba2126107418ba2b6452f91d2c986f0791637859"
+      },
+      "art_judgment": "Adopt incomplete WIP: boundary blend reduces canopy, long posterior flow retained. Three drafts, front/profile, equal25W pair and512/OIDN high inspected. Broad fuzzy support, ordered side flow and small arcs remain.",
+      "goal_complete": false
+    }
+  ],
+  "reviewed_presentations": [
+    {
+      "directory": "nativebackids189",
+      "manifest": {
+        "source": "nativerootdepth188",
+        "source_sha256": "c9314807c6945202c9dca7fb99ffe506a99295ba7bf2cfbd7c1e3b0ab60a77ce",
+        "source_unchanged": true,
+        "legend": [
+          {
+            "region": "actual_fringe_region",
+            "fibers": 5314,
+            "color": [
+              1,
+              0.03,
+              0.06,
+              1
+            ],
+            "root_mean_m": [
+              0.011607574298977852,
+              -0.10033250600099564,
+              1.8524249792099
+            ]
+          },
+          {
+            "region": "actual_descending133_region",
+            "fibers": 24634,
+            "color": [
+              0.03,
+              0.3,
+              1,
+              1
+            ],
+            "root_mean_m": [
+              0.018816374242305756,
+              -0.0363922044634819,
+              1.8452180624008179
+            ]
+          },
+          {
+            "region": "other_primary",
+            "fibers": 16095,
+            "color": [
+              0.03,
+              1,
+              0.06,
+              1
+            ],
+            "root_mean_m": [
+              -0.0071105374954640865,
+              0.018499214202165604,
+              1.7702031135559082
+            ]
+          },
+          {
+            "region": "Abhay flow derivative • real scalp sampled short support",
+            "fibers": 14000,
+            "color": [
+              0,
+              1,
+              1,
+              1
+            ],
+            "role": "support native curves"
+          },
+          {
+            "region": "Bystedt derivative • short scalp support",
+            "fibers": 23657,
+            "color": [
+              0.7,
+              0.05,
+              1,
+              1
+            ],
+            "role": "support native curves"
+          },
+          {
+            "region": "Original posterior coverage • surface-grown short fibers",
+            "fibers": 36000,
+            "color": [
+              1,
+              0.03,
+              0.65,
+              1
+            ],
+            "role": "support native curves"
+          }
+        ],
+        "images_sha256": {
+          "04_Back.png": "995265f517911cf6cec381c065305de61277ba1467846ed780fcb37b4a2d70ea",
+          "03_Side.png": "e9f112a4fbace558af5889522ee6ee861fce8aa6c65ee8276b5174205a23fac8"
+        },
+        "loft_states": false,
+        "fan_states": false,
+        "posterior_states": false,
+        "free_states": false,
+        "fine_states": true,
+        "support_ids": true,
+        "scope": "Actual saved region emission IDs; all3 original native support objects included with separate IDs. No source save or final-appearance acceptance."
+      },
+      "images_sha256": {
+        "03_Side.png": "e9f112a4fbace558af5889522ee6ee861fce8aa6c65ee8276b5174205a23fac8",
+        "04_Back.png": "995265f517911cf6cec381c065305de61277ba1467846ed780fcb37b4a2d70ea"
+      },
+      "all_images_actually_inspected": true,
+      "goal_complete": false
+    },
+    {
+      "directory": "nativebackpair190",
+      "manifest": {
+        "records": [
+          {
+            "model": "nativerootdepth188",
+            "source_sha256": "c9314807c6945202c9dca7fb99ffe506a99295ba7bf2cfbd7c1e3b0ab60a77ce",
+            "source_unchanged": true,
+            "image": "source_04_Back.png",
+            "image_sha256": "f89a091d14da0c5d6aa927680ef75909353e4ef08a08bad8638762373c8a54f6"
+          },
+          {
+            "model": "nativebackclumppilot190",
+            "source_sha256": "40ef26c82f87ccdc3826155fa7417456a93f69fc39595f526788d47646a87fab",
+            "source_unchanged": true,
+            "image": "candidate_04_Back.png",
+            "image_sha256": "952a46a4058115f0bc76a8ffd68b3e359bc10bfb75d08bc528417f5741627d0c"
+          }
+        ],
+        "original_geometry_materials_lights_retained": true,
+        "added_temporary_key": {
+          "energy_w": 25.0,
+          "disk_size_m": 0.45,
+          "color": [
+            1.0,
+            0.93,
+            0.9
+          ],
+          "location_m": [
+            -0.4,
+            0.6,
+            2.15
+          ],
+          "target_m": [
+            0.0,
+            0.03,
+            1.8
+          ]
+        },
+        "samples": 256,
+        "denoising": "OpenImageDenoise",
+        "resolution": [
+          1200,
+          1400
+        ],
+        "scope": "Equal temporary additional rear key on both source/candidate actual Blender geometry. No source saves, image substitution or lighting-only aesthetic completion claim.",
+        "status": "Actual pair pending visual review"
+      },
+      "images_sha256": {
+        "candidate_04_Back.png": "952a46a4058115f0bc76a8ffd68b3e359bc10bfb75d08bc528417f5741627d0c",
+        "source_04_Back.png": "f89a091d14da0c5d6aa927680ef75909353e4ef08a08bad8638762373c8a54f6"
+      },
+      "all_images_actually_inspected": true,
+      "goal_complete": false
+    },
+    {
+      "directory": "nativebackpair194",
+      "manifest": {
+        "records": [
+          {
+            "model": "nativerootdepth188",
+            "source_sha256": "c9314807c6945202c9dca7fb99ffe506a99295ba7bf2cfbd7c1e3b0ab60a77ce",
+            "source_unchanged": true,
+            "image": "source_04_Back.png",
+            "image_sha256": "f89a091d14da0c5d6aa927680ef75909353e4ef08a08bad8638762373c8a54f6"
+          },
+          {
+            "model": "nativeblendedback194",
+            "source_sha256": "27de6cfe5533aa4cd69d3e5d0fdb0d266755bb73356a41efdfef48fe701f5e2f",
+            "source_unchanged": true,
+            "image": "candidate_04_Back.png",
+            "image_sha256": "31ef0d649819199b9fc8114e11912f10f7245b9963627bae396afa6433baf16f"
+          }
+        ],
+        "reused_source_from": "nativebackpair190",
+        "original_geometry_materials_lights_retained": true,
+        "added_temporary_key": {
+          "energy_w": 25.0,
+          "disk_size_m": 0.45,
+          "color": [
+            1.0,
+            0.93,
+            0.9
+          ],
+          "location_m": [
+            -0.4,
+            0.6,
+            2.15
+          ],
+          "target_m": [
+            0.0,
+            0.03,
+            1.8
+          ]
+        },
+        "samples": 256,
+        "denoising": "OpenImageDenoise",
+        "resolution": [
+          1200,
+          1400
+        ],
+        "scope": "Equal temporary additional rear key on both source/candidate actual Blender geometry. No source saves, image substitution or lighting-only aesthetic completion claim.",
+        "status": "Actual pair pending visual review"
+      },
+      "images_sha256": {
+        "candidate_04_Back.png": "31ef0d649819199b9fc8114e11912f10f7245b9963627bae396afa6433baf16f",
+        "source_04_Back.png": "f89a091d14da0c5d6aa927680ef75909353e4ef08a08bad8638762373c8a54f6"
+      },
+      "all_images_actually_inspected": true,
+      "goal_complete": false
+    },
+    {
+      "directory": "nativeprofile194",
+      "manifest": {
+        "version": "nativeprofile194",
+        "source": "nativeblendedback194",
+        "source_sha256": "27de6cfe5533aa4cd69d3e5d0fdb0d266755bb73356a41efdfef48fe701f5e2f",
+        "source_unchanged": true,
+        "method": "Existing neutral camera 03_Side; no pixel flip or geometry edit",
+        "samples": 192,
+        "resolution": [
+          1200,
+          1400
+        ],
+        "denoising": false,
+        "image_sha256": "1a1c711108ebacee9d81550f8f72cba9cbc712b43a617594daf12b779de117d1",
+        "images_sha256": {
+          "03_Side.png": "1a1c711108ebacee9d81550f8f72cba9cbc712b43a617594daf12b779de117d1"
+        },
+        "status": "Unreviewed actual neutral/opposite profile diagnostic, not artistic approval",
+        "single_camera": "03_Side",
+        "opposite_image_reused_from": null
+      },
+      "images_sha256": {
+        "03_Side.png": "1a1c711108ebacee9d81550f8f72cba9cbc712b43a617594daf12b779de117d1"
+      },
+      "all_images_actually_inspected": true,
+      "goal_complete": false
+    },
+    {
+      "directory": "nativefront194",
+      "manifest": {
+        "version": "nativefront194",
+        "source": "nativeblendedback194",
+        "source_sha256": "27de6cfe5533aa4cd69d3e5d0fdb0d266755bb73356a41efdfef48fe701f5e2f",
+        "source_unchanged": true,
+        "method": "Existing neutral camera 01_Front; no pixel flip or geometry edit",
+        "samples": 192,
+        "resolution": [
+          1200,
+          1400
+        ],
+        "denoising": false,
+        "image_sha256": "8dc7c2222b6743c2e9122e1614662abb636f7f11f76738de994c9b6decc89f5e",
+        "images_sha256": {
+          "01_Front.png": "8dc7c2222b6743c2e9122e1614662abb636f7f11f76738de994c9b6decc89f5e"
+        },
+        "status": "Unreviewed actual neutral/opposite profile diagnostic, not artistic approval",
+        "single_camera": "01_Front",
+        "opposite_image_reused_from": null
+      },
+      "images_sha256": {
+        "01_Front.png": "8dc7c2222b6743c2e9122e1614662abb636f7f11f76738de994c9b6decc89f5e"
+      },
+      "all_images_actually_inspected": true,
+      "goal_complete": false
+    },
+    {
+      "directory": "nativepresentation194",
+      "manifest": {
+        "source": "nativeblendedback194",
+        "source_sha256": "27de6cfe5533aa4cd69d3e5d0fdb0d266755bb73356a41efdfef48fe701f5e2f",
+        "source_unchanged": true,
+        "camera": "02_ThreeQuarter",
+        "geometry_lighting_unchanged": true,
+        "resolution": [
+          1920,
+          2240
+        ],
+        "samples": 512,
+        "denoising": "OpenImageDenoise",
+        "image_sha256": "0071cd1fb25cf090526e87490212b40353c841716ab2e998a5a885967cedac93",
+        "status": "Actual render pending art review; no generative image replacement"
+      },
+      "images_sha256": {
+        "02_ThreeQuarter.png": "0071cd1fb25cf090526e87490212b40353c841716ab2e998a5a885967cedac93"
+      },
+      "all_images_actually_inspected": true,
+      "goal_complete": false
+    }
+  ],
+  "continuation": "nativeblendedback194",
+  "goal_complete": false,
+  "scope": "Real Blender geometry. Explicit donor Catmull-Rom sampling is not exact original tessellation. Audit displacement compares resampled point indices, not fixed fiber-point travel. Discrete body guards precede boundary blend, not continuous collision proof. Licensed geometry and indices local."
+}

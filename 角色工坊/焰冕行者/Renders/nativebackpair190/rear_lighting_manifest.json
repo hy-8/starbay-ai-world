@@ -1,0 +1,46 @@
+{
+  "records": [
+    {
+      "model": "nativerootdepth188",
+      "source_sha256": "c9314807c6945202c9dca7fb99ffe506a99295ba7bf2cfbd7c1e3b0ab60a77ce",
+      "source_unchanged": true,
+      "image": "source_04_Back.png",
+      "image_sha256": "f89a091d14da0c5d6aa927680ef75909353e4ef08a08bad8638762373c8a54f6"
+    },
+    {
+      "model": "nativebackclumppilot190",
+      "source_sha256": "40ef26c82f87ccdc3826155fa7417456a93f69fc39595f526788d47646a87fab",
+      "source_unchanged": true,
+      "image": "candidate_04_Back.png",
+      "image_sha256": "952a46a4058115f0bc76a8ffd68b3e359bc10bfb75d08bc528417f5741627d0c"
+    }
+  ],
+  "original_geometry_materials_lights_retained": true,
+  "added_temporary_key": {
+    "energy_w": 25.0,
+    "disk_size_m": 0.45,
+    "color": [
+      1.0,
+      0.93,
+      0.9
+    ],
+    "location_m": [
+      -0.4,
+      0.6,
+      2.15
+    ],
+    "target_m": [
+      0.0,
+      0.03,
+      1.8
+    ]
+  },
+  "samples": 256,
+  "denoising": "OpenImageDenoise",
+  "resolution": [
+    1200,
+    1400
+  ],
+  "scope": "Equal temporary additional rear key on both source/candidate actual Blender geometry. No source saves, image substitution or lighting-only aesthetic completion claim.",
+  "status": "Actual pair pending visual review"
+}

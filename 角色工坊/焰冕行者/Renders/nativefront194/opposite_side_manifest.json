@@ -1,0 +1,20 @@
+{
+  "version": "nativefront194",
+  "source": "nativeblendedback194",
+  "source_sha256": "27de6cfe5533aa4cd69d3e5d0fdb0d266755bb73356a41efdfef48fe701f5e2f",
+  "source_unchanged": true,
+  "method": "Existing neutral camera 01_Front; no pixel flip or geometry edit",
+  "samples": 192,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "denoising": false,
+  "image_sha256": "8dc7c2222b6743c2e9122e1614662abb636f7f11f76738de994c9b6decc89f5e",
+  "images_sha256": {
+    "01_Front.png": "8dc7c2222b6743c2e9122e1614662abb636f7f11f76738de994c9b6decc89f5e"
+  },
+  "status": "Unreviewed actual neutral/opposite profile diagnostic, not artistic approval",
+  "single_camera": "01_Front",
+  "opposite_image_reused_from": null
+}
