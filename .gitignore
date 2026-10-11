@@ -3087,3 +3087,12 @@
 !/角色工坊/焰冕行者/Renders/nativedetail315/denoised_0001.png
 !/角色工坊/焰冕行者/Renders/nativesurfacegauge316/04_Back.png
 !/角色工坊/焰冕行者/Renders/nativeprogressivesweep314/04_Back.png
+
+# 2026-10-11 guide shape study47; licensed geometry remains local
+!/角色工坊/焰冕行者/Renders/nativeguidearc317/
+!/角色工坊/焰冕行者/Renders/nativeroundvolume321/
+!/角色工坊/焰冕行者/Tools/rebuild_rear_guide_arc.py
+!/角色工坊/焰冕行者/Tools/section_raw_rear_flow.py
+!/角色工坊/焰冕行者/Exports/native_guide_shape_studies47.json
+!/角色工坊/焰冕行者/Renders/nativeguidearc317/04_Back.png
+!/角色工坊/焰冕行者/Renders/nativeroundvolume321/05_OppositeSide.png

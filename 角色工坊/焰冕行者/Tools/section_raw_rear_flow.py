@@ -8,7 +8,10 @@ ROOT=Path(__file__).resolve().parents[1]
 a=sys.argv[sys.argv.index('--')+1:];version,base=a[:2];pilot='--pilot' in a
 fine='--fine' in a
 micro='--micro' in a;archive='--archive' in a
+round_volume='--round-volume' in a
+assert not round_volume or not (micro or fine)
 save='--save-archive' in a
+assert not (round_volume and save),'Volume study must be visually reviewed before saving support is added'
 save_only='--save-only' in a
 assert not save_only or save
 modeldir=Path(r'D:\星湾世界_模型归档\starbay-ai-world\角色工坊\焰冕行者\Exports')/version
@@ -46,6 +49,13 @@ for k in range(K):
  tangent=np.gradient(center,axis=0);tangent/=np.maximum(np.linalg.norm(tangent,axis=1)[:,None],1e-10)
  normal=center-np.array([0,-.035,1.776]);normal-=tangent*np.sum(normal*tangent,axis=1)[:,None];normal/=np.maximum(np.linalg.norm(normal,axis=1)[:,None],1e-10)
  across=np.cross(tangent,normal)
+ if round_volume:
+  offsets_group=sampled[rows]-center
+  width_std=np.std(np.sum(offsets_group*across[None],axis=2),axis=0)
+  depth_std=np.std(np.sum(offsets_group*normal[None],axis=2),axis=0)
+  # Thicken only demonstrably flat guide families; retain the measured width.
+  inflation=np.clip(.60*width_std/np.maximum(depth_std,.0003),1.,4.)
+  for _ in range(3):inflation=np.convolve(np.pad(inflation,(2,2),mode='edge'),np.ones(5)/5,mode='valid')
  for row in rows:
   i=ids[row];path=original[off[i]:off[i+1]].astype(float);arc=arcs[row];t=arc/max(arc[-1],1e-8)
   c=np.column_stack([np.interp(t,ts,center[:,j]) for j in range(3)]);ac=np.column_stack([np.interp(t,ts,across[:,j]) for j in range(3)]);ac/=np.maximum(np.linalg.norm(ac,axis=1)[:,None],1e-10)
@@ -53,7 +63,15 @@ for k in range(K):
   cap=.0045 if fine else .0024;strength=.78 if fine else .48
   if micro:cap=.002;strength=.85;envelope=smooth((arc-.008)/.017)*(1-smooth((t-.88)/.10))
   shift=cap*np.tanh(width*strength/cap)*envelope;vals=path-ac*shift[:,None];vals[0]=path[0];vals[-1]=path[-1]
-  if micro:
+  if round_volume:
+   no=np.column_stack([np.interp(t,ts,normal[:,j]) for j in range(3)]);no/=np.maximum(np.linalg.norm(no,axis=1)[:,None],1e-10)
+   depth=np.sum((path-c)*no,axis=1)
+   amp=np.interp(t,ts,inflation)-1.
+   envelope=smooth((arc-.008)/.025)*(1-smooth((t-.80)/.18))
+   delta=no*(depth*amp*envelope)[:,None]
+   delta*=min(1.,.006/max(np.linalg.norm(delta,axis=1).max(),1e-10));delta[0]=0;delta[-1]=0
+   vals=path+delta
+  if micro or round_volume:
    delta=vals-path;samples=np.vstack([path,(path[:-1]+path[1:])*.5]);steps=np.vstack([delta,(delta[:-1]+delta[1:])*.5]);moving=np.linalg.norm(steps,axis=1)>1e-7;samples=samples[moving];steps=steps[moving]
    def gap(v):
     h,n,_,_=bv.find_nearest(Vector(v));return float((Vector(v)-h).dot(n))
@@ -72,6 +90,7 @@ for k in range(K):
      vals[j]=path[j];reverted+=1
   p[off[i]:off[i+1]]=vals.astype(np.float32)
  groups.append(dict(group=k,fibers=len(rows)))
+ if round_volume:groups[-1].update(width_std_m_quantiles=np.quantile(width_std,[0,.5,1]).tolist(),depth_std_m_quantiles=np.quantile(depth_std,[0,.5,1]).tolist(),inflation_quantiles=np.quantile(inflation,[0,.5,1]).tolist())
 cu.attributes['position'].data.foreach_set('vector',p.ravel());cu.update_tag()
 modelhash=None
 if save:
@@ -93,5 +112,6 @@ print('RAW_REAR_SECTIONS',version,len(ids),flush=True)
 manifest=json.loads((out/'rear_sections_manifest.json').read_text(encoding='utf-8'))
 manifest.update(model_saved=save,model_sha256=modelhash,archive_model_path=str(modeldir/'Ember_Regent.blend') if save else None,fine_sections=fine,section_count=K,contraction_fraction=.78 if fine else .48,displacement_limit_m=.0045 if fine else .0024,root_retained_arc_m=.008,terminal_retained_fraction=.02 if fine else .05,method='Mixed raw rear curves grouped by whole-path features, parameters recorded separately. Transverse contraction without outward loft.32 arc samples used only for clustering/frames,original control counts and all radii retained. First8mm retained,17mm smooth root onset;terminal fade. Revert any moved control worsening original signed body gap or crossing0.3mm positive gap. Discrete guard only;not continuous collision or art proof.')
 if micro:manifest.update(micro_sections=True,contraction_fraction=.85,displacement_limit_m=.002,terminal_retained_fraction=.02,reverted_curves=reverted,method='160pilot/400full microsections on already lifted rear flow;features at10/17/24 of32 arc samples.85percent transverse contraction bounded2mm,root8mm retained with17mm onset,fade88-98percent arc,tip exact. Original mixed controls/radii retained. Whole-curve scale backtracking checks moving controls/midpoints against min(original signed gap,0.3mm) minus1micron. No added loft,no continuous collision or art approval.')
+if round_volume:manifest.update(round_volume=True,contraction_fraction=None,displacement_limit_m=.006,terminal_retained_fraction=.02,reverted_curves=reverted,method='Deterministic18pilot/32full path families. Measure transverse width and radial depth standard deviation at32 arc samples. Inflate depth toward0.60*width,scale1..4 smoothed3passes of5samples. No transverse contraction;preserve original guide mean and width in the unconstrained target. Root8mm/25mm onset,fade80-98percent,tip exact. Whole-fiber6mm displacement cap then control/midpoint body-gap backtracking. Original paths/counts/radii except selected position deltas retained;not continuous collision or art acceptance.')
 (out/'rear_sections_manifest.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8')
 if save:(modeldir/'rear_sections_manifest.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8')

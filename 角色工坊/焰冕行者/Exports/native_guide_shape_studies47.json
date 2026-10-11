@@ -1,0 +1,530 @@
+{
+  "continuation": "nativegentlefan309",
+  "goal_complete": false,
+  "latest_preference": "Keep current length and soft side part; dry fluffy fine natural strands.",
+  "studies": [
+    {
+      "version": "nativeguidearc317",
+      "manifest": {
+        "source": "nativegentlefan309",
+        "source_sha256": "f2b86f324fbbcfe1f41c32aa9d7953899150c80b9644b24df9cab5f84b1225be",
+        "selection": "nativeoutersurface311",
+        "source_unchanged": true,
+        "selected_fibers": 5787,
+        "processed_fibers": 5777,
+        "model_saved": false,
+        "roots_and_tips_exact": true,
+        "root8mm_exact": true,
+        "counts_radii_unchanged": true,
+        "max_displacement_m": 0.0240000169724226,
+        "clearance_scale_quantiles": [
+          0.0,
+          1.0,
+          1.0
+        ],
+        "path_length_change_m_quantiles": [
+          -0.026098288144224407,
+          -0.0031268413868670852,
+          1.7935598284335441e-09
+        ],
+        "images_sha256": {
+          "04_Back.png": "fa9224e6ce1171972c48da04a42e8bf45f30627570826270ba2db700fb859d83",
+          "05_OppositeSide.png": "ae8bc01751d346e452da100abbcfc32aafa51e7f4651beac92fdf52056de8470",
+          "02_ThreeQuarter.png": "bb1991fdc44be58668023046ea86029931543ebbdad9a5f6554c5b9a0f295e14"
+        },
+        "method": "Per original selected posterior fiber: fit quadratic Bezier single handle by least squares after8mm root prefix,25mm onset. Keep original tip position; whole-fiber24mm displacement cap and body clearance backtracking at controls/midpoints. No scalp projection, pruning, noise, shader edits or full-model save. Arc length can change; original hairstyle endpoint lengths are retained. Not continuous collision or art acceptance."
+      },
+      "actual_images_inspected": true,
+      "decision": "Not adopted: central S-bends reduced but replaced by broad straight curtain; overall dry fluffy appearance not achieved."
+    },
+    {
+      "version": "nativeguidewisps318",
+      "manifest": {
+        "source": "nativegentlefan309",
+        "source_sha256": "f2b86f324fbbcfe1f41c32aa9d7953899150c80b9644b24df9cab5f84b1225be",
+        "selection": "nativeoutersurface311",
+        "source_unchanged": true,
+        "selected_fibers": 5787,
+        "processed_fibers": 5777,
+        "model_saved": false,
+        "roots_and_tips_exact": true,
+        "root8mm_exact": true,
+        "counts_radii_unchanged": false,
+        "max_displacement_m": 0.024000002071261406,
+        "clearance_scale_quantiles": [
+          0.0,
+          1.0,
+          1.0
+        ],
+        "path_length_change_m_quantiles": [
+          -0.026098288144224407,
+          -0.0027549386182396385,
+          0.004633420302803851
+        ],
+        "images_sha256": {
+          "04_Back.png": "faa96413c1931dbaa1fb2c5e40fa22afd9d8bcb0bac9a643063847d58ecf7755",
+          "05_OppositeSide.png": "5bcb4cdc209a78136439061d03902cfaf9ec465e91094f3534cca9ae39a9ce30",
+          "02_ThreeQuarter.png": "236845245d5245436555d55bf8dab5c09da51a5efbe339e331fadce3e2f415e0"
+        },
+        "method": "Per original selected posterior fiber: fit quadratic Bezier single handle by least squares after8mm root prefix,25mm onset. Keep original tip position; whole-fiber24mm displacement cap and body clearance backtracking at controls/midpoints. No scalp projection, pruning, noise, shader edits or full-model save. Arc length can change; original hairstyle endpoint lengths are retained. Not continuous collision or art acceptance.",
+        "surface_wisps": true,
+        "wisp_fibers": 794,
+        "counts_unchanged": true,
+        "wisp_rule": "Deterministic hash14percent of selected fibers. Add6mm outward radial arch with25mm onset after8mm,zero at tip;before whole-curve cap/body guard. Cap selected wisp radii35microns with20mm ramp after8mm;all other radii unchanged."
+      },
+      "actual_images_inspected": true,
+      "decision": "Not adopted:794 sparse fine radially lifted fibers had insufficient visible effect on broad masses."
+    },
+    {
+      "version": "nativecrosswisps319",
+      "manifest": {
+        "source": "nativegentlefan309",
+        "source_sha256": "f2b86f324fbbcfe1f41c32aa9d7953899150c80b9644b24df9cab5f84b1225be",
+        "selection": "nativeoutersurface311",
+        "source_unchanged": true,
+        "selected_fibers": 5787,
+        "processed_fibers": 5777,
+        "model_saved": false,
+        "roots_and_tips_exact": true,
+        "root8mm_exact": true,
+        "counts_radii_unchanged": false,
+        "max_displacement_m": 0.024000002071261406,
+        "clearance_scale_quantiles": [
+          0.0,
+          1.0,
+          1.0
+        ],
+        "path_length_change_m_quantiles": [
+          -0.026098288144224407,
+          -0.0028451308937497144,
+          0.009487970396721071
+        ],
+        "images_sha256": {
+          "04_Back.png": "ea943dc1a0dcbfea3a78c994f82cf8cb00b51c8cb0ecce570c0a82cb9c1893ee",
+          "05_OppositeSide.png": "7e911e83577cd2f5ec7bd15b8283d094305e58cd5975e825aeeaffdbce262bf2",
+          "02_ThreeQuarter.png": "b728d1f832d17daf1fe458d45a9f562c0bc16f068d1f1185b7ea506a10d53165"
+        },
+        "method": "Per original selected posterior fiber: fit quadratic Bezier single handle by least squares after8mm root prefix,25mm onset. Keep original tip position; whole-fiber24mm displacement cap and body clearance backtracking at controls/midpoints. No scalp projection, pruning, noise, shader edits or full-model save. Arc length can change; original hairstyle endpoint lengths are retained. Not continuous collision or art acceptance.",
+        "surface_wisps": true,
+        "wisp_fibers": 794,
+        "counts_unchanged": true,
+        "wisp_rule": "Same sparse14percent and35micron radii. Instead of6mm radial lift,use3mm radial plus deterministic signed0..8mm transverse arch;25mm onset after8mm,zero at tips,before whole-fiber24mm cap/body guard. All unselected fibers unchanged.",
+        "cross_wisps": true
+      },
+      "actual_images_inspected": true,
+      "decision": "Not adopted: sparse transverse wisps still did not sufficiently change clumped appearance."
+    },
+    {
+      "version": "nativefullguide320",
+      "manifest": {
+        "source": "nativegentlefan309",
+        "source_sha256": "f2b86f324fbbcfe1f41c32aa9d7953899150c80b9644b24df9cab5f84b1225be",
+        "selection": "nativeoutersurface311",
+        "source_unchanged": true,
+        "selected_fibers": 20575,
+        "processed_fibers": 17942,
+        "model_saved": false,
+        "roots_and_tips_exact": true,
+        "root8mm_exact": true,
+        "counts_radii_unchanged": true,
+        "max_displacement_m": 0.0240000169724226,
+        "clearance_scale_quantiles": [
+          0.0,
+          1.0,
+          1.0
+        ],
+        "path_length_change_m_quantiles": [
+          -0.027479975703349147,
+          -0.0019622418474014858,
+          2.636854737726735e-05
+        ],
+        "images_sha256": {
+          "04_Back.png": "150f2d5d86f7f143f2eb9e3df356078046cb9877a955ffcba989dfff04651e52",
+          "05_OppositeSide.png": "80b00741c4c67b10f503133dc7e58b5d397cddd6ba707b7430f82159b1524179",
+          "02_ThreeQuarter.png": "95f864e9c5cc143cb7694c7025dd133e772b40b50128cc8d4bb2dbd57812e434"
+        },
+        "method": "Per original selected posterior fiber: fit quadratic Bezier single handle by least squares after8mm root prefix,25mm onset. Keep original tip position; whole-fiber24mm displacement cap and body clearance backtracking at controls/midpoints. No scalp projection, pruning, noise, shader edits or full-model save. Arc length can change; original hairstyle endpoint lengths are retained. Not continuous collision or art acceptance.",
+        "all_rear": true,
+        "selection_scope": "All restored raw fibers with tipY>15mm,tipZ<1.800m,rootY>-30mm excluding accepted fringe/accent; projected region not applied."
+      },
+      "actual_images_inspected": true,
+      "decision": "Not adopted: full rear quadratic reconstruction reduced bends but emphasized straight curtain; not a satisfactory volume design."
+    },
+    {
+      "version": "nativeroundvolume321",
+      "manifest": {
+        "source": "nativegentlefan309",
+        "source_sha256": "f2b86f324fbbcfe1f41c32aa9d7953899150c80b9644b24df9cab5f84b1225be",
+        "source_unchanged": true,
+        "model_saved": false,
+        "pilot": true,
+        "selected_fibers": 7333,
+        "groups": [
+          {
+            "group": 0,
+            "fibers": 442,
+            "width_std_m_quantiles": [
+              0.008180736649599321,
+              0.009422698533786258,
+              0.01013190863575597
+            ],
+            "depth_std_m_quantiles": [
+              0.0020359991027909976,
+              0.0032435187094030067,
+              0.005373117863807081
+            ],
+            "inflation_quantiles": [
+              1.0077130028693186,
+              1.7245081108397247,
+              2.815364295238971
+            ]
+          },
+          {
+            "group": 1,
+            "fibers": 63,
+            "width_std_m_quantiles": [
+              0.007869173636527536,
+              0.01184246489128555,
+              0.014256163495881415
+            ],
+            "depth_std_m_quantiles": [
+              0.0019859764309677307,
+              0.004494365159673743,
+              0.009944315340699814
+            ],
+            "inflation_quantiles": [
+              1.014242778140934,
+              1.6503643154786911,
+              1.9472922656110656
+            ]
+          },
+          {
+            "group": 2,
+            "fibers": 180,
+            "width_std_m_quantiles": [
+              0.0031511149240463898,
+              0.006438189869079054,
+              0.014897612637733499
+            ],
+            "depth_std_m_quantiles": [
+              0.0016515995430103785,
+              0.002072559597478961,
+              0.0034249654480351397
+            ],
+            "inflation_quantiles": [
+              1.1277871301934348,
+              1.589164984407475,
+              3.998983592942623
+            ]
+          },
+          {
+            "group": 3,
+            "fibers": 467,
+            "width_std_m_quantiles": [
+              0.006122406390993336,
+              0.006842414524551208,
+              0.009467452711713892
+            ],
+            "depth_std_m_quantiles": [
+              0.0032839126765694415,
+              0.005722359582312769,
+              0.006224696032539517
+            ],
+            "inflation_quantiles": [
+              1.0,
+              1.0029518653703238,
+              1.2805528920856828
+            ]
+          },
+          {
+            "group": 4,
+            "fibers": 319,
+            "width_std_m_quantiles": [
+              0.00599838339528576,
+              0.006513644842557819,
+              0.007812840149112016
+            ],
+            "depth_std_m_quantiles": [
+              0.003801146471634789,
+              0.004689095992288747,
+              0.005539728586399986
+            ],
+            "inflation_quantiles": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "group": 5,
+            "fibers": 412,
+            "width_std_m_quantiles": [
+              0.0061612050403379946,
+              0.007701660126866654,
+              0.009032143098673243
+            ],
+            "depth_std_m_quantiles": [
+              0.003144084431290574,
+              0.003637995789665656,
+              0.004584814812220608
+            ],
+            "inflation_quantiles": [
+              1.0186569190981778,
+              1.273586521571049,
+              1.41065680944883
+            ]
+          },
+          {
+            "group": 6,
+            "fibers": 510,
+            "width_std_m_quantiles": [
+              0.007161614268517408,
+              0.0080499605135258,
+              0.009551051415895587
+            ],
+            "depth_std_m_quantiles": [
+              0.002715648748355614,
+              0.003983960088897894,
+              0.00748007231535005
+            ],
+            "inflation_quantiles": [
+              1.0,
+              1.2143502478626718,
+              1.5751628406965352
+            ]
+          },
+          {
+            "group": 7,
+            "fibers": 406,
+            "width_std_m_quantiles": [
+              0.0065140788326349605,
+              0.008460281449881004,
+              0.011199624145518797
+            ],
+            "depth_std_m_quantiles": [
+              0.0013093009356183376,
+              0.005217791122341395,
+              0.010015256510959811
+            ],
+            "inflation_quantiles": [
+              1.0,
+              1.290863113747393,
+              2.5162652084007946
+            ]
+          },
+          {
+            "group": 8,
+            "fibers": 588,
+            "width_std_m_quantiles": [
+              0.00546606477955333,
+              0.00721623874619335,
+              0.008628929538706698
+            ],
+            "depth_std_m_quantiles": [
+              0.0016599561674886115,
+              0.003474039492587885,
+              0.006037458502119316
+            ],
+            "inflation_quantiles": [
+              1.0007653701932597,
+              1.2794347202730556,
+              2.2417517175533477
+            ]
+          },
+          {
+            "group": 9,
+            "fibers": 200,
+            "width_std_m_quantiles": [
+              0.0034621250774382354,
+              0.004979129567307304,
+              0.006974194646717158
+            ],
+            "depth_std_m_quantiles": [
+              0.0013123489055786423,
+              0.002654265131825713,
+              0.005303496753959332
+            ],
+            "inflation_quantiles": [
+              1.0483675261893046,
+              1.2478289004156822,
+              1.5077488394237204
+            ]
+          },
+          {
+            "group": 10,
+            "fibers": 481,
+            "width_std_m_quantiles": [
+              0.007731092224355194,
+              0.008447640524716207,
+              0.0099191383844452
+            ],
+            "depth_std_m_quantiles": [
+              0.0019971013024255857,
+              0.002644608337686116,
+              0.004900555507189806
+            ],
+            "inflation_quantiles": [
+              1.12743311534417,
+              1.9240170831960004,
+              2.7011920716790714
+            ]
+          },
+          {
+            "group": 11,
+            "fibers": 406,
+            "width_std_m_quantiles": [
+              0.004496122433172018,
+              0.007594153838674321,
+              0.008331429883137731
+            ],
+            "depth_std_m_quantiles": [
+              0.0024799148206475687,
+              0.0031789459725239076,
+              0.004500509349611426
+            ],
+            "inflation_quantiles": [
+              1.0384945539590622,
+              1.2500226898490534,
+              1.466003535837717
+            ]
+          },
+          {
+            "group": 12,
+            "fibers": 435,
+            "width_std_m_quantiles": [
+              0.006064371888947874,
+              0.007109357149223868,
+              0.00791018479959199
+            ],
+            "depth_std_m_quantiles": [
+              0.0023166399549497765,
+              0.004550801851800978,
+              0.005203511934016534
+            ],
+            "inflation_quantiles": [
+              1.0,
+              1.0,
+              1.7187413312573385
+            ]
+          },
+          {
+            "group": 13,
+            "fibers": 534,
+            "width_std_m_quantiles": [
+              0.005199536275416007,
+              0.008594872567221983,
+              0.009793602947447428
+            ],
+            "depth_std_m_quantiles": [
+              0.00294673170572537,
+              0.003999511996323401,
+              0.004711566470087076
+            ],
+            "inflation_quantiles": [
+              1.0003755203661688,
+              1.3096799648271809,
+              1.7240497069285647
+            ]
+          },
+          {
+            "group": 14,
+            "fibers": 447,
+            "width_std_m_quantiles": [
+              0.007982764927549822,
+              0.008169078988218358,
+              0.008511068411899032
+            ],
+            "depth_std_m_quantiles": [
+              0.00135647730561972,
+              0.001915822257489875,
+              0.007182809399195762
+            ],
+            "inflation_quantiles": [
+              1.0000098142412606,
+              2.5224835893279893,
+              3.476293432956745
+            ]
+          },
+          {
+            "group": 15,
+            "fibers": 486,
+            "width_std_m_quantiles": [
+              0.008044933092095388,
+              0.009245525962354142,
+              0.009983902086060101
+            ],
+            "depth_std_m_quantiles": [
+              0.002485569082416074,
+              0.0029850062606374484,
+              0.004892617367462116
+            ],
+            "inflation_quantiles": [
+              1.2756793960156068,
+              1.8526710747334632,
+              2.099178620864987
+            ]
+          },
+          {
+            "group": 16,
+            "fibers": 550,
+            "width_std_m_quantiles": [
+              0.006736351295580525,
+              0.008965880449492687,
+              0.01115086790216401
+            ],
+            "depth_std_m_quantiles": [
+              0.0021783331429199733,
+              0.0037552068400691745,
+              0.0059850628739297985
+            ],
+            "inflation_quantiles": [
+              1.0030563602953697,
+              1.5410758940994802,
+              2.498066087580256
+            ]
+          },
+          {
+            "group": 17,
+            "fibers": 407,
+            "width_std_m_quantiles": [
+              0.0058722247512194336,
+              0.007293020817680082,
+              0.008149883711384203
+            ],
+            "depth_std_m_quantiles": [
+              0.003771277574117179,
+              0.004759047208574889,
+              0.00570252643722154
+            ],
+            "inflation_quantiles": [
+              1.0,
+              1.0119204694389823,
+              1.1730717573623353
+            ]
+          }
+        ],
+        "max_same_index_displacement_m": 0.006000033114105463,
+        "reverted_points": 134,
+        "images_sha256": {
+          "04_Back.png": "d5f3b6d9c42f26b17dab7747184574bc4cf932536441226c6d3504a0369d9cef",
+          "05_OppositeSide.png": "7da2644302cb05ee7e1a79a946c999719888cd3f8f8e24a1e27572aa13526bb5"
+        },
+        "method": "Deterministic18pilot/32full path families. Measure transverse width and radial depth standard deviation at32 arc samples. Inflate depth toward0.60*width,scale1..4 smoothed3passes of5samples. No transverse contraction;preserve original guide mean and width in the unconstrained target. Root8mm/25mm onset,fade80-98percent,tip exact. Whole-fiber6mm displacement cap then control/midpoint body-gap backtracking. Original paths/counts/radii except selected position deltas retained;not continuous collision or art acceptance.",
+        "model_sha256": null,
+        "archive_model_path": null,
+        "fine_sections": false,
+        "section_count": 18,
+        "contraction_fraction": null,
+        "displacement_limit_m": 0.006,
+        "root_retained_arc_m": 0.008,
+        "terminal_retained_fraction": 0.02,
+        "round_volume": true,
+        "reverted_curves": 134
+      },
+      "actual_images_inspected": true,
+      "decision": "Not adopted:7333 negativeX rear fibers in18 measured path families; expanding thin depth added posterior bulge in side view without satisfactory overall breakup."
+    }
+  ],
+  "new_complete_models": 0,
+  "next_action": "Redesign a few dominant posterior guide groups and their coverage relationships; do not repeat global quadratic smoothing, sparse noise, or whole-family depth inflation as if they were sufficient."
+}
