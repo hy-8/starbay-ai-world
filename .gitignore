@@ -3055,3 +3055,20 @@
 # 2026-10-11 storage audit and preview-only studies44
 !/角色工坊/焰冕行者/Exports/storage_cleanup_20261011.json
 !/角色工坊/焰冕行者/Exports/native_storage_studies44.json
+
+# 2026-10-11 exact visible fan study45; geometry and per-fiber data remain local
+!/角色工坊/焰冕行者/Renders/nativegentlefront309/
+!/角色工坊/焰冕行者/Renders/nativegentlehigh309/
+!/角色工坊/焰冕行者/Renders/nativevisiblefan307/
+!/角色工坊/焰冕行者/Tools/smooth_raw_rear_bends.py
+!/角色工坊/焰冕行者/Tools/feather_raw_rear_sections.py
+!/角色工坊/焰冕行者/Tools/render_native_edit_ids.py
+!/角色工坊/焰冕行者/Tools/validate_raw_control_flow.py
+!/角色工坊/焰冕行者/Tools/render_native_hair_presentation.py
+!/角色工坊/焰冕行者/Exports/native_visible_fan_studies45.json
+!/角色工坊/焰冕行者/Exports/native_gentlefan309_pair45.json
+!/角色工坊/焰冕行者/Renders/nativegentlehigh309/04_Back.png
+!/角色工坊/焰冕行者/Renders/nativegentlehigh309/presentation_manifest.json
+!/角色工坊/焰冕行者/Renders/nativegentlefront309/02_ThreeQuarter.png
+!/角色工坊/焰冕行者/Renders/nativegentlefront309/presentation_manifest.json
+!/角色工坊/焰冕行者/Renders/nativevisiblefan307/04_Back.png

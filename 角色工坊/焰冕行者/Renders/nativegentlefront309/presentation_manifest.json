@@ -1,0 +1,16 @@
+{
+  "source": "nativegentlefan309",
+  "source_sha256": "f2b86f324fbbcfe1f41c32aa9d7953899150c80b9644b24df9cab5f84b1225be",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "diagnostic_opposite_camera": false,
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1200,
+    1400
+  ],
+  "samples": 192,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "3ac5eef1c8d91cdb562cfbdf8ee3bd0f3780212b2a460b21f42a29edd3b66112",
+  "status": "Actual render pending art review; no generative image replacement"
+}

@@ -57,6 +57,32 @@ if retained is not None:
  result=dict(source=base,source_sha256=before[0],candidate=candidate,candidate_sha256=after[0],mesh_count=len(before[1]),meshes_uv_shape_keys_transforms_exact=True,other_native_geometry_exact=True,material_light_world_camera_display_exact=True,image_paths_compared_as_resolved_absolute='--resolve-image-paths' in a,retained_curve_history_exact=True,retained_positions_radii_counts_transforms_exact=True,accepted_inner_curtain_retained=True,removed_fibers=len(selected),retained_fibers=len(retained),scope='Independent saved-file mixed-count deletion comparison to exact local inspected selection. Count/topology intentionally reduced;all retained fibers exact. Not artistic or collision acceptance.')
  out.write_text(json.dumps(result,indent=2),encoding='utf-8');print('STRAY_REMOVAL_AUDIT_PASS',candidate,flush=True);sys.exit(0)
 assert len(bs)==len(asz)
+if '--projected-bends' in a:
+ from mathutils import Vector
+ from mathutils.bvhtree import BVHTree
+ assert np.array_equal(bs,asz) and np.array_equal(br,ar)
+ manifest=json.loads((ROOT/'Exports'/candidate/'bend_smoothing_manifest.json').read_text())
+ assert manifest['source_sha256']==before[0] and manifest['model_sha256']==after[0]
+ sel=Path(r'D:\星湾世界_模型归档\starbay-ai-world\角色工坊\焰冕行者\Renders')/manifest['selection']
+ selection_manifest=json.loads((sel/'edit_id_manifest.json').read_text());assert selection_manifest['source_sha256']==before[0]
+ indices=np.load(sel/'local_projected_indices.npz')['selected'];mask=np.zeros(len(bs),bool);mask[indices]=True
+ assert np.array_equal(mask,afterattrs['native_projected_bend_relaxation'][1])
+ offsets=np.r_[0,np.cumsum(bs)];assert np.array_equal(bp[offsets[:-1]],ap[offsets[:-1]])
+ assert np.array_equal(bp[~np.repeat(mask,bs)],ap[~np.repeat(mask,bs)])
+ for key in ['native_inner_curtain_shift','native_resculpted_fringe_sweeps','native_curved_projected_tips']:assert not beforeattrs[key][1][mask].any()
+ assert np.isfinite(ap).all() and np.linalg.norm(ap-bp,axis=1).max()<=.012001
+ bv=BVHTree.FromObject(bpy.data.objects['CC0 male body • retained topology'],bpy.context.evaluated_depsgraph_get())
+ def gap(v):
+  h,n,_,_=bv.find_nearest(Vector(v));return float((Vector(v)-h).dot(n))
+ checked=0
+ for i in indices:
+  q=bp[offsets[i]:offsets[i+1]];v=ap[offsets[i]:offsets[i+1]]
+  arc=np.r_[0,np.cumsum(np.linalg.norm(np.diff(q,axis=0),axis=1))];assert np.array_equal(q[arc<=.008],v[arc<=.008])
+  qs=np.vstack([q,(q[:-1]+q[1:])*.5]);vs=np.vstack([v,(v[:-1]+v[1:])*.5]);moving=np.linalg.norm(vs-qs,axis=1)>1e-7
+  for old,new in zip(qs[moving],vs[moving]):assert gap(new)>=min(.0003,gap(old))-3e-6
+  checked+=int(moving.sum())
+ result=dict(source=base,source_sha256=before[0],candidate=candidate,candidate_sha256=after[0],mesh_count=len(before[1]),meshes_uv_shape_keys_transforms_exact=True,other_native_geometry_exact=True,material_light_world_camera_display_exact=True,image_paths_compared_as_resolved_absolute='--resolve-image-paths' in a,historical_curve_attributes_exact=True,counts_radii_transforms_roots_exact=True,root8mm_controls_exact=True,unselected_fibers_exact=int((~mask).sum()),selected_fibers=len(indices),accepted_fringe_groups_unchanged=True,max_same_index_displacement_m=float(np.linalg.norm(ap-bp,axis=1).max()),changed_control_midpoint_body_checks=checked,scope='Independent saved-file static range checks and sampled signed body gap. Selection confirmed against inspected local IDs. Tips intentionally movable. Not continuous collision, motion or artistic acceptance.')
+ out.write_text(json.dumps(result,indent=2),encoding='utf-8');print('PROJECTED_BENDS_AUDIT_PASS',candidate,flush=True);sys.exit(0)
 if '--strand-variation' in a:
  mask=afterattrs['native_rear_strand_variation'][1];assert np.array_equal(bs,asz) and np.array_equal(br,ar)
  manifest=json.loads((ROOT/'Exports'/candidate/'strand_variation_manifest.json').read_text())

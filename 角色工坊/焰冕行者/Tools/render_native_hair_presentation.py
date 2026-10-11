@@ -9,6 +9,7 @@ draft='--draft' in a
 raw='--no-denoise' in a
 if not all(re.fullmatch('[A-Za-z0-9_-]+',x) for x in a[:2]):raise ValueError(a)
 out=ROOT/'Renders'/version
+if '--archive' in a:out=Path(r'D:\星湾世界_模型归档\starbay-ai-world\角色工坊\焰冕行者\Renders')/version
 if out.exists():raise RuntimeError('Fresh presentation required')
 source=ROOT/'Exports'/base/'Ember_Regent.blend';digest=hashlib.sha256(source.read_bytes()).hexdigest()
 bpy.ops.wm.open_mainfile(filepath=str(source),use_scripts=False)

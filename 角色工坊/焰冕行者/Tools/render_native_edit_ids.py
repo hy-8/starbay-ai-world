@@ -13,6 +13,7 @@ if ellipse:assert len(ellipse)==4 and ellipse[2]>0 and ellipse[3]>0 and not crow
 assert not rear_subset or (not crown and not ellipse)
 if not all(re.fullmatch('[A-Za-z0-9_-]+',v) for v in a[:3]):raise ValueError(a)
 out=ROOT/'Renders'/version
+if '--archive' in a:out=Path(r'D:\星湾世界_模型归档\starbay-ai-world\角色工坊\焰冕行者\Renders')/version
 if out.exists():raise RuntimeError('Fresh ID renders required')
 source=ROOT/'Exports'/base/'Ember_Regent.blend';digest=hashlib.sha256(source.read_bytes()).hexdigest();bpy.ops.wm.open_mainfile(filepath=str(source),use_scripts=False)
 edited_ob=bpy.data.objects[edited_object];assert edited_ob.type=='CURVES' and not edited_ob.hide_render
@@ -38,6 +39,18 @@ if ellipse:
  world=np.c_[p,np.ones(len(p))]@np.array(ob.matrix_world).T;local=world@view.T;clip=local@proj.T;ndc=clip[:,:3]/clip[:,3,None]
  xx=ndc[:,0]*.5+.5;yy=.5-ndc[:,1]*.5;cx,cy,rx,ry=ellipse
  hit=(((xx-cx)/rx)**2+((yy-cy)/ry)**2<1)&(local[:,2]<0)
+ if '--visible-controls' in a:
+  # Approximate point-depth filter, followed by actual ID rendering for review.
+  # This does not claim continuous strand/body visibility or ray-traced selection.
+  width,height=1200,1400;px=np.floor(xx*width).astype(int);py=np.floor(yy*height).astype(int)
+  valid=(px>=0)&(px<width)&(py>=0)&(py<height)&(local[:,2]<0)
+  depth=-local[:,2];zbuffer=np.full((height,width),np.inf)
+  for dx in [-1,0,1]:
+   for dy in [-1,0,1]:
+    vx=np.clip(px[valid]+dx,0,width-1);vy=np.clip(py[valid]+dy,0,height-1)
+    np.minimum.at(zbuffer,(vy,vx),depth[valid])
+  near=np.full(len(p),np.inf);near[valid]=zbuffer[py[valid],px[valid]]
+  hit&=valid&(depth<=near+.001)
  mask=np.add.reduceat(hit.astype(np.int32),np.r_[0,np.cumsum(counts)[:-1]])>=2
 r=np.empty(len(cu.points),np.float32);cu.attributes['radius'].data.foreach_get('value',r)
 for selected,color,name in [(True,(.04,.16,1),'Edited native shafts'),(False,(1,.03,.07),'Untouched native shafts')]:
@@ -51,13 +64,14 @@ if ellipse:
  np.savez_compressed(out/'local_projected_indices.npz',selected=np.flatnonzero(mask))
  starts=np.r_[0,np.cumsum(counts)[:-1]];ends=np.cumsum(counts)-1
  aggregate=dict(selected_fibers=int(mask.sum()),root_xyz_quantiles_m=np.quantile(p[starts[mask]],[0,.1,.5,.9,1],axis=0).tolist() if mask.any() else [],tip_xyz_quantiles_m=np.quantile(p[ends[mask]],[0,.1,.5,.9,1],axis=0).tolist() if mask.any() else [],attribute_counts={})
+ aggregate.update(projected_hit_control_xyz_quantiles_m=np.quantile(p[hit],[0,.1,.5,.9,1],axis=0).tolist() if hit.any() else [],approximate_point_depth_filter='--visible-controls' in a,depth_filter_scope='Primary hair control points only,3x3 pixel splat,1mm tolerance;not continuous strands/body ray visibility')
  for attr in cu.attributes:
   if attr.domain=='CURVE' and attr.data_type=='BOOLEAN':
    flags=np.empty(len(mask),bool);attr.data.foreach_get('value',flags);aggregate['attribute_counts'][attr.name]=int(flags[mask].sum())
  (out/'projected_aggregate.json').write_text(json.dumps(aggregate,indent=2),encoding='utf-8')
-for name in (['02_ThreeQuarter','01_Front'] if front_views else ['04_Back','03_Side']):
+for name in (['04_Back'] if '--back-only' in a else ['02_ThreeQuarter','01_Front'] if front_views else ['04_Back','03_Side']):
  s.camera=bpy.data.objects[name];s.render.filepath=str(out/(name+'.png'));bpy.ops.render.render(write_still=True)
 assert hashlib.sha256(source.read_bytes()).hexdigest()==digest
-selection_parameters=dict(projection_camera=projection_camera if ellipse else None,rear_subset=rear_subset,rear_subset_rule='attribute AND rootY>-30mm AND tipY>15mm AND tipZ<1.800m' if rear_subset else None)
+selection_parameters=dict(projection_camera=projection_camera if ellipse else None,rear_subset=rear_subset,rear_subset_rule='attribute AND rootY>-30mm AND tipY>15mm AND tipZ<1.800m' if rear_subset else None,approximate_point_depth_filter='--visible-controls' in a)
 (out/'selection_parameters.json').write_text(json.dumps(selection_parameters,indent=2),encoding='utf-8')
 (out/'edit_id_manifest.json').write_text(json.dumps(dict(source=base,source_sha256=digest,source_unchanged=True,edited_object=edited_object,points_per_curve=N,selection_attribute=None if crown or ellipse else attribute,selection_rule={'camera':projection_camera,'normalized_ellipse':ellipse,'minimum_projected_controls':2} if ellipse else 'Selected object shaft maximum z>1.875m' if crown else (dict(attribute=attribute,filter=selection_parameters['rear_subset_rule']) if rear_subset else attribute),legend={'blue':'High crown selected-object shafts' if crown else 'Edited selected-object curves','red':'Other selected-object shafts' if crown else 'Untouched selected-object curves','green':'All other visible native hair components','gray':'Body/clothes'},edited_fibers=int(mask.sum()),unselected_fibers=int((~mask).sum()),method='Exact temporary curve subsets with original radii/matrix, actual cameras, emission diagnostic only. Ellipse is projected controls, not continuous visibility proof.',status='Unreviewed actual component diagnostic'),indent=2),encoding='utf-8');print('NATIVE_EDIT_IDS_RENDERED',version,flush=True)

@@ -1,0 +1,16 @@
+{
+  "source": "nativegentlefan309",
+  "source_sha256": "f2b86f324fbbcfe1f41c32aa9d7953899150c80b9644b24df9cab5f84b1225be",
+  "source_unchanged": true,
+  "camera": "04_Back",
+  "diagnostic_opposite_camera": false,
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "185ec83c5769556a24d37b8b35278d874e21158a3a8bc495e5912df7b939d092",
+  "status": "Actual render pending art review; no generative image replacement"
+}
