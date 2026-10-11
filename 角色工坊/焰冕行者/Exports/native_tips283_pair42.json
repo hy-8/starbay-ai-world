@@ -1,0 +1,19 @@
+{
+  "source": "nativefittedfoundation279",
+  "source_sha256": "b071b05c2e6d0cf1452aac71c88d5cc22ac361e9abc9586ff7ef6e35b440fab6",
+  "candidate": "nativecurvedaccent283",
+  "candidate_sha256": "559d01f198bfc7b1b4a2839846a72cbc2e5e2f315c2fbaf4b216cb188d0cac6b",
+  "mesh_count": 141,
+  "meshes_uv_shape_keys_transforms_exact": true,
+  "other_native_geometry_exact": true,
+  "material_light_world_camera_display_exact": true,
+  "image_paths_compared_as_resolved_absolute": true,
+  "historical_curve_attributes_exact": true,
+  "all_radii_point_counts_transforms_exact": true,
+  "all_roots_and_prefix65percent_arc_exact": true,
+  "unselected_fibers_exact": 45905,
+  "selected_fibers": 104,
+  "max_same_index_displacement_m": 0.020591266453266144,
+  "changed_control_and_midpoint_body_samples_checked": 5918,
+  "scope": "Independent saved-file exact selection/unchanged-prefix audit,body signed clearance checked at controls and segment midpoints against original. Not continuous collision or artistic acceptance."
+}

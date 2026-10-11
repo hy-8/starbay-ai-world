@@ -57,6 +57,29 @@ if retained is not None:
  result=dict(source=base,source_sha256=before[0],candidate=candidate,candidate_sha256=after[0],mesh_count=len(before[1]),meshes_uv_shape_keys_transforms_exact=True,other_native_geometry_exact=True,material_light_world_camera_display_exact=True,image_paths_compared_as_resolved_absolute='--resolve-image-paths' in a,retained_curve_history_exact=True,retained_positions_radii_counts_transforms_exact=True,accepted_inner_curtain_retained=True,removed_fibers=len(selected),retained_fibers=len(retained),scope='Independent saved-file mixed-count deletion comparison to exact local inspected selection. Count/topology intentionally reduced;all retained fibers exact. Not artistic or collision acceptance.')
  out.write_text(json.dumps(result,indent=2),encoding='utf-8');print('STRAY_REMOVAL_AUDIT_PASS',candidate,flush=True);sys.exit(0)
 assert len(bs)==len(asz)
+if '--curved-tips' in a:
+ mask=afterattrs['native_curved_projected_tips'][1];assert np.array_equal(bs,asz) and np.array_equal(br,ar)
+ manifest=json.loads((ROOT/'Exports'/candidate/'curved_tips_manifest.json').read_text())
+ selected=np.load(ROOT/'Renders'/manifest['selection']/'local_projected_indices.npz')['selected']
+ assert np.array_equal(np.flatnonzero(mask),selected) and len(selected)<=500
+ from mathutils import Vector
+ from mathutils.bvhtree import BVHTree
+ bv=BVHTree.FromObject(bpy.data.objects['CC0 male body • retained topology'],bpy.context.evaluated_depsgraph_get())
+ def signed(point):
+  h,n,_,_=bv.find_nearest(Vector(point));return float((Vector(point)-h).dot(n))
+ offsets=np.r_[0,np.cumsum(bs)];checked=0
+ for i in range(len(bs)):
+  old=bp[offsets[i]:offsets[i+1]];p=ap[offsets[i]:offsets[i+1]]
+  if not mask[i]:assert np.array_equal(old,p);continue
+  arc=np.r_[0,np.cumsum(np.linalg.norm(np.diff(old,axis=0),axis=1))];start=max(.65*arc[-1],arc[-1]-.045)
+  assert np.array_equal(old[arc<=start],p[arc<=start])
+  oldsamples=np.vstack([old,(old[:-1]+old[1:])*.5]);newsamples=np.vstack([p,(p[:-1]+p[1:])*.5])
+  for x,y in zip(oldsamples,newsamples):
+   if np.linalg.norm(x-y)>1e-7:assert signed(y)>=min(.0005,signed(x))-2e-6;checked+=1
+ delta=float(np.linalg.norm(ap-bp,axis=1).max());assert 0<delta<=.020592
+ assert manifest['model_sha256']==after[0] and manifest['source_sha256']==before[0] and manifest['selected_fibers']==len(selected)
+ result=dict(source=base,source_sha256=before[0],candidate=candidate,candidate_sha256=after[0],mesh_count=len(before[1]),meshes_uv_shape_keys_transforms_exact=True,other_native_geometry_exact=True,material_light_world_camera_display_exact=True,image_paths_compared_as_resolved_absolute='--resolve-image-paths' in a,historical_curve_attributes_exact=True,all_radii_point_counts_transforms_exact=True,all_roots_and_prefix65percent_arc_exact=True,unselected_fibers_exact=int((~mask).sum()),selected_fibers=len(selected),max_same_index_displacement_m=delta,changed_control_and_midpoint_body_samples_checked=checked,scope='Independent saved-file exact selection/unchanged-prefix audit,body signed clearance checked at controls and segment midpoints against original. Not continuous collision or artistic acceptance.')
+ out.write_text(json.dumps(result,indent=2),encoding='utf-8');print('CURVED_TIPS_AUDIT_PASS',candidate,flush=True);sys.exit(0)
 if '--support-reflow' in a:
  mask=afterattrs['native_recombed_rear_support'][1]
  assert np.array_equal(bs,asz) and np.array_equal(br,ar)
@@ -112,10 +135,11 @@ if '--channels' in a:
  assert manifest['model_sha256']==after[0] and manifest['source_sha256']==before[0] and manifest['selected_fibers']==len(selected)
  result=dict(source=base,source_sha256=before[0],candidate=candidate,candidate_sha256=after[0],mesh_count=len(before[1]),meshes_uv_shape_keys_transforms_exact=True,other_native_geometry_exact=True,material_light_world_camera_display_exact=True,image_paths_compared_as_resolved_absolute='--resolve-image-paths' in a,historical_curve_attributes_exact=True,all_radii_point_counts_transforms_exact=True,all_roots_exact=True,unselected_fibers_exact=int((~mask).sum()),selected_fibers=len(selected),first8_last9_controls_exact=True,max_same_index_displacement_m=delta,scope='Independent saved mixed-control localized deformation audit. Material image paths resolved to original absolute files after drive change. Static comparison only;not artistic or continuous collision acceptance.')
  out.write_text(json.dumps(result,indent=2),encoding='utf-8');print('CHANNELS_AUDIT_PASS',candidate,flush=True);sys.exit(0)
-if '--trim' in a or '--accent' in a or '--layer-trim' in a:
+if '--trim' in a or '--accent' in a or '--layer-trim' in a or '--crown-trim' in a:
  accent='--accent' in a
  layered='--layer-trim' in a
- mask=afterattrs['native_raw_rear_layers' if layered else 'native_trimmed_outer_accent' if accent else 'native_rounded_nape'][1]
+ crown_tier='--crown-trim' in a
+ mask=afterattrs['native_shortened_crown_tier' if crown_tier else 'native_raw_rear_layers' if layered else 'native_trimmed_outer_accent' if accent else 'native_rounded_nape'][1]
  if accent:assert not np.any(beforeattrs['native_inner_curtain_shift'][1][mask])
  else:assert np.all(beforeattrs['native_restored_raw_controls'][1][mask])
  bo=np.r_[0,np.cumsum(bs)];ao=np.r_[0,np.cumsum(asz)];cuts=[]
@@ -130,7 +154,10 @@ if '--trim' in a or '--accent' in a or '--layer-trim' in a:
   assert np.array_equal(r,expected)
   oldlength=float(np.linalg.norm(np.diff(old,axis=0),axis=1).sum());newlength=float(np.linalg.norm(np.diff(p,axis=0),axis=1).sum())
   cuts.append(oldlength-newlength)
-  if layered:assert .00099<cuts[-1]<.03501 and cuts[-1]<=oldlength*.26001
+  if crown_tier:
+   assert .00099<cuts[-1]<.07001 and cuts[-1]<=oldlength*.52001 and newlength>=.04999
+   assert old[0,1]>-.030 and old[0,2]>1.825 and old[-1,1]>.015 and old[-1,2]<1.800
+  elif layered:assert .00099<cuts[-1]<.03501 and cuts[-1]<=oldlength*.26001
   elif not accent:assert .00099<cuts[-1]<.03201 and cuts[-1]<=oldlength*.22001
  manifest=json.loads((ROOT/'Exports'/candidate/('outer_accent_manifest.json' if accent else 'rounded_nape_manifest.json')).read_text())
  assert manifest['model_sha256']==after[0] and manifest['source_sha256']==before[0] and manifest['trimmed_fibers' if accent else 'selected_fibers']==int(mask.sum())

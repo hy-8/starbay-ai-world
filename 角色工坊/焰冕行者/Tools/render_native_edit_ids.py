@@ -47,7 +47,14 @@ ob.hide_render=True
 s=bpy.context.scene;pref=bpy.context.preferences.addons['cycles'].preferences;pref.compute_device_type='OPTIX';pref.get_devices()
 for d in pref.devices:d.use=d.type=='OPTIX'
 s.cycles.device='GPU';s.cycles.samples=32;s.cycles.use_denoising=False;s.render.resolution_x,s.render.resolution_y=1200,1400;s.render.resolution_percentage=80;s.view_settings.view_transform='Standard';out.mkdir(parents=True)
-if ellipse:np.savez_compressed(out/'local_projected_indices.npz',selected=np.flatnonzero(mask))
+if ellipse:
+ np.savez_compressed(out/'local_projected_indices.npz',selected=np.flatnonzero(mask))
+ starts=np.r_[0,np.cumsum(counts)[:-1]];ends=np.cumsum(counts)-1
+ aggregate=dict(selected_fibers=int(mask.sum()),root_xyz_quantiles_m=np.quantile(p[starts[mask]],[0,.1,.5,.9,1],axis=0).tolist() if mask.any() else [],tip_xyz_quantiles_m=np.quantile(p[ends[mask]],[0,.1,.5,.9,1],axis=0).tolist() if mask.any() else [],attribute_counts={})
+ for attr in cu.attributes:
+  if attr.domain=='CURVE' and attr.data_type=='BOOLEAN':
+   flags=np.empty(len(mask),bool);attr.data.foreach_get('value',flags);aggregate['attribute_counts'][attr.name]=int(flags[mask].sum())
+ (out/'projected_aggregate.json').write_text(json.dumps(aggregate,indent=2),encoding='utf-8')
 for name in (['02_ThreeQuarter','01_Front'] if front_views else ['04_Back','03_Side']):
  s.camera=bpy.data.objects[name];s.render.filepath=str(out/(name+'.png'));bpy.ops.render.render(write_still=True)
 assert hashlib.sha256(source.read_bytes()).hexdigest()==digest

@@ -1,0 +1,298 @@
+{
+  "continuation": "nativecurvedaccent283",
+  "goal_complete": false,
+  "studies": [
+    {
+      "version": "nativefronttipsids280",
+      "manifest": {
+        "source": "nativefittedfoundation279",
+        "source_sha256": "b071b05c2e6d0cf1452aac71c88d5cc22ac361e9abc9586ff7ef6e35b440fab6",
+        "source_unchanged": true,
+        "edited_object": "Bystedt layercut derivative • native root reflow",
+        "points_per_curve": null,
+        "selection_attribute": null,
+        "selection_rule": {
+          "camera": "02_ThreeQuarter",
+          "normalized_ellipse": [
+            0.255,
+            0.502,
+            0.045,
+            0.045
+          ],
+          "minimum_projected_controls": 2
+        },
+        "legend": {
+          "blue": "Edited selected-object curves",
+          "red": "Untouched selected-object curves",
+          "green": "All other visible native hair components",
+          "gray": "Body/clothes"
+        },
+        "edited_fibers": 3215,
+        "unselected_fibers": 42794,
+        "method": "Exact temporary curve subsets with original radii/matrix, actual cameras, emission diagnostic only. Ellipse is projected controls, not continuous visibility proof.",
+        "status": "Unreviewed actual component diagnostic"
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "01_Front.png": "a7d369d664b7fcec2402e7bbc14405e56e8cef95b27bb556f970213b687bac61",
+        "02_ThreeQuarter.png": "ba66844b7e558322f57e076f68d666efe6e16814bd522e68d8301eb00a6c5d78"
+      },
+      "art_judgment": "Both inspected. Wide frontal region selects3215 curves,includes normal fringe;not used for deformation.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativespeartipids281",
+      "manifest": {
+        "source": "nativefittedfoundation279",
+        "source_sha256": "b071b05c2e6d0cf1452aac71c88d5cc22ac361e9abc9586ff7ef6e35b440fab6",
+        "source_unchanged": true,
+        "edited_object": "Bystedt layercut derivative • native root reflow",
+        "points_per_curve": null,
+        "selection_attribute": null,
+        "selection_rule": {
+          "camera": "02_ThreeQuarter",
+          "normalized_ellipse": [
+            0.22,
+            0.46,
+            0.008,
+            0.014
+          ],
+          "minimum_projected_controls": 2
+        },
+        "legend": {
+          "blue": "Edited selected-object curves",
+          "red": "Untouched selected-object curves",
+          "green": "All other visible native hair components",
+          "gray": "Body/clothes"
+        },
+        "edited_fibers": 104,
+        "unselected_fibers": 45905,
+        "method": "Exact temporary curve subsets with original radii/matrix, actual cameras, emission diagnostic only. Ellipse is projected controls, not continuous visibility proof.",
+        "status": "Unreviewed actual component diagnostic"
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "01_Front.png": "7444c9234336154a9c54d98e0845a6a2a84c9994f32df3a89f42ef352a1c102e",
+        "02_ThreeQuarter.png": "786df4ba32c747c34bfea2f33324003fc1ac963bc21d214970acac0554a948fe"
+      },
+      "art_judgment": "Both inspected. Tight quarter projection isolates104 straight outer accent curves;no accepted inner-curtain fibers.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativecurvedtips282",
+      "manifest": {
+        "source": "nativefittedfoundation279",
+        "source_sha256": "b071b05c2e6d0cf1452aac71c88d5cc22ac361e9abc9586ff7ef6e35b440fab6",
+        "source_unchanged": true,
+        "selection": "nativespeartipids281",
+        "model_saved": false,
+        "model_sha256": null,
+        "selected_fibers": 104,
+        "historical_inner_selected": 0,
+        "scale_quantiles": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "zero_scale_fibers": 0,
+        "max_same_index_displacement_m": 0.020591266453266144,
+        "images_sha256": {
+          "02_ThreeQuarter.png": "ecb301bd7956114dd0f4e32c6d00cf449730507727b0ad6443d045ba4c9a083b",
+          "03_Side.png": "bd2c24f6fa419515eedbab74bfd19b9b0f3612dae34d781d704f5004605ba0e6",
+          "01_Front.png": "65b9e36826363e1f277ccaf2814dff412e2a8a23f405c26a0a717747e5ba2d58"
+        },
+        "method": "Exact inspected projection set<=500 curves. Preserve prefix until max(65percent original arc,length-45mm). Quadratic terminal displacement8mm inwardX,18mm backY,6mm upZ times coherent root factor0.8-1. One backtracked scale per whole curve protects original signed body gap at controls and segment midpoints. Radii,counts,root and all unselected/other objects unchanged. May edit historical accepted terminal paths while preserving their roots/part;not continuous collision or artistic acceptance."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "01_Front.png": "65b9e36826363e1f277ccaf2814dff412e2a8a23f405c26a0a717747e5ba2d58",
+        "02_ThreeQuarter.png": "ecb301bd7956114dd0f4e32c6d00cf449730507727b0ad6443d045ba4c9a083b",
+        "03_Side.png": "bd2c24f6fa419515eedbab74bfd19b9b0f3612dae34d781d704f5004605ba0e6"
+      },
+      "art_judgment": "All3 beauty views inspected;straight spear becomes curved accent,part and scalp coverage retained. Basis283.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativecurvedaccent283",
+      "manifest": {
+        "source": "nativefittedfoundation279",
+        "source_sha256": "b071b05c2e6d0cf1452aac71c88d5cc22ac361e9abc9586ff7ef6e35b440fab6",
+        "source_unchanged": true,
+        "selection": "nativespeartipids281",
+        "model_saved": true,
+        "model_sha256": "559d01f198bfc7b1b4a2839846a72cbc2e5e2f315c2fbaf4b216cb188d0cac6b",
+        "selected_fibers": 104,
+        "historical_inner_selected": 0,
+        "scale_quantiles": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "zero_scale_fibers": 0,
+        "max_same_index_displacement_m": 0.020591266453266144,
+        "images_sha256": {},
+        "method": "Exact inspected projection set<=500 curves. Preserve prefix until max(65percent original arc,length-45mm). Quadratic terminal displacement8mm inwardX,18mm backY,6mm upZ times coherent root factor0.8-1. One backtracked scale per whole curve protects original signed body gap at controls and segment midpoints. Radii,counts,root and all unselected/other objects unchanged. May edit historical accepted terminal paths while preserving their roots/part;not continuous collision or artistic acceptance."
+      },
+      "model_sha256": "559d01f198bfc7b1b4a2839846a72cbc2e5e2f315c2fbaf4b216cb188d0cac6b",
+      "inspected_images_sha256": {},
+      "art_judgment": "Saved282 geometry,independent audit and high quarter render inspected;accepted incremental correction,goal incomplete.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativecrowntierpilot284",
+      "manifest": {
+        "source": "nativecurvedaccent283",
+        "source_sha256": "559d01f198bfc7b1b4a2839846a72cbc2e5e2f315c2fbaf4b216cb188d0cac6b",
+        "model_saved": false,
+        "model_sha256": null,
+        "selected_fibers": 2147,
+        "polyline_shortening_quantiles_m": [
+          0.0010073918495310278,
+          0.03553297336402586,
+          0.07
+        ],
+        "source_unchanged": true,
+        "image_sha256": "faea62cb7a5e21d2c17e1508c58033cb41dc20711cdc1f59136031765b936420",
+        "method": "Restored raw rear-reaching shafts only,rootY>-30mm,rootZ>1.825m,tipY>15mm,tipZ<1.800m;pilot negativeX. Preserve lower root layers. Continuous25mm root-height onset;shorten upper layer34-52percent times coherent0.65-1 field,capped70mm and keep at least50mm own arc. Retain original control prefix and segment-interpolated endpoint,taper last<=4 radii. No common cutting plane. Not final art or collision acceptance.",
+        "crown_tier": true,
+        "pilot": true,
+        "operation_attribute": "native_shortened_crown_tier",
+        "images_sha256": {
+          "04_Back.png": "faea62cb7a5e21d2c17e1508c58033cb41dc20711cdc1f59136031765b936420",
+          "05_OppositeSide.png": "695f24537fb05ef4a617c4ad818d37added5c186f90aacea9b689aaf2f6dea9b"
+        }
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "04_Back.png": "faea62cb7a5e21d2c17e1508c58033cb41dc20711cdc1f59136031765b936420",
+        "05_OppositeSide.png": "695f24537fb05ef4a617c4ad818d37added5c186f90aacea9b689aaf2f6dea9b"
+      },
+      "art_judgment": "Back/opposite side inspected.2147 negativeX high-root raw rear fibers shortened1.01-70mm,median35.53mm;little visible improvement,not adopted.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativerearribbonids285",
+      "manifest": {
+        "source": "nativecurvedaccent283",
+        "source_sha256": "559d01f198bfc7b1b4a2839846a72cbc2e5e2f315c2fbaf4b216cb188d0cac6b",
+        "source_unchanged": true,
+        "edited_object": "Bystedt layercut derivative • native root reflow",
+        "points_per_curve": null,
+        "selection_attribute": null,
+        "selection_rule": {
+          "camera": "04_Back",
+          "normalized_ellipse": [
+            0.56,
+            0.46,
+            0.022,
+            0.06
+          ],
+          "minimum_projected_controls": 2
+        },
+        "legend": {
+          "blue": "Edited selected-object curves",
+          "red": "Untouched selected-object curves",
+          "green": "All other visible native hair components",
+          "gray": "Body/clothes"
+        },
+        "edited_fibers": 3017,
+        "unselected_fibers": 42992,
+        "method": "Exact temporary curve subsets with original radii/matrix, actual cameras, emission diagnostic only. Ellipse is projected controls, not continuous visibility proof.",
+        "status": "Unreviewed actual component diagnostic"
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "03_Side.png": "9fcc9e1a898bb43979a1250d332d9efc9e000ab5f527c2b2ab55d66bb3e2a685",
+        "04_Back.png": "4685988ded754acdd25a7d535e7aa24794199d8277acc39cbf7b7eee4903d97c"
+      },
+      "art_judgment": "Back/side inspected. Actual04_Back ellipse selects3017 including many occluded frontal fibers;1221 are restored rear raw. Both selection and hidden-frontal overlap evident in IDs.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativeprojectedreartier286",
+      "manifest": {
+        "source": "nativecurvedaccent283",
+        "source_sha256": "559d01f198bfc7b1b4a2839846a72cbc2e5e2f315c2fbaf4b216cb188d0cac6b",
+        "model_saved": false,
+        "model_sha256": null,
+        "selected_fibers": 1221,
+        "polyline_shortening_quantiles_m": [
+          0.017511709111546304,
+          0.04374255202170925,
+          0.055
+        ],
+        "source_unchanged": true,
+        "image_sha256": "aab620ca1b72135dcd058469137da847de2c0d6a2935b92d29d4e1a4a94150a0",
+        "method": "Inspected projected set intersect restored raw and rear-reaching tipY>15mm,tipZ<1.800m. Shorten own original polyline45percent times coherent root field0.65-1,capped55mm,retain minimum30mm arc. Exact source prefix and interpolated endpoint,terminal taper. All other hair unchanged;not continuous collision or artistic acceptance.",
+        "projected_tier": "nativerearribbonids285",
+        "operation_attribute": "native_projected_rear_tier",
+        "images_sha256": {
+          "04_Back.png": "aab620ca1b72135dcd058469137da847de2c0d6a2935b92d29d4e1a4a94150a0",
+          "05_OppositeSide.png": "1b5d59c5f275f8b3bba36c8a445792e0ba74b89bbcbb28b88f72b6808e5c9ae3"
+        },
+        "selected_roots_xyz_quantiles_m": [
+          [
+            -0.03977043181657791,
+            0.020360521972179413,
+            1.7426997423171997
+          ],
+          [
+            -0.02074161171913147,
+            0.05650392547249794,
+            1.8169623613357544
+          ],
+          [
+            0.005632007960230112,
+            0.06720970571041107,
+            1.8582078218460083
+          ]
+        ]
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "04_Back.png": "aab620ca1b72135dcd058469137da847de2c0d6a2935b92d29d4e1a4a94150a0",
+        "05_OppositeSide.png": "1b5d59c5f275f8b3bba36c8a445792e0ba74b89bbcbb28b88f72b6808e5c9ae3"
+      },
+      "art_judgment": "Back/opposite side inspected.1221 actual rear subset cut17.51-55mm,median43.74mm. Similar broad flow exposed underneath;no convincing overall breakup,not adopted.",
+      "goal_complete": false
+    }
+  ],
+  "independent_audit": {
+    "source": "nativefittedfoundation279",
+    "source_sha256": "b071b05c2e6d0cf1452aac71c88d5cc22ac361e9abc9586ff7ef6e35b440fab6",
+    "candidate": "nativecurvedaccent283",
+    "candidate_sha256": "559d01f198bfc7b1b4a2839846a72cbc2e5e2f315c2fbaf4b216cb188d0cac6b",
+    "mesh_count": 141,
+    "meshes_uv_shape_keys_transforms_exact": true,
+    "other_native_geometry_exact": true,
+    "material_light_world_camera_display_exact": true,
+    "image_paths_compared_as_resolved_absolute": true,
+    "historical_curve_attributes_exact": true,
+    "all_radii_point_counts_transforms_exact": true,
+    "all_roots_and_prefix65percent_arc_exact": true,
+    "unselected_fibers_exact": 45905,
+    "selected_fibers": 104,
+    "max_same_index_displacement_m": 0.020591266453266144,
+    "changed_control_and_midpoint_body_samples_checked": 5918,
+    "scope": "Independent saved-file exact selection/unchanged-prefix audit,body signed clearance checked at controls and segment midpoints against original. Not continuous collision or artistic acceptance."
+  },
+  "high_presentation": {
+    "source": "nativecurvedaccent283",
+    "source_sha256": "559d01f198bfc7b1b4a2839846a72cbc2e5e2f315c2fbaf4b216cb188d0cac6b",
+    "source_unchanged": true,
+    "camera": "02_ThreeQuarter",
+    "diagnostic_opposite_camera": false,
+    "geometry_lighting_unchanged": true,
+    "resolution": [
+      1920,
+      2240
+    ],
+    "samples": 512,
+    "denoising": "OpenImageDenoise",
+    "image_sha256": "e162a6e0c7422183e598beba423bd7d9375f279b0dd6c898c677b3177d76b496",
+    "status": "Actual render pending art review; no generative image replacement"
+  },
+  "high_presentation_actually_inspected": true,
+  "scope": "Real Blender/Cycles geometry. Outer straight frontal accent curved;rear-tier experiments rejected. Further naturalization of broad rear midshaft flow required. No paid service,AI portrait replacement,UE/animation work,Release or social publication.",
+  "storage": "Fresh283 saved directly onD,newE junction. No old files moved or deleted. Licensed geometry and individual selections remain local."
+}

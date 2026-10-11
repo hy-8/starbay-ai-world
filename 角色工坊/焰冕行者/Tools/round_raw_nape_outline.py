@@ -8,7 +8,10 @@ save_archive='--save-archive' in a
 save_model='--save' in a or save_archive
 save_only='--save-only' in a
 layered='--layered' in a;pilot='--pilot' in a
-attribute='native_raw_rear_layers' if layered else 'native_rounded_nape'
+crown_tier='--crown-tier' in a;assert not (crown_tier and layered)
+projected_tier=a[a.index('--projected-tier')+1] if '--projected-tier' in a else None
+assert not projected_tier or not (crown_tier or layered)
+attribute='native_projected_rear_tier' if projected_tier else 'native_shortened_crown_tier' if crown_tier else 'native_raw_rear_layers' if layered else 'native_rounded_nape'
 assert not save_only or save_model
 assert all(re.fullmatch('[A-Za-z0-9_-]+',v) for v in a[:2])
 source=ROOT/'Exports'/base/'Ember_Regent.blend';digest=hashlib.sha256(source.read_bytes()).hexdigest()
@@ -23,11 +26,17 @@ p=np.empty((len(cu.points),3),np.float32);cu.attributes['position'].data.foreach
 r=np.empty(len(cu.points),np.float32);cu.attributes['radius'].data.foreach_get('value',r)
 sizes=np.array([c.points_length for c in cu.curves]);offsets=np.r_[0,np.cumsum(sizes)]
 allowed=np.empty(len(sizes),bool);cu.attributes['native_restored_raw_controls'].data.foreach_get('value',allowed)
+projected=None
+if projected_tier:
+ sel=ROOT/'Renders'/projected_tier;selection_manifest=json.loads((sel/'edit_id_manifest.json').read_text());assert selection_manifest['source_sha256']==digest
+ projected=np.zeros(len(sizes),bool);projected[np.load(sel/'local_projected_indices.npz')['selected']]=True
 paths=[];radii=[];selected=[];shortened=[]
 for i in range(len(sizes)):
  path=p[offsets[i]:offsets[i+1]].copy();radius=r[offsets[i]:offsets[i+1]].copy();tip=path[-1]
  eligible=tip[1]>.005 and tip[2]<1.745 and abs(tip[0])>.030
  if layered:eligible=tip[1]>.015 and tip[2]<1.800 and path[0,1]>-.030 and (not pilot or path[0,0]<-.005)
+ if crown_tier:eligible=tip[1]>.015 and tip[2]<1.800 and path[0,1]>-.030 and path[0,2]>1.825 and (not pilot or path[0,0]<-.005)
+ if projected_tier:eligible=projected[i] and tip[1]>.015 and tip[2]<1.800
  if allowed[i] and eligible and len(path)>3:
   arc=np.r_[0,np.cumsum(np.linalg.norm(np.diff(path,axis=0),axis=1))]
   t=np.clip((abs(tip[0])-.030)/.065,0,1);t=t*t*(3-2*t)
@@ -36,6 +45,14 @@ for i in range(len(sizes)):
    h=np.clip((path[0,2]-1.775)/.090,0,1);h=h*h*(3-2*h)
    field=.45+.55*np.sin(path[0,0]*91+path[0,1]*65)**2
    cut=min(.035,arc[-1]*(.06+.20*h)*field)
+  if crown_tier:
+   onset=np.clip((path[0,2]-1.825)/.025,0,1);onset=onset*onset*(3-2*onset)
+   high=np.clip((path[0,2]-1.840)/.035,0,1);high=high*high*(3-2*high)
+   field=.65+.35*np.sin(path[0,0]*91+path[0,1]*65)**2
+   cut=max(0.,min(.070,arc[-1]*(.34+.18*high)*onset*field,arc[-1]-.050))
+  if projected_tier:
+   field=.65+.35*np.sin(path[0,0]*177+path[0,1]*113)**2
+   cut=max(0.,min(.055,arc[-1]*.45*field,arc[-1]-.030))
   target=arc[-1]-cut;j=int(np.searchsorted(arc,target,side='left'))
   if j>1 and cut>.001:
    f=(target-arc[j-1])/max(arc[j]-arc[j-1],1e-9)
@@ -63,12 +80,23 @@ for d in pref.devices:d.use=d.type=='OPTIX'
 s.cycles.device='GPU';s.cycles.samples=256;s.cycles.use_denoising=True;s.cycles.denoiser='OPENIMAGEDENOISE'
 s.render.resolution_x,s.render.resolution_y=1200,1400;s.render.resolution_percentage=100
 out.mkdir(parents=True);dest=out/'04_Back.png';images={}
+if (crown_tier and pilot) or projected_tier:
+ from mathutils import Matrix
+ cam=bpy.data.objects['03_Side'].copy();cam.data=cam.data.copy();s.collection.objects.link(cam);cam.name='05_OppositeSide';reflection=Matrix.Diagonal((-1.,1.,1.,1.));cam.matrix_world=reflection@cam.matrix_world@reflection
 if not save_only:
- for shot in (['04_Back','03_Side','02_ThreeQuarter'] if '--views' in a else ['04_Back']):
+ for shot in (['04_Back','05_OppositeSide'] if (crown_tier and pilot) or projected_tier else ['04_Back','03_Side','02_ThreeQuarter'] if '--views' in a else ['04_Back']):
   s.camera=bpy.data.objects[shot];rd=out/(shot+'.png');s.render.filepath=str(rd);bpy.ops.render.render(write_still=True);images[rd.name]=hashlib.sha256(rd.read_bytes()).hexdigest()
 assert hashlib.sha256(source.read_bytes()).hexdigest()==digest
 manifest=dict(source=base,source_sha256=digest,model_saved=save_model,model_sha256=modelhash,selected_fibers=len(selected),polyline_shortening_quantiles_m=np.quantile(shortened,[0,.5,1]).tolist(),source_unchanged=True,image_sha256=hashlib.sha256(dest.read_bytes()).hexdigest() if dest.exists() else None,method='Restored raw fibers only, endpoints behindY5mm and belowZ1.745m,absX>30mm. Shorten along own control polyline by continuous lateral endpoint field up to32mm and at most22percent length; original control prefix retained, terminal tapered. Accepted frontal paths and central nape retained. Not continuous collision or final art acceptance.')
 if layered:manifest.update(operation_attribute=attribute,pilot=pilot,archive_model_path=str(modeldir/'Ember_Regent.blend') if save_model else None,images_sha256=images,method='Restored raw rear fibers only;tipY>15mm,tipZ<1.800m,rootY>-30mm,pilot rootX<-5mm. Shorten own control polyline by6percent+up to20percent smooth root-height term,times coherent root spatial field0.45-1,capped35mm. Exact prefix and terminal interpolation,root unchanged,last4 radii tapered. No resampling of full curve,no common cutting plane;not art or collision proof.')
 (out/'rounded_nape_manifest.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8')
 if save_model:(modeldir/'rounded_nape_manifest.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8')
+if crown_tier:
+ manifest.update(crown_tier=True,pilot=pilot,operation_attribute=attribute,images_sha256=images,method='Restored raw rear-reaching shafts only,rootY>-30mm,rootZ>1.825m,tipY>15mm,tipZ<1.800m;pilot negativeX. Preserve lower root layers. Continuous25mm root-height onset;shorten upper layer34-52percent times coherent0.65-1 field,capped70mm and keep at least50mm own arc. Retain original control prefix and segment-interpolated endpoint,taper last<=4 radii. No common cutting plane. Not final art or collision acceptance.')
+ (out/'rounded_nape_manifest.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8')
+ if save_model:(modeldir/'rounded_nape_manifest.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8')
 print('ROUNDED_NAPE_PREVIEW',version,flush=True)
+if projected_tier:
+ manifest.update(projected_tier=projected_tier,operation_attribute=attribute,images_sha256=images,selected_roots_xyz_quantiles_m=np.quantile(p[offsets[np.array(selected)]],[0,.5,1],axis=0).tolist(),method='Inspected projected set intersect restored raw and rear-reaching tipY>15mm,tipZ<1.800m. Shorten own original polyline45percent times coherent root field0.65-1,capped55mm,retain minimum30mm arc. Exact source prefix and interpolated endpoint,terminal taper. All other hair unchanged;not continuous collision or artistic acceptance.')
+ (out/'rounded_nape_manifest.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8')
+ if save_model:(modeldir/'rounded_nape_manifest.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8')
