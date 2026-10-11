@@ -9,9 +9,14 @@ ROOT=Path(__file__).resolve().parents[1]
 args=sys.argv[sys.argv.index('--')+1:];version,source_version=args[:2]
 if not all(re.fullmatch('[A-Za-z0-9_-]+',v) for v in args[:2]):raise ValueError(args)
 roughness=float(args[args.index('--roughness')+1]) if '--roughness' in args else .30
+random_roughness=float(args[args.index('--random-roughness')+1]) if '--random-roughness' in args else None
+archive='--archive' in args;preview='--preview-only' in args;rear_study='--rear-study' in args
+assert random_roughness is None or 0<=random_roughness<=1
 radial=float(args[args.index('--radial')+1]) if '--radial' in args else .36
 if not (.2<=roughness<=.5 and .2<=radial<=.6):raise ValueError('Restrained valid hair roughness required')
 out,render=ROOT/'Exports'/version,ROOT/'Renders'/version
+if archive:
+ archive_root=Path(r'D:\星湾世界_模型归档\starbay-ai-world\角色工坊\焰冕行者');out,render=archive_root/'Exports'/version,archive_root/'Renders'/version
 if out.exists() or render.exists():raise RuntimeError('Fresh output required')
 source=ROOT/'Exports'/source_version/'Ember_Regent.blend'
 bpy.ops.wm.open_mainfile(filepath=str(source),use_scripts=False)
@@ -33,7 +38,10 @@ for ob in visible:
    nodes=[n for n in clone.node_tree.nodes if n.type=='BSDF_HAIR_PRINCIPLED']
    if len(nodes)!=1:raise RuntimeError('Expected inspected single Principled Hair shader')
    shader=nodes[0];changed={}
-   for key,value in [('Roughness',roughness),('Radial Roughness',radial)]:
+   values=[('Roughness',roughness),('Radial Roughness',radial)]+([('Random Roughness',random_roughness)] if random_roughness is not None else [])
+   for key,value in values:
+    if key=='Radial Roughness' and shader.model=='HUANG':
+     changed[key]={'not_applied':'Huang shader has no radial roughness input'};continue
     socket=shader.inputs[key];changed[key]={'old_default':float(socket.default_value),'removed_input_links':len(socket.links),'new_default':value}
     for link in list(socket.links):clone.node_tree.links.remove(link)
     socket.default_value=value
@@ -44,10 +52,21 @@ scene=bpy.context.scene;pref=bpy.context.preferences.addons['cycles'].preference
 for d in pref.devices:d.use=d.type=='OPTIX'
 scene.cycles.device='GPU';scene.cycles.samples=128 if '--draft' in args else 192;scene.cycles.use_denoising=False
 scene.render.resolution_x=1200;scene.render.resolution_y=1400;scene.render.resolution_percentage=80 if '--draft' in args else 100
+if rear_study:scene.cycles.samples=256;scene.cycles.use_denoising=True;scene.cycles.denoiser='OPENIMAGEDENOISE'
 out.mkdir(parents=True);render.mkdir(parents=True)
 report=dict(version=version,source=source_version,source_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),method='Fresh cloned hair materials, explicit Roughness/Radial Roughness, preserve color and actual geometry',visible_strands=sum(len(o.data.curves) for o in visible),geometry_before_sha256=before,geometry_after_sha256=geometry_hash(),all_positions_and_radii_unchanged=True,materials=records,samples=scene.cycles.samples,draft='--draft' in args,status='unreviewed true Blender surface study',license='Retained project original frontal / Ddr Rcs Royalty Free rear / Bystedt CC BY-SA support / Abhay Pratap Royalty Free source-flow support')
 (out/'surface_manifest.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
-bpy.ops.wm.save_as_mainfile(filepath=str(out/'Ember_Regent.blend'))
-for name in ['01_Front','02_ThreeQuarter','03_Side','04_Back']:
+report.update(model_saved=not preview,archive_outputs=archive,rear_study=rear_study,random_roughness=random_roughness)
+if not preview:
+ bpy.ops.wm.save_as_mainfile(filepath=str(out/'Ember_Regent.blend'),compress=True)
+ report['model_sha256']=hashlib.sha256((out/'Ember_Regent.blend').read_bytes()).hexdigest()
+if rear_study:
+ from mathutils import Matrix
+ camera=bpy.data.objects['03_Side'].copy();camera.data=camera.data.copy();scene.collection.objects.link(camera);camera.name='05_OppositeSide';reflection=Matrix.Diagonal((-1.,1.,1.,1.));camera.matrix_world=reflection@camera.matrix_world@reflection
+for name in (['04_Back','05_OppositeSide','02_ThreeQuarter'] if rear_study else ['01_Front','02_ThreeQuarter','03_Side','04_Back']):
  scene.camera=bpy.data.objects[name];scene.render.filepath=str(render/(name+'.png'));bpy.ops.render.render(write_still=True)
 print('NATIVE_SURFACE_STUDY_RENDERED',version,flush=True)
+report.update(source_unchanged=hashlib.sha256(source.read_bytes()).hexdigest()==report['source_sha256'],images_sha256={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in render.glob('*.png')},samples=scene.cycles.samples,denoising='OpenImageDenoise' if scene.cycles.use_denoising else 'None')
+assert report['source_unchanged']
+(out/'surface_manifest.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
+(render/'surface_manifest.json').write_text(json.dumps(report,indent=2),encoding='utf-8')

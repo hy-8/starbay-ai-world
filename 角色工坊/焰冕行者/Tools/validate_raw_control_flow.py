@@ -57,6 +57,39 @@ if retained is not None:
  result=dict(source=base,source_sha256=before[0],candidate=candidate,candidate_sha256=after[0],mesh_count=len(before[1]),meshes_uv_shape_keys_transforms_exact=True,other_native_geometry_exact=True,material_light_world_camera_display_exact=True,image_paths_compared_as_resolved_absolute='--resolve-image-paths' in a,retained_curve_history_exact=True,retained_positions_radii_counts_transforms_exact=True,accepted_inner_curtain_retained=True,removed_fibers=len(selected),retained_fibers=len(retained),scope='Independent saved-file mixed-count deletion comparison to exact local inspected selection. Count/topology intentionally reduced;all retained fibers exact. Not artistic or collision acceptance.')
  out.write_text(json.dumps(result,indent=2),encoding='utf-8');print('STRAY_REMOVAL_AUDIT_PASS',candidate,flush=True);sys.exit(0)
 assert len(bs)==len(asz)
+if '--strand-variation' in a:
+ mask=afterattrs['native_rear_strand_variation'][1];assert np.array_equal(bs,asz) and np.array_equal(br,ar)
+ manifest=json.loads((ROOT/'Exports'/candidate/'strand_variation_manifest.json').read_text())
+ offsets=np.r_[0,np.cumsum(bs)];roots=bp[offsets[:-1]];tips=bp[offsets[1:]-1]
+ expected=beforeattrs['native_restored_raw_controls'][1].copy()&(tips[:,1]>.015)&(tips[:,2]<1.800)&(roots[:,1]>-.030)
+ if manifest.get('pilot'):expected&=roots[:,0]<-.005
+ if manifest.get('selection'):
+  selected=np.zeros(len(bs),bool);selected[np.load(ROOT/'Renders'/manifest['selection']/'local_projected_indices.npz')['selected']]=True;expected&=selected
+ assert np.array_equal(mask,expected)
+ from mathutils import Vector
+ from mathutils.bvhtree import BVHTree
+ bv=BVHTree.FromObject(bpy.data.objects['CC0 male body • retained topology'],bpy.context.evaluated_depsgraph_get())
+ def signed(point):
+  h,n,_,_=bv.find_nearest(Vector(point));return float((Vector(point)-h).dot(n))
+ checked=protected=0
+ for i in range(len(bs)):
+  old=bp[offsets[i]:offsets[i+1]];p=ap[offsets[i]:offsets[i+1]]
+  if not mask[i]:assert np.array_equal(old,p);continue
+  arc=np.r_[0,np.cumsum(np.linalg.norm(np.diff(old.astype(float),axis=0),axis=1))];prefix=arc<=.008
+  assert np.array_equal(old[prefix],p[prefix]) and np.array_equal(old[-1],p[-1]);protected+=int(prefix.sum())
+  if manifest.get('posterior_only'):
+   excluded=(old[:,2]>=1.850)|(old[:,1]<=.015);assert np.array_equal(old[excluded],p[excluded])
+  if not manifest.get('coherent_relief'):assert np.array_equal(old[arc>=.95*arc[-1]],p[arc>=.95*arc[-1]])
+  oldsamples=np.vstack([old,(old[:-1]+old[1:])*.5]);newsamples=np.vstack([p,(p[:-1]+p[1:])*.5])
+  for x,y in zip(oldsamples,newsamples):
+   if np.linalg.norm(x-y)>1e-7:
+    assert signed(y)>=min(.0003,signed(x))-3e-6;checked+=1
+ delta=float(np.linalg.norm(ap-bp,axis=1).max());assert np.isfinite(ap).all() and 0<delta<=.00825
+ assert abs(delta-manifest['max_same_index_displacement_m'])<1e-6
+ assert manifest['model_sha256']==after[0] and manifest['source_sha256']==before[0] and manifest['selected_fibers']==int(mask.sum())
+ result=dict(source=base,source_sha256=before[0],candidate=candidate,candidate_sha256=after[0],mesh_count=len(before[1]),meshes_uv_shape_keys_transforms_exact=True,all_other_native_geometry_exact=True,material_light_world_camera_display_exact=True,image_paths_compared_as_resolved_absolute='--resolve-image-paths' in a,historical_curve_attributes_exact=True,all_radii_point_counts_transforms_exact=True,all_roots_and_tips_exact=True,root8mm_controls_exact=protected,unselected_fibers_exact=int((~mask).sum()),selected_fibers=int(mask.sum()),max_same_index_displacement_m=delta,changed_control_and_midpoint_body_samples_checked=checked,scope='Independent saved-file mixed-count comparison. Exact raw rear selection,root8mm/endpoints retained. Changed controls and segment midpoints preserve original signed body gap within3microns,threshold min(original,0.3mm). No continuous collision or art approval.')
+ result.update(posterior_gate_exact=manifest.get('posterior_only',False))
+ out.write_text(json.dumps(result,indent=2),encoding='utf-8');print('STRAND_VARIATION_AUDIT_PASS',candidate,flush=True);sys.exit(0)
 if '--curved-tips' in a:
  mask=afterattrs['native_curved_projected_tips'][1];assert np.array_equal(bs,asz) and np.array_equal(br,ar)
  manifest=json.loads((ROOT/'Exports'/candidate/'curved_tips_manifest.json').read_text())

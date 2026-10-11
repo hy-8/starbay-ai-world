@@ -1,0 +1,591 @@
+{
+  "continuation": "nativerearlift298",
+  "goal_complete": false,
+  "user_direction": "Preserve soft side part;dry,fluffy,naturally fragmented hair",
+  "studies": [
+    {
+      "version": "nativetextureribbon287",
+      "manifest": {
+        "source": "nativecurvedaccent283",
+        "source_sha256": "559d01f198bfc7b1b4a2839846a72cbc2e5e2f315c2fbaf4b216cb188d0cac6b",
+        "source_unchanged": true,
+        "selection": "nativerearribbonids285",
+        "model_saved": false,
+        "model_sha256": null,
+        "render_archive": "D:\\星湾世界_模型归档\\starbay-ai-world\\角色工坊\\焰冕行者\\Renders\\nativetextureribbon287",
+        "selected_fibers": 1221,
+        "scale_quantiles": [
+          0.5,
+          1.0,
+          1.0
+        ],
+        "zero_scale_fibers": 0,
+        "max_same_index_displacement_m": 0.0008976676617749035,
+        "images_sha256": {
+          "04_Back.png": "748bcbfeb8ae83e8152cce330f14f6d20be7e7f83b0d21bd17d8247b9de0c219",
+          "05_OppositeSide.png": "d82bca4d2378f4da205f47f7273af2acedd4d0404798360fc549a921d0faa5e0"
+        },
+        "method": "Restored raw rear paths only;optional exact inspected projection intersection. Keep original mixed control counts,radii,root8mm and terminal5percent. Smooth individual transverse/positive-normal directional variation0.35-0.75mm amplitude,1-3 waves over full path,seed731992. One scalar backtracking per curve preserves sampled original body clearance at controls/midpoints. No full-path resampling or material changes. Not continuous collision or art acceptance."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "04_Back.png": "748bcbfeb8ae83e8152cce330f14f6d20be7e7f83b0d21bd17d8247b9de0c219",
+        "05_OppositeSide.png": "d82bca4d2378f4da205f47f7273af2acedd4d0404798360fc549a921d0faa5e0"
+      },
+      "art_judgment": "Both views inspected in prior segment.1221 projected rear fibers with submillimeter individual noise;wide sheet remains,not adopted.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativetexturedrear288",
+      "manifest": {
+        "source": "nativecurvedaccent283",
+        "source_sha256": "559d01f198bfc7b1b4a2839846a72cbc2e5e2f315c2fbaf4b216cb188d0cac6b",
+        "source_unchanged": true,
+        "selection": null,
+        "model_saved": false,
+        "model_sha256": null,
+        "render_archive": "D:\\星湾世界_模型归档\\starbay-ai-world\\角色工坊\\焰冕行者\\Renders\\nativetexturedrear288",
+        "selected_fibers": 20575,
+        "scale_quantiles": [
+          0.0,
+          1.0,
+          1.0
+        ],
+        "zero_scale_fibers": 1,
+        "max_same_index_displacement_m": 0.0009111255640164018,
+        "images_sha256": {
+          "04_Back.png": "e0b45b8e3bfddc52c5d7aad5944bff19d25954fc081d0941992ff8478377e6e9",
+          "03_Side.png": "62a690b59b83d31c2a4edc345dc3284ed9bd50dc00ba5b5e9445ad95a4f311b0",
+          "05_OppositeSide.png": "ade7e537207999226b0f9db95dcc18a47e3a5b5d81fc1b8a44f6e8056432b580",
+          "02_ThreeQuarter.png": "17d437cba70d4b6d38a8483afb0442f5f146cad1cb650820849f25e5fa385254"
+        },
+        "method": "Restored raw rear paths only;optional exact inspected projection intersection. Keep original mixed control counts,radii,root8mm and terminal5percent. Smooth individual transverse/positive-normal directional variation0.35-0.75mm amplitude,1-3 waves over full path,seed731992. One scalar backtracking per curve preserves sampled original body clearance at controls/midpoints. No full-path resampling or material changes. Not continuous collision or art acceptance."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "17d437cba70d4b6d38a8483afb0442f5f146cad1cb650820849f25e5fa385254",
+        "03_Side.png": "62a690b59b83d31c2a4edc345dc3284ed9bd50dc00ba5b5e9445ad95a4f311b0",
+        "04_Back.png": "e0b45b8e3bfddc52c5d7aad5944bff19d25954fc081d0941992ff8478377e6e9",
+        "05_OppositeSide.png": "ade7e537207999226b0f9db95dcc18a47e3a5b5d81fc1b8a44f6e8056432b580"
+      },
+      "art_judgment": "All4 views inspected.20575 raw rear fibers with small noise;detail changes but silhouette insufficient,not adopted.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativedryfinish289",
+      "manifest": {
+        "version": "nativedryfinish289",
+        "source": "nativecurvedaccent283",
+        "source_sha256": "559d01f198bfc7b1b4a2839846a72cbc2e5e2f315c2fbaf4b216cb188d0cac6b",
+        "method": "Fresh cloned hair materials, explicit Roughness/Radial Roughness, preserve color and actual geometry",
+        "visible_strands": 83666,
+        "geometry_before_sha256": "68dd05f406fc3aa1ab16c2a4d64df1e9321bb43a1052547f0902b74bd37f3cfa",
+        "geometry_after_sha256": "68dd05f406fc3aa1ab16c2a4d64df1e9321bb43a1052547f0902b74bd37f3cfa",
+        "all_positions_and_radii_unchanged": true,
+        "materials": [
+          {
+            "source": "Deep cherry • coherent native groom pigment",
+            "new_material": "Deep cherry • coherent native groom pigment • restrained sh",
+            "changes": {
+              "Roughness": {
+                "old_default": 0.30000001192092896,
+                "removed_input_links": 0,
+                "new_default": 0.42
+              },
+              "Radial Roughness": {
+                "not_applied": "Huang shader has no radial roughness input"
+              },
+              "Random Roughness": {
+                "old_default": 0.1599999964237213,
+                "removed_input_links": 0,
+                "new_default": 0.28
+              }
+            }
+          }
+        ],
+        "samples": 256,
+        "draft": false,
+        "status": "unreviewed true Blender surface study",
+        "license": "Retained project original frontal / Ddr Rcs Royalty Free rear / Bystedt CC BY-SA support / Abhay Pratap Royalty Free source-flow support",
+        "model_saved": false,
+        "archive_outputs": true,
+        "rear_study": true,
+        "random_roughness": 0.28,
+        "source_unchanged": true,
+        "images_sha256": {
+          "02_ThreeQuarter.png": "c78d04d04c7786506738557444e405ad65bb584bbd33a0a476d3f6e6d3180290",
+          "04_Back.png": "26ae1be57168829bd83b0260718fabbc9206230de2034cc45a55de015ef0a43a",
+          "05_OppositeSide.png": "17f6e8c22e47779d8c01cdcaaba20ca640f57928b1df32226e862a0a4885592e"
+        },
+        "denoising": "OpenImageDenoise"
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "c78d04d04c7786506738557444e405ad65bb584bbd33a0a476d3f6e6d3180290",
+        "04_Back.png": "26ae1be57168829bd83b0260718fabbc9206230de2034cc45a55de015ef0a43a",
+        "05_OppositeSide.png": "17f6e8c22e47779d8c01cdcaaba20ca640f57928b1df32226e862a0a4885592e"
+      },
+      "art_judgment": "All3 views inspected.Only roughness changed;wide bundles remain and a support stripe reappears,not adopted. Initial Huang radial socket error fixed before any output/save/render;radial setting explicitly not applied.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativeloosepilot290",
+      "manifest": {
+        "source": "nativecurvedaccent283",
+        "source_sha256": "559d01f198bfc7b1b4a2839846a72cbc2e5e2f315c2fbaf4b216cb188d0cac6b",
+        "source_unchanged": true,
+        "selection": null,
+        "model_saved": false,
+        "model_sha256": null,
+        "render_archive": "D:\\星湾世界_模型归档\\starbay-ai-world\\角色工坊\\焰冕行者\\Renders\\nativeloosepilot290",
+        "selected_fibers": 7333,
+        "scale_quantiles": [
+          0.0,
+          1.0,
+          1.0
+        ],
+        "zero_scale_fibers": 5,
+        "max_same_index_displacement_m": 0.0030398976523429155,
+        "images_sha256": {
+          "04_Back.png": "e0c72c24b269e7bb9f19fbcb3eb4575d83494a9eb0af493ac96b47b65a736b26",
+          "05_OppositeSide.png": "d0f21c81b9cd856ac460bbb1d66fa75e7f030c45ed930029639517e7cd1f77d3"
+        },
+        "method": "Restored raw rear paths only;optional exact inspected projection intersection. Keep original mixed control counts,radii,root8mm and terminal5percent. Smooth individual transverse/positive-normal directional variation1.2-2.5mm amplitude,1-2 waves over full path,seed731992. One scalar backtracking per curve preserves sampled original body clearance at controls/midpoints. No full-path resampling or material changes. Not continuous collision or art acceptance.",
+        "loose": true,
+        "pilot": true,
+        "amplitude_range_m": [
+          0.0012,
+          0.0025
+        ],
+        "wave_range": [
+          1,
+          2
+        ]
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "04_Back.png": "e0c72c24b269e7bb9f19fbcb3eb4575d83494a9eb0af493ac96b47b65a736b26",
+        "05_OppositeSide.png": "d0f21c81b9cd856ac460bbb1d66fa75e7f030c45ed930029639517e7cd1f77d3"
+      },
+      "art_judgment": "Both views inspected.7333 negativeX rear fibers,1.2-2.5mm individual variation;wide panels remain,not adopted.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativerecombpilot291",
+      "manifest": {
+        "source": "nativecurvedaccent283",
+        "source_sha256": "559d01f198bfc7b1b4a2839846a72cbc2e5e2f315c2fbaf4b216cb188d0cac6b",
+        "source_unchanged": true,
+        "pilot": true,
+        "selected_fibers": 7333,
+        "model_saved": false,
+        "model_sha256": null,
+        "length_before_after_quantiles_m": [
+          [
+            0.0008471037118221467,
+            0.0008471037118221467
+          ],
+          [
+            0.09447454547905196,
+            0.05741211876800393
+          ],
+          [
+            0.18147059815344593,
+            0.15688551149027363
+          ]
+        ],
+        "max_same_index_displacement_m": 0.08817454427480698,
+        "images_sha256": {
+          "04_Back.png": "7abe55ee024d7d81b88411dc7c33dddfe61128b26b8431ae5c6eaf46d07a18ce",
+          "05_OppositeSide.png": "170f0566e8cb144865dac03abfe08e2a555041c40406b17638a59f4685a235a7"
+        },
+        "method": "Original mixed control counts/radii/root8mm retained. Integrate projected downward tangent after24mm blend with coherent root-field lateral flow; normal clearance transitions to2-8mm varying by path/root. Arc budget=min(original,max25mm,(rootZ-(1.748+12mm*sin(rootphase)+4mm*jitter))*1.18). No claim of final length equal budget or continuous collision. Materials,front curtain and other objects unchanged. Actual art review required."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "04_Back.png": "7abe55ee024d7d81b88411dc7c33dddfe61128b26b8431ae5c6eaf46d07a18ce",
+        "05_OppositeSide.png": "170f0566e8cb144865dac03abfe08e2a555041c40406b17638a59f4685a235a7"
+      },
+      "art_judgment": "Both views inspected.7333 posterior fibers transported along scalp;partially thinner,insufficient alone.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativerecombfull292",
+      "manifest": {
+        "source": "nativecurvedaccent283",
+        "source_sha256": "559d01f198bfc7b1b4a2839846a72cbc2e5e2f315c2fbaf4b216cb188d0cac6b",
+        "source_unchanged": true,
+        "pilot": false,
+        "selected_fibers": 20575,
+        "model_saved": false,
+        "model_sha256": null,
+        "length_before_after_quantiles_m": [
+          [
+            0.0008471037118221467,
+            0.0008471037118221467
+          ],
+          [
+            0.11253092043507605,
+            0.08006963758587463
+          ],
+          [
+            0.19274756470593307,
+            0.16016382100936302
+          ]
+        ],
+        "max_same_index_displacement_m": 0.13574349880218506,
+        "images_sha256": {
+          "04_Back.png": "79a4130b1ec1cc61bf38e59d8a3fd7e8dcb5cbac7e710bae4dd65630ff7d2bea",
+          "03_Side.png": "1778859469b5324345658d9b6b6cebe1bd1bf7a1afe08ae1988256b797da74d9",
+          "05_OppositeSide.png": "08969ba876fd3f5ea47794c9ec41418a171de5e14b859e903c99c913e2a47096",
+          "02_ThreeQuarter.png": "6dba9dce4fc9a1ebe07284fdbee1c1ef5c7bc27700d55a579c6bd9d19bf7b37c"
+        },
+        "method": "Original mixed control counts/radii/root8mm retained. Integrate projected downward tangent after24mm blend with coherent root-field lateral flow; normal clearance transitions to2-8mm varying by path/root. Arc budget=min(original,max25mm,(rootZ-(1.748+12mm*sin(rootphase)+4mm*jitter))*1.18). No claim of final length equal budget or continuous collision. Materials,front curtain and other objects unchanged. Actual art review required."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "6dba9dce4fc9a1ebe07284fdbee1c1ef5c7bc27700d55a579c6bd9d19bf7b37c",
+        "03_Side.png": "1778859469b5324345658d9b6b6cebe1bd1bf7a1afe08ae1988256b797da74d9",
+        "04_Back.png": "79a4130b1ec1cc61bf38e59d8a3fd7e8dcb5cbac7e710bae4dd65630ff7d2bea",
+        "05_OppositeSide.png": "08969ba876fd3f5ea47794c9ec41418a171de5e14b859e903c99c913e2a47096"
+      },
+      "art_judgment": "All4 views inspected.20575 fibers transported;wide ribbons gone but replaced by overly smooth flattened cap. Rejected for user dry/fluffy/fragmented direction.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativefeatherpilot293",
+      "manifest": {
+        "source": "nativecurvedaccent283",
+        "source_sha256": "559d01f198bfc7b1b4a2839846a72cbc2e5e2f315c2fbaf4b216cb188d0cac6b",
+        "source_unchanged": true,
+        "pilot": true,
+        "feathered": true,
+        "guide_groups": 36,
+        "selected_fibers": 7333,
+        "model_saved": false,
+        "model_sha256": null,
+        "length_before_after_quantiles_m": [
+          [
+            0.0008471037118221467,
+            0.0008471037118221467
+          ],
+          [
+            0.09447454547905196,
+            0.056677624667109974
+          ],
+          [
+            0.18147059815344593,
+            0.11138734278398285
+          ]
+        ],
+        "length_statistics_before_optional_grouping": true,
+        "max_same_index_displacement_m": 0.10108625143766403,
+        "images_sha256": {
+          "04_Back.png": "f5b623601fddbf4412f0a4ee4057e5f6d5d106d4572a18d782d1033cfbc4fbd9",
+          "05_OppositeSide.png": "bbdccc873e32e3547b77b8f86a3fc907d3d498c89e949abe4e0600a826c5377e"
+        },
+        "method": "Original mixed control counts/radii/root8mm retained. Integrate projected downward tangent after24mm blend with coherent root-field lateral flow; normal clearance transitions to2-8mm varying by path/root. Arc budget=min(original,max25mm,(rootZ-(1.748+12mm*sin(rootphase)+4mm*jitter))*1.18). No claim of final length equal budget or continuous collision. Materials,front curtain and other objects unchanged. Actual art review required.",
+        "feathered_override": "36/96 farthest-point+12 Lloyd root groups;tip targetZ1.740+.60*max(0,rootZ-1.770)+12mm*sin(groupPhase)+3mm*jitter;lift5mm+(8..17mm)*sin(pi*t)^1.2+6mm*t^3. On new transported scaffold only,70percent transverse guide contraction ramp after8mm over25mm and capped8mm. Whole-curve body backtracking on controls/midpoints,not continuous collision."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "04_Back.png": "f5b623601fddbf4412f0a4ee4057e5f6d5d106d4572a18d782d1033cfbc4fbd9",
+        "05_OppositeSide.png": "bbdccc873e32e3547b77b8f86a3fc907d3d498c89e949abe4e0600a826c5377e"
+      },
+      "art_judgment": "Both views inspected.36 root groups with added lift and graduated lengths;visible artificial crimped tiers,rejected. First attempt failed before output due fractional power of tiny negative sine;clamping fixed cause. This run used absolute0.25mm grouping guard including unchanged roots,unrecorded scales;do not infer294 guard statistics.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativesmoothfeather294",
+      "manifest": {
+        "source": "nativecurvedaccent283",
+        "source_sha256": "559d01f198bfc7b1b4a2839846a72cbc2e5e2f315c2fbaf4b216cb188d0cac6b",
+        "source_unchanged": true,
+        "pilot": true,
+        "feathered": true,
+        "guide_groups": 36,
+        "selected_fibers": 7333,
+        "model_saved": false,
+        "model_sha256": null,
+        "length_before_after_quantiles_m": [
+          [
+            0.0008471037118221467,
+            0.0008471037118221467
+          ],
+          [
+            0.09447454547905196,
+            0.05657396822681748
+          ],
+          [
+            0.18147059815344593,
+            0.11182207144702268
+          ]
+        ],
+        "length_statistics_before_optional_grouping": true,
+        "max_same_index_displacement_m": 0.10166201740503311,
+        "images_sha256": {
+          "04_Back.png": "dbc7d9b926916c30f4831f7c9d8a165e25c2cd1c553293e210b7314c05b186ea",
+          "05_OppositeSide.png": "f60df6eb4db0eb8f3135976ea6da5fa9e7c181db37553b111f5841352e1c193d"
+        },
+        "method": "Original mixed control counts/radii/root8mm retained. Integrate projected downward tangent after24mm blend with coherent root-field lateral flow; normal clearance transitions to2-8mm varying by path/root. Arc budget=min(original,max25mm,(rootZ-(1.748+12mm*sin(rootphase)+4mm*jitter))*1.18). No claim of final length equal budget or continuous collision. Materials,front curtain and other objects unchanged. Actual art review required.",
+        "feathered_override": "36/96 farthest-point+12 Lloyd root groups;tip targetZ1.740+.60*max(0,rootZ-1.770)+12mm*sin(groupPhase)+3mm*jitter;lift5mm+(8..17mm)*sin(pi*t)^1.2+6mm*t^3. On new transported scaffold only,70percent transverse guide contraction ramp after8mm over25mm and capped8mm. Whole-curve body backtracking on controls/midpoints,not continuous collision.",
+        "group_scales_quantiles": [
+          0.5,
+          1.0,
+          1.0
+        ],
+        "zero_scale_groups_fibers": 0,
+        "group_body_guard": "Changed controls/midpoints preserve min(previous scaffold gap,0.25mm) minus1micron. Exact root samples excluded from displacement guard.",
+        "smooth_scalp": true,
+        "scalp_normal_method": "Barycentric interpolated evaluated vertex normals on actual triangulated body"
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "04_Back.png": "dbc7d9b926916c30f4831f7c9d8a165e25c2cd1c553293e210b7314c05b186ea",
+        "05_OppositeSide.png": "f60df6eb4db0eb8f3135976ea6da5fa9e7c181db37553b111f5841352e1c193d"
+      },
+      "art_judgment": "Both views inspected. Barycentric evaluated vertex normals and changed-sample body guard;visible crimped tiers persist. No evidence face normals were the main cause;rejected.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativecoherentpilot295",
+      "manifest": {
+        "source": "nativecurvedaccent283",
+        "source_sha256": "559d01f198bfc7b1b4a2839846a72cbc2e5e2f315c2fbaf4b216cb188d0cac6b",
+        "source_unchanged": true,
+        "selection": null,
+        "model_saved": false,
+        "model_sha256": null,
+        "render_archive": "D:\\星湾世界_模型归档\\starbay-ai-world\\角色工坊\\焰冕行者\\Renders\\nativecoherentpilot295",
+        "selected_fibers": 7333,
+        "scale_quantiles": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "zero_scale_fibers": 0,
+        "max_same_index_displacement_m": 0.008148889988660812,
+        "images_sha256": {
+          "04_Back.png": "f49708414ba4d9b3a64c07560a5a202e4c309c40f63a9c1c1c5e54be7f55386b",
+          "05_OppositeSide.png": "d2af178e4951c2f120bbb6c7bb359083c76f08c810ec19221ce8f309244e5b83"
+        },
+        "method": "Restored raw rear paths only. Preserve mixed counts,radii,root8mm,endpoints,original materials. At55percent arc,field=510*x+250*y+140*z;normal relief1..8mm by squared sine field,transverse2mm sine. Smooth25mm onset after8mm times sin(pi*t)^1.1 arch;no terminal5percent preservation claim. Whole-curve backtracking preserves original sampled body gap at controls/midpoints. Not continuous collision or art acceptance.",
+        "loose": false,
+        "pilot": true,
+        "amplitude_range_m": [
+          0.00035,
+          0.00075
+        ],
+        "wave_range": [
+          1,
+          3
+        ],
+        "coherent_relief": true
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "04_Back.png": "f49708414ba4d9b3a64c07560a5a202e4c309c40f63a9c1c1c5e54be7f55386b",
+        "05_OppositeSide.png": "d2af178e4951c2f120bbb6c7bb359083c76f08c810ec19221ce8f309244e5b83"
+      },
+      "art_judgment": "Both views inspected.Original paths preserved with coherent1-8mm normal relief;more narrow depth separation,expanded for comparison.",
+      "goal_complete": false,
+      "metadata_correction": "Original amplitude_range_m/wave_range fields inherited micro-noise defaults. Actual executed coherent relief1-8mm normal plus up to2mm transverse,one arch envelope,not micro-noise;method string is correct. Future generator metadata fixed."
+    },
+    {
+      "version": "nativecoherentfull296",
+      "manifest": {
+        "source": "nativecurvedaccent283",
+        "source_sha256": "559d01f198bfc7b1b4a2839846a72cbc2e5e2f315c2fbaf4b216cb188d0cac6b",
+        "source_unchanged": true,
+        "selection": null,
+        "model_saved": false,
+        "model_sha256": null,
+        "render_archive": "D:\\星湾世界_模型归档\\starbay-ai-world\\角色工坊\\焰冕行者\\Renders\\nativecoherentfull296",
+        "selected_fibers": 20575,
+        "scale_quantiles": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "zero_scale_fibers": 0,
+        "max_same_index_displacement_m": 0.008148889988660812,
+        "images_sha256": {
+          "04_Back.png": "cf0874faf40f3eeb000b030c9b540c06dfc892790c9f2b4115bd051e15e0c73e",
+          "03_Side.png": "eda234fe4c2600390cd7a3e7959a378f5f1670205aa084b9922962da38e9e819",
+          "05_OppositeSide.png": "da6c447455d5bf521f4e0eea313ad4c944261441857cda0ed2d51ef79eb690ed",
+          "02_ThreeQuarter.png": "2ab7181fea07816a6f830774c07f72630fbefdcf507bca251bc8906115abd7c0"
+        },
+        "method": "Restored raw rear paths only. Preserve mixed counts,radii,root8mm,endpoints,original materials. At55percent arc,field=510*x+250*y+140*z;normal relief1..8mm by squared sine field,transverse2mm sine. Smooth25mm onset after8mm times sin(pi*t)^1.1 arch;no terminal5percent preservation claim. Whole-curve backtracking preserves original sampled body gap at controls/midpoints. Not continuous collision or art acceptance.",
+        "loose": false,
+        "pilot": false,
+        "amplitude_range_m": [
+          0.00035,
+          0.00075
+        ],
+        "wave_range": [
+          1,
+          3
+        ],
+        "coherent_relief": true
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "2ab7181fea07816a6f830774c07f72630fbefdcf507bca251bc8906115abd7c0",
+        "03_Side.png": "eda234fe4c2600390cd7a3e7959a378f5f1670205aa084b9922962da38e9e819",
+        "04_Back.png": "cf0874faf40f3eeb000b030c9b540c06dfc892790c9f2b4115bd051e15e0c73e",
+        "05_OppositeSide.png": "da6c447455d5bf521f4e0eea313ad4c944261441857cda0ed2d51ef79eb690ed"
+      },
+      "art_judgment": "All4 views inspected.Rear depth separation improved but new upper silhouette arcs;not adopted without spatial restriction.",
+      "goal_complete": false,
+      "metadata_correction": "Original amplitude_range_m/wave_range fields inherited micro-noise defaults. Actual executed coherent relief1-8mm normal plus up to2mm transverse,one arch envelope,not micro-noise;method string is correct. Future generator metadata fixed."
+    },
+    {
+      "version": "nativeposteriorrelief297",
+      "manifest": {
+        "source": "nativecurvedaccent283",
+        "source_sha256": "559d01f198bfc7b1b4a2839846a72cbc2e5e2f315c2fbaf4b216cb188d0cac6b",
+        "source_unchanged": true,
+        "selection": null,
+        "model_saved": false,
+        "model_sha256": null,
+        "render_archive": "D:\\星湾世界_模型归档\\starbay-ai-world\\角色工坊\\焰冕行者\\Renders\\nativeposteriorrelief297",
+        "selected_fibers": 20575,
+        "scale_quantiles": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "zero_scale_fibers": 0,
+        "max_same_index_displacement_m": 0.008148850873112679,
+        "images_sha256": {
+          "04_Back.png": "d0c861d3e263fb0478f471b70176380ba1ed5d4b36deac0317235d890ee47d23",
+          "03_Side.png": "38c424bef6d7809a4f5785a94fff667c3351aaeb8edeb4a234007a21de04d9ad",
+          "05_OppositeSide.png": "6211cf5fc9e170d7dd9d864a6eb35bdd77ac268d123b3373a1687265b3b5c802",
+          "02_ThreeQuarter.png": "b569f6de8af6acaa362ff53e684397397d14af5b8e9b4b7a8348f8a7c0424460"
+        },
+        "method": "Restored raw rear paths only. Preserve mixed counts,radii,root8mm,endpoints,original materials. At55percent arc,field=510*x+250*y+140*z;normal relief1..8mm by squared sine field,transverse2mm sine. Smooth25mm onset after8mm times sin(pi*t)^1.1 arch;no terminal5percent preservation claim. Whole-curve backtracking preserves original sampled body gap at controls/midpoints. Not continuous collision or art acceptance.",
+        "loose": false,
+        "pilot": false,
+        "amplitude_range_m": [
+          0.00035,
+          0.00075
+        ],
+        "wave_range": [
+          1,
+          3
+        ],
+        "coherent_relief": true,
+        "posterior_only": true,
+        "posterior_gate": "Multiply displacement by smoothstep((1.850-oldZ)/25mm)*smoothstep((oldY-15mm)/25mm). Controls at/above1.850m or at/beforeY15mm exact."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "b569f6de8af6acaa362ff53e684397397d14af5b8e9b4b7a8348f8a7c0424460",
+        "03_Side.png": "38c424bef6d7809a4f5785a94fff667c3351aaeb8edeb4a234007a21de04d9ad",
+        "04_Back.png": "d0c861d3e263fb0478f471b70176380ba1ed5d4b36deac0317235d890ee47d23",
+        "05_OppositeSide.png": "6211cf5fc9e170d7dd9d864a6eb35bdd77ac268d123b3373a1687265b3b5c802"
+      },
+      "art_judgment": "All4 views inspected.Relief gated to posterior mid/lower region;upper arcs avoided,front part retained. Selected incremental basis298;remaining wide bundles and overall art quality not complete.",
+      "goal_complete": false,
+      "metadata_correction": "Original amplitude_range_m/wave_range fields inherited micro-noise defaults. Actual executed coherent relief1-8mm normal plus up to2mm transverse,one arch envelope,not micro-noise;method string is correct. Future generator metadata fixed."
+    },
+    {
+      "version": "nativerearlift298",
+      "manifest": {
+        "source": "nativecurvedaccent283",
+        "source_sha256": "559d01f198bfc7b1b4a2839846a72cbc2e5e2f315c2fbaf4b216cb188d0cac6b",
+        "source_unchanged": true,
+        "selection": null,
+        "model_saved": true,
+        "model_sha256": "59feae1b9f6c9ee7652a9ad0331b1ac3851c9bf9b4ebdf16f0a8b42e899cd787",
+        "render_archive": "D:\\星湾世界_模型归档\\starbay-ai-world\\角色工坊\\焰冕行者\\Renders\\nativerearlift298",
+        "selected_fibers": 20575,
+        "scale_quantiles": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "zero_scale_fibers": 0,
+        "max_same_index_displacement_m": 0.008148850873112679,
+        "images_sha256": {},
+        "method": "Restored raw rear paths only. Preserve mixed counts,radii,root8mm,endpoints,original materials. At55percent arc,field=510*x+250*y+140*z;normal relief1..8mm by squared sine field,transverse2mm sine. Smooth25mm onset after8mm times sin(pi*t)^1.1 arch;no terminal5percent preservation claim. Whole-curve backtracking preserves original sampled body gap at controls/midpoints. Not continuous collision or art acceptance.",
+        "loose": false,
+        "pilot": false,
+        "amplitude_range_m": [
+          0.00035,
+          0.00075
+        ],
+        "wave_range": [
+          1,
+          3
+        ],
+        "coherent_relief": true,
+        "posterior_only": true,
+        "posterior_gate": "Multiply displacement by smoothstep((1.850-oldZ)/25mm)*smoothstep((oldY-15mm)/25mm). Controls at/above1.850m or at/beforeY15mm exact."
+      },
+      "model_sha256": "59feae1b9f6c9ee7652a9ad0331b1ac3851c9bf9b4ebdf16f0a8b42e899cd787",
+      "inspected_images_sha256": {},
+      "art_judgment": "Saved297 geometry,independent saved-file audit and two actual saved-file presentations inspected. Accepted incremental posterior depth separation;goal remains incomplete.",
+      "goal_complete": false,
+      "metadata_correction": "Original amplitude_range_m/wave_range fields inherited micro-noise defaults. Actual executed coherent relief1-8mm normal plus up to2mm transverse,one arch envelope,not micro-noise;method string is correct. Future generator metadata fixed."
+    }
+  ],
+  "independent_audit": {
+    "source": "nativecurvedaccent283",
+    "source_sha256": "559d01f198bfc7b1b4a2839846a72cbc2e5e2f315c2fbaf4b216cb188d0cac6b",
+    "candidate": "nativerearlift298",
+    "candidate_sha256": "59feae1b9f6c9ee7652a9ad0331b1ac3851c9bf9b4ebdf16f0a8b42e899cd787",
+    "mesh_count": 141,
+    "meshes_uv_shape_keys_transforms_exact": true,
+    "all_other_native_geometry_exact": true,
+    "material_light_world_camera_display_exact": true,
+    "image_paths_compared_as_resolved_absolute": true,
+    "historical_curve_attributes_exact": true,
+    "all_radii_point_counts_transforms_exact": true,
+    "all_roots_and_tips_exact": true,
+    "root8mm_controls_exact": 27667,
+    "unselected_fibers_exact": 25434,
+    "selected_fibers": 20575,
+    "max_same_index_displacement_m": 0.008148850873112679,
+    "changed_control_and_midpoint_body_samples_checked": 357529,
+    "scope": "Independent saved-file mixed-count comparison. Exact raw rear selection,root8mm/endpoints retained. Changed controls and segment midpoints preserve original signed body gap within3microns,threshold min(original,0.3mm). No continuous collision or art approval.",
+    "posterior_gate_exact": true
+  },
+  "saved_file_presentations": [
+    {
+      "source": "nativerearlift298",
+      "source_sha256": "59feae1b9f6c9ee7652a9ad0331b1ac3851c9bf9b4ebdf16f0a8b42e899cd787",
+      "source_unchanged": true,
+      "camera": "04_Back",
+      "diagnostic_opposite_camera": false,
+      "geometry_lighting_unchanged": true,
+      "resolution": [
+        1920,
+        2240
+      ],
+      "samples": 512,
+      "denoising": "OpenImageDenoise",
+      "image_sha256": "ec731570561a521ca3a0f67726a07a1b43db8a17397bfa4922b8b14169e97321",
+      "status": "Actual render pending art review; no generative image replacement"
+    },
+    {
+      "source": "nativerearlift298",
+      "source_sha256": "59feae1b9f6c9ee7652a9ad0331b1ac3851c9bf9b4ebdf16f0a8b42e899cd787",
+      "source_unchanged": true,
+      "camera": "02_ThreeQuarter",
+      "diagnostic_opposite_camera": false,
+      "geometry_lighting_unchanged": true,
+      "resolution": [
+        1200,
+        1400
+      ],
+      "samples": 192,
+      "denoising": "OpenImageDenoise",
+      "image_sha256": "0b0ff7f065709abe0b4b50609e483aec51f0a1d8edb23018c8018c48e69778de",
+      "status": "Actual render pending art review; no generative image replacement"
+    }
+  ],
+  "presentations_actually_inspected": true,
+  "storage": "Fresh298 model directly onD,newE junction;all previews287-297 onD,two selected reviewed copies onE. No old files moved/deleted. Licensed geometry and individual curve selection stay local.",
+  "scope": "Actual Blender geometry/Cycles only. No new paid service,AI portrait replacement,UE/animation work,Release or social publication."
+}

@@ -1,0 +1,16 @@
+{
+  "source": "nativerearlift298",
+  "source_sha256": "59feae1b9f6c9ee7652a9ad0331b1ac3851c9bf9b4ebdf16f0a8b42e899cd787",
+  "source_unchanged": true,
+  "camera": "04_Back",
+  "diagnostic_opposite_camera": false,
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "ec731570561a521ca3a0f67726a07a1b43db8a17397bfa4922b8b14169e97321",
+  "status": "Actual render pending art review; no generative image replacement"
+}

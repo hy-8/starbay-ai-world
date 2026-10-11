@@ -1,0 +1,21 @@
+{
+  "source": "nativecurvedaccent283",
+  "source_sha256": "559d01f198bfc7b1b4a2839846a72cbc2e5e2f315c2fbaf4b216cb188d0cac6b",
+  "candidate": "nativerearlift298",
+  "candidate_sha256": "59feae1b9f6c9ee7652a9ad0331b1ac3851c9bf9b4ebdf16f0a8b42e899cd787",
+  "mesh_count": 141,
+  "meshes_uv_shape_keys_transforms_exact": true,
+  "all_other_native_geometry_exact": true,
+  "material_light_world_camera_display_exact": true,
+  "image_paths_compared_as_resolved_absolute": true,
+  "historical_curve_attributes_exact": true,
+  "all_radii_point_counts_transforms_exact": true,
+  "all_roots_and_tips_exact": true,
+  "root8mm_controls_exact": 27667,
+  "unselected_fibers_exact": 25434,
+  "selected_fibers": 20575,
+  "max_same_index_displacement_m": 0.008148850873112679,
+  "changed_control_and_midpoint_body_samples_checked": 357529,
+  "scope": "Independent saved-file mixed-count comparison. Exact raw rear selection,root8mm/endpoints retained. Changed controls and segment midpoints preserve original signed body gap within3microns,threshold min(original,0.3mm). No continuous collision or art approval.",
+  "posterior_gate_exact": true
+}
