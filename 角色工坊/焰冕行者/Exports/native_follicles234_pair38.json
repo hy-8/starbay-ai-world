@@ -1,0 +1,29 @@
+{
+  "source": "nativeroundednape226",
+  "source_sha256": "50b6280cfca39ca9e9020c2a2a62983941cba1b2cd8727df0ebf8c803de8889a",
+  "candidate": "nativelocalfollicles234",
+  "candidate_sha256": "5b0efda316ebc74e95a7941331cd18453449fb2df81fd1dd5d54f133976b2801",
+  "mesh_count": 141,
+  "all_mesh_geometry_uv_shape_keys_transforms_exact": true,
+  "all_native_hair_positions_radii_counts_transforms_exact": true,
+  "visibility_exact": true,
+  "all_nonbody_materials_exact": true,
+  "light_world_camera_display_exact": true,
+  "original_body_shader_nodes_internal_links_exact": true,
+  "only_original_surface_output_routed_through_local_mix": true,
+  "actual_mask_graph_matches_documented_ellipse_on_body_vertices": true,
+  "body_vertices_with_nonzero_mask": 52,
+  "active_vertex_bounds_m": [
+    [
+      -0.08029577136039734,
+      -0.11922050267457962,
+      1.8002628087997437
+    ],
+    [
+      0.08029577136039734,
+      -0.04944540187716484,
+      1.8696470260620117
+    ]
+  ],
+  "scope": "Independent saved file and actual math-node graph comparison. Scalp material intentionally changes, hair geometry does not. Surface mask is local to body object, not UV-baked or game-export verified. Mask vertex checks do not prove final art quality or continuous animation collision."
+}

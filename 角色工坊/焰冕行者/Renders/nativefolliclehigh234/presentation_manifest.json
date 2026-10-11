@@ -1,0 +1,16 @@
+{
+  "source": "nativelocalfollicles234",
+  "source_sha256": "5b0efda316ebc74e95a7941331cd18453449fb2df81fd1dd5d54f133976b2801",
+  "source_unchanged": true,
+  "camera": "03_Side",
+  "diagnostic_opposite_camera": false,
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "9a663bba0734b81f6e1ce58d4cedc0e770b2047ee7ecebe0c19e55e735a179e1",
+  "status": "Actual render pending art review; no generative image replacement"
+}

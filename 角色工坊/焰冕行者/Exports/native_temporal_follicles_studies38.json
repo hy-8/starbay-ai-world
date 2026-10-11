@@ -1,0 +1,413 @@
+{
+  "continuation": "nativelocalfollicles234",
+  "goal_complete": false,
+  "studies": [
+    {
+      "version": "nativetempleids227",
+      "manifest": {
+        "source": "nativeroundednape226",
+        "source_sha256": "50b6280cfca39ca9e9020c2a2a62983941cba1b2cd8727df0ebf8c803de8889a",
+        "source_unchanged": true,
+        "legend": [
+          {
+            "object": "Abhay flow derivative • real scalp sampled short support",
+            "linear_color": [
+              0.04,
+              0.15,
+              1,
+              1
+            ],
+            "fibers": 14000
+          },
+          {
+            "object": "Bystedt derivative • short scalp support",
+            "linear_color": [
+              0,
+              1,
+              0.12,
+              1
+            ],
+            "fibers": 23657
+          },
+          {
+            "object": "Bystedt layercut derivative • native root reflow",
+            "linear_color": [
+              1,
+              0.03,
+              0.08,
+              1
+            ],
+            "fibers": 46043
+          }
+        ],
+        "back_view": false,
+        "side_view": false,
+        "single_camera": "03_Side",
+        "method": "Temporary real components emission IDs; diagnostic color only, not final beauty render. Full world-space tip aggregates when back requested are geometry statistics, not visibility proof."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "03_Side.png": "6af7a49622f7070ae3d78e79753d85e28fc8233a42ebe749dedc5ace32db8af3"
+      },
+      "art_judgment": "Actual side emission ID inspected: warm temporal region includes both existing short support layers; not an empty hole. Diagnostic only.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativeuppertemple228",
+      "manifest": {
+        "source": "nativeroundednape226",
+        "source_sha256": "50b6280cfca39ca9e9020c2a2a62983941cba1b2cd8727df0ebf8c803de8889a",
+        "added_object": "Original upper temple transition • scalp-grown fibers",
+        "additional_fibers": 4200,
+        "points_per_curve": 36,
+        "pilot": true,
+        "layered": false,
+        "upper": true,
+        "model_saved": false,
+        "length_quantiles_m": [
+          0.03759298846125603,
+          0.05146349035203457,
+          0.06628197431564331
+        ],
+        "method": "Original area-sampled upper temporal support, density ellipseYZ(-.079,1.855)m,radii(.031,.029)m; backward/down surface transport,36-62mm step budget,3-7mm lift. Root offset0.5mm; same primary material. Existing geometry untouched. Based on actual component ID of sparse upper transition; sampled surface transport is not continuous collision proof."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "6682e423430b6e80cc2e1b40c17f325575371f68b3fa2fc3dc12b32291344cc1",
+        "03_Side.png": "9d00c998cafc2e433b5bfb34948ea36df6fb8d70c753149cdbf3a0ce7072f773"
+      },
+      "art_judgment": "Both actual drafts inspected:4200 upper transition fibers reduce one highlight but introduce fuzzy frontal crown mound; rejected. No model saved.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativesupportcoverage230",
+      "manifest": {
+        "source": "nativeroundednape226",
+        "source_sha256": "50b6280cfca39ca9e9020c2a2a62983941cba1b2cd8727df0ebf8c803de8889a",
+        "source_unchanged": true,
+        "mode": "radius",
+        "model_saved": false,
+        "records": [
+          {
+            "object": "Abhay flow derivative • real scalp sampled short support",
+            "changed_fibers": 2131,
+            "max_root_radius_m": 6.812717037973925e-05
+          },
+          {
+            "object": "Bystedt derivative • short scalp support",
+            "changed_fibers": 9852,
+            "max_root_radius_m": 6.940933963051066e-05
+          }
+        ],
+        "image_sha256": "b0fcbdfe9338d112dceeb9d49070ac90bac8655774a948874596f51a9d1f3795",
+        "scope": "Read-only diagnostic. Radius mode changes support radii only with continuous positiveX temporal field; pigment mode changes two support materials only; skin-control replaces body material to identify skin contribution, never a candidate."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "03_Side.png": "b0fcbdfe9338d112dceeb9d49070ac90bac8655774a948874596f51a9d1f3795"
+      },
+      "art_judgment": "Actual side draft inspected: local support radius increase offers little improvement, not adopted.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativesupportpigment231",
+      "manifest": {
+        "source": "nativeroundednape226",
+        "source_sha256": "50b6280cfca39ca9e9020c2a2a62983941cba1b2cd8727df0ebf8c803de8889a",
+        "source_unchanged": true,
+        "mode": "pigment",
+        "model_saved": false,
+        "records": [
+          {
+            "object": "Abhay flow derivative • real scalp sampled short support",
+            "pigment_rgb_multiplier": 0.3,
+            "roughness": 0.42,
+            "reflection": 0.3
+          },
+          {
+            "object": "Bystedt derivative • short scalp support",
+            "pigment_rgb_multiplier": 0.3,
+            "roughness": 0.42,
+            "reflection": 0.3
+          }
+        ],
+        "image_sha256": "26bf8ff897ba3e134b3b5afc5ed26d368c3ac46e0c44c7c1bfda4aa50530eb1b",
+        "scope": "Read-only diagnostic. Radius mode changes support radii only with continuous positiveX temporal field; pigment mode changes two support materials only; skin-control replaces body material to identify skin contribution, never a candidate."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "03_Side.png": "26bf8ff897ba3e134b3b5afc5ed26d368c3ac46e0c44c7c1bfda4aa50530eb1b"
+      },
+      "art_judgment": "Actual side draft inspected: darkening two support pigments and changing roughness/reflection leaves warm patch, not adopted.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativeskincontrol232",
+      "manifest": {
+        "source": "nativeroundednape226",
+        "source_sha256": "50b6280cfca39ca9e9020c2a2a62983941cba1b2cd8727df0ebf8c803de8889a",
+        "source_unchanged": true,
+        "mode": "skin-control",
+        "model_saved": false,
+        "records": [],
+        "image_sha256": "cf1dbac088e06af13a53b8b9eb4cc7dee8f54b91dc02d22f5987d3d94affcbc8",
+        "scope": "Read-only diagnostic. Radius mode changes support radii only with continuous positiveX temporal field; pigment mode changes two support materials only; skin-control replaces body material to identify skin contribution, never a candidate."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "03_Side.png": "cf1dbac088e06af13a53b8b9eb4cc7dee8f54b91dc02d22f5987d3d94affcbc8"
+      },
+      "art_judgment": "Actual black-body diagnostic inspected: warm patch disappears, demonstrating body shading contribution. Never a character candidate.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativefolliclebacking233",
+      "manifest": {
+        "source": "nativeroundednape226",
+        "source_sha256": "50b6280cfca39ca9e9020c2a2a62983941cba1b2cd8727df0ebf8c803de8889a",
+        "model_saved": false,
+        "model_sha256": null,
+        "geometry_edit": false,
+        "edited_object": "CC0 male body • retained topology",
+        "material_changes": [
+          {
+            "slot": 0,
+            "source_material": "Porcelain warm skin",
+            "new_material": "Porcelain warm skin • localized follicle backing"
+          },
+          {
+            "slot": 1,
+            "source_material": "Concert gloves",
+            "new_material": "Concert gloves • localized follicle backing"
+          }
+        ],
+        "images_sha256": {
+          "03_Side.png": "644c995f935e30eb39e269b0917c66a7a14491921f1d3aa67eb653597b66aedf",
+          "02_ThreeQuarter.png": "73c7e55b0c778ce43e324bb2d262f8102a6c647b03366c644160ae7d82c5319d",
+          "05_OppositeSide.png": "38bd3481436223cc939f90e693712d214cea8192a5ef05c2304610451ffe9d4a"
+        },
+        "method": "Procedural head-local scalp follicle backing blended into copied body surface shaders only. EllipseYZ center(-.078,1.846)m,radii(.043,.052)m; lateral smooth threshold|X|19-42mm. Mask smoothstep,submillimeter noise and80um bump. Maximum effective blend95percent; outside ellipse/central face exactly original surface. All real hair geometry/materials and scene lighting retained. Not new fiber geometry, not a portrait replacement; static shader preview needs visual acceptance."
+      },
+      "model_sha256": null,
+      "inspected_images_sha256": {
+        "02_ThreeQuarter.png": "73c7e55b0c778ce43e324bb2d262f8102a6c647b03366c644160ae7d82c5319d",
+        "03_Side.png": "644c995f935e30eb39e269b0917c66a7a14491921f1d3aa67eb653597b66aedf",
+        "05_OppositeSide.png": "38bd3481436223cc939f90e693712d214cea8192a5ef05c2304610451ffe9d4a"
+      },
+      "art_judgment": "Three actual drafts inspected: local procedural scalp backing reduces orange spots without changing hair silhouette or adding fluffy fibers. Preview basis234.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativelocalfollicles234",
+      "manifest": {
+        "source": "nativeroundednape226",
+        "source_sha256": "50b6280cfca39ca9e9020c2a2a62983941cba1b2cd8727df0ebf8c803de8889a",
+        "model_saved": true,
+        "model_sha256": "5b0efda316ebc74e95a7941331cd18453449fb2df81fd1dd5d54f133976b2801",
+        "geometry_edit": false,
+        "edited_object": "CC0 male body • retained topology",
+        "material_changes": [
+          {
+            "slot": 0,
+            "source_material": "Porcelain warm skin",
+            "new_material": "Porcelain warm skin • localized follicle backing"
+          },
+          {
+            "slot": 1,
+            "source_material": "Concert gloves",
+            "new_material": "Concert gloves • localized follicle backing"
+          }
+        ],
+        "images_sha256": {},
+        "method": "Procedural head-local scalp follicle backing blended into copied body surface shaders only. EllipseYZ center(-.078,1.846)m,radii(.043,.052)m; lateral smooth threshold|X|19-42mm. Mask smoothstep,submillimeter noise and80um bump. Maximum effective blend95percent; outside ellipse/central face exactly original surface. All real hair geometry/materials and scene lighting retained. Not new fiber geometry, not a portrait replacement; static shader preview needs visual acceptance."
+      },
+      "model_sha256": "5b0efda316ebc74e95a7941331cd18453449fb2df81fd1dd5d54f133976b2801",
+      "inspected_images_sha256": {},
+      "art_judgment": "Saved233 shader; high side/front inspected and independent saved graph/geometry audit passed. Incomplete continuation; broad front locks and upper small arches remain.",
+      "goal_complete": false
+    }
+  ],
+  "inspected_high_views": [
+    {
+      "version": "nativefolliclehigh234",
+      "manifest": {
+        "source": "nativelocalfollicles234",
+        "source_sha256": "5b0efda316ebc74e95a7941331cd18453449fb2df81fd1dd5d54f133976b2801",
+        "source_unchanged": true,
+        "camera": "03_Side",
+        "diagnostic_opposite_camera": false,
+        "geometry_lighting_unchanged": true,
+        "resolution": [
+          1920,
+          2240
+        ],
+        "samples": 512,
+        "denoising": "OpenImageDenoise",
+        "image_sha256": "9a663bba0734b81f6e1ce58d4cedc0e770b2047ee7ecebe0c19e55e735a179e1",
+        "status": "Actual render pending art review; no generative image replacement"
+      },
+      "actually_inspected": true
+    },
+    {
+      "version": "nativefolliclefronthigh234",
+      "manifest": {
+        "source": "nativelocalfollicles234",
+        "source_sha256": "5b0efda316ebc74e95a7941331cd18453449fb2df81fd1dd5d54f133976b2801",
+        "source_unchanged": true,
+        "camera": "02_ThreeQuarter",
+        "diagnostic_opposite_camera": false,
+        "geometry_lighting_unchanged": true,
+        "resolution": [
+          1920,
+          2240
+        ],
+        "samples": 512,
+        "denoising": "OpenImageDenoise",
+        "image_sha256": "d6a66f30d977d0e846cd96702175279e9e0bdedaca38e9a8523e549691fbd470",
+        "status": "Actual render pending art review; no generative image replacement"
+      },
+      "actually_inspected": true
+    }
+  ],
+  "independent_audit": {
+    "source": "nativeroundednape226",
+    "source_sha256": "50b6280cfca39ca9e9020c2a2a62983941cba1b2cd8727df0ebf8c803de8889a",
+    "candidate": "nativelocalfollicles234",
+    "candidate_sha256": "5b0efda316ebc74e95a7941331cd18453449fb2df81fd1dd5d54f133976b2801",
+    "mesh_count": 141,
+    "all_mesh_geometry_uv_shape_keys_transforms_exact": true,
+    "all_native_hair_positions_radii_counts_transforms_exact": true,
+    "visibility_exact": true,
+    "all_nonbody_materials_exact": true,
+    "light_world_camera_display_exact": true,
+    "original_body_shader_nodes_internal_links_exact": true,
+    "only_original_surface_output_routed_through_local_mix": true,
+    "actual_mask_graph_matches_documented_ellipse_on_body_vertices": true,
+    "body_vertices_with_nonzero_mask": 52,
+    "active_vertex_bounds_m": [
+      [
+        -0.08029577136039734,
+        -0.11922050267457962,
+        1.8002628087997437
+      ],
+      [
+        0.08029577136039734,
+        -0.04944540187716484,
+        1.8696470260620117
+      ]
+    ],
+    "scope": "Independent saved file and actual math-node graph comparison. Scalp material intentionally changes, hair geometry does not. Surface mask is local to body object, not UV-baked or game-export verified. Mask vertex checks do not prove final art quality or continuous animation collision."
+  },
+  "material_radius_probe": [
+    {
+      "object": "Abhay flow derivative • real scalp sampled short support",
+      "region_fibers": 3439,
+      "radius_quantiles_m": [
+        6.187758572195889e-07,
+        1.2984495333512315e-05,
+        2.8185619157738984e-05,
+        3.5057308195973746e-05,
+        3.799650585278869e-05
+      ],
+      "root_radius_quantiles_m": [
+        2.7002535716746934e-05,
+        3.246164123993367e-05,
+        3.799650585278869e-05
+      ],
+      "hair_inputs": {
+        "Color": "<bpy_float[4], NodeSocketColor.default_value>",
+        "Melanin": "0.800000011920929",
+        "Melanin Redness": "1.0",
+        "Tint": "<bpy_float[4], NodeSocketColor.default_value>",
+        "Absorption Coefficient": "<bpy_float[3], NodeSocketVector.default_value>",
+        "Aspect Ratio": "0.8500000238418579",
+        "Roughness": "0.30000001192092896",
+        "Radial Roughness": "0.30000001192092896",
+        "Coat": "0.0",
+        "IOR": "1.5499999523162842",
+        "Offset": "0.03490658476948738",
+        "Random Color": "0.0",
+        "Random Roughness": "0.1599999964237213",
+        "Random": "0.0",
+        "Weight": "0.0",
+        "Reflection": "0.550000011920929",
+        "Transmission": "1.0",
+        "Secondary Reflection": "0.8500000238418579"
+      }
+    },
+    {
+      "object": "Bystedt derivative • short scalp support",
+      "region_fibers": 11752,
+      "radius_quantiles_m": [
+        6.416628366423538e-07,
+        1.3735159336647485e-05,
+        2.919779308285797e-05,
+        3.6072456350666474e-05,
+        3.8999616663204506e-05
+      ],
+      "root_radius_quantiles_m": [
+        2.8001291866530664e-05,
+        3.3512535082991235e-05,
+        3.8999616663204506e-05
+      ],
+      "hair_inputs": {
+        "Color": "<bpy_float[4], NodeSocketColor.default_value>",
+        "Melanin": "0.800000011920929",
+        "Melanin Redness": "1.0",
+        "Tint": "<bpy_float[4], NodeSocketColor.default_value>",
+        "Absorption Coefficient": "<bpy_float[3], NodeSocketVector.default_value>",
+        "Aspect Ratio": "0.8500000238418579",
+        "Roughness": "0.30000001192092896",
+        "Radial Roughness": "0.30000001192092896",
+        "Coat": "0.0",
+        "IOR": "1.5499999523162842",
+        "Offset": "0.03490658476948738",
+        "Random Color": "0.0",
+        "Random Roughness": "0.1599999964237213",
+        "Random": "0.0",
+        "Weight": "0.0",
+        "Reflection": "0.550000011920929",
+        "Transmission": "1.0",
+        "Secondary Reflection": "0.8500000238418579"
+      }
+    },
+    {
+      "object": "Bystedt layercut derivative • native root reflow",
+      "region_fibers": 9198,
+      "radius_quantiles_m": [
+        3.955404892508341e-08,
+        1.6757947378209792e-05,
+        3.5175213270122185e-05,
+        9.30598980630748e-05,
+        0.00011000002268701792
+      ],
+      "root_radius_quantiles_m": [
+        3.7000001611886546e-05,
+        3.7000001611886546e-05,
+        0.00011000002268701792
+      ],
+      "hair_inputs": {
+        "Color": "<bpy_float[4], NodeSocketColor.default_value>",
+        "Melanin": "0.800000011920929",
+        "Melanin Redness": "1.0",
+        "Tint": "<bpy_float[4], NodeSocketColor.default_value>",
+        "Absorption Coefficient": "<bpy_float[3], NodeSocketVector.default_value>",
+        "Aspect Ratio": "0.8500000238418579",
+        "Roughness": "0.30000001192092896",
+        "Radial Roughness": "0.30000001192092896",
+        "Coat": "0.0",
+        "IOR": "1.5499999523162842",
+        "Offset": "0.03490658476948738",
+        "Random Color": "0.0",
+        "Random Roughness": "0.1599999964237213",
+        "Random": "0.0",
+        "Weight": "0.0",
+        "Reflection": "0.550000011920929",
+        "Transmission": "1.0",
+        "Secondary Reflection": "0.8500000238418579"
+      }
+    }
+  ],
+  "storage": "No migration performed this turn. Proposed copy-verify-delete-junction archive operation rejected by automatic policy before execution; original directories retained. Existing earlier archives unchanged.",
+  "scope": "Real Cycles renders.234 changes localized scalp material only; all real fiber geometry remains226. Not generated portrait,not extra fiber geometry,not UE-ready baked scalp texture. No paid assets or Release."
+}
