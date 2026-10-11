@@ -1,0 +1,10 @@
+{
+  "source": "nativefocusedpart177",
+  "source_sha256": "7ec541cd173d0ffbfbf20a2c6fe16f1a6371b1e11d398035942e48b0b16c20f8",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "02_ThreeQuarter.png": "6662c0e18378b12dcb110a458e9727e8b3dae968ef8f19e88f48edd2f9bb8873"
+  },
+  "art_judgment": "High actual portrait reviewed; prior prominent upright fringe rod absent, surrounding fall/eyes retained. Incomplete WIP, open forehead and ordered crown remain.",
+  "goal_complete": false
+}

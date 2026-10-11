@@ -1,0 +1,10 @@
+{
+  "source": "nativefocusedpart177",
+  "source_sha256": "7ec541cd173d0ffbfbf20a2c6fe16f1a6371b1e11d398035942e48b0b16c20f8",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "03_Side.png": "eee1ea267f6d749e2e4ffd783f5567f63c7434ce35338d7d13725f350e783853"
+  },
+  "art_judgment": "Actual03_Side neutral profile reviewed; frontal trimming retains source side/nape silhouette; no new scalp gap observed in this view.",
+  "goal_complete": false
+}

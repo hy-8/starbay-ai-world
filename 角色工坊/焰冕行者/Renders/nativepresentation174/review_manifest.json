@@ -1,0 +1,10 @@
+{
+  "source": "nativefrontlayers174",
+  "source_sha256": "c5a7ae38c4f740bfbe50d6d630b21dd1ae7f67ae627ddcb6ad019600bcfa65a5",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "02_ThreeQuarter.png": "f6753b8e96dd923dcdc0af89ff3a31233ad032e3b928a8ecb8a06f571f9bc1a4"
+  },
+  "art_judgment": "High actual portrait reviewed; ordered mass/raised fold remains,174 not adopted.",
+  "goal_complete": false
+}

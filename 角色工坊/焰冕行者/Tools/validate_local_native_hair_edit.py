@@ -12,6 +12,11 @@ fringe_profile='--fringe-profile' in a
 scene_materials_exact='--scene-materials-exact' in a
 prefix_points=int(a[a.index('--prefix-points')+1]) if '--prefix-points' in a else 0
 terminals_exact='--terminals-exact' in a
+retained_profile='--retained-indices' in a
+if retained_profile:
+ assert not any([material_only,nape_profile,entry_profile,tip_profile,fringe_profile,'--donor' in a])
+ retained=np.load(ROOT/'Exports'/candidate/'local_retained_indices.npz')['retained']
+ assert retained.ndim==1 and len(retained)>0 and np.all(np.diff(retained)>0)
 if prefix_points<0:raise ValueError('Nonnegative prefix count required')
 no_long_tails='--no-long-tails' in a
 material_scope='support' if '--material-scope-support' in a else 'primary' if '--material-scope-primary' in a else None
@@ -73,6 +78,7 @@ assert beforemesh==aftermesh and set(before)==set(after)
 if material_only or scene_materials_exact:assert beforelight==afterlight
 if scene_materials_exact:assert beforematerials==aftermaterials
 scope_result={}
+retained_result={}
 if material_scope:
  assert set(beforematerials)==set(aftermaterials)
  allowed=set(before)-{edited} if material_scope=='support' else {edited}
@@ -80,10 +86,20 @@ if material_scope:
  assert changed_materials and set(changed_materials)<=allowed,(material_scope,changed_materials)
  scope_result=dict(allowed_scope=material_scope,objects_with_changed_material_graphs=sorted(changed_materials),all_disallowed_material_slots_and_graphs_exact=True,mesh_material_slots_and_graphs_exact=True)
 for name,(p,r,sizes,transform) in after.items():
- bp,br,bs,bt=before[name];assert np.array_equal(r,br) and np.array_equal(sizes,bs) and np.array_equal(transform,bt),name
+ bp,br,bs,bt=before[name]
+ if retained_profile and name==edited:
+  assert (bs==65).all() and retained.min()>=0 and retained.max()<len(bs)
+  original_count=len(bs)
+  bp=bp.reshape(-1,65,3)[retained].reshape(-1,3)
+  br=br.reshape(-1,65)[retained].ravel()
+  bs=bs[retained]
+  assert np.array_equal(p,bp)
+  retained_result=dict(original_fibers=original_count,retained_fibers=len(retained),deleted_fibers=original_count-len(retained),all_retained_positions_radii_point_counts_transforms_exact=True,index_evidence='Local retained index file, not uploaded',scope='Saved-file deletion audit; original whole-object topology intentionally reduced, no deformation of retained strands. Not art acceptance.')
+ assert np.array_equal(r,br) and np.array_equal(sizes,bs) and np.array_equal(transform,bt),name
  if name!=edited:assert np.array_equal(p,bp),name
  else:
-  data=bpy.data.objects[name].data;mask=np.empty(len(data.curves),bool);data.attributes[attr].data.foreach_get('value',mask)
+  data=bpy.data.objects[name].data;mask=np.zeros(len(data.curves),bool) if retained_profile else np.empty(len(data.curves),bool)
+  if not retained_profile:data.attributes[attr].data.foreach_get('value',mask)
   assert (sizes==sizes[0]).all();n=int(sizes[0]);bp=bp.reshape(-1,n,3);p=p.reshape(-1,n,3)
   assert np.array_equal(p[:,0],bp[:,0]) and np.array_equal(p[~mask],bp[~mask])
   changed=int(mask.sum());delta=np.linalg.norm(p-bp,axis=2);maximum=float(delta.max())
@@ -130,6 +146,9 @@ if prefix_points:report.update(preserved_prefix_points=prefix_points,all_primary
 if terminals_exact:report.update(all_primary_terminal_points_exact=True)
 if scene_materials_exact:report.update(all_material_slots_graphs_exact=True,light_world_camera_display_exact=True)
 if material_scope:report.update(material_scope_comparison=scope_result)
+if retained_profile:
+ for key in ['all_radii_topology_transforms_exact','all_roots_exact','unselected_fibers_exact']:report.pop(key)
+ report.update(edited_fibers=retained_result['deleted_fibers'],retained_deletion_comparison=retained_result)
 if donor_version:
  donorhash,donormesh,donorcurves,donorlight,donormaterials=state(donor_version)
  dp,dr,ds,dt=donorcurves[edited];ap,ar,ass,at=after[edited]

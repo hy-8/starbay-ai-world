@@ -1,0 +1,15 @@
+{
+  "source": "nativefrontbend166",
+  "source_sha256": "6846216225f28bf43abd48206e995f3885e567206c5dd982d71291c46860fcf0",
+  "source_unchanged": true,
+  "camera": "02_ThreeQuarter",
+  "geometry_lighting_unchanged": true,
+  "resolution": [
+    1920,
+    2240
+  ],
+  "samples": 512,
+  "denoising": "OpenImageDenoise",
+  "image_sha256": "2796091deb1e53746cdc4bbeb5cedf468597e106fd59045b3fe68ccedd38cea1",
+  "status": "Actual render pending art review; no generative image replacement"
+}

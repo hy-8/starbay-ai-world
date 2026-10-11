@@ -1,0 +1,10 @@
+{
+  "source": "nativefocusedpart177",
+  "source_sha256": "7ec541cd173d0ffbfbf20a2c6fe16f1a6371b1e11d398035942e48b0b16c20f8",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "05_OppositeSide.png": "aa739ea2d53979a18e74ba2bef1e948bd15a7142725dc72df05b346899fea6af"
+  },
+  "art_judgment": "Actual05_OppositeSide neutral profile reviewed; left frontal framing retained; outer lifted arcs remain.",
+  "goal_complete": false
+}

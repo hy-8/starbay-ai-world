@@ -1,0 +1,10 @@
+{
+  "source": "nativesoftpart170",
+  "source_sha256": "60f34686a57e439bf08cbc4850644d16d7f727e4f6cf719a534ba5d1c4f39de3",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "02_ThreeQuarter.png": "6920d06c5076ac397e0712808d24fb4e8e32f3d853a6216f0a843d69007e0a5d"
+  },
+  "art_judgment": "High actual portrait reviewed; unnatural upper frontal overlap,170 not adopted.",
+  "goal_complete": false
+}

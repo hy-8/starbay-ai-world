@@ -1,0 +1,10 @@
+{
+  "source": "nativefrontbend166",
+  "source_sha256": "6846216225f28bf43abd48206e995f3885e567206c5dd982d71291c46860fcf0",
+  "all_images_actually_reviewed": true,
+  "inspected_image_sha256": {
+    "02_ThreeQuarter.png": "2796091deb1e53746cdc4bbeb5cedf468597e106fd59045b3fe68ccedd38cea1"
+  },
+  "art_judgment": "High actual portrait reviewed; added dark frontal knot,166 rejected.",
+  "goal_complete": false
+}

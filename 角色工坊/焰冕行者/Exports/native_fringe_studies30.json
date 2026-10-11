@@ -1,0 +1,498 @@
+{
+  "user_priority": "刘海形状与额前分缝",
+  "source": "nativeremappedsides162",
+  "studies": [
+    {
+      "version": "nativefrontbend166",
+      "manifest": {
+        "source": "nativeremappedsides162",
+        "source_sha256": "29de4bf38489e6c6f8aa479bbffeedf5c3275a4ffe04e0fcd52d14e04a27edd3",
+        "source_unchanged": true,
+        "camera": "02_ThreeQuarter",
+        "selection": "Actual current fringe with>=12 points10:61 in normalized image ellipse center(.588,.400)/radii(.022,.115). Geometric projection only, not depth/visibility proof.",
+        "fibers": 2954,
+        "root_xyz_quantiles_m": [
+          [
+            0.025152185931801796,
+            -0.12495969235897064,
+            1.830016851425171
+          ],
+          [
+            0.041339035145938396,
+            -0.10005142167210579,
+            1.8497292399406433
+          ],
+          [
+            0.04245967976748943,
+            -0.09357447922229767,
+            1.8536961078643799
+          ],
+          [
+            0.0438882689923048,
+            -0.0724512655287981,
+            1.8600797355175018
+          ],
+          [
+            0.0724572092294693,
+            -0.06500080972909927,
+            1.8631882667541504
+          ]
+        ],
+        "tip_xyz_quantiles_m": [
+          [
+            0.03075328841805458,
+            -0.1724291741847992,
+            1.7374927997589111
+          ],
+          [
+            0.07782137766480446,
+            -0.155168354511261,
+            1.7486400306224823
+          ],
+          [
+            0.08103139698505402,
+            -0.1506497710943222,
+            1.7677516341209412
+          ],
+          [
+            0.08951301127672195,
+            -0.14675410091876984,
+            1.7832720577716827
+          ],
+          [
+            0.09129036217927933,
+            -0.1310267150402069,
+            1.790435552597046
+          ]
+        ],
+        "projected_point_count_quantiles": [
+          12.0,
+          34.0,
+          52.0
+        ],
+        "selection_attribute": "native_projected_front_bend",
+        "changed_fibers": 2954,
+        "amount_m": 0.01,
+        "intermediate_sampled_repairs": 5320,
+        "preserved_prefix_points": 6,
+        "all_endpoints_exact": true,
+        "method": "Selected current fringe: single broad sin(pi*t)^1.6 camera-right bend,80-100% root-field strength,3mm forward offset; onset afterpoint5, own tips exact.0.8/1.1mm discrete body point guard with4-point envelope. Original radii/topology/otherhair/materials/lamps retained; not continuous collision verification.",
+        "status": "Unreviewed actual geometry study"
+      },
+      "model_sha256": "6846216225f28bf43abd48206e995f3885e567206c5dd982d71291c46860fcf0",
+      "inspected_draft_sha256": {
+        "01_Front.png": "2bbd2b4e1d383b065c9e3f429150fed17c00b46109bfa36d608d0f9345d2044b",
+        "02_ThreeQuarter.png": "18f22441a53b45c8bb0e4f8ef8b3033fbf8cb6f1dab9774d29262c2790d8e0ac"
+      },
+      "all_drafts_actually_inspected": true,
+      "art_judgment": "Both drafts and512/OIDN portrait inspected. Outward bend softens upright lock but creates dark frontal overlap/knot; rejected despite static audit.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativefrontinward167",
+      "manifest": {
+        "source": "nativeremappedsides162",
+        "source_sha256": "29de4bf38489e6c6f8aa479bbffeedf5c3275a4ffe04e0fcd52d14e04a27edd3",
+        "source_unchanged": true,
+        "camera": "02_ThreeQuarter",
+        "selection": "Actual current fringe with>=12 points10:61 in normalized image ellipse center(.588,.400)/radii(.022,.115). Geometric projection only, not depth/visibility proof.",
+        "fibers": 2954,
+        "root_xyz_quantiles_m": [
+          [
+            0.025152185931801796,
+            -0.12495969235897064,
+            1.830016851425171
+          ],
+          [
+            0.041339035145938396,
+            -0.10005142167210579,
+            1.8497292399406433
+          ],
+          [
+            0.04245967976748943,
+            -0.09357447922229767,
+            1.8536961078643799
+          ],
+          [
+            0.0438882689923048,
+            -0.0724512655287981,
+            1.8600797355175018
+          ],
+          [
+            0.0724572092294693,
+            -0.06500080972909927,
+            1.8631882667541504
+          ]
+        ],
+        "tip_xyz_quantiles_m": [
+          [
+            0.03075328841805458,
+            -0.1724291741847992,
+            1.7374927997589111
+          ],
+          [
+            0.07782137766480446,
+            -0.155168354511261,
+            1.7486400306224823
+          ],
+          [
+            0.08103139698505402,
+            -0.1506497710943222,
+            1.7677516341209412
+          ],
+          [
+            0.08951301127672195,
+            -0.14675410091876984,
+            1.7832720577716827
+          ],
+          [
+            0.09129036217927933,
+            -0.1310267150402069,
+            1.790435552597046
+          ]
+        ],
+        "projected_point_count_quantiles": [
+          12.0,
+          34.0,
+          52.0
+        ],
+        "selection_attribute": "native_projected_front_bend",
+        "changed_fibers": 2954,
+        "amount_m": -0.01,
+        "intermediate_sampled_repairs": 24781,
+        "preserved_prefix_points": 6,
+        "all_endpoints_exact": true,
+        "method": "Selected current fringe: single broad sin(pi*t)^1.6 camera-right bend,80-100% root-field strength,3mm forward offset; onset afterpoint5, own tips exact.0.8/1.1mm discrete body point guard with4-point envelope. Original radii/topology/otherhair/materials/lamps retained; not continuous collision verification.",
+        "status": "Unreviewed actual geometry study"
+      },
+      "model_sha256": "50dbe11c359e06e6e40cd4e1de143be0433a44f4676ceeabddd829cb99e9f83b",
+      "inspected_draft_sha256": {
+        "01_Front.png": "f0a947243c57824fb774b9e1b0c43ed69b6ee65c34f955ada53294e759efa07d",
+        "02_ThreeQuarter.png": "c518571e4099bb7c10f6e5cf46eacf53df591028558991f14218dfcf5c565795"
+      },
+      "all_drafts_actually_inspected": true,
+      "art_judgment": "Both drafts inspected. Fixed inward bend has limited visible benefit. No high/audit, not adopted.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativefrontsurface168",
+      "manifest": {
+        "source": "nativeremappedsides162",
+        "source_sha256": "29de4bf38489e6c6f8aa479bbffeedf5c3275a4ffe04e0fcd52d14e04a27edd3",
+        "source_unchanged": true,
+        "camera": "02_ThreeQuarter",
+        "selection": "Actual current fringe with>=12 points10:61 in normalized image ellipse center(.588,.400)/radii(.022,.115). Geometric projection only, not depth/visibility proof.",
+        "fibers": 2954,
+        "root_xyz_quantiles_m": [
+          [
+            0.025152185931801796,
+            -0.12495969235897064,
+            1.830016851425171
+          ],
+          [
+            0.041339035145938396,
+            -0.10005142167210579,
+            1.8497292399406433
+          ],
+          [
+            0.04245967976748943,
+            -0.09357447922229767,
+            1.8536961078643799
+          ],
+          [
+            0.0438882689923048,
+            -0.0724512655287981,
+            1.8600797355175018
+          ],
+          [
+            0.0724572092294693,
+            -0.06500080972909927,
+            1.8631882667541504
+          ]
+        ],
+        "tip_xyz_quantiles_m": [
+          [
+            0.03075328841805458,
+            -0.1724291741847992,
+            1.7374927997589111
+          ],
+          [
+            0.07782137766480446,
+            -0.155168354511261,
+            1.7486400306224823
+          ],
+          [
+            0.08103139698505402,
+            -0.1506497710943222,
+            1.7677516341209412
+          ],
+          [
+            0.08951301127672195,
+            -0.14675410091876984,
+            1.7832720577716827
+          ],
+          [
+            0.09129036217927933,
+            -0.1310267150402069,
+            1.790435552597046
+          ]
+        ],
+        "projected_point_count_quantiles": [
+          12.0,
+          34.0,
+          52.0
+        ],
+        "selection_attribute": "native_projected_front_bend",
+        "changed_fibers": 2954,
+        "amount_m": -0.012,
+        "surface_bend": true,
+        "intermediate_sampled_repairs": 597,
+        "preserved_prefix_points": 6,
+        "all_endpoints_exact": true,
+        "method": "Selected current fringe: single broad sin(pi*t)^1.6 bend,80-100% root-field strength. Camera-right vector projected onto smoothed per-point nearest-body tangent planes;2mm normal lift. Onset afterpoint5, own tips exact.0.8/1.1mm discrete body point guard with4-point envelope. Original radii/topology/otherhair/materials/lamps retained; not continuous collision verification.",
+        "status": "Unreviewed actual geometry study"
+      },
+      "model_sha256": "8b00ae7edd843b31366ee8794213f4bfb634bf4eaaa5bf6b90e436155ed45a82",
+      "inspected_draft_sha256": {
+        "01_Front.png": "2dbd307dddce8c8d35073c73a98f3eae5acc284c878d4e92a64209dce4a692eb",
+        "02_ThreeQuarter.png": "464ec3942cac4b38c5a03f80c4ec35c39eee8235be259fdf97c4fc811dc1aa08"
+      },
+      "all_drafts_actually_inspected": true,
+      "art_judgment": "Both drafts inspected. Tangent-plane bend has fewer discrete repairs than166, but upright lock/open forehead remain. No high/audit; not adopted.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativesoftpartpilot169",
+      "manifest": {
+        "source": "nativeremappedsides162",
+        "source_sha256": "29de4bf38489e6c6f8aa479bbffeedf5c3275a4ffe04e0fcd52d14e04a27edd3",
+        "pilot": true,
+        "selection_attribute": "native_soft_part_redesign",
+        "changed_fibers": 6038,
+        "preserved_prefix_points": 6,
+        "endpoints_released": true,
+        "endpoint_repairs": 367,
+        "intermediate_discrete_repairs": 52628,
+        "method": "Own strand cubic, endpointX*0.78/forward10mm/root-field Z stagger5mm; scalp tangent24-45mm/normal4mm/downward26mm terminal control; smooth join afterpoint5. Original radii/topology retained. Sampled body guard, not continuous collision proof.",
+        "status": "Actual geometry study awaiting art review"
+      },
+      "model_sha256": "af8a0ebb37d19b3aeeefc71e5c04c6823a682f118a00ea79cd56b16754a6c457",
+      "inspected_draft_sha256": {
+        "01_Front.png": "eb9acd01688ef576f8f463e6ca56d2e40820555beafb6b9139134d84af250776",
+        "02_ThreeQuarter.png": "e034417e08e4d4555c95e00d0424bc78e91de82b27237c6f11d3e32462f57491"
+      },
+      "all_drafts_actually_inspected": true,
+      "art_judgment": "Both drafts inspected,6038 positive-X fringe fibers. Endpoint contraction appears promising at draft scale; no high or independent pilot/full equivalence proof.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativesoftpart170",
+      "manifest": {
+        "source": "nativeremappedsides162",
+        "source_sha256": "29de4bf38489e6c6f8aa479bbffeedf5c3275a4ffe04e0fcd52d14e04a27edd3",
+        "pilot": false,
+        "selection_attribute": "native_soft_part_redesign",
+        "changed_fibers": 8539,
+        "preserved_prefix_points": 6,
+        "endpoints_released": true,
+        "endpoint_repairs": 367,
+        "intermediate_discrete_repairs": 55536,
+        "method": "Own strand cubic, endpointX*0.78/forward10mm/root-field Z stagger5mm; scalp tangent24-45mm/normal4mm/downward26mm terminal control; smooth join afterpoint5. Original radii/topology retained. Sampled body guard, not continuous collision proof.",
+        "status": "Actual geometry study awaiting art review"
+      },
+      "model_sha256": "60f34686a57e439bf08cbc4850644d16d7f727e4f6cf719a534ba5d1c4f39de3",
+      "inspected_draft_sha256": {
+        "01_Front.png": "4be3159e731eec6c7ac65e253d7c93eb94bb2ea1311ceaf2a611ecd6323c05ba",
+        "02_ThreeQuarter.png": "cc24644b0492aa44da837ba2a85c3e96fa11389143fc732245def4182d23cae1"
+      },
+      "all_drafts_actually_inspected": true,
+      "art_judgment": "Both drafts and512/OIDN portrait inspected.8539 fringe endpoints released with6-point prefix. Forehead has new unnatural overlap/raised fold; not adopted.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativefreepart171",
+      "manifest": {
+        "source": "nativeremappedsides162",
+        "source_sha256": "29de4bf38489e6c6f8aa479bbffeedf5c3275a4ffe04e0fcd52d14e04a27edd3",
+        "pilot": false,
+        "free_root_flow": true,
+        "selection_attribute": "native_soft_part_redesign",
+        "changed_fibers": 8539,
+        "preserved_prefix_points": 1,
+        "endpoints_released": true,
+        "endpoint_repairs": 367,
+        "intermediate_discrete_repairs": 60523,
+        "method": "Own strand cubic, endpointX*0.78/forward10mm/root-field Z stagger5mm; scalp tangent24-45mm/downward26mm terminal control; root alone preserved,9mm normal relief and9mm terminal Y offset. Original radii/topology retained. Sampled body guard, not continuous collision proof.",
+        "status": "Actual geometry study awaiting art review"
+      },
+      "model_sha256": "fb2086231ef40030b0bdf7fc4386962193c9019140a53bb73e9485c978b54910",
+      "inspected_draft_sha256": {
+        "01_Front.png": "04b96e8265f375681281450f98682d0addaf25393c6161de683a7e7fa8bbe1af",
+        "02_ThreeQuarter.png": "55bbd39b81a0363002b71150d0850deb9f100ced09589b5d148b362d4a47df81"
+      },
+      "all_drafts_actually_inspected": true,
+      "art_judgment": "Both drafts inspected. Preserve root alone, increase normal relief; limited visible change. No high/audit, not adopted.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativefeatherpart172",
+      "manifest": {
+        "source": "nativeremappedsides162",
+        "source_sha256": "29de4bf38489e6c6f8aa479bbffeedf5c3275a4ffe04e0fcd52d14e04a27edd3",
+        "pilot": false,
+        "free_root_flow": true,
+        "feather_tips": true,
+        "selection_attribute": "native_soft_part_redesign",
+        "changed_fibers": 8539,
+        "preserved_prefix_points": 1,
+        "endpoints_released": true,
+        "endpoint_repairs": 468,
+        "intermediate_discrete_repairs": 63451,
+        "method": "Own strand cubic, endpointX*0.68,seeded independent X+-1.8mm/Y+-1mm/Z(-5,+8)mm tip stagger/forward10mm/root-field Z stagger5mm; scalp tangent24-45mm/downward26mm terminal control; root alone preserved,9mm normal relief and9mm terminal Y offset. Original radii/topology retained. Sampled body guard, not continuous collision proof.",
+        "status": "Actual geometry study awaiting art review"
+      },
+      "model_sha256": "40d09ed6265e446280b8b60c7921535681b38fc403445aefa7f7bf52bd993636",
+      "inspected_draft_sha256": {
+        "01_Front.png": "a59a2aea0c7fb2402313894ababcc5243c747ff2c71c705ec5c6e4e4e2e46391",
+        "02_ThreeQuarter.png": "98b15b6c566c76bc5b198f7d7003cb84b507367880e73b389ff17a01ab164188"
+      },
+      "all_drafts_actually_inspected": true,
+      "art_judgment": "Both drafts inspected. Stronger inward contraction and seeded tip stagger creates dense blocks and more eye obstruction; rejected.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativetrimmedpart173",
+      "manifest": {
+        "source": "nativeremappedsides162",
+        "source_sha256": "29de4bf38489e6c6f8aa479bbffeedf5c3275a4ffe04e0fcd52d14e04a27edd3",
+        "pilot": false,
+        "free_root_flow": true,
+        "feather_tips": true,
+        "trimmed_feather": true,
+        "selection_attribute": "native_soft_part_redesign",
+        "changed_fibers": 8539,
+        "preserved_prefix_points": 1,
+        "endpoints_released": true,
+        "endpoint_repairs": 523,
+        "intermediate_discrete_repairs": 60624,
+        "method": "Own strand cubic, endpointX*0.75,seeded independent X+-0.6mm/Y+-0.5mm/Z(+2,+14)mm tip stagger;innerX<65mm tipZ>=1.755m before body guard/forward10mm/root-field Z stagger5mm; scalp tangent24-45mm/downward26mm terminal control; root alone preserved,9mm normal relief and9mm terminal Y offset. Original radii/topology retained. Sampled body guard, not continuous collision proof.",
+        "status": "Actual geometry study awaiting art review"
+      },
+      "model_sha256": "766bdf684eb1a5da68958ca0735085191c475fd2c94c4ef2e54ebda22d08e52d",
+      "inspected_draft_sha256": {
+        "01_Front.png": "9257da1ed8d7885f509164165e762a05b1e4e922b0fbabbfcfe1f5cdc1053e18",
+        "02_ThreeQuarter.png": "f0726f6b499c3b2453c6e27b7a9e95b09b614cb17c49b1b990cfaa49ee0a5fd2"
+      },
+      "all_drafts_actually_inspected": true,
+      "art_judgment": "Both drafts inspected. Only shorten staggered inner tips with1.755m pre-guard limit. Eyes clearer but part/upper overlap remain; no high/audit, not adopted.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativefrontlayers174",
+      "manifest": {
+        "source": "nativeremappedsides162",
+        "source_sha256": "29de4bf38489e6c6f8aa479bbffeedf5c3275a4ffe04e0fcd52d14e04a27edd3",
+        "pilot": false,
+        "free_root_flow": true,
+        "feather_tips": true,
+        "trimmed_feather": true,
+        "front_upper": true,
+        "original_fringe_count": 8539,
+        "additional_upper_count": 3505,
+        "selection_attribute": "native_soft_part_redesign",
+        "changed_fibers": 12044,
+        "preserved_prefix_points": 1,
+        "endpoints_released": true,
+        "endpoint_repairs": 1225,
+        "intermediate_discrete_repairs": 106933,
+        "method": "Current fringe plus actual upper attribute withrootY<-15mm/endY<-80mm. Own strand cubic, endpointX*0.75,seeded independent X+-0.6mm/Y+-0.5mm/Z(+2,+14)mm tip stagger;innerX<65mm tipZ>=1.755m before body guard/forward10mm/root-field Z stagger5mm; scalp tangent24-45mm/downward26mm terminal control; root alone preserved,9mm normal relief and9mm terminal Y offset. Original radii/topology retained. Sampled body guard, not continuous collision proof.",
+        "status": "Actual geometry study awaiting art review"
+      },
+      "model_sha256": "c5a7ae38c4f740bfbe50d6d630b21dd1ae7f67ae627ddcb6ad019600bcfa65a5",
+      "inspected_draft_sha256": {
+        "01_Front.png": "76504a1074694da97dc54a659a197a40be9a356b5d36f545bdb14f4e71d909ef",
+        "02_ThreeQuarter.png": "13af764095f837a78c5dc392b7bd7e296af54aa3bdbdabe1d3ee962a5724af4f"
+      },
+      "all_drafts_actually_inspected": true,
+      "art_judgment": "Both drafts and512/OIDN portrait inspected.12044 strands include3505 front upper strands; eyes clearer, but upper raised fold/ordered masses remain. Rejected as formal continuation despite saved-file audit.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativethinlock175",
+      "manifest": {
+        "source": "nativeremappedsides162",
+        "source_sha256": "29de4bf38489e6c6f8aa479bbffeedf5c3275a4ffe04e0fcd52d14e04a27edd3",
+        "selected_fibers": 2954,
+        "deleted_fibers": 2223,
+        "remaining_total_fibers": 47045,
+        "requested_rate": 0.75,
+        "seed": 175,
+        "method": "Current fringe,>=12 points10:61 in camera02 ellipse(.588,.400)/(.022,.115),geometric projection not depth/visibility proof. Delete reproducible random subset; all remaining positions/radii/attributes retained by Blender remove_curves. Actual geometry deletion, no alpha/light/image manipulation.",
+        "status": "Actual two-view study pending art review"
+      },
+      "model_sha256": "ad212ae443308facb5f3553e3f631d356a6773d8dfbb6680d317e97304e2d717",
+      "inspected_draft_sha256": {
+        "01_Front.png": "b0987dcf1f3572c58643f286058ba377914d7a36dfde84e9eee6306a08ce5390",
+        "02_ThreeQuarter.png": "3108c93435e8b80c0bcdca605bf30bce4faf5436787e2b23f0577fa9d260427a"
+      },
+      "all_drafts_actually_inspected": true,
+      "art_judgment": "Both drafts and512/OIDN portrait inspected. Delete2223 of2954 broad projected fringe selection. Thin upright stem remains; not adopted.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativeopenpart176",
+      "manifest": {
+        "source": "nativeremappedsides162",
+        "source_sha256": "29de4bf38489e6c6f8aa479bbffeedf5c3275a4ffe04e0fcd52d14e04a27edd3",
+        "selected_fibers": 2954,
+        "deleted_fibers": 2954,
+        "remaining_total_fibers": 46314,
+        "requested_rate": 1.0,
+        "seed": 175,
+        "method": "Current fringe,>=12 points10:61 in camera02 ellipse(.588,.400)/(.022,.115),geometric projection not depth/visibility proof. Delete reproducible random subset; all remaining positions/radii/attributes retained by Blender remove_curves. Actual geometry deletion, no alpha/light/image manipulation.",
+        "status": "Actual two-view study pending art review"
+      },
+      "model_sha256": "19afc807f9e1a2a7e2cdffe5874a62e8442fc6f8771e3251b2bacc88f3e4f94c",
+      "inspected_draft_sha256": {
+        "01_Front.png": "57709d46d4ac116ccbf26b0bee8eaffeb048bcbe9d542e00bdb5957946ab3c6a",
+        "02_ThreeQuarter.png": "b2b28ee5b10bd835fd7650556663c149a7cf727db055f978f65c44bb7248115b"
+      },
+      "all_drafts_actually_inspected": true,
+      "art_judgment": "Both drafts and actual saved512/OIDN portrait inspected. Delete2954 broad projected selection. Stem still visible, corrected camera ROI needed; not adopted. High render process ended after saved image, before presentation manifest; do not assert that missing manifest exists.",
+      "goal_complete": false
+    },
+    {
+      "version": "nativefocusedpart177",
+      "manifest": {
+        "source": "nativeremappedsides162",
+        "source_sha256": "29de4bf38489e6c6f8aa479bbffeedf5c3275a4ffe04e0fcd52d14e04a27edd3",
+        "selected_fibers": 3225,
+        "deleted_fibers": 3225,
+        "remaining_total_fibers": 46043,
+        "requested_rate": 1.0,
+        "seed": 175,
+        "ellipse_center": [
+          0.568,
+          0.4
+        ],
+        "ellipse_radii": [
+          0.014,
+          0.115
+        ],
+        "method": "Current fringe,>=12 points10:61 in camera02 ellipse,geometric projection not depth/visibility proof. Delete reproducible random subset; all remaining positions/radii/attributes retained by Blender remove_curves. Actual geometry deletion, no alpha/light/image manipulation.",
+        "status": "Actual two-view study pending art review"
+      },
+      "model_sha256": "7ec541cd173d0ffbfbf20a2c6fe16f1a6371b1e11d398035942e48b0b16c20f8",
+      "inspected_draft_sha256": {
+        "01_Front.png": "dfa12ded51ef5aa4107c471177ec17eba625112158e6dd20fd25446ec41fa26b",
+        "02_ThreeQuarter.png": "829719d67218aab926a82e01e95916b31c19a2e763e997a27b71a12e806051c3"
+      },
+      "all_drafts_actually_inspected": true,
+      "art_judgment": "Both drafts,512/OIDN portrait and both neutral side profiles inspected. Corrected narrow projected region deletes3225 strands; prominent upright forehead rod disappears, source162 surrounding fall/eyes/side/nape retained. Adopt incomplete WIP only. Forehead opening still wide, upper flow ordered and outer small loops remain; not reference-quality completion.",
+      "goal_complete": false
+    }
+  ],
+  "continuation": "nativefocusedpart177",
+  "goal_complete": false,
+  "scope": "Actual art review plus specified saved-file audits. Geometry/indices/logs local; no neural image substitution or candidate publication."
+}
