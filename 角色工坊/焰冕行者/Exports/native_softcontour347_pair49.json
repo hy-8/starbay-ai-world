@@ -1,0 +1,27 @@
+{
+  "source": "nativefeathercrown333",
+  "source_sha256": "567ce3d5f5b4ef6a9c8c78f18659a12ff1859986a3b123e6733d3ecc6a09b2bb",
+  "candidate": "nativesoftcontour347",
+  "candidate_sha256": "7202023ec933ae4a58cdc0bb7801bc5b2cc581becd3a5b9b7af133311e17214e",
+  "mesh_count": 141,
+  "meshes_uv_shape_keys_transforms_exact": true,
+  "other_native_geometry_exact": true,
+  "material_light_world_camera_display_exact": true,
+  "historical_curve_attributes_exact": true,
+  "counts_radii_transforms_roots_exact": true,
+  "root8mm_controls_exact": true,
+  "lower_contour_below_z1_735_exact": true,
+  "frontal_below_z1_835_exact": true,
+  "y_coordinates_exact": false,
+  "crown_moves_down_sides_move_in": null,
+  "changed_fibers": 33638,
+  "max_same_index_displacement_m": 0.020260248333215714,
+  "changed_control_midpoint_body_checks": 899566,
+  "actual_arc_length_change_quantiles_m": [
+    -0.017212278472424014,
+    -0.0002397963241936446,
+    0.004298643775027422
+  ],
+  "scope": "Independent saved-file comparison and discrete body clearance checks. Overall lower haircut retained; upper paths and individual arc lengths change. Does not prove continuous collision or aesthetic completion.",
+  "surface_envelope_displacement_cap_m": 0.025
+}

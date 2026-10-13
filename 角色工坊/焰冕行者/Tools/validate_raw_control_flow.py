@@ -57,6 +57,40 @@ if retained is not None:
  result=dict(source=base,source_sha256=before[0],candidate=candidate,candidate_sha256=after[0],mesh_count=len(before[1]),meshes_uv_shape_keys_transforms_exact=True,other_native_geometry_exact=True,material_light_world_camera_display_exact=True,image_paths_compared_as_resolved_absolute='--resolve-image-paths' in a,retained_curve_history_exact=True,retained_positions_radii_counts_transforms_exact=True,accepted_inner_curtain_retained=True,removed_fibers=len(selected),retained_fibers=len(retained),scope='Independent saved-file mixed-count deletion comparison to exact local inspected selection. Count/topology intentionally reduced;all retained fibers exact. Not artistic or collision acceptance.')
  out.write_text(json.dumps(result,indent=2),encoding='utf-8');print('STRAY_REMOVAL_AUDIT_PASS',candidate,flush=True);sys.exit(0)
 assert len(bs)==len(asz)
+if '--envelope' in a:
+ from mathutils import Vector
+ from mathutils.bvhtree import BVHTree
+ assert np.array_equal(bs,asz) and np.array_equal(br,ar)
+ manifest=json.loads((ROOT/'Exports'/candidate/'envelope_manifest.json').read_text())
+ assert manifest['model_sha256']==after[0] and manifest['source_sha256']==before[0]
+ assert np.isfinite(ap).all()
+ offsets=np.r_[0,np.cumsum(bs)]
+ assert np.array_equal(bp[offsets[:-1]],ap[offsets[:-1]])
+ assert np.array_equal(bp[bp[:,2]<=1.735],ap[bp[:,2]<=1.735])
+ frontal=(bp[:,1]<=-.060)&(bp[:,2]<=1.835)
+ assert np.array_equal(bp[frontal],ap[frontal])
+ if not manifest.get('surface_envelope'):assert np.array_equal(bp[:,1],ap[:,1])
+ bv=BVHTree.FromObject(bpy.data.objects['CC0 male body • retained topology'],bpy.context.evaluated_depsgraph_get())
+ def gap(v):
+  h,n,_,_=bv.find_nearest(Vector(v));return float((Vector(v)-h).dot(n))
+ checked=0;changed_fibers=0;length_changes=[]
+ for i in range(len(bs)):
+  q=bp[offsets[i]:offsets[i+1]];v=ap[offsets[i]:offsets[i+1]]
+  arc=np.r_[0,np.cumsum(np.linalg.norm(np.diff(q.astype(float),axis=0),axis=1))]
+  assert np.array_equal(q[arc<=.008],v[arc<=.008])
+  if np.array_equal(q,v):continue
+  changed_fibers+=1
+  length_changes.append(float(np.linalg.norm(np.diff(v.astype(float),axis=0),axis=1).sum()-arc[-1]))
+  qs=np.vstack([q,(q[:-1]+q[1:])*.5]);vs=np.vstack([v,(v[:-1]+v[1:])*.5]);moving=np.linalg.norm(vs-qs,axis=1)>1e-7
+  for x,y in zip(qs[moving],vs[moving]):assert gap(y)>=min(.0003,gap(x))-3e-6
+  checked+=int(moving.sum())
+ maximum=float(np.linalg.norm(ap-bp,axis=1).max())
+ assert abs(maximum-manifest['max_same_index_displacement_m'])<1e-6
+ if not manifest.get('surface_envelope'):assert np.all(ap[:,2]<=bp[:,2]+1e-7) and np.all(np.abs(ap[:,0])<=np.abs(bp[:,0])+1e-7)
+ else:assert maximum<=.025001
+ result=dict(source=base,source_sha256=before[0],candidate=candidate,candidate_sha256=after[0],mesh_count=len(before[1]),meshes_uv_shape_keys_transforms_exact=True,other_native_geometry_exact=True,material_light_world_camera_display_exact=True,historical_curve_attributes_exact=True,counts_radii_transforms_roots_exact=True,root8mm_controls_exact=True,lower_contour_below_z1_735_exact=True,frontal_below_z1_835_exact=True,y_coordinates_exact=True,crown_moves_down_sides_move_in=True,changed_fibers=changed_fibers,max_same_index_displacement_m=maximum,changed_control_midpoint_body_checks=checked,actual_arc_length_change_quantiles_m=np.quantile(length_changes,[0,.5,1]).tolist(),scope='Independent saved-file comparison and discrete body clearance checks. Overall lower haircut retained; upper paths and individual arc lengths change. Does not prove continuous collision or aesthetic completion.')
+ if manifest.get('surface_envelope'):result.update(y_coordinates_exact=bool(np.array_equal(bp[:,1],ap[:,1])),crown_moves_down_sides_move_in=None,surface_envelope_displacement_cap_m=.025)
+ out.write_text(json.dumps(result,indent=2),encoding='utf-8');print('ENVELOPE_AUDIT_PASS',candidate,flush=True);sys.exit(0)
 if '--released-tips' in a:
  from mathutils import Vector
  from mathutils.bvhtree import BVHTree

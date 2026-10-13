@@ -1,0 +1,1004 @@
+{
+  "continuation": "nativesoftcontour347",
+  "goal_complete": false,
+  "latest_preference": "Crown and sides less bulky; preserve soft side part,current length,dry fine natural hair.",
+  "studies": [
+    {
+      "version": "nativebowlock335",
+      "manifest": {
+        "source": "nativefeathercrown333",
+        "source_sha256": "567ce3d5f5b4ef6a9c8c78f18659a12ff1859986a3b123e6733d3ecc6a09b2bb",
+        "source_unchanged": true,
+        "selection": "nativebroadlock334",
+        "model_saved": false,
+        "selected_fibers": 1242,
+        "processed_fibers": 1242,
+        "max_same_index_displacement_m": 0.015396680682897568,
+        "angle_quantiles_rad": [
+          0.4573037780793606,
+          1.4712889806149463,
+          2.1825044370403264
+        ],
+        "whole_fiber_cap_quantiles": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "body_scale_quantiles": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "actual_arc_length_change_quantiles_m": [
+          -0.00021487155167729255,
+          5.968104435644106e-05,
+          0.002056243846902839
+        ],
+        "images_sha256": {
+          "04_Back.png": "0907844f4ab1b75f3f1280f34b0fe5f4a0d953b8132ad7a345481bdac37b8677",
+          "05_OppositeSide.png": "0a830071f9ec203f50562035b8e4e2a5a0d5c21e5aab03334d348140a6ecb0a3"
+        },
+        "method": "Inspected projected IDs intersect tipY>30mm and exclude accepted inner curtain/frontal sweeps/curved tips/released tip cluster. Circular-bow target from original root8mm suffix endpoints and measured suffix length. Bend plane follows weighted original residual unless inward,then use approximate head-radial outward. Solve central angle up to2.6rad;root25mm blend,whole-fiber25mm cap and sampled body-gap backtracking. Original roots,tips,counts,radii preserved;actual lengths can change under angle cap/root blend/guard,not claimed exact. No model save,not continuous collision or art acceptance."
+      },
+      "review_scope": "all generated views",
+      "decision": "Rejected: circular bow became a broad smooth bulge."
+    },
+    {
+      "version": "nativebowsections336",
+      "manifest": {
+        "source": "nativefeathercrown333",
+        "source_sha256": "567ce3d5f5b4ef6a9c8c78f18659a12ff1859986a3b123e6733d3ecc6a09b2bb",
+        "source_unchanged": true,
+        "selection": "nativebroadlock334",
+        "model_saved": false,
+        "selected_fibers": 1242,
+        "processed_fibers": 1242,
+        "max_same_index_displacement_m": 0.02500002086162567,
+        "angle_quantiles_rad": [
+          0.4573037780793606,
+          1.4712889806149463,
+          2.1825044370403264
+        ],
+        "whole_fiber_cap_quantiles": [
+          0.6443661765437936,
+          1.0,
+          1.0
+        ],
+        "body_scale_quantiles": [
+          0.5,
+          1.0,
+          1.0
+        ],
+        "actual_arc_length_change_quantiles_m": [
+          -0.00494048275427969,
+          0.00034033695922193463,
+          0.002305390508081262
+        ],
+        "images_sha256": {
+          "04_Back.png": "765b5d12c1abe0b29c1bb1516a436bb310249a23d1e37c2186bfff3ab0da75a5",
+          "05_OppositeSide.png": "01ae9a833005fb4235494d2e9f35f3d002773e39d0b2ae973bc93820926da7e1"
+        },
+        "method": "Inspected projected IDs intersect tipY>30mm and exclude accepted inner curtain/frontal sweeps/curved tips/released tip cluster. Circular-bow target from original root8mm suffix endpoints and measured suffix length. Bend plane follows weighted original residual unless inward,then use approximate head-radial outward. Solve central angle up to2.6rad;root25mm blend,whole-fiber25mm cap and sampled body-gap backtracking. Original roots,tips,counts,radii preserved;actual lengths can change under angle cap/root blend/guard,not claimed exact. No model save,not continuous collision or art acceptance. Six equal-count sections ordered by source45percent-arc X. Rotate each section bow plane about root-tip chord by explicit alternating angles;no strand randomness. Root8mm/tips retained;body guard and25mm whole-fiber cap still applied.",
+        "sub_locks": true,
+        "sub_lock_count": 6,
+        "sub_lock_bow_rotations_rad": [
+          -0.95,
+          -0.6,
+          0.8,
+          0.45,
+          -0.85,
+          0.65
+        ]
+      },
+      "review_scope": "all generated views",
+      "decision": "Rejected: rotated sub-lock bows crossed and expanded silhouette."
+    },
+    {
+      "version": "officialcyber337",
+      "manifest": {
+        "type": "source asset control render; not the user character",
+        "author": "Daniel Bystedt",
+        "license": "CC BY-SA",
+        "source_sha256": "1ad6202095c1793678fee7d69a7e9f8b5fdb6e5c293d300eb1062d2d437e8d48",
+        "changes": "camera, lighting and display isolation of selected source collection only",
+        "source_style": "cyberpunk hair",
+        "adopted_on_character": false,
+        "images_sha256": {
+          "01_Front.png": "c253d9e9f455415bb5c3de6d14b09e26f93c16818a803f2d4170f18b7d6956e0",
+          "02_ThreeQuarter.png": "5cb4017da760b8320bb24f8a364cb2c76671870b2e937e4d52d69001a9481389"
+        }
+      },
+      "review_scope": "all generated views",
+      "decision": "Existing source control only; swept quiff does not match requested side part/current length."
+    },
+    {
+      "version": "nativecyberoverlay338",
+      "manifest": {
+        "source": "nativefeathercrown333",
+        "source_sha256": "567ce3d5f5b4ef6a9c8c78f18659a12ff1859986a3b123e6733d3ecc6a09b2bb",
+        "source_unchanged": true,
+        "asset_sha256": "1ad6202095c1793678fee7d69a7e9f8b5fdb6e5c293d300eb1062d2d437e8d48",
+        "asset_unchanged": true,
+        "source_style": "cyberpunk hair",
+        "author": "Daniel Bystedt",
+        "license": "CC BY-SA; version unspecified in inspected evidence",
+        "model_saved": false,
+        "source_evaluated_curves": 47857,
+        "eligible_short_source_curves": 4125,
+        "added_curves": 4119,
+        "rejected_grafts": 6,
+        "added_curve_length_m_quantiles": [
+          0.03711013200082439,
+          0.07015038499453495,
+          0.12211733758568885
+        ],
+        "original_native_geometry_unchanged_before_add": true,
+        "images_sha256": {
+          "04_Back.png": "a96bf06499776a4d707add7eee31b27feae359faf7d6797892802291ea124f98",
+          "05_OppositeSide.png": "96555e65b13535a56c345b1d3af4bd267a1284e3b9f187c9c77c75d1a65c1179",
+          "02_ThreeQuarter.png": "ec77ab2bd9e70489779a03ad46f77896efb5174de5d3d6cc75390384b9c321ab"
+        },
+        "method": "Evaluate existing authored short groom with original modifiers. Scale source units0.1,rotate-1.1rad about head center X,scale1.06. Source arc35..150mm,rotated rootY>20mm,Z1.790..1.870m;all controlsY>10mm,Z>1.735m. Whole-fiber rigid translation/normal alignment to retained scalp,root clearance0.7mm. Reject entire fiber if controls/midpoints gap<0.2mm or crosses posterior gate;do not point-project individual controls. Original groom untouched beneath added layer;current main hair material,source radii scaled and capped45microns. No continuous collision or art acceptance."
+      },
+      "review_scope": "all generated views",
+      "decision": "Rejected: 4119 donor fibers increased side volume."
+    },
+    {
+      "version": "nativecentraloverlay339",
+      "manifest": {
+        "source": "nativefeathercrown333",
+        "source_sha256": "567ce3d5f5b4ef6a9c8c78f18659a12ff1859986a3b123e6733d3ecc6a09b2bb",
+        "source_unchanged": true,
+        "asset_sha256": "1ad6202095c1793678fee7d69a7e9f8b5fdb6e5c293d300eb1062d2d437e8d48",
+        "asset_unchanged": true,
+        "source_style": "cyberpunk hair",
+        "author": "Daniel Bystedt",
+        "license": "CC BY-SA; version unspecified in inspected evidence",
+        "model_saved": false,
+        "source_evaluated_curves": 47857,
+        "eligible_short_source_curves": 4125,
+        "added_curves": 822,
+        "rejected_grafts": 3303,
+        "added_curve_length_m_quantiles": [
+          0.03711013200082439,
+          0.050311671914330905,
+          0.08477347157384105
+        ],
+        "original_native_geometry_unchanged_before_add": true,
+        "images_sha256": {
+          "04_Back.png": "329b4719637e7b6480fe784f7fbd98f3118953d8192b6af3ec0e9dc6b23a744f",
+          "05_OppositeSide.png": "01f7d782c08630b5302427df2f86b23abe397542ffe6c8987f113beb540fa638",
+          "02_ThreeQuarter.png": "12fef4e105045adee6509f11a329fde584eee80e6ab7ddc58d54c6ea6714c004"
+        },
+        "method": "Evaluate existing authored short groom with original modifiers. Scale source units0.1,rotate-1.1rad about head center X,scale1.06. Source arc35..150mm,rotated rootY>20mm,Z1.790..1.870m;all controlsY>10mm,Z>1.735m. Whole-fiber rigid translation/normal alignment to retained scalp,root clearance0.7mm. Reject entire fiber if controls/midpoints gap<0.2mm or crosses posterior gate;do not point-project individual controls. Original groom untouched beneath added layer;current main hair material,source radii scaled and capped45microns. No continuous collision or art acceptance. Narrow overlay: additionally fitted rootabsX<38mm,rootZ>1.810m,all controlabsX<55mm;reject entire strand if any checked signed body gap>20mm. New radii capped30microns. Original geometry still untouched.",
+        "central_only": true
+      },
+      "review_scope": "all generated views",
+      "decision": "Not adopted: 822 central donor fibers mostly hidden, insufficient improvement."
+    },
+    {
+      "version": "nativecentralreplace340",
+      "manifest": {
+        "source": "nativefeathercrown333",
+        "source_sha256": "567ce3d5f5b4ef6a9c8c78f18659a12ff1859986a3b123e6733d3ecc6a09b2bb",
+        "source_unchanged": true,
+        "asset_sha256": "1ad6202095c1793678fee7d69a7e9f8b5fdb6e5c293d300eb1062d2d437e8d48",
+        "asset_unchanged": true,
+        "source_style": "cyberpunk hair",
+        "author": "Daniel Bystedt",
+        "license": "CC BY-SA; version unspecified in inspected evidence",
+        "model_saved": false,
+        "source_evaluated_curves": 47857,
+        "eligible_short_source_curves": 4125,
+        "added_curves": 822,
+        "rejected_grafts": 3303,
+        "added_curve_length_m_quantiles": [
+          0.03711013200082439,
+          0.050311671914330905,
+          0.08477347157384105
+        ],
+        "original_native_geometry_unchanged_before_add": true,
+        "images_sha256": {
+          "04_Back.png": "1e1af469ca6a8c851fc71a3f4e1b048e4478ee019f3bcb6e7a425efa141e0165",
+          "05_OppositeSide.png": "50ce99c6eced2d2366fcadf9da38c5d19066b2ffe4fb6168817a0b34210e1f35",
+          "02_ThreeQuarter.png": "2370a11bd8a3e21a56c197ac8eb47f7507a58fa48b46a3af5978db4ef4828c91"
+        },
+        "method": "Evaluate existing authored short groom with original modifiers. Scale source units0.1,rotate-1.1rad about head center X,scale1.06. Source arc35..150mm,rotated rootY>20mm,Z1.790..1.870m;all controlsY>10mm,Z>1.735m. Whole-fiber rigid translation/normal alignment to retained scalp,root clearance0.7mm. Reject entire fiber if controls/midpoints gap<0.2mm or crosses posterior gate;do not point-project individual controls. Original groom untouched beneath added layer;current main hair material,source radii scaled and capped45microns. No continuous collision or art acceptance. Narrow overlay: additionally fitted rootabsX<38mm,rootZ>1.810m,all controlabsX<55mm;reject entire strand if any checked signed body gap>20mm. New radii capped30microns. Original geometry still untouched. Replacement preview override: hide original primary object and render exact retained positions/counts/radii/matrix/material,omitting inspected projected fibers with tipY>30mm,excluding accepted fringe/accent/released-tip groups. Original underlying dat block untouched but selected fibers intentionally absent from render. Companion donor layer unchanged. No candidate saved;temporary retained object does not copy historical curve attributes.",
+        "central_only": true,
+        "replacement_selection": "nativebroadlock334",
+        "removed_existing_fibers": 1242,
+        "all_original_hair_retained_in_render": false
+      },
+      "review_scope": "all generated views",
+      "decision": "Not adopted: suppressing 1242 original fibers still left broad bundles. New object/index identity may affect Hair Info Random."
+    },
+    {
+      "version": "nativefullreplace342",
+      "manifest": {
+        "source": "nativefeathercrown333",
+        "source_sha256": "567ce3d5f5b4ef6a9c8c78f18659a12ff1859986a3b123e6733d3ecc6a09b2bb",
+        "source_unchanged": true,
+        "asset_sha256": "1ad6202095c1793678fee7d69a7e9f8b5fdb6e5c293d300eb1062d2d437e8d48",
+        "asset_unchanged": true,
+        "source_style": "cyberpunk hair",
+        "author": "Daniel Bystedt",
+        "license": "CC BY-SA; version unspecified in inspected evidence",
+        "model_saved": false,
+        "source_evaluated_curves": 47857,
+        "eligible_short_source_curves": 4125,
+        "added_curves": 822,
+        "rejected_grafts": 3303,
+        "added_curve_length_m_quantiles": [
+          0.03711013200082439,
+          0.050311671914330905,
+          0.08477347157384105
+        ],
+        "original_native_geometry_unchanged_before_add": true,
+        "images_sha256": {
+          "04_Back.png": "162ebb0685e033aa4aa93100b2d1820e4b691a0b018050f8c4db351f01d22c91",
+          "05_OppositeSide.png": "650009811dc714855319a274410f541b92b3dacc63847000432c3f6a8a471ae2",
+          "02_ThreeQuarter.png": "54867eb3282c4fea51e40c0c82eef2921748fea6278ae93c4287b47ac2a3507b"
+        },
+        "method": "Evaluate existing authored short groom with original modifiers. Scale source units0.1,rotate-1.1rad about head center X,scale1.06. Source arc35..150mm,rotated rootY>20mm,Z1.790..1.870m;all controlsY>10mm,Z>1.735m. Whole-fiber rigid translation/normal alignment to retained scalp,root clearance0.7mm. Reject entire fiber if controls/midpoints gap<0.2mm or crosses posterior gate;do not point-project individual controls. Original groom untouched beneath added layer;current main hair material,source radii scaled and capped45microns. No continuous collision or art acceptance. Narrow overlay: additionally fitted rootabsX<38mm,rootZ>1.810m,all controlabsX<55mm;reject entire strand if any checked signed body gap>20mm. New radii capped30microns. Original geometry still untouched. Full-section preview override: inspected projected IDs intersecttipY>30mm,exclude accepted fringe/accent/released-tip groups;set selected radii to1nanometer in a copied datablock. All positions,counts,other radii,historical attributes,object/material/index identity retained. This is near-invisible radius suppression,not exact removal. No candidate saved.",
+        "central_only": true,
+        "replacement_selection": "nativefullbroad341",
+        "removed_existing_fibers": 3440,
+        "all_original_hair_retained_in_render": false,
+        "full_section": true,
+        "removal_mode": "Preview-only1nanometer radius mask,not curve deletion;preserve original object and all curve indices"
+      },
+      "review_scope": "back only",
+      "decision": "Rejected from back view: masking the larger posterior set left a large exposed scalp patch. Only back view reviewed."
+    },
+    {
+      "version": "nativeslimcontour343",
+      "manifest": {
+        "source": "nativefeathercrown333",
+        "source_sha256": "567ce3d5f5b4ef6a9c8c78f18659a12ff1859986a3b123e6733d3ecc6a09b2bb",
+        "source_unchanged": true,
+        "model_saved": false,
+        "selected_fibers": 33861,
+        "actually_changed_fibers": 32175,
+        "body_scale_quantiles": [
+          0.0,
+          1.0,
+          1.0
+        ],
+        "max_same_index_displacement_m": 0.008355855941772461,
+        "changed_controls": 421824,
+        "before_bounds_m": [
+          [
+            -0.11192528903484344,
+            -0.18790650367736816,
+            1.674789309501648
+          ],
+          [
+            0.10926896333694458,
+            0.1030455157160759,
+            1.8827682733535767
+          ]
+        ],
+        "after_bounds_m": [
+          [
+            -0.11184165626764297,
+            -0.18790650367736816,
+            1.674789309501648
+          ],
+          [
+            0.10910268127918243,
+            0.1030455157160759,
+            1.8811520338058472
+          ]
+        ],
+        "images_sha256": {
+          "02_ThreeQuarter.png": "ececce23f40d021b4096bbe4d50c902f940136a05f500b3672bd9049b1018065",
+          "01_Front.png": "b8309aac28a857749548e65d44375aec84a355d88feb6e7cb754635e16fdbc44",
+          "05_OppositeSide.png": "9102f11f7f547d3c8b06acad6a59e699f9f988423fca085c65378680c0f02735",
+          "04_Back.png": "13b707940766dc070cc4987dadfc5aa899c966e1e7b3161c76d31d2d3e8c31c9"
+        },
+        "method": "Primary only;all radii/counts/materials/other objects unchanged. Preserve original roots and first8mm arc with25mm smooth onset;exclude accepted663 released-tip cluster. Crown:down7mm*smooth((Z-1.835)/0.040). Sides:inX9mm*sign(X)*smooth((absX-.062)/.040)*smooth((Z-1.735)/.055)*(1-smooth((Z-1.835)/.040))*smooth((Y+.060)/.060). All controlsZ<=1.735 exact;frontal pointsY<=-.060 belowZ1.835 exact. Upper frontal geometry may lower,part roots and lower fringe preserved;not all accepted fringe geometry claimed identical. Whole-fiber body-gap backtracking at controls/midpoints;not continuous collision or art acceptance."
+      },
+      "review_scope": "all generated views",
+      "decision": "Superseded by346: modest crown/side reduction, still pronounced side folds."
+    },
+    {
+      "version": "nativecleancontour344",
+      "manifest": {
+        "source": "nativefeathercrown333",
+        "source_sha256": "567ce3d5f5b4ef6a9c8c78f18659a12ff1859986a3b123e6733d3ecc6a09b2bb",
+        "source_unchanged": true,
+        "model_saved": false,
+        "selected_fibers": 34585,
+        "actually_changed_fibers": 32803,
+        "body_scale_quantiles": [
+          0.0,
+          1.0,
+          1.0
+        ],
+        "max_same_index_displacement_m": 0.016711711883544922,
+        "changed_controls": 429509,
+        "before_bounds_m": [
+          [
+            -0.11192528903484344,
+            -0.18790650367736816,
+            1.674789309501648
+          ],
+          [
+            0.10926896333694458,
+            0.1030455157160759,
+            1.8827682733535767
+          ]
+        ],
+        "after_bounds_m": [
+          [
+            -0.1117580235004425,
+            -0.18790650367736816,
+            1.674789309501648
+          ],
+          [
+            0.10910268127918243,
+            0.1030455157160759,
+            1.8811520338058472
+          ]
+        ],
+        "images_sha256": {
+          "02_ThreeQuarter.png": "aedb2f7642664383ae87f4cc55a98b75c949df716a5b872de680bd7990e0367c",
+          "01_Front.png": "8f2053f794cbed1386dccc6cb1ed5c51b39144292abbc8e9431c4e74cab62e1a",
+          "05_OppositeSide.png": "920d8c193b7b968fd6f63da816f47f73a99d98ab015b6b38d8924a049333621b",
+          "04_Back.png": "c605e95a82400c2b09f0f0ba791d61dd2c7d40d902624e147e5025e50bfcd89d"
+        },
+        "method": "Primary only;all radii/counts/materials/other objects unchanged. Preserve original roots and first8mm arc with25mm smooth onset;include previously released-tip cluster to keep the crown envelope coherent. Crown:down10mm*smooth((Z-1.835)/0.040). Sides:inX18mm*sign(X)*smooth((absX-.062)/.040)*smooth((Z-1.735)/.055)*(1-smooth((Z-1.835)/.040))*smooth((Y+.060)/.060). All controlsZ<=1.735 exact;frontal pointsY<=-.060 belowZ1.835 exact. Upper frontal geometry may lower,part roots and lower fringe preserved;not all accepted fringe geometry claimed identical. Whole-fiber body-gap backtracking at controls/midpoints;not continuous collision or art acceptance.",
+        "model_sha256": null,
+        "crown_mm": 10.0,
+        "side_mm": 18.0,
+        "include_released": true
+      },
+      "review_scope": "all generated views",
+      "decision": "Rejected: stronger 10mm/18mm analytic reduction produced lateral indentation."
+    },
+    {
+      "version": "nativescalpcontour345",
+      "manifest": {
+        "source": "nativefeathercrown333",
+        "source_sha256": "567ce3d5f5b4ef6a9c8c78f18659a12ff1859986a3b123e6733d3ecc6a09b2bb",
+        "source_unchanged": true,
+        "model_saved": false,
+        "selected_fibers": 29011,
+        "actually_changed_fibers": 28942,
+        "body_scale_quantiles": [
+          0.0,
+          1.0,
+          1.0
+        ],
+        "max_same_index_displacement_m": 0.020101847127079964,
+        "changed_controls": 305545,
+        "before_bounds_m": [
+          [
+            -0.11192528903484344,
+            -0.18790650367736816,
+            1.674789309501648
+          ],
+          [
+            0.10926896333694458,
+            0.1030455157160759,
+            1.8827682733535767
+          ]
+        ],
+        "after_bounds_m": [
+          [
+            -0.11181703954935074,
+            -0.18790650367736816,
+            1.674789309501648
+          ],
+          [
+            0.10907068103551865,
+            0.1030455157160759,
+            1.8811520338058472
+          ]
+        ],
+        "images_sha256": {
+          "02_ThreeQuarter.png": "f4f391642a468ca7354a782637175c2e18b79f76c3632080cdaac75534a4e00a",
+          "01_Front.png": "4923a89ee39da9b01eeace8115b7a244307ce44136867b40cd53411a11fcb3b7",
+          "05_OppositeSide.png": "5686e68b22a42576117b4de3ee045def742a3e3542c6d0ed42bacfc35b100a90",
+          "04_Back.png": "183e21c087de096448354fc28776afd622166e920b1a1e543bebec31333af1cf"
+        },
+        "method": "Primary only;all radii/counts/materials/other objects unchanged. Preserve original roots and first8mm arc with25mm smooth onset;include previously released-tip cluster to keep the crown envelope coherent. Crown:down7mm*smooth((Z-1.835)/0.040). Sides:inX9mm*sign(X)*smooth((absX-.062)/.040)*smooth((Z-1.735)/.055)*(1-smooth((Z-1.835)/.040))*smooth((Y+.060)/.060). All controlsZ<=1.735 exact;frontal pointsY<=-.060 belowZ1.835 exact. Upper frontal geometry may lower,part roots and lower fringe preserved;not all accepted fringe geometry claimed identical. Whole-fiber body-gap backtracking at controls/midpoints;not continuous collision or art acceptance. For lateral controls, override analytic delta by closest-body-normal movement toward12mm clearance, at most25mm, weighted by absX50..85mm,Z1.735..1.775,Y-60..-10mm and root onset. This changes Y and may raise individual Z values; frontal/lower controls and roots remain protected.",
+        "model_sha256": null,
+        "crown_mm": 7.0,
+        "side_mm": 9.0,
+        "include_released": true,
+        "surface_envelope": true
+      },
+      "review_scope": "all generated views",
+      "decision": "Rejected: initial normal-based override had a discontinuous switch, visible crown spike."
+    },
+    {
+      "version": "nativesoftcontour346",
+      "manifest": {
+        "source": "nativefeathercrown333",
+        "source_sha256": "567ce3d5f5b4ef6a9c8c78f18659a12ff1859986a3b123e6733d3ecc6a09b2bb",
+        "source_unchanged": true,
+        "model_saved": false,
+        "selected_fibers": 35310,
+        "actually_changed_fibers": 33638,
+        "body_scale_quantiles": [
+          0.0,
+          1.0,
+          1.0
+        ],
+        "max_same_index_displacement_m": 0.020260248333215714,
+        "changed_controls": 437606,
+        "before_bounds_m": [
+          [
+            -0.11192528903484344,
+            -0.18790650367736816,
+            1.674789309501648
+          ],
+          [
+            0.10926896333694458,
+            0.1030455157160759,
+            1.8827682733535767
+          ]
+        ],
+        "after_bounds_m": [
+          [
+            -0.11173532158136368,
+            -0.18790650367736816,
+            1.674789309501648
+          ],
+          [
+            0.10891707241535187,
+            0.1030455157160759,
+            1.8811520338058472
+          ]
+        ],
+        "images_sha256": {
+          "02_ThreeQuarter.png": "1e04273116342a7866a9035e26fe09f365028f9da1152f9cb0ecc18003395f9c",
+          "01_Front.png": "eceac018679f1db57bfcfd3c99876aba49b1bfeeb3f25be5f71502ff1a3f665b",
+          "05_OppositeSide.png": "4a934186a8d9055f25fef18a7f4d40a5609dbdfbd6aa8bb654c734be554bb0c6",
+          "04_Back.png": "634f61b6ebe60e30dc6ade9d99ee8f19b6fa13c50db164af0192810a966cc1b4"
+        },
+        "method": "Primary only;all radii/counts/materials/other objects unchanged. Preserve original roots and first8mm arc with25mm smooth onset;include previously released-tip cluster to keep the crown envelope coherent. Crown:down7mm*smooth((Z-1.835)/0.040). Sides:inX9mm*sign(X)*smooth((absX-.062)/.040)*smooth((Z-1.735)/.055)*(1-smooth((Z-1.835)/.040))*smooth((Y+.060)/.060). All controlsZ<=1.735 exact;frontal pointsY<=-.060 belowZ1.835 exact. Upper frontal geometry may lower,part roots and lower fringe preserved;not all accepted fringe geometry claimed identical. Whole-fiber body-gap backtracking at controls/midpoints;not continuous collision or art acceptance. For lateral controls, continuously blend analytic delta with closest-body-normal movement toward12mm clearance, at most25mm, weighted by absX50..85mm,Z1.735..1.775,Y-60..-10mm and root onset. This changes Y and may raise individual Z values; frontal/lower controls and roots remain protected.",
+        "model_sha256": null,
+        "crown_mm": 7.0,
+        "side_mm": 9.0,
+        "include_released": true,
+        "surface_envelope": true
+      },
+      "review_scope": "all generated views",
+      "decision": "Adopt local silhouette improvement as347: continuously blend analytic crown field and body-normal side field; side volume reduced with lower length and part preserved. Broad posterior locks remain; goal incomplete."
+    }
+  ],
+  "diagnostics": [
+    {
+      "version": "nativebroadlock334",
+      "manifest": {
+        "source": "nativefeathercrown333",
+        "source_sha256": "567ce3d5f5b4ef6a9c8c78f18659a12ff1859986a3b123e6733d3ecc6a09b2bb",
+        "source_unchanged": true,
+        "edited_object": "Bystedt layercut derivative • native root reflow",
+        "points_per_curve": null,
+        "selection_attribute": null,
+        "selection_rule": {
+          "camera": "04_Back",
+          "normalized_ellipse": [
+            0.56,
+            0.43,
+            0.065,
+            0.08
+          ],
+          "minimum_projected_controls": 2,
+          "projection_camera": "04_Back",
+          "rear_subset": false,
+          "rear_subset_rule": null,
+          "approximate_point_depth_filter": true
+        },
+        "legend": {
+          "blue": "Edited selected-object curves",
+          "red": "Untouched selected-object curves",
+          "green": "All other visible native hair components",
+          "gray": "Body/clothes"
+        },
+        "edited_fibers": 1449,
+        "unselected_fibers": 44560,
+        "method": "Exact temporary curve subsets with original radii/matrix, actual cameras, emission diagnostic only. Ellipse is projected controls, not continuous visibility proof.",
+        "status": "Unreviewed actual component diagnostic"
+      },
+      "parameters": {
+        "projection_camera": "04_Back",
+        "rear_subset": false,
+        "rear_subset_rule": null,
+        "approximate_point_depth_filter": true
+      },
+      "aggregate": {
+        "selected_fibers": 1449,
+        "root_xyz_quantiles_m": [
+          [
+            -0.052415769547224045,
+            -0.1425144076347351,
+            1.7583388090133667
+          ],
+          [
+            -0.035981235653162004,
+            -0.12129610776901245,
+            1.800415325164795
+          ],
+          [
+            -0.010590460151433945,
+            0.03974903002381325,
+            1.8421339988708496
+          ],
+          [
+            0.0018823374295607214,
+            0.06196946501731873,
+            1.8552277326583861
+          ],
+          [
+            0.04079201817512512,
+            0.06945240497589111,
+            1.870414137840271
+          ]
+        ],
+        "tip_xyz_quantiles_m": [
+          [
+            -0.06780106574296951,
+            -0.18621385097503662,
+            1.6778415441513062
+          ],
+          [
+            -0.05368295013904571,
+            -0.16761208772659303,
+            1.6909945249557494
+          ],
+          [
+            -0.029419852420687675,
+            0.06403281539678574,
+            1.7137150764465332
+          ],
+          [
+            0.0008868435863405476,
+            0.0925455391407013,
+            1.760169506072998
+          ],
+          [
+            0.012853862717747688,
+            0.09545779228210449,
+            1.8156684637069702
+          ]
+        ],
+        "attribute_counts": {
+          "native_crown_cut": 1244,
+          "native_crown_sections": 205,
+          "native_fringe_feather": 199,
+          "native_back_resection": 1241,
+          "native_crown_sculpture": 0,
+          "native_front_frame_sculpture": 0,
+          "native_nape_layer_cut": 889,
+          "native_relaxed_side_locks": 71,
+          "native_temporal_coverage_restore": 3,
+          "native_layered_root_lofts": 931,
+          "native_visible_crest_relief": 435,
+          "native_retained_guide_relaxation": 496,
+          "native_resculpted_fringe_sweeps": 19,
+          "native_fitted_side_flow": 71,
+          "native_volumetric_sections": 1309,
+          "native_layered_nape_extension": 1193,
+          "native_transported_fan_crown": 1065,
+          "native_directional_fringe_fall": 19,
+          "native_reconnected_fringe_terminals": 19,
+          "native_staggered_posterior_layers": 1241,
+          "native_unranked_free_sections": 629,
+          "native_unranked_fringe_fall": 19,
+          "native_authored_swept_upper": 629,
+          "native_blended_upper_suffix": 629,
+          "native_descending_fine_locks": 562,
+          "native_authored_fine_fringe": 10,
+          "native_individual_fringe_fall": 19,
+          "native_staggered_lower_posterior": 865,
+          "native_local_fringe_end_release": 0,
+          "native_individual_upper_fall": 562,
+          "native_posterior_soft_wave": 1227,
+          "native_lateral_longest_trim": 0,
+          "native_remapped_upper_layers": 0,
+          "native_inner_curtain_shift": 205,
+          "native_outer_wisp_relaxation": 0,
+          "native_accepted_fringe_tip_feathering": 169,
+          "native_projected_outer_tip_trim": 0,
+          "native_spatial_crown_release": 2,
+          "native_recovered_donor_back": 1241,
+          "native_recovered_donor_side": 3,
+          "native_restored_nonfringe_flow": 3,
+          "native_settled_restored_crown": 0,
+          "native_graduated_restored_back": 1241,
+          "native_restored_raw_controls": 1244,
+          "native_rounded_nape": 473,
+          "native_trimmed_outer_accent": 0,
+          "native_sweep_channels": 0,
+          "native_raw_rear_layers": 1241,
+          "native_curved_projected_tips": 0,
+          "native_rear_strand_variation": 1241,
+          "native_projected_bend_relaxation": 0,
+          "native_released_tip_clusters": 2
+        },
+        "projected_hit_control_xyz_quantiles_m": [
+          [
+            -0.05873776599764824,
+            -0.18355737626552582,
+            1.7400671243667603
+          ],
+          [
+            -0.04899086765944958,
+            -0.16939401626586914,
+            1.7545870184898376
+          ],
+          [
+            -0.02596269641071558,
+            0.07310720533132553,
+            1.7838846445083618
+          ],
+          [
+            -0.005789193511009218,
+            0.09231829494237899,
+            1.8134888529777526
+          ],
+          [
+            0.0021204918157309294,
+            0.1030455157160759,
+            1.8277559280395508
+          ]
+        ],
+        "approximate_point_depth_filter": true,
+        "depth_filter_scope": "Primary hair control points only,3x3 pixel splat,1mm tolerance;not continuous strands/body ray visibility"
+      },
+      "actual_image_inspected": true
+    },
+    {
+      "version": "nativefullbroad341",
+      "manifest": {
+        "source": "nativefeathercrown333",
+        "source_sha256": "567ce3d5f5b4ef6a9c8c78f18659a12ff1859986a3b123e6733d3ecc6a09b2bb",
+        "source_unchanged": true,
+        "edited_object": "Bystedt layercut derivative • native root reflow",
+        "points_per_curve": null,
+        "selection_attribute": null,
+        "selection_rule": {
+          "camera": "04_Back",
+          "normalized_ellipse": [
+            0.56,
+            0.43,
+            0.065,
+            0.08
+          ],
+          "minimum_projected_controls": 2,
+          "projection_camera": "04_Back",
+          "rear_subset": false,
+          "rear_subset_rule": null,
+          "approximate_point_depth_filter": false
+        },
+        "legend": {
+          "blue": "Edited selected-object curves",
+          "red": "Untouched selected-object curves",
+          "green": "All other visible native hair components",
+          "gray": "Body/clothes"
+        },
+        "edited_fibers": 6787,
+        "unselected_fibers": 39222,
+        "method": "Exact temporary curve subsets with original radii/matrix, actual cameras, emission diagnostic only. Ellipse is projected controls, not continuous visibility proof.",
+        "status": "Unreviewed actual component diagnostic"
+      },
+      "parameters": {
+        "projection_camera": "04_Back",
+        "rear_subset": false,
+        "rear_subset_rule": null,
+        "approximate_point_depth_filter": false
+      },
+      "aggregate": {
+        "selected_fibers": 6787,
+        "root_xyz_quantiles_m": [
+          [
+            -0.06366916000843048,
+            -0.14254973828792572,
+            1.7485257387161255
+          ],
+          [
+            -0.04293176010251045,
+            -0.13099460005760194,
+            1.7853748798370361
+          ],
+          [
+            -0.015456817112863064,
+            0.013837710954248905,
+            1.8447602987289429
+          ],
+          [
+            -2.6810182316688987e-05,
+            0.06186268851161003,
+            1.861760950088501
+          ],
+          [
+            0.04199906438589096,
+            0.0700502023100853,
+            1.8721568584442139
+          ]
+        ],
+        "tip_xyz_quantiles_m": [
+          [
+            -0.08790323138237,
+            -0.18790650367736816,
+            1.676066517829895
+          ],
+          [
+            -0.06296781748533249,
+            -0.18465680181980132,
+            1.6914473056793213
+          ],
+          [
+            -0.03875754028558731,
+            0.04432480037212372,
+            1.7317222356796265
+          ],
+          [
+            -0.005909634940326189,
+            0.0738361418247223,
+            1.7676581382751464
+          ],
+          [
+            0.020137634128332138,
+            0.09545779228210449,
+            1.8156684637069702
+          ]
+        ],
+        "attribute_counts": {
+          "native_crown_cut": 3446,
+          "native_crown_sections": 3341,
+          "native_fringe_feather": 2362,
+          "native_back_resection": 3418,
+          "native_crown_sculpture": 0,
+          "native_front_frame_sculpture": 0,
+          "native_nape_layer_cut": 2627,
+          "native_relaxed_side_locks": 148,
+          "native_temporal_coverage_restore": 27,
+          "native_layered_root_lofts": 4929,
+          "native_visible_crest_relief": 1338,
+          "native_retained_guide_relaxation": 3591,
+          "native_resculpted_fringe_sweeps": 2272,
+          "native_fitted_side_flow": 147,
+          "native_volumetric_sections": 5741,
+          "native_layered_nape_extension": 3323,
+          "native_transported_fan_crown": 2918,
+          "native_directional_fringe_fall": 2234,
+          "native_reconnected_fringe_terminals": 2234,
+          "native_staggered_posterior_layers": 3430,
+          "native_unranked_free_sections": 1966,
+          "native_unranked_fringe_fall": 2234,
+          "native_authored_swept_upper": 1980,
+          "native_blended_upper_suffix": 1980,
+          "native_descending_fine_locks": 1726,
+          "native_authored_fine_fringe": 1827,
+          "native_individual_fringe_fall": 2272,
+          "native_staggered_lower_posterior": 2722,
+          "native_local_fringe_end_release": 0,
+          "native_individual_upper_fall": 1726,
+          "native_posterior_soft_wave": 3362,
+          "native_lateral_longest_trim": 0,
+          "native_remapped_upper_layers": 9,
+          "native_inner_curtain_shift": 3244,
+          "native_outer_wisp_relaxation": 0,
+          "native_accepted_fringe_tip_feathering": 2732,
+          "native_projected_outer_tip_trim": 1,
+          "native_spatial_crown_release": 16,
+          "native_recovered_donor_back": 3418,
+          "native_recovered_donor_side": 28,
+          "native_restored_nonfringe_flow": 28,
+          "native_settled_restored_crown": 0,
+          "native_graduated_restored_back": 3418,
+          "native_restored_raw_controls": 3446,
+          "native_rounded_nape": 1402,
+          "native_trimmed_outer_accent": 0,
+          "native_sweep_channels": 0,
+          "native_raw_rear_layers": 3418,
+          "native_curved_projected_tips": 0,
+          "native_rear_strand_variation": 3418,
+          "native_projected_bend_relaxation": 0,
+          "native_released_tip_clusters": 6
+        },
+        "projected_hit_control_xyz_quantiles_m": [
+          [
+            -0.058919165283441544,
+            -0.18790650367736816,
+            1.7399272918701172
+          ],
+          [
+            -0.0508858285844326,
+            -0.18158860504627228,
+            1.7625626087188722
+          ],
+          [
+            -0.027696356177330017,
+            -0.1697455793619156,
+            1.7872997522354126
+          ],
+          [
+            -0.008989233523607252,
+            0.06569009721279145,
+            1.814905619621277
+          ],
+          [
+            0.0021204918157309294,
+            0.1030455157160759,
+            1.8277559280395508
+          ]
+        ],
+        "approximate_point_depth_filter": false,
+        "depth_filter_scope": "Primary hair control points only,3x3 pixel splat,1mm tolerance;not continuous strands/body ray visibility"
+      },
+      "actual_image_inspected": true
+    }
+  ],
+  "upper_root_clearance": [
+    {
+      "name": "Abhay flow derivative • real scalp sampled short support",
+      "curves": 14000,
+      "bounds": [
+        [
+          -0.09751737117767334,
+          -0.16442425549030304,
+          1.7384101152420044
+        ],
+        [
+          0.08691297471523285,
+          0.0734330415725708,
+          1.875860571861267
+        ]
+      ],
+      "upper_roots": 8143,
+      "upper_root_gap_quantiles": [
+        0.0005469824909596355,
+        0.0005499480270373169,
+        0.0005499997323568095,
+        0.0005500522697943211,
+        0.0005501894256667583
+      ]
+    },
+    {
+      "name": "Bystedt derivative • short scalp support",
+      "curves": 23657,
+      "bounds": [
+        [
+          -0.08410812169313431,
+          -0.15636466443538666,
+          1.7883154153823853
+        ],
+        [
+          0.08285856992006302,
+          0.025793788954615593,
+          1.8744148015975952
+        ]
+      ],
+      "upper_roots": 22155,
+      "upper_root_gap_quantiles": [
+        0.0004973955428795307,
+        0.0004999436796424561,
+        0.0004999992779630702,
+        0.0005000532786652911,
+        0.0005001832437301346
+      ]
+    },
+    {
+      "name": "Bystedt layercut derivative • native root reflow",
+      "curves": 46009,
+      "bounds": [
+        [
+          -0.11192528903484344,
+          -0.18790650367736816,
+          1.674789309501648
+        ],
+        [
+          0.10926896333694458,
+          0.1030455157160759,
+          1.8827682733535767
+        ]
+      ],
+      "upper_roots": 25108,
+      "upper_root_gap_quantiles": [
+        0.0004986714411643334,
+        0.0004999654311745871,
+        0.000999955219185722,
+        0.0010000461061281385,
+        0.0010001874543377198
+      ]
+    }
+  ],
+  "saved_model": {
+    "source": "nativefeathercrown333",
+    "source_sha256": "567ce3d5f5b4ef6a9c8c78f18659a12ff1859986a3b123e6733d3ecc6a09b2bb",
+    "source_unchanged": true,
+    "model_saved": true,
+    "selected_fibers": 35310,
+    "actually_changed_fibers": 33638,
+    "body_scale_quantiles": [
+      0.0,
+      1.0,
+      1.0
+    ],
+    "max_same_index_displacement_m": 0.020260248333215714,
+    "changed_controls": 437606,
+    "before_bounds_m": [
+      [
+        -0.11192528903484344,
+        -0.18790650367736816,
+        1.674789309501648
+      ],
+      [
+        0.10926896333694458,
+        0.1030455157160759,
+        1.8827682733535767
+      ]
+    ],
+    "after_bounds_m": [
+      [
+        -0.11173532158136368,
+        -0.18790650367736816,
+        1.674789309501648
+      ],
+      [
+        0.10891707241535187,
+        0.1030455157160759,
+        1.8811520338058472
+      ]
+    ],
+    "images_sha256": {},
+    "method": "Primary only;all radii/counts/materials/other objects unchanged. Preserve original roots and first8mm arc with25mm smooth onset;include previously released-tip cluster to keep the crown envelope coherent. Crown:down7mm*smooth((Z-1.835)/0.040). Sides:inX9mm*sign(X)*smooth((absX-.062)/.040)*smooth((Z-1.735)/.055)*(1-smooth((Z-1.835)/.040))*smooth((Y+.060)/.060). All controlsZ<=1.735 exact;frontal pointsY<=-.060 belowZ1.835 exact. Upper frontal geometry may lower,part roots and lower fringe preserved;not all accepted fringe geometry claimed identical. Whole-fiber body-gap backtracking at controls/midpoints;not continuous collision or art acceptance. For lateral controls, continuously blend analytic delta with closest-body-normal movement toward12mm clearance, at most25mm, weighted by absX50..85mm,Z1.735..1.775,Y-60..-10mm and root onset. This changes Y and may raise individual Z values; frontal/lower controls and roots remain protected.",
+    "model_sha256": "7202023ec933ae4a58cdc0bb7801bc5b2cc581becd3a5b9b7af133311e17214e",
+    "crown_mm": 7.0,
+    "side_mm": 9.0,
+    "include_released": true,
+    "surface_envelope": true
+  },
+  "saved_file_audit": "native_softcontour347_pair49.json",
+  "presentations": [
+    {
+      "version": "nativecontourfront347",
+      "manifest": {
+        "source": "nativesoftcontour347",
+        "source_sha256": "7202023ec933ae4a58cdc0bb7801bc5b2cc581becd3a5b9b7af133311e17214e",
+        "source_unchanged": true,
+        "camera": "02_ThreeQuarter",
+        "diagnostic_opposite_camera": false,
+        "geometry_lighting_unchanged": true,
+        "resolution": [
+          1920,
+          2240
+        ],
+        "samples": 512,
+        "denoising": "OpenImageDenoise",
+        "image_sha256": "f6982f8a8bc73c3fb0c72dc4e743640f899ea9c1ce139d3a8c58d5ff1de0b942",
+        "status": "Actual render pending art review; no generative image replacement"
+      },
+      "actual_image_inspected": true
+    },
+    {
+      "version": "nativecontourside347",
+      "manifest": {
+        "source": "nativesoftcontour347",
+        "source_sha256": "7202023ec933ae4a58cdc0bb7801bc5b2cc581becd3a5b9b7af133311e17214e",
+        "source_unchanged": true,
+        "camera": "05_OppositeSide",
+        "diagnostic_opposite_camera": true,
+        "geometry_lighting_unchanged": true,
+        "resolution": [
+          1200,
+          1400
+        ],
+        "samples": 192,
+        "denoising": "OpenImageDenoise",
+        "image_sha256": "31f88c094c23e508e468949da809a9b6398d0dd2935ca1b2b7325318ab7917cb",
+        "status": "Actual render pending art review; no generative image replacement"
+      },
+      "actual_image_inspected": true
+    }
+  ],
+  "new_complete_models": 1,
+  "geometry_local_only": true,
+  "next_action": "Improve localized upper-side fold and coarse lock structure; avoid further whole-head compression or posterior donor overlays. Overall haircut not yet final."
+}

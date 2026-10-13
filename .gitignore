@@ -3113,3 +3113,19 @@
 !/角色工坊/焰冕行者/Renders/nativewholehook328/04_Back.png
 !/角色工坊/焰冕行者/Renders/nativefeatherhigh333/04_Back.png
 !/角色工坊/焰冕行者/Renders/nativefeatherfront333/02_ThreeQuarter.png
+
+# Hair contour49: aggregate evidence and inspected actual previews only
+!/角色工坊/焰冕行者/Renders/nativesoftcontour346/
+!/角色工坊/焰冕行者/Renders/nativecontourfront347/
+!/角色工坊/焰冕行者/Renders/nativecontourside347/
+!/角色工坊/焰冕行者/Tools/fair_rear_arcs_by_length.py
+!/角色工坊/焰冕行者/Tools/fit_cyberpunk_posterior_overlay.py
+!/角色工坊/焰冕行者/Tools/preview_official_groom.py
+!/角色工坊/焰冕行者/Tools/refine_short_hair_envelope.py
+!/角色工坊/焰冕行者/Tools/inspect_groom_root_clearance.py
+!/角色工坊/焰冕行者/Tools/validate_raw_control_flow.py
+!/角色工坊/焰冕行者/Exports/native_contour_studies49.json
+!/角色工坊/焰冕行者/Exports/native_softcontour347_pair49.json
+!/角色工坊/焰冕行者/Renders/nativesoftcontour346/01_Front.png
+!/角色工坊/焰冕行者/Renders/nativecontourfront347/02_ThreeQuarter.png
+!/角色工坊/焰冕行者/Renders/nativecontourside347/05_OppositeSide.png

@@ -9,14 +9,17 @@ from mathutils import Vector
 ROOT=Path(__file__).resolve().parents[1]
 args=sys.argv[sys.argv.index('--')+1:];version=args[0]
 LONG='--long' in args
-X=5 if LONG else 10
+CYBER='--cyberpunk' in args;assert not (LONG and CYBER)
+X=0 if CYBER else 5 if LONG else 10
 if not re.fullmatch('[A-Za-z0-9_-]+',version):raise ValueError(version)
 dest=ROOT/'Renders'/version
+if '--archive' in args:dest=Path(r'D:\星湾世界_模型归档\starbay-ai-world\角色工坊\焰冕行者\Renders')/version
 if dest.exists():raise RuntimeError('Fresh review directory required')
 dest.mkdir(parents=True)
 source=ROOT/'Source/BlenderHairStyles/Bystedt_HairStyles.blend'
 bpy.ops.wm.open_mainfile(filepath=str(source),use_scripts=False)
-for name in ['Braids hair','Cyberpunk hair','Curly hair' if LONG else 'Long hair']:bpy.data.collections[name].hide_render=True
+selected_collection='Cyberpunk hair' if CYBER else 'Long hair' if LONG else 'Curly hair'
+for name in ['Braids hair','Cyberpunk hair','Curly hair','Long hair']:bpy.data.collections[name].hide_render=name!=selected_collection
 if LONG:
  for key in ['long hair main','long hair strands']:
   h=bpy.data.objects[key]
@@ -41,6 +44,7 @@ scene.render.resolution_x=1050;scene.render.resolution_y=1250;scene.render.resol
 scene.render.image_settings.file_format='PNG';scene.view_settings.view_transform='AgX';scene.view_settings.exposure=0
 for name,loc in [('01_Front',(X,-30,15.5)),('02_ThreeQuarter',(X+8,-28,15.5))]:
  ob.location=loc;ob.rotation_euler=(Vector((X,-.3,15.1))-ob.location).to_track_quat('-Z','Y').to_euler();scene.render.filepath=str(dest/(name+'.png'));bpy.ops.render.render(write_still=True)
-record={'type':'source asset control render; not the user character','author':'Daniel Bystedt','license':'CC BY-SA','source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'changes':'camera and lighting only','source_style':'long hair' if LONG else 'curly hair','adopted_on_character':False}
+record={'type':'source asset control render; not the user character','author':'Daniel Bystedt','license':'CC BY-SA','source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'changes':'camera, lighting and display isolation of selected source collection only','source_style':'cyberpunk hair' if CYBER else 'long hair' if LONG else 'curly hair','adopted_on_character':False}
+record['images_sha256']={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in dest.glob('*.png')}
 (dest/'source_control.json').write_text(json.dumps(record,indent=2),encoding='utf-8')
 print('SOURCE_CONTROL_RENDERED',version,flush=True)
