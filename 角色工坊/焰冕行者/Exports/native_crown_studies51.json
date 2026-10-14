@@ -1,0 +1,480 @@
+{
+  "continuation": "nativecleancrest367",
+  "goal_complete": false,
+  "latest_preference": "Cleaner crown and sides; preserve current length and side part;dry fluffy fine natural strands.",
+  "diagnostics": [
+    {
+      "version": "nativecrownsupport359",
+      "manifest": {
+        "source": "nativepairedflow358",
+        "source_sha256": "adffd680745f213cb205d67a3f88ab646daaaa7722fe3840d55685c7c78afe7c",
+        "source_unchanged": true,
+        "edited_object": "Abhay flow derivative • real scalp sampled short support",
+        "points_per_curve": 40,
+        "selection_attribute": null,
+        "selection_rule": {
+          "camera": "03_Side",
+          "normalized_ellipse": [
+            0.47,
+            0.265,
+            0.115,
+            0.035
+          ],
+          "minimum_projected_controls": 2,
+          "projection_camera": "03_Side",
+          "rear_subset": false,
+          "rear_subset_rule": null,
+          "approximate_point_depth_filter": false
+        },
+        "legend": {
+          "blue": "Edited selected-object curves",
+          "red": "Untouched selected-object curves",
+          "green": "All other visible native hair components",
+          "gray": "Body/clothes"
+        },
+        "edited_fibers": 2858,
+        "unselected_fibers": 11142,
+        "method": "Exact temporary curve subsets with original radii/matrix, actual cameras, emission diagnostic only. Ellipse is projected controls, not continuous visibility proof.",
+        "status": "Unreviewed actual component diagnostic"
+      },
+      "reviewed_actual_images": {
+        "03_Side.png": "96db5fb9c281eca32944afb245063c9608ef4fea24015bfa090be949fc2b2840",
+        "04_Back.png": "c7a6aa84a2dc87584753dac8512a18009eb0638ced77b7795fe9bc5e747ba74e"
+      }
+    },
+    {
+      "version": "nativecrownshort360",
+      "manifest": {
+        "source": "nativepairedflow358",
+        "source_sha256": "adffd680745f213cb205d67a3f88ab646daaaa7722fe3840d55685c7c78afe7c",
+        "source_unchanged": true,
+        "edited_object": "Bystedt derivative • short scalp support",
+        "points_per_curve": 64,
+        "selection_attribute": null,
+        "selection_rule": {
+          "camera": "03_Side",
+          "normalized_ellipse": [
+            0.47,
+            0.265,
+            0.115,
+            0.035
+          ],
+          "minimum_projected_controls": 2,
+          "projection_camera": "03_Side",
+          "rear_subset": false,
+          "rear_subset_rule": null,
+          "approximate_point_depth_filter": false
+        },
+        "legend": {
+          "blue": "Edited selected-object curves",
+          "red": "Untouched selected-object curves",
+          "green": "All other visible native hair components",
+          "gray": "Body/clothes"
+        },
+        "edited_fibers": 10280,
+        "unselected_fibers": 13377,
+        "method": "Exact temporary curve subsets with original radii/matrix, actual cameras, emission diagnostic only. Ellipse is projected controls, not continuous visibility proof.",
+        "status": "Unreviewed actual component diagnostic"
+      },
+      "reviewed_actual_images": {
+        "03_Side.png": "c86c02ca7e34fd69fa066ab5812883a6f6601695ed2fb86cea573fdfc4313487"
+      }
+    },
+    {
+      "version": "nativecrownmain361",
+      "manifest": {
+        "source": "nativepairedflow358",
+        "source_sha256": "adffd680745f213cb205d67a3f88ab646daaaa7722fe3840d55685c7c78afe7c",
+        "source_unchanged": true,
+        "edited_object": "Bystedt layercut derivative • native root reflow",
+        "points_per_curve": null,
+        "selection_attribute": null,
+        "selection_rule": {
+          "camera": "03_Side",
+          "normalized_ellipse": [
+            0.47,
+            0.265,
+            0.115,
+            0.035
+          ],
+          "minimum_projected_controls": 2,
+          "projection_camera": "03_Side",
+          "rear_subset": false,
+          "rear_subset_rule": null,
+          "approximate_point_depth_filter": false,
+          "excluded_groups": [
+            "native_inner_curtain_shift",
+            "native_resculpted_fringe_sweeps",
+            "native_curved_projected_tips"
+          ]
+        },
+        "legend": {
+          "blue": "Edited selected-object curves",
+          "red": "Untouched selected-object curves",
+          "green": "All other visible native hair components",
+          "gray": "Body/clothes"
+        },
+        "edited_fibers": 8142,
+        "unselected_fibers": 37867,
+        "method": "Exact temporary curve subsets with original radii/matrix, actual cameras, emission diagnostic only. Ellipse is projected controls, not continuous visibility proof.",
+        "status": "Unreviewed actual component diagnostic"
+      },
+      "reviewed_actual_images": {
+        "03_Side.png": "3517a77ce1105c71e2a8aa3f791dfbeae296aaacd0afd9c957f55e4428ab65ca",
+        "04_Back.png": "0dcbc8077e30810b36d0e86526673f1a218f192563fd3fe77355a72a056ec73e"
+      }
+    }
+  ],
+  "path_metrics": {
+    "total": 8142,
+    "high_tips": 1361,
+    "all_quantiles": [
+      [
+        0.0625269677942236,
+        1.8562432527542114,
+        1.713468074798584,
+        1.8562432527542114,
+        1.8562432527542114,
+        12.0
+      ],
+      [
+        0.11081792791191782,
+        1.860373568534851,
+        1.7200238704681396,
+        1.86135231256485,
+        1.8604095458984375,
+        14.0
+      ],
+      [
+        0.13584844865564824,
+        1.8631789684295654,
+        1.7889758944511414,
+        1.8678703904151917,
+        1.8655579090118408,
+        20.0
+      ],
+      [
+        0.18512331528911763,
+        1.8710779786109923,
+        1.8503769040107727,
+        1.8759872436523437,
+        1.872320020198822,
+        65.0
+      ],
+      [
+        0.20306652592542998,
+        1.8734129667282104,
+        1.869728446006775,
+        1.8811520338058472,
+        1.876855731010437,
+        65.0
+      ]
+    ],
+    "high_tip_quantiles": [
+      [
+        0.0625269677942236,
+        1.8620630502700806,
+        1.8350447416305542,
+        1.8725669384002686,
+        1.8642715215682983,
+        12.0
+      ],
+      [
+        0.10276709881262634,
+        1.8627630472183228,
+        1.8399007320404053,
+        1.8729976415634155,
+        1.8663119077682495,
+        65.0
+      ],
+      [
+        0.11420481033046681,
+        1.8635540008544922,
+        1.853193759918213,
+        1.8738943338394165,
+        1.867666482925415,
+        65.0
+      ],
+      [
+        0.12996506247471182,
+        1.8700978755950928,
+        1.8542417287826538,
+        1.877532958984375,
+        1.8735970258712769,
+        65.0
+      ],
+      [
+        0.14236943124238197,
+        1.8726452589035034,
+        1.869728446006775,
+        1.8811520338058472,
+        1.876855731010437,
+        65.0
+      ]
+    ],
+    "count_under8mm": 0,
+    "length_column": "arc,rootZ,tipZ,maxZ,prefix8mmMaxZ,controlCount"
+  },
+  "studies": [
+    {
+      "version": "nativecrowncomb362",
+      "manifest": {
+        "source": "nativepairedflow358",
+        "source_sha256": "adffd680745f213cb205d67a3f88ab646daaaa7722fe3840d55685c7c78afe7c",
+        "source_unchanged": true,
+        "pilot": false,
+        "model_saved": false,
+        "selected_fibers": 8142,
+        "scale_quantiles": [
+          0.0,
+          1.0,
+          1.0
+        ],
+        "zero_scale_fibers": 28,
+        "max_same_index_displacement_m": 0.003999997396022081,
+        "images_sha256": {
+          "04_Back.png": "89b3fd8e7364ed8e610b18be705d1259027ccffa91c97ba7e86a1a58dd758293",
+          "05_OppositeSide.png": "beb72d51020be28860513e1469fc0fab2bcad4601c6280d389e736d43d92eccd",
+          "03_Side.png": "6d83444f2563725b97c6710973595f049ca293f1f6138c62769f2ef064de1947",
+          "02_ThreeQuarter.png": "73451eb26ac56a6f75915470a3ce35a908b2d0e45fb6bf3444edf24be4527bbe"
+        },
+        "method": "Inspected primary crown fibers only, accepted frontal groups excluded. Gaussian arc-distance quadratic fit sigma12mm,12mm onset after original root3mm, smooth Z1.850..1.865 gate,4mm displacement cap. All controls belowZ1.850 and root3mm unchanged; upper terminal points may move. Counts/radii/other objects unchanged. Whole-curve control/midpoint body-gap backtracking; no continuous collision/art acceptance.",
+        "selection": "nativecrownmain361",
+        "crown_only": true,
+        "model_sha256": null,
+        "positions_sha256": "8f8c6cf046d8f5e6b4a0df205ab69af73299b0effe59267f5c5f8a84bac7428f"
+      },
+      "reviewed_actual_images": [
+        "03_Side.png",
+        "05_OppositeSide.png",
+        "04_Back.png",
+        "02_ThreeQuarter.png"
+      ],
+      "decision": "Not adopted: localized regression did not sufficiently remove crown hooks."
+    },
+    {
+      "version": "nativecrownlay363",
+      "manifest": {
+        "source": "nativepairedflow358",
+        "source_sha256": "adffd680745f213cb205d67a3f88ab646daaaa7722fe3840d55685c7c78afe7c",
+        "source_unchanged": true,
+        "selection": "nativecrownmain361",
+        "object": "Bystedt layercut derivative • native root reflow",
+        "selected_fibers": 4,
+        "changed_fibers": 4,
+        "scale_quantiles": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "max_displacement_m": 0.012000028975307941,
+        "arc_length_change_quantiles_m": [
+          -0.003960785777655032,
+          -0.0029252942161510885,
+          -0.0026607262970299236
+        ],
+        "positions_sha256": "e5d890ad976f8c6f6389d704fec75ee9a6d2371bdf857c87a71512b581ece903",
+        "model_saved": false,
+        "model_sha256": null,
+        "images_sha256": {
+          "03_Side.png": "4644510b7e1dd7294f461d7a6610583f4ca2ecfd4c3d6933d44f891b08baf687",
+          "05_OppositeSide.png": "2f538ee49424e7debc33ff4c7b633185fe15502aa3bf9cbeec64f917074c409d",
+          "04_Back.png": "71f5f46c92580ad6d28b47a31bec64a974e1308754320f2b2dfa00a5758ea6e6",
+          "02_ThreeQuarter.png": "c50139b2bace661644a103d3be4fe700d09dabf867ecb229ebec7c9f3ac01869",
+          "01_Front.png": "37bb2bdb4752676c66720c0b5ebabc83811100f4625cde46f6f8669c227c6798"
+        },
+        "method": "Inspected projected primary selection intersect original arc(8,65]mm,rootZ>1.850,tipZ>1.835. Preserve root3mm controls. Scalp-tangent integration in <=1mm substeps; direction blends over12mm toward root-tip chord projected at root. Degenerate tangent falls toward side from partX43mm. Original positive normal offset blends toward 1.5..3.5mm loft. Whole-fiber12mm displacement cap and control/midpoint body-gap backtracking. No topology/radius/material changes; tips and individual arc lengths may change. Not continuous collision or artistic completion."
+      },
+      "reviewed_actual_images": [
+        "03_Side.png",
+        "05_OppositeSide.png",
+        "04_Back.png",
+        "02_ThreeQuarter.png",
+        "01_Front.png"
+      ],
+      "decision": "Not adopted: original arc <=65mm selected only four fibers; visible short-looking loops mostly belong to long paths."
+    },
+    {
+      "version": "nativecrownflow364",
+      "manifest": {
+        "source": "nativepairedflow358",
+        "source_sha256": "adffd680745f213cb205d67a3f88ab646daaaa7722fe3840d55685c7c78afe7c",
+        "source_unchanged": true,
+        "selection": "nativecrownmain361",
+        "object": "Bystedt layercut derivative • native root reflow",
+        "selected_fibers": 1361,
+        "changed_fibers": 1361,
+        "scale_quantiles": [
+          0.0625,
+          1.0,
+          1.0
+        ],
+        "max_displacement_m": 0.01200005691498518,
+        "arc_length_change_quantiles_m": [
+          -0.003960785777655032,
+          0.002168651501210428,
+          0.004158738584206664
+        ],
+        "positions_sha256": "cb0776288288a141db436e18799ab763d81404cc7752426168af4e276a721f37",
+        "model_saved": false,
+        "model_sha256": null,
+        "images_sha256": {
+          "03_Side.png": "73f4ac23e8e0fbee89287fd1f15dbbaafd898571b56323d60ef6375428a9d05d",
+          "05_OppositeSide.png": "43fe4e7c75b107658c67613b47b49d9a8c51de59c8714cf61e6a4f6048854eba",
+          "04_Back.png": "c3c3099558f0800164b2481b4600cb6887d3ed8617e7ff02a33cb450ff13f6d0",
+          "02_ThreeQuarter.png": "cace123089808dbaa65d5f557ab7c5f4793086d964097bf4f4df15b43d9793f0",
+          "01_Front.png": "859a1bfae17544ec2100824a45a05fc7eb68283c45548ff3d24ed8689f219601"
+        },
+        "method": "Inspected projected primary selection intersect original arc(8,150]mm,rootZ>1.850,tipZ>1.835. Preserve root3mm controls. Scalp-tangent integration in <=1mm substeps; direction blends over12mm toward root-tip chord projected at root. Degenerate tangent falls toward side from partX43mm. Original positive normal offset blends toward 1.5..3.5mm loft. Whole-fiber12mm displacement cap and control/midpoint body-gap backtracking. No topology/radius/material changes; tips and individual arc lengths may change. Not continuous collision or artistic completion.",
+        "maximum_original_arc_m": 0.15
+      },
+      "reviewed_actual_images": [
+        "03_Side.png",
+        "05_OppositeSide.png",
+        "04_Back.png",
+        "02_ThreeQuarter.png",
+        "01_Front.png"
+      ],
+      "decision": "Not adopted:1361 high-tip paths recombed, but long strands with low tips still carry raised root sections."
+    },
+    {
+      "version": "nativecrownloft365",
+      "manifest": {
+        "source": "nativepairedflow358",
+        "source_sha256": "adffd680745f213cb205d67a3f88ab646daaaa7722fe3840d55685c7c78afe7c",
+        "source_unchanged": true,
+        "selection": "nativecrownmain361",
+        "object": "Bystedt layercut derivative • native root reflow",
+        "selected_fibers": 8142,
+        "changed_fibers": 7609,
+        "scale_quantiles": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "max_displacement_m": 0.008000044152140617,
+        "arc_length_change_quantiles_m": [
+          -0.011797690323687202,
+          -0.0011705246562830895,
+          2.5232357869775512e-11
+        ],
+        "positions_sha256": "934b27e11f3a54dd254d3d674444be28e8225d3dfbf0648ab3e9c9e32dc79ff3",
+        "model_saved": false,
+        "model_sha256": null,
+        "images_sha256": {
+          "03_Side.png": "a13f6862177fac585e823c7450b790a8fb95a0323ca14e655c850648c56ccfd6",
+          "05_OppositeSide.png": "5a6db8c82076e5883a3f985c7ee20207e47d7243a1c41c03d104e0f0651c1767",
+          "04_Back.png": "f8cef4e7591b256e2e6f705f8f808c250a5a449d81e4b14a729455436d03fc85",
+          "02_ThreeQuarter.png": "4a0799a63924477b0b7829dc471048e3aa5d8a2653dd176a49287b360a6c82c1",
+          "01_Front.png": "d76b8970bdabb9347ce7ef60d2c3fb8acbe77dfc766c65533eac5ddafd2b1815"
+        },
+        "method": "All inspected crown primary fibers; accepted frontal groups excluded. Keep roots and first3mm controls. Move along original closest-body normal toward3mm positive clearance, weighted by8mm arc onset after3mm and Z1.850..1.865 smooth transition. Whole-fiber8mm cap and body-gap backtracking at controls/midpoints. Controls belowZ1.850 exact. No topology/radius/material changes; upper tips and individual arc lengths can change. Not continuous collision/artistic completion.",
+        "maximum_original_arc_m": 0.065,
+        "root_loft": true
+      },
+      "reviewed_actual_images": [
+        "03_Side.png",
+        "05_OppositeSide.png"
+      ],
+      "decision": "Not adopted: root-normal loft reduction removed hooks but created an abrupt selected-region shoulder."
+    },
+    {
+      "version": "nativecrownbrush366",
+      "manifest": {
+        "source": "nativepairedflow358",
+        "source_sha256": "adffd680745f213cb205d67a3f88ab646daaaa7722fe3840d55685c7c78afe7c",
+        "source_unchanged": true,
+        "selection": "nativecrownmain361",
+        "object": "Bystedt layercut derivative • native root reflow",
+        "selected_fibers": 8142,
+        "changed_fibers": 7072,
+        "scale_quantiles": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "max_displacement_m": 0.008000040426850319,
+        "arc_length_change_quantiles_m": [
+          -0.011797690323687202,
+          -0.00031165658169804433,
+          5.833868736149217e-07
+        ],
+        "positions_sha256": "e6a5fae3f9cb55ec05c105798131defe14a4cb75cc29b8201a5ae854f1b7bd63",
+        "model_saved": false,
+        "model_sha256": null,
+        "images_sha256": {
+          "03_Side.png": "cb014ff372e1d0b489aab65321692a14f5449908704f5dc2e1eb8591dad16556",
+          "05_OppositeSide.png": "eab76505e8cc5f1f5a214f4082f6c6bb41d00daf29b526a3da560ccb26c68f5d",
+          "04_Back.png": "32deea5396c916aa0d044deb0d7abde9491bbe5101eef825af9cc194628e702c",
+          "02_ThreeQuarter.png": "08f23a725f2901b196e8f05f06d1c8d8b238132756175b6e6f12fba99bb166bc",
+          "01_Front.png": "fb65611e67f47efd72474a1051888420f890d109db609e6b04a31ecfcba6296b"
+        },
+        "method": "All inspected crown primary fibers; accepted frontal groups excluded. Keep roots and first3mm controls. Move along original closest-body normal toward3mm positive clearance, weighted by8mm arc onset after3mm and Z1.850..1.865 smooth transition. Whole-fiber8mm cap and body-gap backtracking at controls/midpoints. Controls belowZ1.850 exact. No topology/radius/material changes; upper tips and individual arc lengths can change. Not continuous collision/artistic completion. Multiply each point by projected ellipse brush, full strength within normalized radius0.35, smoothly zero by radius1; avoids full-fiber selection boundary steps.",
+        "maximum_original_arc_m": 0.065,
+        "root_loft": true,
+        "feather_projection": true
+      },
+      "reviewed_actual_images": [
+        "03_Side.png",
+        "05_OppositeSide.png",
+        "04_Back.png",
+        "02_ThreeQuarter.png",
+        "01_Front.png"
+      ],
+      "decision": "Adopt local improvement as367: pointwise projected brush feathers correction to zero; cleaner crown and smoother transitions, broad posterior locks remain unfinished."
+    }
+  ],
+  "saved_model": {
+    "source": "nativepairedflow358",
+    "source_sha256": "adffd680745f213cb205d67a3f88ab646daaaa7722fe3840d55685c7c78afe7c",
+    "source_unchanged": true,
+    "selection": "nativecrownmain361",
+    "object": "Bystedt layercut derivative • native root reflow",
+    "selected_fibers": 8142,
+    "changed_fibers": 7072,
+    "scale_quantiles": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "max_displacement_m": 0.008000040426850319,
+    "arc_length_change_quantiles_m": [
+      -0.011797690323687202,
+      -0.00031165658169804433,
+      5.833868736149217e-07
+    ],
+    "positions_sha256": "e6a5fae3f9cb55ec05c105798131defe14a4cb75cc29b8201a5ae854f1b7bd63",
+    "model_saved": true,
+    "model_sha256": "70a5966af3a976e27a65157a20129b738ef1d9f6adad06524635249a273eb9ff",
+    "images_sha256": {},
+    "method": "All inspected crown primary fibers; accepted frontal groups excluded. Keep roots and first3mm controls. Move along original closest-body normal toward3mm positive clearance, weighted by8mm arc onset after3mm and Z1.850..1.865 smooth transition. Whole-fiber8mm cap and body-gap backtracking at controls/midpoints. Controls belowZ1.850 exact. No topology/radius/material changes; upper tips and individual arc lengths can change. Not continuous collision/artistic completion. Multiply each point by projected ellipse brush, full strength within normalized radius0.35, smoothly zero by radius1; avoids full-fiber selection boundary steps.",
+    "maximum_original_arc_m": 0.065,
+    "root_loft": true,
+    "feather_projection": true
+  },
+  "saved_file_audit": "native_crown367_pair51.json",
+  "preview_and_saved_positions_exact": true,
+  "presentation": {
+    "manifest": {
+      "source": "nativecleancrest367",
+      "source_sha256": "70a5966af3a976e27a65157a20129b738ef1d9f6adad06524635249a273eb9ff",
+      "source_unchanged": true,
+      "camera": "03_Side",
+      "diagnostic_opposite_camera": false,
+      "geometry_lighting_unchanged": true,
+      "resolution": [
+        1920,
+        2240
+      ],
+      "samples": 512,
+      "denoising": "OpenImageDenoise",
+      "image_sha256": "5df8f9db826f7075b248738df6ea7309e4431df92092d036df3ff4b9f56d5eb4",
+      "status": "Actual render pending art review; no generative image replacement"
+    },
+    "actual_image_inspected": true
+  },
+  "changed_count_note": "Generator changed_fibers7072 uses displacement>1e-7m;independent exact position comparison finds7135. Tiny float32 changes explain difference.",
+  "new_complete_models": 1,
+  "geometry_local_only": true,
+  "next_action": "Keep cleaner crown. Refine wide central posterior groups and natural separation without adding density, flattening the entire head, or mistaking short-looking root loops for short fibers."
+}

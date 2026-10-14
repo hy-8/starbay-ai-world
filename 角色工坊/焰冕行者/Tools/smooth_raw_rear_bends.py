@@ -12,6 +12,8 @@ pilot='--pilot' in a;side_envelope='--side-envelope' in a
 rear_sweep='--rear-sweep' in a
 terminal_sweep='--terminal-sweep' in a;assert not terminal_sweep or rear_sweep
 selection=a[a.index('--selection')+1] if '--selection' in a else None
+crown_only='--crown-only' in a
+assert not crown_only or selection
 if selection:assert re.fullmatch('[A-Za-z0-9_-]+',selection) and not side_envelope
 assert not rear_sweep or not (side_envelope or selection)
 save='--save-archive' in a;save_only='--save-only' in a
@@ -63,14 +65,15 @@ for i in ids:
  else:
   result=[]
   for j in range(len(q)):
-   x=(arc-arc[j])/(.030 if selection else .018);w=np.exp(-.5*x*x);design=np.column_stack([np.ones(len(x)),x,x*x])
+   x=(arc-arc[j])/(.012 if crown_only else .030 if selection else .018);w=np.exp(-.5*x*x);design=np.column_stack([np.ones(len(x)),x,x*x])
    coef=np.linalg.lstsq(design*np.sqrt(w[:,None]),q*np.sqrt(w[:,None]),rcond=None)[0]
    result.append(coef[0])
   delta=np.array(result)-q
   envelope=smooth((arc-.008)/.025)*(1-smooth((t-.88)/.10))*smooth((1.850-q[:,2])/.025)*smooth((q[:,1]-.015)/.025)
   if selection:envelope=smooth((arc-.008)/.025)
+  if crown_only:envelope=smooth((arc-.003)/.012)*smooth((q[:,2]-1.850)/.015)
   delta*=envelope[:,None]
- cap=.024 if rear_sweep else .012
+ cap=.004 if crown_only else .024 if rear_sweep else .012
  mag=np.linalg.norm(delta,axis=1);delta*=np.minimum(1,cap/np.maximum(mag,1e-10))[:,None]
  delta[0]=0
  if not side_envelope and not selection and not terminal_sweep:delta[-1]=0
@@ -103,6 +106,7 @@ assert digest(source)==before
 m=dict(source=base,source_sha256=before,source_unchanged=True,pilot=pilot,model_saved=False,selected_fibers=len(ids),scale_quantiles=np.quantile(scales,[0,.5,1]).tolist(),zero_scale_fibers=int(np.count_nonzero(np.array(scales)==0)),max_same_index_displacement_m=float(np.linalg.norm(p-old,axis=1).max()),images_sha256=images,method='Arc-distance Gaussian weighted quadratic regression sigma18mm at original mixed controls; displacements capped12mm; retain root8mm and terminal2percent; ramp25mm and posterior spatial gate. Whole-curve body clearance backtracking on controls/midpoints. No normal projection/scalp transport/new noise. Original roots, tips, radii, counts and other objects untouched; not continuous collision or art acceptance.')
 if side_envelope:m.update(side_envelope=True,method='Local posterior negativeX stepped side silhouette brush on all primary fibers intersecting x<-50mm,y>10mm,z1.770..1.870m. Displacement[+12,-4,-4]mm multiplied by smooth onset30mm in X,35mm in Y,25mm top/bottom Z and25mm after root8mm; resultant capped12mm. Roots/counts/radii/materials/other geometry unchanged; terminal points may move inside region. Whole-curve controls/midpoints body clearance backtracking; no continuous collision or art approval.')
 if selection:m.update(selection=selection,method='Only exact inspected local projected set; assert no accepted inner curtain/fringe sweeps/curved accent selected. Gaussian arc-distance quadratic fit sigma30mm,25mm onset after original root8mm,12mm displacement cap, no blanket posterior gate. Terminal points may move; mixed counts/radii/roots retained. Whole-curve controls/midpoints body clearance backtracking. Preview only, not continuous collision or art approval.')
+if crown_only:m.update(crown_only=True,method='Inspected primary crown fibers only, accepted frontal groups excluded. Gaussian arc-distance quadratic fit sigma12mm,12mm onset after original root3mm, smooth Z1.850..1.865 gate,4mm displacement cap. All controls belowZ1.850 and root3mm unchanged; upper terminal points may move. Counts/radii/other objects unchanged. Whole-curve control/midpoint body-gap backtracking; no continuous collision/art acceptance.')
 if rear_sweep:m.update(rear_sweep=True,method='Original restored rear-reaching raw paths; rotate midshaft XY about(0,-35mm) by at most0.22rad times sin(pi*t)^1.1,root8mm/25mm onset,posteriorZ<1.855/Y>15mm smooth25mm gate. Preserve radial distance before24mm displacement cap and whole-curve body-gap backtracking. Roots/tips/counts/radii/materials unchanged. Changes coherent flow direction without new scalp projection/noise/cut. Preview only;not continuous collision/art acceptance.')
 if terminal_sweep:m.update(terminal_sweep=True,method='Original restored rear-reaching raw paths; progressive XY rotation about(0,-35mm),0.14rad times smoothstep((arc-8mm)/60mm)*smoothstep((oldY-15mm)/25mm). No upperZ gate or end reversal.24mm displacement cap then whole-curve body-gap backtracking. Original root8mm/counts/radii/Z values retained;terminal XY intentionally moves. Preview only;not continuous collision/art acceptance.')
 m.update(model_saved=save,model_sha256=modelhash,positions_sha256=hashlib.sha256(p.tobytes()).hexdigest())

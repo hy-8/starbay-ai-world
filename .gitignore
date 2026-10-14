@@ -3142,3 +3142,15 @@
 !/角色工坊/焰冕行者/Renders/nativepairedside358/03_Side.png
 !/角色工坊/焰冕行者/Renders/nativepairedfront358/02_ThreeQuarter.png
 !/角色工坊/焰冕行者/Renders/nativepairedflow357/04_Back.png
+
+# Hair crown51: source tools, aggregate evidence and inspected previews only
+!/角色工坊/焰冕行者/Renders/nativecleancrestside367/
+!/角色工坊/焰冕行者/Renders/nativecrownbrush366/
+!/角色工坊/焰冕行者/Tools/comb_crown_short_paths.py
+!/角色工坊/焰冕行者/Tools/smooth_raw_rear_bends.py
+!/角色工坊/焰冕行者/Tools/validate_raw_control_flow.py
+!/角色工坊/焰冕行者/Exports/native_crown_studies51.json
+!/角色工坊/焰冕行者/Exports/native_crown367_pair51.json
+!/角色工坊/焰冕行者/Renders/nativecleancrestside367/03_Side.png
+!/角色工坊/焰冕行者/Renders/nativecrownbrush366/02_ThreeQuarter.png
+!/角色工坊/焰冕行者/Renders/nativecrownbrush366/04_Back.png

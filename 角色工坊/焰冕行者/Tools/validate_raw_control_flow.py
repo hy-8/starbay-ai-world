@@ -57,6 +57,48 @@ if retained is not None:
  result=dict(source=base,source_sha256=before[0],candidate=candidate,candidate_sha256=after[0],mesh_count=len(before[1]),meshes_uv_shape_keys_transforms_exact=True,other_native_geometry_exact=True,material_light_world_camera_display_exact=True,image_paths_compared_as_resolved_absolute='--resolve-image-paths' in a,retained_curve_history_exact=True,retained_positions_radii_counts_transforms_exact=True,accepted_inner_curtain_retained=True,removed_fibers=len(selected),retained_fibers=len(retained),scope='Independent saved-file mixed-count deletion comparison to exact local inspected selection. Count/topology intentionally reduced;all retained fibers exact. Not artistic or collision acceptance.')
  out.write_text(json.dumps(result,indent=2),encoding='utf-8');print('STRAY_REMOVAL_AUDIT_PASS',candidate,flush=True);sys.exit(0)
 assert len(bs)==len(asz)
+if '--crown-comb' in a:
+ from mathutils import Vector
+ from mathutils.bvhtree import BVHTree
+ assert np.array_equal(bs,asz) and np.array_equal(br,ar) and set(beforeattrs)==set(afterattrs)
+ manifest=json.loads((ROOT/'Exports'/candidate/'crown_comb_manifest.json').read_text())
+ assert manifest['source_sha256']==before[0] and manifest['model_sha256']==after[0]
+ assert hashlib.sha256(ap.tobytes()).hexdigest()==manifest['positions_sha256']
+ archive=Path(r'D:\星湾世界_模型归档\starbay-ai-world\角色工坊\焰冕行者')
+ folder=archive/'Renders'/manifest['selection'];selection=json.loads((folder/'edit_id_manifest.json').read_text())
+ assert selection['source_sha256']==before[0] and selection['edited_object']==primary
+ indices=np.load(folder/'local_projected_indices.npz')['selected'];offsets=np.r_[0,np.cumsum(bs)]
+ expected=[]
+ for i in indices:
+  q=bp[offsets[i]:offsets[i+1]].astype(float);length=np.linalg.norm(np.diff(q,axis=0),axis=1).sum()
+  if manifest.get('root_loft') or (.008<length<=manifest['maximum_original_arc_m'] and q[0,2]>1.850 and q[-1,2]>1.835):expected.append(i)
+ mask=np.zeros(len(bs),bool);mask[expected]=True
+ assert len(expected)==manifest['selected_fibers'] and np.array_equal(bp[~np.repeat(mask,bs)],ap[~np.repeat(mask,bs)])
+ assert np.array_equal(bp[offsets[:-1]],ap[offsets[:-1]])
+ for key in ['native_inner_curtain_shift','native_resculpted_fringe_sweeps','native_curved_projected_tips']:assert not beforeattrs[key][1][mask].any()
+ bv=BVHTree.FromObject(bpy.data.objects['CC0 male body • retained topology'],bpy.context.evaluated_depsgraph_get())
+ def gap(v):
+  h,n,_,_=bv.find_nearest(Vector(v));return float((Vector(v)-h).dot(n))
+ checked=changed=0;length_changes=[]
+ for i in expected:
+  q=bp[offsets[i]:offsets[i+1]];v=ap[offsets[i]:offsets[i+1]]
+  arc=np.r_[0,np.cumsum(np.linalg.norm(np.diff(q.astype(float),axis=0),axis=1))]
+  assert np.array_equal(q[arc<=.003],v[arc<=.003]);changed+=int(not np.array_equal(q,v))
+  length_changes.append(float(np.linalg.norm(np.diff(v.astype(float),axis=0),axis=1).sum()-arc[-1]))
+  qs=np.vstack([q,(q[:-1]+q[1:])*.5]);vs=np.vstack([v,(v[:-1]+v[1:])*.5]);moving=np.linalg.norm(vs-qs,axis=1)>1e-7
+  for x,y in zip(qs[moving],vs[moving]):assert gap(y)>=min(.0003,gap(x))-3e-6
+  checked+=int(moving.sum())
+ maximum=float(np.linalg.norm(ap-bp,axis=1).max());assert np.isfinite(ap).all() and 0<maximum<=(.008001 if manifest.get('root_loft') else .012001)
+ if manifest.get('root_loft'):assert np.array_equal(bp[bp[:,2]<=1.850],ap[bp[:,2]<=1.850])
+ if manifest.get('feather_projection'):
+  cam=bpy.data.objects[selection['selection_rule']['camera']];view=np.array(cam.matrix_world.inverted());proj=np.array(cam.calc_matrix_camera(bpy.context.evaluated_depsgraph_get(),x=1200,y=1400,scale_x=1,scale_y=1))
+  clip=np.c_[bp,np.ones(len(bp))]@(proj@view).T;ndc=clip[:,:3]/clip[:,3,None]
+  cx,cy,rx,ry=selection['selection_rule']['normalized_ellipse'];outside=((ndc[:,0]*.5+.5-cx)/rx)**2+((.5-ndc[:,1]*.5-cy)/ry)**2>=1
+  assert np.array_equal(bp[outside],ap[outside])
+ result=dict(source=base,source_sha256=before[0],candidate=candidate,candidate_sha256=after[0],mesh_count=len(before[1]),meshes_uv_shape_keys_transforms_exact=True,other_native_geometry_exact=True,material_light_world_camera_display_exact=True,image_paths_compared_as_resolved_absolute='--resolve-image-paths' in a,historical_curve_attributes_exact=True,counts_radii_transforms_roots_exact=True,root3mm_controls_exact=True,unselected_fibers_exact=int((~mask).sum()),selected_fibers=len(expected),changed_fibers=changed,accepted_fringe_groups_unchanged=True,max_displacement_m=maximum,changed_control_midpoint_body_checks=checked,actual_arc_length_change_quantiles_m=np.quantile(length_changes,[0,.5,1]).tolist(),scope='Independent saved-file comparison. Mask recomputed from inspected selection and original short high-fiber limits. Original roots,prefix3mm,unselected fibers,other hair and meshes/materials retained. Selected tips and lengths change. Discrete body tests are not continuous collision/artistic completion.')
+ if manifest.get('root_loft'):result.update(controls_at_or_below_Z1_850_exact=True,scope=result['scope'].replace('and original short high-fiber limits','and root-loft mode with original Z gate'))
+ if manifest.get('feather_projection'):result.update(outside_projected_ellipse_controls_exact=True)
+ out.write_text(json.dumps(result,indent=2),encoding='utf-8');print('CROWN_COMB_AUDIT_PASS',candidate,flush=True);sys.exit(0)
 if '--retarget-source' in a:
  from mathutils import Vector
  from mathutils.bvhtree import BVHTree
