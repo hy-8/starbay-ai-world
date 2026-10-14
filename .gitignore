@@ -3129,3 +3129,16 @@
 !/角色工坊/焰冕行者/Renders/nativesoftcontour346/01_Front.png
 !/角色工坊/焰冕行者/Renders/nativecontourfront347/02_ThreeQuarter.png
 !/角色工坊/焰冕行者/Renders/nativecontourside347/05_OppositeSide.png
+
+# Hair side flow50: aggregate evidence and inspected previews only
+!/角色工坊/焰冕行者/Renders/nativepairedside358/
+!/角色工坊/焰冕行者/Renders/nativepairedfront358/
+!/角色工坊/焰冕行者/Renders/nativepairedflow357/
+!/角色工坊/焰冕行者/Tools/render_native_edit_ids.py
+!/角色工坊/焰冕行者/Tools/retarget_authored_lock_paths.py
+!/角色工坊/焰冕行者/Tools/validate_raw_control_flow.py
+!/角色工坊/焰冕行者/Exports/native_rooted_side_studies50.json
+!/角色工坊/焰冕行者/Exports/native_pairedflow358_pair50.json
+!/角色工坊/焰冕行者/Renders/nativepairedside358/03_Side.png
+!/角色工坊/焰冕行者/Renders/nativepairedfront358/02_ThreeQuarter.png
+!/角色工坊/焰冕行者/Renders/nativepairedflow357/04_Back.png

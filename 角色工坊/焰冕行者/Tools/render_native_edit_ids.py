@@ -16,6 +16,10 @@ out=ROOT/'Renders'/version
 if '--archive' in a:out=Path(r'D:\星湾世界_模型归档\starbay-ai-world\角色工坊\焰冕行者\Renders')/version
 if out.exists():raise RuntimeError('Fresh ID renders required')
 source=ROOT/'Exports'/base/'Ember_Regent.blend';digest=hashlib.sha256(source.read_bytes()).hexdigest();bpy.ops.wm.open_mainfile(filepath=str(source),use_scripts=False)
+if projection_camera=='05_OppositeSide':
+ from mathutils import Matrix
+ cam=bpy.data.objects['03_Side'].copy();cam.data=cam.data.copy();bpy.context.scene.collection.objects.link(cam);cam.name=projection_camera
+ mirror=Matrix.Diagonal((-1.,1.,1.,1.));cam.matrix_world=mirror@cam.matrix_world@mirror
 edited_ob=bpy.data.objects[edited_object];assert edited_ob.type=='CURVES' and not edited_ob.hide_render
 def emission(name,color):
  m=bpy.data.materials.new(name);m.use_nodes=True;m.node_tree.nodes.clear();e=m.node_tree.nodes.new('ShaderNodeEmission');e.inputs['Color'].default_value=(*color,1);e.inputs['Strength'].default_value=1
@@ -39,6 +43,8 @@ if ellipse:
  world=np.c_[p,np.ones(len(p))]@np.array(ob.matrix_world).T;local=world@view.T;clip=local@proj.T;ndc=clip[:,:3]/clip[:,3,None]
  xx=ndc[:,0]*.5+.5;yy=.5-ndc[:,1]*.5;cx,cy,rx,ry=ellipse
  hit=(((xx-cx)/rx)**2+((yy-cy)/ry)**2<1)&(local[:,2]<0)
+ if '--positive-side' in a:hit&=world[:,0]>.045
+ if '--negative-side' in a:hit&=world[:,0]<-.045
  if '--visible-controls' in a:
   # Approximate point-depth filter, followed by actual ID rendering for review.
   # This does not claim continuous strand/body visibility or ray-traced selection.
@@ -52,6 +58,9 @@ if ellipse:
   near=np.full(len(p),np.inf);near[valid]=zbuffer[py[valid],px[valid]]
   hit&=valid&(depth<=near+.001)
  mask=np.add.reduceat(hit.astype(np.int32),np.r_[0,np.cumsum(counts)[:-1]])>=2
+ if '--exclude-fringe' in a:
+  for key in ['native_inner_curtain_shift','native_resculpted_fringe_sweeps','native_curved_projected_tips']:
+   flags=np.empty(len(mask),bool);cu.attributes[key].data.foreach_get('value',flags);mask&=~flags
  if '--short-posterior' in a:
   ends=np.cumsum(counts)-1
   mask&=(p[ends,2]>=1.800)&(p[ends,2]<1.830)&(p[ends,1]>.030)
@@ -74,10 +83,13 @@ if ellipse:
   if attr.domain=='CURVE' and attr.data_type=='BOOLEAN':
    flags=np.empty(len(mask),bool);attr.data.foreach_get('value',flags);aggregate['attribute_counts'][attr.name]=int(flags[mask].sum())
  (out/'projected_aggregate.json').write_text(json.dumps(aggregate,indent=2),encoding='utf-8')
-for name in (['04_Back'] if '--back-only' in a else ['02_ThreeQuarter','01_Front'] if front_views else ['04_Back','03_Side']):
+for name in (['04_Back',projection_camera] if '--projection-view' in a else ['04_Back'] if '--back-only' in a else ['02_ThreeQuarter','01_Front'] if front_views else ['04_Back','03_Side']):
  s.camera=bpy.data.objects[name];s.render.filepath=str(out/(name+'.png'));bpy.ops.render.render(write_still=True)
 assert hashlib.sha256(source.read_bytes()).hexdigest()==digest
 selection_parameters=dict(projection_camera=projection_camera if ellipse else None,rear_subset=rear_subset,rear_subset_rule='attribute AND rootY>-30mm AND tipY>15mm AND tipZ<1.800m' if rear_subset else None,approximate_point_depth_filter='--visible-controls' in a)
+if '--positive-side' in a:selection_parameters['world_point_filter']='worldX>45mm before per-curve projected-hit reduction'
+if '--negative-side' in a:selection_parameters['world_point_filter']='worldX<-45mm before per-curve projected-hit reduction'
+if '--exclude-fringe' in a:selection_parameters['excluded_groups']=['native_inner_curtain_shift','native_resculpted_fringe_sweeps','native_curved_projected_tips']
 if '--short-posterior' in a:selection_parameters['short_posterior_filter']='Intersect projected controls with1.800<=tipZ<1.830m,tipY>30mm;exclude accepted inner curtain/frontal sweeps/curved accent. No depth occlusion filtering unless visible-controls explicitly present.'
 (out/'selection_parameters.json').write_text(json.dumps(selection_parameters,indent=2),encoding='utf-8')
 selection_rule={'camera':projection_camera,'normalized_ellipse':ellipse,'minimum_projected_controls':2,**selection_parameters} if ellipse else 'Selected object shaft maximum z>1.875m' if crown else (dict(attribute=attribute,filter=selection_parameters['rear_subset_rule']) if rear_subset else attribute)
